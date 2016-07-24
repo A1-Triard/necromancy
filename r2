@@ -110,14 +110,14 @@ ENAM YQD//wAAAAAAAAAAPAAAADIAAAAyAAAA
 
 SPEL
 NAME nc_raise_zombie
-FNAM Immediate Reanimation
+FNAM Реанимация
 SPDT AAAAADIAAAAAAAAA
 ENAM KwD//wAAAAAAAAAADwAAAAEAAAABAAAA
 ENAM LwD//wAAAAAAAAAADwAAAAEAAAABAAAA
 
 SPEL
 NAME nc_zombie_rot
-FNAM Zombie Rot
+FNAM Гниль зомби
 SPDT BAAAAAAAAAAEAAAA
 ENAM GwD//wAAAAAAAAAAAAAAAAEAAAABAAAA
 ENAM SwD//wAAAAAAAAAAAQAAAAEAAAABAAAA
@@ -126,19 +126,19 @@ ENAM FgD/AwAAAAAAAAAAAAAAAA8AAAAPAAAA
 
 SPEL
 NAME nc_dead_zombie
-FNAM Zombie Rot
+FNAM Гниль зомби
 SPDT AAAAAAAAAAAEAAAA
 ENAM GwD//wEAAAAUAAAADwAAAAEAAAAFAAAA
 
 SPEL
 NAME nc_raise_z_spell
-FNAM Immediate Reanimation
+FNAM Реанимация
 SPDT AAAAAAAAAAAEAAAA
 ENAM DwD//wEAAAAFAAAAAgAAAAgAAAAPAAAA
 
 SPEL
 NAME nc_summon_effects
-FNAM Revenant Summoning
+FNAM Вызов мертвеца
 SPDT AAAAAAAAAAAEAAAA
 ENAM FwD//wIAAAAKAAAABQAAAAEAAAAKAAAA
 ENAM GAD//wIAAAAKAAAABQAAAAoAAABkAAAA
@@ -369,7 +369,7 @@ INTV 1
 CONT
 NAME nc_cryptbody01
 MODL NC\\bar_cryptbody01.NIF
-FNAM Corpse
+FNAM Тело
 CNDT AAAAAA==
 FLAG 8
 NPCO 1 ingred_bonemeal_01
@@ -380,7 +380,7 @@ NPCO 1 l_b_loot_tomb02
 CONT
 NAME nc_cryptbody02
 MODL NC\\bar_cryptbody02.NIF
-FNAM Corpse
+FNAM Тело
 CNDT AAAAAA==
 FLAG 8
 NPCO 1 ingred_bonemeal_01
@@ -390,7 +390,7 @@ NPCO 1 l_b_loot_tomb
 CONT
 NAME nc_cryptbody03
 MODL NC\\bar_cryptbody03.NIF
-FNAM Corpse
+FNAM Тело
 CNDT AAAAAA==
 FLAG 8
 NPCO 2 ingred_bonemeal_01
@@ -401,7 +401,7 @@ NPCO 1 l_b_rings
 CONT
 NAME nc_cryptbody04
 MODL NC\\bar_cryptbody04.NIF
-FNAM Corpse
+FNAM Тело
 CNDT AAAAAA==
 FLAG 8
 NPCO 1 ingred_bonemeal_01
@@ -412,28 +412,28 @@ NPCO 1 l_m_potion
 MISC
 NAME nc_altmer_skull
 MODL m\\misc_skull00.nif
-FNAM Altmer Skull
+FNAM Череп альтмера
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_bosmer_skull
 MODL m\\misc_skull00.nif
-FNAM Bosmer Skull
+FNAM Череп босмера
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_dunmer_skull
 MODL m\\misc_skull00.nif
-FNAM Dunmer Skull
+FNAM Череп данмера
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_redguard_skull
 MODL m\\misc_skull00.nif
-FNAM Redguard Skull
+FNAM Череп редгарда
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
@@ -1082,7 +1082,7 @@ BYDT DAAAAA==
 NPC_
 NAME nc_argonian
 MODL base_animKnA.nif
-FNAM Lesser Argonian Revenant
+FNAM Малый мертвец-аргонианин
 RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1099,7 +1099,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton
-FNAM Lesser Breton Revenant
+FNAM Малый мертвец-бретон
 RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1116,7 +1116,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elf
-FNAM Lesser Dark Elf Revenant
+FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1133,7 +1133,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf
-FNAM Lesser High Elf Revenant
+FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
@@ -1165,7 +1165,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial
-FNAM Lesser Imperial Revenant
+FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1183,7 +1183,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_khajiit
 MODL base_animKnA.nif
-FNAM Lesser Khajiit Revenant
+FNAM Малый мертвец-хаджит
 RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
@@ -1200,7 +1200,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord
-FNAM Lesser Nord Revenant
+FNAM Малый мертвец-нордлинг
 RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1217,7 +1217,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard
-FNAM Lesser Redguard Revenant
+FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1234,7 +1234,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc
-FNAM Lesser Orc Revenant
+FNAM Малый мертвец-орк
 RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1251,7 +1251,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf
-FNAM Lesser Wood Elf Revenant
+FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
@@ -1268,7 +1268,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf_2
-FNAM Wood Elf Revenant
+FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
@@ -1285,7 +1285,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf_3
-FNAM Greater Wood Elf Revenant
+FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
@@ -1302,7 +1302,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard_2
-FNAM Redguard Revenant
+FNAM Мертвец-редгард
 RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1319,7 +1319,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard_3
-FNAM Greater Redguard Revenant
+FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1336,7 +1336,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc_2
-FNAM Orc Revenant
+FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1353,7 +1353,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc_3
-FNAM Greater Orc Revenant
+FNAM Большой мертвец-орк
 RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1370,7 +1370,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord_2
-FNAM Nord Revenant
+FNAM Мертвец-нордлинг
 RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1387,7 +1387,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord_3
-FNAM Greater Nord Revenant
+FNAM Большой мертвец-нордлинг
 RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1405,7 +1405,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_khajiit_2
 MODL base_animKnA.nif
-FNAM Khajiit Revenant
+FNAM Мертвец-хаджит
 RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
@@ -1423,7 +1423,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_khajiit_3
 MODL base_animKnA.nif
-FNAM Greater Khajiit Revenant
+FNAM Большой мертвец-хаджит
 RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
@@ -1440,7 +1440,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial_2
-FNAM Imperial Revenant
+FNAM Мертвец-имперец
 RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1457,7 +1457,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial_3
-FNAM Greater Imperial Revenant
+FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1474,7 +1474,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf_2
-FNAM High Elf Revenant
+FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
@@ -1508,7 +1508,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf_3
-FNAM Greater High Elf Revenant
+FNAM Большой мертвец-альтмер
 RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
@@ -1549,7 +1549,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elf_2
-FNAM Dark Elf Revenant
+FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1566,7 +1566,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elf_3
-FNAM Greater Dark Elf Revenant
+FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1583,7 +1583,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton_2
-FNAM Breton Revenant
+FNAM Мертвец-бретон
 RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1600,7 +1600,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton_3
-FNAM Greater Breton Revenant
+FNAM Большой мертвец-бретон
 RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1618,7 +1618,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_argonian_2
 MODL base_animKnA.nif
-FNAM Argonian Revenant
+FNAM Мертвец-аргонианин
 RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1636,7 +1636,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_argonian_3
 MODL base_animKnA.nif
-FNAM Greater Argonian Revenant
+FNAM Большой мертвец-аргонианин
 RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
@@ -1654,14 +1654,14 @@ AIDT HgAeHgAOTn0AAAAA
 MISC
 NAME nc_misc_skull10
 MODL m\\misc_skull10.nif
-FNAM Servant's Skull
+FNAM Череп слуги
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull10.tga
 
 CONT
 NAME nc_cauldron
 MODL f\\Furn_Com_Cauldron_02.nif
-FNAM Black Cauldron
+FNAM Черный Котел
 CNDT AECcRQ==
 FLAG 8
 SCRI nc_cauldron_script
@@ -1669,7 +1669,7 @@ SCRI nc_cauldron_script
 ACTI
 NAME nc_ritual_book
 MODL m\\Text_Quarto_open_02.nif
-FNAM Revenant Summoning
+FNAM Вызов Мертвецов
 SCRI nc_ritual_book_script
 
 STAT
@@ -1703,7 +1703,7 @@ MODL barabus\\bar_in_cryptside01.NIF
 DOOR
 NAME bar_door_ex_archedoor
 MODL barabus\\bar_ex_archedoor.NIF
-FNAM Stone Door
+FNAM Каменная дверь
 SNAM Door Stone Open
 ANAM Door Stone Close
 
@@ -1728,14 +1728,14 @@ SCRI nc_crypt_visible
 DOOR
 NAME nc_bar_door_ex_archedoor
 MODL barabus\\bar_ex_archedoor.NIF
-FNAM Stone Door
+FNAM Каменная дверь
 SCRI nc_crypt_visible
 SNAM Door Stone Open
 ANAM Door Stone Close
 
 NPC_
 NAME nc_orc_start
-FNAM Orc Revenant
+FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM Warrior
 ANAM 
@@ -1765,7 +1765,7 @@ AIDT AABkAAAAAAAAAAAA
 ACTI
 NAME nc_bar_orcskull
 MODL blas\\orcskull_bs.NIF
-FNAM Revenant Skull
+FNAM Череп мертвеца
 SCRI nc_start_skull
 
 ACTI
@@ -1799,10 +1799,10 @@ MODL l\\light_sotha_sparks_hi.NIF
 LHDT AAAAAAAAAAD/////AAIAAPv1lwAJAAAA
 SNAM wind low3
 
-NPC_ 4398046511104
+NPC_
 NAME nc_Tragrilar
-FNAM Tragrilar
-RNAM high elf
+FNAM Трагрилар
+RNAM High Elf
 CNAM Necromancer
 ANAM 
 BNAM b_n_high elf_m_head_03
@@ -1964,82 +1964,82 @@ MODL blas\\bb-headless.nif
 FNAM Wood Elf
 BYDT AAACAA==
 
-MISC 4398046511104
+MISC
 NAME nc_arg_corpse
 MODL blas\\argonian_corpse.NIF
-FNAM Argonian Corpse
+FNAM Труп аргонианина
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_arg_corpse_cure
 ITEX blas\\br_body_ar.dds
 
-MISC 4398046511104
+MISC
 NAME nc_bret_corpse
 MODL blas\\human_corpse.NIF
-FNAM Breton Corpse
+FNAM Труп бретона
 MCDT AAAlQwAAAAAAAAAA
 SCRI nc_bret_corpse_cure
 ITEX blas\\br_body_we.dds
 
-MISC 4398046511104
+MISC
 NAME nc_altmer_corpse
 MODL blas\\altmer_corpse.NIF
-FNAM High Elf Corpse
+FNAM Труп высокого эльфа
 MCDT AAAvQwAAAAAAAAAA
 SCRI nc_he_corpse_cure
 ITEX blas\\br_body_he.dds
 
-MISC 4398046511104
+MISC
 NAME nc_imperial_corpse
 MODL blas\\human_corpse.NIF
-FNAM Imperial Corpse
+FNAM Труп имперца
 MCDT AAAlQwAAAAAAAAAA
 SCRI nc_imp_corpse_cure
 ITEX blas\\br_body_we.dds
 
-MISC 4398046511104
+MISC
 NAME nc_bosmer_corpse
 MODL blas\\human_corpse.NIF
-FNAM Wood Elf Corpse
+FNAM Труп лесного эльфа
 MCDT AAD6QgAAAAAAAAAA
 SCRI nc_we_corpse_cure
 ITEX blas\\br_body_we.dds
 
-MISC 4398046511104
+MISC
 NAME nc_dunmer_corpse
 MODL blas\\dunmer_corpse.NIF
-FNAM Dark Elf Corpse
+FNAM Труп темного эльфа
 MCDT AAAlQwAAAAAAAAAA
 SCRI nc_de_corpse_cure
 ITEX blas\\br_body_de.dds
 
-MISC 4398046511104
+MISC
 NAME nc_khajiit_corpse
 MODL blas\\khajiit_corpse.NIF
-FNAM Khajiit Corpse
+FNAM Труп хаджита
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_khajiit_corpse_cure
 ITEX blas\\br_body_kh.dds
 
-MISC 4398046511104
+MISC
 NAME nc_nord_corpse
 MODL blas\\human_corpse.NIF
-FNAM Nord Corpse
+FNAM Труп нордлинга
 MCDT AAA5QwAAAAAAAAAA
 SCRI nc_nord_corpse_cure
 ITEX blas\\br_body_we.dds
 
-MISC 4398046511104
+MISC
 NAME nc_orc_corpse
 MODL blas\\orc_corpse.NIF
-FNAM Orc Corpse
+FNAM Труп орка
 MCDT AABDQwAAAAAAAAAA
 SCRI nc_orc_corpse_cure
 ITEX blas\\br_body_or.dds
 
-MISC 4398046511104
+MISC
 NAME nc_redguard_corpse
 MODL blas\\redguard_corpse.NIF
-FNAM Redguard Corpse
+FNAM Труп редгарда
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_rg_corpse_cure
 ITEX blas\\br_body_rg.dds
@@ -2167,7 +2167,7 @@ BYDT AQADAA==
 MISC
 NAME nc_altmer_skelly
 MODL o\\contain_corpse20.nif
-FNAM High Elf Skeleton
+FNAM Скелет высокого эльфа
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_he_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2175,7 +2175,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_arg_skelly
 MODL o\\contain_corpse00.nif
-FNAM Argonian Skeleton
+FNAM Скелет аргонианина
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_arg_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2183,7 +2183,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_bosmer_skelly
 MODL o\\contain_corpse00.nif
-FNAM Wood Elf Skeleton
+FNAM Скелет лесного эльфа
 MCDT AACgQQAAAAAAAAAA
 SCRI nc_we_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2191,7 +2191,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_bret_skelly
 MODL o\\contain_corpse00.nif
-FNAM Breton Skeleton
+FNAM Скелет бретона
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_bret_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2199,7 +2199,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_dunmer_skelly
 MODL o\\contain_corpse00.nif
-FNAM Dark Elf Skeleton
+FNAM Скелет темного эльфа
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_de_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2207,7 +2207,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_imperial_skelly
 MODL o\\contain_corpse20.nif
-FNAM Imperial Skeleton
+FNAM Скелет имперца
 MCDT AAAMQgAAAAAAAAAA
 SCRI nc_imp_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2215,7 +2215,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_khajiit_skelly
 MODL o\\contain_corpse00.nif
-FNAM Khajiit Skeleton
+FNAM Скелет хаджита
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_khajiit_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2223,7 +2223,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_nord_skelly
 MODL o\\contain_corpse20.nif
-FNAM Nord Skeleton
+FNAM Скелет нордлинга
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_nord_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2231,7 +2231,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_redguard_skelly
 MODL o\\contain_corpse20.nif
-FNAM Redguard Skeleton
+FNAM Скелет редгарда
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_rg_skelly_drop
 ITEX blas\\br_body_rg.dds
@@ -2239,7 +2239,7 @@ ITEX blas\\br_body_rg.dds
 MISC
 NAME nc_orc_skelly
 MODL o\\contain_corpse00.nif
-FNAM Orc Skeleton
+FNAM Скелет орка
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_orc_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2307,7 +2307,7 @@ BYDT AAACAA==
 NPC_
 NAME nc_arg_skelly_NPC
 MODL base_animKnA.nif
-FNAM Argonian Skeleton
+FNAM Скелет аргонианина
 RNAM Argonian Revenant
 CNAM Acrobat
 ANAM 
@@ -2321,7 +2321,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_bret_skelly_NPC
-FNAM Breton Skeleton
+FNAM Скелет бретона
 RNAM Breton Revenant
 CNAM Acrobat
 ANAM 
@@ -2335,7 +2335,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_de_skelly_NPC
-FNAM Dark Elf Skeleton
+FNAM Скелет данмера
 RNAM Dark Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -2349,7 +2349,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_he_skelly_NPC
-FNAM High Elf Skeleton
+FNAM Скелет альтмера
 RNAM High Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -2363,7 +2363,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_imp_skelly_NPC
-FNAM Imperial Skeleton
+FNAM Скелет имперца
 RNAM Imperial Revenant
 CNAM Acrobat
 ANAM 
@@ -2378,7 +2378,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 NPC_
 NAME nc_khajiit_skelly_NPC
 MODL base_animKnA.nif
-FNAM Khajiit Skeleton
+FNAM Скелет хаджита
 RNAM Khajiit Revenant
 CNAM Acrobat
 ANAM 
@@ -2392,7 +2392,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_nord_skelly_NPC
-FNAM Nord Skeleton
+FNAM Скелет нордлинга
 RNAM Nord Revenant
 CNAM Acrobat
 ANAM 
@@ -2406,7 +2406,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_orc_skelly_NPC
-FNAM Orc Skeleton
+FNAM Скелет орка
 RNAM Orc Revenant
 CNAM Acrobat
 ANAM 
@@ -2420,7 +2420,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_rg_skelly_NPC
-FNAM Redguard Skeleton
+FNAM Скелет редгарда
 RNAM Redguard Revenant
 CNAM Acrobat
 ANAM 
@@ -2434,7 +2434,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_we_skelly_NPC
-FNAM Wood Elf Skeleton
+FNAM Скелет босмера
 RNAM Wood Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -2446,10 +2446,10 @@ FLAG 8
 AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-CONT 4398046511104
+CONT
 NAME nc_salt_poison
 MODL o\\Contain_chest_large_01.NIF
-FNAM Salt Vat: Poison
+FNAM Соляная ванная: Яд
 CNDT AACWQw==
 FLAG 8
 SCRI nc_poison_vat
@@ -2457,10 +2457,10 @@ NPCO 500 nc_salt
 NPCO 5 ingred_coprinus_01
 NPCO 5 ingred_russula_01
 
-CONT 4398046511104
+CONT
 NAME nc_salt_fire
 MODL o\\Contain_chest_large_01.NIF
-FNAM Salt Vat: Fire
+FNAM Соляная ванная: Огонь
 CNDT AACWQw==
 FLAG 8
 SCRI nc_fire_vat
@@ -2468,10 +2468,10 @@ NPCO 500 nc_salt
 NPCO 5 ingred_fire_salts_01
 NPCO 5 ingred_fire_petal_01
 
-CONT 4398046511104
+CONT
 NAME nc_salt_frost
 MODL o\\Contain_chest_large_01.NIF
-FNAM Salt Vat: Frost
+FNAM Соляная ванная: Холод
 CNDT AACWQw==
 FLAG 8
 SCRI nc_frost_vat
@@ -2482,7 +2482,7 @@ NPCO 5 ingred_holly_01
 INGR
 NAME nc_salt
 MODL n\\Ingred_Moon_Sugar_01.nif
-FNAM Salt
+FNAM Соль
 IRDT
     0.1 1
     69 2 -1 -1
@@ -2493,7 +2493,7 @@ ITEX n\\Tx_moon_sugar_01.tga
 CONT
 NAME nc_cryptbody02_cursed
 MODL NC\\bar_cryptbody02.NIF
-FNAM Corpse
+FNAM Тело
 CNDT AAAAAA==
 FLAG 8
 SCRI nc_cursed_mummy
@@ -2505,7 +2505,7 @@ NPCO 1 random_extravagant_de_mclothes1
 
 NPC_
 NAME nc_guard_rev
-FNAM High Elf Revenant
+FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM Fire Warlord
 ANAM 
@@ -2549,7 +2549,7 @@ CREA
 NAME nc_ancestor_ghost
 MODL r\\AncestorGhost.NIF
 CNAM ancestor_ghost_greater
-FNAM Ancestor Ghost
+FNAM Дух предков
 SCRI nc_ghost_script
 NPDT AgAAAAEAAAAyAAAAMgAAAB4AAAAyAAAAEgAAADIAAAAyAAAAMgAAABcAAACQAQAAkAEAAGQAAAAeAAAAUAAAABQAAAABAAAABQAAAAEAAAAFAAAAAQAAAAUAAAAAAAAA
 FLAG 1096
@@ -2565,7 +2565,7 @@ AIDT AABkAAAOTn0AAKAA
 MISC
 NAME nc_poison_cured
 MODL blas\\Corpse.NIF
-FNAM Cured Poisonous Corpse
+FNAM Ядовитая мумия
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_poison_corpse_obj
 ITEX blas\\br_poison_corpse.dds
@@ -2573,7 +2573,7 @@ ITEX blas\\br_poison_corpse.dds
 MISC
 NAME nc_fire_cured
 MODL blas\\Corpse.NIF
-FNAM Cured Fire Corpse
+FNAM Огненная мумия
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_fire_corpse_obj
 ITEX blas\\br_fire_corpse.dds
@@ -2581,7 +2581,7 @@ ITEX blas\\br_fire_corpse.dds
 MISC
 NAME nc_frost_cured
 MODL blas\\Corpse.NIF
-FNAM Cured Frost Corpse
+FNAM Ледяная мумия
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_frost_corpse_obj
 ITEX blas\\br_frost_corpse.dds
@@ -2595,7 +2595,7 @@ BYDT AAACAg==
 ARMO
 NAME nc_head_rags
 MODL blas\\mummyhead.NIF
-FNAM Rags
+FNAM Тряпки
 AODT AAAAAAAAgD8BAAAAZAAAAGQAAAACAAAA
 ITEX blas\\rags.tga
 INDX 0
@@ -2615,7 +2615,7 @@ BYDT BAAAAQ==
 
 NPC_
 NAME nc_p_warlord
-FNAM Revenant Warlord
+FNAM Мумифицированный слуга
 RNAM nc_poison_warlord
 CNAM Poison Warlord
 ANAM Revenant
@@ -2643,7 +2643,7 @@ AIDT AAAAAAAOTn0AAAAA
 CLOT
 NAME nc_p_mummy_shirt
 MODL blas\\mummyshirt.nif
-FNAM Poisonous Rags
+FNAM Ядовитые тряпки
 CTDT AgAAAAAAgEABAGQA
 ITEX blas\\rags.tga
 INDX 12
@@ -2653,7 +2653,7 @@ BNAM
 CLOT
 NAME nc_p_mummy_pants
 MODL blas\\mummypants.NIF
-FNAM Poisonous Rags
+FNAM Ядовитые тряпки
 CTDT AAAAAAAAwEABAGQA
 ITEX blas\\rags.tga
 INDX 4
@@ -2687,7 +2687,7 @@ BYDT BwAAAQ==
 CLOT
 NAME nc_f_mummy_pants
 MODL Add Art File
-FNAM Fire Rags
+FNAM Огненные тряпки
 CTDT AAAAAAAAwEABAGQA
 ITEX blas\\rags.tga
 INDX 4
@@ -2697,7 +2697,7 @@ BNAM
 CLOT
 NAME nc_fr_mummy_pants
 MODL blas\\mummypants.NIF
-FNAM Frost Rags
+FNAM Ледяные тряпки
 CTDT AAAAAAAAwEABAGQA
 ITEX blas\\rags.tga
 INDX 4
@@ -2707,7 +2707,7 @@ BNAM
 CLOT
 NAME nc_f_mummy_shirt
 MODL blas\\mummyshirt.nif
-FNAM Fire Rags
+FNAM Огненные тряпки
 CTDT AgAAAAAAgEABAGQA
 ITEX blas\\rags.tga
 INDX 12
@@ -2717,7 +2717,7 @@ BNAM
 CLOT
 NAME nc_fr_mummy_shirt
 MODL blas\\mummyshirt.nif
-FNAM Frost Rags
+FNAM Ледяные тряпки
 CTDT AgAAAAAAgEABAGQA
 ITEX blas\\rags.tga
 INDX 12
@@ -2726,7 +2726,7 @@ BNAM
 
 NPC_
 NAME nc_f_warlord
-FNAM Revenant Warlord
+FNAM Мумифицированный слуга
 RNAM nc_fire_warlord
 CNAM Fire Warlord
 ANAM Revenant
@@ -2752,7 +2752,7 @@ AIDT AAAAAAA8bQAAAAAA
 
 NPC_
 NAME nc_fr_warlord
-FNAM Revenant Warlord
+FNAM Мумифицированный слуга
 RNAM nc_frost_warlord
 CNAM Frost Warlord
 ANAM Revenant
@@ -2780,7 +2780,7 @@ AIDT AAAAAAA8bQAAAAAA
 NPC_ 4398046511104
 NAME nc_thief dead 00
 MODL base_animKnA.nif
-FNAM Dead Hero
+FNAM Мертвая героиня
 RNAM Khajiit
 CNAM Thief
 ANAM Thieves Guild
@@ -2890,7 +2890,7 @@ BYDT DQABAg==
 ARMO
 NAME nc_altmer_pauldron
 MODL blas\\altmer_corpse.NIF
-FNAM High Elf Corpse
+FNAM Труп высокого эльфа
 SCRI nc_pauldron_altmer_script
 AODT AgAAAAAAL0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_he.dds
@@ -2901,7 +2901,7 @@ CNAM nc_altmerf_carry%
 ARMO
 NAME nc_arg_pauldron
 MODL blas\\argonian_corpse.NIF
-FNAM Argonian Corpse
+FNAM Труп аргонианина
 SCRI nc_pauldron_arg_script
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_ar.dds
@@ -2912,7 +2912,7 @@ CNAM nc_argf_carry%
 ARMO
 NAME nc_bosmer_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Wood Elf Corpse
+FNAM Труп лесного эльфа
 SCRI nc_pauldron_bosmer_script
 AODT AgAAAAAA+kIAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -2923,7 +2923,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_dunmer_pauldron
 MODL blas\\dunmer_corpse.NIF
-FNAM Dark Elf Corpse
+FNAM Труп данмера
 SCRI nc_pauldron_dunmer_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_de.dds
@@ -2934,7 +2934,7 @@ CNAM nc_dunmerf_carry%
 ARMO
 NAME nc_breton_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Breton Corpse
+FNAM Труп бретона
 SCRI nc_pauldron_br_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -2945,7 +2945,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_imperial_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Imperial Corpse
+FNAM Труп имперца
 SCRI nc_pauldron_imp_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -2956,7 +2956,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_nord_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Nord Corpse
+FNAM Труп нордлинга
 SCRI nc_pauldron_nord_script
 AODT AgAAAAAAOUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -2967,7 +2967,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_khajiit_pauldron
 MODL blas\\khajiit_corpse.NIF
-FNAM Khajiit Corpse
+FNAM Труп хаджита
 SCRI nc_pauldron_kh_script
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_kh.dds
@@ -2978,7 +2978,7 @@ CNAM nc_khajiitf_carry%
 ARMO
 NAME nc_orc_pauldron
 MODL blas\\orc_corpse.NIF
-FNAM Orc Corpse
+FNAM Труп орка
 SCRI nc_pauldron_orc_script
 AODT AgAAAAAAQ0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_or.dds
@@ -2989,7 +2989,7 @@ CNAM nc_orcf_carry%
 ARMO
 NAME nc_rg_pauldron
 MODL blas\\redguard_corpse.NIF
-FNAM Redguard Corpse
+FNAM Труп редгарда
 SCRI nc_pauldron_rg_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_rg.dds
@@ -3012,77 +3012,77 @@ BYDT DQABAg==
 MISC
 NAME nc_SoulGem_blackened
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Blackened Soul Gem
+FNAM Черный камень душ
 MCDT AADAPzwAAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_arg
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Аргонианин
+FNAM Черный камень душ - Аргонианин
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_altmer
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Альтмер
+FNAM Черный камень душ - Альтмер
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_breton
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Бретон
+FNAM Черный камень душ - Бретон
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_bosmer
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Босмер
+FNAM Черный камень душ - Босмер
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_dunmer
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Данмер
+FNAM Черный камень душ - Данмер
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_imperial
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Имперец
+FNAM Черный камень душ - Имперец
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_khajiit
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Хаджит
+FNAM Черный камень душ - Хаджит
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_nord
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Норд
+FNAM Черный камень душ - Норд
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_orc
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Орк
+FNAM Черный камень душ - Орк
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_redguard
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Редгард
+FNAM Черный камень душ - Редгард
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
@@ -3239,7 +3239,7 @@ TEXT
 CONT
 NAME nc_sarcophagus
 MODL f\\Furn_velothi_altar_01.nif
-FNAM Stone Sarcophagus
+FNAM Каменный саркофаг
 CNDT AAB6RA==
 FLAG 8
 NPCO 1 nc_sarcophagus_body
@@ -3282,7 +3282,7 @@ INTV 7
 CONT
 NAME nc_chest_small
 MODL o\\Contain_chest_small_02.NIF
-FNAM Small Chest
+FNAM Сундучок
 CNDT AADIQQ==
 FLAG 8
 NPCO 4294967286 nc_SoulGem_blackened
@@ -3368,7 +3368,7 @@ BYDT BgAAAA==
 ARMO
 NAME nc_fire_pauldron
 MODL blas\\redguard_corpse.NIF
-FNAM Cured Fire Corpse
+FNAM Огненная мумия
 SCRI nc_pauldron_fire_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_fire_corpse.dds
@@ -3379,7 +3379,7 @@ CNAM nc_rgf_carry%
 ARMO
 NAME nc_frost_pauldron
 MODL blas\\dunmer_corpse.NIF
-FNAM Cured Frost Corpse
+FNAM Ледяная мумия
 SCRI nc_pauldron_frost_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_frost_corpse.dds
@@ -3390,7 +3390,7 @@ CNAM nc_dunmerf_carry%
 ARMO
 NAME nc_poison_pauldron
 MODL blas\\orc_corpse.NIF
-FNAM Cured Poison Corpse
+FNAM Ядовитая мумия
 SCRI nc_pauldron_poison_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_poison_corpse.dds
@@ -3562,7 +3562,7 @@ LHDT AAAAAAAAAAD/////AAEAAP///wAAAAAA
 CONT
 NAME nc_crate
 MODL o\\Contain_crate_01.NIF
-FNAM Crate
+FNAM Ящик
 CNDT AABIQw==
 FLAG 8
 NPCO 4294967281 nc_salt
@@ -3585,7 +3585,7 @@ SCRI nc_crypt_visible
 CONT
 NAME nc_crate_random_pos
 MODL o\\Contain_crate_01.NIF
-FNAM Crate
+FNAM Ящик
 CNDT AABIQw==
 FLAG 8
 NPCO 6 random_pos
@@ -3598,7 +3598,7 @@ NPCO 4294967291 nc_sarcophagus_souls
 CONT
 NAME nc_p_chest_pos5
 MODL o\\Contain_De_Chest_02.NIF
-FNAM Chest
+FNAM Сундук
 CNDT AABIQw==
 FLAG 8
 NPCO 3 random_de_pos_01
@@ -3613,7 +3613,7 @@ NPCO 10 Gold_001
 MISC
 NAME nc_SoulGem_blackened_st
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Blackened Soul Gem
+FNAM Очерненный камень душ
 MCDT AAAAAAAAAAAAAAAA
 SCRI nc_noPickUp
 ITEX blas\\br_black_gem_icon.dds
@@ -3621,7 +3621,7 @@ ITEX blas\\br_black_gem_icon.dds
 WEAP
 NAME nc_knife
 MODL w\\W_Dagger_dragon.nif
-FNAM Soul Splitter
+FNAM Отделитель души
 WPDT AABAQKQGAAAAAJABAAAgQAAAgD8AAAQIBAgFCAEAAAA=
 ITEX w\\Tx_dagger_dragon.tga
 
@@ -3634,7 +3634,7 @@ BYDT AAACAQ==
 ARMO
 NAME nc_stump
 MODL Add World Art
-FNAM Bloody Neck Stump
+FNAM Кровавый обрубок шеи
 AODT AAAAAAAAgD8BAAAAAQAAAAAAAADnAwAA
 INDX 0
 BNAM nc_bloody_stump_ar%
@@ -4955,7 +4955,7 @@ BYDT BgAAAA==
 
 NPC_
 NAME nc_dark elf_zombie
-FNAM Dark Elf Zombie
+FNAM Зомби-данмер
 RNAM Dark Elf Zombie
 CNAM Warrior
 ANAM Revenant
@@ -4969,7 +4969,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_argonian_zombie
 MODL base_animKnA.nif
-FNAM Argonian Zombie
+FNAM Зомби-аргонианин
 RNAM Argonian Zombie
 CNAM Warrior
 ANAM Revenant
@@ -4982,7 +4982,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton_zombie
-FNAM Breton Zombie
+FNAM Зомби-бретон
 RNAM Breton Zombie
 CNAM Warrior
 ANAM Revenant
@@ -4996,7 +4996,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_argonianf_zombie
 MODL base_animKnA.nif
-FNAM Argonian Zombie
+FNAM Зомби-аргонинанин
 RNAM Argonian Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5009,7 +5009,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_bretonf_zombie
-FNAM Breton Zombie
+FNAM Зомби-бретон
 RNAM Breton Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5022,7 +5022,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elff_zombie
-FNAM Dark Elf Zombie
+FNAM Зомби-данмер
 RNAM Dark Elf Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5035,7 +5035,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf_zombie
-FNAM High Elf Zombie
+FNAM Зомби-альтмер
 RNAM High Elf Zombie
 CNAM Battlemage
 ANAM Revenant
@@ -5065,7 +5065,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elff_zombie
-FNAM High Elf Zombie
+FNAM Зомби-альтмер
 RNAM High Elf Zombie
 CNAM Battlemage
 ANAM Revenant
@@ -5095,7 +5095,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial_zombie
-FNAM Imperial Zombie
+FNAM Зомби-инмперец
 RNAM Imperial Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5108,7 +5108,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperialf_zombie
-FNAM Imperial Zombie
+FNAM Зомби-имперец
 RNAM Imperial Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5122,7 +5122,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_khajiit_zombie
 MODL base_animKnA.nif
-FNAM Khajiit Zombie
+FNAM Зомби-хаджит
 RNAM Khajiit Zombie
 CNAM Assassin
 ANAM Revenant
@@ -5136,7 +5136,7 @@ AIDT HgAeHgAOTn0AAAAA
 NPC_
 NAME nc_khajiitf_zombie
 MODL base_animKnA.nif
-FNAM Khajiit Zombie
+FNAM Зомби-хаджит
 RNAM Khajiit Zombie
 CNAM Assassin
 ANAM Revenant
@@ -5149,7 +5149,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf_zombie
-FNAM Wood Elf Zombie
+FNAM Зомби-босмер
 RNAM Wood Elf Zombie
 CNAM Archer
 ANAM Revenant
@@ -5164,7 +5164,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard_zombie
-FNAM Redguard Zombie
+FNAM Зомби-редгард
 RNAM Redguard Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5177,7 +5177,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc_zombie
-FNAM Orc Zombie
+FNAM Зомби-орк
 RNAM Orc Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5190,7 +5190,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord_zombie
-FNAM Nord Zombie
+FNAM Зомби-нордлинг
 RNAM Nord Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5203,7 +5203,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elff_zombie
-FNAM Wood Elf Zombie
+FNAM Зомби-босмер
 RNAM Wood Elf Zombie
 CNAM Archer
 ANAM Revenant
@@ -5218,7 +5218,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguardf_zombie
-FNAM Redguard Zombie
+FNAM Зомби-редгард
 RNAM Redguard Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5231,7 +5231,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orcf_zombie
-FNAM Orc Zombie
+FNAM Зомби-орк
 RNAM Orc Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5244,7 +5244,7 @@ AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nordf_zombie
-FNAM Nord Zombie
+FNAM Зомби-нордлинг
 RNAM Nord Zombie
 CNAM Warrior
 ANAM Revenant
@@ -5468,14 +5468,14 @@ BYDT AAACAg==
 MISC
 NAME nc_SoulGem_blackened_f
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Filled Blackened Soul Gem
+FNAM Заполненный очерненный камень душ
 MCDT AADAPzwAAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 CONT
 NAME nc_corrupter
 MODL m\\Apparatus_A_Calcinator_01.nif
-FNAM Soulgem Corrupter
+FNAM Губитель души
 CNDT AADIQg==
 FLAG 8
 SCRI nc_corrupter_script
@@ -5488,7 +5488,7 @@ FRMR AQAAAA==
 NAME nc_bar_door_ex_archedoor
 XSCL mpmZPw==
 DODT QY+kQMQvxMRLjKnCAAAAAAAAAAAAAAAA
-DNAM Thanatos Temple, Crypt
+DNAM Храм Танатоса, Склеп
 DATA RI9GRwtetcUWI89EAAAAAAAAAADNzMw+
 NAM0 CwAAAA==
 FRMR AgAAAA==
@@ -10023,7 +10023,7 @@ NAME nc_sarcophagus
 DATA mW6vRMeDAEPZKwLDAAAAAAAAAADbD0lA
 
 CELL
-NAME Thanatos Temple, Crypt
+NAME Храм Танатоса, Склеп
 DATA AQAAAAAAAAAAAKA/
 WHGT AAAAAA==
 AMBI R0dHAK06OgAAAAAAAACgPw==
@@ -10034,7 +10034,7 @@ FRMR /wQAAA==
 NAME bar_door_ex_archedoor
 XSCL AQDAPw==
 DODT AJVwwE07x8Lu7DXDAAAAAAAAAAAAAAAA
-DNAM Thanatos Temple
+DNAM Храм Танатоса
 DATA UI20wnwzbETIKq3DAAAAAAAAAADky5ZA
 FRMR AAUAAA==
 NAME bar_door_ex_archedoor
@@ -10373,12 +10373,12 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 
 PGRD
 DATA AAAAAAAAAAAABA0A
-NAME Thanatos Temple, Crypt
+NAME Храм Танатоса, Склеп
 PGRP /////2r6//86////AQBtX/v/////+///QP///wECAAABAAAAZvr//2T///8BAXRl+////3H9//89////AQIAAPz///90/v//QP///wEEdGmdAQAAe/7//0D///8BAmFuUP7//3v+//9A////AQJhbvf////6////QP///wEEYW79////TwEAAED///8BA2NonwEAAIYBAABA////AQJfcln+//95AQAAQP///wECZW5L/v//MQAAAED///8BA3JhmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
-NAME Thanatos Temple
+NAME Храм Танатоса
 DATA AQAAAAAAAAAAAIA/
 WHGT AAAAAA==
 AMBI MzMzANanfAAAAAAAAACAPw==
@@ -10403,17 +10403,17 @@ DATA HjkWwEgfW0OYsoHDAAAAAAAAAAAxMzNA
 FRMR ZgUAAA==
 NAME bar_door_ex_archedoor
 DODT dT93QC/T50MLjqHCAAAAAAAAAADLzExA
-DNAM Thanatos Temple, Crypt
+DNAM Храм Танатоса, Склеп
 DATA KVR9QmnJccO5gizDAAAAAAAAAADbD8k/
 FRMR ZwUAAA==
 NAME in_velothismall_ndoor_01
 DODT zJRdwbwaB0Xq/y/DAAAAAAAAAADLzExA
-DNAM Thanatos Temple
+DNAM Храм Танатоса
 DATA 44iWwzbuZEVszgnEAAAAAAAAAACp3JVA
 FRMR aAUAAA==
 NAME in_velothismall_ndoor_01
 DODT ZE4lwzn4bEWWl9nDAAAAAAAAAAACAMA/
-DNAM Thanatos Temple
+DNAM Храм Танатоса
 DATA lJqGwmHiD0VssIHDAAAAAAAAAACp3JVA
 FRMR aQUAAA==
 NAME nc_salt_frost
@@ -12007,7 +12007,7 @@ DATA ur7lRA4/wkU4MRdDAAAAAAAAAAAPQ7xA
 
 PGRD
 DATA AAAAAAAAAAAABC8A
-NAME Thanatos Temple
+NAME Храм Танатоса
 PGRP AgAAACIAAAAA////AQEAAPv///9oAQAAAP///wECAAADAAAA/gIAAAD///8BAgAA/P///xEFAAAA////AQIAAPn////kBgAAAP///wECAADz////CQgAAAD///8BAQAAQf///8gOAADZ/f//AQEAAAoBAADgDgAAWf7//wECAAAFAQAA7A8AAFn+//8BAwAA8////+0PAABZ/v//AQMAAIL+///cDwAAWf7//wECYiAb/f//ShAAAFn+//8BAgAANfz//0gRAABZ/v//AQJ0Xwz8//+LEgAAWf7//wEBAAAHAAAA3RAAAFv+//8BA2NsygEAABsRAADo/f//AQIAAP4CAAAFEgAAWf3//wEDBgD3/f//2RAAANb9//8BAgAA4Pz//94RAABZ/f//AQIAAO78///4EwAAWf3//wEDAABP/v//lBQAAFn9//8BAgAA6////5gUAABO/v//AQFodKP+//+/EgAAWf3//wECAAB8AQAAqRIAAFn9//8BA2xsvQEAADgUAABZ/f//AQIAAJ4CAAA8EAAAWf7//wECcmGIAwAAPBEAAFn+//8BAgAA5wMAAMwSAABZ/v//AQJhIBAEAABYFAAAmf7//wECZWTsBAAAhBUAABz///8BAmFsOwYAAAEWAABZ////AQIAAEYHAADzFQAAWf///wEDc2jfBwAA5RcAAFn///8BAwAAEwkAAOcVAABZ////AQIIACwJAABIGQAAWf///wECAAA7CAAAEhQAAFn///8BAwAA1wkAAPISAABZ////AQJibLcKAAAaFAAAx////wECAAAICwAAMBYAAFkAAAABA2h0kgoAADIYAADI////AQIAAM4JAAA4FgAAWQAAAAEDdHQgCQAAvRcAAFkAAAABBAAATQcAALYXAABZAAAAAQNiZRQHAADvFQAAWwAAAAEEAADMBwAA9RMAAFwAAAABAmVk4QgAAPUTAABZAAAAAQQAAOgIAADwFQAAXAAAAAEFAAA=
 PGRC AQAAAAAAAAACAAAAAQAAAAMAAAACAAAABAAAAAMAAAAFAAAABAAAAAcAAAAGAAAACAAAAAcAAAAJAAAAGQAAAAgAAAAKAAAADgAAAAkAAAALAAAACgAAAAwAAAALAAAADQAAAAwAAAAJAAAADwAAABEAAAAOAAAAEAAAAA8AAAAXAAAAGAAAAA4AAAASAAAAEQAAABMAAAASAAAAFAAAABYAAAATAAAAFQAAABQAAAATAAAAFwAAABAAAAAWAAAAGAAAABAAAAAXAAAACAAAABoAAAAZAAAAGwAAABoAAAAcAAAAGwAAAB0AAAAcAAAAHgAAAB0AAAAfAAAAHgAAACAAAAAjAAAAHwAAACEAAAAiAAAAIAAAACMAAAAgAAAAJwAAAB8AAAAhAAAAJAAAACMAAAAlAAAAJAAAACYAAAAlAAAAJwAAACgAAAAiAAAAJgAAACYAAAApAAAALQAAACgAAAAuAAAAKgAAACsAAAApAAAALgAAACsAAAApAAAAKgAAAC4AAAAtAAAALgAAAC0AAAAoAAAAKwAAACwAAAAuAAAAKQAAACoAAAArAAAALAAAAC0AAAA=
 
@@ -12020,7 +12020,7 @@ INAM 224389207971127409
 PNAM 
 NNAM 17947296692584517970
 DATA BAAAAAAAAAD///8A
-NAME Blasphemous Revenants%
+NAME Нечестивые мертвецы%
 QSTN AQ==
 
 INFO
@@ -12028,98 +12028,98 @@ INAM 17947296692584517970
 PNAM 224389207971127409
 NNAM 26500182093099031499
 DATA BAAAAAUAAAD///8A
-NAME I awoke to find a skeleton standing over me.  After a brief battle, I easily defeated it.%
+NAME Меня разбудил скелет. Надо сказать, он был довольно слаб и быстро погиб.%
 
 INFO
 INAM 26500182093099031499
 PNAM 17947296692584517970
 NNAM 9727281052034732183
 DATA BAAAAAoAAAD///8A
-NAME The necromancer Tragrilar offered to teach me the ways of his foul practice.  I declined, and he attacked me.%
+NAME Некромант Трагрилар предложил обучить меня своему нечестивому искусству. Но оно мне не интересно, и после отказа он напал на меня.%
 
 INFO
 INAM 9727281052034732183
 PNAM 26500182093099031499
 NNAM 283622251893786701
 DATA BAAAABQAAAD///8A
-NAME I have accepted apprenticeship under Tragrilar.  I will learn how to summon the souls of the damned under his tutelage.  He gave me three books and told me to memorize them.%
+NAME Трагрилар будет обучать меня своему искусству. Под его руководством я узнаю, как вызывать души проклятых. Он дал мне три книги и приказал выучить их.%
 
 INFO
 INAM 283622251893786701
 PNAM 9727281052034732183
 NNAM 2948324822603312878
 DATA BAAAAB4AAAD///8A
-NAME Tragrilar taught me a simple summoning spell.  He told me he will teach me nothing more until I master it.%
+NAME Трагрилар научил меня простому заклинанию вызова. Он также сказал, что не будет обучать меня дальше, пока я не овладею этим заклинанием в совершенстве.%
 
 INFO
 INAM 2948324822603312878
 PNAM 283622251893786701
 NNAM 23791269231747428860
 DATA BAAAACgAAAD///8A
-NAME I have been taught a spell that I can use to burden others.  Tragrilar taught that I must know how to alter the world around me.%
+NAME Трагрилар научил меня заклинанию с эффектом обузы. Он считает, что мне нужно научиться изменять мир вокруг себя.%
 
 INFO
 INAM 23791269231747428860
 PNAM 2948324822603312878
 NNAM 1189322802262308569
 DATA BAAAADIAAAD///8A
-NAME I now know a spell that allows me to harvest the souls of those I kill.  Tragrilar wishes me to bring him the corpse of a Dunmer.%
+NAME Теперь я знаю заклинание, которое позволяет собирать души тех, кого я убью. Трагрилар хочет, чтобы я принес ему труп данмера.%
 
 INFO
 INAM 1189322802262308569
 PNAM 23791269231747428860
 NNAM 118612821438176120
 DATA BAAAADwAAAD///8A
-NAME Tragrilar gave me some more books.  One of them is basically a catalogue of some of the items I need to summon a revenant.  He also instructed me to leave the corpse I have obtained somewhere in the Bitter Coast to let animals strip the flesh from it.%
+NAME Трагрилар дал мне еще несколько книг. Одна из них содержит перечисление предметов, которые мне потребуются для вызова мертвеца. Он также сказал, что тело нужно оставлять где-нибудь в районе Горького Берега, где животные могут убрать с него плоть.%
 
 INFO
 INAM 118612821438176120
 PNAM 1189322802262308569
 NNAM 2811618639307014884
 DATA BAAAAEYAAAD///8A
-NAME I must now go and summon a revenant.%
+NAME Мне нужно вызвать мертвеца.%
 
 INFO
 INAM 2811618639307014884
 PNAM 118612821438176120
 NNAM 3152613355828126513
 DATA BAAAAFAAAAD///8A
-NAME I have called forth a minion from beyond the bounds of death.  I must share my success with Tragrilar.%
+NAME Мой первый мертвец готов. Нужно поделиться этой новостью с Трагриларом.%
 
 INFO
 INAM 3152613355828126513
 PNAM 2811618639307014884
 NNAM 28902214541971020977
 DATA BAAAAFoAAAD///8A
-NAME I have been given free reign to summon what I wish.  Tragrilar said he will teach me more later.%
+NAME Трагрилар разрешил мне вызывать столько мертвецов, сколько я пожелаю. Он обещал продолжить мое обучение позже.%
 
 INFO
 INAM 28902214541971020977
 PNAM 3152613355828126513
 NNAM 323596531986631773
 DATA BAAAAF8AAAD///8A
-NAME Tragrilar has taught me a spell that I can use to transform a corpse into a zombie.  While they are not as useful or hardy as a revenant, it is simple to build quickly build a decent army.%
+NAME Трагрилар научил меня заклинанию, превращающему труп в зомби. Хотя они не так полезны и неуязвимы как мертвецы, их легко делать и можно быстро создать армию.%
 
 INFO
 INAM 323596531986631773
 PNAM 28902214541971020977
 NNAM 1767917568720330340
 DATA BAAAAGQAAAD///8A
-NAME Tragrilar has instructed me on the method of summoning a Revenant Warlord.  He commanded me to do so at once.%
+NAME Трагрилар обучил меня способу вызова мумифицированного слуги и приказал мне применить свои знания на практике.%
 
 INFO
 INAM 1767917568720330340
 PNAM 323596531986631773
 NNAM 32641254961264219277
 DATA BAAAAGkAAAD///8A
-NAME I have successfully summoned a Revenant Warlord.%
+NAME Мне удалось вызвать мумифицированного слугу.%
 
 INFO
 INAM 32641254961264219277
 PNAM 1767917568720330340
 NNAM 
 DATA BAAAAG4AAAD///8A
-NAME My master and teacher will pass beyond this world in a matter of hours.  He has requested that I not descrate his body by practicing my arcane art on it. I have agreed to honor his last wish.%
+NAME Мой учитель уйдет из этого мира через несколько часов. Он попросил не осквернять его тело и не пытаться использовать его для создания мертвеца. Это его последнее желание, и оно должно быть исполнено.%
 QSTF AQ==
 
 DIAL
@@ -12132,7 +12132,7 @@ PNAM
 NNAM 251558583404429543
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
-NAME My stats are:%
+NAME Мои характеристики:%
 SCVR 01500%
 INTV 10
 BNAM
@@ -12144,7 +12144,7 @@ PNAM 1417026704414232306
 NNAM 28623218183223315018
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
-NAME My skills are:%
+NAME Мои умения:%
 SCVR 01500%
 INTV 9
 BNAM
@@ -12156,7 +12156,7 @@ PNAM 251558583404429543
 NNAM 1327913343280842535
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
-NAME My level is:%
+NAME Мой уровень:%
 SCVR 01500%
 INTV 8
 BNAM
@@ -13223,7 +13223,7 @@ PNAM 313128629321724650
 NNAM 
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
-NAME Это единственный камень душ, который может содержать что-то большее, чем душа животного или даэдра.  Их можно найти в гробницах, или иногда их продают другие некроманты. Но, все равно, их трудно найти, поэтому я создал специально устройство, которое называл Губитель душ. Оно позволяет преваращать обычные камни душ в черные.%
+NAME Это единственный камень душ, который может содержать что-то большее, чем душа животного или даэдра.  Их можно найти в гробницах, или иногда их продают другие некроманты. Но, все равно, их трудно найти, поэтому я создал специально устройство, которое называл Губитель души. Оно позволяет очернять обычные камни душ.%
 
 DIAL
 NAME Greeting 0

@@ -1,4 +1,4 @@
 #!/bin/sh
 
 diff -D ABCD r1 x1 > d1
-diff -D ABCD r1 x1 > d2
+diff -D ABCD r2 x2 > d2

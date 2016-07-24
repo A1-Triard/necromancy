@@ -6,8 +6,9 @@ SPEL
 NAME nc_skull_spell
 FNAM Заключить душу
 SPDT AAAAABQAAAAAAAAA
-ENAM RAD//wAAAAAAAAAADwAAAAEAAAABAAAA
+ENAM KwD//wAAAAAAAAAADwAAAAEAAAABAAAA
 ENAM BwD//wIAAAAAAAAADwAAAAEAAAABAAAA
+ENAM LwD//wAAAAAAAAAADwAAAAEAAAABAAAA
 
 SPEL
 NAME nc_comp_cure
@@ -96,14 +97,52 @@ SPEL
 NAME nc_summon
 FNAM Вызов Мертвеца
 SPDT AAAAAH0AAAAAAAAA
-ENAM FAD//wAAAAAAAAAAHgAAABQAAAA8AAAA
-ENAM EgD//wAAAAAAAAAAHgAAAAEAAAAKAAAA
-ENAM EwD//wAAAAAAAAAAHgAAAAUAAAAPAAAA
-ENAM LgD//wAAAAAAAAAAPAAAAAEAAAABAAAA
+ENAM BQD//wAAAAAAAAAACgAAAAUAAAAPAAAA
+ENAM EgD//wAAAAAAAAAABQAAAAEAAAAFAAAA
+ENAM CAD//wAAAAAAAAAACgAAAAUAAAAPAAAA
 
-CREA 137438953472
-NAME mudcrab
-DELE AAAAAA==
+SPEL
+NAME nc_extraction
+FNAM Извлечение души
+SPDT AAAAAB4AAAAAAAAA
+ENAM QQD//wAAAAAAAAAAPAAAAAoAAAAKAAAA
+ENAM YQD//wAAAAAAAAAAPAAAADIAAAAyAAAA
+
+SPEL
+NAME nc_raise_zombie
+FNAM Реанимация
+SPDT AAAAADIAAAAAAAAA
+ENAM KwD//wAAAAAAAAAADwAAAAEAAAABAAAA
+ENAM LwD//wAAAAAAAAAADwAAAAEAAAABAAAA
+
+SPEL
+NAME nc_zombie_rot
+FNAM Гниль зомби
+SPDT BAAAAAAAAAAEAAAA
+ENAM GwD//wAAAAAAAAAAAAAAAAEAAAABAAAA
+ENAM SwD//wAAAAAAAAAAAQAAAAEAAAABAAAA
+ENAM EQD/BAAAAAAAAAAAAAAAAA8AAAAPAAAA
+ENAM FgD/AwAAAAAAAAAAAAAAAA8AAAAPAAAA
+
+SPEL
+NAME nc_dead_zombie
+FNAM Гниль зомби
+SPDT AAAAAAAAAAAEAAAA
+ENAM GwD//wEAAAAUAAAADwAAAAEAAAAFAAAA
+
+SPEL
+NAME nc_raise_z_spell
+FNAM Реанимация
+SPDT AAAAAAAAAAAEAAAA
+ENAM DwD//wEAAAAFAAAAAgAAAAgAAAAPAAAA
+
+SPEL
+NAME nc_summon_effects
+FNAM Вызов мертвеца
+SPDT AAAAAAAAAAAEAAAA
+ENAM FwD//wIAAAAKAAAABQAAAAEAAAAKAAAA
+ENAM GAD//wIAAAAKAAAABQAAAAoAAABkAAAA
+ENAM GQD//wIAAAAKAAAABQAAAAEAAAAyAAAA
 
 LEVI
 NAME l_n_soul gem
@@ -424,21 +463,21 @@ NAME nc_argonian_skull
 MODL blas\\argonianskull_bs.NIF
 FNAM Череп аргонианина
 MCDT AAAAPwAAAAAAAAAA
-ITEX blas\\bar_argskullicon.dds
+ITEX blas\\bar_argskullicon.tga
 
 MISC
 NAME nc_orc_skull
 MODL blas\\orcskull_bs.NIF
 FNAM Череп орка
 MCDT AAAAPwAAAAAAAAAA
-ITEX blas\\bar_orcskullicon.dds
+ITEX blas\\bar_orcskullicon.tga
 
 MISC
 NAME nc_khajiit_skull
 MODL blas\\Khajitskull_bs.NIF
 FNAM Череп хаджита
 MCDT AAAAPwAAAAAAAAAA
-ITEX blas\\bar_khajitskullicon.dds
+ITEX blas\\bar_khajitskullicon.tga
 
 BODY
 NAME nc_Skel_M_Chest_arg
@@ -1050,13 +1089,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton
@@ -1067,13 +1106,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elf
@@ -1084,13 +1123,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 2072
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf
@@ -1122,7 +1161,7 @@ NPCS demoralizing touch\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS demoralize humanoid\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS purge magic\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS touch dispel\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial
@@ -1133,13 +1172,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_khajiit
@@ -1151,30 +1190,30 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord
-FNAM Малый мертвец-норд
+FNAM Малый мертвец-нордлинг
 RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard
@@ -1185,13 +1224,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc
@@ -1202,13 +1241,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf
@@ -1219,13 +1258,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 20 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf_2
@@ -1236,13 +1275,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 20 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_wood elf_3
@@ -1253,13 +1292,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 20 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard_2
@@ -1270,13 +1309,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_redguard_3
@@ -1287,13 +1326,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc_2
@@ -1304,13 +1343,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_orc_3
@@ -1321,47 +1360,47 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord_2
-FNAM Мертвец-норд
+FNAM Мертвец-нордлинг
 RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_nord_3
-FNAM Большой мертвец-норд
+FNAM Большой мертвец-нордлинг
 RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_khajiit_2
@@ -1373,13 +1412,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_khajiit_3
@@ -1391,13 +1430,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial_2
@@ -1408,13 +1447,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_imperial_3
@@ -1425,13 +1464,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf_2
@@ -1465,7 +1504,7 @@ NPCS absorb intelligence\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS absorb strength\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_high elf_3
@@ -1506,7 +1545,7 @@ NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS Ghost Curse\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS vivec's_wrath\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elf_2
@@ -1517,13 +1556,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_dark elf_3
@@ -1534,13 +1573,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton_2
@@ -1551,13 +1590,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_breton_3
@@ -1568,13 +1607,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_argonian_2
@@ -1586,13 +1625,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 NPC_
 NAME nc_argonian_3
@@ -1604,13 +1643,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgAOTn0AAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 
 MISC
 NAME nc_misc_skull10
@@ -1619,20 +1658,19 @@ FNAM Череп слуги
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull10.tga
 
-CONT 4398046511104
+CONT
 NAME nc_cauldron
 MODL f\\Furn_Com_Cauldron_02.nif
 FNAM Черный Котел
 CNDT AECcRQ==
 FLAG 8
 SCRI nc_cauldron_script
-NPCO 1 blue light
 
 ACTI
 NAME nc_ritual_book
 MODL m\\Text_Quarto_open_02.nif
 FNAM Вызов Мертвецов
-SCRI nc_ritualbook_script
+SCRI nc_ritual_book_script
 
 STAT
 NAME bar_in_cryptcent
@@ -1763,22 +1801,21 @@ SNAM wind low3
 
 NPC_
 NAME nc_Tragrilar
-MODL base_anim.nif
 FNAM Трагрилар
 RNAM High Elf
 CNAM Necromancer
 ANAM 
-BNAM nc_tragrilar_head
-KNAM nc_tragrilar_hair
-SCRI nolore
-NPDT QwAyAACrIwEAAAAA
+BNAM b_n_high elf_m_head_03
+KNAM b_n_high elf_m_hair_04
+SCRI nc_tragrilar_death
+NPDT QwAyAAAg1AIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
-NPCO 1 nc_tragrilar_mantle
-NPCO 1 common_shirt_03_c
-NPCO 1 common_shoes_03
+NPCO 1 magickguard robe
+NPCO 1 common_shirt_02
+NPCO 1 common_shoes_06
 NPCO 1 common_pants_03_b
-AIDT HgAeHgCrIwEAAAAA
+AIDT HgAeHgAg1AIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BOOK
@@ -1800,18 +1837,6 @@ TEXT
     Кожа нетча и обрезки металла необходимы, чтобы не дать скелету распасться. Без них мертвец может рассыпаться в порошок, и чары, удерживающие его в этом мире, разобьются. Требуется один кусок кожи и один кусок металла.<BR><BR>
     
     Как только все материалы собраны, я помещаю их вместе с черепом и подходящим скелетом в свой котел. Затем я беру черный камень душ, который содержит сущность умершего, в руки. После прочтения длинного ряда заклинаний, когда я почти на волосок от смерти, передо мной появляется мертвец.<BR><BR><BR>
-    <DIV ALIGN="CENTER">
-    Мумифицированные слуги<BR>
-    <DIV ALIGN="LEFT"><BR><BR>
-    Для получения слуги необходимо:<BR>
-    Тело, доведенное до состояния мумии<BR>
-    10 порций костяной муки<BR>
-    Кожа нетча<BR>
-    Обрезки металла<BR>
-    Череп<BR>
-    Рулон ткани определенного цвета<BR>
-    <BR>
-    Все это я кладу в котел и читаю заклинание. Как можно видеть камень душ не требуется. Можно создать огненного, ледяного и ядовитого слугу.<BR>
 
 BODY
 NAME nc_dead_farg_head
@@ -1998,7 +2023,7 @@ ITEX blas\\br_body_kh.dds
 MISC
 NAME nc_nord_corpse
 MODL blas\\human_corpse.NIF
-FNAM Труп норда
+FNAM Труп нордлинга
 MCDT AAA5QwAAAAAAAAAA
 SCRI nc_nord_corpse_cure
 ITEX blas\\br_body_we.dds
@@ -2198,7 +2223,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_nord_skelly
 MODL o\\contain_corpse20.nif
-FNAM Скелет норда
+FNAM Скелет нордлинга
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_nord_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -2282,7 +2307,7 @@ BYDT AAACAA==
 NPC_
 NAME nc_arg_skelly_NPC
 MODL base_animKnA.nif
-FNAM Скелет Аргонианина
+FNAM Скелет аргонианина
 RNAM Argonian Revenant
 CNAM Acrobat
 ANAM 
@@ -2291,7 +2316,7 @@ KNAM
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2305,7 +2330,7 @@ KNAM
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2319,7 +2344,7 @@ KNAM
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2333,7 +2358,7 @@ KNAM
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2347,7 +2372,7 @@ KNAM
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2362,12 +2387,12 @@ KNAM
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_nord_skelly_NPC
-FNAM Скелет норда
+FNAM Скелет нордлинга
 RNAM Nord Revenant
 CNAM Acrobat
 ANAM 
@@ -2376,7 +2401,7 @@ KNAM
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2390,7 +2415,7 @@ KNAM
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2404,7 +2429,7 @@ KNAM
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -2418,7 +2443,7 @@ KNAM
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgAOTn0AAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CONT
@@ -2429,8 +2454,8 @@ CNDT AACWQw==
 FLAG 8
 SCRI nc_poison_vat
 NPCO 500 nc_salt
-NPCO 5 ingred_russula_01
 NPCO 5 ingred_coprinus_01
+NPCO 5 ingred_russula_01
 
 CONT
 NAME nc_salt_fire
@@ -2440,8 +2465,8 @@ CNDT AACWQw==
 FLAG 8
 SCRI nc_fire_vat
 NPCO 500 nc_salt
-NPCO 5 ingred_fire_petal_01
 NPCO 5 ingred_fire_salts_01
+NPCO 5 ingred_fire_petal_01
 
 CONT
 NAME nc_salt_frost
@@ -2535,7 +2560,7 @@ NPCS ghost ability\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to disease\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to frost\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT AABkAADGgHwAAKAA
+AIDT AABkAAAOTn0AAKAA
 
 MISC
 NAME nc_poison_cured
@@ -2594,10 +2619,10 @@ FNAM Мумифицированный слуга
 RNAM nc_poison_warlord
 CNAM Poison Warlord
 ANAM Revenant
-BNAM 
+BNAM nc_zombie_head
 KNAM 
 SCRI nc_comp3Script_pwar
-NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQBkAgAAAAAAAA==
+NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 8
 NPCO 1 nc_p_mummy_shirt
 NPCO 1 nc_p_mummy_pants
@@ -2613,14 +2638,14 @@ NPCS poisonbloom\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS viperbolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS dire weakness to poison\0\0\0\0\0\0\0\0
 NPCS nc_poison_warlord_spell\0\0\0\0\0\0\0\0
-AIDT AAAAAADGgHwAAAAA
+AIDT AAAAAAAOTn0AAAAA
 
 CLOT
 NAME nc_p_mummy_shirt
 MODL blas\\mummyshirt.nif
 FNAM Ядовитые тряпки
 CTDT AgAAAAAAgEABAGQA
-ITEX blas\\rags.dds
+ITEX blas\\rags.tga
 INDX 12
 BNAM
     nc_poison_mummy_shirt
@@ -2630,7 +2655,7 @@ NAME nc_p_mummy_pants
 MODL blas\\mummypants.NIF
 FNAM Ядовитые тряпки
 CTDT AAAAAAAAwEABAGQA
-ITEX blas\\rags.dds
+ITEX blas\\rags.tga
 INDX 4
 BNAM
     nc_poison_mummy_pants
@@ -2664,7 +2689,7 @@ NAME nc_f_mummy_pants
 MODL Add Art File
 FNAM Огненные тряпки
 CTDT AAAAAAAAwEABAGQA
-ITEX blas\\rags.dds
+ITEX blas\\rags.tga
 INDX 4
 BNAM
     nc_fire_mummy_pants
@@ -2674,7 +2699,7 @@ NAME nc_fr_mummy_pants
 MODL blas\\mummypants.NIF
 FNAM Ледяные тряпки
 CTDT AAAAAAAAwEABAGQA
-ITEX blas\\rags.dds
+ITEX blas\\rags.tga
 INDX 4
 BNAM
     nc_frost_mummy_pants
@@ -2684,7 +2709,7 @@ NAME nc_f_mummy_shirt
 MODL blas\\mummyshirt.nif
 FNAM Огненные тряпки
 CTDT AgAAAAAAgEABAGQA
-ITEX blas\\rags.dds
+ITEX blas\\rags.tga
 INDX 12
 BNAM
     nc_fire_mummy_shirt
@@ -2694,7 +2719,7 @@ NAME nc_fr_mummy_shirt
 MODL blas\\mummyshirt.nif
 FNAM Ледяные тряпки
 CTDT AgAAAAAAgEABAGQA
-ITEX blas\\rags.dds
+ITEX blas\\rags.tga
 INDX 12
 BNAM
     nc_frost_mummy_shirt
@@ -2708,7 +2733,7 @@ ANAM Revenant
 BNAM nc_fire_head
 KNAM 
 SCRI nc_comp3Script_fwar
-NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQBkAgAAAAAAAA==
+NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 8
 NPCO 1 nc_f_mummy_shirt
 NPCO 1 nc_f_mummy_pants
@@ -2734,7 +2759,7 @@ ANAM Revenant
 BNAM nc_frost_head
 KNAM 
 SCRI nc_comp3Script_frwar
-NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQBkAgAAAAAAAA==
+NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 8
 NPCO 1 nc_fr_mummy_shirt
 NPCO 1 nc_fr_mummy_pants
@@ -2931,7 +2956,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_nord_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Труп норда
+FNAM Труп нордлинга
 SCRI nc_pauldron_nord_script
 AODT AgAAAAAAOUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -2987,77 +3012,77 @@ BYDT DQABAg==
 MISC
 NAME nc_SoulGem_blackened
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ
+FNAM Черный камень душ
 MCDT AADAPzwAAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_arg
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Аргонианин
+FNAM Черный камень душ - Аргонианин
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_altmer
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Альтмер
+FNAM Черный камень душ - Альтмер
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_breton
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Бретон
+FNAM Черный камень душ - Бретон
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_bosmer
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Босмер
+FNAM Черный камень душ - Босмер
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_dunmer
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Данмер
+FNAM Черный камень душ - Данмер
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_imperial
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Имперец
+FNAM Черный камень душ - Имперец
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_khajiit
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Хаджит
+FNAM Черный камень душ - Хаджит
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_nord
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Норд
+FNAM Черный камень душ - Норд
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_orc
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Орк
+FNAM Черный камень душ - Орк
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
 NAME nc_SoulGem_redguard
 MODL blas\\nc_blackened_soulgem.nif
-FNAM Черный Камень Душ - Редгард
+FNAM Черный камень душ - Редгард
 MCDT AADAPygKAAAAAAAA
 ITEX blas\\br_black_gem_icon.dds
 
@@ -3217,20 +3242,18 @@ MODL f\\Furn_velothi_altar_01.nif
 FNAM Каменный саркофаг
 CNDT AAB6RA==
 FLAG 8
-NPCO 1 ingred_bonemeal_01
 NPCO 1 nc_sarcophagus_body
 NPCO 1 nc_sarcophagus_skull
 NPCO 1 nc_sarcophagus_souls
 NPCO 1 random gold_lev_10
 NPCO 1 l_b_loot_tomb
+NPCO 1 random_bonemeal
 
 LEVI
 NAME nc_sarcophagus_souls
 DATA 1
 NNAM 60
-INDX 2
-INAM nc_SoulGem_dunmer
-INTV 5
+INDX 1
 INAM nc_SoulGem_blackened
 INTV 5
 
@@ -3262,7 +3285,7 @@ MODL o\\Contain_chest_small_02.NIF
 FNAM Сундучок
 CNDT AADIQQ==
 FLAG 8
-NPCO 4294967295 nc_SoulGem_blackened
+NPCO 4294967286 nc_SoulGem_blackened
 
 BODY
 NAME nc_skinm_chest
@@ -3341,22 +3364,6 @@ NAME nc_skinm_wrist
 MODL blas\\nc_skinm_br.nif
 FNAM nc_poison_warlord
 BYDT BgAAAA==
-
-NPC_
-NAME nc_test_zombie
-FNAM Тест
-RNAM nc_poison_warlord
-CNAM Acrobat
-ANAM 
-BNAM nc_zombie_head
-KNAM nc_skinm_hair
-NPDT AQAyMjI8MjwyMgUFBQ8FBQUPKAUPDwoFBQUFHgojI1UKLQoUFAA3AGQA3AAyAAAAAAAAAA==
-FLAG 8
-NPCO 1 nc_p_mummy_shirt
-NPCO 1 nc_p_mummy_pants
-NPCO 1 nc_head_rags
-AIDT HgAeHgDGgHwAAAAA
-AI_W AAIFAAA8FAoAAAAAAAE=
 
 ARMO
 NAME nc_fire_pauldron
@@ -3563,44 +3570,1915 @@ NPCO 4294967295 misc_clothbolt_01
 NPCO 4294967295 misc_clothbolt_02
 NPCO 4294967295 misc_clothbolt_03
 
-ACTI 4398046511104
-NAME nc_rev_placer
-MODL EditorMarker.NIF
+ACTI
+NAME nc_skull_entrance2
+MODL blas\\skull_entrance2.nif
 FNAM 
+SCRI nc_crypt_visible
+
+LIGH
+NAME nc_red_eyes
+MODL 
+LHDT AAAAAAAAAAD/////ZAAAAPw8AwAAAQAA
+SCRI nc_crypt_visible
+
+CONT
+NAME nc_crate_random_pos
+MODL o\\Contain_crate_01.NIF
+FNAM Ящик
+CNDT AABIQw==
+FLAG 8
+NPCO 6 random_pos
+NPCO 5 random gold
+NPCO 1 random_loot_special
+NPCO 1 random_potion_attribute_restore
+NPCO 20 random_loot_special_marksman
+NPCO 4294967291 nc_sarcophagus_souls
+
+CONT
+NAME nc_p_chest_pos5
+MODL o\\Contain_De_Chest_02.NIF
+FNAM Сундук
+CNDT AABIQw==
+FLAG 8
+NPCO 3 random_de_pos_01
+NPCO 1 random_book_imperial_dunmer
+NPCO 1 random_food
+NPCO 1 random_iron_weapon
+NPCO 1 random_loot_special
+NPCO 20 random_loot_special_marksman
+NPCO 4294967291 nc_sarcophagus_souls
+NPCO 10 Gold_001
+
+MISC
+NAME nc_SoulGem_blackened_st
+MODL blas\\nc_blackened_soulgem.nif
+FNAM Очерненный камень душ
+MCDT AAAAAAAAAAAAAAAA
+SCRI nc_noPickUp
+ITEX blas\\br_black_gem_icon.dds
+
+WEAP
+NAME nc_knife
+MODL w\\W_Dagger_dragon.nif
+FNAM Отделитель души
+WPDT AABAQKQGAAAAAJABAAAgQAAAgD8AAAQIBAgFCAEAAAA=
+ITEX w\\Tx_dagger_dragon.tga
 
 BODY
-NAME nc_tragrilar_head
-MODL blas\\Head_Tragrilar_m_head.nif
+NAME nc_bloody_stump
+MODL blas\\bb-headless.nif
 FNAM High Elf
+BYDT AAACAQ==
+
+ARMO
+NAME nc_stump
+MODL Add World Art
+FNAM Кровавый обрубок шеи
+AODT AAAAAAAAgD8BAAAAAQAAAAAAAADnAwAA
+INDX 0
+BNAM nc_bloody_stump_ar%
+
+BODY
+NAME nc_zskinm_or_chest
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_or_foot
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_or_forearm
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_or_groin
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_or_hand
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_or_knee
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_or_neck
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_or_uarm
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_or_uleg
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_or_head
+MODL blas\\nc_orc_zombie_head.nif
+FNAM Orc Zombie
+BYDT AAACAA==
+
+NPC_
+NAME nc_zombie_test
+RNAM Wood Elf Zombie
+CNAM Acrobat
+ANAM 
+BNAM nc_zskinm_we_head
+KNAM 
+NPDT AQAyAAAOTn0AAAAA
+FLAG 24
+AIDT HgAeHgAOTn0AAAAA
+AI_W AAIFAAA8FAoAAAAAAAE=
+
+BODY
+NAME nc_zskinf_or_head
+MODL blas\\nc_orc_zombie_head.nif
+FNAM Orc Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinm_arg_head
+MODL blas\\Argonian_M_Head_03_Z.nif
+FNAM Argonian Zombie
 BYDT AAACAA==
 
 BODY
-NAME nc_tragrilar_hair
-MODL blas\\BH_FP_HE_m_hair_02w.NIF
-FNAM High Elf
-BYDT AQACAA==
+NAME nc_zskinm_or_ank
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_or_wrist
+MODL blas\\nc_skinm_orz.nif
+FNAM Orc Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_br_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Breton Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_de_head
+MODL blas\\nc_de_zombie_head.nif
+FNAM Dark Elf Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_he_head
+MODL blas\\nc_he_zombie_head.nif
+FNAM High Elf Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_imp_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Imperial Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_kha_head
+MODL blas\\Khajiit_M_Head_03_Z.nif
+FNAM Khajiit Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_no_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Nord Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_rg_head
+MODL blas\\nc_rg_zombie_head.nif
+FNAM Redguard Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinm_we_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Wood Elf Zombie
+BYDT AAACAA==
+
+BODY
+NAME nc_zskinf_arg_head
+MODL blas\\Argonian_F_Head_02_Z.nif
+FNAM Argonian Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_br_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Breton Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_de_head
+MODL blas\\nc_de_zombie_head.nif
+FNAM Dark Elf Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_he_head
+MODL blas\\nc_he_zombie_head.nif
+FNAM High Elf Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_imp_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Imperial Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_kha_head
+MODL blas\\Khajiit_F_Head_04_Z.nif
+FNAM Khajiit Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_no_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Nord Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_rg_head
+MODL blas\\nc_rg_zombie_head.nif
+FNAM Redguard Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_we_head
+MODL blas\\nc_new_zombie_head.nif
+FNAM Wood Elf Zombie
+BYDT AAADAA==
+
+BODY
+NAME nc_zskinf_or_ank
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_or_chest
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_or_foot
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_or_forearm
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_or_groin
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_or_hand
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_or_knee
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_or_neck
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_or_uarm
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_or_uleg
+MODL blas\\nc_skinf_orz.nif
+FNAM Orc Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_kha_ank
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_kha_chest
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_kha_foot
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_kha_forearm
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_kha_groin
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_kha_hand
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_kha_knee
+MODL blas\\khajiit_f_tail_Z.nif
+FNAM Khajiit Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_kha_neck
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_kha_uarm
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_kha_uleg
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_arg_ank
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_arg_chest
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_arg_foot
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_arg_forearm
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_arg_groin
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_arg_hand
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Revenant
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_arg_knee
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_arg_neck
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_arg_uarm
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_arg_uleg
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_br_ank
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_br_chest
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_br_foot
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_br_forearm
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_br_groin
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_br_hand
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_br_knee
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_br_neck
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_br_uarm
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_br_uleg
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_br_wrist
+MODL blas\\nc_skinf_brz.nif
+FNAM Breton Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_arg_wrist
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_kha_wrist
+MODL blas\\skinf_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_de_ank
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_de_chest
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_de_foot
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_de_forearm
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_de_groin
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_de_hand
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_de_knee
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_de_neck
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_de_uarm
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_de_uleg
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_de_wrist
+MODL blas\\nc_skinf_dez.nif
+FNAM Dark Elf Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_he_ank
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_he_chest
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_he_foot
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_he_forearm
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_he_groin
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_he_hand
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_he_knee
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_he_neck
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_he_uarm
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_he_uleg
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_he_wrist
+MODL blas\\nc_skinf_hez.nif
+FNAM High Elf Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_imp_ank
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_imp_chest
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_imp_foot
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_imp_forearm
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_imp_groin
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_imp_hand
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_imp_knee
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_imp_neck
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_imp_uarm
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_imp_uleg
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_imp_wrist
+MODL blas\\nc_skinf_imz.nif
+FNAM Imperial Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_no_ank
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_no_chest
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_no_foot
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_no_forearm
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_no_groin
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_no_hand
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_no_knee
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_no_neck
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_no_uarm
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_no_uleg
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_no_wrist
+MODL blas\\nc_skinf_noz.nif
+FNAM Nord Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_rg_ank
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_rg_chest
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_rg_foot
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_rg_forearm
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_rg_groin
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_rg_hand
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_rg_knee
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_rg_neck
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_rg_uarm
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_rg_uleg
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_rg_wrist
+MODL blas\\nc_skinf_rgz.nif
+FNAM Redguard Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinf_we_ank
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CgABAA==
+
+BODY
+NAME nc_zskinf_we_chest
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT AwABAA==
+
+BODY
+NAME nc_zskinf_we_foot
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CQABAA==
+
+BODY
+NAME nc_zskinf_we_forearm
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BwABAA==
+
+BODY
+NAME nc_zskinf_we_groin
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BAABAA==
+
+BODY
+NAME nc_zskinf_we_hand
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BQABAA==
+
+BODY
+NAME nc_zskinf_we_knee
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CwABAA==
+
+BODY
+NAME nc_zskinf_we_neck
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT AgABAA==
+
+BODY
+NAME nc_zskinf_we_uarm
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CAABAA==
+
+BODY
+NAME nc_zskinf_we_uleg
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT DAABAA==
+
+BODY
+NAME nc_zskinf_we_wrist
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BgABAA==
+
+BODY
+NAME nc_zskinm_br_ank
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_br_chest
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_br_foot
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_br_forearm
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_br_groin
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_br_hand
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_br_knee
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_br_neck
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_br_uarm
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_br_uleg
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_br_wrist
+MODL blas\\nc_skinm_arbz.nif
+FNAM Breton Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_de_ank
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_de_chest
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_de_foot
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_de_forearm
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_de_groin
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_de_hand
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_de_knee
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_de_neck
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_de_uarm
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_de_uleg
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_de_wrist
+MODL blas\\nc_skinm_dez.nif
+FNAM Dark Elf Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_he_ank
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_he_chest
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_he_foot
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_he_groin
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_he_hand
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_he_knee
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_he_neck
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_he_uarm
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_he_uleg
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_he_wrist
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_he_forearm
+MODL blas\\nc_skinm_hez.nif
+FNAM High Elf Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_imp_ank
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_imp_chest
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_imp_foot
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_imp_forearm
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_imp_groin
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_imp_hand
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_imp_knee
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_imp_neck
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_imp_uarm
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_imp_uleg
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_imp_wrist
+MODL blas\\nc_skinm_imz.nif
+FNAM Imperial Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_no_ank
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_no_chest
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_no_foot
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_no_forearm
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_no_groin
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_no_hand
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_no_knee
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_no_neck
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_no_uarm
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_no_uleg
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_no_wrist
+MODL blas\\nc_skinm_noz.nif
+FNAM Nord Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_rg_ank
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_rg_chest
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_rg_foot
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_rg_forearm
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_rg_groin
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_rg_hand
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_rg_knee
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_rg_neck
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_rg_uarm
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_rg_uleg
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_rg_wrist
+MODL blas\\nc_skinm_rgz.nif
+FNAM Redguard Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_we_ank
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_we_chest
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_we_foot
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_we_forearm
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_we_groin
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_we_hand
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_we_knee
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_we_neck
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_we_uarm
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_we_uleg
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_we_wrist
+MODL blas\\nc_skinm_wez.nif
+FNAM Wood Elf Zombie
+BYDT BgAAAA==
+
+NPC_
+NAME nc_dark elf_zombie
+FNAM Зомби-данмер
+RNAM Dark Elf Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_de_head
+KNAM 
+SCRI nc_comp3Script_dez
+NPDT FABkNy1MUGIpKEAwQEAwRDAwRAcRBwcHDAcHBwcHBwwRJwcHBwD0AW4APwFkAgAAAAAAAA==
+FLAG 2056
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_argonian_zombie
+MODL base_animKnA.nif
+FNAM Зомби-аргонианин
+RNAM Argonian Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_arg_head
+KNAM nc_zskinm_arg_hair
+SCRI nc_comp3Script_argz
+NPDT FABkNy1WUFgpKEAwREAwQDA2TgcHBwwHDAcMDAcHBwcHIgcHBwD0AW4APwFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_breton_zombie
+FNAM Зомби-бретон
+RNAM Breton Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_br_head
+KNAM 
+SCRI nc_comp3Script_bretz
+NPDT FABkQUFCPFgzKEAwQEAwQDAwQAcHDAwREREMBwcHBwcHIgcHBwD0AYIAPwFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_argonianf_zombie
+MODL base_animKnA.nif
+FNAM Зомби-аргонинанин
+RNAM Argonian Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_arg_head
+KNAM nc_zskinf_arg_hair
+SCRI nc_comp3Script_argz
+NPDT FABkQTdMRlgpKEAwREAwQDA2TgcHBwwHDAcMDAcHBwcHIgcHBwD0AYIAPwFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_bretonf_zombie
+FNAM Зомби-бретон
+RNAM Breton Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_br_head
+KNAM 
+SCRI nc_comp3Script_bretz
+NPDT FABbQUFCRlgzKEAwQEAwQDAwQAcHDAwREREMBwcHBwcHIgcHBwD0AYIANgFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_dark elff_zombie
+FNAM Зомби-данмер
+RNAM Dark Elf Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_de_head
+KNAM 
+SCRI nc_comp3Script_dez
+NPDT FABkNy1MUFgzKEAwQEAwRDAwRAcRBwcHDAcHBwcHBwwRJwcHBwD0AW4ANQFkAgAAAAAAAA==
+FLAG 2057
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_high elf_zombie
+FNAM Зомби-альтмер
+RNAM High Elf Zombie
+CNAM Battlemage
+ANAM Revenant
+BNAM nc_zskinm_he_head
+KNAM 
+SCRI nc_comp3Script_hez
+NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwD0AcgAKwFkAgAAAAAAAA==
+FLAG 1032
+NPCS dire weary\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS great feather\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS strong fire shield\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS strong frost shield\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS second barrier\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS strong shock shield\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS drain destruction\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
+NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
+NPCS dire weakness to magicka\0\0\0\0\0\0\0
+NPCS weak spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS drain blood\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS absorb intelligence\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS absorb strength\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_high elff_zombie
+FNAM Зомби-альтмер
+RNAM High Elf Zombie
+CNAM Battlemage
+ANAM Revenant
+BNAM nc_zskinf_he_head
+KNAM 
+SCRI nc_comp3Script_hez
+NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwD0AcgAKwFkAgAAAAAAAA==
+FLAG 1033
+NPCS dire weary\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS great feather\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS strong fire shield\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS strong frost shield\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS second barrier\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS strong shock shield\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS drain destruction\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
+NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
+NPCS dire weakness to magicka\0\0\0\0\0\0\0
+NPCS weak spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS drain blood\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS absorb intelligence\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS absorb strength\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_imperial_zombie
+FNAM Зомби-инмперец
+RNAM Imperial Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_imp_head
+KNAM 
+SCRI nc_comp3Script_impz
+NPDT FABkNy1CRmI9KEAwQEA2SjAwQAcHBwcHBwcHBwcHBwwHIhERDAD0AW4ANQFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_imperialf_zombie
+FNAM Зомби-имперец
+RNAM Imperial Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_imp_head
+KNAM 
+SCRI nc_comp3Script_impz
+NPDT FABkNzdCPGI9KEAwQEA2SjAwQAcHBwcHBwcHBwcHBwwHIhERDAD0AW4APwFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_khajiit_zombie
+MODL base_animKnA.nif
+FNAM Зомби-хаджит
+RNAM Khajiit Zombie
+CNAM Assassin
+ANAM Revenant
+BNAM nc_zskinm_kha_head
+KNAM nc_zskinm_kha_hair
+SCRI nc_comp3Script_khaz
+NPDT FABQTS1kVikzKCIHBwcHIgcHJwcHBwcHBwciBzZETkREQBUVGgD0AZoACgFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_khajiitf_zombie
+MODL base_animKnA.nif
+FNAM Зомби-хаджит
+RNAM Khajiit Zombie
+CNAM Assassin
+ANAM Revenant
+BNAM nc_zskinf_kha_head
+KNAM nc_zskinf_kha_hair
+SCRI nc_comp3Script_khaz
+NPDT FABGTS1kVjMzKCIHBwcHIgcHJwcHBwcHBwciBzZETkREQBUVGgD0AZoACgFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_wood elf_zombie
+FNAM Зомби-босмер
+RNAM Wood Elf Zombie
+CNAM Archer
+ANAM Revenant
+BNAM nc_zskinm_we_head
+KNAM 
+SCRI nc_comp3Script_wez
+NPDT FABKNzNkVjUzKEAVMBUVQBUwQAcHBwcHByIMIgcsDDsHQAcHBwD0AW4AFgFkAgAAAAAAAA==
+FLAG 1032
+NPCS balyna's soothing balm\0\0\0\0\0\0\0\0\0
+NPCS Ogrul's_Quick_Again\0\0\0\0\0\0\0\0\0\0\0\0
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_redguard_zombie
+FNAM Зомби-редгард
+RNAM Redguard Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_rg_head
+KNAM 
+SCRI nc_comp3Script_rgz
+NPDT FABkLS1MRmQpKEAwREQ2TjYwRAcHBwcHBwcHBwcHBwcMIgcHBwD0AVoAQQFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_orc_zombie
+FNAM Зомби-орк
+RNAM Orc Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_or_head
+KNAM 
+SCRI nc_comp3Script_orcz
+NPDT FABkLUFHPGQpKEo6SkowQDYwQAcHBwcHBwcHBwcHBwcHIgcHBwD0AVoAUAFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_nord_zombie
+FNAM Зомби-нордлинг
+RNAM Nord Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinm_no_head
+KNAM 
+SCRI nc_comp3Script_nordz
+NPDT FABkLTdCRmQpKEAwSkQ6RDo2QAcHBwcHBwcHBwcHBwcHIgcHBwD0AVoAQQFkAgAAAAAAAA==
+FLAG 1032
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_wood elff_zombie
+FNAM Зомби-босмер
+RNAM Wood Elf Zombie
+CNAM Archer
+ANAM Revenant
+BNAM nc_zskinf_we_head
+KNAM 
+SCRI nc_comp3Script_wez
+NPDT FABKNzNkVjUzKEAVMBUVQBUwQAcHBwcHByIMIgcsDDsHQAcHBwD0AW4AFgFkAgAAAAAAAA==
+FLAG 1033
+NPCS balyna's soothing balm\0\0\0\0\0\0\0\0\0
+NPCS Ogrul's_Quick_Again\0\0\0\0\0\0\0\0\0\0\0\0
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_redguardf_zombie
+FNAM Зомби-редгард
+RNAM Redguard Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_rg_head
+KNAM 
+SCRI nc_comp3Script_rgz
+NPDT FABkLS1MRmQzKEAwREQ2TjYwRAcHBwcHBwcHBwcHBwcMIgcHBwD0AVoAQQFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_orcf_zombie
+FNAM Зомби-орк
+RNAM Orc Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_or_head
+KNAM 
+SCRI nc_comp3Script_orcz
+NPDT FABkNzxHPGQkKEo6SkowQDYwQAcHBwcHBwcHBwcHBwcHIgcHBwD0AW4ASwFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+NPC_
+NAME nc_nordf_zombie
+FNAM Зомби-нордлинг
+RNAM Nord Zombie
+CNAM Warrior
+ANAM Revenant
+BNAM nc_zskinf_no_head
+KNAM 
+SCRI nc_comp3Script_nordz
+NPDT FABkLUFCRmIpKEAwSkQ6RDo2QAcHBwcHBwcHBwcHBwcHIgcHBwD0AVoASQFkAgAAAAAAAA==
+FLAG 1033
+AIDT HgAeHgAOTn0AAAAA
+
+LIGH
+NAME nc_zombie_light
+MODL 
+LHDT AAAAAAAAAAD/////EAAAAMDAwAAAAAAA
 
 CLOT
-NAME nc_tragrilar_mantle
-MODL c\\C_M_Robe_Extrav_1_GND.nif
-FNAM Мантия Трагрилара
-CTDT BAAAAAAAQEAQJ2QA
-ITEX c\\tx_robe_extrav_1.tga
-INDX 3
-BNAM
-    c_m_robe_extrav_1
-INDX 18
-INDX 17
-ENAM bmNfdHJhZ3JpbGFyX21hbnRsZV9lbgA=
+NAME nc_raise_z_ring
+MODL c\\C_Ring_expensive_3.NIF
+CTDT CAAAAM3MzD0AAAoA
+SCRI nc_raise_z_script
+ITEX c\\tx_ring_expensive03.tga
 
-ENCH
-NAME nc_tragrilar_mantle_en
-ENDT AwAAAAAAAAAAAAAAAAAAAA==
-ENAM EQD/BgAAAAAAAAAAAQAAAGQAAABkAAAA
-ENAM JAD//wAAAAAAAAAAAQAAAB4AAAAeAAAA
-ENAM UwAN/wAAAAAAAAAAAQAAABQAAAAUAAAA
-ENAM UwAL/wAAAAAAAAAAAQAAABQAAAAUAAAA
-ENAM hwD//wAAAAAAAAAAAQAAAB4AAAAeAAAA
+CLOT
+NAME nc_dead_z_ring
+MODL c\\C_Ring_expensive_3.NIF
+CTDT CAAAAM3MzD0AAAoA
+SCRI nc_dead_z_script
+ITEX c\\tx_ring_expensive03.tga
+
+BODY
+NAME nc_zskinf_kha_hair
+MODL blas\\Khajiit_F_Hair02_Z.nif
+FNAM Khajiit Zombie
+BYDT AQADAA==
+
+BODY
+NAME nc_zskinm_kha_hair
+MODL blas\\Khajiit_M_Hair01_Z.nif
+FNAM Khajiit Zombie
+BYDT AQACAA==
+
+BODY
+NAME nc_zskinm_kha_ankle
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_kha_chest
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_kha_foot
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_kha_forearm
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_kha_groin
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_kha_hand
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_kha_knee
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_kha_neck
+MODL blas\\khajiit_m_tail_Z.nif
+FNAM Khajiit Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_kha_uarm
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_kha_uleg
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_kha_wrist
+MODL blas\\skinm_kh_Z.nif
+FNAM Khajiit Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinf_arg_hair
+MODL blas\\Argonian_F_Hair04_Z.nif
+FNAM Argonian Zombie
+BYDT AQADAA==
+
+BODY
+NAME nc_zskinf_arg_tail
+MODL blas\\arg_f_Z.nif
+FNAM Argonian Zombie
+BYDT DgABAA==
+
+BODY
+NAME nc_zskinm_arg_hair
+MODL blas\\Argonian_M_Hair03_Z.nif
+FNAM Argonian Zombie
+BYDT AQACAA==
+
+BODY
+NAME nc_zskinm_arg_ankle
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT CgAAAA==
+
+BODY
+NAME nc_zskinm_arg_chest
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT AwAAAA==
+
+BODY
+NAME nc_zskinm_arg_foot
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT CQAAAA==
+
+BODY
+NAME nc_zskinm_arg_forearm
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT BwAAAA==
+
+BODY
+NAME nc_zskinm_arg_groin
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT BAAAAA==
+
+BODY
+NAME nc_zskinm_arg_hand
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT BQAAAA==
+
+BODY
+NAME nc_zskinm_arg_knee
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT CwAAAA==
+
+BODY
+NAME nc_zskinm_arg_neck
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT AgAAAA==
+
+BODY
+NAME nc_zskinm_arg_uarm
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT CAAAAA==
+
+BODY
+NAME nc_zskinm_arg_uleg
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT DAAAAA==
+
+BODY
+NAME nc_zskinm_arg_wrist
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT BgAAAA==
+
+BODY
+NAME nc_zskinm_arg_tail
+MODL blas\\arg_m_Z.nif
+FNAM Argonian Zombie
+BYDT DgAAAA==
+
+CLOT
+NAME nc_stump_shirt
+MODL Add World Art
+CTDT AgAAAAAAgD8BAGQA
+INDX 0
+BNAM
+    nc_bloody_stump
+INDX 1
+BNAM
+    nc_bloody_hair
+
+BODY
+NAME nc_bloody_hair
+MODL blas\\bb-headless.nif
+FNAM High Elf
+BYDT AQACAQ==
+
+BODY
+NAME nc_bloody_stump_ar
+MODL blas\\bb-headless.nif
+FNAM High Elf
+BYDT AAACAg==
+
+MISC
+NAME nc_SoulGem_blackened_f
+MODL blas\\nc_blackened_soulgem.nif
+FNAM Заполненный очерненный камень душ
+MCDT AADAPzwAAAAAAAAA
+ITEX blas\\br_black_gem_icon.dds
+
+CONT
+NAME nc_corrupter
+MODL m\\Apparatus_A_Calcinator_01.nif
+FNAM Губитель души
+CNDT AADIQg==
+FLAG 8
+SCRI nc_corrupter_script
 
 CELL
 NAME 
@@ -3608,54 +5486,59 @@ DATA AgAAAAYAAAD/////
 RGNN Molag Mar Region
 FRMR AQAAAA==
 NAME nc_bar_door_ex_archedoor
+XSCL mpmZPw==
 DODT QY+kQMQvxMRLjKnCAAAAAAAAAAAAAAAA
 DNAM Храм Танатоса, Склеп
-DATA RqVGR7YxtsWhUs9EAAAAAAAAAADNzMw+
-NAM0 CgAAAA==
+DATA RI9GRwtetcUWI89EAAAAAAAAAADNzMw+
+NAM0 CwAAAA==
 FRMR AgAAAA==
 NAME terrain_rock_ma_07
 XSCL AAAAQA==
 DATA UrNAR8gPs8XNqOZEAAAAAAAAAAB6GbJA
 FRMR AwAAAA==
-NAME nc_cave_entrance_lava
-DATA 649GR90ZuMXXS89EAAAAAAAAAAAiiaRA
+NAME nc_skull_entrance2
+DATA rcxGR0CJucVCwdVEAAAAAAAAAABYvwNA
 FRMR BAAAAA==
-NAME nc_bar_crypt01
-DATA H+1GRxJ0ucXjgc9EAAAAAAAAAABqAgBA
-FRMR BQAAAA==
 NAME nc_inviso_floor
 XSCL AAAAQA==
 DATA r1JFR8s9ssWn17tEAAAAAJBhRkDNzIw/
-FRMR BgAAAA==
+FRMR BQAAAA==
 NAME nc_inviso_floor
 XSCL AAAAQA==
 DATA 4q1CR3VYucXacr9EAAAAAJBhRkDNzIw/
-FRMR BwAAAA==
+FRMR BgAAAA==
 NAME nc_inviso_floor
 XSCL AAAAQA==
 DATA c41DR+wLq8V1ab5EAAAAAJBhRkDNzIw/
-FRMR CAAAAA==
+FRMR BwAAAA==
 NAME NC_De_Docks_Steps
 DATA 9EpCR/BJr8UXfs1EAAAAAAAAAADKzMw+
-FRMR CQAAAA==
+FRMR CAAAAA==
 NAME NC_De_Docks_Steps
 DATA wE1BR+YFrMU7wO9EAAAAAAAAAADKzMw+
-FRMR CgAAAA==
+FRMR CQAAAA==
 NAME nc_De_Docks_EndS
 DATA HKxAR5qOqcVvAv5EAAAAAAAAAADt9V9A
-FRMR CwAAAA==
+FRMR CgAAAA==
 NAME nc_inviso_floor
 XSCL AAAAQA==
 DATA VMNGR7bot8Vp3LlEAAAAAJBhRkDNzIw/
+FRMR CwAAAA==
+NAME nc_red_eyes
+DATA RWZGR8hkusVYTuFEAAAAAAAAAAAAAAAA
+FRMR DAAAAA==
+NAME nc_red_eyes
+DATA RKlGRxhttsUAXOFEAAAAAAAAAAAAAAAA
+
+CELL
+NAME 
+DATA AgAAAAYAAAD+////
+RGNN Molag Mar Region
 
 CELL
 NAME 
 DATA AgAAAAUAAAAAAAAA
 RGNN Molag Mar Region
-NAM0 AQAAAA==
-FRMR DAAAAA==
-NAME furn_bone_stake00
-DATA VmYpR1HIUkNxOEFEAAAAAAAAAACamZk/
 
 CELL
 NAME 
@@ -3705,6 +5588,7 @@ CELL
 NAME Alas Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgoKAAyGQAAAACAPw==
 NAM0 EwAAAA==
 FRMR FwAAAA==
 NAME nc_sarcophagus
@@ -3768,6 +5652,7 @@ CELL
 NAME Ald Redaynia, Tower
 DATA AwAAADkMAgAAAIA/
 WHGT AABeRg==
+AMBI DxETABQUHgA5DAIAAACAPw==
 NAM0 AQAAAA==
 FRMR KgAAAA==
 NAME nc_sarcophagus
@@ -3777,6 +5662,7 @@ CELL
 NAME Ald-ruhn, Temple
 DATA BQAAAFAoFAAAAEA/
 WHGT AAAAAA==
+AMBI LS0tAFAoFABQKBQAAABAPw==
 NAM0 AQAAAA==
 FRMR KwAAAA==
 NAME nc_sarcophagus
@@ -3786,6 +5672,7 @@ CELL
 NAME Alen Ancestral Tomb
 DATA AQAAADIZAADNzEw/
 WHGT AAAAAA==
+AMBI CgoKACgoKAAyGQAAzcxMPw==
 NAM0 AwAAAA==
 FRMR LAAAAA==
 NAME nc_sarcophagus
@@ -3801,6 +5688,7 @@ CELL
 NAME Andalen Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 DQAAAA==
 FRMR LwAAAA==
 NAME nc_sarcophagus
@@ -3846,6 +5734,7 @@ CELL
 NAME Andalor Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 BwAAAA==
 FRMR PAAAAA==
 NAME nc_sarcophagus
@@ -3873,6 +5762,7 @@ CELL
 NAME Andas Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 FAAAAA==
 FRMR QwAAAA==
 NAME nc_sarcophagus
@@ -3939,6 +5829,7 @@ CELL
 NAME Andavel Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 EgAAAA==
 FRMR VwAAAA==
 NAME nc_sarcophagus
@@ -3999,6 +5890,7 @@ CELL
 NAME Andrano Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AIBURg==
+AMBI CgoKACgeCgAoGQAAAACAPw==
 NAM0 DAAAAA==
 FRMR aQAAAA==
 NAME nc_sarcophagus
@@ -4041,6 +5933,7 @@ CELL
 NAME Andrethi Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 DQAAAA==
 FRMR dQAAAA==
 NAME nc_sarcophagus
@@ -4086,6 +5979,7 @@ CELL
 NAME Andules Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAgwg==
+AMBI CgoKACgeCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR ggAAAA==
 NAME nc_sarcophagus
@@ -4132,6 +6026,7 @@ CELL
 NAME Aralen Ancestral Tomb
 DATA AQAAACgeFAAAAIA/
 WHGT AAB6xQ==
+AMBI CgoKACgoKAAoHhQAAACAPw==
 NAM0 DwAAAA==
 FRMR jwAAAA==
 NAME nc_sarcophagus
@@ -4183,6 +6078,7 @@ CELL
 NAME Aran Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgoKAAyGQAAAACAPw==
 NAM0 FAAAAA==
 FRMR ngAAAA==
 NAME nc_sarcophagus
@@ -4249,6 +6145,7 @@ CELL
 NAME Arano Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 GQAAAA==
 FRMR sgAAAA==
 NAME nc_sarcophagus
@@ -4330,6 +6227,7 @@ CELL
 NAME Arenim Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 GQAAAA==
 FRMR ywAAAA==
 NAME nc_sarcophagus
@@ -4411,6 +6309,7 @@ CELL
 NAME Arethan Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 BwAAAA==
 FRMR 5AAAAA==
 NAME nc_sarcophagus
@@ -4438,6 +6337,7 @@ CELL
 NAME Aryon Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 EgAAAA==
 FRMR 6wAAAA==
 NAME nc_sarcophagus
@@ -4498,6 +6398,7 @@ CELL
 NAME Balmora, Temple
 DATA BQAAAB0lJwAAAEA/
 WHGT AAAAAA==
+AMBI NzItAFAoFAAdJScAAABAPw==
 NAM0 AQAAAA==
 FRMR /QAAAA==
 NAME nc_sarcophagus
@@ -4507,6 +6408,7 @@ CELL
 NAME Baram Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 GQAAAA==
 FRMR /gAAAA==
 NAME nc_sarcophagus
@@ -4588,6 +6490,7 @@ CELL
 NAME Beran Ancestral Tomb
 DATA AQAAACEsLgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKABUXFwAhLC4AAACAPw==
 NAM0 AQAAAA==
 FRMR FwEAAA==
 NAME nc_sarcophagus
@@ -4597,6 +6500,7 @@ CELL
 NAME Dareleth Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAyGQAAAACAPw==
 NAM0 DQAAAA==
 FRMR GAEAAA==
 NAME nc_sarcophagus
@@ -4642,6 +6546,7 @@ CELL
 NAME Dralas Ancestral Tomb
 DATA AQAAACgeFAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHhQAAACAPw==
 NAM0 EgAAAA==
 FRMR JQEAAA==
 NAME nc_sarcophagus
@@ -4702,6 +6607,7 @@ CELL
 NAME Drath Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 BwAAAA==
 FRMR NwEAAA==
 NAME nc_sarcophagus
@@ -4729,6 +6635,7 @@ CELL
 NAME Dreloth Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 BgAAAA==
 FRMR PgEAAA==
 NAME nc_sarcophagus
@@ -4754,6 +6661,7 @@ CELL
 NAME Drethan Ancestral Tomb
 DATA AQAAACgeFAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHhQAAACAPw==
 NAM0 CAAAAA==
 FRMR RAEAAA==
 NAME nc_sarcophagus
@@ -4784,6 +6692,7 @@ CELL
 NAME Drinith Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgUCgAyGQAAAACAPw==
 NAM0 IQAAAA==
 FRMR TAEAAA==
 NAME nc_sarcophagus
@@ -4889,6 +6798,7 @@ CELL
 NAME Dulo Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeCgAyGQAAAACAPw==
 NAM0 DgAAAA==
 FRMR bQEAAA==
 NAME nc_sarcophagus
@@ -4937,6 +6847,7 @@ CELL
 NAME Fadathram Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeCgAyGQAAAACAPw==
 NAM0 DAAAAA==
 FRMR ewEAAA==
 NAME nc_sarcophagus
@@ -4979,6 +6890,7 @@ CELL
 NAME Falas Ancestral Tomb
 DATA AQAAACgeCgDNzEw/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAzcxMPw==
 NAM0 AgAAAA==
 FRMR hwEAAA==
 NAME nc_sarcophagus
@@ -4991,6 +6903,7 @@ CELL
 NAME Favel Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoGQAAAACAPw==
 NAM0 EgAAAA==
 FRMR iQEAAA==
 NAME nc_sarcophagus
@@ -5051,6 +6964,7 @@ CELL
 NAME Gimothran Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoGQAAAACAPw==
 NAM0 IAAAAA==
 FRMR mwEAAA==
 NAME nc_sarcophagus
@@ -5153,6 +7067,7 @@ CELL
 NAME Ginith Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAoGQAAAACAPw==
 NAM0 BAAAAA==
 FRMR uwEAAA==
 NAME nc_sarcophagus
@@ -5172,6 +7087,7 @@ CELL
 NAME Gnisis, Temple
 DATA BQAAADAQHgAAAEA/
 WHGT AAAAAA==
+AMBI QTc3AFAoAAAwEB4AAABAPw==
 NAM0 AQAAAA==
 FRMR vwEAAA==
 NAME nc_sarcophagus
@@ -5181,6 +7097,7 @@ CELL
 NAME Helan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI AAAAAB4UCgAoHgoAAACAPw==
 NAM0 BAAAAA==
 FRMR wAEAAA==
 NAME nc_sarcophagus
@@ -5199,6 +7116,7 @@ CELL
 NAME Helas Ancestral Tomb
 DATA AQAAACgZCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoGQoAAACAPw==
 NAM0 DQAAAA==
 FRMR xAEAAA==
 NAME nc_sarcophagus
@@ -5244,6 +7162,7 @@ CELL
 NAME Heran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EQAAAA==
 FRMR 0QEAAA==
 NAME nc_sarcophagus
@@ -5301,6 +7220,7 @@ CELL
 NAME Hlaalu Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR 4gEAAA==
 NAME nc_sarcophagus
@@ -5346,6 +7266,7 @@ CELL
 NAME Hleran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CAAAAA==
 FRMR 7wEAAA==
 NAME nc_sarcophagus
@@ -5376,6 +7297,7 @@ CELL
 NAME Hlervi Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AACMwg==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BwAAAA==
 FRMR 9wEAAA==
 NAME nc_sarcophagus
@@ -5403,6 +7325,7 @@ CELL
 NAME Hlervu Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EQAAAA==
 FRMR /gEAAA==
 NAME nc_sarcophagus
@@ -5460,6 +7383,7 @@ CELL
 NAME Ienith Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR DwIAAA==
 NAME nc_sarcophagus
@@ -5511,6 +7435,7 @@ CELL
 NAME Indalen Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR HgIAAA==
 NAME nc_sarcophagus
@@ -5556,6 +7481,7 @@ CELL
 NAME Indaren Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DAAAAA==
 FRMR KwIAAA==
 NAME nc_sarcophagus
@@ -5598,6 +7524,7 @@ CELL
 NAME Llando Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EAAAAA==
 FRMR NwIAAA==
 NAME nc_sarcophagus
@@ -5652,6 +7579,7 @@ CELL
 NAME Lleran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BgAAAA==
 FRMR RwIAAA==
 NAME nc_sarcophagus
@@ -5676,6 +7604,7 @@ CELL
 NAME Llervu Ancestral Tomb
 DATA AQAAACgeCgDNzEw/
 WHGT AADIwg==
+AMBI CgoKAB4UCgAoHgoAzcxMPw==
 NAM0 AQAAAA==
 FRMR TQIAAA==
 NAME nc_sarcophagus
@@ -5685,6 +7614,7 @@ CELL
 NAME Maren Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 IQAAAA==
 FRMR TgIAAA==
 NAME nc_sarcophagus
@@ -5790,6 +7720,7 @@ CELL
 NAME Marvani Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAB6xQ==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR bwIAAA==
 NAME nc_sarcophagus
@@ -5835,6 +7766,7 @@ CELL
 NAME Nelas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AABhxA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
 FRMR fAIAAA==
 NAME nc_sarcophagus
@@ -5910,6 +7842,7 @@ CELL
 NAME Nerano Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BwAAAA==
 FRMR kwIAAA==
 NAME nc_sarcophagus
@@ -5937,6 +7870,7 @@ CELL
 NAME Norvayn Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DgAAAA==
 FRMR mgIAAA==
 NAME nc_sarcophagus
@@ -5985,6 +7919,7 @@ CELL
 NAME Omalen Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 HwAAAA==
 FRMR qAIAAA==
 NAME nc_sarcophagus
@@ -6084,6 +8019,7 @@ CELL
 NAME Omaren Ancestral Tomb
 DATA AwAAACQ5NwAAAIA/
 WHGT AICixA==
+AMBI FBQZABUcIAAkOTcAAACAPw==
 NAM0 CgAAAA==
 FRMR xwIAAA==
 NAME nc_sarcophagus
@@ -6120,6 +8056,7 @@ CELL
 NAME Orethi Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CwAAAA==
 FRMR 0QIAAA==
 NAME nc_sarcophagus
@@ -6159,6 +8096,7 @@ CELL
 NAME Othrelas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BwAAAA==
 FRMR 3AIAAA==
 NAME nc_sarcophagus
@@ -6183,53 +8121,67 @@ NAME nc_sarcophagus
 DATA XiUCQ0zqKUQAAMBDAAAAAAAAAADbD8k/
 
 CELL
+NAME Pelagiad, Mebestien Ence: Trader
+DATA BQAAAEskGAAAAEA/
+WHGT AAAAAA==
+AMBI S0FBAFA8FABLJBgAAABAPw==
+NAM0 AQAAAA==
+FRMR 4wIAAA==
+NAME nc_crate
+ANAM mebestian ence
+INTV 0
+NAM9 AQAAAA==
+DATA m2wbQ90LzcOVmy5EAAAAAAAAAAAAAAAA
+
+CELL
 NAME Randas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
-FRMR 4wIAAA==
-NAME nc_sarcophagus
-DATA aBFIRDbL5MQAAEhEAAAAAAAAAADky5ZA
 FRMR 5AIAAA==
 NAME nc_sarcophagus
-DATA QFzYRJn3J8UCAEhEAAAAAAAAAAAAAAAA
+DATA aBFIRDbL5MQAAEhEAAAAAAAAAADky5ZA
 FRMR 5QIAAA==
 NAME nc_sarcophagus
-DATA SPGDRD5wHcUCAEhEAAAAAAAAAADky5ZA
+DATA QFzYRJn3J8UCAEhEAAAAAAAAAAAAAAAA
 FRMR 5gIAAA==
 NAME nc_sarcophagus
-DATA Ip9IRKCZHcUCAEhEAAAAAAAAAADky5ZA
+DATA SPGDRD5wHcUCAEhEAAAAAAAAAADky5ZA
 FRMR 5wIAAA==
 NAME nc_sarcophagus
-DATA H+8HRKGVHcUCAEhEAAAAAAAAAADky5ZA
+DATA Ip9IRKCZHcUCAEhEAAAAAAAAAADky5ZA
 FRMR 6AIAAA==
 NAME nc_sarcophagus
-DATA teGDRNd+MsUCAEhEAAAAAAAAAADky5ZA
+DATA H+8HRKGVHcUCAEhEAAAAAAAAAADky5ZA
 FRMR 6QIAAA==
 NAME nc_sarcophagus
-DATA 3BqQQyOAMsUCAEhEAAAAAAAAAADky5ZA
+DATA teGDRNd+MsUCAEhEAAAAAAAAAADky5ZA
 FRMR 6gIAAA==
 NAME nc_sarcophagus
-DATA iHsHRL5RMsUCAEhEAAAAAAAAAADky5ZA
+DATA 3BqQQyOAMsUCAEhEAAAAAAAAAADky5ZA
 FRMR 6wIAAA==
 NAME nc_sarcophagus
-DATA uNRIRLRpMsUCAEhEAAAAAAAAAADky5ZA
+DATA iHsHRL5RMsUCAEhEAAAAAAAAAADky5ZA
 FRMR 7AIAAA==
 NAME nc_sarcophagus
-DATA lp6PQx+LHcUAAEhEAAAAAAAAAADky5ZA
+DATA uNRIRLRpMsUCAEhEAAAAAAAAAADky5ZA
 FRMR 7QIAAA==
 NAME nc_sarcophagus
-DATA uGZIRDHlusQAAEhEAAAAAAAAAADky5ZA
+DATA lp6PQx+LHcUAAEhEAAAAAAAAAADky5ZA
 FRMR 7gIAAA==
 NAME nc_sarcophagus
-DATA QSSERIApu8QAAEhEAAAAAAAAAADky5ZA
+DATA uGZIRDHlusQAAEhEAAAAAAAAAADky5ZA
 FRMR 7wIAAA==
 NAME nc_sarcophagus
-DATA jjWkRG8Xu8QAAEhEAAAAAAAAAADky5ZA
+DATA QSSERIApu8QAAEhEAAAAAAAAAADky5ZA
 FRMR 8AIAAA==
 NAME nc_sarcophagus
-DATA BmCkRBLK5MQAAEhEAAAAAAAAAADky5ZA
+DATA jjWkRG8Xu8QAAEhEAAAAAAAAAADky5ZA
 FRMR 8QIAAA==
+NAME nc_sarcophagus
+DATA BmCkRBLK5MQAAEhEAAAAAAAAAADky5ZA
+FRMR 8gIAAA==
 NAME nc_sarcophagus
 DATA yRiERPrJ5MQAAEhEAAAAAAAAAADky5ZA
 
@@ -6237,74 +8189,75 @@ CELL
 NAME Ravel Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
-FRMR 8gIAAA==
-NAME nc_sarcophagus
-DATA M88HxDfYVUQAAKA5AAAAAAAAAADky5ZA
 FRMR 8wIAAA==
 NAME nc_sarcophagus
-DATA NrqoxE3qz0QAAKA5AAAAAAAAAAAAAAAA
+DATA M88HxDfYVUQAAKA5AAAAAAAAAADky5ZA
 FRMR 9AIAAA==
 NAME nc_sarcophagus
-DATA yYioxAOCsEQAAKA5AAAAAAAAAAAAAAAA
+DATA NrqoxE3qz0QAAKA5AAAAAAAAAAAAAAAA
 FRMR 9QIAAA==
 NAME nc_sarcophagus
-DATA jDZ+xMsy0EQAAKA5AAAAAAAAAAAAAAAA
+DATA yYioxAOCsEQAAKA5AAAAAAAAAAAAAAAA
 FRMR 9gIAAA==
 NAME nc_sarcophagus
-DATA Aut+xMwwsEQAAKA5AAAAAAAAAAAAAAAA
+DATA jDZ+xMsy0EQAAKA5AAAAAAAAAAAAAAAA
 FRMR 9wIAAA==
 NAME nc_sarcophagus
-DATA SaioxA3hj0QAAKA5AAAAAAAAAAAAAAAA
+DATA Aut+xMwwsEQAAKA5AAAAAAAAAAAAAAAA
 FRMR +AIAAA==
 NAME nc_sarcophagus
-DATA ajZHxJvjlEQAAKA5AAAAAAAAAADky5ZA
+DATA SaioxA3hj0QAAKA5AAAAAAAAAAAAAAAA
 FRMR +QIAAA==
 NAME nc_sarcophagus
-DATA ylUjwygCxEQAAKA5AAAAAAAAAADky5ZA
+DATA ajZHxJvjlEQAAKA5AAAAAAAAAADky5ZA
 FRMR +gIAAA==
 NAME nc_sarcophagus
-DATA UqNHxDTrVkQAAKA5AAAAAAAAAADky5ZA
+DATA ylUjwygCxEQAAKA5AAAAAAAAAADky5ZA
 FRMR +wIAAA==
 NAME nc_sarcophagus
-DATA 4c4HxHPnlEQAAKA5AAAAAAAAAADky5ZA
+DATA UqNHxDTrVkQAAKA5AAAAAAAAAADky5ZA
 FRMR /AIAAA==
 NAME nc_sarcophagus
-DATA RAEERKhilMTN//nCAAAAAAAAAADky5ZA
+DATA 4c4HxHPnlEQAAKA5AAAAAAAAAADky5ZA
 FRMR /QIAAA==
 NAME nc_sarcophagus
-DATA rA2Gw6fvm0QAAKA5AAAAAAAAAADky5ZA
+DATA RAEERKhilMTN//nCAAAAAAAAAADky5ZA
 FRMR /gIAAA==
 NAME nc_sarcophagus
-DATA Krr7RFazs0IAAIDDAAAAAAAAAADky5ZA
+DATA rA2Gw6fvm0QAAKA5AAAAAAAAAADky5ZA
 FRMR /wIAAA==
 NAME nc_sarcophagus
-DATA rH4ERNVFVcTN//nCAAAAAAAAAADky5ZA
+DATA Krr7RFazs0IAAIDDAAAAAAAAAADky5ZA
 FRMR AAMAAA==
 NAME nc_sarcophagus
-DATA qAjcRF0V0UPo/3/DAAAAAAAAAADky5ZA
+DATA rH4ERNVFVcTN//nCAAAAAAAAAADky5ZA
 FRMR AQMAAA==
 NAME nc_sarcophagus
-DATA +8X7RBqm0UPo/3/DAAAAAAAAAADky5ZA
+DATA qAjcRF0V0UPo/3/DAAAAAAAAAADky5ZA
 FRMR AgMAAA==
 NAME nc_sarcophagus
-DATA GvbbRAvMskLo/3/DAAAAAAAAAADky5ZA
+DATA +8X7RBqm0UPo/3/DAAAAAAAAAADky5ZA
 FRMR AwMAAA==
 NAME nc_sarcophagus
-DATA 3IBTRUVU08Po/3/DAAAAAAAAAADky5ZA
+DATA GvbbRAvMskLo/3/DAAAAAAAAAADky5ZA
 FRMR BAMAAA==
 NAME nc_sarcophagus
-DATA 7vwdRcuL0cPo/3/DAAAAAAAAAADky5ZA
+DATA 3IBTRUVU08Po/3/DAAAAAAAAAADky5ZA
 FRMR BQMAAA==
 NAME nc_sarcophagus
-DATA NfsdRbhLaUQAAIDDAAAAAAAAAADbD8k/
+DATA 7vwdRcuL0cPo/3/DAAAAAAAAAADky5ZA
 FRMR BgMAAA==
 NAME nc_sarcophagus
-DATA /tdgRcsGT8Po/3/DAAAAAAAAAADbD0lA
+DATA NfsdRbhLaUQAAIDDAAAAAAAAAADbD8k/
 FRMR BwMAAA==
 NAME nc_sarcophagus
-DATA u9JgRRMeMETo/3/DAAAAAAAAAADbD0lA
+DATA /tdgRcsGT8Po/3/DAAAAAAAAAADbD0lA
 FRMR CAMAAA==
+NAME nc_sarcophagus
+DATA u9JgRRMeMETo/3/DAAAAAAAAAADbD0lA
+FRMR CQMAAA==
 NAME nc_sarcophagus
 DATA 3FRTRR2/aUTo/3/DAAAAAAAAAADbD8k/
 
@@ -6312,35 +8265,36 @@ CELL
 NAME Raviro Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CgAAAA==
-FRMR CQMAAA==
-NAME nc_sarcophagus
-DATA La2Ow+fMfkT8///CAAAAAAAAAAAAAAAA
 FRMR CgMAAA==
 NAME nc_sarcophagus
-DATA ECSqwMlwjcP8///CAAAAAAAAAADky5ZA
+DATA La2Ow+fMfkT8///CAAAAAAAAAAAAAAAA
 FRMR CwMAAA==
 NAME nc_sarcophagus
-DATA BDOOQ2hbQUT8///CAAAAAAAAAAAAAAAA
+DATA ECSqwMlwjcP8///CAAAAAAAAAADky5ZA
 FRMR DAMAAA==
 NAME nc_sarcophagus
-DATA t36NQ36PfkT8///CAAAAAAAAAAAAAAAA
+DATA BDOOQ2hbQUT8///CAAAAAAAAAAAAAAAA
 FRMR DQMAAA==
 NAME nc_sarcophagus
-DATA EJyNw3LjQET8///CAAAAAAAAAAAAAAAA
+DATA t36NQ36PfkT8///CAAAAAAAAAAAAAAAA
 FRMR DgMAAA==
 NAME nc_sarcophagus
-DATA B6ONw/1t/UP8///CAAAAAAAAAAAAAAAA
+DATA EJyNw3LjQET8///CAAAAAAAAAAAAAAAA
 FRMR DwMAAA==
 NAME nc_sarcophagus
-DATA jPo/RHaMs0L8///CAAAAAAAAAADky5ZA
+DATA B6ONw/1t/UP8///CAAAAAAAAAAAAAAAA
 FRMR EAMAAA==
 NAME nc_sarcophagus
-DATA 6bh7wwssjsP8///CAAAAAAAAAADky5ZA
+DATA jPo/RHaMs0L8///CAAAAAAAAAADky5ZA
 FRMR EQMAAA==
 NAME nc_sarcophagus
-DATA 0CVlQ1jBA8L8///CAAAAAAAAAADky5ZA
+DATA 6bh7wwssjsP8///CAAAAAAAAAADky5ZA
 FRMR EgMAAA==
+NAME nc_sarcophagus
+DATA 0CVlQ1jBA8L8///CAAAAAAAAAADky5ZA
+FRMR EwMAAA==
 NAME nc_sarcophagus
 DATA mClARLlx00P8///CAAAAAAAAAADky5ZA
 
@@ -6348,35 +8302,36 @@ CELL
 NAME Releth Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CgAAAA==
-FRMR EwMAAA==
-NAME nc_sarcophagus
-DATA oxaQRIbKNUQWAABDAAAAAAAAAADky5ZA
 FRMR FAMAAA==
 NAME nc_sarcophagus
-DATA UuqPRLbshEQWAABDAAAAAAAAAADky5ZA
+DATA oxaQRIbKNUQWAABDAAAAAAAAAADky5ZA
 FRMR FQMAAA==
 NAME nc_sarcophagus
-DATA gs1fRDgChUQWAABDAAAAAAAAAADky5ZA
+DATA UuqPRLbshEQWAABDAAAAAAAAAADky5ZA
 FRMR FgMAAA==
 NAME nc_sarcophagus
-DATA 5sUfRHHPhEQWAABDAAAAAAAAAADky5ZA
+DATA gs1fRDgChUQWAABDAAAAAAAAAADky5ZA
 FRMR FwMAAA==
 NAME nc_sarcophagus
-DATA 5tuTQ18DsEQWAABDAAAAAAAAAADbD0lA
+DATA 5sUfRHHPhEQWAABDAAAAAAAAAADky5ZA
 FRMR GAMAAA==
 NAME nc_sarcophagus
-DATA zMS/Q/zLNUQWAABDAAAAAAAAAADky5ZA
+DATA 5tuTQ18DsEQWAABDAAAAAAAAAADbD0lA
 FRMR GQMAAA==
 NAME nc_sarcophagus
-DATA C6IfRJipNkQWAABDAAAAAAAAAADky5ZA
+DATA zMS/Q/zLNUQWAABDAAAAAAAAAADky5ZA
 FRMR GgMAAA==
 NAME nc_sarcophagus
-DATA 7qNgRGKpNkQWAABDAAAAAAAAAADky5ZA
+DATA C6IfRJipNkQWAABDAAAAAAAAAADky5ZA
 FRMR GwMAAA==
 NAME nc_sarcophagus
-DATA J0e/Q/bthEQWAABDAAAAAAAAAADky5ZA
+DATA 7qNgRGKpNkQWAABDAAAAAAAAAADky5ZA
 FRMR HAMAAA==
+NAME nc_sarcophagus
+DATA J0e/Q/bthEQWAABDAAAAAAAAAADky5ZA
+FRMR HQMAAA==
 NAME nc_sarcophagus
 DATA 4VohwhEDsEQWAABDAAAAAAAAAADbD0lA
 
@@ -6384,44 +8339,45 @@ CELL
 NAME Reloth Ancestral Tomb
 DATA AQAAACgeCgAzMzM/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAMzMzPw==
 NAM0 DQAAAA==
-FRMR HQMAAA==
-NAME nc_sarcophagus
-DATA XJIPxLKuJUMNw39CAAAAAAAAAADky5ZA
 FRMR HgMAAA==
 NAME nc_sarcophagus
-DATA beu3RGGhhUO9sn1CAAAAAAAAAADky5ZA
+DATA XJIPxLKuJUMNw39CAAAAAAAAAADky5ZA
 FRMR HwMAAA==
 NAME nc_sarcophagus
-DATA PdpnRB0hb8MEAIBCAAAAAAAAAADbD0lA
+DATA beu3RGGhhUO9sn1CAAAAAAAAAADky5ZA
 FRMR IAMAAA==
 NAME nc_sarcophagus
-DATA kmTxQ6TWV8POcH5CAAAAAAAAAADbD0lA
+DATA PdpnRB0hb8MEAIBCAAAAAAAAAADbD0lA
 FRMR IQMAAA==
 NAME nc_sarcophagus
-DATA lCGJQ6Hv/cAAAIBCAAAAAAAAAADbD8k/
+DATA kmTxQ6TWV8POcH5CAAAAAAAAAADbD0lA
 FRMR IgMAAA==
 NAME nc_sarcophagus
-DATA JiGeQ8etXsMEAIBCAAAAAAAAAAAAAAAA
+DATA lCGJQ6Hv/cAAAIBCAAAAAAAAAADbD8k/
 FRMR IwMAAA==
 NAME nc_sarcophagus
-DATA DETFxP7eD0X6UZXDAAAAAAAAAADSU3tA
+DATA JiGeQ8etXsMEAIBCAAAAAAAAAAAAAAAA
 FRMR JAMAAA==
 NAME nc_sarcophagus
-DATA q06gw8BQJUMsAIBCAAAAAAAAAADky5ZA
+DATA DETFxP7eD0X6UZXDAAAAAAAAAADSU3tA
 FRMR JQMAAA==
 NAME nc_sarcophagus
-DATA HFOgw7NrJMMhUH1CAAAAAAAAAADky5ZA
+DATA q06gw8BQJUMsAIBCAAAAAAAAAADky5ZA
 FRMR JgMAAA==
 NAME nc_sarcophagus
-DATA nT8PxE3XJcOaAH9CAAAAAAAAAADky5ZA
+DATA HFOgw7NrJMMhUH1CAAAAAAAAAADky5ZA
 FRMR JwMAAA==
 NAME nc_sarcophagus
-DATA pM5PxKQoJMMA63xCAAAAAAAAAADky5ZA
+DATA nT8PxE3XJcOaAH9CAAAAAAAAAADky5ZA
 FRMR KAMAAA==
 NAME nc_sarcophagus
-DATA 6spvxEDHukQAAKDDAAAAAAAAAADky5ZA
+DATA pM5PxKQoJMMA63xCAAAAAAAAAADky5ZA
 FRMR KQMAAA==
+NAME nc_sarcophagus
+DATA 6spvxEDHukQAAKDDAAAAAAAAAADky5ZA
+FRMR KgMAAA==
 NAME nc_sarcophagus
 DATA ax2mw30REEX6UZXDAAAAAAAAAADg7a9A
 
@@ -6429,65 +8385,66 @@ CELL
 NAME Rethandus Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FAAAAA==
-FRMR KgMAAA==
-NAME nc_sarcophagus
-DATA EE9QxYZowMQCAJBEAAAAAAAAAAAAAAAA
 FRMR KwMAAA==
 NAME nc_sarcophagus
-DATA SBc+xVef5MQCAJBEAAAAAAAAAADky5ZA
+DATA EE9QxYZowMQCAJBEAAAAAAAAAAAAAAAA
 FRMR LAMAAA==
 NAME nc_sarcophagus
-DATA mV1Qxcvin8QCAJBEAAAAAAAAAAAAAAAA
+DATA SBc+xVef5MQCAJBEAAAAAAAAAADky5ZA
 FRMR LQMAAA==
 NAME nc_sarcophagus
-DATA p2BQxfYVgMQCAJBEAAAAAAAAAAAAAAAA
+DATA mV1Qxcvin8QCAJBEAAAAAAAAAAAAAAAA
 FRMR LgMAAA==
 NAME nc_sarcophagus
-DATA X3M7xfO8f8QCAJBEAAAAAAAAAAAAAAAA
+DATA p2BQxfYVgMQCAJBEAAAAAAAAAAAAAAAA
 FRMR LwMAAA==
 NAME nc_sarcophagus
-DATA OYY7xaXsn8QCAJBEAAAAAAAAAAAAAAAA
+DATA X3M7xfO8f8QCAJBEAAAAAAAAAAAAAAAA
 FRMR MAMAAA==
 NAME nc_sarcophagus
-DATA bc0txeCUu8QCAJBEAAAAAAAAAADky5ZA
+DATA OYY7xaXsn8QCAJBEAAAAAAAAAAAAAAAA
 FRMR MQMAAA==
 NAME nc_sarcophagus
-DATA vAq2xCxOcsUEYIBEAAAAAAAAAADky5ZA
+DATA bc0txeCUu8QCAJBEAAAAAAAAAADky5ZA
 FRMR MgMAAA==
 NAME nc_sarcophagus
-DATA +gQexdAl5cQCAJBEAAAAAAAAAADky5ZA
+DATA vAq2xCxOcsUEYIBEAAAAAAAAAADky5ZA
 FRMR MwMAAA==
 NAME nc_sarcophagus
-DATA auwtxTC/5MQCAJBEAAAAAAAAAADky5ZA
+DATA +gQexdAl5cQCAJBEAAAAAAAAAADky5ZA
 FRMR NAMAAA==
 NAME nc_sarcophagus
-DATA iO8dxTcvu8QCAJBEAAAAAAAAAADky5ZA
+DATA auwtxTC/5MQCAJBEAAAAAAAAAADky5ZA
 FRMR NQMAAA==
 NAME nc_sarcophagus
-DATA /P4MxSbms8QCAJBEAAAAAAAAAADky5ZA
+DATA iO8dxTcvu8QCAJBEAAAAAAAAAADky5ZA
 FRMR NgMAAA==
 NAME nc_sarcophagus
-DATA v2l5Q/7z/8QAAGBEAAAAAAAAAADbD0lA
+DATA /P4MxSbms8QCAJBEAAAAAAAAAADky5ZA
 FRMR NwMAAA==
 NAME nc_sarcophagus
-DATA 2+C1xExFXcUEYIBEAAAAAAAAAADky5ZA
+DATA v2l5Q/7z/8QAAGBEAAAAAAAAAADbD0lA
 FRMR OAMAAA==
 NAME nc_sarcophagus
-DATA 6614xP7RBcUAAGBEAAAAAAAAAADky5ZA
+DATA 2+C1xExFXcUEYIBEAAAAAAAAAADky5ZA
 FRMR OQMAAA==
 NAME nc_sarcophagus
-DATA VkzJRDDhNMUAAGBEAAAAAAAAAADbD0lA
+DATA 6614xP7RBcUAAGBEAAAAAAAAAADky5ZA
 FRMR OgMAAA==
 NAME nc_sarcophagus
-DATA 85lmRG1rQsUAAGBEAAAAAAAAAADky5ZA
+DATA VkzJRDDhNMUAAGBEAAAAAAAAAADbD0lA
 FRMR OwMAAA==
 NAME nc_sarcophagus
-DATA Ggt6Q3orMMUAAGBEAAAAAAAAAADbD0lA
+DATA 85lmRG1rQsUAAGBEAAAAAAAAAADky5ZA
 FRMR PAMAAA==
 NAME nc_sarcophagus
-DATA jV1nRHxq28QAAGBEAAAAAAAAAADky5ZA
+DATA Ggt6Q3orMMUAAGBEAAAAAAAAAADbD0lA
 FRMR PQMAAA==
+NAME nc_sarcophagus
+DATA jV1nRHxq28QAAGBEAAAAAAAAAADky5ZA
+FRMR PgMAAA==
 NAME nc_sarcophagus
 DATA TpfJRJ/t98QAAGBEAAAAAAAAAADbD0lA
 
@@ -6495,59 +8452,60 @@ CELL
 NAME Rothan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
-FRMR PgMAAA==
-NAME nc_sarcophagus
-DATA l3ESxUcBEEXq/z/DAAAAAAAAAAAAAAAA
 FRMR PwMAAA==
 NAME nc_sarcophagus
-DATA 9kcSxagdAEXq/z/DAAAAAAAAAAAAAAAA
+DATA l3ESxUcBEEXq/z/DAAAAAAAAAAAAAAAA
 FRMR QAMAAA==
 NAME nc_sarcophagus
-DATA cgn7xF0IEEXq/z/DAAAAAAAAAAAAAAAA
+DATA 9kcSxagdAEXq/z/DAAAAAAAAAAAAAAAA
 FRMR QQMAAA==
 NAME nc_sarcophagus
-DATA I1b7xDYmAEXq/z/DAAAAAAAAAAAAAAAA
+DATA cgn7xF0IEEXq/z/DAAAAAAAAAAAAAAAA
 FRMR QgMAAA==
 NAME nc_sarcophagus
-DATA iFsSxZuz30Tq/z/DAAAAAAAAAAAAAAAA
+DATA I1b7xDYmAEXq/z/DAAAAAAAAAAAAAAAA
 FRMR QwMAAA==
 NAME nc_sarcophagus
-DATA pub6xDcd4ETq/z/DAAAAAAAAAAAAAAAA
+DATA iFsSxZuz30Tq/z/DAAAAAAAAAAAAAAAA
 FRMR RAMAAA==
 NAME nc_sarcophagus
-DATA XGgSxQn8v0Tq/z/DAAAAAAAAAAAAAAAA
+DATA pub6xDcd4ETq/z/DAAAAAAAAAAAAAAAA
 FRMR RQMAAA==
 NAME nc_sarcophagus
-DATA gSL7xLIKwETq/z/DAAAAAAAAAAAAAAAA
+DATA XGgSxQn8v0Tq/z/DAAAAAAAAAAAAAAAA
 FRMR RgMAAA==
 NAME nc_sarcophagus
-DATA G9sPxaw+gETq/z/DAAAAAAAAAAAAAAAA
+DATA gSL7xLIKwETq/z/DAAAAAAAAAAAAAAAA
 FRMR RwMAAA==
 NAME nc_sarcophagus
-DATA WR0Axeo+gETq/z/DAAAAAAAAAAAAAAAA
+DATA G9sPxaw+gETq/z/DAAAAAAAAAAAAAAAA
 FRMR SAMAAA==
 NAME nc_sarcophagus
-DATA fdgPxU3EP0Tq/z/DAAAAAAAAAAAAAAAA
+DATA WR0Axeo+gETq/z/DAAAAAAAAAAAAAAAA
 FRMR SQMAAA==
 NAME nc_sarcophagus
-DATA 49X/xNVMQETq/z/DAAAAAAAAAAAAAAAA
+DATA fdgPxU3EP0Tq/z/DAAAAAAAAAAAAAAAA
 FRMR SgMAAA==
 NAME nc_sarcophagus
-DATA eq9fxHbtlET1/9/DAAAAAAAAAADky5ZA
+DATA 49X/xNVMQETq/z/DAAAAAAAAAAAAAAAA
 FRMR SwMAAA==
 NAME nc_sarcophagus
-DATA 1LOkwwTwF0QAAODDAAAAAAAAAADky5ZA
+DATA eq9fxHbtlET1/9/DAAAAAAAAAADky5ZA
 FRMR TAMAAA==
 NAME nc_sarcophagus
-DATA 8rhfxFluVkT1/9/DAAAAAAAAAADky5ZA
+DATA 1LOkwwTwF0QAAODDAAAAAAAAAADky5ZA
 FRMR TQMAAA==
 NAME nc_sarcophagus
-DATA z3QAQ07+s0T1/9/DAAAAAAAAAADky5ZA
+DATA 8rhfxFluVkT1/9/DAAAAAAAAAADky5ZA
 FRMR TgMAAA==
 NAME nc_sarcophagus
-DATA Aav/QoVxF0T1/9/DAAAAAAAAAADky5ZA
+DATA z3QAQ07+s0T1/9/DAAAAAAAAAADky5ZA
 FRMR TwMAAA==
+NAME nc_sarcophagus
+DATA Aav/QoVxF0T1/9/DAAAAAAAAAADky5ZA
+FRMR UAMAAA==
 NAME nc_sarcophagus
 DATA eW2ow9gutET1/9/DAAAAAAAAAADky5ZA
 
@@ -6555,8 +8513,9 @@ CELL
 NAME Sadrith Mora, Telvanni Council House, Entry
 DATA BQAAACAuNQAAAEA/
 WHGT AAAAAA==
+AMBI GRkZACcwNAAgLjUAAABAPw==
 NAM0 AQAAAA==
-FRMR UAMAAA==
+FRMR UQMAAA==
 NAME nc_chest_small
 ANAM galar rothan
 INTV 0
@@ -6567,53 +8526,54 @@ CELL
 NAME Sadryon Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EAAAAA==
-FRMR UQMAAA==
-NAME nc_sarcophagus
-DATA AACNRPIykETs/1/DAAAAAAAAAAAAAAAA
 FRMR UgMAAA==
 NAME nc_sarcophagus
-DATA jvqew16ECUTs/1/DAAAAAAAAAADky5ZA
+DATA AACNRPIykETs/1/DAAAAAAAAAAAAAAAA
 FRMR UwMAAA==
 NAME nc_sarcophagus
-DATA gXpGRLI8kETs/1/DAAAAAAAAAAAAAAAA
+DATA jvqew16ECUTs/1/DAAAAAAAAAADky5ZA
 FRMR VAMAAA==
 NAME nc_sarcophagus
-DATA NZRAQ3TWCUTs/1/DAAAAAAAAAADky5ZA
+DATA gXpGRLI8kETs/1/DAAAAAAAAAAAAAAAA
 FRMR VQMAAA==
 NAME nc_sarcophagus
-DATA eHY/Q9hmWkPs/1/DAAAAAAAAAADky5ZA
+DATA NZRAQ3TWCUTs/1/DAAAAAAAAAADky5ZA
 FRMR VgMAAA==
 NAME nc_sarcophagus
-DATA vIVqwm4XWUPs/1/DAAAAAAAAAADky5ZA
+DATA eHY/Q9hmWkPs/1/DAAAAAAAAAADky5ZA
 FRMR VwMAAA==
 NAME nc_sarcophagus
-DATA w/ugw2cLWkPs/1/DAAAAAAAAAADky5ZA
+DATA vIVqwm4XWUPs/1/DAAAAAAAAAADky5ZA
 FRMR WAMAAA==
 NAME nc_sarcophagus
-DATA T+sPxL6UWkPs/1/DAAAAAAAAAADky5ZA
+DATA w/ugw2cLWkPs/1/DAAAAAAAAAADky5ZA
 FRMR WQMAAA==
 NAME nc_sarcophagus
-DATA L094xAwP8ETs/1/DAAAAAAAAAADbD8lA
+DATA T+sPxL6UWkPs/1/DAAAAAAAAAADky5ZA
 FRMR WgMAAA==
 NAME nc_sarcophagus
-DATA o7APxLgGCkTs/1/DAAAAAAAAAADky5ZA
+DATA L094xAwP8ETs/1/DAAAAAAAAAADbD8lA
 FRMR WwMAAA==
 NAME nc_sarcophagus
-DATA dLF5xEZpYETs/1/DAAAAAAAAAADbD8lA
+DATA o7APxLgGCkTs/1/DAAAAAAAAAADky5ZA
 FRMR XAMAAA==
 NAME nc_sarcophagus
-DATA bTEmxOE+YETs/1/DAAAAAAAAAADbD8lA
+DATA dLF5xEZpYETs/1/DAAAAAAAAAADbD8lA
 FRMR XQMAAA==
 NAME nc_sarcophagus
-DATA TMomxHYCkETs/1/DAAAAAAAAAADbD8lA
+DATA bTEmxOE+YETs/1/DAAAAAAAAAADbD8lA
 FRMR XgMAAA==
 NAME nc_sarcophagus
-DATA 0FB5xD66j0Ts/1/DAAAAAAAAAADbD8lA
+DATA TMomxHYCkETs/1/DAAAAAAAAAADbD8lA
 FRMR XwMAAA==
 NAME nc_sarcophagus
-DATA ml95xDIPsETs/1/DAAAAAAAAAADbD8lA
+DATA 0FB5xD66j0Ts/1/DAAAAAAAAAADbD8lA
 FRMR YAMAAA==
+NAME nc_sarcophagus
+DATA ml95xDIPsETs/1/DAAAAAAAAAADbD8lA
+FRMR YQMAAA==
 NAME nc_sarcophagus
 DATA Bkx5xH7fz0Ts/1/DAAAAAAAAAADbD8lA
 
@@ -6621,41 +8581,42 @@ CELL
 NAME Salothan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DAAAAA==
-FRMR YQMAAA==
-NAME nc_sarcophagus
-DATA Lh7ExHcAkMUAAFhEAAAAAAAAAADky5ZA
 FRMR YgMAAA==
 NAME nc_sarcophagus
-DATA AgoCxW3tj8UAAFhEAAAAAAAAAADky5ZA
+DATA Lh7ExHcAkMUAAFhEAAAAAAAAAADky5ZA
 FRMR YwMAAA==
 NAME nc_sarcophagus
-DATA imsdw7LOisUAAFhEAAAAAAAAAADky5ZA
+DATA AgoCxW3tj8UAAFhEAAAAAAAAAADky5ZA
 FRMR ZAMAAA==
 NAME nc_sarcophagus
-DATA CyfkxNuXccUAAFhEAAAAAAAAAAAAAAAA
+DATA imsdw7LOisUAAFhEAAAAAAAAAADky5ZA
 FRMR ZQMAAA==
 NAME nc_sarcophagus
-DATA T+jjxCIBkMUAAFhEAAAAAAAAAADky5ZA
+DATA CyfkxNuXccUAAFhEAAAAAAAAAAAAAAAA
 FRMR ZgMAAA==
 NAME nc_sarcophagus
-DATA m1AAxV0NmcUAAFhEAAAAAAAAAADky5ZA
+DATA T+jjxCIBkMUAAFhEAAAAAAAAAADky5ZA
 FRMR ZwMAAA==
 NAME nc_sarcophagus
-DATA VavFxLwDmcUAAFhEAAAAAAAAAADky5ZA
+DATA m1AAxV0NmcUAAFhEAAAAAAAAAADky5ZA
 FRMR aAMAAA==
 NAME nc_sarcophagus
-DATA 8xwoxFfOisUAAFhEAAAAAAAAAADky5ZA
+DATA VavFxLwDmcUAAFhEAAAAAAAAAADky5ZA
 FRMR aQMAAA==
 NAME nc_sarcophagus
-DATA sDzQw07PisUAAFhEAAAAAAAAAADky5ZA
+DATA 8xwoxFfOisUAAFhEAAAAAAAAAADky5ZA
 FRMR agMAAA==
 NAME nc_sarcophagus
-DATA iRsoxDg5lcUAAFhEAAAAAAAAAADky5ZA
+DATA sDzQw07PisUAAFhEAAAAAAAAAADky5ZA
 FRMR awMAAA==
 NAME nc_sarcophagus
-DATA ToTQw+A4lcUAAFhEAAAAAAAAAADky5ZA
+DATA iRsoxDg5lcUAAFhEAAAAAAAAAADky5ZA
 FRMR bAMAAA==
+NAME nc_sarcophagus
+DATA ToTQw+A4lcUAAFhEAAAAAAAAAADky5ZA
+FRMR bQMAAA==
 NAME nc_sarcophagus
 DATA 6B8ew083lcUAAFhEAAAAAAAAAADky5ZA
 
@@ -6663,23 +8624,24 @@ CELL
 NAME Salothran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BgAAAA==
-FRMR bQMAAA==
-NAME nc_sarcophagus
-DATA 6pA5w3dO5ESw/3/CAAAAAAAAAAAAAAAA
 FRMR bgMAAA==
 NAME nc_sarcophagus
-DATA 5O8BxB0+pESw/3/CAAAAAAAAAAAAAAAA
+DATA 6pA5w3dO5ESw/3/CAAAAAAAAAAAAAAAA
 FRMR bwMAAA==
 NAME nc_sarcophagus
-DATA bmABxGbiw0Sw/3/CAAAAAAAAAAAAAAAA
+DATA 5O8BxB0+pESw/3/CAAAAAAAAAAAAAAAA
 FRMR cAMAAA==
 NAME nc_sarcophagus
-DATA +Tw4w6X5o0Sw/3/CAAAAAAAAAAAAAAAA
+DATA bmABxGbiw0Sw/3/CAAAAAAAAAAAAAAAA
 FRMR cQMAAA==
 NAME nc_sarcophagus
-DATA VOA4w0Lcw0Sw/3/CAAAAAAAAAAAAAAAA
+DATA +Tw4w6X5o0Sw/3/CAAAAAAAAAAAAAAAA
 FRMR cgMAAA==
+NAME nc_sarcophagus
+DATA VOA4w0Lcw0Sw/3/CAAAAAAAAAAAAAAAA
+FRMR cwMAAA==
 NAME nc_sarcophagus
 DATA ElMBxEAS5ESw/3/CAAAAAAAAAAAAAAAA
 
@@ -6687,44 +8649,45 @@ CELL
 NAME Salvel Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
-FRMR cwMAAA==
-NAME nc_sarcophagus
-DATA fYE6RV03YMQFAChEAAAAAAAAAAAAAAAA
 FRMR dAMAAA==
 NAME nc_sarcophagus
-DATA WqElRc57IMQFAChEAAAAAAAAAAAAAAAA
+DATA fYE6RV03YMQFAChEAAAAAAAAAAAAAAAA
 FRMR dQMAAA==
 NAME nc_sarcophagus
-DATA t2M6RRfjH8QFAChEAAAAAAAAAAAAAAAA
+DATA WqElRc57IMQFAChEAAAAAAAAAAAAAAAA
 FRMR dgMAAA==
 NAME nc_sarcophagus
-DATA zoklRTvEX8QFAChEAAAAAAAAAAAAAAAA
+DATA t2M6RRfjH8QFAChEAAAAAAAAAAAAAAAA
 FRMR dwMAAA==
 NAME nc_sarcophagus
-DATA fre0RB+7V8UAAAhEAAAAAAAAAAAAAAAA
+DATA zoklRTvEX8QFAChEAAAAAAAAAAAAAAAA
 FRMR eAMAAA==
 NAME nc_sarcophagus
-DATA 7wgSRWg9JMUAAAhEAAAAAAAAAAAAAAAA
+DATA fre0RB+7V8UAAAhEAAAAAAAAAAAAAAAA
 FRMR eQMAAA==
 NAME nc_sarcophagus
-DATA zNXbRBeYF8UAAAhEAAAAAAAAAAAAAAAA
+DATA 7wgSRWg9JMUAAAhEAAAAAAAAAAAAAAAA
 FRMR egMAAA==
 NAME nc_sarcophagus
-DATA hWF4RBjQCcUAAAhEAAAAAAAAAAAAAAAA
+DATA zNXbRBeYF8UAAAhEAAAAAAAAAAAAAAAA
 FRMR ewMAAA==
 NAME nc_sarcophagus
-DATA BjN3RKLiNcUAAAhEAAAAAAAAAAAAAAAA
+DATA hWF4RBjQCcUAAAhEAAAAAAAAAAAAAAAA
 FRMR fAMAAA==
 NAME nc_sarcophagus
-DATA /y/ERPejNsUAAAhEAAAAAAAAAAAAAAAA
+DATA BjN3RKLiNcUAAAhEAAAAAAAAAAAAAAAA
 FRMR fQMAAA==
 NAME nc_sarcophagus
-DATA yRyLRNwNSMUAAAhEAAAAAAAAAAAAAAAA
+DATA /y/ERPejNsUAAAhEAAAAAAAAAAAAAAAA
 FRMR fgMAAA==
 NAME nc_sarcophagus
-DATA rxCLRLoBWMUAAAhEAAAAAAAAAAAAAAAA
+DATA yRyLRNwNSMUAAAhEAAAAAAAAAAAAAAAA
 FRMR fwMAAA==
+NAME nc_sarcophagus
+DATA rxCLRLoBWMUAAAhEAAAAAAAAAAAAAAAA
+FRMR gAMAAA==
 NAME nc_sarcophagus
 DATA NO60RGMcSMUAAAhEAAAAAAAAAAAAAAAA
 
@@ -6732,41 +8695,42 @@ CELL
 NAME Samarys Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DAAAAA==
-FRMR gAMAAA==
-NAME nc_sarcophagus
-DATA Q6aaRDim8EMAAIg5AAAAAAAAAADbD8lA
 FRMR gQMAAA==
 NAME nc_sarcophagus
-DATA MimExDfkkEQAAKA5AAAAAAAAAADky5ZA
+DATA Q6aaRDim8EMAAIg5AAAAAAAAAADbD8lA
 FRMR ggMAAA==
 NAME nc_sarcophagus
-DATA DUUIxMfukEQAAKA5AAAAAAAAAADky5ZA
+DATA MimExDfkkEQAAKA5AAAAAAAAAADky5ZA
 FRMR gwMAAA==
 NAME nc_sarcophagus
-DATA g95HxGYmTkQAAKA5AAAAAAAAAADky5ZA
+DATA DUUIxMfukEQAAKA5AAAAAAAAAADky5ZA
 FRMR hAMAAA==
 NAME nc_sarcophagus
-DATA +xiExPoETkQAAKA5AAAAAAAAAADky5ZA
+DATA g95HxGYmTkQAAKA5AAAAAAAAAADky5ZA
 FRMR hQMAAA==
 NAME nc_sarcophagus
-DATA tG4HQ/fud0QAAKA5AAAAAAAAAADbD8lA
+DATA +xiExPoETkQAAKA5AAAAAAAAAADky5ZA
 FRMR hgMAAA==
 NAME nc_sarcophagus
-DATA mYKhwyRs1UMAAKA5AAAAAAAAAADbD8lA
+DATA tG4HQ/fud0QAAKA5AAAAAAAAAADbD8lA
 FRMR hwMAAA==
 NAME nc_sarcophagus
-DATA LKAhwylWhsIAAKA5AAAAAAAAAADky5ZA
+DATA mYKhwyRs1UMAAKA5AAAAAAAAAADbD8lA
 FRMR iAMAAA==
 NAME nc_sarcophagus
-DATA 8fuBQ17Qe0MAAKA5AAAAAAAAAADbD0lA
+DATA LKAhwylWhsIAAKA5AAAAAAAAAADky5ZA
 FRMR iQMAAA==
 NAME nc_sarcophagus
-DATA eyiBQ6E7MEQAAKA5AAAAAAAAAADbD0lA
+DATA 8fuBQ17Qe0MAAKA5AAAAAAAAAADbD0lA
 FRMR igMAAA==
 NAME nc_sarcophagus
-DATA lsLwQyupm0MAAKA5AAAAAAAAAADbD8k/
+DATA eyiBQ6E7MEQAAKA5AAAAAAAAAADbD0lA
 FRMR iwMAAA==
+NAME nc_sarcophagus
+DATA lsLwQyupm0MAAKA5AAAAAAAAAADbD8k/
+FRMR jAMAAA==
 NAME nc_sarcophagus
 DATA ZkzwQ7MAIkQAAKA5AAAAAAAAAADbD8k/
 
@@ -6774,38 +8738,39 @@ CELL
 NAME Sandas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CwAAAA==
-FRMR jAMAAA==
-NAME nc_sarcophagus
-DATA +qsfxHfSlEQAAAA5AAAAAAAAAADky5ZA
 FRMR jQMAAA==
 NAME nc_sarcophagus
-DATA 1vSuQ79+AMQAAAA5AAAAAAAAAAAAAAAA
+DATA +qsfxHfSlEQAAAA5AAAAAAAAAADky5ZA
 FRMR jgMAAA==
 NAME nc_sarcophagus
-DATA UxMARPdTSMQAAAA5AAAAAAAAAADbD8k/
+DATA 1vSuQ79+AMQAAAA5AAAAAAAAAAAAAAAA
 FRMR jwMAAA==
 NAME nc_sarcophagus
-DATA 5q0oRJx8/8MAAAA5AAAAAAAAAAAAAAAA
+DATA UxMARPdTSMQAAAA5AAAAAAAAAADbD8k/
 FRMR kAMAAA==
 NAME nc_sarcophagus
-DATA TbGuQ4RFfsMAAAA5AAAAAAAAAAAAAAAA
+DATA 5q0oRJx8/8MAAAA5AAAAAAAAAAAAAAAA
 FRMR kQMAAA==
 NAME nc_sarcophagus
-DATA EBngRN0sAEQAAAA5AAAAAAAAAAAAAAAA
+DATA TbGuQ4RFfsMAAAA5AAAAAAAAAAAAAAAA
 FRMR kgMAAA==
 NAME nc_sarcophagus
-DATA jYf2Qw7tWEQAAAAAAAAAAAAAAADky5ZA
+DATA EBngRN0sAEQAAAA5AAAAAAAAAAAAAAAA
 FRMR kwMAAA==
 NAME nc_sarcophagus
-DATA Eem/w1HLlEQAAAA5AAAAAAAAAADky5ZA
+DATA jYf2Qw7tWEQAAAAAAAAAAAAAAADky5ZA
 FRMR lAMAAA==
 NAME nc_sarcophagus
-DATA /em/w2JSVkQAAAA5AAAAAAAAAADky5ZA
+DATA Eem/w1HLlEQAAAA5AAAAAAAAAADky5ZA
 FRMR lQMAAA==
 NAME nc_sarcophagus
-DATA IrwfxAJKVkQAAAA5AAAAAAAAAADky5ZA
+DATA /em/w2JSVkQAAAA5AAAAAAAAAADky5ZA
 FRMR lgMAAA==
+NAME nc_sarcophagus
+DATA IrwfxAJKVkQAAAA5AAAAAAAAAADky5ZA
+FRMR lwMAAA==
 NAME nc_sarcophagus
 DATA L9hfxAf6VUQAAAA5AAAAAAAAAADky5ZA
 
@@ -6813,80 +8778,81 @@ CELL
 NAME Sandus Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 GQAAAA==
-FRMR lwMAAA==
-NAME nc_sarcophagus
-DATA Lk5vxO6l08QAAMREAAAAAAAAAADbD8k/
 FRMR mAMAAA==
 NAME nc_sarcophagus
-DATA CBO3xEy4k8QAAMREAAAAAAAAAADky5ZA
+DATA Lk5vxO6l08QAAMREAAAAAAAAAADbD8k/
 FRMR mQMAAA==
 NAME nc_sarcophagus
-DATA Zj7MxFcTusQAAMREAAAAAAAAAADbD0lA
+DATA CBO3xEy4k8QAAMREAAAAAAAAAADky5ZA
 FRMR mgMAAA==
 NAME nc_sarcophagus
-DATA R/X0xG7b08QAAMREAAAAAAAAAADbD8k/
+DATA Zj7MxFcTusQAAMREAAAAAAAAAADbD0lA
 FRMR mwMAAA==
 NAME nc_sarcophagus
-DATA z823xArm98QAAMREAAAAAAAAAADbD8k/
+DATA R/X0xG7b08QAAMREAAAAAAAAAADbD8k/
 FRMR nAMAAA==
 NAME nc_sarcophagus
-DATA wt4bxdbsO8UAAMREAAAAAAAAAADky5ZA
+DATA z823xArm98QAAMREAAAAAAAAAADbD8k/
 FRMR nQMAAA==
 NAME nc_sarcophagus
-DATA znMmxBclLMUAAMREAAAAAAAAAAAAAAAA
+DATA wt4bxdbsO8UAAMREAAAAAAAAAADky5ZA
 FRMR ngMAAA==
 NAME nc_sarcophagus
-DATA KenXxBkS+MQAAMREAAAAAAAAAADbD8k/
+DATA znMmxBclLMUAAMREAAAAAAAAAAAAAAAA
 FRMR nwMAAA==
 NAME nc_sarcophagus
-DATA YZ/XxFfMGcUAAMREAAAAAAAAAADbD8k/
+DATA KenXxBkS+MQAAMREAAAAAAAAAADbD8k/
 FRMR oAMAAA==
 NAME nc_sarcophagus
-DATA zunrxPQBLMUAAMREAAAAAAAAAAAAAAAA
+DATA YZ/XxFfMGcUAAMREAAAAAAAAAADbD8k/
 FRMR oQMAAA==
 NAME nc_sarcophagus
-DATA H/+XxB6l98QAAMREAAAAAAAAAADbD8k/
+DATA zunrxPQBLMUAAMREAAAAAAAAAAAAAAAA
 FRMR ogMAAA==
 NAME nc_sarcophagus
-DATA gTh5xI8CLMUAAMREAAAAAAAAAAAAAAAA
+DATA H/+XxB6l98QAAMREAAAAAAAAAADbD8k/
 FRMR owMAAA==
 NAME nc_sarcophagus
-DATA 5h15xAwaPMUAAMREAAAAAAAAAAAAAAAA
+DATA gTh5xI8CLMUAAMREAAAAAAAAAAAAAAAA
 FRMR pAMAAA==
 NAME nc_sarcophagus
-DATA ayx5xMozTMUAAMREAAAAAAAAAAAAAAAA
+DATA 5h15xAwaPMUAAMREAAAAAAAAAAAAAAAA
 FRMR pQMAAA==
 NAME nc_sarcophagus
-DATA yRh6xJ/jW8UAAMREAAAAAAAAAAAAAAAA
+DATA ayx5xMozTMUAAMREAAAAAAAAAAAAAAAA
 FRMR pgMAAA==
 NAME nc_sarcophagus
-DATA iRPGwsL2ZcUAAMREAAAAAAAAAAAAAAAA
+DATA yRh6xJ/jW8UAAMREAAAAAAAAAAAAAAAA
 FRMR pwMAAA==
 NAME nc_sarcophagus
-DATA RUYmxJ8GTMUAAMREAAAAAAAAAAAAAAAA
+DATA iRPGwsL2ZcUAAMREAAAAAAAAAAAAAAAA
 FRMR qAMAAA==
 NAME nc_sarcophagus
-DATA TxMnxAkVPMUAAMREAAAAAAAAAAAAAAAA
+DATA RUYmxJ8GTMUAAMREAAAAAAAAAAAAAAAA
 FRMR qQMAAA==
 NAME nc_sarcophagus
-DATA kz0mxFb9W8UAAMREAAAAAAAAAAAAAAAA
+DATA TxMnxAkVPMUAAMREAAAAAAAAAAAAAAAA
 FRMR qgMAAA==
 NAME nc_sarcophagus
-DATA i80HxHIzbcUAAMREAAAAAAAAAAAAAAAA
+DATA kz0mxFb9W8UAAMREAAAAAAAAAAAAAAAA
 FRMR qwMAAA==
 NAME nc_sarcophagus
-DATA KjpPxNH3gcUAAMREAAAAAAAAAAAAAAAA
+DATA i80HxHIzbcUAAMREAAAAAAAAAAAAAAAA
 FRMR rAMAAA==
 NAME nc_sarcophagus
-DATA 1heMxMKYbcUAAMREAAAAAAAAAAAAAAAA
+DATA KjpPxNH3gcUAAMREAAAAAAAAAAAAAAAA
 FRMR rQMAAA==
 NAME nc_sarcophagus
-DATA QlCMxMl0jcUAAMREAAAAAAAAAAAAAAAA
+DATA 1heMxMKYbcUAAMREAAAAAAAAAAAAAAAA
 FRMR rgMAAA==
 NAME nc_sarcophagus
-DATA IjcHxIZbisUAAMREAAAAAAAAAAAAAAAA
+DATA QlCMxMl0jcUAAMREAAAAAAAAAAAAAAAA
 FRMR rwMAAA==
+NAME nc_sarcophagus
+DATA IjcHxIZbisUAAMREAAAAAAAAAAAAAAAA
+FRMR sAMAAA==
 NAME nc_sarcophagus
 DATA Lpywwz/ShMUAAMREAAAAAAAAAAAAAAAA
 
@@ -6894,59 +8860,60 @@ CELL
 NAME Sarano Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
-FRMR sAMAAA==
-NAME nc_sarcophagus
-DATA 07LkRBc2FEX6/w/EAAAAAAAAAADbD8lA
 FRMR sQMAAA==
 NAME nc_sarcophagus
-DATA YBAgRPIC80T1/5/DAAAAAAAAAADky5ZA
+DATA 07LkRBc2FEX6/w/EAAAAAAAAAADbD8lA
 FRMR sgMAAA==
 NAME nc_sarcophagus
-DATA OuYfRGEZg0T1/5/DAAAAAAAAAADky5ZA
+DATA YBAgRPIC80T1/5/DAAAAAAAAAADky5ZA
 FRMR swMAAA==
 NAME nc_sarcophagus
-DATA 5Sq7RIwx6ET6/w/EAAAAAAAAAADbD8lA
+DATA OuYfRGEZg0T1/5/DAAAAAAAAAADky5ZA
 FRMR tAMAAA==
 NAME nc_sarcophagus
-DATA ZAPlRMMA6ET6/w/EAAAAAAAAAADbD8lA
+DATA 5Sq7RIwx6ET6/w/EAAAAAAAAAADbD8lA
 FRMR tQMAAA==
 NAME nc_sarcophagus
-DATA PnzkRIHXA0X6/w/EAAAAAAAAAADbD8lA
+DATA ZAPlRMMA6ET6/w/EAAAAAAAAAADbD8lA
 FRMR tgMAAA==
 NAME nc_sarcophagus
-DATA eka7RJzIA0X6/w/EAAAAAAAAAADbD8lA
+DATA PnzkRIHXA0X6/w/EAAAAAAAAAADbD8lA
 FRMR twMAAA==
 NAME nc_sarcophagus
-DATA V0e7RG7oE0X6/w/EAAAAAAAAAADbD8lA
+DATA eka7RJzIA0X6/w/EAAAAAAAAAADbD8lA
 FRMR uAMAAA==
 NAME nc_sarcophagus
-DATA phAgRGwFrUT1/5/DAAAAAAAAAADky5ZA
+DATA V0e7RG7oE0X6/w/EAAAAAAAAAADbD8lA
 FRMR uQMAAA==
 NAME nc_sarcophagus
-DATA pzKkRBqLd0X6/w/EAAAAAAAAAADbD0lA
+DATA phAgRGwFrUT1/5/DAAAAAAAAAADky5ZA
 FRMR ugMAAA==
 NAME nc_sarcophagus
-DATA bSsgRD10DkX1/5/DAAAAAAAAAADky5ZA
+DATA pzKkRBqLd0X6/w/EAAAAAAAAAADbD0lA
 FRMR uwMAAA==
 NAME nc_sarcophagus
-DATA Crg2RMkFVEX6/w/EAAAAAAAAAADbD0lA
+DATA bSsgRD10DkX1/5/DAAAAAAAAAADky5ZA
 FRMR vAMAAA==
 NAME nc_sarcophagus
-DATA su42RLvAY0X6/w/EAAAAAAAAAADbD0lA
+DATA Crg2RMkFVEX6/w/EAAAAAAAAAADbD0lA
 FRMR vQMAAA==
 NAME nc_sarcophagus
-DATA jNyERGP7U0X6/w/EAAAAAAAAAADbD0lA
+DATA su42RLvAY0X6/w/EAAAAAAAAAADbD0lA
 FRMR vgMAAA==
 NAME nc_sarcophagus
-DATA sEOERPblY0X6/w/EAAAAAAAAAADbD0lA
+DATA jNyERGP7U0X6/w/EAAAAAAAAAADbD0lA
 FRMR vwMAAA==
 NAME nc_sarcophagus
-DATA DyedRLJXj0UAABDEAAAAAAAAAADbD8k/
+DATA sEOERPblY0X6/w/EAAAAAAAAAADbD0lA
 FRMR wAMAAA==
 NAME nc_sarcophagus
-DATA N4rvQzh9eEX6/w/EAAAAAAAAAADbD0lA
+DATA DyedRLJXj0UAABDEAAAAAAAAAADbD8k/
 FRMR wQMAAA==
+NAME nc_sarcophagus
+DATA N4rvQzh9eEX6/w/EAAAAAAAAAADbD0lA
+FRMR wgMAAA==
 NAME nc_sarcophagus
 DATA xJoGRMBUj0UAABDEAAAAAAAAAADbD8k/
 
@@ -6954,62 +8921,63 @@ CELL
 NAME Saren Ancestral Tomb
 DATA AQAAABQfHwAAAIA/
 WHGT AAAAAA==
+AMBI BQUHAAkLDQAUHx8AAACAPw==
 NAM0 EwAAAA==
-FRMR wgMAAA==
-NAME nc_sarcophagus
-DATA R2iDwkYsHkUAALhEAAAAAAAAAAAAAAAA
 FRMR wwMAAA==
 NAME nc_sarcophagus
-DATA 7qokwxaBfUMAALhEAAAAAAAAAADky5ZA
+DATA R2iDwkYsHkUAALhEAAAAAAAAAAAAAAAA
 FRMR xAMAAA==
 NAME nc_sarcophagus
-DATA FJGhwxZNaUQAALhEAAAAAAAAAADbD0lA
+DATA 7qokwxaBfUMAALhEAAAAAAAAAADky5ZA
 FRMR xQMAAA==
 NAME nc_sarcophagus
-DATA ukglw33zw0QAALhEAAAAAAAAAADbD8k/
+DATA FJGhwxZNaUQAALhEAAAAAAAAAADbD0lA
 FRMR xgMAAA==
 NAME nc_sarcophagus
-DATA rBerQxzXn0QAALhEAAAAAAAAAADbD8k/
+DATA ukglw33zw0QAALhEAAAAAAAAAADbD8k/
 FRMR xwMAAA==
 NAME nc_sarcophagus
-DATA 94xQxNO7r0QAALhEAAAAAAAAAAAAAAAA
+DATA rBerQxzXn0QAALhEAAAAAAAAAADbD8k/
 FRMR yAMAAA==
 NAME nc_sarcophagus
-DATA zbcdxKsJUkUAALhEAAAAAAAAAADbD8lA
+DATA 94xQxNO7r0QAALhEAAAAAAAAAAAAAAAA
 FRMR yQMAAA==
 NAME nc_sarcophagus
-DATA 9kRkQw4h6EQAALhEAAAAAAAAAADky5ZA
+DATA zbcdxKsJUkUAALhEAAAAAAAAAADbD8lA
 FRMR ygMAAA==
 NAME nc_sarcophagus
-DATA p1jfQ8E/MEUAALhEAAAAAAAAAAAAAAAA
+DATA 9kRkQw4h6EQAALhEAAAAAAAAAADky5ZA
 FRMR ywMAAA==
 NAME nc_sarcophagus
-DATA c6KBwjy4BUUAALhEAAAAAAAAAAAAAAAA
+DATA p1jfQ8E/MEUAALhEAAAAAAAAAAAAAAAA
 FRMR zAMAAA==
 NAME nc_sarcophagus
-DATA DL6AQzy4BUUAALhEAAAAAAAAAAAAAAAA
+DATA c6KBwjy4BUUAALhEAAAAAAAAAAAAAAAA
 FRMR zQMAAA==
 NAME nc_sarcophagus
-DATA LWigRL4vFEUAALhEAAAAAAAAAAAAAAAA
+DATA DL6AQzy4BUUAALhEAAAAAAAAAAAAAAAA
 FRMR zgMAAA==
 NAME nc_sarcophagus
-DATA WoKgRPCmMEUAALhEAAAAAAAAAAAAAAAA
+DATA LWigRL4vFEUAALhEAAAAAAAAAAAAAAAA
 FRMR zwMAAA==
 NAME nc_sarcophagus
-DATA 2roMxC0y6EQAALhEAAAAAAAAAADky5ZA
+DATA WoKgRPCmMEUAALhEAAAAAAAAAAAAAAAA
 FRMR 0AMAAA==
 NAME nc_sarcophagus
-DATA uAxyxFf0EUUAALhEAAAAAAAAAADbD8lA
+DATA 2roMxC0y6EQAALhEAAAAAAAAAADky5ZA
 FRMR 0QMAAA==
 NAME nc_sarcophagus
-DATA DsEdxDEWEkUAALhEAAAAAAAAAADbD8lA
+DATA uAxyxFf0EUUAALhEAAAAAAAAAADbD8lA
 FRMR 0gMAAA==
 NAME nc_sarcophagus
-DATA Pd8dxB/+QUUAALhEAAAAAAAAAADbD8lA
+DATA DsEdxDEWEkUAALhEAAAAAAAAAADbD8lA
 FRMR 0wMAAA==
 NAME nc_sarcophagus
-DATA Pw9yxGkSQkUAALhEAAAAAAAAAADbD8lA
+DATA Pd8dxB/+QUUAALhEAAAAAAAAAADbD8lA
 FRMR 1AMAAA==
+NAME nc_sarcophagus
+DATA Pw9yxGkSQkUAALhEAAAAAAAAAADbD8lA
+FRMR 1QMAAA==
 NAME nc_sarcophagus
 DATA BydyxCLtUUUAALhEAAAAAAAAAADbD8lA
 
@@ -7017,74 +8985,75 @@ CELL
 NAME Sarethi Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
-FRMR 1QMAAA==
-NAME nc_sarcophagus
-DATA xPUvxZuqqMQGAChEAAAAAAAAAADky5ZA
 FRMR 1gMAAA==
 NAME nc_sarcophagus
-DATA 8XYtxS0yCMQGAChEAAAAAAAAAAAAAAAA
+DATA xPUvxZuqqMQGAChEAAAAAAAAAADky5ZA
 FRMR 1wMAAA==
 NAME nc_sarcophagus
-DATA DWRCxXyhCMQGAChEAAAAAAAAAAAAAAAA
+DATA 8XYtxS0yCMQGAChEAAAAAAAAAAAAAAAA
 FRMR 2AMAAA==
 NAME nc_sarcophagus
-DATA 92xCxUEVSMQGAChEAAAAAAAAAAAAAAAA
+DATA DWRCxXyhCMQGAChEAAAAAAAAAAAAAAAA
 FRMR 2QMAAA==
 NAME nc_sarcophagus
-DATA DYktxb4wR8QGAChEAAAAAAAAAAAAAAAA
+DATA 92xCxUEVSMQGAChEAAAAAAAAAAAAAAAA
 FRMR 2gMAAA==
 NAME nc_sarcophagus
-DATA +CxCxb7cg8QGAChEAAAAAAAAAAAAAAAA
+DATA DYktxb4wR8QGAChEAAAAAAAAAAAAAAAA
 FRMR 2wMAAA==
 NAME nc_sarcophagus
-DATA GOsfxXmifsQGAChEAAAAAAAAAADky5ZA
+DATA +CxCxb7cg8QGAChEAAAAAAAAAAAAAAAA
 FRMR 3AMAAA==
 NAME nc_sarcophagus
-DATA /OzvxAD0H8QGAChEAAAAAAAAAADky5ZA
+DATA GOsfxXmifsQGAChEAAAAAAAAAADky5ZA
 FRMR 3QMAAA==
 NAME nc_sarcophagus
-DATA NBsQxVntqMQGAChEAAAAAAAAAADky5ZA
+DATA /OzvxAD0H8QGAChEAAAAAAAAAADky5ZA
 FRMR 3gMAAA==
 NAME nc_sarcophagus
-DATA jeEfxaqEqMQGAChEAAAAAAAAAADky5ZA
+DATA NBsQxVntqMQGAChEAAAAAAAAAADky5ZA
 FRMR 3wMAAA==
 NAME nc_sarcophagus
-DATA ltQPxcpPfsQGAChEAAAAAAAAAADky5ZA
+DATA jeEfxaqEqMQGAChEAAAAAAAAAADky5ZA
 FRMR 4AMAAA==
 NAME nc_sarcophagus
-DATA FK8/xDjp+sQAANBDAAAAAAAAAADky5ZA
+DATA ltQPxcpPfsQGAChEAAAAAAAAAADky5ZA
 FRMR 4QMAAA==
 NAME nc_sarcophagus
-DATA 5N7GvsOFBMUAANBDAAAAAAAAAADky5ZA
+DATA FK8/xDjp+sQAANBDAAAAAAAAAADky5ZA
 FRMR 4gMAAA==
 NAME nc_sarcophagus
-DATA PA2gxPN9VMUGAAhEAAAAAAAAAADky5ZA
+DATA 5N7GvsOFBMUAANBDAAAAAAAAAADky5ZA
 FRMR 4wMAAA==
 NAME nc_sarcophagus
-DATA PNqfxIGfP8UGAAhEAAAAAAAAAADky5ZA
+DATA PA2gxPN9VMUGAAhEAAAAAAAAAADky5ZA
 FRMR 5AMAAA==
 NAME nc_sarcophagus
-DATA 47I/xEjy7cQAANBDAAAAAAAAAADky5ZA
+DATA PNqfxIGfP8UGAAhEAAAAAAAAAADky5ZA
 FRMR 5QMAAA==
 NAME nc_sarcophagus
-DATA zFCfPmn/3sQAANBDAAAAAAAAAADky5ZA
+DATA 47I/xEjy7cQAANBDAAAAAAAAAADky5ZA
 FRMR 5gMAAA==
 NAME nc_sarcophagus
-DATA nm2ARPVdn8QAANBDAAAAAAAAAADky5ZA
+DATA zFCfPmn/3sQAANBDAAAAAAAAAADky5ZA
 FRMR 5wMAAA==
 NAME nc_sarcophagus
-DATA rEmBQxxJ38QAANBDAAAAAAAAAADky5ZA
+DATA nm2ARPVdn8QAANBDAAAAAAAAAADky5ZA
 FRMR 6AMAAA==
 NAME nc_sarcophagus
-DATA rEmBQzBrBMUAANBDAAAAAAAAAADky5ZA
+DATA rEmBQxxJ38QAANBDAAAAAAAAAADky5ZA
 FRMR 6QMAAA==
 NAME nc_sarcophagus
-DATA vWdARDdjJMUAANBDAAAAAAAAAADky5ZA
+DATA rEmBQzBrBMUAANBDAAAAAAAAAADky5ZA
 FRMR 6gMAAA==
 NAME nc_sarcophagus
-DATA yHCARNZBJMUAANBDAAAAAAAAAADky5ZA
+DATA vWdARDdjJMUAANBDAAAAAAAAAADky5ZA
 FRMR 6wMAAA==
+NAME nc_sarcophagus
+DATA yHCARNZBJMUAANBDAAAAAAAAAADky5ZA
+FRMR 7AMAAA==
 NAME nc_sarcophagus
 DATA Oa1ARBJGn8QAANBDAAAAAAAAAADky5ZA
 
@@ -7092,32 +9061,33 @@ CELL
 NAME Sarys Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CQAAAA==
-FRMR 7AMAAA==
-NAME nc_sarcophagus
-DATA 4DaVRYqsZ0UAAF9GAAAAAAAAAAAAAAAA
 FRMR 7QMAAA==
 NAME nc_sarcophagus
-DATA aDGpRTLssUUAAGFGAAAAAAAAAAAAAAAA
+DATA 4DaVRYqsZ0UAAF9GAAAAAAAAAAAAAAAA
 FRMR 7gMAAA==
 NAME nc_sarcophagus
-DATA vtWeRVUAskUAAGFGAAAAAAAAAAAAAAAA
+DATA aDGpRTLssUUAAGFGAAAAAAAAAAAAAAAA
 FRMR 7wMAAA==
 NAME nc_sarcophagus
-DATA 9YtyRTgbNEUAAF9GAAAAAAAAAAAAAAAA
+DATA vtWeRVUAskUAAGFGAAAAAAAAAAAAAAAA
 FRMR 8AMAAA==
 NAME nc_sarcophagus
-DATA bxx6Ra0SVkUAAF9GAAAAAAAAAAAAAAAA
+DATA 9YtyRTgbNEUAAF9GAAAAAAAAAAAAAAAA
 FRMR 8QMAAA==
 NAME nc_sarcophagus
-DATA 4ORVRbb4VUUAAF9GAAAAAAAAAAAAAAAA
+DATA bxx6Ra0SVkUAAF9GAAAAAAAAAAAAAAAA
 FRMR 8gMAAA==
 NAME nc_sarcophagus
-DATA FoddRe4LNEUAAF9GAAAAAAAAAAAAAAAA
+DATA 4ORVRbb4VUUAAF9GAAAAAAAAAAAAAAAA
 FRMR 8wMAAA==
 NAME nc_sarcophagus
-DATA PPpVRboCgUUAAF9GAAAAAAAAAAAAAAAA
+DATA FoddRe4LNEUAAF9GAAAAAAAAAAAAAAAA
 FRMR 9AMAAA==
+NAME nc_sarcophagus
+DATA PPpVRboCgUUAAF9GAAAAAAAAAAAAAAAA
+FRMR 9QMAAA==
 NAME nc_sarcophagus
 DATA rSt6RSe4c0UAAF9GAAAAAAAAAAAAAAAA
 
@@ -7125,59 +9095,60 @@ CELL
 NAME Savel Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
-FRMR 9QMAAA==
-NAME nc_sarcophagus
-DATA h10BQ8BPCMQCAMBDAAAAAAAAAADbD8k/
 FRMR 9gMAAA==
 NAME nc_sarcophagus
-DATA 0PYNQ2bBCEICAMBDAAAAAAAAAADky5ZA
+DATA h10BQ8BPCMQCAMBDAAAAAAAAAADbD8k/
 FRMR 9wMAAA==
 NAME nc_sarcophagus
-DATA Hvvuw/wA10T8///CAAAAAAAAAADbD0lA
+DATA 0PYNQ2bBCEICAMBDAAAAAAAAAADky5ZA
 FRMR +AMAAA==
 NAME nc_sarcophagus
-DATA gtjQw3DOB8ICAMBDAAAAAAAAAADbD0lA
+DATA Hvvuw/wA10T8///CAAAAAAAAAADbD0lA
 FRMR +QMAAA==
 NAME nc_sarcophagus
-DATA eB/Rwz1178MCAMBDAAAAAAAAAADbD0lA
+DATA gtjQw3DOB8ICAMBDAAAAAAAAAADbD0lA
 FRMR +gMAAA==
 NAME nc_sarcophagus
-DATA W+T7ws5XCMQCAMBDAAAAAAAAAADbD8k/
+DATA eB/Rwz1178MCAMBDAAAAAAAAAADbD0lA
 FRMR +wMAAA==
 NAME nc_sarcophagus
-DATA 9/H/wuhHCEICAMBDAAAAAAAAAADky5ZA
+DATA W+T7ws5XCMQCAMBDAAAAAAAAAADbD8k/
 FRMR /AMAAA==
 NAME nc_sarcophagus
-DATA AT4gxAahs8ICAMBDAAAAAAAAAADky5ZA
+DATA 9/H/wuhHCEICAMBDAAAAAAAAAADky5ZA
 FRMR /QMAAA==
 NAME nc_sarcophagus
-DATA X8kfxCg51MMCAMBDAAAAAAAAAADky5ZA
+DATA AT4gxAahs8ICAMBDAAAAAAAAAADky5ZA
 FRMR /gMAAA==
 NAME nc_sarcophagus
-DATA uONexO740sMCAMBDAAAAAAAAAADky5ZA
+DATA X8kfxCg51MMCAMBDAAAAAAAAAADky5ZA
 FRMR /wMAAA==
 NAME nc_sarcophagus
-DATA yMKPxEv60sMCAMBDAAAAAAAAAADky5ZA
+DATA uONexO740sMCAMBDAAAAAAAAAADky5ZA
 FRMR AAQAAA==
 NAME nc_sarcophagus
-DATA 4Wu0xDDLIEQWAABDAAAAAAAAAADbD0lA
+DATA yMKPxEv60sMCAMBDAAAAAAAAAADky5ZA
 FRMR AQQAAA==
 NAME nc_sarcophagus
-DATA rU6LxIgVIEQWAABDAAAAAAAAAADbD0lA
+DATA 4Wu0xDDLIEQWAABDAAAAAAAAAADbD0lA
 FRMR AgQAAA==
 NAME nc_sarcophagus
-DATA r420xGzwX0QWAABDAAAAAAAAAADbD0lA
+DATA rU6LxIgVIEQWAABDAAAAAAAAAADbD0lA
 FRMR AwQAAA==
 NAME nc_sarcophagus
-DATA 20+LxFMqYEQWAABDAAAAAAAAAADbD0lA
+DATA r420xGzwX0QWAABDAAAAAAAAAADbD0lA
 FRMR BAQAAA==
 NAME nc_sarcophagus
-DATA oO2fxFgQm0T8///CAAAAAAAAAADbD8k/
+DATA 20+LxFMqYEQWAABDAAAAAAAAAADbD0lA
 FRMR BQQAAA==
 NAME nc_sarcophagus
-DATA RT+exCNv2ET8///CAAAAAAAAAADbD8k/
+DATA oO2fxFgQm0T8///CAAAAAAAAAADbD8k/
 FRMR BgQAAA==
+NAME nc_sarcophagus
+DATA RT+exCNv2ET8///CAAAAAAAAAADbD8k/
+FRMR BwQAAA==
 NAME nc_sarcophagus
 DATA 9BcCxUcd2UT8///CAAAAAAAAAADbD0lA
 
@@ -7185,101 +9156,102 @@ CELL
 NAME Senim Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 IAAAAA==
-FRMR BwQAAA==
-NAME nc_sarcophagus
-DATA t2EgRCMJCEQAAGhEAAAAAAAAAADky5ZA
 FRMR CAQAAA==
 NAME nc_sarcophagus
-DATA 8L0dRKf4BUUAAGhEAAAAAAAAAADky5ZA
+DATA t2EgRCMJCEQAAGhEAAAAAAAAAADky5ZA
 FRMR CQQAAA==
 NAME nc_sarcophagus
-DATA QF02xOogDEUAAGhEAAAAAAAAAADbD0lA
+DATA 8L0dRKf4BUUAAGhEAAAAAAAAAADky5ZA
 FRMR CgQAAA==
 NAME nc_sarcophagus
-DATA KFGTRKfcBUUAAGhEAAAAAAAAAADky5ZA
+DATA QF02xOogDEUAAGhEAAAAAAAAAADbD0lA
 FRMR CwQAAA==
 NAME nc_sarcophagus
-DATA PqDvRDm9g0QAAGhEAAAAAAAAAADbD8k/
+DATA KFGTRKfcBUUAAGhEAAAAAAAAAADky5ZA
 FRMR DAQAAA==
 NAME nc_sarcophagus
-DATA QTYCRV/3p0QAAGhEAAAAAAAAAADbD0lA
+DATA PqDvRDm9g0QAAGhEAAAAAAAAAADbD8k/
 FRMR DQQAAA==
 NAME nc_sarcophagus
-DATA VsG7RFElq0QAAGhEAAAAAAAAAADbD0lA
+DATA QTYCRV/3p0QAAGhEAAAAAAAAAADbD0lA
 FRMR DgQAAA==
 NAME nc_sarcophagus
-DATA orrfROYozEQAAGhEAAAAAAAAAADbD8k/
+DATA VsG7RFElq0QAAGhEAAAAAAAAAADbD0lA
 FRMR DwQAAA==
 NAME nc_sarcophagus
-DATA kFO+Qs8HBkUAAGhEAAAAAAAAAADky5ZA
+DATA orrfROYozEQAAGhEAAAAAAAAAADbD8k/
 FRMR EAQAAA==
 NAME nc_sarcophagus
-DATA 76CAw2f5/EQAAGhEAAAAAAAAAADky5ZA
+DATA kFO+Qs8HBkUAAGhEAAAAAAAAAADky5ZA
 FRMR EQQAAA==
 NAME nc_sarcophagus
-DATA Sz3/w1z5/EQAAGhEAAAAAAAAAADky5ZA
+DATA 76CAw2f5/EQAAGhEAAAAAAAAAADky5ZA
 FRMR EgQAAA==
 NAME nc_sarcophagus
-DATA HPuAw4FN00QAAGhEAAAAAAAAAADky5ZA
+DATA Sz3/w1z5/EQAAGhEAAAAAAAAAADky5ZA
 FRMR EwQAAA==
 NAME nc_sarcophagus
-DATA Scr+w7EM00QAAGhEAAAAAAAAAADky5ZA
+DATA HPuAw4FN00QAAGhEAAAAAAAAAADky5ZA
 FRMR FAQAAA==
 NAME nc_sarcophagus
-DATA iQ5AxHFG00QAAGhEAAAAAAAAAADky5ZA
+DATA Scr+w7EM00QAAGhEAAAAAAAAAADky5ZA
 FRMR FQQAAA==
 NAME nc_sarcophagus
-DATA +dOExL7a90QAAGhEAAAAAAAAAADbD0lA
+DATA iQ5AxHFG00QAAGhEAAAAAAAAAADky5ZA
 FRMR FgQAAA==
 NAME nc_sarcophagus
-DATA wNaExMY1DEUAAGhEAAAAAAAAAADbD0lA
+DATA +dOExL7a90QAAGhEAAAAAAAAAADbD0lA
 FRMR FwQAAA==
 NAME nc_sarcophagus
-DATA wuqExBzhG0UAAGhEAAAAAAAAAADbD0lA
+DATA wNaExMY1DEUAAGhEAAAAAAAAAADbD0lA
 FRMR GAQAAA==
 NAME nc_sarcophagus
-DATA At8+xPn+aUUAAGhEAAAAAAAAAADbD8k/
+DATA wuqExBzhG0UAAGhEAAAAAAAAAADbD0lA
 FRMR GQQAAA==
 NAME nc_sarcophagus
-DATA 6981xK3jG0UAAGhEAAAAAAAAAADbD0lA
+DATA At8+xPn+aUUAAGhEAAAAAAAAAADbD8k/
 FRMR GgQAAA==
 NAME nc_sarcophagus
-DATA cqhXxCftS0UAAGhEAAAAAAAAAADbD0lA
+DATA 6981xK3jG0UAAGhEAAAAAAAAAADbD0lA
 FRMR GwQAAA==
 NAME nc_sarcophagus
-DATA PgKgxPDQS0UAAGhEAAAAAAAAAADbD8k/
+DATA cqhXxCftS0UAAGhEAAAAAAAAAADbD0lA
 FRMR HAQAAA==
 NAME nc_sarcophagus
-DATA 9Oq/xPTQS0UAAGhEAAAAAAAAAADbD8k/
+DATA PgKgxPDQS0UAAGhEAAAAAAAAAADbD8k/
 FRMR HQQAAA==
 NAME nc_sarcophagus
-DATA pgvgxO7QS0UAAGhEAAAAAAAAAADbD8k/
+DATA 9Oq/xPTQS0UAAGhEAAAAAAAAAADbD8k/
 FRMR HgQAAA==
 NAME nc_sarcophagus
-DATA 0DUKxSrnS0UAAGhEAAAAAAAAAAAAAAAA
+DATA pgvgxO7QS0UAAGhEAAAAAAAAAADbD8k/
 FRMR HwQAAA==
 NAME nc_sarcophagus
-DATA 0ZAAxZnzXUUAAGhEAAAAAAAAAADky5ZA
+DATA 0DUKxSrnS0UAAGhEAAAAAAAAAAAAAAAA
 FRMR IAQAAA==
 NAME nc_sarcophagus
-DATA +ui/xGIRbEUAAGhEAAAAAAAAAADbD0lA
+DATA 0ZAAxZnzXUUAAGhEAAAAAAAAAADky5ZA
 FRMR IQQAAA==
 NAME nc_sarcophagus
-DATA eea/xNkCfEUAAGhEAAAAAAAAAADbD0lA
+DATA +ui/xGIRbEUAAGhEAAAAAAAAAADbD0lA
 FRMR IgQAAA==
 NAME nc_sarcophagus
-DATA de2/xKgDhkUAAGhEAAAAAAAAAADbD0lA
+DATA eea/xNkCfEUAAGhEAAAAAAAAAADbD0lA
 FRMR IwQAAA==
 NAME nc_sarcophagus
-DATA LoFCxOYEn0UAAGhEAAAAAAAAAADbD8k/
+DATA de2/xKgDhkUAAGhEAAAAAAAAAADbD0lA
 FRMR JAQAAA==
 NAME nc_sarcophagus
-DATA p+/Ew/f/nkUAAGhEAAAAAAAAAADbD8k/
+DATA LoFCxOYEn0UAAGhEAAAAAAAAAADbD8k/
 FRMR JQQAAA==
 NAME nc_sarcophagus
-DATA a5XTQybqiUVNE5dEAAAAAAAAAADbD0lA
+DATA p+/Ew/f/nkUAAGhEAAAAAAAAAADbD8k/
 FRMR JgQAAA==
+NAME nc_sarcophagus
+DATA a5XTQybqiUVNE5dEAAAAAAAAAADbD0lA
+FRMR JwQAAA==
 NAME nc_sarcophagus
 DATA 4sq9w2QqakUAAGhEAAAAAAAAAADbD8k/
 
@@ -7287,29 +9259,30 @@ CELL
 NAME Serano Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CAAAAA==
-FRMR JwQAAA==
-NAME nc_sarcophagus
-DATA HQUGxWpGAUQDAIhEAAAAAAAAAADky5ZA
 FRMR KAQAAA==
 NAME nc_sarcophagus
-DATA hha8xOkH0UQCALhEAAAAAAAAAADky5ZA
+DATA HQUGxWpGAUQDAIhEAAAAAAAAAADky5ZA
 FRMR KQQAAA==
 NAME nc_sarcophagus
-DATA F8jrxPu6AUQDAIhEAAAAAAAAAADky5ZA
+DATA hha8xOkH0UQCALhEAAAAAAAAAADky5ZA
 FRMR KgQAAA==
 NAME nc_sarcophagus
-DATA O9DLxLlAN0MDAIhEAAAAAAAAAADky5ZA
+DATA F8jrxPu6AUQDAIhEAAAAAAAAAADky5ZA
 FRMR KwQAAA==
 NAME nc_sarcophagus
-DATA 9v3rxJHCOkMDAIhEAAAAAAAAAADky5ZA
+DATA O9DLxLlAN0MDAIhEAAAAAAAAAADky5ZA
 FRMR LAQAAA==
 NAME nc_sarcophagus
-DATA wzIGxcfZO0MDAIhEAAAAAAAAAADky5ZA
+DATA 9v3rxJHCOkMDAIhEAAAAAAAAAADky5ZA
 FRMR LQQAAA==
 NAME nc_sarcophagus
-DATA MBfMxPmzAUQDAIhEAAAAAAAAAADky5ZA
+DATA wzIGxcfZO0MDAIhEAAAAAAAAAADky5ZA
 FRMR LgQAAA==
+NAME nc_sarcophagus
+DATA MBfMxPmzAUQDAIhEAAAAAAAAAADky5ZA
+FRMR LwQAAA==
 NAME nc_sarcophagus
 DATA rTG8xLskp0QCALhEAAAAAAAAAADky5ZA
 
@@ -7317,65 +9290,66 @@ CELL
 NAME Sethan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FAAAAA==
-FRMR LwQAAA==
-NAME nc_sarcophagus
-DATA FtgtRcogD8UAADxFAAAAAAAAAADbD0lA
 FRMR MAQAAA==
 NAME nc_sarcophagus
-DATA hrIxRR7d+8QAADxFAAAAAAAAAADky5ZA
+DATA FtgtRcogD8UAADxFAAAAAAAAAADbD0lA
 FRMR MQQAAA==
 NAME nc_sarcophagus
-DATA aUdSRXhwP8MAADxFAAAAAAAAAAAAAAAA
+DATA hrIxRR7d+8QAADxFAAAAAAAAAADky5ZA
 FRMR MgQAAA==
 NAME nc_sarcophagus
-DATA nrVwReLWDcUAADxFAAAAAAAAAADbD8k/
+DATA aUdSRXhwP8MAADxFAAAAAAAAAAAAAAAA
 FRMR MwQAAA==
 NAME nc_sarcophagus
-DATA Kq8xRVwZIsUAADxFAAAAAAAAAADky5ZA
+DATA nrVwReLWDcUAADxFAAAAAAAAAADbD8k/
 FRMR NAQAAA==
 NAME nc_sarcophagus
-DATA pHVORT0hIsUAADxFAAAAAAAAAADky5ZA
+DATA Kq8xRVwZIsUAADxFAAAAAAAAAADky5ZA
 FRMR NQQAAA==
 NAME nc_sarcophagus
-DATA OF5hRWYhIsUAADxFAAAAAAAAAADky5ZA
+DATA pHVORT0hIsUAADxFAAAAAAAAAADky5ZA
 FRMR NgQAAA==
 NAME nc_sarcophagus
-DATA j6R4RbAuMsUAADxFAAAAAAAAAADky5ZA
+DATA OF5hRWYhIsUAADxFAAAAAAAAAADky5ZA
 FRMR NwQAAA==
 NAME nc_sarcophagus
-DATA 8hmBRQn8H8UAADxFAAAAAAAAAADbD0lA
+DATA j6R4RbAuMsUAADxFAAAAAAAAAADky5ZA
 FRMR OAQAAA==
 NAME nc_sarcophagus
-DATA T/xNRces+8QAADxFAAAAAAAAAADky5ZA
+DATA 8hmBRQn8H8UAADxFAAAAAAAAAADbD0lA
 FRMR OQQAAA==
 NAME nc_sarcophagus
-DATA ZTVQRSjgj8QAADxFAAAAAAAAAAAAAAAA
+DATA T/xNRces+8QAADxFAAAAAAAAAADky5ZA
 FRMR OgQAAA==
 NAME nc_sarcophagus
-DATA z7cvRT4ykMQAADxFAAAAAAAAAAAAAAAA
+DATA ZTVQRSjgj8QAADxFAAAAAAAAAAAAAAAA
 FRMR OwQAAA==
 NAME nc_sarcophagus
-DATA rQ8QRdp3KcQAADxFAAAAAAAAAADky5ZA
+DATA z7cvRT4ykMQAADxFAAAAAAAAAAAAAAAA
 FRMR PAQAAA==
 NAME nc_sarcophagus
-DATA 1wRIRQBya0AAADxFAAAAAAAAAADbD8k/
+DATA rQ8QRdp3KcQAADxFAAAAAAAAAADky5ZA
 FRMR PQQAAA==
 NAME nc_sarcophagus
-DATA /hpSRSpUAMQAADxFAAAAAAAAAAAAAAAA
+DATA 1wRIRQBya0AAADxFAAAAAAAAAADbD8k/
 FRMR PgQAAA==
 NAME nc_sarcophagus
-DATA QkGMRHj+I8MAADxFAAAAAAAAAADbD8lA
+DATA /hpSRSpUAMQAADxFAAAAAAAAAAAAAAAA
 FRMR PwQAAA==
 NAME nc_sarcophagus
-DATA FhIQRfx+rMMAADxFAAAAAAAAAADky5ZA
+DATA QkGMRHj+I8MAADxFAAAAAAAAAADbD8lA
 FRMR QAQAAA==
 NAME nc_sarcophagus
-DATA RCQARbRmrMMAADxFAAAAAAAAAADky5ZA
+DATA FhIQRfx+rMMAADxFAAAAAAAAAADky5ZA
 FRMR QQQAAA==
 NAME nc_sarcophagus
-DATA OPH/RN44KcQAADxFAAAAAAAAAADky5ZA
+DATA RCQARbRmrMMAADxFAAAAAAAAAADky5ZA
 FRMR QgQAAA==
+NAME nc_sarcophagus
+DATA OPH/RN44KcQAADxFAAAAAAAAAADky5ZA
+FRMR QwQAAA==
 NAME nc_sarcophagus
 DATA qC6MRMbEVcQAADxFAAAAAAAAAADbD8lA
 
@@ -7383,18 +9357,13 @@ CELL
 NAME Tel Mora, Tower Services
 DATA BQAAAB4gIAAAAEA/
 WHGT AAAAAA==
-NAM0 AQAAAA==
-FRMR QwQAAA==
-NAME nc_chest_small
-ANAM tinaso alan
-INTV 0
-NAM9 AQAAAA==
-DATA t94aw/x838S4ebFDAAAAAAAAAAAI2f0/
+AMBI NzItAFAoAAAeICAAAABAPw==
 
 CELL
 NAME Tel Vos, Services Tower
 DATA BQAAADcyLQAAAEA/
 WHGT AAAAAA==
+AMBI NzItADweAAA3Mi0AAABAPw==
 NAM0 AQAAAA==
 FRMR RAQAAA==
 NAME nc_chest_small
@@ -7407,6 +9376,7 @@ CELL
 NAME Telvayn Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EQAAAA==
 FRMR RQQAAA==
 NAME nc_sarcophagus
@@ -7464,6 +9434,7 @@ CELL
 NAME Thalas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR VgQAAA==
 NAME nc_sarcophagus
@@ -7516,6 +9487,7 @@ CELL
 NAME Tharys Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BQAAAA==
 FRMR ZQQAAA==
 NAME nc_sarcophagus
@@ -7537,6 +9509,7 @@ CELL
 NAME Thelas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BAAAAA==
 FRMR agQAAA==
 NAME nc_sarcophagus
@@ -7555,6 +9528,7 @@ CELL
 NAME Thiralas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CAAAAA==
 FRMR bgQAAA==
 NAME nc_sarcophagus
@@ -7585,6 +9559,7 @@ CELL
 NAME Uveran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 GwAAAA==
 FRMR dgQAAA==
 NAME nc_sarcophagus
@@ -7672,6 +9647,7 @@ CELL
 NAME Vandus Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR kQQAAA==
 NAME nc_sarcophagus
@@ -7723,6 +9699,7 @@ CELL
 NAME Velas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
 FRMR oAQAAA==
 NAME nc_sarcophagus
@@ -7783,6 +9760,7 @@ CELL
 NAME Veloth Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
 FRMR sgQAAA==
 NAME nc_sarcophagus
@@ -7858,6 +9836,7 @@ CELL
 NAME Venim Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAyGQAAAACAPw==
 NAM0 EwAAAA==
 FRMR yQQAAA==
 NAME nc_sarcophagus
@@ -7921,6 +9900,7 @@ CELL
 NAME Verelnim Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 HQAAAA==
 FRMR 3AQAAA==
 NAME nc_sarcophagus
@@ -8011,35 +9991,36 @@ NAME nc_sarcophagus
 DATA IOm5RJ79DUUCADDEAAAAAAAAAADbD8k/
 
 CELL
+NAME Vivec, J'Rasha: Healer
+DATA BQAAAEIyIgAAAEA/
+WHGT AAAAAA==
+AMBI NzItAD0oFABCMiIAAABAPw==
+NAM0 AQAAAA==
+FRMR +QQAAA==
+NAME nc_crate
+ANAM j'rasha
+INTV 0
+NAM9 AQAAAA==
+DATA o90ewxX3JsQ7xQdDAAAAAAAAAAAAAAAA
+
+CELL
 NAME Vivec, Telvanni Monster Lab
 DATA BQAAADMiEQAAAEA/
 WHGT AAAAAA==
+AMBI PSgUADcyLQAzIhEAAABAPw==
 NAM0 BAAAAA==
-FRMR +QQAAA==
-NAME nc_sarcophagus
-DATA AAAARAAAgMOsoAnDAAAAAAAAAADbD8k/
 FRMR +gQAAA==
 NAME nc_sarcophagus
-DATA AAAwRQAA8MM9fAHDAAAAAAAAAADky5ZA
+DATA AAAARAAAgMOsoAnDAAAAAAAAAADbD8k/
 FRMR +wQAAA==
 NAME nc_sarcophagus
-DATA AAAwRQAAOEQAAADDAAAAAAAAAADky5ZA
+DATA AAAwRQAA8MM9fAHDAAAAAAAAAADky5ZA
 FRMR /AQAAA==
 NAME nc_sarcophagus
-DATA mW6vRMeDAEPZKwLDAAAAAAAAAADbD0lA
-
-CELL
-NAME Pelagiad, Mebestien Ence: Trader°\x03
-DATA BQAAAEskGAAAAEA/
-WHGT AAAAAA==
-AMBI S0FBAFA8FABLJBgAAABAPw==
-NAM0 AQAAAA==
+DATA AAAwRQAAOEQAAADDAAAAAAAAAADky5ZA
 FRMR /QQAAA==
-NAME nc_crate
-ANAM mebestian ence
-INTV 0
-NAM9 AQAAAA==
-DATA m2wbQ90LzcOVmy5EAAAAAAAAAAAAAAAA
+NAME nc_sarcophagus
+DATA mW6vRMeDAEPZKwLDAAAAAAAAAADbD0lA
 
 CELL
 NAME Храм Танатоса, Склеп
@@ -8393,7 +10374,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQDu8fv/////+///QP///wECIPIBAAAAZvr//2T///8BAfIg+////3H9//89////AQLw4Pz///90/v//QP///wEE6vKdAQAAe/7//0D///8BAvLuUP7//3v+//9A////AQLo8Pf////6////QP///wEE9S79////TwEAAED///8BA+4gnwEAAIYBAABA////AQLi8Fn+//95AQAAQP///wEC9+VL/v//MQAAAED///8BAyDomgEAAD8AAABA////AQPx6w==
+PGRP /////2r6//86////AQBtX/v/////+///QP///wECAAABAAAAZvr//2T///8BAXRl+////3H9//89////AQIAAPz///90/v//QP///wEEdGmdAQAAe/7//0D///8BAmFuUP7//3v+//9A////AQJhbvf////6////QP///wEEYW79////TwEAAED///8BA2NonwEAAIYBAABA////AQJfcln+//95AQAAQP///wECZW5L/v//MQAAAED///8BA3JhmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -8402,23 +10383,23 @@ DATA AQAAAAAAAAAAAIA/
 WHGT AAAAAA==
 AMBI MzMzANanfAAAAAAAAACAPw==
 FRMR YAUAAA==
-NAME skeleton archer
-DATA CQgLRb5BqkXqDSDDAAAAAAAAAACcmdk/
-FRMR YQUAAA==
-NAME skeleton archer
-DATA TAwTRcIVwEXEMCHDAAAAAAAAAADdD6lA
-FRMR YgUAAA==
-NAME skeleton_weak
-DATA RgtCw52ofkUdR9PDAAAAAAAAAACamdk/
-FRMR YwUAAA==
-NAME ancestor_ghost_greater
-DATA HjkWwEgfW0OYsoHDAAAAAAAAAAAxMzNA
-FRMR ZAUAAA==
-NAME nc_guard_rev
-DATA gLn6vigY6UR43n3DAAAAAAAAAABlZkZA
-FRMR ZQUAAA==
 NAME nc_Tragrilar
 DATA 2yUCRSoksUWZVbtCAAAAAAAAAAAyMzNA
+FRMR YQUAAA==
+NAME nc_guard_rev
+DATA gLn6vigY6UR43n3DAAAAAAAAAABlZkZA
+FRMR YgUAAA==
+NAME skeleton archer
+DATA CQgLRb5BqkXqDSDDAAAAAAAAAACcmdk/
+FRMR YwUAAA==
+NAME skeleton archer
+DATA TAwTRcIVwEXEMCHDAAAAAAAAAADdD6lA
+FRMR ZAUAAA==
+NAME skeleton_weak
+DATA RgtCw52ofkUdR9PDAAAAAAAAAACamdk/
+FRMR ZQUAAA==
+NAME ancestor_ghost_greater
+DATA HjkWwEgfW0OYsoHDAAAAAAAAAAAxMzNA
 FRMR ZgUAAA==
 NAME bar_door_ex_archedoor
 DODT dT93QC/T50MLjqHCAAAAAAAAAADLzExA
@@ -8435,118 +10416,118 @@ DODT ZE4lwzn4bEWWl9nDAAAAAAAAAAACAMA/
 DNAM Храм Танатоса
 DATA lJqGwmHiD0VssIHDAAAAAAAAAACp3JVA
 FRMR aQUAAA==
-NAME nc_cauldron
-DATA 6DIywce+nUVazwbEAAAAAAAAAAAAAAAA
+NAME nc_salt_frost
+XSCL AAAAQA==
+DATA +5EZREDlo0V7qCnEAAAAAAAAAABDdq9A
 FRMR agUAAA==
-NAME nc_rev_placer
-DATA AADwwQAopUUAAIDDAAAAAAAAAAAAAAAA
-NAM0 6wEAAA==
+NAME nc_salt_poison
+XSCL AAAAQA==
+DATA ekm0Q8uMq0XvDinEAAAAAAAAAABlZuY/
 FRMR awUAAA==
+NAME nc_salt_fire
+XSCL AAAAQA==
+DATA g6o2RN35mkW4mCnEAAAAAAAAAACo3MVA
+NAM0 7AEAAA==
+FRMR bAUAAA==
 NAME in_velothilarge_connector_01
 DATA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-FRMR bAUAAA==
+FRMR bQUAAA==
 NAME bar_in_cryptDjam
 DATA fInVvpy3gMOE7QXDAAAAAAAAAADbD8k/
-FRMR bQUAAA==
-NAME in_velothilarge_hall_01
-DATA AAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAA
 FRMR bgUAAA==
 NAME in_velothilarge_hall_01
-DATA AAAAAAAAgEQAAAAAAAAAAAAAAAAAAAAA
+DATA AAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAA
 FRMR bwUAAA==
 NAME in_velothilarge_hall_01
-DATA AAAAAAAAwEQAAAAAAAAAAAAAAAAAAAAA
+DATA AAAAAAAAgEQAAAAAAAAAAAAAAAAAAAAA
 FRMR cAUAAA==
+NAME in_velothilarge_hall_01
+DATA AAAAAAAAwEQAAAAAAAAAAAAAAAAAAAAA
+FRMR cQUAAA==
 NAME in_velothilarge_connector_01
 DATA AAAAAAAAAEUAAAAAAAAAAAAAAADbD0lA
-FRMR cQUAAA==
+FRMR cgUAAA==
 NAME com_sack_03_ingredients
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA S7AMRRDEnEXDBOtCAAAAAAAAAAAz/pA9
-FRMR cgUAAA==
+FRMR cwUAAA==
 NAME Com_Sack_02_Ingred
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA w5ELRXLDnUXDu+BCAAAAAAAAAAASDn1A
-FRMR cwUAAA==
-NAME com_sack_01_ingred
-ANAM milyn faram
-INTV 0
-NAM9 AQAAAA==
-DATA m6gJRazjnEXDMbxCAAAAAAAAAAC03JU/
 FRMR dAUAAA==
 NAME com_sack_01_ingred
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
-DATA U9MJRdgUnUXD39VCAAAAAAAAAABw9pU/
+DATA m6gJRazjnEXDMbxCAAAAAAAAAAC03JU/
 FRMR dQUAAA==
+NAME com_sack_01_ingred
+ANAM milyn faram
+INTV 0
+NAM9 AQAAAA==
+DATA U9MJRdgUnUXD39VCAAAAAAAAAABw9pU/
+FRMR dgUAAA==
 NAME misc_de_goblet_03
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA SUPxRGYBnkXiHxxDAAAAAAAAAAA2lFVA
-FRMR dgUAAA==
+FRMR dwUAAA==
 NAME misc_com_bottle_06
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA ODrzRDawnUXiYyVDAAAAAAAAAAA+OHQ/
-FRMR dwUAAA==
+FRMR eAUAAA==
 NAME com_sack_01_ingred
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA d+IIRXw/mkXD/7pCAAAAAAAAAAC+VBFA
-FRMR eAUAAA==
+FRMR eQUAAA==
 NAME light_de_lantern_02
 DATA wQvyRGzfnEXiAzRDAAAAAAAAAABDQTBA
-FRMR eQUAAA==
+FRMR egUAAA==
 NAME potion_comberry_brandy_01
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA w03bRIzcq0Vi6SNDAAAAAAAAAACeIMhA
-FRMR egUAAA==
+FRMR ewUAAA==
 NAME bk_BlasphemousRevenants
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA Y9YURUK5skXigyBDAAAAAAAAAAB+MR1A
-FRMR ewUAAA==
+FRMR fAUAAA==
 NAME potion_comberry_brandy_01
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA O0YTRc7JtUVi6SNDAAAAAAAAAACeIMhA
-FRMR fAUAAA==
+FRMR fQUAAA==
 NAME bk_BookDawnAndDusk
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA 0yPhRCLou0XSBjtDAAAAAAAAAAAEh45A
-FRMR fQUAAA==
+FRMR fgUAAA==
 NAME Gold_100
 DATA x7MWRQiGr0XifRtDAAAAAAAAAADjgQRA
-FRMR fgUAAA==
+FRMR fwUAAA==
 NAME active_de_pr_bed_26
 DATA S3rrRBacokXiyAZDAAAAAAAAAADNU6tA
-FRMR fwUAAA==
+FRMR gAUAAA==
 NAME misc_uni_pillow_01
 XSCL exSOPw==
 ANAM milyn faram
 INTV 0
 NAM9 AQAAAA==
 DATA 28bpRAJJoEViVA9DAAAAAAAAAADNU6tA
-FRMR gAUAAA==
-NAME crate_01_random_pos
-ANAM milyn faram
-INTV 0
-NAM9 AQAAAA==
-DATA V2MPRVarnEXDf/JCAAAAAAAAAAA0UZtA
 FRMR gQUAAA==
 NAME misc_uni_pillow_01
 XSCL cT2KPw==
@@ -9069,12 +11050,12 @@ NAME furn_de_p_table_05
 DATA A3fkRBgdwkXDf/BCAAAAAAAAAADiUkU/
 FRMR GAYAAA==
 NAME light_de_lantern_06
-DATA y+/hRDBXwkViYDJDAAAAAAAAAACp3JVA
+DATA 44/kRKg3wUViYDJDAAAAAAAAAACp3JVA
 FRMR GQYAAA==
 NAME light_de_paper_lantern_01
 DATA U7y9RHKXr0WGM0FCAAAAAAAAAADsUsU/
 FRMR GgYAAA==
-NAME de_p_chest_02_pos5
+NAME nc_p_chest_pos5
 DATA a5EERWhgmkXDa9VCAAAAAAAAAAAAyyBA
 FRMR GwYAAA==
 NAME light_de_candle_07
@@ -9106,7 +11087,7 @@ NAME in_velothismall_cap_01
 DATA rKyCxM/VnUWWY5PDAAAAAAAAAADLHMhA
 FRMR JAYAAA==
 NAME furn_de_lecturn
-DATA DKnIvypwj0V2bbXDAAAAAAAAAAAAAAAA
+DATA ObTIvypwj0V2bbXDAAAAAAAAAAAAAAAA
 FRMR JQYAAA==
 NAME nc_ritual_book
 DATA nzD8v/uQj0UEEJzDfNmgvgAAAAAAAAAA
@@ -9657,371 +11638,378 @@ FRMR 2wYAAA==
 NAME misc_skull00
 DATA rmQfwj2snkWUC/bDaWbmPwAAAABwE2FA
 FRMR 3AYAAA==
-NAME nc_salt_frost
-XSCL AAAAQA==
-DATA +5EZREDlo0V7qCnEAAAAAAAAAABDdq9A
-FRMR 3QYAAA==
-NAME nc_salt_poison
-XSCL AAAAQA==
-DATA ekm0Q8uMq0XvDinEAAAAAAAAAABlZuY/
-FRMR 3gYAAA==
 NAME nc_light_sotha_sparks_2
 DATA Bm8Lwd7ZnUUqYAvE2w9JQAAAAAAAAAAA
-FRMR 3wYAAA==
+FRMR 3QYAAA==
 NAME dark_1000
 DATA YGLsvlszekEAAHDBAAAAAAAAAAAAAAAA
-FRMR 4AYAAA==
+FRMR 3gYAAA==
 NAME dark_1000
 DATA ZzYpQdA1iERyj4TAAAAAAAAAAAAAAAAA
-FRMR 4QYAAA==
+FRMR 3wYAAA==
 NAME dark_1000
 DATA Clc8QN3+9EQoYLPBAAAAAAAAAAAAAAAA
-FRMR 4gYAAA==
+FRMR 4AYAAA==
 NAME red_256_pulse
 DATA EDO8voweicMe6RrDAAAAAAAAAAAAAAAA
-FRMR 4wYAAA==
+FRMR 4QYAAA==
 NAME light_spear_skull00
 DATA GmVmwgGneMB0Sa3DAAAAAAAAAACo3LVA
-FRMR 5AYAAA==
+FRMR 4gYAAA==
 NAME light_spear_skull00
 DATA 73CJQrnFVcBfsqvDAAAAAAAAAAD9/x9A
-FRMR 5QYAAA==
+FRMR 4wYAAA==
 NAME light_spear_skull00
 DATA Y0N6wttmUkNfsqvDAAAAAAAAAACo3LVA
-FRMR 5gYAAA==
+FRMR 5AYAAA==
 NAME light_spear_skull00
 DATA lQN/QttmUkNfsqvDAAAAAAAAAAD9/x9A
-FRMR 5wYAAA==
+FRMR 5QYAAA==
 NAME light_spear_skull00
 DATA CYlpwu4SIUResqvDAAAAAAAAAACo3LVA
-FRMR 6AYAAA==
+FRMR 5gYAAA==
 NAME light_spear_skull00
 DATA 9t6HQu4SIUResqvDAAAAAAAAAAD9/x9A
-FRMR 6QYAAA==
+FRMR 5wYAAA==
 NAME light_spear_skull00
 DATA h1RYwm7y2ENfsqvDAAAAAAAAAACo3LVA
-FRMR 6gYAAA==
+FRMR 6AYAAA==
 NAME light_spear_skull00
 DATA NnmQQm7y2ENesqvDAAAAAAAAAAD9/x9A
-FRMR 6wYAAA==
+FRMR 6QYAAA==
 NAME light_spear_skull00
 DATA CZ6FwpkehURfsqvDAAAAAAAAAACo3LVA
-FRMR 7AYAAA==
+FRMR 6gYAAA==
 NAME light_spear_skull00
 DATA 5wpuQpkehURfsqvDAAAAAAAAAAD9/x9A
-FRMR 7QYAAA==
+FRMR 6wYAAA==
 NAME light_spear_skull00
 DATA jwd6wnujVURfsqvDAAAAAAAAAACo3LVA
-FRMR 7gYAAA==
+FRMR 7AYAAA==
 NAME light_spear_skull00
 DATA aT9/QnujVURfsqvDAAAAAAAAAAD9/x9A
-FRMR 7wYAAA==
+FRMR 7QYAAA==
 NAME light_spear_skull00
 DATA BS+SwtFYuURfsqvDAAAAAAAAAACo3LVA
-FRMR 8AYAAA==
+FRMR 7gYAAA==
 NAME light_spear_skull00
 DATA 8OhUQtFYuURfsqvDAAAAAAAAAAD9/x9A
-FRMR 8QYAAA==
+FRMR 7wYAAA==
 NAME light_spear_skull00
 DATA w5SJwvULn0RfsqvDAAAAAAAAAACo3LVA
-FRMR 8gYAAA==
+FRMR 8AYAAA==
 NAME light_spear_skull00
 DATA ch1mQvULn0RgsqvDAAAAAAAAAAD9/x9A
-FRMR 8wYAAA==
+FRMR 8QYAAA==
 NAME light_spear_skull00
 DATA 6uGTwrHc7URfsqvDAAAAAAAAAACo3LVA
-FRMR 9AYAAA==
+FRMR 8gYAAA==
 NAME light_spear_skull00
 DATA JINRQrHc7URfsqvDAAAAAAAAAAD9/x9A
-FRMR 9QYAAA==
+FRMR 8wYAAA==
 NAME light_spear_skull00
 DATA qUeLwtWP00ResqvDAAAAAAAAAACo3LVA
-FRMR 9gYAAA==
+FRMR 9AYAAA==
 NAME light_spear_skull00
 DATA prdiQtWP00ResqvDAAAAAAAAAAD9/x9A
-FRMR 9wYAAA==
+FRMR 9QYAAA==
 NAME white_512_01
 DATA wAvKwMpzEkVpXCTDAAAAAAAAAAAAAAAA
-FRMR +AYAAA==
+FRMR 9gYAAA==
 NAME white_512_01
 DATA bH5jw1rnbEVofdzDAAAAAAAAAAAAAAAA
-FRMR +QYAAA==
+FRMR 9wYAAA==
 NAME dark_256
 DATA 3nKEQ2g8bkUYmbHDAAAAAAAAAAAAAAAA
-FRMR +gYAAA==
+FRMR +AYAAA==
 NAME dark_256
 DATA egeAQ94yfkVQforDAAAAAAAAAAAAAAAA
-FRMR +wYAAA==
+FRMR +QYAAA==
 NAME dark_256
 DATA yxCBRAXnnUWrTY3DAAAAAAAAAAAAAAAA
-FRMR /AYAAA==
+FRMR +gYAAA==
 NAME contain_corpse10
 DATA bJEyw1XwUERqeWnDAAAAAAAAAAABAMA/
-FRMR /QYAAA==
+FRMR +wYAAA==
 NAME contain_corpse20
 DATA I2vgQUoU80OKxnvDAAAAAAAAAAA1M/M/
-FRMR /gYAAA==
+FRMR /AYAAA==
 NAME contain_corpse10_silent
 DATA UV4xQ+z/5UNpeWnDAAAAAAAAAABEdp9A
-FRMR /wYAAA==
+FRMR /QYAAA==
 NAME contain_corpse_Nord
 DATA pshBQxDRCkVgeWnDAAAAAAAAAAAihnhA
-FRMR AAcAAA==
+FRMR /gYAAA==
 NAME contain_corpse20
 DATA XlIDw/o75UR4EnjDAAAAAAAAAAAAAAAA
-FRMR AQcAAA==
+FRMR /wYAAA==
 NAME nc_cryptbody02_cursed
 DATA VnHmwr2ErUSMDoDDAAAAAAAAAADNzEw+
-FRMR AgcAAA==
+FRMR AAcAAA==
 NAME nc_cryptbody01
 DATA DTn7QsZPqUPaD4DDAAAAAAAAAAB1qcJA
-FRMR AwcAAA==
+FRMR AQcAAA==
 NAME nc_cryptbody02
 DATA 1RUBw97vbUN89n/DAAAAAAAAAAAghnhA
-FRMR BAcAAA==
+FRMR AgcAAA==
 NAME nc_cryptbody02_cursed
 DATA wQBWQ/0PR8OVV0HDRnafQJGZmT+cmZk+
-FRMR BQcAAA==
+FRMR AwcAAA==
 NAME furn_bone_01
 DATA w1e4P9Q9wERMuH7D3g+ZQAAAAAAAAAAA
-FRMR BgcAAA==
+FRMR BAcAAA==
 NAME furn_bone_01
 DATA mmYNQx42lkT1vH3D3g+ZQHepokCo3MVA
-FRMR BwcAAA==
+FRMR BQcAAA==
 NAME furn_bone_01
 DATA Qj1Cwqj7OkQwUH3D3g+ZQAAAAAAAAAAA
-FRMR CAcAAA==
+FRMR BgcAAA==
 NAME furn_bone_01
 DATA lMB5QgXQy0Ngl33D3g+ZQAAAAAAAAAAA
-FRMR CQcAAA==
+FRMR BwcAAA==
 NAME furn_bone_01
 DATA oR6nwqDuIkPozH3D3g+ZQGdmpj8AAAAA
-FRMR CgcAAA==
+FRMR CAcAAA==
 NAME furn_bone_01
 DATA X+HeQgKLsME40n3D3g+ZQMzMLEAAAAAA
-FRMR CwcAAA==
+FRMR CQcAAA==
 NAME furn_bone_01
 DATA X+HUQkDdzUIwUH3D3g+ZQAAAAAAAAAAA
-FRMR DAcAAA==
+FRMR CgcAAA==
 NAME furn_bone_01
 DATA fIXTQUDduUJAjH3D3g+ZQGdmZj8AAAAA
-FRMR DQcAAA==
+FRMR CwcAAA==
 NAME furn_bone_01
 DATA oR67wv5030FApH3D3g+ZQA9DrEAAAAAA
-FRMR DgcAAA==
+FRMR DAcAAA==
 NAME furn_bone_01
 DATA 3cF9wmLPp0M4UH3D3g+ZQAAAAAAAAAAA
-FRMR DwcAAA==
+FRMR DQcAAA==
 NAME furn_bone_01
 DATA oR7jwqi7IEToF37D3g+ZQJuZ2T8AAAAA
-FRMR EAcAAA==
+FRMR DgcAAA==
 NAME furn_bone_01
 DATA jfnWQqjYREQ40n3D3g+ZQM3MLEAAAAAA
-FRMR EQcAAA==
+FRMR DwcAAA==
 NAME furn_bone_01
 DATA vsI5Qqj7e0Q4UH3D3g+ZQAAAAAAAAAAA
-FRMR EgcAAA==
+FRMR EAcAAA==
 NAME furn_bone_01
 DATA CPVYwag7fUQwUH3D3g+ZQAAAAAAAAAAA
-FRMR EwcAAA==
+FRMR EQcAAA==
 NAME furn_bone_01
 DATA oR6dwtQ9jkToKn7D3g+ZQDAzc0AAAAAA
-FRMR FAcAAA==
+FRMR EgcAAA==
 NAME furn_bone_01
 DATA hHq8wdT9r0Q4UH3D3g+ZQM3MDEAAAAAA
-FRMR FQcAAA==
+FRMR EwcAAA==
 NAME furn_bone_01
 DATA X+HUQtTdtkQwUH3D3g+ZQAAAAAAAAAAA
-FRMR FgcAAA==
+FRMR FAcAAA==
 NAME furn_bone_01
 DATA /h31wj1X0kQtA37D3g+ZQDQzsz8AAAAA
-FRMR FwcAAA==
+FRMR FQcAAA==
 NAME furn_bone_01
 DATA X+HUQtTd40QwUH3D3g+ZQAAAAAAAAAAA
-FRMR GAcAAA==
+FRMR FgcAAA==
 NAME furn_bone_01
 DATA UI8Aw9Q990TQO37D3g+ZQAEAAEAAAAAA
-FRMR GQcAAA==
+FRMR FwcAAA==
 NAME furn_bone_01
 DATA Wmexws7SAkU0UH3D3g+ZQAAAAAAAAAAA
-FRMR GgcAAA==
+FRMR GAcAAA==
 NAME furn_burial20
 DATA 1LawQmaaAEUYbTrDAAAAAAAAAADPzMw/
-FRMR GwcAAA==
+FRMR GQcAAA==
 NAME furn_burial20
 DATA olLCwjT8AEUabTrDAAAAAAAAAACYmZlA
-FRMR HAcAAA==
+FRMR GgcAAA==
 NAME furn_bone_rib_01
 DATA GhslQmuczkQA33rDAAAAAAAAAAAAAAAA
-FRMR HQcAAA==
+FRMR GwcAAA==
 NAME furn_bone_rib_01
 DATA Llf/whecvkQA33rDAAAAAAAAAAAAAAAA
-FRMR HgcAAA==
+FRMR HAcAAA==
 NAME furn_bone_rib_01
 DATA eQbvwvSpnETUnHjDAQAAQAAAAAAAAAAA
-FRMR HwcAAA==
+FRMR HQcAAA==
 NAME furn_bone_rib_01
 DATA 1LbOQsy0kETUnHjDAQAAQAAAAAAAAAAA
-FRMR IAcAAA==
+FRMR HgcAAA==
 NAME furn_bone_rib_01
 DATA qG1VQpipdUTYnHjDAQAAQAAAAAAAAAAA
-FRMR IQcAAA==
+FRMR HwcAAA==
 NAME furn_bone_rib_01
 DATA LEmtwphpR0R0EXjDAQAAQGhm5j8AAAAA
-FRMR IgcAAA==
+FRMR IAcAAA==
 NAME furn_bone_rib_01
 DATA LEnLwjDT1UPYnHjDAQAAQAAAAAAAAAAA
-FRMR IwcAAA==
+FRMR IQcAAA==
 NAME furn_bone_rib_01
 DATA 4F0xQho7YEMsQXvDAQAAQDIzk0AAAAAA
-FRMR JAcAAA==
+FRMR IgcAAA==
 NAME furn_bone_rib_01
 DATA LEmjwoFmZcIwQXvDAQAAQDIzk0AAAAAA
-FRMR JQcAAA==
+FRMR IwcAAA==
 NAME furn_bone_skull_01
 DATA qG9Xwd3eokMw9XfDAAAAAAAAAAAAAAAA
-FRMR JgcAAA==
+FRMR JAcAAA==
 NAME furn_bone_skull_01
 DATA 1LacQsBMr0KMGnvDm5nZPwAAAAABAMA/
-FRMR JwcAAA==
+FRMR JQcAAA==
 NAME furn_bone_skull_01
 DATA LEmPwmCmDkOUGnvDm5nZPwAAAAABAMA/
-FRMR KAcAAA==
+FRMR JgcAAA==
 NAME furn_bone_skull_01
 DATA LEmZwsy0gUSMGnvDm5nZPwAAAAABAMA/
-FRMR KQcAAA==
+FRMR JwcAAA==
 NAME furn_bone_skull_01
 DATA qG19Qphpb0SQGnvDm5nZPwAAAAABAMA/
-FRMR KgcAAA==
+FRMR KAcAAA==
 NAME furn_bone_skull_01
 DATA qG0ZQsy06kSMGnvDm5nZPwAAAAABAMA/
-FRMR KwcAAA==
+FRMR KQcAAA==
 NAME furn_bone_skull_01
 DATA LEnfwsxU4USjEnvDm5nZPwAAAAAxM5NA
-FRMR LAcAAA==
+FRMR KgcAAA==
 NAME furn_bone_skull_01
 DATA UNviQcyUyUTc+HrDm5nZPwAAAAAyM5NA
-FRMR LQcAAA==
+FRMR KwcAAA==
 NAME nc_ghost_activator
 DATA kFJYQAjJDkQoWr/D2w/JPwAAAAAAAAAA
-FRMR LgcAAA==
+FRMR LAcAAA==
 NAME nc_ghost_activator
 DATA 662BxCbfmkVUkgnE2w/JPwAAAAAAAAAA
-FRMR LwcAAA==
-NAME nc_salt_fire
-XSCL AAAAQA==
-DATA g6o2RN35mkW4mCnEAAAAAAAAAACo3MVA
-FRMR MAcAAA==
+FRMR LQcAAA==
+NAME nc_cauldron
+DATA 6DIywce+nUVazwbEAAAAAAAAAAAAAAAA
+FRMR LgcAAA==
 NAME furn_bone_rib_01
 DATA wzVcwpHBnEW3luzDm5nZPwAAAADcD7lA
-FRMR MQcAAA==
+FRMR LwcAAA==
 NAME furn_bone_rib_01
 DATA M9SwwUcgnUW/IeTDm5nZPwAAAADcD7lA
-FRMR MgcAAA==
+FRMR MAcAAA==
 NAME furn_bone_rib_01
 DATA yIyFv9LinkU5muzDm5nZPwAAAADcD7lA
-FRMR MwcAAA==
+FRMR MQcAAA==
 NAME furn_bone_rib_01
 DATA WfoNwRNWn0Vin+7Dm5nZPwAAAADcD7lA
-FRMR NAcAAA==
+FRMR MgcAAA==
 NAME misc_skull10
 DATA r1c6QtsRnUWfCwDEaGbmPwAAAACo3MVA
-FRMR NQcAAA==
+FRMR MwcAAA==
 NAME misc_skull10
 DATA rhr2Qc09nUWMHAHEaGbmPwAAAACo3MVA
-FRMR NgcAAA==
+FRMR NAcAAA==
 NAME misc_skull10
 DATA snLkQSBcnUUvrPjDaGbmPwAAAACZmRlA
-FRMR NwcAAA==
+FRMR NQcAAA==
 NAME misc_skull10
 DATA cRQyQqyEnUUJzvrDaGbmPwAAAACZmRlA
-FRMR OAcAAA==
+FRMR NgcAAA==
 NAME misc_skull10
 DATA UhP2QZEAnUUSFf7DaGbmPwAAAADLzGxA
-FRMR OQcAAA==
+FRMR NwcAAA==
 NAME misc_skull00
 DATA 8wonQkb3nEUrjPvDaWbmPwAAAADOzIw/
-FRMR OgcAAA==
+FRMR OAcAAA==
 NAME misc_skull00
 DATA zfQTQihvnUXPUfPDaWbmPwAAAADOzIw/
-FRMR OwcAAA==
+FRMR OQcAAA==
 NAME misc_skull10
 DATA h/ARQn7enEX3YfrDaGbmPwAAAACo3MVA
-FRMR PAcAAA==
+FRMR OgcAAA==
 NAME misc_skull10
 DATA VxwJQtH8nEUR1fDDaGbmPwAAAACZmRlA
-FRMR PQcAAA==
+FRMR OwcAAA==
 NAME misc_skull10
 DATA l/dIQlwlnUXr9vLDaGbmPwAAAACZmRlA
-FRMR PgcAAA==
+FRMR PAcAAA==
 NAME misc_skull00
 DATA gdcqQtgPnUWzeuvDaWbmPwAAAADOzIw/
-FRMR PwcAAA==
+FRMR PQcAAA==
 NAME misc_skull10
 DATA z+EuQn+VnUWYPP/DaGbmPwAAAADtA14+
-FRMR QAcAAA==
+FRMR PgcAAA==
 NAME misc_skull10
 DATA yi/zQa/mnUU3rwDEaGbmPwAAAADtA14+
-FRMR QQcAAA==
+FRMR PwcAAA==
 NAME misc_skull10
 DATA RtrrQQAJnkWL0ffDaGbmPwAAAAA74C1A
-FRMR QgcAAA==
+FRMR QAcAAA==
 NAME misc_skull10
 DATA 5es4QsEHnkVj8/nDaGbmPwAAAAA74C1A
-FRMR QwcAAA==
+FRMR QQcAAA==
 NAME misc_skull10
 DATA mg/gQYOsnUVsOv3DaGbmPwAAAAC3iYBA
-FRMR RAcAAA==
+FRMR QgcAAA==
 NAME misc_skull10
 DATA E1kBQhMrnUVEXP/DaGbmPwAAAAC3iYBA
-FRMR RQcAAA==
+FRMR QwcAAA==
 NAME misc_skull00
 DATA F2gYQkWInUWDsfrDaWbmPwAAAAAQWrU/
-FRMR RgcAAA==
+FRMR RAcAAA==
 NAME misc_skull00
 DATA ZfEYQhAGnkUrd/LDaWbmPwAAAAAQWrU/
-FRMR RwcAAA==
+FRMR RQcAAA==
 NAME misc_skull10
 DATA 6fa1QUNwnkWkZgHEaGbmPwAAAAAFrVpA
-FRMR SAcAAA==
+FRMR RgcAAA==
 NAME misc_skull10
 DATA rWzMQTypnkVCqf7DaGbmPwAAAAD3AW8/
-FRMR SQcAAA==
+FRMR RwcAAA==
 NAME furn_bone_rib_01
 DATA 1X4ZQq9YnUWpdOrDm5nZPwAAAACYmRk/
-FRMR SgcAAA==
+FRMR SAcAAA==
 NAME furn_bone_rib_01
 DATA Z6U+QsvEnUXReezDm5nZPwAAAACYmRk/
-FRMR SwcAAA==
+FRMR SQcAAA==
 NAME blue_128_pulse
 DATA G43Qv3eWjUW3R0/DAAAAAAAAAAAAAAAA
-FRMR TAcAAA==
+FRMR SgcAAA==
 NAME blue_128_01
 DATA gN8eRCPNpEV2eBPEAAAAAAAAAAAAAAAA
-FRMR TQcAAA==
+FRMR SwcAAA==
 NAME green light_128
 DATA IFmtQ5zkqEW6ZhLEAAAAAAAAAAAAAAAA
-FRMR TgcAAA==
+FRMR TAcAAA==
 NAME red_128
 DATA GfM8RPELm0W6nRDEAAAAAAAAAAAAAAAA
-FRMR TwcAAA==
-NAME dark_768
-DATA QFq+Q/OTmUUGAb3DAAAAAAAAAAAAAAAA
-FRMR UAcAAA==
-NAME dark_768
-DATA BS8CxHL/mUUGAb3DAAAAAAAAAAAAAAAA
-FRMR UQcAAA==
-NAME dark_768
-DATA TPn6RIFzsEUIkWC/AAAAAAAAAAAAAAAA
-FRMR UgcAAA==
+FRMR TQcAAA==
 NAME nc_white_128_01
 DATA wB1jwmgrpUXkO7XDAAAAAAAAAAAAAAAA
+FRMR TgcAAA==
+NAME dark_768
+DATA QFq+Q/OTmUUGAb3DAAAAAAAAAAAAAAAA
+FRMR TwcAAA==
+NAME dark_768
+DATA BS8CxHL/mUUGAb3DAAAAAAAAAAAAAAAA
+FRMR UAcAAA==
+NAME dark_768
+DATA TPn6RIFzsEUIkWC/AAAAAAAAAAAAAAAA
+FRMR UQcAAA==
+NAME nc_crate_random_pos
+ANAM milyn faram
+INTV 0
+NAM9 AQAAAA==
+DATA V2MPRVarnEXDf/JCAAAAAAAAAAA0UZtA
+FRMR UgcAAA==
+NAME furn_com_rm_shelf_01
+XSCL AAAAPw==
+DATA ObTIv06XkEVJfJ3DAAAAAAAAAADbD0lA
+FRMR UwcAAA==
+NAME nc_SoulGem_blackened_st
+DATA ObTIv06XkEVJRJXDAAAAAAAAAAAAAAAA
+FRMR VAcAAA==
+NAME nc_corrupter
+DATA ur7lRA4/wkU4MRdDAAAAAAAAAAAPQ7xA
 
 PGRD
-DATA AAAAAAAAAACAANsB
+DATA AAAAAAAAAAAABC8A
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACAACA+///ABQAALv+//8AAQwHAPz//wARAABb/v//AAMAAAD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgAAAPz//4ASAABZ/v//AAKARAD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAgAAAPz//wAUAABZ/v//AAEAAID8//+AEAAAWf7//wAEAACA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AAMAAID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABAACA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AAQAAAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgAAAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAgAAID9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8ABwAAgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAIAAAD+//+AEQAA6v3//wAC//8A/v//ABIAAFn9//8ABf//AP7//4ASAABZ/f//AAj//wD+//8AEwAAWf3//wAH//8A/v//gBMAAFn9//8AB///AP7//wAUAABZ/f//AAj//wD+//+AFAAAWf3//wAI//8A/v//ABUAAF7+//8AAv//AP7//wAVAABZ/f//AAX//4D+//+ADwAAXf7//wAE//+A/v//ABAAAFn+//8ABP//gP7//4AQAABc/v//AAH//4D+//+AEAAAWf3//wAE//+A/v//ABEAAFn9//8ABP//gP7//4ARAABZ/f//AAT//4D+//8AEgAAWf3//wAH//+A/v//gBIAAFn9//8ACP//gP7//wATAABZ/f//AAf//4D+//+AEwAAWf3//wAI//+A/v//ABQAAFn9//8AB///gP7//4AUAABa/f//AAb//4D+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMAAAD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wAB//8A////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AA25kAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AAMAAAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQAAAP///4AVAABZ/f//AAMAAID///+A////AP///wADAACA////AAAAAAD///8ABAAAgP///4AAAAAA////AAQAAID///8AAQAACv///wABAACA////gAEAAAD///8ABAAAgP///wACAAAA////AAQAAID///+AAgAAAP///wAEAACA////AAMAAAD///8ABQAAgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEAACA////gAQAAAD///8ABQAAgP///wAFAAAA////AAQAAID///8ABgAAAP///wADAACA////gAYAAAD///8ABAAAgP///wAHAAAA////AAEAAID///+ABwAAAP///wADAACA////AAgAAAD///8ABAAAgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEAACA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AAQAAID///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAgAAgP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACAACA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABAAAgP///wATAABp/f//AAIAAID///+AEwAAef3//wAD//+A////ABQAAHn9//8AA///gP///4AUAABO/v//AAP//4D///+AFAAAaf3//wAD//+A////ABUAAFn+//8AA///gP///wAVAABZ/f//AAf//4D///+AFQAAWf7//wAC//+A////gBUAAF/9//8AA///AAAAAID///8A////AAT//wAAAAAAAAAAAP///wAH//8AAAAAgAAAAAD///8ABf//AAAAAAABAAAA////AAb//wAAAACAAQAAAP///wAF//8AAAAAAAIAAAD///8ABP//AAAAAIACAAAA////AAj//wAAAAAAAwAAAP///wAH//8AAAAAgAMAAAD///8ABv//AAAAAAAEAAAA////AAX//wAAAACABAAAAP///wAI//8AAAAAAAUAAAD///8AB///AAAAAIAFAAAA////AAb//wAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAcAAAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACAAAAAAAAIAIAAAA////AAb//wAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAMAAAAAAACAEAAAWf7//wAGDAcAAAAAgBAAAFn9//8ABQAAAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AA4BEAAAAAIARAABZ/f//AAYAAAAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwAAAAAAAIASAABZ/f//AAMAAAAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAUAAAAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAAAgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABAAAgAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAUAAIAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABAAAgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AAQAAIAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAL//4AAAAAAEgAAvf7//wAB//+AAAAAABIAAF/9//8AAv//gAAAAIASAABZ/f//AAX//4AAAAAAEwAAZf3//wAE//+AAAAAgBMAAHn9//8AA///gAAAAAAUAAB5/f//AAT//4AAAACAFAAAYf3//wAF//+AAAAAABUAAFn+//8AAv//gAAAAAAVAABZ/f//AAf//4AAAACAFQAAWf7//wAC//+AAAAAgBUAAF39//8ABP//AAEAAIAOAAC6/v//AAH//wABAAAADwAAWf7//wAB//8AAQAAgA8AAFn+//8ABP//AAEAAAAQAABZ/v//AAT//wABAACAEAAAWv7//wAB//8AAQAAgBAAAFn9//8ABf//AAEAAAARAABZ/f//AAX//wABAACAEQAAWf3//wAD//8AAQAAABIAAFn9//8ABv//AAEAAIASAABZ/f//AAcAAAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQAAAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAb//wABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIAAIABAAAAEAAAWf7//wADbmSAAQAAgBAAALv+//8AAQAAgAEAAIAQAABZ/f//AAMAAIABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAgAAIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAgAAAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAIAAAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8ABwAAAAIAAAATAABZ/f//AAgAAAACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AAMAAIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAQAAgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAYAAIACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABQAAgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACAACAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AAQAAAADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAIAAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAH//wADAACAEwAA1P3//wAB//8AAwAAABQAAFn+//8AAf//AAMAAAAUAABZ/f//AAP//wADAACAFAAAWf3//wAC//+AAwAAgBAAAFv+//8AA///gAMAAAARAABZ/v//AAT//4ADAACAEQAAWf7//wAE//+AAwAAABMAALr+//8AA///gAMAAIATAAC7/v//AAH//wAEAAAAEQAAu/7//wAB//8ABAAAgBEAAFn+//8AA///AAQAAAASAABZ/v//AAP//wAEAACAEgAAWf7//wAD//8ABAAAABMAAFn+//8AAv//AAQAAIATAABZ/v//AAP//wAEAAAAFAAAfP7//wAD//8ABAAAgBQAAKX+//8ABP//AAQAAAAVAADT/v//AAT//4AEAACAFAAAwP7//wAE//+ABAAAABUAAOP+//8ABP//gAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACAAAABgAAABYAAFn///8AAf//gAYAAAAUAABZ////AAQAAIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AAQAB4AGAAAAFgAAWf///wAFAACABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAUAAIAGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIAAAABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAcAAAAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABAAAAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADAAAABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADAACABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAcAAIAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8ABwAAgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIAACABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcAAIAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGAACABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAUAAIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEAACABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMAAAAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAgAAAAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHAAAACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAgAAAAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAgAAAAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHAAAACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAcAAAAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAgAAgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIAACACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIAACACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGAACACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAYAAIAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAcAAIAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFAAAACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAgAAAAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAcAAAAJAACAFAAAWf///wAIAAAACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYAAAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAAAAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHAAAACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAIAAIAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGAACACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAAIAJAAAAFQAAWQAAAAAHAACACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAYAAIAJAAAAFgAAWf///wADAACACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFAACACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAUAAIAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACAAAACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEAAAACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAAAAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADAAAACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAUAAAAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAIAAIAKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUAAIAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAIAAAALAAAAFQAAWf///wAFAAAACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUAAAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEAAAACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAQAAAALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAAA==
-PGRC AQAAAAAAAAACAAAAAQAAAAQAAAAKAAAACwAAAAMAAAAFAAAACwAAAAQAAAAGAAAABQAAAAcAAAAGAAAACAAAAAcAAAAJAAAACAAAAAMAAAALAAAAEgAAABMAAAADAAAABAAAAAoAAAATAAAAFAAAABUAAAAWAAAADwAAABYAAAAQAAAADQAAABYAAAAXAAAAGAAAAA4AAAAXAAAAGAAAABkAAAAKAAAAEwAAABwAAAAdAAAACgAAAAsAAAASAAAAHAAAAAwAAAAVAAAADAAAABQAAAAWAAAAHwAAACEAAAAMAAAADQAAAA8AAAAVAAAAFwAAACAAAAAhAAAAIgAAAA8AAAARAAAAFgAAABgAAAAhAAAAIgAAACMAAAAPAAAAEQAAABcAAAAZAAAAIgAAACMAAAAkAAAAEQAAABgAAAAbAAAAIwAAACQAAAAmAAAAJwAAABkAAAAkAAAAJgAAACgAAAASAAAAEwAAACkAAAASAAAAKwAAABUAAAAWAAAAIQAAACsAAAAtAAAAFQAAABYAAAAXAAAAIAAAACIAAAAsAAAALQAAAC4AAAAWAAAAFwAAABgAAAAhAAAAIwAAAC0AAAAuAAAALwAAABcAAAAYAAAAGQAAACIAAAAkAAAALwAAADAAAAAYAAAAGQAAABsAAAAjAAAAJgAAAC8AAAAwAAAAMQAAADIAAAAZAAAAGwAAACQAAAAoAAAAMAAAADEAAAAzAAAAGgAAABsAAAAmAAAAMQAAADMAAAAcAAAANAAAADUAAAA3AAAAOAAAAB4AAAAgAAAAIQAAAC0AAAA5AAAAOgAAADsAAAAgAAAAIQAAACIAAAAsAAAALgAAADoAAAA7AAAAPAAAACEAAAAiAAAALQAAAC8AAAA7AAAAPAAAAD0AAAAiAAAAIwAAACQAAAAuAAAAMAAAAD0AAAA+AAAAIwAAACQAAAAmAAAALwAAADEAAAA9AAAAPgAAAD8AAAAkAAAAJgAAACgAAAAwAAAAMwAAAD4AAAA/AAAAQQAAACUAAABAAAAAJgAAACgAAAAxAAAAPwAAAEEAAAApAAAANQAAAEQAAABFAAAAKQAAADQAAABEAAAARQAAAEgAAAAqAAAAOAAAAEcAAABJAAAAKgAAADcAAABHAAAASQAAACwAAAA6AAAASgAAAEsAAAAsAAAALQAAADkAAAA7AAAASgAAAEsAAABMAAAALAAAAC0AAAAuAAAAOgAAADwAAABLAAAATAAAAE0AAAAtAAAALgAAADsAAAA9AAAATAAAAE0AAABOAAAALgAAAC8AAAAwAAAAPAAAAD4AAABNAAAATgAAAE8AAAAvAAAAMAAAADEAAAA9AAAATgAAAE8AAABQAAAAMAAAADEAAAAzAAAATwAAAFAAAABSAAAAMgAAAFEAAAAxAAAAMwAAAFAAAABSAAAAVAAAAEMAAABnAAAAaAAAAEIAAABnAAAAaAAAADQAAAA1AAAARQAAAGkAAAA0AAAANQAAAEQAAABpAAAASAAAADcAAAA4AAAASQAAAGoAAABsAAAANgAAAEYAAAA3AAAAOAAAAEcAAABqAAAAbAAAADkAAAA6AAAASwAAADkAAAA6AAAAOwAAAEoAAABMAAAAcQAAADoAAAA7AAAAPAAAAEsAAABNAAAAcQAAAHIAAAA7AAAAPAAAAD0AAABMAAAATgAAAHEAAAA8AAAAPQAAAD4AAABNAAAAPQAAAD4AAAA/AAAAUAAAAD4AAAA/AAAAQQAAAE8AAABSAAAAeAAAAEAAAAB1AAAAdwAAAD8AAABBAAAAUAAAAFQAAAB2AAAAeAAAAHoAAAB5AAAAQQAAAFIAAAB4AAAAVgAAAHsAAAB8AAAAVQAAAFcAAAB7AAAAfAAAAFYAAAB8AAAAfQAAAH4AAABZAAAAWAAAAFoAAAB+AAAAfwAAAFkAAABbAAAAfwAAAIEAAABaAAAAXAAAAIAAAACBAAAAWwAAAF0AAACBAAAAggAAAIMAAABcAAAAXgAAAIIAAACDAAAAXQAAAF8AAACDAAAAhQAAAF4AAABgAAAAhAAAAIUAAACGAAAAXwAAAIUAAACGAAAAhwAAAGIAAACIAAAAiQAAAGEAAACIAAAAiQAAAIoAAACJAAAAigAAAIsAAACMAAAAZgAAAIsAAACMAAAAjQAAAGUAAACMAAAAjQAAAI4AAABCAAAAQwAAAGgAAACPAAAAQgAAAEMAAABnAAAAjwAAAEQAAABFAAAAkAAAAJEAAABHAAAASQAAAGwAAACSAAAAlAAAAJEAAACVAAAARwAAAEkAAABqAAAAbgAAAJIAAACUAAAAlgAAAG8AAACXAAAAbAAAAHAAAACUAAAAlgAAAJgAAABtAAAAbgAAAJYAAACYAAAASwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA0AAAAN0AAADfAAAA6AAAAOkAAADqAAAAzwAAANAAAADRAAAA3gAAAOAAAADpAAAA6gAAAOsAAADQAAAA0QAAANIAAADfAAAA4QAAAOoAAADrAAAA7AAAANEAAADSAAAA0wAAAOAAAADiAAAA6wAAAOwAAADtAAAA0gAAANMAAADVAAAA4QAAAOwAAADtAAAA7wAAANQAAADuAAAA2AAAANkAAADwAAAA8QAAANoAAADzAAAA9AAAAPMAAAD0AAAA3QAAAN4AAADpAAAA9gAAAN0AAADeAAAA3wAAAOgAAADqAAAA9gAAAPcAAADeAAAA3wAAAOAAAADpAAAA6wAAAPYAAAD3AAAA+AAAAN8AAADgAAAA4QAAAOoAAADsAAAA9wAAAPkAAADgAAAA4QAAAOIAAADrAAAA7QAAAPgAAAD5AAAA4QAAAOIAAADsAAAA7wAAAPkAAADjAAAA+gAAAOIAAADtAAAA5AAAAPEAAAD8AAAA5AAAAPAAAAD8AAAA/gAAAOYAAADnAAAA9AAAAOYAAADnAAAA8wAAAPUAAAAAAQAA9AAAAP8AAAAAAQAAAQEAAOgAAADpAAAA6gAAAPcAAAAAAQAAAQEAAOkAAADqAAAA6wAAAPYAAAD4AAAAAQEAAOoAAADsAAAA9wAAAPkAAAAFAQAA6wAAAOwAAADtAAAA+AAAAAUBAADuAAAABAEAAAYBAADwAAAA8QAAAAcBAAAIAQAABwEAAPIAAAD1AAAAAAEAAPQAAAD1AAAA9gAAAP8AAAABAQAA9QAAAPYAAAD3AAAAAAEAAAMBAAACAQAA+gAAAPgAAAD5AAAABgEAAPsAAAAFAQAA/AAAAP0AAAAIAQAA/AAAAAcBAAAJAQAADQEAAAgBAAAMAQAADQEAAA4BAAALAQAADwEAABEBAAAKAQAACQEAAAgBAAAJAQAADgEAAAkBAAANAQAADwEAAAoBAAAOAQAAEAEAAA8BAAARAQAACgEAABABAAASAQAAEQEAABMBAAAVAQAAEgEAABQBAAAVAQAAFgEAABMBAAAVAQAAFgEAABcBAAASAQAAEwEAABQBAAAWAQAAEwEAABQBAAAVAQAAFwEAABQBAAAWAQAAGAEAABkBAAAXAQAAGQEAABoBAAAXAQAAGAEAABoBAAAbAQAAGAEAABkBAAAbAQAAGQEAABoBAAAhAQAAHwEAACcBAAApAQAAKgEAACgBAAArAQAAHQEAACABAAApAQAAKgEAACwBAAAfAQAAKgEAACwBAAAtAQAAHAEAACIBAAAtAQAALwEAADEBAAAhAQAAIwEAAC8BAAAxAQAAMwEAACIBAAAkAQAAMQEAADMBAAA0AQAAIwEAACUBAAAzAQAANAEAADUBAAAkAQAANAEAADUBAAA2AQAAKAEAADkBAAAdAQAAKQEAADoBAAA7AQAAPAEAAB4BAAAmAQAAHQEAAB8BAAAnAQAAKgEAADsBAAA8AQAAPQEAAB0BAAAfAQAAIAEAACkBAAAsAQAAPAEAAD0BAAA/AQAAHgEAAD4BAABAAQAAHwEAACABAAAqAQAALQEAAD0BAAA/AQAAQQEAACABAAAhAQAALAEAAC8BAAA/AQAAQQEAAEMBAAAwAQAAQAEAAEIBAABEAQAAIQEAACIBAAAtAQAAMQEAAEEBAABDAQAARQEAAC4BAAAyAQAARgEAACEBAAAiAQAAIwEAAC8BAAAzAQAAQwEAAEUBAABHAQAAMAEAAEYBAABIAQAAIgEAACMBAAAkAQAAMQEAADQBAABFAQAARwEAAEkBAAAjAQAAJAEAACUBAAAzAQAANQEAAEcBAABJAQAASwEAACQBAAAlAQAANAEAADYBAABLAQAATQEAACUBAAA1AQAAOAEAAEsBAABNAQAATwEAAEwBAABOAQAANgEAAE0BAABPAQAAJgEAAFABAABSAQAAJwEAADsBAABRAQAAUwEAACcBAAApAQAAOgEAADwBAABRAQAAUwEAAFUBAAAnAQAAKQEAACoBAAA7AQAAPQEAAFMBAABVAQAAVwEAACkBAAAqAQAALAEAADwBAAA/AQAAVQEAAFkBAAArAQAAQAEAAFYBAABYAQAAWgEAACoBAAAsAQAALQEAAD0BAABBAQAAVwEAAFkBAABbAQAAKwEAAC4BAAA+AQAAQgEAAFgBAABaAQAAXAEAACwBAAAtAQAALwEAAD8BAABDAQAAWQEAAFsBAAAuAQAAQAEAAEQBAABaAQAAXAEAAF0BAAAtAQAALwEAADEBAABBAQAARQEAAC4BAABCAQAARgEAAFwBAABdAQAAXwEAAC8BAAAxAQAAMwEAAEMBAABHAQAAXgEAAGABAAAwAQAAMgEAAEQBAABIAQAAXQEAAF8BAABhAQAAMQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
+PGRP AgAAACIAAAAA////AQEAAPv///9oAQAAAP///wECAAADAAAA/gIAAAD///8BAgAA/P///xEFAAAA////AQIAAPn////kBgAAAP///wECAADz////CQgAAAD///8BAQAAQf///8gOAADZ/f//AQEAAAoBAADgDgAAWf7//wECAAAFAQAA7A8AAFn+//8BAwAA8////+0PAABZ/v//AQMAAIL+///cDwAAWf7//wECYiAb/f//ShAAAFn+//8BAgAANfz//0gRAABZ/v//AQJ0Xwz8//+LEgAAWf7//wEBAAAHAAAA3RAAAFv+//8BA2NsygEAABsRAADo/f//AQIAAP4CAAAFEgAAWf3//wEDBgD3/f//2RAAANb9//8BAgAA4Pz//94RAABZ/f//AQIAAO78///4EwAAWf3//wEDAABP/v//lBQAAFn9//8BAgAA6////5gUAABO/v//AQFodKP+//+/EgAAWf3//wECAAB8AQAAqRIAAFn9//8BA2xsvQEAADgUAABZ/f//AQIAAJ4CAAA8EAAAWf7//wECcmGIAwAAPBEAAFn+//8BAgAA5wMAAMwSAABZ/v//AQJhIBAEAABYFAAAmf7//wECZWTsBAAAhBUAABz///8BAmFsOwYAAAEWAABZ////AQIAAEYHAADzFQAAWf///wEDc2jfBwAA5RcAAFn///8BAwAAEwkAAOcVAABZ////AQIIACwJAABIGQAAWf///wECAAA7CAAAEhQAAFn///8BAwAA1wkAAPISAABZ////AQJibLcKAAAaFAAAx////wECAAAICwAAMBYAAFkAAAABA2h0kgoAADIYAADI////AQIAAM4JAAA4FgAAWQAAAAEDdHQgCQAAvRcAAFkAAAABBAAATQcAALYXAABZAAAAAQNiZRQHAADvFQAAWwAAAAEEAADMBwAA9RMAAFwAAAABAmVk4QgAAPUTAABZAAAAAQQAAOgIAADwFQAAXAAAAAEFAAA=
+PGRC AQAAAAAAAAACAAAAAQAAAAMAAAACAAAABAAAAAMAAAAFAAAABAAAAAcAAAAGAAAACAAAAAcAAAAJAAAAGQAAAAgAAAAKAAAADgAAAAkAAAALAAAACgAAAAwAAAALAAAADQAAAAwAAAAJAAAADwAAABEAAAAOAAAAEAAAAA8AAAAXAAAAGAAAAA4AAAASAAAAEQAAABMAAAASAAAAFAAAABYAAAATAAAAFQAAABQAAAATAAAAFwAAABAAAAAWAAAAGAAAABAAAAAXAAAACAAAABoAAAAZAAAAGwAAABoAAAAcAAAAGwAAAB0AAAAcAAAAHgAAAB0AAAAfAAAAHgAAACAAAAAjAAAAHwAAACEAAAAiAAAAIAAAACMAAAAgAAAAJwAAAB8AAAAhAAAAJAAAACMAAAAlAAAAJAAAACYAAAAlAAAAJwAAACgAAAAiAAAAJgAAACYAAAApAAAALQAAACgAAAAuAAAAKgAAACsAAAApAAAALgAAACsAAAApAAAAKgAAAC4AAAAtAAAALgAAAC0AAAAoAAAAKwAAACwAAAAuAAAAKQAAACoAAAArAAAALAAAAC0AAAA=
 
 DIAL
 NAME nc_necro_001
@@ -10075,7 +12063,7 @@ INAM 23791269231747428860
 PNAM 2948324822603312878
 NNAM 1189322802262308569
 DATA BAAAADIAAAD///8A
-NAME Теперь я знаю заклинания, которое позволяет собирать души тех, кого я убью. Трагрилар хочет, чтобы ему принесли труп Данмера.%
+NAME Теперь я знаю заклинание, которое позволяет собирать души тех, кого я убью. Трагрилар хочет, чтобы я принес ему труп данмера.%
 
 INFO
 INAM 1189322802262308569
@@ -10101,13 +12089,20 @@ NAME Мой первый мертвец готов. Нужно поделить�
 INFO
 INAM 3152613355828126513
 PNAM 2811618639307014884
-NNAM 323596531986631773
+NNAM 28902214541971020977
 DATA BAAAAFoAAAD///8A
 NAME Трагрилар разрешил мне вызывать столько мертвецов, сколько я пожелаю. Он обещал продолжить мое обучение позже.%
 
 INFO
-INAM 323596531986631773
+INAM 28902214541971020977
 PNAM 3152613355828126513
+NNAM 323596531986631773
+DATA BAAAAF8AAAD///8A
+NAME Трагрилар научил меня заклинанию, превращающему труп в зомби. Хотя они не так полезны и неуязвимы как мертвецы, их легко делать и можно быстро создать армию.%
+
+INFO
+INAM 323596531986631773
+PNAM 28902214541971020977
 NNAM 1767917568720330340
 DATA BAAAAGQAAAD///8A
 NAME Трагрилар обучил меня способу вызова мумифицированного слуги и приказал мне применить свои знания на практике.%
