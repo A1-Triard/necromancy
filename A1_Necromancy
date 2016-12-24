@@ -961,1303 +961,6 @@ SCTX
     end
 
 SCPT
-SCHD nc_comp3Script_frwar 27 0 20 3695 349
-SCVR see_warlord;doOnce;doOnce2;doOnce3;doOnce4;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
-SCDT 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
-SCTX
-    begin nc_comp3Script_frwar
-    
-    float ax
-    float ay
-    float bx
-    float by
-    float bz
-    float cx
-    float cy
-    float cz
-    float t1
-    float t2
-    float t3
-    float t4
-    float coDist
-    float coDist2
-    float playz
-    float timer
-    float timer2
-    float sheatheTimer
-    float moveTimer
-    float h_check
-    short see_warlord
-    short doOnce
-    short doOnce2
-    short doOnce3
-    short doOnce4
-    short combatDone
-    short weapUse
-    short combatCheck
-    short soundPlayed
-    short flyCheck
-    short wwCheck
-    short oneTimeMove
-    short compMove
-    short c_move
-    short warp
-    short c_marksman
-    short c_speed
-    short c_athletics
-    short companion
-    short nohello
-    short noLore
-    short counter
-    short counter2
-    short addOnce
-    short p_Check
-    short emb_hook_nominion
-    short call
-    
-    if ( MenuMode == 1 )
-      ;if ( GetPCSleep == 0 )
-        return
-      ;endif
-    endif
-    
-    set emb_hook_nominion to 1
-    
-    if ( GetDisabled == 1 )
-    	set counter2 to ( counter2 + 1 )
-    	if ( counter2 < 10 )
-    		return
-    	endif
-    	setdelete 1
-    	return
-    endif
-    
-    if ( weapUse == 1 )
-      if ( Player->GetWeaponType <= 8 )
-        setmarksman 0
-      elseif ( weapUse == 1 )
-      if ( Player->GetWeaponType >= 9 )
-        setmarksman 200
-      endif
-      endif
-    endif
-    
-    if ( combatCheck == 1 )
-      set sheathetimer to sheatheTimer + GetSecondsPassed
-      if ( GetSoundPlaying, "Weapon Swish" == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( GetSoundPlaying, crossbowShoot == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( GetSoundPlaying, bowShoot == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "Weapon Swish" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "crossbowShoot" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "bowShoot" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      endif
-      endif
-      endif
-      endif
-    endif
-    
-    if ( soundPlayed == 1 )
-      equip "silver dagger"
-      removeitem "silver dagger" 1
-    ;  messagebox "Working"
-      set soundPlayed to 0
-      set combatCheck to 0
-      set combatDone to 1
-    endif
-    
-    if ( combatDone == 1 )
-        set timer to timer + GetSecondsPassed
-      if ( timer > 6 )
-        set timer to 0
-        set combatDone to 0
-        set warp to 0
-      endif
-    endif  
-    
-    if ( GetCurrentAIPackage == 3 )
-      ;if ( GetPCSleep == 1 )
-       ; StartScript 1gr_compLevel
-      ;endif
-    
-      if ( GetPCSneaking == 1 )
-        ForceSneak
-      elseif ( GetPCSneaking == 0 )
-        ClearForceSneak
-      endif
-    
-      if ( Player->GetEffect sEffectLevitate == 1 )
-      if ( flyCheck == 0 )
-        cast nc_comp2_lev_bog player
-        addspell nc_comp2_lev
-        set flyCheck to 1
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectLevitate == 0 )
-      if ( flyCheck == 1 )
-        removespell nc_comp2_lev
-        set flyCheck to 0
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectWaterWalking == 1 )
-      if ( wwCheck == 0 )
-        cast nc_comp2_ww_bog player
-        addspell nc_comp2_ww
-        set wwCheck to 1
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectWaterWalking == 0 )
-      if ( wwCheck == 1 )
-        removespell nc_comp2_ww
-        set wwCheck to 0
-      endif
-      endif
-    
-      if ( flyCheck == 1 )
-      if ( GetWeaponDrawn == 0 )
-        set playz to ( Player->GetPos z )
-        SetPos z playz
-      elseif ( flyCheck == 1 )
-      if ( GetCurrentAIPackage != 3 )
-      if ( GetWeaponDrawn == 0 )
-        set playz to ( GetPos z )
-        SetPos z playz
-      endif
-      endif
-      endif
-      endif
-    
-      if ( GetWeaponDrawn == 1 )
-      if ( flyCheck == 0 )
-        set combatCheck to 1
-        set timer to 0
-        set warp to 1
-        return
-      elseif ( GetWeaponDrawn == 1 )
-      if ( flyCheck == 1 )
-        set combatDone to 1
-        set timer to 0
-        set warp to 1
-        return
-      endif
-      endif
-      endif
-    
-      set ax to ( Player->GetPos x )
-      set ay to ( Player->GetPos y )
-    
-      if ( doOnce == 0 )
-        set bx to ( Player->GetPos x )
-        set by to ( Player->GetPos y )
-        set bz to ( Player->GetPos z )
-        set doOnce to 1
-      endif
-    
-      set t1 to ( ax - bx )
-      set t1 to ( t1 * t1 )
-      set t2 to ( ay - by )
-      set t2 to ( t2 * t2 )
-      set t1 to ( t1 + t2 )
-      set coDist to ( GetSquareRoot, t1 )
-    
-      if ( coDist > 360 )
-        set doOnce to 0
-      endif
-    
-      if ( coDist > 180 )
-      if ( doOnce2 == 0 )
-        set cx to ( Player->GetPos x )
-        set cy to ( Player->GetPos y )
-        set cz to ( Player->GetPos z )
-        set doOnce2 to 1
-      endif
-      endif
-    
-      set t3 to ( ax - cx )
-      set t3 to ( t3 * t3 )
-      set t4 to ( ay - cy )
-      set t4 to ( t4 * t4 )
-      set t3 to ( t3 + t4 )
-      set coDist2 to ( GetSquareRoot, t3 )
-    
-      if ( coDist2 > 360 )
-        set doOnce2 to 0
-      endif
-    
-      if ( warp == 0 )
-      if ( coDist > 350 )
-      if ( GetDistance Player > 680 )
-        SetPos x bx
-        SetPos y by
-        SetPos z bz
-        AiFollow Player 0 0 0 0
-      elseif ( warp == 0 )
-      if ( coDist2 > 350 )
-      if ( GetDistance Player > 680 )
-        SetPos x cx
-        SetPos y cy
-        SetPos z cz
-        AiFollow Player 0 0 0 0
-      endif
-      endif
-      endif
-      endif
-      endif
-    endif
-    
-    ;IF ADDITIONS ARE DESIRED, PLEASE ADD THEM BELOW HERE...
-    
-    if ( GetCurrentAIPackage == 3 )
-      if ( compMove == 1 )
-      if ( c_move == 0 )
-      if ( GetDistance Player < 70 )
-        AIWander 300 0 0 0 0
-        set c_move to 1
-      endif
-      endif
-      endif
-    endif
-    
-    if ( c_move == 1 )
-      if ( GetDistance Player > 100 )
-        AIFollow Player 0 0 0 0
-      set c_move to 0
-      endif
-    endif
-    
-    if ( oneTimeMove == 1 )
-      set moveTimer to moveTimer + GetSecondsPassed
-      if ( moveTimer > 4 )
-        set moveTimer to 0
-        AiFollow Player 0 0 0 0
-        set oneTimeMove to 0
-      endif
-    endif
-    
-    if ( call == 0 )
-    	if ( nc_callwar == 1 )
-    		AIWander 0 0 0
-    		set call to 1
-    	elseif ( nc_callwar == 2 )
-    		AIFollow player 0 0 0 0
-    		set call to 2
-    	elseif ( nc_callwar == 3 )
-    		AIWander 500 0 0
-    		set call to 3
-    	endif
-    	if ( nc_callmessage == 0 )
-    		set nc_callmessage to 1
-    	endif
-    endif
-    
-    if ( nc_callwar == 0 )
-    	set call to 0
-    endif
-    
-    ;AND ABOVE HERE.
-    
-    ;ADDITIONS CAN ALSO BE ADDED TO THIS FOLLOWING SECTION, BUT BEWARE OF THE COUNTER.
-    ;Counter can pooch some functions if they need to be checked every frame.
-    
-    if ( counter < 20 )
-      set counter to counter + 1
-      return
-    endif
-    
-    set counter to 0
-    
-    if ( GetCurrentAIPackage == 3 )
-      if ( GetDistance Player < 300 )
-        setSpeed 15
-        setAthletics 15
-      elseif ( GetDistance Player > 300 )
-        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
-        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
-        setSpeed  c_speed
-        setAthletics c_athletics
-      endif
-    
-      if ( GetItemCount p_restore_health_b >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_c >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_e >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_q >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_s >= 1 )
-        set p_Check to 1
-      else
-        set p_Check to 0
-      endif
-    endif
-    
-    if ( GetCurrentAIPackage != 3 )
-      setspeed 40
-    endif
-    
-    ;ADD ADDITIONAL TOPICS IN THIS SECTION IF REQUIRED.
-    
-    if ( addOnce == 0 )
-     AddTopic "- Бой"
-      AddTopic "- Сопровождение"
-      AddTopic "- Инструкции"
-      ;StartScript 1gr_compLevel
-      set companion to 1
-      set addOnce to 1
-    endif
-    
-    if ( HasItemEquipped "nc_head_rags" != 1 )
-    	if ( GetItemCount,  "nc_head_rags" >= 1 )
-    		Equip "nc_head_rags"
-    	endif
-    endif
-    
-    if ( HasItemEquipped "nc_fr_mummy_pants" != 1 )
-    	if ( GetItemCount,  "nc_fr_mummy_pants" >= 1 )
-    		Equip "nc_fr_mummy_pants"
-    	endif
-    endif
-    
-    if ( HasItemEquipped "nc_fr_mummy_shirt" != 1 )
-    	if ( GetItemCount,  "nc_fr_mummy_shirt" >= 1 )
-    		Equip "nc_fr_mummy_shirt"
-    	endif
-    endif
-    
-    if ( GetItemCount,  "nc_head_rags" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_fr_mummy_pants" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_fr_mummy_shirt" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    endif
-    
-    ;if ( OnDeath = 1 )
-    if ( GetHealth <= 5 )
-    	if ( doOnce3 == 0 )
-    		PlaySound, "ThunderClap"
-    		PlaceAtMe "nc_frost_cured" 1 1 1
-    		set nc_fr_warlord_glob to 0
-    		disable
-    		player->modcurrenthealth -20
-    		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
-    		set doOnce3 to 1
-    	endif
-    endif
-    
-    end
-    
-    
-    
-
-SCPT
-SCHD nc_comp3Script_fwar 27 0 20 3685 349
-SCVR see_warlord;doOnce;doOnce2;doOnce3;doOnce4;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
-SCDT 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
-SCTX
-    begin nc_comp3Script_fwar
-    
-    float ax
-    float ay
-    float bx
-    float by
-    float bz
-    float cx
-    float cy
-    float cz
-    float t1
-    float t2
-    float t3
-    float t4
-    float coDist
-    float coDist2
-    float playz
-    float timer
-    float timer2
-    float sheatheTimer
-    float moveTimer
-    float h_check
-    short see_warlord
-    short doOnce
-    short doOnce2
-    short doOnce3
-    short doOnce4
-    short combatDone
-    short weapUse
-    short combatCheck
-    short soundPlayed
-    short flyCheck
-    short wwCheck
-    short oneTimeMove
-    short compMove
-    short c_move
-    short warp
-    short c_marksman
-    short c_speed
-    short c_athletics
-    short companion
-    short nohello
-    short noLore
-    short counter
-    short counter2
-    short addOnce
-    short p_Check
-    short emb_hook_nominion
-    short call
-    
-    if ( MenuMode == 1 )
-      ;if ( GetPCSleep == 0 )
-        return
-      ;endif
-    endif
-    
-    set emb_hook_nominion to 1
-    
-    if ( GetDisabled == 1 )
-    	set counter2 to ( counter2 + 1 )
-    	if ( counter2 < 10 )
-    		return
-    	endif
-    	setdelete 1
-    	return
-    endif
-    
-    if ( weapUse == 1 )
-      if ( Player->GetWeaponType <= 8 )
-        setmarksman 0
-      elseif ( weapUse == 1 )
-      if ( Player->GetWeaponType >= 9 )
-        setmarksman 200
-      endif
-      endif
-    endif
-    
-    if ( combatCheck == 1 )
-      set sheathetimer to sheatheTimer + GetSecondsPassed
-      if ( GetSoundPlaying, "Weapon Swish" == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( GetSoundPlaying, crossbowShoot == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( GetSoundPlaying, bowShoot == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "Weapon Swish" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "crossbowShoot" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "bowShoot" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      endif
-      endif
-      endif
-      endif
-    endif
-    
-    if ( soundPlayed == 1 )
-      equip "silver dagger"
-      removeitem "silver dagger" 1
-    ;  messagebox "Working"
-      set soundPlayed to 0
-      set combatCheck to 0
-      set combatDone to 1
-    endif
-    
-    if ( combatDone == 1 )
-        set timer to timer + GetSecondsPassed
-      if ( timer > 6 )
-        set timer to 0
-        set combatDone to 0
-        set warp to 0
-      endif
-    endif  
-    
-    if ( GetCurrentAIPackage == 3 )
-      ;if ( GetPCSleep == 1 )
-       ; StartScript 1gr_compLevel
-      ;endif
-    
-      if ( GetPCSneaking == 1 )
-        ForceSneak
-      elseif ( GetPCSneaking == 0 )
-        ClearForceSneak
-      endif
-    
-      if ( Player->GetEffect sEffectLevitate == 1 )
-      if ( flyCheck == 0 )
-        cast nc_comp2_lev_bog player
-        addspell nc_comp2_lev
-        set flyCheck to 1
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectLevitate == 0 )
-      if ( flyCheck == 1 )
-        removespell nc_comp2_lev
-        set flyCheck to 0
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectWaterWalking == 1 )
-      if ( wwCheck == 0 )
-        cast nc_comp2_ww_bog player
-        addspell nc_comp2_ww
-        set wwCheck to 1
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectWaterWalking == 0 )
-      if ( wwCheck == 1 )
-        removespell nc_comp2_ww
-        set wwCheck to 0
-      endif
-      endif
-    
-      if ( flyCheck == 1 )
-      if ( GetWeaponDrawn == 0 )
-        set playz to ( Player->GetPos z )
-        SetPos z playz
-      elseif ( flyCheck == 1 )
-      if ( GetCurrentAIPackage != 3 )
-      if ( GetWeaponDrawn == 0 )
-        set playz to ( GetPos z )
-        SetPos z playz
-      endif
-      endif
-      endif
-      endif
-    
-      if ( GetWeaponDrawn == 1 )
-      if ( flyCheck == 0 )
-        set combatCheck to 1
-        set timer to 0
-        set warp to 1
-        return
-      elseif ( GetWeaponDrawn == 1 )
-      if ( flyCheck == 1 )
-        set combatDone to 1
-        set timer to 0
-        set warp to 1
-        return
-      endif
-      endif
-      endif
-    
-      set ax to ( Player->GetPos x )
-      set ay to ( Player->GetPos y )
-    
-      if ( doOnce == 0 )
-        set bx to ( Player->GetPos x )
-        set by to ( Player->GetPos y )
-        set bz to ( Player->GetPos z )
-        set doOnce to 1
-      endif
-    
-      set t1 to ( ax - bx )
-      set t1 to ( t1 * t1 )
-      set t2 to ( ay - by )
-      set t2 to ( t2 * t2 )
-      set t1 to ( t1 + t2 )
-      set coDist to ( GetSquareRoot, t1 )
-    
-      if ( coDist > 360 )
-        set doOnce to 0
-      endif
-    
-      if ( coDist > 180 )
-      if ( doOnce2 == 0 )
-        set cx to ( Player->GetPos x )
-        set cy to ( Player->GetPos y )
-        set cz to ( Player->GetPos z )
-        set doOnce2 to 1
-      endif
-      endif
-    
-      set t3 to ( ax - cx )
-      set t3 to ( t3 * t3 )
-      set t4 to ( ay - cy )
-      set t4 to ( t4 * t4 )
-      set t3 to ( t3 + t4 )
-      set coDist2 to ( GetSquareRoot, t3 )
-    
-      if ( coDist2 > 360 )
-        set doOnce2 to 0
-      endif
-    
-      if ( warp == 0 )
-      if ( coDist > 350 )
-      if ( GetDistance Player > 680 )
-        SetPos x bx
-        SetPos y by
-        SetPos z bz
-        AiFollow Player 0 0 0 0
-      elseif ( warp == 0 )
-      if ( coDist2 > 350 )
-      if ( GetDistance Player > 680 )
-        SetPos x cx
-        SetPos y cy
-        SetPos z cz
-        AiFollow Player 0 0 0 0
-      endif
-      endif
-      endif
-      endif
-      endif
-    endif
-    
-    ;IF ADDITIONS ARE DESIRED, PLEASE ADD THEM BELOW HERE...
-    
-    if ( GetCurrentAIPackage == 3 )
-      if ( compMove == 1 )
-      if ( c_move == 0 )
-      if ( GetDistance Player < 70 )
-        AIWander 300 0 0 0 0
-        set c_move to 1
-      endif
-      endif
-      endif
-    endif
-    
-    if ( c_move == 1 )
-      if ( GetDistance Player > 100 )
-        AIFollow Player 0 0 0 0
-      set c_move to 0
-      endif
-    endif
-    
-    if ( oneTimeMove == 1 )
-      set moveTimer to moveTimer + GetSecondsPassed
-      if ( moveTimer > 4 )
-        set moveTimer to 0
-        AiFollow Player 0 0 0 0
-        set oneTimeMove to 0
-      endif
-    endif
-    
-    if ( call == 0 )
-    	if ( nc_callwar == 1 )
-    		AIWander 0 0 0
-    		set call to 1
-    	elseif ( nc_callwar == 2 )
-    		AIFollow player 0 0 0 0
-    		set call to 2
-    	elseif ( nc_callwar == 3 )
-    		AIWander 500 0 0
-    		set call to 3
-    	endif
-    	if ( nc_callmessage == 0 )
-    		set nc_callmessage to 1
-    	endif
-    endif
-    
-    if ( nc_callwar == 0 )
-    	set call to 0
-    endif
-    
-    ;AND ABOVE HERE.
-    
-    ;ADDITIONS CAN ALSO BE ADDED TO THIS FOLLOWING SECTION, BUT BEWARE OF THE COUNTER.
-    ;Counter can pooch some functions if they need to be checked every frame.
-    
-    if ( counter < 20 )
-      set counter to counter + 1
-      return
-    endif
-    
-    set counter to 0
-    
-    if ( GetCurrentAIPackage == 3 )
-      if ( GetDistance Player < 300 )
-        setSpeed 15
-        setAthletics 15
-      elseif ( GetDistance Player > 300 )
-        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
-        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
-        setSpeed  c_speed
-        setAthletics c_athletics
-      endif
-    
-      if ( GetItemCount p_restore_health_b >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_c >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_e >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_q >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_s >= 1 )
-        set p_Check to 1
-      else
-        set p_Check to 0
-      endif
-    endif
-    
-    if ( GetCurrentAIPackage != 3 )
-      setspeed 40
-    endif
-    
-    ;ADD ADDITIONAL TOPICS IN THIS SECTION IF REQUIRED.
-    
-    if ( addOnce == 0 )
-      AddTopic "- Бой"
-      AddTopic "- Сопровождение"
-      AddTopic "- Инструкции"
-      ;StartScript 1gr_compLevel
-      set companion to 1
-      set addOnce to 1
-    endif
-    
-    if ( HasItemEquipped "nc_head_rags" != 1 )
-    	if ( GetItemCount,  "nc_head_rags" >= 1 )
-    		Equip "nc_head_rags"
-    	endif
-    endif
-    
-    if ( HasItemEquipped "nc_f_mummy_pants" != 1 )
-    	if ( GetItemCount,  "nc_f_mummy_pants" >= 1 )
-    		Equip "nc_f_mummy_pants"
-    	endif
-    endif
-    
-    if ( HasItemEquipped "nc_f_mummy_shirt" != 1 )
-    	if ( GetItemCount,  "nc_f_mummy_shirt" >= 1 )
-    		Equip "nc_f_mummy_shirt"
-    	endif
-    endif
-    
-    if ( GetItemCount,  "nc_head_rags" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_f_mummy_pants" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_f_mummy_shirt" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    endif
-    
-    ;if ( OnDeath = 1 )
-    if ( GetHealth <= 5 )
-    	if ( doOnce3 == 0 )
-    		PlaySound, "ThunderClap"
-    		PlaceAtMe "nc_fire_cured" 1 1 1
-    		set nc_f_warlord_glob to 0
-    		disable
-    		player->modcurrenthealth -20
-    		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
-    		set doOnce3 to 1
-    	endif
-    endif
-    
-    end
-    
-    
-    
-
-SCPT
-SCHD nc_comp3Script_pwar 28 0 20 3686 357
-SCVR see_warlord;doOnce;doOnce2;doOnce3;doOnce4;doOnce5;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
-SCDT 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
-SCTX
-    begin nc_comp3Script_pwar
-    
-    float ax
-    float ay
-    float bx
-    float by
-    float bz
-    float cx
-    float cy
-    float cz
-    float t1
-    float t2
-    float t3
-    float t4
-    float coDist
-    float coDist2
-    float playz
-    float timer
-    float timer2
-    float sheatheTimer
-    float moveTimer
-    float h_check
-    short see_warlord
-    short doOnce
-    short doOnce2
-    short doOnce3
-    short doOnce4
-    short doOnce5
-    short combatDone
-    short weapUse
-    short combatCheck
-    short soundPlayed
-    short flyCheck
-    short wwCheck
-    short oneTimeMove
-    short compMove
-    short c_move
-    short warp
-    short c_marksman
-    short c_speed
-    short c_athletics
-    short companion
-    short nohello
-    short noLore
-    short counter
-    short counter2
-    short addOnce
-    short p_Check
-    short emb_hook_nominion
-    short call
-    
-    if ( MenuMode == 1 )
-      ;if ( GetPCSleep == 0 )
-        return
-      ;endif
-    endif
-    
-    set emb_hook_nominion to 1
-    
-    if ( GetDisabled == 1 )
-    	set counter2 to ( counter2 + 1 )
-    	if ( counter2 < 10 )
-    		return
-    	endif
-    	setdelete 1
-    	return
-    endif
-    
-    if ( weapUse == 1 )
-      if ( Player->GetWeaponType <= 8 )
-        setmarksman 0
-      elseif ( weapUse == 1 )
-      if ( Player->GetWeaponType >= 9 )
-        setmarksman 200
-      endif
-      endif
-    endif
-    
-    if ( combatCheck == 1 )
-      set sheathetimer to sheatheTimer + GetSecondsPassed
-      if ( GetSoundPlaying, "Weapon Swish" == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( GetSoundPlaying, crossbowShoot == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( GetSoundPlaying, bowShoot == 1 )
-        set sheatheTimer to 0
-        return
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "Weapon Swish" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "crossbowShoot" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      elseif ( sheatheTimer > 4 )
-      if ( GetSoundPlaying "bowShoot" == 0 )
-        set sheatheTimer to 0
-        set soundPlayed to 1
-      endif
-      endif
-      endif
-      endif
-    endif
-    
-    if ( soundPlayed == 1 )
-      equip "silver dagger"
-      removeitem "silver dagger" 1
-    ;  messagebox "Working"
-      set soundPlayed to 0
-      set combatCheck to 0
-      set combatDone to 1
-    endif
-    
-    if ( combatDone == 1 )
-        set timer to timer + GetSecondsPassed
-      if ( timer > 6 )
-        set timer to 0
-        set combatDone to 0
-        set warp to 0
-      endif
-    endif  
-    
-    if ( GetCurrentAIPackage == 3 )
-      ;if ( GetPCSleep == 1 )
-       ; StartScript 1gr_compLevel
-      ;endif
-    
-      if ( GetPCSneaking == 1 )
-        ForceSneak
-      elseif ( GetPCSneaking == 0 )
-        ClearForceSneak
-      endif
-    
-      if ( Player->GetEffect sEffectLevitate == 1 )
-      if ( flyCheck == 0 )
-        cast nc_comp2_lev_bog player
-        addspell nc_comp2_lev
-        set flyCheck to 1
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectLevitate == 0 )
-      if ( flyCheck == 1 )
-        removespell nc_comp2_lev
-        set flyCheck to 0
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectWaterWalking == 1 )
-      if ( wwCheck == 0 )
-        cast nc_comp2_ww_bog player
-        addspell nc_comp2_ww
-        set wwCheck to 1
-      endif
-      endif
-    
-      if ( Player->GetEffect sEffectWaterWalking == 0 )
-      if ( wwCheck == 1 )
-        removespell nc_comp2_ww
-        set wwCheck to 0
-      endif
-      endif
-    
-      if ( flyCheck == 1 )
-      if ( GetWeaponDrawn == 0 )
-        set playz to ( Player->GetPos z )
-        SetPos z playz
-      elseif ( flyCheck == 1 )
-      if ( GetCurrentAIPackage != 3 )
-      if ( GetWeaponDrawn == 0 )
-        set playz to ( GetPos z )
-        SetPos z playz
-      endif
-      endif
-      endif
-      endif
-    
-      if ( GetWeaponDrawn == 1 )
-      if ( flyCheck == 0 )
-        set combatCheck to 1
-        set timer to 0
-        set warp to 1
-        return
-      elseif ( GetWeaponDrawn == 1 )
-      if ( flyCheck == 1 )
-        set combatDone to 1
-        set timer to 0
-        set warp to 1
-        return
-      endif
-      endif
-      endif
-    
-      set ax to ( Player->GetPos x )
-      set ay to ( Player->GetPos y )
-    
-      if ( doOnce == 0 )
-        set bx to ( Player->GetPos x )
-        set by to ( Player->GetPos y )
-        set bz to ( Player->GetPos z )
-        set doOnce to 1
-      endif
-    
-      set t1 to ( ax - bx )
-      set t1 to ( t1 * t1 )
-      set t2 to ( ay - by )
-      set t2 to ( t2 * t2 )
-      set t1 to ( t1 + t2 )
-      set coDist to ( GetSquareRoot, t1 )
-    
-      if ( coDist > 360 )
-        set doOnce to 0
-      endif
-    
-      if ( coDist > 180 )
-      if ( doOnce2 == 0 )
-        set cx to ( Player->GetPos x )
-        set cy to ( Player->GetPos y )
-        set cz to ( Player->GetPos z )
-        set doOnce2 to 1
-      endif
-      endif
-    
-      set t3 to ( ax - cx )
-      set t3 to ( t3 * t3 )
-      set t4 to ( ay - cy )
-      set t4 to ( t4 * t4 )
-      set t3 to ( t3 + t4 )
-      set coDist2 to ( GetSquareRoot, t3 )
-    
-      if ( coDist2 > 360 )
-        set doOnce2 to 0
-      endif
-    
-      if ( warp == 0 )
-      if ( coDist > 350 )
-      if ( GetDistance Player > 680 )
-        SetPos x bx
-        SetPos y by
-        SetPos z bz
-        AiFollow Player 0 0 0 0
-      elseif ( warp == 0 )
-      if ( coDist2 > 350 )
-      if ( GetDistance Player > 680 )
-        SetPos x cx
-        SetPos y cy
-        SetPos z cz
-        AiFollow Player 0 0 0 0
-      endif
-      endif
-      endif
-      endif
-      endif
-    endif
-    
-    ;IF ADDITIONS ARE DESIRED, PLEASE ADD THEM BELOW HERE...
-    
-    
-    
-    if ( GetCurrentAIPackage == 3 )
-      if ( compMove == 1 )
-      if ( c_move == 0 )
-      if ( GetDistance Player < 70 )
-        AIWander 300 0 0 0 0
-        set c_move to 1
-      endif
-      endif
-      endif
-    endif
-    
-    if ( c_move == 1 )
-      if ( GetDistance Player > 100 )
-        AIFollow Player 0 0 0 0
-      set c_move to 0
-      endif
-    endif
-    
-    if ( oneTimeMove == 1 )
-      set moveTimer to moveTimer + GetSecondsPassed
-      if ( moveTimer > 4 )
-        set moveTimer to 0
-        AiFollow Player 0 0 0 0
-        set oneTimeMove to 0
-      endif
-    endif
-    
-    if ( call == 0 )
-    	if ( nc_callwar == 1 )
-    		AIWander 0 0 0
-    		set call to 1
-    	elseif ( nc_callwar == 2 )
-    		AIFollow player 0 0 0 0
-    		set call to 2
-    	elseif ( nc_callwar == 3 )
-    		AIWander 500 0 0
-    		set call to 3
-    	endif
-    	if ( nc_callmessage == 0 )
-    		set nc_callmessage to 1
-    	endif
-    endif
-    
-    if ( nc_callwar == 0 )
-    	set call to 0
-    endif
-    
-    ;AND ABOVE HERE.
-    
-    ;ADDITIONS CAN ALSO BE ADDED TO THIS FOLLOWING SECTION, BUT BEWARE OF THE COUNTER.
-    ;Counter can pooch some functions if they need to be checked every frame.
-    
-    if ( counter < 20 )
-      set counter to counter + 1
-      return
-    endif
-    
-    set counter to 0
-    
-    if ( GetCurrentAIPackage == 3 )
-      if ( GetDistance Player < 300 )
-        setSpeed 15
-        setAthletics 15
-      elseif ( GetDistance Player > 300 )
-        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
-        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
-        setSpeed  c_speed
-        setAthletics c_athletics
-      endif
-    
-      if ( GetItemCount p_restore_health_b >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_c >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_e >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_q >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_s >= 1 )
-        set p_Check to 1
-      else
-        set p_Check to 0
-      endif
-    endif
-    
-    if ( GetCurrentAIPackage != 3 )
-      setspeed 40
-    endif
-    
-    ;ADD ADDITIONAL TOPICS IN THIS SECTION IF REQUIRED.
-    
-    if ( addOnce == 0 )
-      AddTopic "- Бой"
-      AddTopic "- Сопровождение"
-      AddTopic "- Инструкции"
-      ;StartScript 1gr_compLevel
-      set companion to 1
-      set addOnce to 1
-    endif
-    
-    if ( HasItemEquipped "nc_head_rags" != 1 )
-    	if ( GetItemCount,  "nc_head_rags" >= 1 )
-    		Equip "nc_head_rags"
-    	endif
-    endif
-    
-    if ( HasItemEquipped "nc_p_mummy_pants" != 1 )
-    	if ( GetItemCount,  "nc_p_mummy_pants" >= 1 )
-    		Equip "nc_p_mummy_pants"
-    	endif
-    endif
-    
-    if ( HasItemEquipped "nc_p_mummy_shirt" != 1 )
-    	if ( GetItemCount,  "nc_p_mummy_shirt" >= 1 )
-    		Equip "nc_p_mummy_shirt"
-    	endif
-    endif
-    
-    if ( GetItemCount,  "nc_head_rags" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_p_mummy_pants" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_p_mummy_shirt" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
-    	if ( doOnce4 == 0 )
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
-    endif
-    
-    ;if ( OnDeath = 1 )
-    if ( GetHealth <= 5 )
-    	if ( doOnce3 == 0 )
-    		PlaySound, "ThunderClap"
-    		PlaceAtMe "nc_poison_cured" 1 1 1
-    		set nc_p_warlord_glob to 0
-    		disable
-    		player->modcurrenthealth -20
-    		MessageBox "Чары распались. Вы чувствуете острую боль, как бдто вам что-то перерезали."
-    		set doOnce3 to 1
-    	endif
-    endif
-    
-    end
-    
-
-SCPT
 SCHD nc_comp3Script_arg 33 0 20 4366 410
 SCVR see_f_warlord;see_fr_warlord;see_p_warlord;doOnce;doOnce2;doOnce3;doOnce4;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;doOnce5;travel;free;posession;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
 SCDT 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
@@ -3773,6 +2476,870 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_comp3Script_frwar 27 0 20 3695 349
+SCVR see_warlord;doOnce;doOnce2;doOnce3;doOnce4;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
+SCDT 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
+SCTX
+    begin nc_comp3Script_frwar
+    
+    float ax
+    float ay
+    float bx
+    float by
+    float bz
+    float cx
+    float cy
+    float cz
+    float t1
+    float t2
+    float t3
+    float t4
+    float coDist
+    float coDist2
+    float playz
+    float timer
+    float timer2
+    float sheatheTimer
+    float moveTimer
+    float h_check
+    short see_warlord
+    short doOnce
+    short doOnce2
+    short doOnce3
+    short doOnce4
+    short combatDone
+    short weapUse
+    short combatCheck
+    short soundPlayed
+    short flyCheck
+    short wwCheck
+    short oneTimeMove
+    short compMove
+    short c_move
+    short warp
+    short c_marksman
+    short c_speed
+    short c_athletics
+    short companion
+    short nohello
+    short noLore
+    short counter
+    short counter2
+    short addOnce
+    short p_Check
+    short emb_hook_nominion
+    short call
+    
+    if ( MenuMode == 1 )
+      ;if ( GetPCSleep == 0 )
+        return
+      ;endif
+    endif
+    
+    set emb_hook_nominion to 1
+    
+    if ( GetDisabled == 1 )
+    	set counter2 to ( counter2 + 1 )
+    	if ( counter2 < 10 )
+    		return
+    	endif
+    	setdelete 1
+    	return
+    endif
+    
+    if ( weapUse == 1 )
+      if ( Player->GetWeaponType <= 8 )
+        setmarksman 0
+      elseif ( weapUse == 1 )
+      if ( Player->GetWeaponType >= 9 )
+        setmarksman 200
+      endif
+      endif
+    endif
+    
+    if ( combatCheck == 1 )
+      set sheathetimer to sheatheTimer + GetSecondsPassed
+      if ( GetSoundPlaying, "Weapon Swish" == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( GetSoundPlaying, crossbowShoot == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( GetSoundPlaying, bowShoot == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "Weapon Swish" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "crossbowShoot" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "bowShoot" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      endif
+      endif
+      endif
+      endif
+    endif
+    
+    if ( soundPlayed == 1 )
+      equip "silver dagger"
+      removeitem "silver dagger" 1
+    ;  messagebox "Working"
+      set soundPlayed to 0
+      set combatCheck to 0
+      set combatDone to 1
+    endif
+    
+    if ( combatDone == 1 )
+        set timer to timer + GetSecondsPassed
+      if ( timer > 6 )
+        set timer to 0
+        set combatDone to 0
+        set warp to 0
+      endif
+    endif  
+    
+    if ( GetCurrentAIPackage == 3 )
+      ;if ( GetPCSleep == 1 )
+       ; StartScript 1gr_compLevel
+      ;endif
+    
+      if ( GetPCSneaking == 1 )
+        ForceSneak
+      elseif ( GetPCSneaking == 0 )
+        ClearForceSneak
+      endif
+    
+      if ( Player->GetEffect sEffectLevitate == 1 )
+      if ( flyCheck == 0 )
+        cast nc_comp2_lev_bog player
+        addspell nc_comp2_lev
+        set flyCheck to 1
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectLevitate == 0 )
+      if ( flyCheck == 1 )
+        removespell nc_comp2_lev
+        set flyCheck to 0
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectWaterWalking == 1 )
+      if ( wwCheck == 0 )
+        cast nc_comp2_ww_bog player
+        addspell nc_comp2_ww
+        set wwCheck to 1
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectWaterWalking == 0 )
+      if ( wwCheck == 1 )
+        removespell nc_comp2_ww
+        set wwCheck to 0
+      endif
+      endif
+    
+      if ( flyCheck == 1 )
+      if ( GetWeaponDrawn == 0 )
+        set playz to ( Player->GetPos z )
+        SetPos z playz
+      elseif ( flyCheck == 1 )
+      if ( GetCurrentAIPackage != 3 )
+      if ( GetWeaponDrawn == 0 )
+        set playz to ( GetPos z )
+        SetPos z playz
+      endif
+      endif
+      endif
+      endif
+    
+      if ( GetWeaponDrawn == 1 )
+      if ( flyCheck == 0 )
+        set combatCheck to 1
+        set timer to 0
+        set warp to 1
+        return
+      elseif ( GetWeaponDrawn == 1 )
+      if ( flyCheck == 1 )
+        set combatDone to 1
+        set timer to 0
+        set warp to 1
+        return
+      endif
+      endif
+      endif
+    
+      set ax to ( Player->GetPos x )
+      set ay to ( Player->GetPos y )
+    
+      if ( doOnce == 0 )
+        set bx to ( Player->GetPos x )
+        set by to ( Player->GetPos y )
+        set bz to ( Player->GetPos z )
+        set doOnce to 1
+      endif
+    
+      set t1 to ( ax - bx )
+      set t1 to ( t1 * t1 )
+      set t2 to ( ay - by )
+      set t2 to ( t2 * t2 )
+      set t1 to ( t1 + t2 )
+      set coDist to ( GetSquareRoot, t1 )
+    
+      if ( coDist > 360 )
+        set doOnce to 0
+      endif
+    
+      if ( coDist > 180 )
+      if ( doOnce2 == 0 )
+        set cx to ( Player->GetPos x )
+        set cy to ( Player->GetPos y )
+        set cz to ( Player->GetPos z )
+        set doOnce2 to 1
+      endif
+      endif
+    
+      set t3 to ( ax - cx )
+      set t3 to ( t3 * t3 )
+      set t4 to ( ay - cy )
+      set t4 to ( t4 * t4 )
+      set t3 to ( t3 + t4 )
+      set coDist2 to ( GetSquareRoot, t3 )
+    
+      if ( coDist2 > 360 )
+        set doOnce2 to 0
+      endif
+    
+      if ( warp == 0 )
+      if ( coDist > 350 )
+      if ( GetDistance Player > 680 )
+        SetPos x bx
+        SetPos y by
+        SetPos z bz
+        AiFollow Player 0 0 0 0
+      elseif ( warp == 0 )
+      if ( coDist2 > 350 )
+      if ( GetDistance Player > 680 )
+        SetPos x cx
+        SetPos y cy
+        SetPos z cz
+        AiFollow Player 0 0 0 0
+      endif
+      endif
+      endif
+      endif
+      endif
+    endif
+    
+    ;IF ADDITIONS ARE DESIRED, PLEASE ADD THEM BELOW HERE...
+    
+    if ( GetCurrentAIPackage == 3 )
+      if ( compMove == 1 )
+      if ( c_move == 0 )
+      if ( GetDistance Player < 70 )
+        AIWander 300 0 0 0 0
+        set c_move to 1
+      endif
+      endif
+      endif
+    endif
+    
+    if ( c_move == 1 )
+      if ( GetDistance Player > 100 )
+        AIFollow Player 0 0 0 0
+      set c_move to 0
+      endif
+    endif
+    
+    if ( oneTimeMove == 1 )
+      set moveTimer to moveTimer + GetSecondsPassed
+      if ( moveTimer > 4 )
+        set moveTimer to 0
+        AiFollow Player 0 0 0 0
+        set oneTimeMove to 0
+      endif
+    endif
+    
+    if ( call == 0 )
+    	if ( nc_callwar == 1 )
+    		AIWander 0 0 0
+    		set call to 1
+    	elseif ( nc_callwar == 2 )
+    		AIFollow player 0 0 0 0
+    		set call to 2
+    	elseif ( nc_callwar == 3 )
+    		AIWander 500 0 0
+    		set call to 3
+    	endif
+    	if ( nc_callmessage == 0 )
+    		set nc_callmessage to 1
+    	endif
+    endif
+    
+    if ( nc_callwar == 0 )
+    	set call to 0
+    endif
+    
+    ;AND ABOVE HERE.
+    
+    ;ADDITIONS CAN ALSO BE ADDED TO THIS FOLLOWING SECTION, BUT BEWARE OF THE COUNTER.
+    ;Counter can pooch some functions if they need to be checked every frame.
+    
+    if ( counter < 20 )
+      set counter to counter + 1
+      return
+    endif
+    
+    set counter to 0
+    
+    if ( GetCurrentAIPackage == 3 )
+      if ( GetDistance Player < 300 )
+        setSpeed 15
+        setAthletics 15
+      elseif ( GetDistance Player > 300 )
+        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
+        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
+        setSpeed  c_speed
+        setAthletics c_athletics
+      endif
+    
+      if ( GetItemCount p_restore_health_b >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_c >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_e >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_q >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_s >= 1 )
+        set p_Check to 1
+      else
+        set p_Check to 0
+      endif
+    endif
+    
+    if ( GetCurrentAIPackage != 3 )
+      setspeed 40
+    endif
+    
+    ;ADD ADDITIONAL TOPICS IN THIS SECTION IF REQUIRED.
+    
+    if ( addOnce == 0 )
+     AddTopic "- Бой"
+      AddTopic "- Сопровождение"
+      AddTopic "- Инструкции"
+      ;StartScript 1gr_compLevel
+      set companion to 1
+      set addOnce to 1
+    endif
+    
+    if ( HasItemEquipped "nc_head_rags" != 1 )
+    	if ( GetItemCount,  "nc_head_rags" >= 1 )
+    		Equip "nc_head_rags"
+    	endif
+    endif
+    
+    if ( HasItemEquipped "nc_fr_mummy_pants" != 1 )
+    	if ( GetItemCount,  "nc_fr_mummy_pants" >= 1 )
+    		Equip "nc_fr_mummy_pants"
+    	endif
+    endif
+    
+    if ( HasItemEquipped "nc_fr_mummy_shirt" != 1 )
+    	if ( GetItemCount,  "nc_fr_mummy_shirt" >= 1 )
+    		Equip "nc_fr_mummy_shirt"
+    	endif
+    endif
+    
+    if ( GetItemCount,  "nc_head_rags" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "nc_fr_mummy_pants" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "nc_fr_mummy_shirt" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    endif
+    
+    ;if ( OnDeath = 1 )
+    if ( GetHealth <= 5 )
+    	if ( doOnce3 == 0 )
+    		PlaySound, "ThunderClap"
+    		PlaceAtMe "nc_frost_cured" 1 1 1
+    		set nc_fr_warlord_glob to 0
+    		disable
+    		player->modcurrenthealth -20
+    		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
+    		set doOnce3 to 1
+    	endif
+    endif
+    
+    end
+    
+    
+    
+
+SCPT
+SCHD nc_comp3Script_fwar 27 0 20 3685 349
+SCVR see_warlord;doOnce;doOnce2;doOnce3;doOnce4;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
+SCDT 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
+SCTX
+    begin nc_comp3Script_fwar
+    
+    float ax
+    float ay
+    float bx
+    float by
+    float bz
+    float cx
+    float cy
+    float cz
+    float t1
+    float t2
+    float t3
+    float t4
+    float coDist
+    float coDist2
+    float playz
+    float timer
+    float timer2
+    float sheatheTimer
+    float moveTimer
+    float h_check
+    short see_warlord
+    short doOnce
+    short doOnce2
+    short doOnce3
+    short doOnce4
+    short combatDone
+    short weapUse
+    short combatCheck
+    short soundPlayed
+    short flyCheck
+    short wwCheck
+    short oneTimeMove
+    short compMove
+    short c_move
+    short warp
+    short c_marksman
+    short c_speed
+    short c_athletics
+    short companion
+    short nohello
+    short noLore
+    short counter
+    short counter2
+    short addOnce
+    short p_Check
+    short emb_hook_nominion
+    short call
+    
+    if ( MenuMode == 1 )
+      ;if ( GetPCSleep == 0 )
+        return
+      ;endif
+    endif
+    
+    set emb_hook_nominion to 1
+    
+    if ( GetDisabled == 1 )
+    	set counter2 to ( counter2 + 1 )
+    	if ( counter2 < 10 )
+    		return
+    	endif
+    	setdelete 1
+    	return
+    endif
+    
+    if ( weapUse == 1 )
+      if ( Player->GetWeaponType <= 8 )
+        setmarksman 0
+      elseif ( weapUse == 1 )
+      if ( Player->GetWeaponType >= 9 )
+        setmarksman 200
+      endif
+      endif
+    endif
+    
+    if ( combatCheck == 1 )
+      set sheathetimer to sheatheTimer + GetSecondsPassed
+      if ( GetSoundPlaying, "Weapon Swish" == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( GetSoundPlaying, crossbowShoot == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( GetSoundPlaying, bowShoot == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "Weapon Swish" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "crossbowShoot" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "bowShoot" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      endif
+      endif
+      endif
+      endif
+    endif
+    
+    if ( soundPlayed == 1 )
+      equip "silver dagger"
+      removeitem "silver dagger" 1
+    ;  messagebox "Working"
+      set soundPlayed to 0
+      set combatCheck to 0
+      set combatDone to 1
+    endif
+    
+    if ( combatDone == 1 )
+        set timer to timer + GetSecondsPassed
+      if ( timer > 6 )
+        set timer to 0
+        set combatDone to 0
+        set warp to 0
+      endif
+    endif  
+    
+    if ( GetCurrentAIPackage == 3 )
+      ;if ( GetPCSleep == 1 )
+       ; StartScript 1gr_compLevel
+      ;endif
+    
+      if ( GetPCSneaking == 1 )
+        ForceSneak
+      elseif ( GetPCSneaking == 0 )
+        ClearForceSneak
+      endif
+    
+      if ( Player->GetEffect sEffectLevitate == 1 )
+      if ( flyCheck == 0 )
+        cast nc_comp2_lev_bog player
+        addspell nc_comp2_lev
+        set flyCheck to 1
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectLevitate == 0 )
+      if ( flyCheck == 1 )
+        removespell nc_comp2_lev
+        set flyCheck to 0
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectWaterWalking == 1 )
+      if ( wwCheck == 0 )
+        cast nc_comp2_ww_bog player
+        addspell nc_comp2_ww
+        set wwCheck to 1
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectWaterWalking == 0 )
+      if ( wwCheck == 1 )
+        removespell nc_comp2_ww
+        set wwCheck to 0
+      endif
+      endif
+    
+      if ( flyCheck == 1 )
+      if ( GetWeaponDrawn == 0 )
+        set playz to ( Player->GetPos z )
+        SetPos z playz
+      elseif ( flyCheck == 1 )
+      if ( GetCurrentAIPackage != 3 )
+      if ( GetWeaponDrawn == 0 )
+        set playz to ( GetPos z )
+        SetPos z playz
+      endif
+      endif
+      endif
+      endif
+    
+      if ( GetWeaponDrawn == 1 )
+      if ( flyCheck == 0 )
+        set combatCheck to 1
+        set timer to 0
+        set warp to 1
+        return
+      elseif ( GetWeaponDrawn == 1 )
+      if ( flyCheck == 1 )
+        set combatDone to 1
+        set timer to 0
+        set warp to 1
+        return
+      endif
+      endif
+      endif
+    
+      set ax to ( Player->GetPos x )
+      set ay to ( Player->GetPos y )
+    
+      if ( doOnce == 0 )
+        set bx to ( Player->GetPos x )
+        set by to ( Player->GetPos y )
+        set bz to ( Player->GetPos z )
+        set doOnce to 1
+      endif
+    
+      set t1 to ( ax - bx )
+      set t1 to ( t1 * t1 )
+      set t2 to ( ay - by )
+      set t2 to ( t2 * t2 )
+      set t1 to ( t1 + t2 )
+      set coDist to ( GetSquareRoot, t1 )
+    
+      if ( coDist > 360 )
+        set doOnce to 0
+      endif
+    
+      if ( coDist > 180 )
+      if ( doOnce2 == 0 )
+        set cx to ( Player->GetPos x )
+        set cy to ( Player->GetPos y )
+        set cz to ( Player->GetPos z )
+        set doOnce2 to 1
+      endif
+      endif
+    
+      set t3 to ( ax - cx )
+      set t3 to ( t3 * t3 )
+      set t4 to ( ay - cy )
+      set t4 to ( t4 * t4 )
+      set t3 to ( t3 + t4 )
+      set coDist2 to ( GetSquareRoot, t3 )
+    
+      if ( coDist2 > 360 )
+        set doOnce2 to 0
+      endif
+    
+      if ( warp == 0 )
+      if ( coDist > 350 )
+      if ( GetDistance Player > 680 )
+        SetPos x bx
+        SetPos y by
+        SetPos z bz
+        AiFollow Player 0 0 0 0
+      elseif ( warp == 0 )
+      if ( coDist2 > 350 )
+      if ( GetDistance Player > 680 )
+        SetPos x cx
+        SetPos y cy
+        SetPos z cz
+        AiFollow Player 0 0 0 0
+      endif
+      endif
+      endif
+      endif
+      endif
+    endif
+    
+    ;IF ADDITIONS ARE DESIRED, PLEASE ADD THEM BELOW HERE...
+    
+    if ( GetCurrentAIPackage == 3 )
+      if ( compMove == 1 )
+      if ( c_move == 0 )
+      if ( GetDistance Player < 70 )
+        AIWander 300 0 0 0 0
+        set c_move to 1
+      endif
+      endif
+      endif
+    endif
+    
+    if ( c_move == 1 )
+      if ( GetDistance Player > 100 )
+        AIFollow Player 0 0 0 0
+      set c_move to 0
+      endif
+    endif
+    
+    if ( oneTimeMove == 1 )
+      set moveTimer to moveTimer + GetSecondsPassed
+      if ( moveTimer > 4 )
+        set moveTimer to 0
+        AiFollow Player 0 0 0 0
+        set oneTimeMove to 0
+      endif
+    endif
+    
+    if ( call == 0 )
+    	if ( nc_callwar == 1 )
+    		AIWander 0 0 0
+    		set call to 1
+    	elseif ( nc_callwar == 2 )
+    		AIFollow player 0 0 0 0
+    		set call to 2
+    	elseif ( nc_callwar == 3 )
+    		AIWander 500 0 0
+    		set call to 3
+    	endif
+    	if ( nc_callmessage == 0 )
+    		set nc_callmessage to 1
+    	endif
+    endif
+    
+    if ( nc_callwar == 0 )
+    	set call to 0
+    endif
+    
+    ;AND ABOVE HERE.
+    
+    ;ADDITIONS CAN ALSO BE ADDED TO THIS FOLLOWING SECTION, BUT BEWARE OF THE COUNTER.
+    ;Counter can pooch some functions if they need to be checked every frame.
+    
+    if ( counter < 20 )
+      set counter to counter + 1
+      return
+    endif
+    
+    set counter to 0
+    
+    if ( GetCurrentAIPackage == 3 )
+      if ( GetDistance Player < 300 )
+        setSpeed 15
+        setAthletics 15
+      elseif ( GetDistance Player > 300 )
+        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
+        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
+        setSpeed  c_speed
+        setAthletics c_athletics
+      endif
+    
+      if ( GetItemCount p_restore_health_b >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_c >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_e >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_q >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_s >= 1 )
+        set p_Check to 1
+      else
+        set p_Check to 0
+      endif
+    endif
+    
+    if ( GetCurrentAIPackage != 3 )
+      setspeed 40
+    endif
+    
+    ;ADD ADDITIONAL TOPICS IN THIS SECTION IF REQUIRED.
+    
+    if ( addOnce == 0 )
+      AddTopic "- Бой"
+      AddTopic "- Сопровождение"
+      AddTopic "- Инструкции"
+      ;StartScript 1gr_compLevel
+      set companion to 1
+      set addOnce to 1
+    endif
+    
+    if ( HasItemEquipped "nc_head_rags" != 1 )
+    	if ( GetItemCount,  "nc_head_rags" >= 1 )
+    		Equip "nc_head_rags"
+    	endif
+    endif
+    
+    if ( HasItemEquipped "nc_f_mummy_pants" != 1 )
+    	if ( GetItemCount,  "nc_f_mummy_pants" >= 1 )
+    		Equip "nc_f_mummy_pants"
+    	endif
+    endif
+    
+    if ( HasItemEquipped "nc_f_mummy_shirt" != 1 )
+    	if ( GetItemCount,  "nc_f_mummy_shirt" >= 1 )
+    		Equip "nc_f_mummy_shirt"
+    	endif
+    endif
+    
+    if ( GetItemCount,  "nc_head_rags" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "nc_f_mummy_pants" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "nc_f_mummy_shirt" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    endif
+    
+    ;if ( OnDeath = 1 )
+    if ( GetHealth <= 5 )
+    	if ( doOnce3 == 0 )
+    		PlaySound, "ThunderClap"
+    		PlaceAtMe "nc_fire_cured" 1 1 1
+    		set nc_f_warlord_glob to 0
+    		disable
+    		player->modcurrenthealth -20
+    		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
+    		set doOnce3 to 1
+    	endif
+    endif
+    
+    end
+    
+    
+    
 
 SCPT
 SCHD nc_comp3Script_he 33 0 20 4370 410
@@ -6293,6 +5860,439 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_comp3Script_pwar 28 0 20 3686 357
+SCVR see_warlord;doOnce;doOnce2;doOnce3;doOnce4;doOnce5;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;counter2;addOnce;p_Check;emb_hook_nominion;call;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;timer2;sheatheTimer;moveTimer;h_check;;
+SCDT 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
+SCTX
+    begin nc_comp3Script_pwar
+    
+    float ax
+    float ay
+    float bx
+    float by
+    float bz
+    float cx
+    float cy
+    float cz
+    float t1
+    float t2
+    float t3
+    float t4
+    float coDist
+    float coDist2
+    float playz
+    float timer
+    float timer2
+    float sheatheTimer
+    float moveTimer
+    float h_check
+    short see_warlord
+    short doOnce
+    short doOnce2
+    short doOnce3
+    short doOnce4
+    short doOnce5
+    short combatDone
+    short weapUse
+    short combatCheck
+    short soundPlayed
+    short flyCheck
+    short wwCheck
+    short oneTimeMove
+    short compMove
+    short c_move
+    short warp
+    short c_marksman
+    short c_speed
+    short c_athletics
+    short companion
+    short nohello
+    short noLore
+    short counter
+    short counter2
+    short addOnce
+    short p_Check
+    short emb_hook_nominion
+    short call
+    
+    if ( MenuMode == 1 )
+      ;if ( GetPCSleep == 0 )
+        return
+      ;endif
+    endif
+    
+    set emb_hook_nominion to 1
+    
+    if ( GetDisabled == 1 )
+    	set counter2 to ( counter2 + 1 )
+    	if ( counter2 < 10 )
+    		return
+    	endif
+    	setdelete 1
+    	return
+    endif
+    
+    if ( weapUse == 1 )
+      if ( Player->GetWeaponType <= 8 )
+        setmarksman 0
+      elseif ( weapUse == 1 )
+      if ( Player->GetWeaponType >= 9 )
+        setmarksman 200
+      endif
+      endif
+    endif
+    
+    if ( combatCheck == 1 )
+      set sheathetimer to sheatheTimer + GetSecondsPassed
+      if ( GetSoundPlaying, "Weapon Swish" == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( GetSoundPlaying, crossbowShoot == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( GetSoundPlaying, bowShoot == 1 )
+        set sheatheTimer to 0
+        return
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "Weapon Swish" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "crossbowShoot" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      elseif ( sheatheTimer > 4 )
+      if ( GetSoundPlaying "bowShoot" == 0 )
+        set sheatheTimer to 0
+        set soundPlayed to 1
+      endif
+      endif
+      endif
+      endif
+    endif
+    
+    if ( soundPlayed == 1 )
+      equip "silver dagger"
+      removeitem "silver dagger" 1
+    ;  messagebox "Working"
+      set soundPlayed to 0
+      set combatCheck to 0
+      set combatDone to 1
+    endif
+    
+    if ( combatDone == 1 )
+        set timer to timer + GetSecondsPassed
+      if ( timer > 6 )
+        set timer to 0
+        set combatDone to 0
+        set warp to 0
+      endif
+    endif  
+    
+    if ( GetCurrentAIPackage == 3 )
+      ;if ( GetPCSleep == 1 )
+       ; StartScript 1gr_compLevel
+      ;endif
+    
+      if ( GetPCSneaking == 1 )
+        ForceSneak
+      elseif ( GetPCSneaking == 0 )
+        ClearForceSneak
+      endif
+    
+      if ( Player->GetEffect sEffectLevitate == 1 )
+      if ( flyCheck == 0 )
+        cast nc_comp2_lev_bog player
+        addspell nc_comp2_lev
+        set flyCheck to 1
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectLevitate == 0 )
+      if ( flyCheck == 1 )
+        removespell nc_comp2_lev
+        set flyCheck to 0
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectWaterWalking == 1 )
+      if ( wwCheck == 0 )
+        cast nc_comp2_ww_bog player
+        addspell nc_comp2_ww
+        set wwCheck to 1
+      endif
+      endif
+    
+      if ( Player->GetEffect sEffectWaterWalking == 0 )
+      if ( wwCheck == 1 )
+        removespell nc_comp2_ww
+        set wwCheck to 0
+      endif
+      endif
+    
+      if ( flyCheck == 1 )
+      if ( GetWeaponDrawn == 0 )
+        set playz to ( Player->GetPos z )
+        SetPos z playz
+      elseif ( flyCheck == 1 )
+      if ( GetCurrentAIPackage != 3 )
+      if ( GetWeaponDrawn == 0 )
+        set playz to ( GetPos z )
+        SetPos z playz
+      endif
+      endif
+      endif
+      endif
+    
+      if ( GetWeaponDrawn == 1 )
+      if ( flyCheck == 0 )
+        set combatCheck to 1
+        set timer to 0
+        set warp to 1
+        return
+      elseif ( GetWeaponDrawn == 1 )
+      if ( flyCheck == 1 )
+        set combatDone to 1
+        set timer to 0
+        set warp to 1
+        return
+      endif
+      endif
+      endif
+    
+      set ax to ( Player->GetPos x )
+      set ay to ( Player->GetPos y )
+    
+      if ( doOnce == 0 )
+        set bx to ( Player->GetPos x )
+        set by to ( Player->GetPos y )
+        set bz to ( Player->GetPos z )
+        set doOnce to 1
+      endif
+    
+      set t1 to ( ax - bx )
+      set t1 to ( t1 * t1 )
+      set t2 to ( ay - by )
+      set t2 to ( t2 * t2 )
+      set t1 to ( t1 + t2 )
+      set coDist to ( GetSquareRoot, t1 )
+    
+      if ( coDist > 360 )
+        set doOnce to 0
+      endif
+    
+      if ( coDist > 180 )
+      if ( doOnce2 == 0 )
+        set cx to ( Player->GetPos x )
+        set cy to ( Player->GetPos y )
+        set cz to ( Player->GetPos z )
+        set doOnce2 to 1
+      endif
+      endif
+    
+      set t3 to ( ax - cx )
+      set t3 to ( t3 * t3 )
+      set t4 to ( ay - cy )
+      set t4 to ( t4 * t4 )
+      set t3 to ( t3 + t4 )
+      set coDist2 to ( GetSquareRoot, t3 )
+    
+      if ( coDist2 > 360 )
+        set doOnce2 to 0
+      endif
+    
+      if ( warp == 0 )
+      if ( coDist > 350 )
+      if ( GetDistance Player > 680 )
+        SetPos x bx
+        SetPos y by
+        SetPos z bz
+        AiFollow Player 0 0 0 0
+      elseif ( warp == 0 )
+      if ( coDist2 > 350 )
+      if ( GetDistance Player > 680 )
+        SetPos x cx
+        SetPos y cy
+        SetPos z cz
+        AiFollow Player 0 0 0 0
+      endif
+      endif
+      endif
+      endif
+      endif
+    endif
+    
+    ;IF ADDITIONS ARE DESIRED, PLEASE ADD THEM BELOW HERE...
+    
+    
+    
+    if ( GetCurrentAIPackage == 3 )
+      if ( compMove == 1 )
+      if ( c_move == 0 )
+      if ( GetDistance Player < 70 )
+        AIWander 300 0 0 0 0
+        set c_move to 1
+      endif
+      endif
+      endif
+    endif
+    
+    if ( c_move == 1 )
+      if ( GetDistance Player > 100 )
+        AIFollow Player 0 0 0 0
+      set c_move to 0
+      endif
+    endif
+    
+    if ( oneTimeMove == 1 )
+      set moveTimer to moveTimer + GetSecondsPassed
+      if ( moveTimer > 4 )
+        set moveTimer to 0
+        AiFollow Player 0 0 0 0
+        set oneTimeMove to 0
+      endif
+    endif
+    
+    if ( call == 0 )
+    	if ( nc_callwar == 1 )
+    		AIWander 0 0 0
+    		set call to 1
+    	elseif ( nc_callwar == 2 )
+    		AIFollow player 0 0 0 0
+    		set call to 2
+    	elseif ( nc_callwar == 3 )
+    		AIWander 500 0 0
+    		set call to 3
+    	endif
+    	if ( nc_callmessage == 0 )
+    		set nc_callmessage to 1
+    	endif
+    endif
+    
+    if ( nc_callwar == 0 )
+    	set call to 0
+    endif
+    
+    ;AND ABOVE HERE.
+    
+    ;ADDITIONS CAN ALSO BE ADDED TO THIS FOLLOWING SECTION, BUT BEWARE OF THE COUNTER.
+    ;Counter can pooch some functions if they need to be checked every frame.
+    
+    if ( counter < 20 )
+      set counter to counter + 1
+      return
+    endif
+    
+    set counter to 0
+    
+    if ( GetCurrentAIPackage == 3 )
+      if ( GetDistance Player < 300 )
+        setSpeed 15
+        setAthletics 15
+      elseif ( GetDistance Player > 300 )
+        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
+        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
+        setSpeed  c_speed
+        setAthletics c_athletics
+      endif
+    
+      if ( GetItemCount p_restore_health_b >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_c >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_e >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_q >= 1 )
+        set p_Check to 1
+      elseif ( GetItemCount p_restore_health_s >= 1 )
+        set p_Check to 1
+      else
+        set p_Check to 0
+      endif
+    endif
+    
+    if ( GetCurrentAIPackage != 3 )
+      setspeed 40
+    endif
+    
+    ;ADD ADDITIONAL TOPICS IN THIS SECTION IF REQUIRED.
+    
+    if ( addOnce == 0 )
+      AddTopic "- Бой"
+      AddTopic "- Сопровождение"
+      AddTopic "- Инструкции"
+      ;StartScript 1gr_compLevel
+      set companion to 1
+      set addOnce to 1
+    endif
+    
+    if ( HasItemEquipped "nc_head_rags" != 1 )
+    	if ( GetItemCount,  "nc_head_rags" >= 1 )
+    		Equip "nc_head_rags"
+    	endif
+    endif
+    
+    if ( HasItemEquipped "nc_p_mummy_pants" != 1 )
+    	if ( GetItemCount,  "nc_p_mummy_pants" >= 1 )
+    		Equip "nc_p_mummy_pants"
+    	endif
+    endif
+    
+    if ( HasItemEquipped "nc_p_mummy_shirt" != 1 )
+    	if ( GetItemCount,  "nc_p_mummy_shirt" >= 1 )
+    		Equip "nc_p_mummy_shirt"
+    	endif
+    endif
+    
+    if ( GetItemCount,  "nc_head_rags" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "nc_p_mummy_pants" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "nc_p_mummy_shirt" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
+    	if ( doOnce4 == 0 )
+    		sethealth 0
+    		set doOnce4 to 1
+    	endif
+    endif
+    
+    ;if ( OnDeath = 1 )
+    if ( GetHealth <= 5 )
+    	if ( doOnce3 == 0 )
+    		PlaySound, "ThunderClap"
+    		PlaceAtMe "nc_poison_cured" 1 1 1
+    		set nc_p_warlord_glob to 0
+    		disable
+    		player->modcurrenthealth -20
+    		MessageBox "Чары распались. Вы чувствуете острую боль, как бдто вам что-то перерезали."
+    		set doOnce3 to 1
+    	endif
+    endif
+    
+    end
+    
 
 SCPT
 SCHD nc_comp3Script_rg 33 0 20 4364 410
@@ -19028,13 +19028,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_breton
@@ -19045,13 +19045,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_dark elf
@@ -19062,13 +19062,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 2072
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_high elf
@@ -19100,7 +19100,7 @@ NPCS demoralizing touch\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS demoralize humanoid\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS purge magic\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS touch dispel\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_imperial
@@ -19111,13 +19111,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_khajiit
@@ -19129,13 +19129,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_nord
@@ -19146,13 +19146,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_redguard
@@ -19163,13 +19163,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_orc
@@ -19180,13 +19180,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_wood elf
@@ -19197,13 +19197,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT CgBkAgDGgHwAAAAA
+NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 20 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_wood elf_2
@@ -19214,13 +19214,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 20 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_wood elf_3
@@ -19231,13 +19231,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 20 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_redguard_2
@@ -19248,13 +19248,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_redguard_3
@@ -19265,13 +19265,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_orc_2
@@ -19282,13 +19282,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_orc_3
@@ -19299,13 +19299,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_nord_2
@@ -19316,13 +19316,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_nord_3
@@ -19333,13 +19333,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 30 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_khajiit_2
@@ -19351,13 +19351,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_khajiit_3
@@ -19369,13 +19369,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_imperial_2
@@ -19386,13 +19386,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_imperial_3
@@ -19403,13 +19403,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_high elf_2
@@ -19443,7 +19443,7 @@ NPCS absorb intelligence\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS absorb strength\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_high elf_3
@@ -19484,7 +19484,7 @@ NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS Ghost Curse\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS vivec's_wrath\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_dark elf_2
@@ -19495,13 +19495,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_dark elf_3
@@ -19512,13 +19512,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_breton_2
@@ -19529,13 +19529,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_breton_3
@@ -19546,13 +19546,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_argonian_2
@@ -19564,13 +19564,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT FABkAgDGgHwAAAAA
+NPDT FABkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 NPC_
 NAME nc_argonian_3
@@ -19582,13 +19582,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT HgBkAgDGgHwAAAAA
+NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
 NPCO 25 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 
 MISC
 NAME nc_misc_skull10
@@ -19741,7 +19741,6 @@ SNAM wind low3
 
 NPC_
 NAME nc_Tragrilar
-MODL base_anim.nif
 FNAM Трагрилар
 RNAM High Elf
 CNAM Necromancer
@@ -19749,14 +19748,14 @@ ANAM
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
-NPDT QwAyAACrIwEAAAAA
+NPDT QwAyAACEvAIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
 NPCO 1 nc_tragrilar_mantle
 NPCO 1 common_shirt_03_c
 NPCO 1 common_shoes_03
 NPCO 1 common_pants_03_b
-AIDT HgAeHgCrIwEAAAAA
+AIDT HgAeHgCEvAIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BOOK
@@ -20269,7 +20268,7 @@ KNAM
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20283,7 +20282,7 @@ KNAM
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20297,7 +20296,7 @@ KNAM
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20311,7 +20310,7 @@ KNAM
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20325,7 +20324,7 @@ KNAM
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20340,7 +20339,7 @@ KNAM
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20354,7 +20353,7 @@ KNAM
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20368,7 +20367,7 @@ KNAM
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20382,7 +20381,7 @@ KNAM
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -20396,7 +20395,7 @@ KNAM
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CONT
@@ -20513,7 +20512,7 @@ NPCS ghost ability\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to disease\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to frost\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT AABkAADGgHwAAKAA
+AIDT AABkAABaLHUAAKAA
 
 MISC
 NAME nc_poison_cured
@@ -20591,7 +20590,7 @@ NPCS poisonbloom\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS viperbolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS dire weakness to poison\0\0\0\0\0\0\0\0
 NPCS nc_poison_warlord_spell\0\0\0\0\0\0\0\0
-AIDT AAAAAADGgHwAAAAA
+AIDT AAAAAABaLHUAAAAA
 
 CLOT
 NAME nc_p_mummy_shirt
@@ -21333,7 +21332,7 @@ FLAG 8
 NPCO 1 nc_p_mummy_shirt
 NPCO 1 nc_p_mummy_pants
 NPCO 1 nc_head_rags
-AIDT HgAeHgDGgHwAAAAA
+AIDT HgAeHgBaLHUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 ARMO
@@ -21683,6 +21682,7 @@ CELL
 NAME Alas Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgoKAAyGQAAAACAPw==
 NAM0 EwAAAA==
 FRMR FwAAAA==
 NAME nc_sarcophagus
@@ -21746,6 +21746,7 @@ CELL
 NAME Ald Redaynia, Tower
 DATA AwAAADkMAgAAAIA/
 WHGT AABeRg==
+AMBI DxETABQUHgA5DAIAAACAPw==
 NAM0 AQAAAA==
 FRMR KgAAAA==
 NAME nc_sarcophagus
@@ -21755,6 +21756,7 @@ CELL
 NAME Ald-ruhn, Temple
 DATA BQAAAFAoFAAAAEA/
 WHGT AAAAAA==
+AMBI LS0tAFAoFABQKBQAAABAPw==
 NAM0 AQAAAA==
 FRMR KwAAAA==
 NAME nc_sarcophagus
@@ -21764,6 +21766,7 @@ CELL
 NAME Alen Ancestral Tomb
 DATA AQAAADIZAADNzEw/
 WHGT AAAAAA==
+AMBI CgoKACgoKAAyGQAAzcxMPw==
 NAM0 AwAAAA==
 FRMR LAAAAA==
 NAME nc_sarcophagus
@@ -21779,6 +21782,7 @@ CELL
 NAME Andalen Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 DQAAAA==
 FRMR LwAAAA==
 NAME nc_sarcophagus
@@ -21824,6 +21828,7 @@ CELL
 NAME Andalor Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 BwAAAA==
 FRMR PAAAAA==
 NAME nc_sarcophagus
@@ -21851,6 +21856,7 @@ CELL
 NAME Andas Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 FAAAAA==
 FRMR QwAAAA==
 NAME nc_sarcophagus
@@ -21917,6 +21923,7 @@ CELL
 NAME Andavel Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 EgAAAA==
 FRMR VwAAAA==
 NAME nc_sarcophagus
@@ -21977,6 +21984,7 @@ CELL
 NAME Andrano Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AIBURg==
+AMBI CgoKACgeCgAoGQAAAACAPw==
 NAM0 DAAAAA==
 FRMR aQAAAA==
 NAME nc_sarcophagus
@@ -22019,6 +22027,7 @@ CELL
 NAME Andrethi Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 DQAAAA==
 FRMR dQAAAA==
 NAME nc_sarcophagus
@@ -22064,6 +22073,7 @@ CELL
 NAME Andules Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAgwg==
+AMBI CgoKACgeCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR ggAAAA==
 NAME nc_sarcophagus
@@ -22110,6 +22120,7 @@ CELL
 NAME Aralen Ancestral Tomb
 DATA AQAAACgeFAAAAIA/
 WHGT AAB6xQ==
+AMBI CgoKACgoKAAoHhQAAACAPw==
 NAM0 DwAAAA==
 FRMR jwAAAA==
 NAME nc_sarcophagus
@@ -22161,6 +22172,7 @@ CELL
 NAME Aran Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgoKAAyGQAAAACAPw==
 NAM0 FAAAAA==
 FRMR ngAAAA==
 NAME nc_sarcophagus
@@ -22227,6 +22239,7 @@ CELL
 NAME Arano Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 GQAAAA==
 FRMR sgAAAA==
 NAME nc_sarcophagus
@@ -22308,6 +22321,7 @@ CELL
 NAME Arenim Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 GQAAAA==
 FRMR ywAAAA==
 NAME nc_sarcophagus
@@ -22389,6 +22403,7 @@ CELL
 NAME Arethan Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 BwAAAA==
 FRMR 5AAAAA==
 NAME nc_sarcophagus
@@ -22416,6 +22431,7 @@ CELL
 NAME Aryon Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 EgAAAA==
 FRMR 6wAAAA==
 NAME nc_sarcophagus
@@ -22476,6 +22492,7 @@ CELL
 NAME Balmora, Temple
 DATA BQAAAB0lJwAAAEA/
 WHGT AAAAAA==
+AMBI NzItAFAoFAAdJScAAABAPw==
 NAM0 AQAAAA==
 FRMR /QAAAA==
 NAME nc_sarcophagus
@@ -22485,6 +22502,7 @@ CELL
 NAME Baram Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 GQAAAA==
 FRMR /gAAAA==
 NAME nc_sarcophagus
@@ -22566,6 +22584,7 @@ CELL
 NAME Beran Ancestral Tomb
 DATA AQAAACEsLgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKABUXFwAhLC4AAACAPw==
 NAM0 AQAAAA==
 FRMR FwEAAA==
 NAME nc_sarcophagus
@@ -22575,6 +22594,7 @@ CELL
 NAME Dareleth Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAyGQAAAACAPw==
 NAM0 DQAAAA==
 FRMR GAEAAA==
 NAME nc_sarcophagus
@@ -22620,6 +22640,7 @@ CELL
 NAME Dralas Ancestral Tomb
 DATA AQAAACgeFAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHhQAAACAPw==
 NAM0 EgAAAA==
 FRMR JQEAAA==
 NAME nc_sarcophagus
@@ -22680,6 +22701,7 @@ CELL
 NAME Drath Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKADIyMgAyGQAAAACAPw==
 NAM0 BwAAAA==
 FRMR NwEAAA==
 NAME nc_sarcophagus
@@ -22707,6 +22729,7 @@ CELL
 NAME Dreloth Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAyGQAAAACAPw==
 NAM0 BgAAAA==
 FRMR PgEAAA==
 NAME nc_sarcophagus
@@ -22732,6 +22755,7 @@ CELL
 NAME Drethan Ancestral Tomb
 DATA AQAAACgeFAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHhQAAACAPw==
 NAM0 CAAAAA==
 FRMR RAEAAA==
 NAME nc_sarcophagus
@@ -22762,6 +22786,7 @@ CELL
 NAME Drinith Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgUCgAyGQAAAACAPw==
 NAM0 IQAAAA==
 FRMR TAEAAA==
 NAME nc_sarcophagus
@@ -22867,6 +22892,7 @@ CELL
 NAME Dulo Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeCgAyGQAAAACAPw==
 NAM0 DgAAAA==
 FRMR bQEAAA==
 NAME nc_sarcophagus
@@ -22915,6 +22941,7 @@ CELL
 NAME Fadathram Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeCgAyGQAAAACAPw==
 NAM0 DAAAAA==
 FRMR ewEAAA==
 NAME nc_sarcophagus
@@ -22957,6 +22984,7 @@ CELL
 NAME Falas Ancestral Tomb
 DATA AQAAACgeCgDNzEw/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAzcxMPw==
 NAM0 AgAAAA==
 FRMR hwEAAA==
 NAME nc_sarcophagus
@@ -22969,6 +22997,7 @@ CELL
 NAME Favel Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoGQAAAACAPw==
 NAM0 EgAAAA==
 FRMR iQEAAA==
 NAME nc_sarcophagus
@@ -23029,6 +23058,7 @@ CELL
 NAME Gimothran Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoGQAAAACAPw==
 NAM0 IAAAAA==
 FRMR mwEAAA==
 NAME nc_sarcophagus
@@ -23131,6 +23161,7 @@ CELL
 NAME Ginith Ancestral Tomb
 DATA AQAAACgZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKACgeFAAoGQAAAACAPw==
 NAM0 BAAAAA==
 FRMR uwEAAA==
 NAME nc_sarcophagus
@@ -23150,6 +23181,7 @@ CELL
 NAME Gnisis, Temple
 DATA BQAAADAQHgAAAEA/
 WHGT AAAAAA==
+AMBI QTc3AFAoAAAwEB4AAABAPw==
 NAM0 AQAAAA==
 FRMR vwEAAA==
 NAME nc_sarcophagus
@@ -23159,6 +23191,7 @@ CELL
 NAME Helan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI AAAAAB4UCgAoHgoAAACAPw==
 NAM0 BAAAAA==
 FRMR wAEAAA==
 NAME nc_sarcophagus
@@ -23177,6 +23210,7 @@ CELL
 NAME Helas Ancestral Tomb
 DATA AQAAACgZCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoGQoAAACAPw==
 NAM0 DQAAAA==
 FRMR xAEAAA==
 NAME nc_sarcophagus
@@ -23222,6 +23256,7 @@ CELL
 NAME Heran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EQAAAA==
 FRMR 0QEAAA==
 NAME nc_sarcophagus
@@ -23279,6 +23314,7 @@ CELL
 NAME Hlaalu Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR 4gEAAA==
 NAME nc_sarcophagus
@@ -23324,6 +23360,7 @@ CELL
 NAME Hleran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CAAAAA==
 FRMR 7wEAAA==
 NAME nc_sarcophagus
@@ -23354,6 +23391,7 @@ CELL
 NAME Hlervi Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AACMwg==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BwAAAA==
 FRMR 9wEAAA==
 NAME nc_sarcophagus
@@ -23381,6 +23419,7 @@ CELL
 NAME Hlervu Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EQAAAA==
 FRMR /gEAAA==
 NAME nc_sarcophagus
@@ -23438,6 +23477,7 @@ CELL
 NAME Ienith Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR DwIAAA==
 NAME nc_sarcophagus
@@ -23489,6 +23529,7 @@ CELL
 NAME Indalen Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR HgIAAA==
 NAME nc_sarcophagus
@@ -23534,6 +23575,7 @@ CELL
 NAME Indaren Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DAAAAA==
 FRMR KwIAAA==
 NAME nc_sarcophagus
@@ -23576,6 +23618,7 @@ CELL
 NAME Llando Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EAAAAA==
 FRMR NwIAAA==
 NAME nc_sarcophagus
@@ -23630,6 +23673,7 @@ CELL
 NAME Lleran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BgAAAA==
 FRMR RwIAAA==
 NAME nc_sarcophagus
@@ -23654,6 +23698,7 @@ CELL
 NAME Llervu Ancestral Tomb
 DATA AQAAACgeCgDNzEw/
 WHGT AADIwg==
+AMBI CgoKAB4UCgAoHgoAzcxMPw==
 NAM0 AQAAAA==
 FRMR TQIAAA==
 NAME nc_sarcophagus
@@ -23663,6 +23708,7 @@ CELL
 NAME Maren Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 IQAAAA==
 FRMR TgIAAA==
 NAME nc_sarcophagus
@@ -23768,6 +23814,7 @@ CELL
 NAME Marvani Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAB6xQ==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR bwIAAA==
 NAME nc_sarcophagus
@@ -23813,6 +23860,7 @@ CELL
 NAME Nelas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AABhxA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
 FRMR fAIAAA==
 NAME nc_sarcophagus
@@ -23888,6 +23936,7 @@ CELL
 NAME Nerano Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BwAAAA==
 FRMR kwIAAA==
 NAME nc_sarcophagus
@@ -23915,6 +23964,7 @@ CELL
 NAME Norvayn Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DgAAAA==
 FRMR mgIAAA==
 NAME nc_sarcophagus
@@ -23963,6 +24013,7 @@ CELL
 NAME Omalen Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 HwAAAA==
 FRMR qAIAAA==
 NAME nc_sarcophagus
@@ -24062,6 +24113,7 @@ CELL
 NAME Omaren Ancestral Tomb
 DATA AwAAACQ5NwAAAIA/
 WHGT AICixA==
+AMBI FBQZABUcIAAkOTcAAACAPw==
 NAM0 CgAAAA==
 FRMR xwIAAA==
 NAME nc_sarcophagus
@@ -24098,6 +24150,7 @@ CELL
 NAME Orethi Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CwAAAA==
 FRMR 0QIAAA==
 NAME nc_sarcophagus
@@ -24137,6 +24190,7 @@ CELL
 NAME Othrelas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BwAAAA==
 FRMR 3AIAAA==
 NAME nc_sarcophagus
@@ -24164,6 +24218,7 @@ CELL
 NAME Randas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR 4wIAAA==
 NAME nc_sarcophagus
@@ -24215,6 +24270,7 @@ CELL
 NAME Ravel Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
 FRMR 8gIAAA==
 NAME nc_sarcophagus
@@ -24290,6 +24346,7 @@ CELL
 NAME Raviro Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CgAAAA==
 FRMR CQMAAA==
 NAME nc_sarcophagus
@@ -24326,6 +24383,7 @@ CELL
 NAME Releth Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CgAAAA==
 FRMR EwMAAA==
 NAME nc_sarcophagus
@@ -24362,6 +24420,7 @@ CELL
 NAME Reloth Ancestral Tomb
 DATA AQAAACgeCgAzMzM/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAMzMzPw==
 NAM0 DQAAAA==
 FRMR HQMAAA==
 NAME nc_sarcophagus
@@ -24407,6 +24466,7 @@ CELL
 NAME Rethandus Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FAAAAA==
 FRMR KgMAAA==
 NAME nc_sarcophagus
@@ -24473,6 +24533,7 @@ CELL
 NAME Rothan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
 FRMR PgMAAA==
 NAME nc_sarcophagus
@@ -24533,6 +24594,7 @@ CELL
 NAME Sadrith Mora, Telvanni Council House, Entry
 DATA BQAAACAuNQAAAEA/
 WHGT AAAAAA==
+AMBI GRkZACcwNAAgLjUAAABAPw==
 NAM0 AQAAAA==
 FRMR UAMAAA==
 NAME nc_chest_small
@@ -24545,6 +24607,7 @@ CELL
 NAME Sadryon Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EAAAAA==
 FRMR UQMAAA==
 NAME nc_sarcophagus
@@ -24599,6 +24662,7 @@ CELL
 NAME Salothan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DAAAAA==
 FRMR YQMAAA==
 NAME nc_sarcophagus
@@ -24641,6 +24705,7 @@ CELL
 NAME Salothran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BgAAAA==
 FRMR bQMAAA==
 NAME nc_sarcophagus
@@ -24665,6 +24730,7 @@ CELL
 NAME Salvel Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DQAAAA==
 FRMR cwMAAA==
 NAME nc_sarcophagus
@@ -24710,6 +24776,7 @@ CELL
 NAME Samarys Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DAAAAA==
 FRMR gAMAAA==
 NAME nc_sarcophagus
@@ -24752,6 +24819,7 @@ CELL
 NAME Sandas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CwAAAA==
 FRMR jAMAAA==
 NAME nc_sarcophagus
@@ -24791,6 +24859,7 @@ CELL
 NAME Sandus Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 GQAAAA==
 FRMR lwMAAA==
 NAME nc_sarcophagus
@@ -24872,6 +24941,7 @@ CELL
 NAME Sarano Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
 FRMR sAMAAA==
 NAME nc_sarcophagus
@@ -24932,6 +25002,7 @@ CELL
 NAME Saren Ancestral Tomb
 DATA AQAAABQfHwAAAIA/
 WHGT AAAAAA==
+AMBI BQUHAAkLDQAUHx8AAACAPw==
 NAM0 EwAAAA==
 FRMR wgMAAA==
 NAME nc_sarcophagus
@@ -24995,6 +25066,7 @@ CELL
 NAME Sarethi Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
 FRMR 1QMAAA==
 NAME nc_sarcophagus
@@ -25070,6 +25142,7 @@ CELL
 NAME Sarys Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CQAAAA==
 FRMR 7AMAAA==
 NAME nc_sarcophagus
@@ -25103,6 +25176,7 @@ CELL
 NAME Savel Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
 FRMR 9QMAAA==
 NAME nc_sarcophagus
@@ -25163,6 +25237,7 @@ CELL
 NAME Senim Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 IAAAAA==
 FRMR BwQAAA==
 NAME nc_sarcophagus
@@ -25265,6 +25340,7 @@ CELL
 NAME Serano Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CAAAAA==
 FRMR JwQAAA==
 NAME nc_sarcophagus
@@ -25295,6 +25371,7 @@ CELL
 NAME Sethan Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FAAAAA==
 FRMR LwQAAA==
 NAME nc_sarcophagus
@@ -25361,6 +25438,7 @@ CELL
 NAME Tel Mora, Tower Services
 DATA BQAAAB4gIAAAAEA/
 WHGT AAAAAA==
+AMBI NzItAFAoAAAeICAAAABAPw==
 NAM0 AQAAAA==
 FRMR QwQAAA==
 NAME nc_chest_small
@@ -25373,6 +25451,7 @@ CELL
 NAME Tel Vos, Services Tower
 DATA BQAAADcyLQAAAEA/
 WHGT AAAAAA==
+AMBI NzItADweAAA3Mi0AAABAPw==
 NAM0 AQAAAA==
 FRMR RAQAAA==
 NAME nc_chest_small
@@ -25385,6 +25464,7 @@ CELL
 NAME Telvayn Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EQAAAA==
 FRMR RQQAAA==
 NAME nc_sarcophagus
@@ -25442,6 +25522,7 @@ CELL
 NAME Thalas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR VgQAAA==
 NAME nc_sarcophagus
@@ -25494,6 +25575,7 @@ CELL
 NAME Tharys Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BQAAAA==
 FRMR ZQQAAA==
 NAME nc_sarcophagus
@@ -25515,6 +25597,7 @@ CELL
 NAME Thelas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 BAAAAA==
 FRMR agQAAA==
 NAME nc_sarcophagus
@@ -25533,6 +25616,7 @@ CELL
 NAME Thiralas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 CAAAAA==
 FRMR bgQAAA==
 NAME nc_sarcophagus
@@ -25563,6 +25647,7 @@ CELL
 NAME Uveran Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 GwAAAA==
 FRMR dgQAAA==
 NAME nc_sarcophagus
@@ -25650,6 +25735,7 @@ CELL
 NAME Vandus Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 DwAAAA==
 FRMR kQQAAA==
 NAME nc_sarcophagus
@@ -25701,6 +25787,7 @@ CELL
 NAME Velas Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 EgAAAA==
 FRMR oAQAAA==
 NAME nc_sarcophagus
@@ -25761,6 +25848,7 @@ CELL
 NAME Veloth Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 FwAAAA==
 FRMR sgQAAA==
 NAME nc_sarcophagus
@@ -25836,6 +25924,7 @@ CELL
 NAME Venim Ancestral Tomb
 DATA AQAAADIZAAAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAyGQAAAACAPw==
 NAM0 EwAAAA==
 FRMR yQQAAA==
 NAME nc_sarcophagus
@@ -25899,6 +25988,7 @@ CELL
 NAME Verelnim Ancestral Tomb
 DATA AQAAACgeCgAAAIA/
 WHGT AAAAAA==
+AMBI CgoKAB4UCgAoHgoAAACAPw==
 NAM0 HQAAAA==
 FRMR 3AQAAA==
 NAME nc_sarcophagus
@@ -25992,6 +26082,7 @@ CELL
 NAME Vivec, Telvanni Monster Lab
 DATA BQAAADMiEQAAAEA/
 WHGT AAAAAA==
+AMBI PSgUADcyLQAzIhEAAABAPw==
 NAM0 BAAAAA==
 FRMR +QQAAA==
 NAME nc_sarcophagus
@@ -26371,7 +26462,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQDu8fv/////+///QP///wECIPIBAAAAZvr//2T///8BAfIg+////3H9//89////AQLw4Pz///90/v//QP///wEE6vKdAQAAe/7//0D///8BAvLuUP7//3v+//9A////AQLo8Pf////6////QP///wEE9S79////TwEAAED///8BA+4gnwEAAIYBAABA////AQLi8Fn+//95AQAAQP///wEC9+VL/v//MQAAAED///8BAyDomgEAAD8AAABA////AQPx6w==
+PGRP /////2r6//86////AQBldPv/////+///QP///wECAAABAAAAZvr//2T///8BAWx0+////3H9//89////AQIAAPz///90/v//QP///wEEcGGdAQAAe/7//0D///8BAgAAUP7//3v+//9A////AQJlX/f////6////QP///wEEAAD9////TwEAAED///8BA2l2nwEAAIYBAABA////AQIAAFn+//95AQAAQP///wECbnNL/v//MQAAAED///8BAwAAmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -27998,7 +28089,7 @@ DATA wB1jwmgrpUXkO7XDAAAAAAAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAACAANsB
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACAACA+///ABQAALv+//8AAQwHAPz//wARAABb/v//AAMAAAD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgAAAPz//4ASAABZ/v//AAKARAD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAgAAAPz//wAUAABZ/v//AAEAAID8//+AEAAAWf7//wAEAACA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AAMAAID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABAACA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AAQAAAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgAAAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAgAAID9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8ABwAAgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAIAAAD+//+AEQAA6v3//wAC//8A/v//ABIAAFn9//8ABf//AP7//4ASAABZ/f//AAj//wD+//8AEwAAWf3//wAH//8A/v//gBMAAFn9//8AB///AP7//wAUAABZ/f//AAj//wD+//+AFAAAWf3//wAI//8A/v//ABUAAF7+//8AAv//AP7//wAVAABZ/f//AAX//4D+//+ADwAAXf7//wAE//+A/v//ABAAAFn+//8ABP//gP7//4AQAABc/v//AAH//4D+//+AEAAAWf3//wAE//+A/v//ABEAAFn9//8ABP//gP7//4ARAABZ/f//AAT//4D+//8AEgAAWf3//wAH//+A/v//gBIAAFn9//8ACP//gP7//wATAABZ/f//AAf//4D+//+AEwAAWf3//wAI//+A/v//ABQAAFn9//8AB///gP7//4AUAABa/f//AAb//4D+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMAAAD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wAB//8A////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AA25kAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AAMAAAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQAAAP///4AVAABZ/f//AAMAAID///+A////AP///wADAACA////AAAAAAD///8ABAAAgP///4AAAAAA////AAQAAID///8AAQAACv///wABAACA////gAEAAAD///8ABAAAgP///wACAAAA////AAQAAID///+AAgAAAP///wAEAACA////AAMAAAD///8ABQAAgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEAACA////gAQAAAD///8ABQAAgP///wAFAAAA////AAQAAID///8ABgAAAP///wADAACA////gAYAAAD///8ABAAAgP///wAHAAAA////AAEAAID///+ABwAAAP///wADAACA////AAgAAAD///8ABAAAgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEAACA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AAQAAID///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAgAAgP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACAACA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABAAAgP///wATAABp/f//AAIAAID///+AEwAAef3//wAD//+A////ABQAAHn9//8AA///gP///4AUAABO/v//AAP//4D///+AFAAAaf3//wAD//+A////ABUAAFn+//8AA///gP///wAVAABZ/f//AAf//4D///+AFQAAWf7//wAC//+A////gBUAAF/9//8AA///AAAAAID///8A////AAT//wAAAAAAAAAAAP///wAH//8AAAAAgAAAAAD///8ABf//AAAAAAABAAAA////AAb//wAAAACAAQAAAP///wAF//8AAAAAAAIAAAD///8ABP//AAAAAIACAAAA////AAj//wAAAAAAAwAAAP///wAH//8AAAAAgAMAAAD///8ABv//AAAAAAAEAAAA////AAX//wAAAACABAAAAP///wAI//8AAAAAAAUAAAD///8AB///AAAAAIAFAAAA////AAb//wAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAcAAAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACAAAAAAAAIAIAAAA////AAb//wAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAMAAAAAAACAEAAAWf7//wAGDAcAAAAAgBAAAFn9//8ABQAAAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AA4BEAAAAAIARAABZ/f//AAYAAAAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwAAAAAAAIASAABZ/f//AAMAAAAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAUAAAAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAAAgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABAAAgAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAUAAIAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABAAAgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AAQAAIAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAL//4AAAAAAEgAAvf7//wAB//+AAAAAABIAAF/9//8AAv//gAAAAIASAABZ/f//AAX//4AAAAAAEwAAZf3//wAE//+AAAAAgBMAAHn9//8AA///gAAAAAAUAAB5/f//AAT//4AAAACAFAAAYf3//wAF//+AAAAAABUAAFn+//8AAv//gAAAAAAVAABZ/f//AAf//4AAAACAFQAAWf7//wAC//+AAAAAgBUAAF39//8ABP//AAEAAIAOAAC6/v//AAH//wABAAAADwAAWf7//wAB//8AAQAAgA8AAFn+//8ABP//AAEAAAAQAABZ/v//AAT//wABAACAEAAAWv7//wAB//8AAQAAgBAAAFn9//8ABf//AAEAAAARAABZ/f//AAX//wABAACAEQAAWf3//wAD//8AAQAAABIAAFn9//8ABv//AAEAAIASAABZ/f//AAcAAAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQAAAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAb//wABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIAAIABAAAAEAAAWf7//wADbmSAAQAAgBAAALv+//8AAQAAgAEAAIAQAABZ/f//AAMAAIABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAgAAIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAgAAAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAIAAAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8ABwAAAAIAAAATAABZ/f//AAgAAAACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AAMAAIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAQAAgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAYAAIACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABQAAgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACAACAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AAQAAAADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAIAAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAH//wADAACAEwAA1P3//wAB//8AAwAAABQAAFn+//8AAf//AAMAAAAUAABZ/f//AAP//wADAACAFAAAWf3//wAC//+AAwAAgBAAAFv+//8AA///gAMAAAARAABZ/v//AAT//4ADAACAEQAAWf7//wAE//+AAwAAABMAALr+//8AA///gAMAAIATAAC7/v//AAH//wAEAAAAEQAAu/7//wAB//8ABAAAgBEAAFn+//8AA///AAQAAAASAABZ/v//AAP//wAEAACAEgAAWf7//wAD//8ABAAAABMAAFn+//8AAv//AAQAAIATAABZ/v//AAP//wAEAAAAFAAAfP7//wAD//8ABAAAgBQAAKX+//8ABP//AAQAAAAVAADT/v//AAT//4AEAACAFAAAwP7//wAE//+ABAAAABUAAOP+//8ABP//gAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACAAAABgAAABYAAFn///8AAf//gAYAAAAUAABZ////AAQAAIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AAQAB4AGAAAAFgAAWf///wAFAACABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAUAAIAGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIAAAABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAcAAAAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABAAAAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADAAAABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADAACABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAcAAIAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8ABwAAgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIAACABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcAAIAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGAACABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAUAAIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEAACABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMAAAAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAgAAAAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHAAAACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAgAAAAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAgAAAAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHAAAACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAcAAAAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAgAAgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIAACACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIAACACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGAACACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAYAAIAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAcAAIAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFAAAACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAgAAAAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAcAAAAJAACAFAAAWf///wAIAAAACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYAAAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAAAAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHAAAACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAIAAIAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGAACACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAAIAJAAAAFQAAWQAAAAAHAACACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAYAAIAJAAAAFgAAWf///wADAACACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFAACACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAUAAIAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACAAAACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEAAAACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAAAAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADAAAACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAUAAAAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAIAAIAKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUAAIAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAIAAAALAAAAFQAAWf///wAFAAAACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUAAAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEAAAACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAQAAAALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAAA==
+PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACAACA+///ABQAALv+//8AAQCAAPz//wARAABb/v//AANlcwD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgCAAPz//4ASAABZ/v//AAJydAD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAgCAAPz//wAUAABZ/v//AAFydID8//+AEAAAWf7//wAEAACA/P//ABEAAFn+//8ABACAgPz//wASAABZ/f//AAN0c4D8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQCAgPz//wATAABZ/f//AARkAID8//+AEwAAWf7//wABAACA/P//gBMAAFn9//8AAwCAAP3//wAQAABZ/v//AARhbAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgCAAP3//wASAABZ/f//AAViZQD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8ABwCAAP3//4ATAABZ/f//AAdybwD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAQCAAP3//4AUAABZ/f//AARlc4D9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQCAgP3//wARAACY/f//AAFydID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABACAgP3//4ASAABZ/f//AAhvX4D9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwCAgP3//wAUAABZ/f//AAhlc4D9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8ABwCAgP3//wAVAABZ/v//AAFhdID9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AAwCAAP7//4AQAABZ/f//AAJydAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQCAAP7//4ASAABZ/f//AAh0cwD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8ABwCAAP7//wAUAABZ/f//AAhlbQD+//+AFAAAWf3//wAIAAAA/v//ABUAAF7+//8AAgCAAP7//wAVAABZ/f//AAViZYD+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABACAgP7//4AQAABc/v//AAFkAID+//+AEAAAWf3//wAEAACA/v//ABEAAFn9//8ABACAgP7//4ARAABZ/f//AARlc4D+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACACAgP7//wATAABZ/f//AAdydID+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8ABwCAgP7//4AUAABa/f//AAZydID+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABQCAAP///4AOAADZ/f//AAN0cwD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABACAAP///wAQAABZ/v//AARzaAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABQCAAP///wARAABJ/v//AAJydAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AAwCAAP///wASAABZ/f//AAZ2YQD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgCAAP///4ATAABi/f//AARkAAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABgCAAP///wAVAABZ/v//AANhbAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQCAAP///4AVAABZ/f//AANiZYD///+A////AP///wADAACA////AAAAAAD///8ABACAgP///4AAAAAA////AARlc4D///8AAQAACv///wABAACA////gAEAAAD///8ABACAgP///wACAAAA////AARvX4D///+AAgAAAP///wAEAACA////AAMAAAD///8ABQCAgP///4ADAAAA////AARlX4D///8ABAAAAP///wAEAACA////gAQAAAD///8ABQCAgP///wAFAAAA////AARwaYD///8ABgAAAP///wADAACA////gAYAAAD///8ABACAgP///wAHAAAA////AAFudID///+ABwAAAP///wADAACA////AAgAAAD///8ABACAgP///4AIAAAA////AARkAID///+ADgAA3v3//wAEAACA////AA8AANn9//8ABACAgP///wAQAABZ/v//AAR1boD///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAgCAgP///wARAABZ/f//AAdlc4D///+AEQAAv/7//wACAACA////gBEAAFn9//8ABQCAgP///wASAAC//v//AAFhcoD///8AEgAAWf3//wADAACA////gBIAAFn9//8ABACAgP///wATAABp/f//AAJ0ZYD///+AEwAAef3//wADAACA////ABQAAHn9//8AAwCAgP///4AUAABO/v//AANqX4D///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwCAgP///wAVAABZ/f//AAd3aYD///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwCAAAAAAID///8A////AARqXwAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABQCAAAAAAAABAAAA////AAZzYwAAAACAAQAAAP///wAFAAAAAAAAAAIAAAD///8ABACAAAAAAIACAAAA////AAhlYQAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABgCAAAAAAAAEAAAA////AAVsZQAAAACABAAAAP///wAIAAAAAAAAAAUAAAD///8ABwCAAAAAAIAFAAAA////AAZydAAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwCAAAAAAAAHAAAA////AAd0aAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACACAAAAAAIAIAAAA////AAZlXwAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAwCAAAAAAAAQAABZ/v//AANlXwAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABQCAAAAAAAARAABZ/v//AAJ0cwAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AAwCAAAAAAIARAABZ/f//AAZhbAAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwCAAAAAAIASAABZ/f//AANzcwAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABQCAAAAAAAAUAAB5/f//AAVzZwAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQCAAAAAAAAVAABZ/f//AAVtbwAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABACAgAAAAID///8A////AANycoAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABACAgAAAAAABAAAA////AARhcoAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AAwCAgAAAAIACAAAA////AAVycoAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABACAgAAAAAAEAAAA////AARsZYAAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQCAgAAAAIAFAAAA////AARqX4AAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABACAgAAAAAAHAAAA////AARzdYAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABQCAgAAAAIAIAAAA////AARydIAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABACAgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgCAgAAAAIARAAC9/v//AAJiX4AAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAgCAgAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwCAgAAAAAAUAAB5/f//AARqX4AAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAgCAgAAAAAAVAABZ/f//AAdlc4AAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABACAAAEAAIAOAAC6/v//AAF0cwABAAAADwAAWf7//wABAAAAAQAAgA8AAFn+//8ABACAAAEAAAAQAABZ/v//AARlcwABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABQCAAAEAAAARAABZ/f//AAV0cwABAACAEQAAWf3//wADAAAAAQAAABIAAFn9//8ABgCAAAEAAIASAABZ/f//AAdydAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQCAAAEAAAAUAABZ/f//AAZ0cwABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgCAAAEAAAAVAABZ/f//AAZyZQABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwCAgAEAAIAPAAC7/v//AAJydIABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAQCAgAEAAIAQAABZ/f//AANhc4ABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABgCAgAEAAIASAABZ/f//AAhsYYABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACACAgAEAAAAUAABZ/f//AAh0X4ABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAgCAAAIAAAAQAABZ/v//AARjawACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAgCAAAIAAIARAAC4/f//AAJsZQACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8ABwCAAAIAAAATAABZ/f//AAhlcwACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwCAAAIAAIAUAABZ/f//AAVydAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgCAgAIAAAAQAABZ/v//AAMAAIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAQCAgAIAAAARAACn/f//AANtYYACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABACAgAIAAIASAABZ/f//AAZvdIACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABQCAgAIAAAAUAABZ/f//AAVfZYACAACAFAAAWf7//wACAACAAgAAABUAAFn9//8AAQCAAAMAAIAQAABZ/v//AARvbwADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAIDAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAEAgAADAACAEwAA1P3//wABAAAAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AAMAgAADAACAFAAAWf3//wACcnSAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AAQAgIADAACAEQAAWf7//wAEZXOAAwAAABMAALr+//8AAwAAgAMAAIATAAC7/v//AAEAgAAEAAAAEQAAu/7//wABZWwABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AAMAgAAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAgAAAAQAAIATAABZ/v//AAMAgAAEAAAAFAAAfP7//wADdwAABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AAQAgIAEAACAFAAAwP7//wAEaGGABAAAABUAAOP+//8ABAAAgAQAAIAVAAAH////AAQAgAAFAACAFQAAIv///wADaGUABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AAMAgIAFAAAAFgAATf///wACaGEABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AAQAgIAGAACAFAAAWQAAAAACa2GABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AAQAgIAGAAAAFgAAWf///wAFaW6ABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAUAgIAGAACAFwAAWf///wAFYm+ABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAIAgAAHAACAEwAAWf///wAFYmwABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAcAgAAHAACAFAAAWf///wAIaGUABwAAABUAAFkAAAAAA3QAAAcAAAAVAABZ////AAcAgAAHAACAFQAAWf///wAHaGUABwAAABYAAFsAAAAABAAAAAcAAAAWAABZ////AAcAgAAHAACAFgAAWwAAAAADc3cABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAAMAgAAHAAAAFwAAWf///wAIb2wABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAYAgAAHAACAGAAAWf///wAGd28ABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAgIAHAAAAEwAAWQAAAAADaGWABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAcAgIAHAAAAFAAAWf///wAIdHOABwAAgBQAAFn///8ABwAAgAcAAAAVAABcAAAAAAUAgIAHAAAAFQAAWf///wAIAACABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcAgIAHAAAAFgAAWQAAAAAGZXOABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAYAgIAHAACAFgAAWf///wAHaGWABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgAgIAHAACAFwAAWQAAAAAGcnSABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAUAgIAHAAAAGAAAWf///wAIdF+ABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAgAgIAHAAAAGQAAWQAAAAAEdHOABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMAgAAIAAAAEwAAWf///wAFcnQACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAgAgAAIAAAAFAAAXAAAAAAEaGEACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAUAgAAIAACAFAAAWf///wAHaGUACAAAABUAAFwAAAAAB2h0AAgAAAAVAABZ////AAgAgAAIAACAFQAAWQAAAAAIdHMACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAgAgAAIAACAFgAAWQAAAAAIaGUACAAAgBYAAFn///8ABmh0AAgAAAAXAABZAAAAAAgAgAAIAAAAFwAAWf///wAIaGUACAAAgBcAAFkAAAAACHQAAAgAAIAXAABZ////AAgAgAAIAAAAGAAAWQAAAAAIc3cACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAgAgAAIAACAGAAAWf///wAHcnQACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAcAgAAIAACAGQAAWf///wAEaGmACAAAABMAAJkAAAAAAgAAgAgAAAATAABZ////AAUAgIAIAACAEwAAWf///wAIaW6ACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAgIAIAACAFAAAWQAAAAAHYmWACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAgAgIAIAAAAFQAAWf///wAIc2iACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAgIAIAAAAFgAAWQAAAAAGdHOACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAYAgIAIAACAFgAAWf///wAHcnSACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAgAgIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAgIAIAAAAGAAAWf///wAIcnSACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAcAgIAIAAAAGQAAWQAAAAAEeGWACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUAgAAJAAAAEwAAWf///wAFcmUACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAgAgAAJAAAAFAAAWQAAAAAFYWgACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAcAgAAJAACAFAAAWf///wAIYWgACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYAgAAJAACAFQAAWQAAAAAGZXMACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAgAAJAACAFgAAWf///wAHdHMACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAcAgAAJAACAFwAAWQAAAAAHc2gACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAYAgAAJAAAAGAAAWf///wAHZXIACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAYAgAAJAAAAGQAAWf///wAIZXkACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAIAgIAJAAAAEwAAWf///wAFc2uACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAcAgIAJAAAAFAAAWf///wAGc2iACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAgIAJAAAAFQAAWQAAAAAHbl+ACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAYAgIAJAAAAFgAAWf///wADZW6ACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAYAgIAJAACAFwAAWQAAAAAFbmWACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAUAgIAJAACAGAAAWf///wAFZXKACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAQAgAAKAAAAEwAAVQAAAAACdHMACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAgAAKAACAFAAAWf///wAEAAAACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAgAAKAACAFQAAWQAAAAAEZXMACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAUAgAAKAAAAFgAAWf///wADbnQACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAgAAKAAAAFwAAWQAAAAADc2gACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAUAgAAKAAAAGAAAWf///wAEbW0ACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIAgAAKAACAGQAAWf///wADd2+ACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAIAgIAKAAAAFQAAWf///wAEcnSACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AAQAgIAKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUAgIAKAACAFgAAWf///wAGcnSACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQAgIAKAAAAGAAAWf///wAFZXMACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAIAgAALAAAAFQAAWf///wAFdHMACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUAgAALAAAAFgAAWQAAAAAFdHMACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAUAgAALAACAFgAAWf///wAEdXYACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAQAgAALAACAFwAAWf///wAEZXMACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAgA==
 PGRC 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SwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA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MQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
 
 DIAL
@@ -28115,7 +28206,7 @@ PNAM
 NNAM 1563912084246537512
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
-NAME Твое обучение начнется с изучения этих книг. Из первой ты узнаешь о тех, кто будет ненавидеть тебя. Вторая рассказывает о долге тех, кого ты вызовешь. Третья покажет тебе, что ожидать. Прочти их, выучи их, знай их. Возвращайся к мне, когда справишься с этим заданием, и я дам тебе @новое знание#.%
+NAME Твое обучение начнется с изучения этих книг. Из первой ты узнаешь о тех, кто будет ненавидеть тебя. Вторая рассказывает о долге тех, кого ты вызовешь. Третья покажет тебе, что ожидать. Прочти их, выучи их, знай их. Возвращайся к мне, когда справишься с этим заданием, и я дам тебе новое знание.%
 SCVR 01500%
 INTV 4
 BNAM
@@ -29123,7 +29214,7 @@ PNAM 30562143661213022363
 NNAM 33103131415123607
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
-NAME Сила этого заклинания отделит череп твоей жертвы от тела. Если при этом у тебя будет @черный камень душ#, то он получит воспоминания жертвы, ее "я" и даже частичку ее души. Но остерегайся. Тем самым ты нарушишь @закон# Аркея, и последствия могут быть ужасными. Теперь иди и примени свои знания на практике, если хочешь. Принеси мне тело @Данмера#-мужчины.%
+NAME Сила этого заклинания отделит череп твоей жертвы от тела. Если при этом у тебя будет черный камень душ, то он получит воспоминания жертвы, ее "я" и даже частичку ее души. Но остерегайся. Тем самым ты нарушишь закон Аркея, и последствия могут быть ужасными. Теперь иди и примени свои знания на практике, если хочешь. Принеси мне тело Данмера-мужчины.%
 SCVR 01500%
 INTV 2
 BNAM
@@ -29354,7 +29445,7 @@ PNAM 265842279881228537
 NNAM 153541025274461068
 DATA AgAAAAAAAAD///8A
 ONAM nc_Tragrilar
-NAME Приветствую тебя, странница. Добро пожаловать в мой храм, мое убежище.  Хочешь узнать почему @я привел тебя сюда#?%
+NAME Приветствую тебя, странница. Добро пожаловать в мой храм, мое убежище.  Хочешь узнать почему я привел тебя сюда?%
 SCVR 04JX4nc_necro_001%
 INTV 10
 SCVR 11380%
@@ -29368,7 +29459,7 @@ PNAM 267468080326965853
 NNAM 
 DATA AgAAAAAAAAD///8A
 ONAM nc_Tragrilar
-NAME Приветствую тебя, странник. Добро пожаловать в мой храм, мое убежище.  Хочешь узнать почему @я привел тебя сюда#?%
+NAME Приветствую тебя, странник. Добро пожаловать в мой храм, мое убежище.  Хочешь узнать почему я привел тебя сюда?%
 SCVR 04JX4nc_necro_001%
 INTV 10
 SCVR 11380%
