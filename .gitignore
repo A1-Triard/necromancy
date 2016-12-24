@@ -1,4 +1,5 @@
 /espa
-*.esp
-*.zip
+/*.esp
+/*.zip
 /A1_Necromancy_*
+/*.txt
