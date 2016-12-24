@@ -13,5 +13,6 @@ rm -rf A1_Necromancy_${VERSION}
 rm -f A1_Necromancy_${VERSION}.zip
 mkdir A1_Necromancy_${VERSION}
 cp -a A1_Necromancy.esp A1_Necromancy_${VERSION}
+cp -a "Data Files" A1_Necromancy_${VERSION}
 #cp -a Screenshots Readme.txt Versions.txt A1_Alchemy_DaeCursed.esp A1_Alchemy_Potions.esp A1_Alchemy_V4_Containers.esp A1_Alchemy_V5_Apparatus.esp A1_Alchemy_V5_Apparatus_MFR.esp A1_Alchemy_${VERSION}
 zip -v -X -9 -r A1_Necromancy_${VERSION}.zip A1_Necromancy_${VERSION} || exit 1
