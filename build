@@ -5,11 +5,6 @@ VERSION=0.1
 basedir="$(dirname "$0")"
 cd "$basedir"
 
-cat header > A1_Necromancy
-echo '' >> A1_Necromancy
-cat base_scripts >> A1_Necromancy
-echo '' >> A1_Necromancy
-cat comp3Script >> A1_Necromancy
 ./espa -v A1_Necromancy || exit 1
 touch -t 200606201200 A1_Necromancy.esp
 #iconv -f UTF-8 -t CP1251 README | perl -p -e 's/\n/\r\n/' > Readme.txt
