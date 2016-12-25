@@ -1088,9 +1088,9 @@ SCTX
     
 
 SCPT
-SCHD nc_cauldron_script 15 0 1 2394 188
-SCVR nc_altmer_skl;nc_argonian_skl;nc_bosmer_skl;nc_breton_skl;nc_dunmer_skl;nc_imperial_skl;nc_khajiit_skl;nc_nord_skl;nc_orc_skl;nc_redguard_skl;nc_poison;nc_fire;nc_frost;doonce;state;timer;;
-SCDT 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
+SCHD nc_cauldron_script 25 0 1 4336 350
+SCVR nc_altmer_skl;nc_argonian_skl;nc_bosmer_skl;nc_breton_skl;nc_dunmer_skl;nc_imperial_skl;nc_khajiit_skl;nc_nord_skl;nc_orc_skl;nc_redguard_skl;nc_altmer_skl_f;nc_argonian_skl_f;nc_bosmer_skl_f;nc_breton_skl_f;nc_dunmer_skl_f;nc_imperial_skl_f;nc_khajiit_skl_f;nc_nord_skl_f;nc_orc_skl_f;nc_redguard_skl_f;nc_poison;nc_fire;nc_frost;doonce;state;timer;;
+SCDT BgEBCSBYIBAgPT0gMSQBCQEFAWYBAAogZgEAIFgSECArBgEBCCBmAQAgPCAyJAEJAQUBZgEAAiAwBgEBCCBYjREgPCA0jhEAAIBACQEGAQERIEcJbmNfcml0dWFsID09IDAkAQkBBQFzAQAdIFj9ECBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zawAFAXMCABogWP0QIG8SbmNfYXJnX3BhdWxkcm9uX3NrAAUBcwMAHSBY/RAgbxVuY19ib3NtZXJfcGF1bGRyb25fc2sABQFzBAAdIFj9ECBvFW5jX2JyZXRvbl9wYXVsZHJvbl9zawAFAXMFAB0gWP0QIG8VbmNfZHVubWVyX3BhdWxkcm9uX3NrAAUBcwYAHyBY/RAgbxduY19pbXBlcmlhbF9wYXVsZHJvbl9zawAFAXMHAB4gWP0QIG8WbmNfa2hhamlpdF9wYXVsZHJvbl9zawAFAXMIABsgWP0QIG8TbmNfbm9yZF9wYXVsZHJvbl9zawAFAXMJABogWP0QIG8SbmNfb3JjX3BhdWxkcm9uX3NrAAUBcwoAGSBY/RAgbxFuY19yZ19wYXVsZHJvbl9zawAFAXMLAB8gWP0QIG8XbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YABQFzDAAcIFj9ECBvFG5jX2FyZ19wYXVsZHJvbl9za19mAAUBcw0AHyBY/RAgbxduY19ib3NtZXJfcGF1bGRyb25fc2tfZgAFAXMOAB8gWP0QIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YABQFzDwAfIFj9ECBvF25jX2R1bm1lcl9wYXVsZHJvbl9za19mAAUBcxAAISBY/RAgbxluY19pbXBlcmlhbF9wYXVsZHJvbl9za19mAAUBcxEAICBY/RAgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YABQFzEgAdIFj9ECBvFW5jX25vcmRfcGF1bGRyb25fc2tfZgAFAXMTABwgWP0QIG8UbmNfb3JjX3BhdWxkcm9uX3NrX2YABQFzFAAbIFj9ECBvE25jX3JnX3BhdWxkcm9uX3NrX2YABQFzFQAXIFj9ECBvD25jX3BvaXNvbl9jdXJlZAAFAXMWABUgWP0QIG8NbmNfZmlyZV9jdXJlZAAFAXMXABYgWP0QIG8ObmNfZnJvc3RfY3VyZWQABgHDCSBzGQAgPT0g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
 SCTX
     begin nc_cauldron_script
     
@@ -1105,6 +1105,16 @@ SCTX
         short nc_nord_skl
         short nc_orc_skl
         short nc_redguard_skl
+        short nc_altmer_skl_f
+        short nc_argonian_skl_f
+        short nc_bosmer_skl_f
+        short nc_breton_skl_f
+        short nc_dunmer_skl_f
+        short nc_imperial_skl_f
+        short nc_khajiit_skl_f
+        short nc_nord_skl_f
+        short nc_orc_skl_f
+        short nc_redguard_skl_f
         short nc_poison
         short nc_fire
         short nc_frost
@@ -1140,6 +1150,16 @@ SCTX
         set nc_nord_skl to getItemCount "nc_nord_pauldron_sk"
         set nc_orc_skl to getItemCount "nc_orc_pauldron_sk"
         set nc_redguard_skl to getItemCount "nc_rg_pauldron_sk"
+        set nc_altmer_skl_f to getItemCount "nc_altmer_pauldron_sk_f"
+        set nc_argonian_skl_f to getItemCount "nc_arg_pauldron_sk_f"
+        set nc_bosmer_skl_f to getItemCount "nc_bosmer_pauldron_sk_f"
+        set nc_breton_skl_f to getItemCount "nc_breton_pauldron_sk_f"
+        set nc_dunmer_skl_f to getItemCount "nc_dunmer_pauldron_sk_f"
+        set nc_imperial_skl_f to getItemCount "nc_imperial_pauldron_sk_f"
+        set nc_khajiit_skl_f to getItemCount "nc_khajiit_pauldron_sk_f"
+        set nc_nord_skl_f to getItemCount "nc_nord_pauldron_sk_f"
+        set nc_orc_skl_f to getItemCount "nc_orc_pauldron_sk_f"
+        set nc_redguard_skl_f to getItemCount "nc_rg_pauldron_sk_f"
         set nc_poison to getItemCount "nc_poison_cured"
         set nc_fire to getItemCount "nc_fire_cured"
         set nc_frost to getItemCount "nc_frost_cured"
@@ -1236,16 +1256,103 @@ SCTX
                     set state to 1
                 endif
             elseif ( nc_ritual == 11 )
+                if ( getItemCount "nc_altmer_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 12
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 12 )
+                if ( getItemCount "nc_arg_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 11
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 13 )
+                if ( getItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 13
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 14 )
+                if ( getItemCount "nc_breton_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 14
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 15 )
+                if ( getItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 15
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 16 )
+                if ( getItemCount "nc_imperial_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 16
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 17 )
+                if ( getItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 17
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 18 )
+                if ( getItemCount "nc_nord_pauldron_sk_f" >= 1 )
+                   startscript nc_gem_test
+    			 set nc_gem_race to 18
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 19 )
+                if ( getItemCount "nc_orc_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 19
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 20 )
+                if ( getItemCount "nc_rg_pauldron_sk_f" >= 1 )
+                    startscript nc_gem_test
+    			 set nc_gem_race to 20
+                    set state to 1
+                else
+                    MessageBox "Вам нужен труп, чтобы провести ритуал."
+                    set state to 1
+                endif
+            elseif ( nc_ritual == 21 )
                 if ( getItemCount "nc_poison_pauldron" >= 1 )
-    			;set nc_gem_race to 11
                   startscript nc_summon_poison
                    set state to 1
                 elseif ( getItemCount "nc_fire_pauldron" >= 1 )
-    			;set nc_gem_race to 12
                     startscript nc_summon_fire
                     set state to 1
                 elseif ( getItemCount "nc_frost_pauldron" >= 1 )
-    			;set nc_gem_race to 13
                     startscript nc_summon_frost
                     set state to 1
     	   	  else
@@ -14609,9 +14716,9 @@ SCTX
     end
 
 SCPT
-SCHD nc_gem_test 1 0 0 1971 6
+SCHD nc_gem_test 1 0 0 3927 6
 SCVR state;;
-SCDT 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
+SCDT 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
 SCTX
     begin nc_gem_test
     
@@ -14704,6 +14811,96 @@ SCTX
     		if ( Player->GetItemCount "nc_soulgem_redguard" >= 1 )
     			Player->removeitem "nc_soulgem_redguard" 1
     			startscript nc_summon_redguard
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 11 )
+    		if ( Player->GetItemCount "nc_soulgem_arg" >= 1 )
+    			Player->removeitem "nc_soulgem_arg" 1
+    			startscript nc_summon_argonian_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 12 )	
+    		if ( Player->GetItemCount "nc_soulgem_altmer" >= 1 )
+    			Player->removeitem "nc_soulgem_altmer" 1
+    			startscript nc_summon_altmer_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 13 )	
+    		if ( Player->GetItemCount "nc_soulgem_bosmer" >= 1 )
+    			Player->removeitem "nc_soulgem_bosmer" 1
+    			startscript nc_summon_bosmer_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 14 )	
+    		if ( Player->GetItemCount "nc_soulgem_breton" >= 1 )
+    			Player->removeitem "nc_soulgem_breton" 1
+    			startscript nc_summon_breton_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 15 )	
+    		if ( Player->GetItemCount "nc_soulgem_dunmer" >= 1 )
+    			Player->removeitem "nc_soulgem_dunmer" 1
+    			startscript nc_summon_dunmer_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 16 )	
+    		if ( Player->GetItemCount "nc_soulgem_imperial" >= 1 )
+    			Player->removeitem "nc_soulgem_imperial" 1
+    			startscript nc_summon_imperial_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 17 )	
+    		if ( Player->GetItemCount "nc_soulgem_khajiit" >= 1 )
+    			Player->removeitem "nc_soulgem_khajiit" 1
+    			startscript nc_summon_khajiit_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 18 )	
+    		if ( Player->GetItemCount "nc_soulgem_nord" >= 1 )
+    			Player->removeitem "nc_soulgem_nord" 1
+    			startscript nc_summon_nord_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 19 )	
+    		if ( Player->GetItemCount "nc_soulgem_orc" >= 1 )
+    			Player->removeitem "nc_soulgem_orc" 1
+    			startscript nc_summon_orc_f
+    			set state to 1
+    		else
+    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
+    			set state to 1
+    		endif
+    	elseif ( nc_gem_race == 20 )	
+    		if ( Player->GetItemCount "nc_soulgem_redguard" >= 1 )
+    			Player->removeitem "nc_soulgem_redguard" 1
+    			startscript nc_summon_redguard_f
     			set state to 1
     		else
     			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
@@ -21379,134 +21576,6 @@ SCTX
     
 
 SCPT
-SCHD nc_placer_gem_test 1 0 0 2175 6
-SCVR state;;
-SCDT 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
-SCTX
-    begin nc_placer_gem_test
-    
-    short state
-    ;global nc_gem_race
-    
-    if ( nc_gem_race == 0 )
-    	return
-    endif
-    
-    if ( state == 0 )
-    	if ( nc_gem_race == 1 )
-    		if ( Player->GetItemCount "nc_soulgem_arg" >= 1 )
-    			Player->removeitem "nc_soulgem_arg" 1
-    			startscript nc_summon_argonian
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 2 )	
-    		if ( Player->GetItemCount "nc_soulgem_altmer" >= 1 )
-    			Player->removeitem "nc_soulgem_altmer" 1
-    			startscript nc_summon_altmer
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 3 )	
-    		if ( Player->GetItemCount "nc_soulgem_bosmer" >= 1 )
-    			Player->removeitem "nc_soulgem_bosmer" 1
-    			startscript nc_summon_bosmer
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 4 )	
-    		if ( Player->GetItemCount "nc_soulgem_breton" >= 1 )
-    			Player->removeitem "nc_soulgem_breton" 1
-    			startscript nc_summon_breton
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 5 )	
-    		if ( Player->GetItemCount "nc_soulgem_dunmer" >= 1 )
-    			Player->removeitem "nc_soulgem_dunmer" 1
-    			startscript nc_summon_dunmer
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 6 )	
-    		if ( Player->GetItemCount "nc_soulgem_imperial" >= 1 )
-    			Player->removeitem "nc_soulgem_imperial" 1
-    			startscript nc_summon_imperial
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 7 )	
-    		if ( Player->GetItemCount "nc_soulgem_khajiit" >= 1 )
-    			Player->removeitem "nc_soulgem_khajiit" 1
-    			startscript nc_summon_khajiit
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 8 )	
-    		if ( Player->GetItemCount "nc_soulgem_nord" >= 1 )
-    			Player->removeitem "nc_soulgem_nord" 1
-    			startscript nc_summon_nord
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 9 )	
-    		if ( Player->GetItemCount "nc_soulgem_orc" >= 1 )
-    			Player->removeitem "nc_soulgem_orc" 1
-    			startscript nc_summon_orc
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 10 )	
-    		if ( Player->GetItemCount "nc_soulgem_redguard" >= 1 )
-    			Player->removeitem "nc_soulgem_redguard" 1
-    			startscript nc_summon_redguard
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 11 )	
-    			startscript nc_summon_poison
-    			set state to 1
-    	elseif ( nc_gem_race == 12 )	
-    			startscript nc_summon_fire
-    			set state to 1
-    	elseif ( nc_gem_race == 13 )	
-    			startscript nc_summon_frost
-    			set state to 1
-    	else
-    		set state to 1
-    	endif
-    endif
-    
-    if ( state == 1 )
-    	set state to 0
-    	set nc_gem_race to 0
-    	;stopscript nc_gem_test
-    endif
-    
-    end
-    
-
-SCPT
 SCHD nc_poison_corpse_obj 1 0 0 181 8
 SCVR counter;;
 SCDT BgEGCSBY3BAgPT0gMQUBcwEACCBzAQAgMSArBgEBCSBzAQAgPCAxMCQBCQGrEQEAJAEJAQYBBgUgWBgQAAYBAhUgRw1uY19oYXNfY29ycHNlID09IDDbEAwBBnBsYXllctQQEm5jX3BvaXNvbl9wYXVsZHJvbgEABwEBABAuAM3l8fLoIOHu6/z45Swg9+XsIO7k7e4g8uXr7iDn4CDw4OcgLSDt5fPk7uHt7i4AAAkBCQEBAQ==
@@ -22239,9 +22308,9 @@ SCTX
     
 
 SCPT
-SCHD nc_ritualbook_script 5 0 2 1554 61
-SCVR state;button;pc_conjuration;pc_alteration;start;timer;timer2;;
-SCDT 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
+SCHD nc_ritualbook_script 6 0 2 1808 68
+SCVR state;button;pc_conjuration;pc_alteration;start;gender;timer;timer2;;
+SCDT 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
 SCTX
     begin nc_ritualbook_script
     
@@ -22252,6 +22321,7 @@ SCTX
     short start
     float timer
     float timer2
+    short gender
     
     if ( menumode == 1 )
     	return
@@ -22317,56 +22387,70 @@ SCTX
     if ( state == 1 )
     	player -> PositionCell -2, 4510, -389, 0 "Храм Танатоса"
     	disableplayerlooking
-    	MessageBox "Какого мертвеца вы хотите создать?", "Альтмер", "Аргонианин", "Босмер", "Бретон", "Данмер", "Больше"
+    	MessageBox "Какого мертвеца вы хотите создать?", "Скелет мужчины", "Скелет женщины", "Мумифицированный слуга"
     	set state to 2
     elseif ( state == 2 )
     	set button to GetButtonPressed
     	if ( button == -1 )
     		return
-    	elseif ( button == 0 ) ;altmer
-    		set nc_ritual to 1
-    		set state to 0
-    	elseif ( button == 1 ) ;argonian
-    		set nc_ritual to 2
-    		set state to 0
-    	elseif ( button == 2 ) ;bosmer
-    		set nc_ritual to 3
-    		set state to 0
-    	elseif ( button == 3 ) ;breton
-    		set nc_ritual to 4
-    		set state to 0
-    	elseif ( button == 4 ) ;dunmer
-    		set nc_ritual to 5
-    		set state to 0
-    	elseif ( button == 5 ) ;more
+    	elseif ( button == 0 ) ;male
+    		set gender to 0
     		set state to 3
+    	elseif ( button == 1 ) ;female
+    		set gender to 10
+    		set state to 3
+    	elseif ( button == 2 ) ;warlord
+    		set nc_ritual to 21
+    		set state to 0
     	endif
     elseif ( state == 3 )
-    	MessageBox "Какого мертвеца вы хотите создать?", "Имперец", "Хаджит", "Норд", "Орк", "Редгард", "Мумифицированный слуга", "Ничего"
+    	MessageBox "Какого мертвеца вы хотите создать?", "Альтмер", "Аргонианин", "Босмер", "Бретон", "Данмер", "Больше"
     	set state to 4
     elseif ( state == 4 )
     	set button to GetButtonPressed
     	if ( button == -1 )
     		return
+    	elseif ( button == 0 ) ;altmer
+    		set nc_ritual to gender + 1
+    		set state to 0
+    	elseif ( button == 1 ) ;argonian
+    		set nc_ritual to gender + 2
+    		set state to 0
+    	elseif ( button == 2 ) ;bosmer
+    		set nc_ritual to gender + 3
+    		set state to 0
+    	elseif ( button == 3 ) ;breton
+    		set nc_ritual to gender + 4
+    		set state to 0
+    	elseif ( button == 4 ) ;dunmer
+    		set nc_ritual to gender + 5
+    		set state to 0
+    	elseif ( button == 5 ) ;more
+    		set state to 5
+    	endif
+    elseif ( state == 5 )
+    	MessageBox "Какого мертвеца вы хотите создать?", "Имперец", "Хаджит", "Норд", "Орк", "Редгард", "Ничего"
+    	set state to 6
+    elseif ( state == 6 )
+    	set button to GetButtonPressed
+    	if ( button == -1 )
+    		return
     	elseif ( button == 0 ) ;imperial
-    		set nc_ritual to 6
+    		set nc_ritual to gender + 6
     		set state to 0
     	elseif ( button == 1 ) ;khajiit
-    		set nc_ritual to 7
+    		set nc_ritual to gender + 7
     		set state to 0
     	elseif ( button == 2 ) ;nord
-    		set nc_ritual to 8
+    		set nc_ritual to gender + 8
     		set state to 0
     	elseif ( button == 3 ) ;orc
-    		set nc_ritual to 9
+    		set nc_ritual to gender + 9
     		set state to 0
     	elseif ( button == 4 ) ;redguard
-    		set nc_ritual to 10
+    		set nc_ritual to gender + 10
     		set state to 0
-    	elseif ( button == 5 ) ;warlord
-    		set nc_ritual to 11
-    		set state to 0
-    	elseif ( button == 6 ) ;none
+    	elseif ( button == 5 ) ;none
     		set state to 0
     		enableplayerlooking
     		set nc_summon_spell to 0
@@ -23567,6 +23651,91 @@ SCTX
     end
 
 SCPT
+SCHD nc_summon_altmer_f 6 0 0 1236 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABkgWP0QIG8RbmNfYWx0bWVyX3NrdWxsX2YABgEVCSBzBQAgPj0gMQYBEAkgcwIAID49IDEGAQsJIHMDACA+PSAxBgEGCiBzBAAgPj0gMTDVEBduY19hbHRtZXJfcGF1bGRyb25fc2tfZgEA1RARbmNfYWx0bWVyX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECsAwuDsIO3z5uXtIPfl8OXvIMDr/PLs5fDgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQYBEwkgcwYAID09IDEGAQQKIHMBACA8PSAxMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRDW5jX2hpZ2ggZWxmX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAELCSBzAQAgPiAxMAYBBBcgRw5uY19uZWNyb19za2lsbCA8PSAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRD25jX2hpZ2ggZWxmXzJfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQQJIHMBACA+IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEPbmNfaGlnaCBlbGZfM19mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBCQEFAXMGAAIgMgkBBgEDCSBzBgAgPT0gMt0QQhEcEBJuY19zdW1tb25fYWx0bWVyX2YJAQEB
+SCTX
+    begin nc_summon_altmer_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to GetItemCount "nc_altmer_skull_f"
+    
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    					removeitem "nc_altmer_pauldron_sk_f" 1
+       	         removeitem "nc_altmer_skull_f" 1
+          	      removeitem "ingred_scrap_metal_01" 1
+             	   removeitem "ingred_netch_leather_01" 1
+             	   removeitem "ingred_bonemeal_01" 10
+             	   set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Альтмера для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		;PlaceAtPC "nc_high elf" 1, 762, 0
+    		"nc_rev_placer"->PlaceAtMe "nc_high elf_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_necro_skill <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_high elf_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_high elf_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_altmer_f
+    endif
+    
+    end
+    
+
+SCPT
 SCHD nc_summon_argonian 6 0 0 1215 70
 SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
 SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABkgWP0QIG8RbmNfYXJnb25pYW5fc2t1bGwABgEVCSBzBQAgPj0gMQYBEAkgcwIAID49IDEGAQsJIHMDACA+PSAxBgEGCiBzBAAgPj0gMTDVEBJuY19hcmdfcGF1bGRyb25fc2sBANUQEW5jX2FyZ29uaWFuX3NrdWxsAQDVEBVpbmdyZWRfc2NyYXBfbWV0YWxfMDEBANUQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAQDVEBJpbmdyZWRfYm9uZW1lYWxfMDEKAAUBcwYAAiAxBwECABA6AMLg7CDt8+bt7iDo7OXy/CAxMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECwAwuDsIO3z5u37IO7h8OXn6ugg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAEC0AwuDsIO3z5uXtIOrz8e7qIOru5ugg7eXy9+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBwECABAuAMLg7CDt8+bl7SD35fDl7yDA8OPu7ejg7ejt4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEGARMJIHMGACA9PSAxBgEECiBzAQAgPD0gMTACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQtuY19hcmdvbmlhbgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQsJIHMBACA+IDEwBgEECiBzAQAgPD0gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ1uY19hcmdvbmlhbl8yAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBBAkgcwEAID4gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ1uY19hcmdvbmlhbl8zAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBCQEFAXMGAAIgMgkBBgEDCSBzBgAgPT0gMt0QQhEcEBJuY19zdW1tb25fYXJnb25pYW4JAQEB
@@ -23643,6 +23812,85 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_summon_argonian_f 6 0 0 1229 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABsgWP0QIG8TbmNfYXJnb25pYW5fc2t1bGxfZgAGARUJIHMFACA+PSAxBgEQCSBzAgAgPj0gMQYBCwkgcwMAID49IDEGAQYKIHMEACA+PSAxMNUQFG5jX2FyZ19wYXVsZHJvbl9za19mAQDVEBNuY19hcmdvbmlhbl9za3VsbF9mAQDVEBVpbmdyZWRfc2NyYXBfbWV0YWxfMDEBANUQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAQDVEBJpbmdyZWRfYm9uZW1lYWxfMDEKAAUBcwYAAiAxBwECABA6AMLg7CDt8+bt7iDo7OXy/CAxMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECwAwuDsIO3z5u37IO7h8OXn6ugg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAEC0AwuDsIO3z5uXtIOrz8e7qIOru5ugg7eXy9+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBwECABAuAMLg7CDt8+bl7SD35fDl7yDA8OPu7ejg7ejt4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEGARMJIHMGACA9PSAxBgEECiBzAQAgPD0gMTACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ1uY19hcmdvbmlhbl9mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBCwkgcwEAID4gMTAGAQQKIHMBACA8PSAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRD25jX2FyZ29uaWFuXzJfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQQJIHMBACA+IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEPbmNfYXJnb25pYW5fM19mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBCQEFAXMGAAIgMgkBBgEDCSBzBgAgPT0gMt0QQhEcEBRuY19zdW1tb25fYXJnb25pYW5fZgkBAQE=
+SCTX
+    begin nc_summon_argonian_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_argonian_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				removeitem "nc_arg_pauldron_sk_f" 1
+                removeitem "nc_argonian_skull_f" 1
+               removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 10
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Аргонианина для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_argonian_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_argonian_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_argonian_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_argonian_f
+    endif
+    
+    end
+    
 
 SCPT
 SCHD nc_summon_bosmer 6 0 0 1333 70
@@ -23723,6 +23971,85 @@ SCTX
     end
 
 SCPT
+SCHD nc_summon_bosmer_f 6 0 0 1347 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwADAELbmNfY2F1bGRyb24FAXMCAB0gWP0QIG8VaW5ncmVkX3NjcmFwX21ldGFsXzAxAAwBC25jX2NhdWxkcm9uBQFzAwAfIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAAwBC25jX2NhdWxkcm9uBQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAMAQtuY19jYXVsZHJvbgUBcwUAGSBY/RAgbxFuY19ib3NtZXJfc2t1bGxfZgAGARUJIHMFACA+PSAxBgEQCSBzAgAgPj0gMQYBCwkgcwMAID49IDEGAQYKIHMEACA+PSAxMAwBC25jX2NhdWxkcm9u1RAXbmNfYm9zbWVyX3BhdWxkcm9uX3NrX2YBAAwBC25jX2NhdWxkcm9u1RARbmNfYm9zbWVyX3NrdWxsX2YBAAwBC25jX2NhdWxkcm9u1RAVaW5ncmVkX3NjcmFwX21ldGFsXzAxAQAMAQtuY19jYXVsZHJvbtUQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAQAMAQtuY19jYXVsZHJvbtUQEmluZ3JlZF9ib25lbWVhbF8wMQgABQFzBgACIDEHAQIAEDkAwuDsIO3z5u3uIOjs5fL8IDgg7+7w9ujpIOru8fL/7e7pIOzz6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBwECABAsAMLg7CDt8+bt+yDu4fDl5+roIOzl8uDr6+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBwECABAtAMLg7CDt8+bl7SDq8/Hu6iDq7uboIO3l8vfgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQKgDC4Owg7fPm5e0g9+Xw5e8gwe7x7OXw4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEGARMJIHMGACA9PSAxBgEECiBzAQAgPD0gMTACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ1uY193b29kIGVsZl9mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBCwkgcwEAID4gMTAGAQQKIHMBACA8PSAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRD25jX3dvb2QgZWxmXzJfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQQJIHMBACA+IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEPbmNfd29vZCBlbGZfM19mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBCQEFAXMGAAIgMgkBBgEDCSBzBgAgPT0gMt0QQhEcEBJuY19zdW1tb25fYm9zbWVyX2YJAQEB
+SCTX
+    begin nc_summon_bosmer_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to "nc_cauldron"->getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to "nc_cauldron"->getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to "nc_cauldron"->getItemCount "ingred_bonemeal_01"
+    set nc_skull to "nc_cauldron"->getItemCount "nc_bosmer_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				"nc_cauldron"->removeitem "nc_bosmer_pauldron_sk_f" 1
+                "nc_cauldron"->removeitem "nc_bosmer_skull_f" 1
+                "nc_cauldron"->removeitem "ingred_scrap_metal_01" 1
+                "nc_cauldron"->removeitem "ingred_netch_leather_01" 1
+                "nc_cauldron"->removeitem "ingred_bonemeal_01" 8
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 8 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Босмера для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_wood elf_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_wood elf_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_wood elf_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_bosmer_f
+    endif
+    
+    end
+    
+
+SCPT
 SCHD nc_summon_breton 6 0 0 1202 70
 SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
 SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABcgWP0QIG8PbmNfYnJldG9uX3NrdWxsAAYBFQkgcwUAID49IDEGARAJIHMCACA+PSAxBgELCSBzAwAgPj0gMQYBBgogcwQAID49IDEw1RAVbmNfYnJldG9uX3BhdWxkcm9uX3NrAQDVEA9uY19icmV0b25fc2t1bGwBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECoAwuDsIO3z5uXtIPfl8OXvIMHw5fLu7eAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEJbmNfYnJldG9uAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBCwkgcwEAID4gMTAGAQQKIHMBACA8PSAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRC25jX2JyZXRvbl8yAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBBAkgcwEAID4gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQtuY19icmV0b25fMwEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBAQbmNfc3VtbW9uX2JyZXRvbgkBAQE=
@@ -23799,6 +24126,85 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_summon_breton_f 6 0 0 1216 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABkgWP0QIG8RbmNfYnJldG9uX3NrdWxsX2YABgEVCSBzBQAgPj0gMQYBEAkgcwIAID49IDEGAQsJIHMDACA+PSAxBgEGCiBzBAAgPj0gMTDVEBduY19icmV0b25fcGF1bGRyb25fc2tfZgEA1RARbmNfYnJldG9uX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECoAwuDsIO3z5uXtIPfl8OXvIMHw5fLu7eAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhELbmNfYnJldG9uX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAELCSBzAQAgPiAxMAYBBAogcwEAIDw9IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhENbmNfYnJldG9uXzJfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQQJIHMBACA+IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhENbmNfYnJldG9uXzNfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBASbmNfc3VtbW9uX2JyZXRvbl9mCQEBAQ==
+SCTX
+    begin nc_summon_breton_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_breton_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				removeitem "nc_breton_pauldron_sk_f" 1
+               removeitem "nc_breton_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 10
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Бретона для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_breton_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_breton_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_breton_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_breton_f
+    endif
+    
+    end
+    
 
 SCPT
 SCHD nc_summon_dunmer 6 0 0 1258 70
@@ -23880,6 +24286,89 @@ SCTX
     endif
     
     end
+    
+
+SCPT
+SCHD nc_summon_dunmer_f 6 0 0 1272 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABkgWP0QIG8RbmNfZHVubWVyX3NrdWxsX2YABgEVCSBzBQAgPj0gMQYBEAkgcwIAID49IDEGAQsJIHMDACA+PSAxBgEGCiBzBAAgPj0gMTDVEBduY19kdW5tZXJfcGF1bGRyb25fc2tfZgEA1RARbmNfZHVubWVyX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECoAwuDsIO3z5uXtIPfl8OXvIMTg7ezl8OAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgEWCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhENbmNfZGFyayBlbGZfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQsJIHMBACA+IDEwBgEECiBzAQAgPD0gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ9uY19kYXJrIGVsZl8yX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAEECSBzAQAgPiAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRD25jX2RhcmsgZWxmXzNfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIGAQEZIFjNECBkDG5jX25lY3JvXzAwMSA8PSA3MMwQDG5jX25lY3JvXzAwMVAA//8JAQkBBgEDCSBzBgAgPT0gMt0QQhEcEBJuY19zdW1tb25fZHVubWVyX2YJAQEB
+SCTX
+    begin nc_summon_dunmer_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_dunmer_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				removeitem "nc_dunmer_pauldron_sk_f" 1
+                removeitem "nc_dunmer_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 10
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Данмера для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_dark elf_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_dark elf_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_dark elf_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    	if ( GetJournalIndex "nc_necro_001" <= 70 )
+    		Journal "nc_necro_001" 80
+    	endif
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_dunmer_f
+    endif
+    
+    end
+    
     
 
 SCPT
@@ -24322,6 +24811,85 @@ SCTX
     end
 
 SCPT
+SCHD nc_summon_imperial_f 6 0 0 1230 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABsgWP0QIG8TbmNfaW1wZXJpYWxfc2t1bGxfZgAGARUJIHMFACA+PSAxBgEQCSBzAgAgPj0gMQYBCwkgcwMAID49IDEGAQYKIHMEACA+PSAxMNUQGW5jX2ltcGVyaWFsX3BhdWxkcm9uX3NrX2YBANUQE25jX2ltcGVyaWFsX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECoAwuDsIO3z5uXtIPfl8OXvIMjs7+Xw9uAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhENbmNfaW1wZXJpYWxfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQsJIHMBACA+IDEwBgEECiBzAQAgPD0gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ9uY19pbXBlcmlhbF8yX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAEECSBzAQAgPiAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRD25jX2ltcGVyaWFsXzNfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBAUbmNfc3VtbW9uX2ltcGVyaWFsX2YJAQEB
+SCTX
+    begin nc_summon_imperial_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_imperial_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				removeitem "nc_imperial_pauldron_sk_f" 1
+                removeitem "nc_imperial_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 10
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Имперца для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_imperial_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_imperial_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_imperial_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_imperial_f
+    endif
+    
+    end
+    
+
+SCPT
 SCHD nc_summon_khajiit 6 0 0 1209 70
 SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
 SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABggWP0QIG8QbmNfa2hhamlpdF9za3VsbAAGARUJIHMFACA+PSAxBgEQCSBzAgAgPj0gMQYBCwkgcwMAID49IDEGAQYKIHMEACA+PSAxMNUQFm5jX2toYWppaXRfcGF1bGRyb25fc2sBANUQEG5jX2toYWppaXRfc2t1bGwBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECoAwuDsIO3z5uXtIPfl8OXvINXg5Obo8uAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEKbmNfa2hhamlpdAEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQsJIHMBACA+IDEwBgEECiBzAQAgPD0gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQxuY19raGFqaWl0XzIBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAEECSBzAQAgPiAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRDG5jX2toYWppaXRfMwEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBARbmNfc3VtbW9uX2toYWppaXQJAQEB
@@ -24398,6 +24966,85 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_summon_khajiit_f 6 0 0 1223 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABogWP0QIG8SbmNfa2hhamlpdF9za3VsbF9mAAYBFQkgcwUAID49IDEGARAJIHMCACA+PSAxBgELCSBzAwAgPj0gMQYBBgogcwQAID49IDEw1RAYbmNfa2hhamlpdF9wYXVsZHJvbl9za19mAQDVEBJuY19raGFqaWl0X3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECoAwuDsIO3z5uXtIPfl8OXvINXg5Obo8uAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEMbmNfa2hhamlpdF9mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBCwkgcwEAID4gMTAGAQQKIHMBACA8PSAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRDm5jX2toYWppaXRfMl9mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBBAkgcwEAID4gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ5uY19raGFqaWl0XzNfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBATbmNfc3VtbW9uX2toYWppaXRfZgkBAQE=
+SCTX
+    begin nc_summon_khajiit_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_khajiit_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				removeitem "nc_khajiit_pauldron_sk_f" 1
+                removeitem "nc_khajiit_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 10
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Хаджита для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_khajiit_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_khajiit_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_khajiit_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_khajiit_f
+    endif
+    
+    end
+    
 
 SCPT
 SCHD nc_summon_nord 6 0 0 1186 70
@@ -24478,6 +25125,85 @@ SCTX
     end
 
 SCPT
+SCHD nc_summon_nord_f 6 0 0 1200 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABcgWP0QIG8PbmNfbm9yZF9za3VsbF9mAAYBFQkgcwUAID49IDEGARAJIHMCACA+PSAxBgELCSBzAwAgPj0gMQYBBgogcwQAID49IDEw1RAVbmNfbm9yZF9wYXVsZHJvbl9za19mAQDVEA9uY19ub3JkX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQ8ABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDE1IO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECgAwuDsIO3z5uXtIPfl8OXvIM3u8OTgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQYBEwkgcwYAID09IDEGAQQKIHMBACA8PSAxMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRCW5jX25vcmRfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQsJIHMBACA+IDEwBgEECiBzAQAgPD0gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQtuY19ub3JkXzJfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQQJIHMBACA+IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhELbmNfbm9yZF8zX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEJAQUBcwYAAiAyCQEGAQMJIHMGACA9PSAy3RBCERwQEG5jX3N1bW1vbl9ub3JkX2YJAQEB
+SCTX
+    begin nc_summon_nord_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_nord_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    				removeitem "nc_nord_pauldron_sk_f" 1
+                removeitem "nc_nord_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 15
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 15 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Норда для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_nord_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_nord_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_nord_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_nord_f
+    endif
+    
+    end
+    
+
+SCPT
 SCHD nc_summon_orc 6 0 0 1178 70
 SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
 SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABQgWP0QIG8MbmNfb3JjX3NrdWxsAAYBFQkgcwUAID49IDEGARAJIHMCACA+PSAxBgELCSBzAwAgPj0gMQYBBgogcwQAID49IDEw1RASbmNfb3JjX3BhdWxkcm9uX3NrAQDVEAxuY19vcmNfc2t1bGwBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQ8ABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDE1IO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECcAwuDsIO3z5uXtIPfl8OXvIM7w6uAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEGbmNfb3JjAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBCwkgcwEAID4gMTAGAQQKIHMBACA8PSAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRCG5jX29yY18yAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBBAkgcwEAID4gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQhuY19vcmNfMwEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBANbmNfc3VtbW9uX29yYwkBAQE=
@@ -24554,6 +25280,85 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_summon_orc_f 6 0 0 1192 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABYgWP0QIG8ObmNfb3JjX3NrdWxsX2YABgEVCSBzBQAgPj0gMQYBEAkgcwIAID49IDEGAQsJIHMDACA+PSAxBgEGCiBzBAAgPj0gMTDVEBRuY19vcmNfcGF1bGRyb25fc2tfZgEA1RAObmNfb3JjX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQ8ABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDE1IO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECcAwuDsIO3z5uXtIPfl8OXvIM7w6uAg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBgETCSBzBgAgPT0gMQYBBAogcwEAIDw9IDEwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEIbmNfb3JjX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAELCSBzAQAgPiAxMAYBBAogcwEAIDw9IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEKbmNfb3JjXzJfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAIAQQJIHMBACA+IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEKbmNfb3JjXzNfZgEAAAAAAAAABQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJAQkBBQFzBgACIDIJAQYBAwkgcwYAID09IDLdEEIRHBAPbmNfc3VtbW9uX29yY19mCQEBAQ==
+SCTX
+    begin nc_summon_orc_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_orc_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    		  removeitem "nc_orc_pauldron_sk_f" 1
+                removeitem "nc_orc_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 15
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 15 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    		MessageBox "Вам нужен череп Орка для этого ритуала."
+    		set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_orc_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_orc_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_orc_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_orc_f
+    endif
+    
+    end
+    
 
 SCPT
 SCHD nc_summon_poison 16 0 0 2978 211
@@ -24812,6 +25617,85 @@ SCTX
     endif
     
     end
+
+SCPT
+SCHD nc_summon_redguard_f 6 0 0 1225 70
+SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
+SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABsgWP0QIG8TbmNfcmVkZ3VhcmRfc2t1bGxfZgAGARUJIHMFACA+PSAxBgEQCSBzAgAgPj0gMQYBCwkgcwMAID49IDEGAQYKIHMEACA+PSAxMNUQE25jX3JnX3BhdWxkcm9uX3NrX2YBANUQE25jX3JlZGd1YXJkX3NrdWxsX2YBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQEA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEBANUQEmluZ3JlZF9ib25lbWVhbF8wMQoABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDEwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLADC4Owg7fPm7fsg7uHw5efq6CDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQLQDC4Owg7fPm5e0g6vPx7uog6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAECsAwuDsIO3z5uXtIPfl8OXvINDl5OPg8OTgIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQYBEwkgcwYAID09IDEGAQQKIHMBACA8PSAxMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRDW5jX3JlZGd1YXJkX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAELCSBzAQAgPiAxMAYBBAogcwEAIDw9IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEPbmNfcmVkZ3VhcmRfMl9mAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAgBBAkgcwEAID4gMjACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQ9uY19yZWRndWFyZF8zX2YBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEJAQUBcwYAAiAyCQEGAQMJIHMGACA9PSAy3RBCERwQFG5jX3N1bW1vbl9yZWRndWFyZF9mCQEBAQ==
+SCTX
+    begin nc_summon_redguard_f
+    
+    short nc_pclevel
+    short nc_scrap_metal
+    short nc_netch_leather
+    short nc_bonemeal
+    short nc_skull
+    short state
+    
+    set nc_pclevel to nc_necro_skill
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_redguard_skull_f"
+    
+    
+    if ( nc_skull >= 1 )
+    	if ( nc_scrap_metal >= 1 )
+       	if ( nc_netch_leather >= 1 )
+          	if ( nc_bonemeal >= 10 )
+    		  removeitem "nc_rg_pauldron_sk_f" 1
+                removeitem "nc_redguard_skull_f" 1
+                removeitem "ingred_scrap_metal_01" 1
+                removeitem "ingred_netch_leather_01" 1
+                removeitem "ingred_bonemeal_01" 10
+                set state to 1
+             else
+                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                   set state to 2
+             endif
+    		else
+             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+                set state to 2
+          endif
+    	else
+          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+             set state to 2
+       endif
+    else
+    	MessageBox "Вам нужен череп Редгарда для этого ритуала."
+    	set state to 2
+    endif
+    
+    if ( state == 1 )
+    	if ( nc_pclevel <= 10 )
+    		PlaySound, "ThunderClap"
+    		"nc_rev_placer"->PlaceAtMe "nc_redguard_f" 1, 0, 0
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    	elseif ( nc_pclevel > 10 )
+    		if ( nc_pclevel <= 20 )	
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_redguard_2_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		elseif ( nc_pclevel > 20 )
+    			PlaySound, "ThunderClap"
+    			"nc_rev_placer"->PlaceAtMe "nc_redguard_3_f" 1, 0, 0
+    			set nc_necro_skill to ( nc_necro_skill + 1 )
+    			MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		endif
+    	endif
+    	set state to 2
+    endif
+    
+    if ( state == 2 )
+    	enableplayercontrols
+    	enableplayerlooking
+    	stopscript nc_summon_redguard_f
+    endif
+    
+    end
+    
 
 SCPT
 SCHD nc_time_bounty 4 0 4 1716 63
@@ -27386,14 +28270,14 @@ ANAM
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
-NPDT QwAyAABswwIAAAAA
+NPDT QwAyAAAlxgIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
 NPCO 1 nc_tragrilar_mantle
 NPCO 1 common_shirt_03_c
 NPCO 1 common_shoes_03
 NPCO 1 common_pants_03_b
-AIDT HgAeHgBswwIAAAAA
+AIDT HgAeHgAlxgIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BOOK
@@ -35924,7 +36808,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQByAPv/////+///QP///wECAAABAAAAZvr//2T///8BAQAA+////3H9//89////AQIAAPz///90/v//QP///wEEbWWdAQAAe/7//0D///8BAgAAUP7//3v+//9A////AQJpZff////6////QP///wEEAAD9////TwEAAED///8BA291nwEAAIYBAABA////AQIAAFn+//95AQAAQP///wECbmRL/v//MQAAAED///8BAwAAmgEAAD8AAABA////AQMAAA==
+PGRP /////2r6//86////AQBldPv/////+///QP///wECAAABAAAAZvr//2T///8BAWx0+////3H9//89////AQIAAPz///90/v//QP///wEEcGGdAQAAe/7//0D///8BAgAAUP7//3v+//9A////AQJlX/f////6////QP///wEEAAD9////TwEAAED///8BA2l2nwEAAIYBAABA////AQIAAFn+//95AQAAQP///wECbnNL/v//MQAAAED///8BAwAAmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -37551,7 +38435,7 @@ DATA wB1jwmgrpUXkO7XDAAAAAAAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAACAANsB
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAHr4ID7//+AEwAAu/7//wAC4OOA+///ABQAALv+//8AAeXiAPz//wARAABb/v//AAPg8AD8//+AEQAAWf7//wAD7SAA/P//ABIAAFn+//8AAvUgAPz//4ASAABZ/v//AALoIAD8//8AEwAAWf7//wAC8CwA/P//gBMAAFn+//8AAiDqAPz//wAUAABZ/v//AAHt4ID8//+AEAAAWf7//wAELSCA/P//ABEAAFn+//8ABPLlgPz//wASAABZ/f//AAMg6ID8//+AEgAAWf3//wAC/yCA/P//ABMAAFn+//8AAfLggPz//wATAABZ/f//AATg44D8//+AEwAAWf7//wAB7veA/P//gBMAAFn9//8AA/HyAP3//wAQAABZ/v//AAQg5QD9//+AEAAAWf7//wAEIO0A/f//gBEAAFn9//8AAujnAP3//wASAABZ/f//AAXzIAD9//+AEgAAWf3//wAI8CAA/f//ABMAAFn9//8AB+7sAP3//4ATAABZ/f//AAfl8AD9//8AFAAAWf3//wAGUj4A/f//gBQAAFn+//8AARcKAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAWF4gP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABeGWA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAhhdID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8AB2JhgP3//wAUAABZ/f//AAgAAID9//+AFAAAWf7//wABbCCA/f//gBQAAFn9//8ABwAAgP3//wAVAABZ/v//AAFlZYD9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AA3NpAP7//4AQAABZ/f//AAIAAAD+//+AEQAA6v3//wACBwAA/v//ABIAAFn9//8ABWUAAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHbGUA/v//gBMAAFn9//8ABwAAAP7//wAUAABZ/f//AAh0bAD+//+AFAAAWf3//wAIAAAA/v//ABUAAF7+//8AAhcKAP7//wAVAABZ/f//AAUAAID+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEZmaA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AARiAID+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACGFjgP7//wATAABZ/f//AAcAAID+//+AEwAAWf3//wAIIHeA/v//ABQAAFn9//8ABwAAgP7//4AUAABa/f//AAZlZYD+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABXN0AP///4AOAADZ/f//AAMAAAD///8ADwAA2f3//wADBgAA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAJmZgD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AA3dhAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHbiAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AARnaAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABmV1AP///wAVAABZ/v//AAMAAAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAW9uAP///4AVAABZ/f//AAMAAID///+A////AP///wADIHOA////AAAAAAD///8ABAAAgP///4AAAAAA////AARvboD///8AAQAACv///wABAACA////gAEAAAD///8ABGltgP///wACAAAA////AARvcoD///+AAgAAAP///wAEBACA////AAMAAAD///8ABW9ygP///4ADAAAA////AAQFAID///8ABAAAAP///wAEZQCA////gAQAAAD///8ABQAAgP///wAFAAAA////AAR5bYD///8ABgAAAP///wADAACA////gAYAAAD///8ABG5ngP///wAHAAAA////AAEAAID///+ABwAAAP///wADc2GA////AAgAAAD///8ABAAAgP///4AIAAAA////AARsIID///+ADgAA3v3//wAEAACA////AA8AANn9//8ABGVlgP///wAQAABZ/v//AAQAAID///+AEAAAWf3//wAFc3SA////ABEAAFz+//8AAgAAgP///wARAABZ/f//AAcGAID///+AEQAAv/7//wACbmGA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAF3b4D///8AEgAAWf3//wADAACA////gBIAAFn9//8ABHltgP///wATAABp/f//AAIAAID///+AEwAAef3//wADY2yA////ABQAAHn9//8AAwAAgP///4AUAABO/v//AAMXDID///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAdzd4D///+AFQAAWf7//wACAACA////gBUAAF/9//8AA3IAAAAAAID///8A////AAQAAAAAAAAAAAAAAP///wAHdG8AAAAAgAAAAAD///8ABQAAAAAAAAABAAAA////AAZobwAAAACAAQAAAP///wAFAAAAAAAAAAIAAAD///8ABCB3AAAAAIACAAAA////AAgAAAAAAAAAAwAAAP///wAHcGUAAAAAgAMAAAD///8ABmQAAAAAAAAEAAAA////AAVzdAAAAACABAAAAP///wAIAAAAAAAAAAUAAAD///8ABwYAAAAAAIAFAAAA////AAYAAAAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8AB3NoAAAAAAAHAAAA////AAcAAAAAAACABwAAAP///wAGZXIAAAAAAAgAAAD///8ACAAAAAAAAIAIAAAA////AAZobwAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAyBkAAAAAAAQAABZ/v//AAMAAAAAAACAEAAAWf7//wAGdmUAAAAAgBAAAFn9//8ABQAAAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHIGMAAAAAgBEAAFn+//8AAwAAAAAAAIARAABZ/f//AAZoXwAAAAAAEgAAzv7//wACcwAAAAAAABIAAFn9//8AA3RjAAAAAIASAABZ/f//AANlZAAAAAAAEwAAaf3//wABZnUAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUBAAAAAACAFAAATf7//wADdWkAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAVjdQAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABHNzgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADaW6AAAAAgAAAAAD///8ABAAAgAAAAAABAAAA////AARhbIAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AA3JpgAAAAIACAAAA////AAVvcoAAAAAAAwAAAP///wAEcGWAAAAAgAMAAAD///8ABHVpgAAAAAAEAAAA////AARzdIAAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQYAgAAAAIAFAAAA////AARhc4AAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABHNzgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFdWmAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAR1aYAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABF9jgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADc2iAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAIAAIAAAAAAEgAAvf7//wABIGeAAAAAABIAAF/9//8AAgAAgAAAAIASAABZ/f//AAVoX4AAAAAAEwAAZf3//wAEcwCAAAAAgBMAAHn9//8AA3JfgAAAAAAUAAB5/f//AAQAAIAAAACAFAAAYf3//wAFaXKAAAAAABUAAFn+//8AAgAAgAAAAAAVAABZ/f//AAcEAIAAAACAFQAAWf7//wACX2eAAAAAgBUAAF39//8ABAAAAAEAAIAOAAC6/v//AAFhdgABAAAADwAAWf7//wABAAAAAQAAgA8AAFn+//8ABHZlAAEAAAAQAABZ/v//AAQAAAABAACAEAAAWv7//wABX2cAAQAAgBAAAFn9//8ABQAAAAEAAAARAABZ/f//AAVfZwABAACAEQAAWf3//wADAAAAAQAAABIAAFn9//8ABnNoAAEAAIASAABZ/f//AAcAAAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABSBoAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHaF8AAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAZ0YwABAACAFQAAWf7//wABZWQAAQAAgBUAAFn9//8AA2Z1gAEAAIAPAAC7/v//AAIAAIABAAAAEAAAWf7//wADAQCAAQAAgBAAALv+//8AAQAAgAEAAIAQAABZ/f//AAMAAIABAAAAEQAAWf3//wADaGWAAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAhoYYABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACCBogAEAAAAUAABZ/f//AAgAAIABAACAFAAAWf3//wAHaGWAAQAAABUAAFn+//8AAgAAAAIAAAAQAABZ/v//AARsYgACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAmx2AAIAAIARAAC4/f//AAIAAAACAAAAEgAAWf3//wAEYm8AAgAAgBIAAFn9//8ABwAAAAIAAAATAABZ/f//AAgJAAACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAm0AgAIAAAAQAABZ/v//AAMAAIACAACAEAAAXf7//wADFwiAAgAAABEAAFH+//8AAW4ggAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFcl+AAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAZvboACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABWF0gAIAAAAUAABZ/f//AAVpZ4ACAACAFAAAWf7//wACdWyAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AARpbgADAAAAEQAAu/7//wABZ2gAAwAAgBEAAFn+//8AAW9uAAMAAIARAABZ/f//AAJ0AAADAAAAEgAAWf3//wAFaXIAAwAAgBIAAFn9//8ABGZ0AAMAAAATAADV/f//AAEEAAADAACAEwAA1P3//wABX3AAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AANodAADAACAFAAAWf3//wACAACAAwAAgBAAAFv+//8AA2hhgAMAAAARAABZ/v//AARmdIADAACAEQAAWf7//wAEIGyAAwAAABMAALr+//8AAwAAgAMAAIATAAC7/v//AAFwYQAEAAAAEQAAu/7//wABAAAABAAAgBEAAFn+//8AA2xfAAQAAAASAABZ/v//AAMAAAAEAACAEgAAWf7//wADbmUABAAAABMAAFn+//8AAnIAAAQAAIATAABZ/v//AANibwAEAAAAFAAAfP7//wADbl8ABAAAgBQAAKX+//8ABAkAAAQAAAAVAADT/v//AARuX4AEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABHJvgAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADbGQABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AANhdYAFAAAAFgAATf///wACAAAABgAAABYAAFn///8AARcIgAYAAAAUAABZ////AARzaIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABWQAgAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFaGWABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAVvd4AGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABF9sAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFX3MABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAdwZQAHAACAFAAAWf///wAIAAAABwAAABUAAFkAAAAAA3N0AAcAAAAVAABZ////AAcAAAAHAACAFQAAWf///wAHBgAABwAAABYAAFsAAAAABGxkAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADaWUABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAANycwAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACF9zAAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGbGQABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AANnaIAHAAAAEwAAWQAAAAADAACABwAAABMAAFn///8ABGVtgAcAAIATAABZ////AAcAAIAHAAAAFAAAWf///wAIb3KABwAAgBQAAFn///8AB2xkgAcAAAAVAABcAAAAAAUPAIAHAAAAFQAAWf///wAIIHeABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAdiaYAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABW9ugAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHaXKABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgFAIAHAACAFwAAWQAAAAAGbGWABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAV4ZYAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABmRhgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEYXKABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAN2aQAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABGwgAAgAAIATAABZ////AAhwIAAIAAAAFAAAXAAAAAAEb2MACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAVzaQAIAACAFAAAWf///wAHAAAACAAAABUAAFwAAAAABwcAAAgAAAAVAABZ////AAhlAAAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABmF4AAgAAAAWAABZAAAAAAijAAAIAACAFgAAWQAAAAAIbWUACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAhvZgAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACGl0AAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIbGUACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAhlbgAIAACAGAAAWf///wAHAAAACAAAABkAAFkAAAAABWxhAAgAAAAZAABZ////AAcAAAAIAACAGQAAWf///wAEEACACAAAABMAAJkAAAAAAiBzgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIZW6ACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAhvZIAIAACAFAAAWQAAAAAHYWOACAAAgBQAAFn///8ACHdvgAgAAAAVAABZAAAAAAhzaIAIAAAAFQAAWf///wAIAgCACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGIG+ACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAZmZoAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAAB3JkgAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIcGGACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAggZoAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAAB29ugAgAAIAYAABZ////AAcAAIAIAAAAGQAAWQAAAAAEaXKACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUFAAAJAAAAEwAAWf///wAFZXIACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAhhYwAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACGRtAAkAAIAUAABZAAAAAAcAAAAJAACAFAAAWf///wAIYXIACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAZmbAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8AB2wgAAkAAAAWAABZ////AAYAAAAJAACAFgAAWf///wAHZWUACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAdzdAAJAACAFwAAWQAAAAAHcgAACQAAgBcAAFn///8ACAcAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABGF1AAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIZiAACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAJhZoAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAnN0gAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGbCCACQAAgBQAAFkAAAAABWVugAkAAIAUAABZ////AAdlZYAJAAAAFQAAWQAAAAAHaW6ACQAAABUAAFn///8AB3NogAkAAIAVAABZAAAAAAYAAIAJAAAAFgAAWf///wADBwCACQAAABcAAFkAAAAABWFtgAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFIG+ACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAVmZoAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABnRhgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACYWsACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AANsIAAKAACAFAAAWf///wAEbWkACgAAABUAAFkAAAAABGx2AAoAAAAVAABZ////AARjawAKAACAFQAAWQAAAAAEc2kACgAAgBUAAFn///8AAnBlAAoAAAAWAABZAAAAAAUJAAAKAAAAFgAAWf///wADAAAACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AA2YgAAoAAIAXAABZ////AAVycwAKAAAAGAAAWf///wAEdWQACgAAgBgAAFn///8AAXN0AAoAAAAZAABZ////AAJtZQAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AA3RpgAoAAAAVAAA4AAAAAAIAAIAKAAAAFQAAWf///wAEYWaACgAAgBUAAFoAAAAAA2F0gAoAAIAVAABZ////AARkZYAKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8ABxIAgAoAAIAWAABZAAAAAAVvboAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAiBzgAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFb24ACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAJpcgALAAAAFQAAWf///wAFAAAACwAAgBUAAFkAAAAABAUAAAsAAIAVAABZ////AAVlcgALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABWF5AAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEc3cACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAR0ZQALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABGxhAAsAAIAYAABZ////AAIAAA==
+PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACAACA+///ABQAALv+//8AAQAAAPz//wARAABb/v//AAMAAAD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgAAAPz//4ASAABZ/v//AAIAAAD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAgAAAPz//wAUAABZ/v//AAEAAID8//+AEAAAWf7//wAEAACA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AAMAAID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABAACA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AAQAAAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgAAAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAgAAID9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8ABwAAgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAIAAAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQAAAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8ABwAAAP7//wAUAABZ/f//AAgAAAD+//+AFAAAWf3//wAIAAAA/v//ABUAAF7+//8AAgAAAP7//wAVAABZ/f//AAUAAID+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEAACA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AAQAAID+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAcAAID+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8ABwAAgP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMAAAD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AAwAAAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AAMAAAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQAAAP///4AVAABZ/f//AAMAAID///+A////AP///wADAACA////AAAAAAD///8ABAAAgP///4AAAAAA////AAQAAID///8AAQAACv///wABAACA////gAEAAAD///8ABAAAgP///wACAAAA////AAQAAID///+AAgAAAP///wAEAACA////AAMAAAD///8ABQAAgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEAACA////gAQAAAD///8ABQAAgP///wAFAAAA////AAQAAID///8ABgAAAP///wADAACA////gAYAAAD///8ABAAAgP///wAHAAAA////AAEAAID///+ABwAAAP///wADAACA////AAgAAAD///8ABAAAgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEAACA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AAQAAID///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAgAAgP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACAACA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABAAAgP///wATAABp/f//AAIAAID///+AEwAAef3//wADAACA////ABQAAHn9//8AAwAAgP///4AUAABO/v//AAMAAID///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAcAAID///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwAAAAAAAID///8A////AAQAAAAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABQAAAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFAAAAAAAAAAIAAAD///8ABAAAAAAAAIACAAAA////AAgAAAAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABgAAAAAAAAAEAAAA////AAUAAAAAAACABAAAAP///wAIAAAAAAAAAAUAAAD///8ABwAAAAAAAIAFAAAA////AAYAAAAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAcAAAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACAAAAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAMAAAAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABQAAAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AAwAAAAAAAIARAABZ/f//AAYAAAAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwAAAAAAAIASAABZ/f//AAMAAAAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAUAAAAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAAAgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABAAAgAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAUAAIAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABAAAgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AAQAAIAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAIAAIAAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAgAAgAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwAAgAAAAAAUAAB5/f//AAQAAIAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAgAAgAAAAAAVAABZ/f//AAcAAIAAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABAAAAAEAAIAOAAC6/v//AAEAAAABAAAADwAAWf7//wABAAAAAQAAgA8AAFn+//8ABAAAAAEAAAAQAABZ/v//AAQAAAABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABQAAAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADAAAAAQAAABIAAFn9//8ABgAAAAEAAIASAABZ/f//AAcAAAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQAAAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAYAAAABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIAAIABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAQAAgAEAAIAQAABZ/f//AAMAAIABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAgAAIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAgAAAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAIAAAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8ABwAAAAIAAAATAABZ/f//AAgAAAACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AAMAAIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAQAAgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAYAAIACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABQAAgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACAACAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AAQAAAADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAIAAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAEAAAADAACAEwAA1P3//wABAAAAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AAMAAAADAACAFAAAWf3//wACAACAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AAQAAIADAACAEQAAWf7//wAEAACAAwAAABMAALr+//8AAwAAgAMAAIATAAC7/v//AAEAAAAEAAAAEQAAu/7//wABAAAABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AAMAAAAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAgAAAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADAAAABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AAQAAIAEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABAAAgAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACAAAABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AAQAAIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFAACABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAUAAIAGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIAAAABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAcAAAAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABAAAAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADAAAABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADAACABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAcAAIAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8ABwAAgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIAACABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcAAIAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGAACABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAUAAIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEAACABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMAAAAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAgAAAAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHAAAACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAgAAAAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAgAAAAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHAAAACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAcAAAAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAgAAgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIAACACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIAACACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGAACACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAYAAIAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAcAAIAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFAAAACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAgAAAAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAcAAAAJAACAFAAAWf///wAIAAAACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYAAAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAAAAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHAAAACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAIAAIAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGAACACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAAIAJAAAAFQAAWQAAAAAHAACACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAYAAIAJAAAAFgAAWf///wADAACACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFAACACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAUAAIAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACAAAACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEAAAACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAAAAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADAAAACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAUAAAAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAIAAIAKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUAAIAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAIAAAALAAAAFQAAWf///wAFAAAACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUAAAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEAAAACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAQAAAALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAAA==
 PGRC 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SwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA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MQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
 
 DIAL
