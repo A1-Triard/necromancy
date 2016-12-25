@@ -311,7 +311,7 @@ NPCS immune to shock
 
 RACE
 NAME nc_dead_imp
-FNAM 
+FNAM \0
 RADT BAAAAAUAAAAaAAAABQAAABUAAAAFAAAABQAAAAoAAAAYAAAACgAAABkAAAAKAAAA/////wAAAAAoAAAAKAAAACgAAAAoAAAAHgAAACgAAAAeAAAAHgAAACgAAAAeAAAAKAAAACgAAAAyAAAAMgAAACgAAAAoAAAAAACAPwAAgD8AAKA/MzNzPwAAAAA=
 
 RACE
@@ -20848,8 +20848,8 @@ SCTX
     
 
 SSCR
-DATA MTI2MzMxNDQzMjE4NTE2Mjc1NDI=
-NAME nc_real_startscript%
+DATA 12633144321851627542%
+NAME nc_real_startscript
 
 SPEL
 NAME nc_skull_spell
@@ -21897,7 +21897,7 @@ RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_argonianskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_arg
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -21914,7 +21914,7 @@ RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_bret
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_bret
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -21931,7 +21931,7 @@ RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_de
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_de
 NPDT CgBkAgBaLHUAAAAA
 FLAG 2072
@@ -21948,7 +21948,7 @@ RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
 BNAM nc_Skel_M_Head_he
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_he
 NPDT CgA7UEAyJTUtKAYGBicGGCcGBiw6NhQ2Ig8sDwYGBgYGGAYGBgBTAKAA4gBkAgAAAAAAAA==
 FLAG 1032
@@ -21980,7 +21980,7 @@ RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_imp
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_imp
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -21998,7 +21998,7 @@ RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
 BNAM nc_khajiitskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_kha
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22015,7 +22015,7 @@ RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_nord
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22032,7 +22032,7 @@ RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_rg
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_rg
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22049,7 +22049,7 @@ RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_orcskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_orc
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22066,7 +22066,7 @@ RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
 BNAM nc_Skel_M_Head_we
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_we
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22083,7 +22083,7 @@ RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
 BNAM nc_Skel_M_Head_we
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_we
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22100,7 +22100,7 @@ RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
 BNAM nc_Skel_M_Head_we
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_we
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22117,7 +22117,7 @@ RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_rg
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_rg
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22134,7 +22134,7 @@ RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_rg
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_rg
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22151,7 +22151,7 @@ RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_orcskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_orc
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22168,7 +22168,7 @@ RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_orcskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_orc
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22185,7 +22185,7 @@ RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_nord
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22202,7 +22202,7 @@ RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_nord
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22220,7 +22220,7 @@ RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
 BNAM nc_khajiitskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_kha
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22238,7 +22238,7 @@ RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
 BNAM nc_khajiitskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_kha
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22255,7 +22255,7 @@ RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_imp
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_imp
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22272,7 +22272,7 @@ RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_imp
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_imp
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22289,7 +22289,7 @@ RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
 BNAM nc_Skel_M_Head_he
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_he
 NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwCCAMgAKwFkAgAAAAAAAA==
 FLAG 1032
@@ -22323,7 +22323,7 @@ RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
 BNAM nc_Skel_M_Head_he
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_he
 NPDT HgBkZGRINVE5KAgICDsILDsICEpYVCBUQBtKGwgICAgILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 1032
@@ -22364,7 +22364,7 @@ RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_de
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_de
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22381,7 +22381,7 @@ RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_de
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_de
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22398,7 +22398,7 @@ RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_bret
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_bret
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22415,7 +22415,7 @@ RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_M_Head_bret
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_bret
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22433,7 +22433,7 @@ RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_argonianskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_arg
 NPDT FABkAgBaLHUAAAAA
 FLAG 1048
@@ -22451,7 +22451,7 @@ RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_argonianskull
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_arg
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1048
@@ -22521,19 +22521,19 @@ ANAM Door Stone Close
 ACTI
 NAME nc_cave_entrance_lava
 MODL barabus\\bar_ex_archentry.NIF
-FNAM 
+FNAM \0
 SCRI nc_crypt_visible
 
 ACTI
 NAME nc_bar_crypt01
 MODL barabus\\bar_crypt01.NIF
-FNAM 
+FNAM \0
 SCRI nc_crypt_visible
 
 ACTI
 NAME nc_Terrain_rock_MA_51
 MODL x\\Terrain_rock_MA_51.nif
-FNAM 
+FNAM \0
 SCRI nc_crypt_visible
 
 DOOR
@@ -22549,9 +22549,9 @@ NAME nc_orc_start
 FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM Warrior
-ANAM 
+ANAM \0
 BNAM nc_orcskull
-KNAM 
+KNAM \0
 SCRI nc_start_revenant
 NPDT CgBPJTk0LFIjKDosOjoiMCYiMAYGBgYGBgYGBgYGBgYGRAYGBgCGAEoADgEyAAAAAAAAAA==
 FLAG 1032
@@ -22582,19 +22582,19 @@ SCRI nc_start_skull
 ACTI
 NAME nc_inviso_floor
 MODL EditorMarker_box_01.nif
-FNAM 
+FNAM \0
 SCRI nc_crypt_visible
 
 ACTI
 NAME NC_De_Docks_Steps
 MODL x\\Ex_De_Docks_Steps.nif
-FNAM 
+FNAM \0
 SCRI nc_crypt_visible
 
 ACTI
 NAME nc_De_Docks_EndS
 MODL x\\Ex_De_Docks_EndS.nif
-FNAM 
+FNAM \0
 SCRI nc_crypt_visible
 
 LIGH
@@ -22615,7 +22615,7 @@ NAME nc_Tragrilar
 FNAM Трагрилар
 RNAM High Elf
 CNAM Necromancer
-ANAM 
+ANAM \0
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
@@ -22659,7 +22659,7 @@ TEXT
     Череп<BR>
     Рулон ткани определенного цвета<BR>
     <BR>
-    Все это я кладу в котел и читаю заклинание. Как можно видеть камень душ не требуется. Можно создать огненного, ледяного и ядовитого слугу.<BR>
+    Все это я кладу в котел и читаю заклинание. Как можно видеть камень душ не требуется. Можно создать огненного, ледяного и ядовитого слугу.<BR>\0
 
 BODY
 NAME nc_dead_farg_head
@@ -23133,9 +23133,9 @@ MODL base_animKnA.nif
 FNAM Скелет аргонианина
 RNAM Argonian Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_argonian_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23147,9 +23147,9 @@ NAME nc_bret_skelly_NPC
 FNAM Скелет бретона
 RNAM Breton Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_breton_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23161,9 +23161,9 @@ NAME nc_de_skelly_NPC
 FNAM Скелет данмера
 RNAM Dark Elf Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_dunmer_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23175,9 +23175,9 @@ NAME nc_he_skelly_NPC
 FNAM Скелет альтмера
 RNAM High Elf Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_altmer_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23189,9 +23189,9 @@ NAME nc_imp_skelly_NPC
 FNAM Скелет имперца
 RNAM Imperial Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_imperial_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23204,9 +23204,9 @@ MODL base_animKnA.nif
 FNAM Скелет хаджита
 RNAM Khajiit Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_khajiit_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23218,9 +23218,9 @@ NAME nc_nord_skelly_NPC
 FNAM Скелет норда
 RNAM Nord Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_nord_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23232,9 +23232,9 @@ NAME nc_orc_skelly_NPC
 FNAM Скелет орка
 RNAM Orc Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_orc_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23246,9 +23246,9 @@ NAME nc_rg_skelly_NPC
 FNAM Скелет редгарда
 RNAM Redguard Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_rg_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23260,9 +23260,9 @@ NAME nc_we_skelly_NPC
 FNAM Скелет босмера
 RNAM Wood Elf Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_bosmer_sk
-KNAM 
+KNAM \0
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
@@ -23331,9 +23331,9 @@ NAME nc_guard_rev
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM Fire Warlord
-ANAM 
+ANAM \0
 BNAM nc_Skel_M_Head_he
-KNAM 
+KNAM \0
 NPDT DAA/VEY0JzcvKAYGBikGGikGBi4+OBY4JBEuEQYGBhQGGgYGBgBcAKgA8AAyAAAAAAAAAA==
 FLAG 8
 NPCO 1 iron war axe
@@ -23365,7 +23365,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 ACTI
 NAME nc_ghost_activator
 MODL EditorMarker_box_01.nif
-FNAM 
+FNAM \0
 SCRI nc_ghost_scare
 
 CREA
@@ -23422,7 +23422,7 @@ FNAM Тряпки
 AODT AAAAAAAAgD8BAAAAZAAAAGQAAAACAAAA
 ITEX blas\\rags.tga
 INDX 0
-BNAM nc_mummyhead%
+BNAM nc_mummyhead
 
 BODY
 NAME nc_poison_mummy_shirt
@@ -23442,8 +23442,8 @@ FNAM Мумифицированный слуга
 RNAM nc_poison_warlord
 CNAM Poison Warlord
 ANAM Revenant
-BNAM 
-KNAM 
+BNAM \0
+KNAM \0
 SCRI nc_comp3Script_pwar
 NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQBkAgAAAAAAAA==
 FLAG 8
@@ -23471,7 +23471,7 @@ CTDT AgAAAAAAgEABAGQA
 ITEX blas\\rags.dds
 INDX 12
 BNAM
-    nc_poison_mummy_shirt
+    nc_poison_mummy_shirt\0
 
 CLOT
 NAME nc_p_mummy_pants
@@ -23481,7 +23481,7 @@ CTDT AAAAAAAAwEABAGQA
 ITEX blas\\rags.dds
 INDX 4
 BNAM
-    nc_poison_mummy_pants
+    nc_poison_mummy_pants\0
 
 BODY
 NAME nc_fire_mummy_pants
@@ -23515,7 +23515,7 @@ CTDT AAAAAAAAwEABAGQA
 ITEX blas\\rags.dds
 INDX 4
 BNAM
-    nc_fire_mummy_pants
+    nc_fire_mummy_pants\0
 
 CLOT
 NAME nc_fr_mummy_pants
@@ -23525,7 +23525,7 @@ CTDT AAAAAAAAwEABAGQA
 ITEX blas\\rags.dds
 INDX 4
 BNAM
-    nc_frost_mummy_pants
+    nc_frost_mummy_pants\0
 
 CLOT
 NAME nc_f_mummy_shirt
@@ -23535,7 +23535,7 @@ CTDT AgAAAAAAgEABAGQA
 ITEX blas\\rags.dds
 INDX 12
 BNAM
-    nc_fire_mummy_shirt
+    nc_fire_mummy_shirt\0
 
 CLOT
 NAME nc_fr_mummy_shirt
@@ -23545,7 +23545,7 @@ CTDT AgAAAAAAgEABAGQA
 ITEX blas\\rags.dds
 INDX 12
 BNAM
-    nc_frost_mummy_shirt
+    nc_frost_mummy_shirt\0
 
 NPC_
 NAME nc_f_warlord
@@ -23554,7 +23554,7 @@ RNAM nc_fire_warlord
 CNAM Fire Warlord
 ANAM Revenant
 BNAM nc_fire_head
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_fwar
 NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQBkAgAAAAAAAA==
 FLAG 8
@@ -23580,7 +23580,7 @@ RNAM nc_frost_warlord
 CNAM Frost Warlord
 ANAM Revenant
 BNAM nc_frost_head
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_frwar
 NPDT KABkZGRINVE5KAgIPDwILDsICEpYVCBUQBtKPAgICDwILAgICACxAMgAYQBkAgAAAAAAAA==
 FLAG 8
@@ -23718,8 +23718,8 @@ SCRI nc_pauldron_altmer_script
 AODT AgAAAAAAL0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_he.dds
 INDX 24
-BNAM nc_altmer_carry%
-CNAM nc_altmerf_carry%
+BNAM nc_altmer_carry
+CNAM nc_altmerf_carry
 
 ARMO
 NAME nc_arg_pauldron
@@ -23729,8 +23729,8 @@ SCRI nc_pauldron_arg_script
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_ar.dds
 INDX 24
-BNAM nc_arg_carry%
-CNAM nc_argf_carry%
+BNAM nc_arg_carry
+CNAM nc_argf_carry
 
 ARMO
 NAME nc_bosmer_pauldron
@@ -23740,8 +23740,8 @@ SCRI nc_pauldron_bosmer_script
 AODT AgAAAAAA+kIAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_dunmer_pauldron
@@ -23751,8 +23751,8 @@ SCRI nc_pauldron_dunmer_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_de.dds
 INDX 24
-BNAM nc_dunmer_carry%
-CNAM nc_dunmerf_carry%
+BNAM nc_dunmer_carry
+CNAM nc_dunmerf_carry
 
 ARMO
 NAME nc_breton_pauldron
@@ -23762,8 +23762,8 @@ SCRI nc_pauldron_br_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_imperial_pauldron
@@ -23773,8 +23773,8 @@ SCRI nc_pauldron_imp_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_nord_pauldron
@@ -23784,8 +23784,8 @@ SCRI nc_pauldron_nord_script
 AODT AgAAAAAAOUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_khajiit_pauldron
@@ -23795,8 +23795,8 @@ SCRI nc_pauldron_kh_script
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_kh.dds
 INDX 24
-BNAM nc_khajiit_carry%
-CNAM nc_khajiitf_carry%
+BNAM nc_khajiit_carry
+CNAM nc_khajiitf_carry
 
 ARMO
 NAME nc_orc_pauldron
@@ -23806,8 +23806,8 @@ SCRI nc_pauldron_orc_script
 AODT AgAAAAAAQ0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_or.dds
 INDX 24
-BNAM nc_orc_carry%
-CNAM nc_orcf_carry%
+BNAM nc_orc_carry
+CNAM nc_orcf_carry
 
 ARMO
 NAME nc_rg_pauldron
@@ -23817,8 +23817,8 @@ SCRI nc_pauldron_rg_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_rg.dds
 INDX 24
-BNAM nc_rg_carry%
-CNAM nc_rgf_carry%
+BNAM nc_rg_carry
+CNAM nc_rgf_carry
 
 BODY
 NAME nc_skelly_carry
@@ -23917,8 +23917,8 @@ SCRI nc_he_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_arg_pauldron_sk
@@ -23928,8 +23928,8 @@ SCRI nc_arg_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_bosmer_pauldron_sk
@@ -23939,8 +23939,8 @@ SCRI nc_we_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_dunmer_pauldron_sk
@@ -23950,8 +23950,8 @@ SCRI nc_de_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_imperial_pauldron_sk
@@ -23961,8 +23961,8 @@ SCRI nc_imp_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_khajiit_pauldron_sk
@@ -23972,8 +23972,8 @@ SCRI nc_khajiit_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_nord_pauldron_sk
@@ -23983,8 +23983,8 @@ SCRI nc_nord_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_orc_pauldron_sk
@@ -23994,8 +23994,8 @@ SCRI nc_orc_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_rg_pauldron_sk
@@ -24005,8 +24005,8 @@ SCRI nc_rg_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_breton_pauldron_sk
@@ -24016,8 +24016,8 @@ SCRI nc_breton_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 CLOT
 NAME nc_control_ring_ring
@@ -24032,9 +24032,9 @@ NAME nc_start_skelly
 FNAM Скелет
 RNAM Dark Elf Revenant
 CNAM Assassin
-ANAM 
+ANAM \0
 BNAM nc_Skel_M_Head_de
-KNAM 
+KNAM \0
 SCRI nc_start_skelly_script
 NPDT AwAyAAA8bQAAAAAA
 FLAG 24
@@ -24057,7 +24057,7 @@ TEXT
     <DIV ALIGN="LEFT"><FONT COLOR="000000" SIZE="3" FACE="Magic Cards">
     %PCName,
     <BR>
-    Твоя судьба ждет.  Поспеши в Сулипунд и следуй за запахом смерти.<br>
+    Твоя судьба ждет.  Поспеши в Сулипунд и следуй за запахом смерти.<br>\0
 
 CONT
 NAME nc_sarcophagus
@@ -24195,7 +24195,7 @@ NAME nc_test_zombie
 FNAM Тест
 RNAM nc_poison_warlord
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_zombie_head
 KNAM nc_skinm_hair
 NPDT AQAyMjI8MjwyMgUFBQ8FBQUPKAUPDwoFBQUFHgojI1UKLQoUFAA3AGQA3AAyAAAAAAAAAA==
@@ -24214,8 +24214,8 @@ SCRI nc_pauldron_fire_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_fire_corpse.dds
 INDX 24
-BNAM nc_rg_carry%
-CNAM nc_rgf_carry%
+BNAM nc_rg_carry
+CNAM nc_rgf_carry
 
 ARMO
 NAME nc_frost_pauldron
@@ -24225,8 +24225,8 @@ SCRI nc_pauldron_frost_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_frost_corpse.dds
 INDX 24
-BNAM nc_dunmer_carry%
-CNAM nc_dunmerf_carry%
+BNAM nc_dunmer_carry
+CNAM nc_dunmerf_carry
 
 ARMO
 NAME nc_poison_pauldron
@@ -24236,8 +24236,8 @@ SCRI nc_pauldron_poison_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_poison_corpse.dds
 INDX 24
-BNAM nc_orc_carry%
-CNAM nc_orcf_carry%
+BNAM nc_orc_carry
+CNAM nc_orcf_carry
 
 BODY
 NAME nc_frost_head
@@ -24397,7 +24397,7 @@ BYDT AwAAAA==
 
 LIGH
 NAME nc_white_128_01
-MODL 
+MODL \0
 LHDT AAAAAAAAAAD/////AAEAAP///wAAAAAA
 
 CONT
@@ -24414,7 +24414,7 @@ NPCO 4294967295 misc_clothbolt_03
 ACTI 4398046511104
 NAME nc_rev_placer
 MODL EditorMarker.NIF
-FNAM 
+FNAM \0
 
 BODY
 NAME nc_tragrilar_head
@@ -24436,7 +24436,7 @@ CTDT BAAAAAAAQEAQJ2QA
 ITEX c\\tx_robe_extrav_1.tga
 INDX 3
 BNAM
-    c_m_robe_extrav_1
+    c_m_robe_extrav_1\0
 INDX 18
 INDX 17
 ENAM bmNfdHJhZ3JpbGFyX21hbnRsZV9lbgA=
@@ -24458,7 +24458,7 @@ RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_argonianskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_arg
 NPDT CgBkAgDzTQAAAAAA
 FLAG 1049
@@ -24476,7 +24476,7 @@ RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_argonianskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_arg
 NPDT FABkAgDzTQAAAAAA
 FLAG 1049
@@ -24494,7 +24494,7 @@ RNAM Argonian Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_argonianskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_arg
 NPDT HgBkAgDzTQAAAAAA
 FLAG 1049
@@ -24511,7 +24511,7 @@ RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_bret
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_bret
 NPDT CgBkAgDzTQAAAAAA
 FLAG 1049
@@ -24528,7 +24528,7 @@ RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_bret
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_bret
 NPDT FABkAgDzTQAAAAAA
 FLAG 1049
@@ -24545,7 +24545,7 @@ RNAM Breton Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_bret
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_bret
 NPDT HgBkAgDzTQAAAAAA
 FLAG 1049
@@ -24562,7 +24562,7 @@ RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_de
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_de
 NPDT CgBkAgDzTQAAAAAA
 FLAG 2073
@@ -24579,7 +24579,7 @@ RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_de
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_de
 NPDT FABkAgDzTQAAAAAA
 FLAG 1049
@@ -24596,7 +24596,7 @@ RNAM Dark Elf Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_de
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_de
 NPDT HgBkAgDzTQAAAAAA
 FLAG 1049
@@ -25273,7 +25273,7 @@ RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
 BNAM nc_Skel_F_Head_he
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_he
 NPDT CgA7UEAyJTUtKAYGBicGGCcGBiw6NhQ2Ig8sDwYGBgYGGAYGBgBTAKAA4gBkAgAAAAAAAA==
 FLAG 1033
@@ -25305,7 +25305,7 @@ RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
 BNAM nc_Skel_F_Head_he
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_he
 NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwCCAMgAKwFkAgAAAAAAAA==
 FLAG 1033
@@ -25339,7 +25339,7 @@ RNAM High Elf Revenant
 CNAM Battlemage
 ANAM Revenant
 BNAM nc_Skel_F_Head_he
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_he
 NPDT HgBkZGRINVE5KAgICDsILDsICEpYVCBUQBtKGwgICAgILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 1033
@@ -25380,7 +25380,7 @@ RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_imp
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_imp
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25397,7 +25397,7 @@ RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_imp
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_imp
 NPDT FABkAgBaLHUAAAAA
 FLAG 1049
@@ -25414,7 +25414,7 @@ RNAM Imperial Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_imp
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_imp
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25431,7 +25431,7 @@ RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
 BNAM nc_khajiitskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_kha
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25448,7 +25448,7 @@ RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
 BNAM nc_khajiitskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_kha
 NPDT FABkAgBaLHUAAAAA
 FLAG 1049
@@ -25465,7 +25465,7 @@ RNAM Khajiit Revenant
 CNAM Assassin
 ANAM Revenant
 BNAM nc_khajiitskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_kha
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25482,7 +25482,7 @@ RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_nord
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_nord
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25499,7 +25499,7 @@ RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_nord
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_nord
 NPDT FABkAgBaLHUAAAAA
 FLAG 1049
@@ -25516,7 +25516,7 @@ RNAM Nord Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_nord
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_nord
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25533,7 +25533,7 @@ RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_orcskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_orc
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25550,7 +25550,7 @@ RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_orcskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_orc
 NPDT FABkAgBaLHUAAAAA
 FLAG 1049
@@ -25567,7 +25567,7 @@ RNAM Orc Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_orcskull_f
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_orc
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25584,7 +25584,7 @@ RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_rg
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_rg
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25601,7 +25601,7 @@ RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_rg
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_rg
 NPDT FABkAgBaLHUAAAAA
 FLAG 1049
@@ -25618,7 +25618,7 @@ RNAM Redguard Revenant
 CNAM Warrior
 ANAM Revenant
 BNAM nc_Skel_F_Head_rg
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_rg
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25635,7 +25635,7 @@ RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
 BNAM nc_Skel_F_Head_we
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_we
 NPDT CgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25652,7 +25652,7 @@ RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
 BNAM nc_Skel_F_Head_we
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_we
 NPDT FABkAgBaLHUAAAAA
 FLAG 1049
@@ -25669,7 +25669,7 @@ RNAM Wood Elf Revenant
 CNAM Archer
 ANAM Revenant
 BNAM nc_Skel_F_Head_we
-KNAM 
+KNAM \0
 SCRI nc_comp3Script_we
 NPDT HgBkAgBaLHUAAAAA
 FLAG 1049
@@ -25687,8 +25687,8 @@ SCRI nc_pauldron_altmer_script_f
 AODT AgAAAAAAL0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_he.dds
 INDX 24
-BNAM nc_altmer_carry%
-CNAM nc_altmerf_carry%
+BNAM nc_altmer_carry
+CNAM nc_altmerf_carry
 
 ARMO
 NAME nc_arg_pauldron_f
@@ -25698,8 +25698,8 @@ SCRI nc_pauldron_arg_script_f
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_ar.dds
 INDX 24
-BNAM nc_arg_carry%
-CNAM nc_argf_carry%
+BNAM nc_arg_carry
+CNAM nc_argf_carry
 
 ARMO
 NAME nc_bosmer_pauldron_f
@@ -25709,8 +25709,8 @@ SCRI nc_pauldron_bosmer_script_f
 AODT AgAAAAAA+kIAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_breton_pauldron_f
@@ -25720,8 +25720,8 @@ SCRI nc_pauldron_br_script_f
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_dunmer_pauldron_f
@@ -25731,8 +25731,8 @@ SCRI nc_pauldron_dunmer_script_f
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_de.dds
 INDX 24
-BNAM nc_dunmer_carry%
-CNAM nc_dunmerf_carry%
+BNAM nc_dunmer_carry
+CNAM nc_dunmerf_carry
 
 ARMO
 NAME nc_imperial_pauldron_f
@@ -25742,8 +25742,8 @@ SCRI nc_pauldron_imp_script_f
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_khajiit_pauldron_f
@@ -25753,8 +25753,8 @@ SCRI nc_pauldron_kh_script_f
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_kh.dds
 INDX 24
-BNAM nc_khajiit_carry%
-CNAM nc_khajiitf_carry%
+BNAM nc_khajiit_carry
+CNAM nc_khajiitf_carry
 
 ARMO
 NAME nc_nord_pauldron_f
@@ -25764,8 +25764,8 @@ SCRI nc_pauldron_nord_script_f
 AODT AgAAAAAAOUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
 INDX 24
-BNAM nc_human_carry%
-CNAM nc_humanf_carry%
+BNAM nc_human_carry
+CNAM nc_humanf_carry
 
 ARMO
 NAME nc_orc_pauldron_f
@@ -25775,8 +25775,8 @@ SCRI nc_pauldron_orc_script_f
 AODT AgAAAAAAQ0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_or.dds
 INDX 24
-BNAM nc_orc_carry%
-CNAM nc_orcf_carry%
+BNAM nc_orc_carry
+CNAM nc_orcf_carry
 
 ARMO
 NAME nc_rg_pauldron_f
@@ -25786,8 +25786,8 @@ SCRI nc_pauldron_rg_script_f
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_rg.dds
 INDX 24
-BNAM nc_rg_carry%
-CNAM nc_rgf_carry%
+BNAM nc_rg_carry
+CNAM nc_rgf_carry
 
 ARMO
 NAME nc_altmer_pauldron_sk_f
@@ -25797,8 +25797,8 @@ SCRI nc_he_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_arg_pauldron_sk_f
@@ -25808,8 +25808,8 @@ SCRI nc_arg_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_bosmer_pauldron_sk_f
@@ -25819,8 +25819,8 @@ SCRI nc_we_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_breton_pauldron_sk_f
@@ -25830,8 +25830,8 @@ SCRI nc_breton_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_dunmer_pauldron_sk_f
@@ -25841,8 +25841,8 @@ SCRI nc_de_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_imperial_pauldron_sk_f
@@ -25852,8 +25852,8 @@ SCRI nc_imp_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_khajiit_pauldron_sk_f
@@ -25863,8 +25863,8 @@ SCRI nc_khajiit_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_nord_pauldron_sk_f
@@ -25874,8 +25874,8 @@ SCRI nc_nord_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_orc_pauldron_sk_f
@@ -25885,8 +25885,8 @@ SCRI nc_orc_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 ARMO
 NAME nc_rg_pauldron_sk_f
@@ -25896,8 +25896,8 @@ SCRI nc_rg_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
 INDX 24
-BNAM nc_skelly_carry%
-CNAM nc_skellyf_carry%
+BNAM nc_skelly_carry
+CNAM nc_skellyf_carry
 
 MISC
 NAME nc_altmer_corpse_f
@@ -26135,9 +26135,9 @@ MODL base_anim_female.nif
 FNAM Скелет имперки
 RNAM Imperial Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_imperial_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_imp_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26150,9 +26150,9 @@ MODL base_animKnA.nif
 FNAM Скелет аргонианки
 RNAM Argonian Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_argonian_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_arg_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26165,9 +26165,9 @@ MODL base_anim_female.nif
 FNAM Скелет бретонки
 RNAM Breton Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_breton_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_bret_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26180,9 +26180,9 @@ MODL base_anim_female.nif
 FNAM Скелет данмерки
 RNAM Dark Elf Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_dunmer_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_de_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26195,9 +26195,9 @@ MODL base_anim_female.nif
 FNAM Скелет альтмерки
 RNAM High Elf Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_altmer_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_he_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26210,9 +26210,9 @@ MODL base_animKnA.nif
 FNAM Скелет хаджитки
 RNAM Khajiit Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_khajiit_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_khajiit_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26225,9 +26225,9 @@ MODL base_anim_female.nif
 FNAM Скелет норды
 RNAM Nord Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_nord_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_nord_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26240,9 +26240,9 @@ MODL base_anim_female.nif
 FNAM Скелет орки
 RNAM Orc Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_orc_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_orc_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26255,9 +26255,9 @@ MODL base_anim_female.nif
 FNAM Скелет редгардки
 RNAM Redguard Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_rg_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_rg_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26270,9 +26270,9 @@ MODL base_anim_female.nif
 FNAM Скелет босмерки
 RNAM Wood Elf Revenant
 CNAM Acrobat
-ANAM 
+ANAM \0
 BNAM nc_bosmer_sk_f
-KNAM 
+KNAM \0
 SCRI nc_skelly_we_f
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 9
@@ -26280,7 +26280,7 @@ AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CELL
-NAME 
+NAME \0
 DATA AgAAAAYAAAD/////
 RGNN Molag Mar Region
 FRMR AQAAAA==
@@ -26326,7 +26326,7 @@ XSCL AAAAQA==
 DATA VMNGR7bot8Vp3LlEAAAAAJBhRkDNzIw/
 
 CELL
-NAME 
+NAME \0
 DATA AgAAAAUAAAAAAAAA
 RGNN Molag Mar Region
 NAM0 AQAAAA==
@@ -26335,7 +26335,7 @@ NAME furn_bone_stake00
 DATA VmYpR1HIUkNxOEFEAAAAAAAAAACamZk/
 
 CELL
-NAME 
+NAME \0
 DATA AgAAAAUAAAD/////
 RGNN Molag Mar Region
 FRMR DQAAAA==
@@ -26367,7 +26367,7 @@ NAME furn_bone_stake00
 DATA VpclR/XmgcTLeZNEAAAAAAAAAAC4H3JA
 
 CELL
-NAME 
+NAME \0
 DATA AgAAAAQAAAD/////
 RGNN Molag Mar Region
 NAM0 AgAAAA==
@@ -32798,7 +32798,7 @@ DATA 4
 
 INFO
 INAM 224389207971127409
-PNAM 
+PNAM \0
 NNAM 17947296692584517970
 DATA BAAAAAAAAAD///8A
 NAME Нечестивые мертвецы%
@@ -32891,7 +32891,7 @@ NAME Мне удалось вызвать мумифицированного с�
 INFO
 INAM 32641254961264219277
 PNAM 1767917568720330340
-NNAM 
+NNAM \0
 DATA BAAAAG4AAAD///8A
 NAME Мой учитель уйдет из этого мира через несколько часов. Он попросил не осквернять его тело и не пытаться использовать его для создания мертвеца. Это его последнее желание, и оно должно быть исполнено.%
 QSTF AQ==
@@ -32902,7 +32902,7 @@ DATA 0
 
 INFO
 INAM 2514712984117407636
-PNAM 
+PNAM \0
 NNAM 1563912084246537512
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
@@ -32915,7 +32915,7 @@ BNAM
     player-> additem "bk_BookOfLifeAndService" 1
     player-> additem "bk_corpsepreperation1_o" 1
     Journal, nc_necro_001, 20
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 1563912084246537512
@@ -32927,7 +32927,7 @@ NAME Хорошо. Как только твое обучение будет за
 SCVR 01500%
 INTV 2
 BNAM
-    choice "Продолжить" 4
+    choice "Продолжить" 4\0
 
 INFO
 INAM 22416487141269561
@@ -32942,7 +32942,7 @@ BNAM
     setfight 100
     startcombat player
     Journal, nc_necro_001, 10
-    goodbye
+    goodbye\0
 
 INFO
 INAM 12162151582997511610
@@ -32956,7 +32956,7 @@ INTV 1
 SCVR 11380%
 INTV 1
 BNAM
-    choice "Я клянусь повиноваться тебе во всем." 2 "Ни за что.  Я не желаю быть слугой." 3
+    choice "Я клянусь повиноваться тебе во всем." 2 "Ни за что.  Я не желаю быть слугой." 3\0
 
 INFO
 INAM 2019429015243379297
@@ -32968,19 +32968,19 @@ NAME Ты станешь моим учеником. Ты поклянешься 
 SCVR 01500%
 INTV 1
 BNAM
-    choice "Я клянусь повиноваться тебе во всем." 2 "Ни за что.  Я не желаю быть слугой." 3
+    choice "Я клянусь повиноваться тебе во всем." 2 "Ни за что.  Я не желаю быть слугой." 3\0
 
 INFO
 INAM 3103110236674632747
 PNAM 2019429015243379297
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
 NAME Я действительно привел тебя.  Думаешь, это было твое собственное желание?  Конечно, нет.  У меня есть план, в котором ты играешь определнную роль.%
 SCVR 04JX4nc_necro_001%
 INTV 10
 BNAM
-    choice "Продолжить" 1
+    choice "Продолжить" 1\0
 
 DIAL
 NAME черный камень душ
@@ -32988,7 +32988,7 @@ DATA 0
 
 INFO
 INAM 313128629321724650
-PNAM 
+PNAM \0
 NNAM 2944031290264446090
 DATA AAAAAAAAAAD///8A
 CNAM Necromancer
@@ -32997,7 +32997,7 @@ NAME Это единственный камень душ, который мож�
 INFO
 INAM 2944031290264446090
 PNAM 313128629321724650
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
 NAME Это единственный камень душ, который может содержать что-то большее, чем душа животного или даэдра.  Их можно найти в гробницах, или иногда их продают другие некроманты. Но, все равно, их трудно найти.%
@@ -33008,7 +33008,7 @@ DATA 0
 
 INFO
 INAM 213602781011217323
-PNAM 
+PNAM \0
 NNAM 159022944979720108
 DATA AAAAAAAAAAD///8A
 ONAM nc_p_warlord
@@ -33017,7 +33017,7 @@ SCVR 01500%
 INTV 11
 BNAM
     AIWander 1000 0 0 60 10 10 10 10 0 0 0
-    set nc_p_follow to 0
+    set nc_p_follow to 0\0
 
 INFO
 INAM 159022944979720108
@@ -33030,7 +33030,7 @@ SCVR 01500%
 INTV 11
 BNAM
     AIWander 1000 0 0 60 10 10 10 10 0 0 0
-    set nc_fr_follow to 0
+    set nc_fr_follow to 0\0
 
 INFO
 INAM 559844171882218091
@@ -33043,7 +33043,7 @@ SCVR 01500%
 INTV 11
 BNAM
     AIWander 1000 0 0 60 10 10 10 10 0 0 0
-    set nc_f_follow to 0
+    set nc_f_follow to 0\0
 
 INFO
 INAM 15884305441239929987
@@ -33056,7 +33056,7 @@ SCVR 01500%
 INTV 10
 BNAM
     AIWander 0 0 0 0
-    set nc_p_follow to 0
+    set nc_p_follow to 0\0
 
 INFO
 INAM 1972514481489716002
@@ -33069,7 +33069,7 @@ SCVR 01500%
 INTV 10
 BNAM
     AIWander 0 0 0 0
-    set nc_fr_follow to 0
+    set nc_fr_follow to 0\0
 
 INFO
 INAM 2831031466862619643
@@ -33082,7 +33082,7 @@ SCVR 01500%
 INTV 10
 BNAM
     AIWander 0 0 0 0
-    set nc_f_follow to 0
+    set nc_f_follow to 0\0
 
 INFO
 INAM 3129316210118316849
@@ -33095,7 +33095,7 @@ SCVR 01500%
 INTV 9
 BNAM
     AIFollow Player 0 0 0 0
-    set nc_p_follow to 1
+    set nc_p_follow to 1\0
 
 INFO
 INAM 108158065102857015
@@ -33108,7 +33108,7 @@ SCVR 01500%
 INTV 9
 BNAM
     AIFollow Player 0 0 0 0
-    set nc_fr_follow to 1
+    set nc_fr_follow to 1\0
 
 INFO
 INAM 78267416464314197
@@ -33121,7 +33121,7 @@ SCVR 01500%
 INTV 9
 BNAM
     AIFollow Player 0 0 0 0
-    set nc_f_follow to 1
+    set nc_f_follow to 1\0
 
 INFO
 INAM 1025425332939427050
@@ -33137,7 +33137,7 @@ BNAM
     set see_fr_warlord to 1
     set see_f_warlord to 0
     set see_p_warlord to 0
-    AIFollow "nc_fr_warlord" 0 0 0 0
+    AIFollow "nc_fr_warlord" 0 0 0 0\0
 
 INFO
 INAM 3832247892366130193
@@ -33153,7 +33153,7 @@ BNAM
     set see_f_warlord to 1
     set see_fr_warlord to 0
     set see_p_warlord to 0
-    AIFollow "nc_f_warlord" 0 0 0 0
+    AIFollow "nc_f_warlord" 0 0 0 0\0
 
 INFO
 INAM 930414100206832086
@@ -33169,7 +33169,7 @@ BNAM
     set see_p_warlord to 1
     set see_f_warlord to 0
     set see_fr_warlord to 0
-    AIFollow "nc_p_warlord" 0 0 0 0
+    AIFollow "nc_p_warlord" 0 0 0 0\0
 
 INFO
 INAM 147357947537111215
@@ -33191,7 +33191,7 @@ NAME Я буду охранять это место.%
 SCVR 01500%
 INTV 4
 BNAM
-    AIWander 1000 0 0 60 10 10 10 10 0 0 0
+    AIWander 1000 0 0 60 10 10 10 10 0 0 0\0
 
 INFO
 INAM 7903196673018911871
@@ -33203,7 +33203,7 @@ NAME Сэра.%
 SCVR 01500%
 INTV 3
 BNAM
-    AIWander 0 0 0 0
+    AIWander 0 0 0 0\0
 
 INFO
 INAM 20523105352929622622
@@ -33235,7 +33235,7 @@ INTV 1
 SCVR 32sX0nc_phere%
 INTV 1
 BNAM
-    choice "Ядовитым" 6 "Огненным" 7 "Ледяным" 8
+    choice "Ядовитым" 6 "Огненным" 7 "Ледяным" 8\0
 
 INFO
 INAM 4007168612131812113
@@ -33265,7 +33265,7 @@ INTV 1
 SCVR 22sX0nc_frhere%
 INTV 1
 BNAM
-    choice "Огненным" 7 "Ледяным" 8
+    choice "Огненным" 7 "Ледяным" 8\0
 
 INFO
 INAM 21243662049111225
@@ -33293,7 +33293,7 @@ INTV 2
 SCVR 12sX0nc_fhere%
 INTV 1
 BNAM
-    choice "Огненным" 7
+    choice "Огненным" 7\0
 
 INFO
 INAM 125214359214004471
@@ -33306,7 +33306,7 @@ INTV 2
 SCVR 12sX0nc_frhere%
 INTV 1
 BNAM
-    choice "Ледяным" 8
+    choice "Ледяным" 8\0
 
 INFO
 INAM 777614378381817557
@@ -33319,7 +33319,7 @@ INTV 2
 SCVR 12sX0nc_phere%
 INTV 1
 BNAM
-    choice "Ядовитым" 6
+    choice "Ядовитым" 6\0
 
 INFO
 INAM 2561217112117817971
@@ -33331,7 +33331,7 @@ NAME Как прикажешь.%
 SCVR 01500%
 INTV 1
 BNAM
-    AIFollow Player 0 0 0 0
+    AIFollow Player 0 0 0 0\0
 
 INFO
 INAM 618923858321707949
@@ -33342,7 +33342,7 @@ ONAM nc_p_warlord
 FNAM Revenant
 NAME Я подчиняюсь лишь твоим приказам.%
 BNAM
-    choice "Пошли." 9 "Жди здесь." 10 "Охраняй это место." 11 "Ничего." 5
+    choice "Пошли." 9 "Жди здесь." 10 "Охраняй это место." 11 "Ничего." 5\0
 
 INFO
 INAM 6293284582291310815
@@ -33353,7 +33353,7 @@ ONAM nc_fr_warlord
 FNAM Revenant
 NAME Я подчиняюсь лишь твоим приказам.%
 BNAM
-    choice "Пошли." 9 "Жди здесь." 10 "Охраняй это место." 11 "Ничего." 5
+    choice "Пошли." 9 "Жди здесь." 10 "Охраняй это место." 11 "Ничего." 5\0
 
 INFO
 INAM 2090630223767517642
@@ -33364,7 +33364,7 @@ ONAM nc_f_warlord
 FNAM Revenant
 NAME Я подчиняюсь лишь твоим приказам.%
 BNAM
-    choice "Пошли." 9 "Жди здесь." 10 "Охраняй это место." 11 "Ничего." 5
+    choice "Пошли." 9 "Жди здесь." 10 "Охраняй это место." 11 "Ничего." 5\0
 
 INFO
 INAM 771268262821931743
@@ -33380,18 +33380,18 @@ INTV 0
 SCVR 22sX0nc_p_warlord_glob%
 INTV 0
 BNAM
-    choice "Пошли." 1 "Жди здесь." 3 "Охраняй это место." 4 "Ничего." 5
+    choice "Пошли." 1 "Жди здесь." 3 "Охраняй это место." 4 "Ничего." 5\0
 
 INFO
 INAM 20224200891568023963
 PNAM 771268262821931743
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
 NAME Я подчиняюсь лишь твоим приказам.%
 BNAM
     startscript nc_get_war
-    choice "Пошли." 1 "Следуй за боевым мертвецом." 2 "Жди здесь." 3 "Охраняй это место." 4 "Ничего." 5
+    choice "Пошли." 1 "Следуй за боевым мертвецом." 2 "Жди здесь." 3 "Охраняй это место." 4 "Ничего." 5\0
 
 DIAL
 NAME - Инструкции
@@ -33399,7 +33399,7 @@ DATA 0
 
 INFO
 INAM 1417026704414232306
-PNAM 
+PNAM \0
 NNAM 251558583404429543
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
@@ -33407,7 +33407,7 @@ NAME Мои характеристики:%
 SCVR 01500%
 INTV 10
 BNAM
-    startscript nc_stats
+    startscript nc_stats\0
 
 INFO
 INAM 251558583404429543
@@ -33419,7 +33419,7 @@ NAME Мои умения:%
 SCVR 01500%
 INTV 9
 BNAM
-    startscript nc_skills
+    startscript nc_skills\0
 
 INFO
 INAM 28623218183223315018
@@ -33431,7 +33431,7 @@ NAME Мой уровень:%
 SCVR 01500%
 INTV 8
 BNAM
-    startscript nc_level
+    startscript nc_level\0
 
 INFO
 INAM 1327913343280842535
@@ -33453,7 +33453,7 @@ NAME Так и сделаю.%
 SCVR 01500%
 INTV 6
 BNAM
-    cast nc_comp_cure player
+    cast nc_comp_cure player\0
 
 INFO
 INAM 1312191021387630299
@@ -33465,7 +33465,7 @@ NAME Да.%
 SCVR 01500%
 INTV 5
 BNAM
-    cast nc_comp_restore player
+    cast nc_comp_restore player\0
 
 INFO
 INAM 1413615902382513773
@@ -33513,7 +33513,7 @@ BNAM
         ModCurrentHealth 50
         RemoveItem p_restore_health_s 1
         MessageBox "Выпито стандартное зелье восстановления здоровья."
-    endif
+    endif\0
 
 INFO
 INAM 165536287998832571
@@ -33538,7 +33538,7 @@ SCVR 01500%
 INTV 3
 BNAM
     set oneTimeMove to 1
-    AIWander 500 0 0 0
+    AIWander 500 0 0 0\0
 
 INFO
 INAM 1807912635150545
@@ -33550,7 +33550,7 @@ NAME Таков ваш приказ.%
 SCVR 01500%
 INTV 2
 BNAM
-    set compMove to 0
+    set compMove to 0\0
 
 INFO
 INAM 22956285022862912356
@@ -33562,17 +33562,17 @@ NAME Я повинуюсь.%
 SCVR 01500%
 INTV 1
 BNAM
-    set compMove to 1
+    set compMove to 1\0
 
 INFO
 INAM 2187812401429012763
 PNAM 22956285022862912356
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
 NAME Чего вы хотите от меня?%
 BNAM
-    choice "Отойди с дороги. (авто-передвиж вкл)" 1 "Стой рядом. (авто-передвиж выкл)" 2 "Давай, иди. (однократное движение)" 3 "Прими лечебное зелье." 4 "Восстанови свое здовровье." 5 "Излечи себя." 6 "Скажи, какой у тебя уровень." 8 "Расскажи о своих умениях." 9 "Расскажи о своих характеристиках." 10 "Ничего." 7
+    choice "Отойди с дороги. (авто-передвиж вкл)" 1 "Стой рядом. (авто-передвиж выкл)" 2 "Давай, иди. (однократное движение)" 3 "Прими лечебное зелье." 4 "Восстанови свое здовровье." 5 "Излечи себя." 6 "Скажи, какой у тебя уровень." 8 "Расскажи о своих умениях." 9 "Расскажи о своих характеристиках." 10 "Ничего." 7\0
 
 DIAL
 NAME новое знание
@@ -33580,7 +33580,7 @@ DATA 0
 
 INFO
 INAM 21685861570097884
-PNAM 
+PNAM \0
 NNAM 256724036248617683
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
@@ -33590,7 +33590,7 @@ INTV 11
 BNAM
     startscript nc_tragrilar_death
     journal nc_necro_001 110
-    goodbye
+    goodbye\0
 
 INFO
 INAM 256724036248617683
@@ -33603,7 +33603,7 @@ SCVR 01500%
 INTV 12
 BNAM
     setfight 100
-    goodbye
+    goodbye\0
 
 INFO
 INAM 280549537294898526
@@ -33617,7 +33617,7 @@ INTV 105
 SCVR 11380%
 INTV 1
 BNAM
-    Choice "Я клянусь. Я позабочусь о твоем теле." 11 "Так ты не можешь вынести, что с тобой поступят так же, как ты поступал с другими? Я сделаю тебя своим слугой!" 12
+    Choice "Я клянусь. Я позабочусь о твоем теле." 11 "Так ты не можешь вынести, что с тобой поступят так же, как ты поступал с другими? Я сделаю тебя своим слугой!" 12\0
 
 INFO
 INAM 3413298003005910003
@@ -33629,7 +33629,7 @@ NAME Мой ученик, я передал тебе все, что знаю с�
 SCVR 04JX0nc_necro_001%
 INTV 105
 BNAM
-    Choice "Я клянусь. Я позабочусь о твоем теле." 11 "Так ты не можешь вынести, что с тобой поступят так же, как ты поступал с другими? Я сделаю тебя своим слугой!" 12
+    Choice "Я клянусь. Я позабочусь о твоем теле." 11 "Так ты не можешь вынести, что с тобой поступят так же, как ты поступал с другими? Я сделаю тебя своим слугой!" 12\0
 
 INFO
 INAM 3987139092344413398
@@ -33641,7 +33641,7 @@ NAME Иди и вызови мумифицированного слугу.%
 SCVR 04JX0nc_necro_001%
 INTV 100
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 2838919713419226172
@@ -33654,7 +33654,7 @@ SCVR 01500%
 INTV 10
 BNAM
     journal nc_necro_001 100
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 2121630362508829304
@@ -33668,7 +33668,7 @@ INTV 9
 BNAM
     MessageBox "Вы выучили заклинание Цель для слуг"
     player-> addspell "nc_painful_touch"
-    choice "Продолжить" 10
+    choice "Продолжить" 10\0
 
 INFO
 INAM 299408271156157582
@@ -33680,7 +33680,7 @@ NAME Как и для любого тела, необходимо укрепит
 SCVR 01500%
 INTV 8
 BNAM
-    choice "Продолжить" 9
+    choice "Продолжить" 9\0
 
 INFO
 INAM 1821781671800410517
@@ -33692,7 +33692,7 @@ NAME Внизу есть три ванны. В них находятся раз�
 SCVR 01500%
 INTV 7
 BNAM
-    choice "Продолжить" 8
+    choice "Продолжить" 8\0
 
 INFO
 INAM 26627229642699522981
@@ -33704,7 +33704,7 @@ NAME Вся разница между двумя видами мертвецов
 SCVR 01500%
 INTV 6
 BNAM
-    choice "Продолжить" 7
+    choice "Продолжить" 7\0
 
 INFO
 INAM 471315382494019855
@@ -33720,7 +33720,7 @@ INTV 30
 SCVR 21380%
 INTV 1
 BNAM
-    choice "Продолжить" 6
+    choice "Продолжить" 6\0
 
 INFO
 INAM 27608199222196624133
@@ -33734,7 +33734,7 @@ INTV 90
 SCVR 122X3nc_necro_skill%
 INTV 30
 BNAM
-    choice "Продолжить" 6
+    choice "Продолжить" 6\0
 
 INFO
 INAM 1003866673002517503
@@ -33746,7 +33746,7 @@ NAME Сейчас мне нечему тебя учить.%
 SCVR 04JX0nc_necro_001%
 INTV 90
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 1908122124646329509
@@ -33759,7 +33759,7 @@ SCVR 01500%
 INTV 5
 BNAM
     Journal, nc_necro_001, 90
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 610913305245852671
@@ -33772,7 +33772,7 @@ SCVR 04JX0nc_necro_001%
 INTV 80
 BNAM
     player-> additem "nc_control_ring_ring" 1
-    choice "Продолжить" 5
+    choice "Продолжить" 5\0
 
 INFO
 INAM 2562330441322506169
@@ -33786,7 +33786,7 @@ INTV 70
 SCVR 11380%
 INTV 1
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 28954311632307015592
@@ -33798,7 +33798,7 @@ NAME Теперь ты готов создать слугу.%
 SCVR 04JX0nc_necro_001%
 INTV 70
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 2539823846104875260
@@ -33812,7 +33812,7 @@ INTV 60
 SCVR 15IX4nc_dunmer_pauldron_sk%
 INTV 1
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 73643271117227772
@@ -33828,7 +33828,7 @@ INTV 1
 BNAM
     Journal, nc_necro_001, 70
     set nc_isnecro to 1
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 76412702969513106
@@ -33846,7 +33846,7 @@ BNAM
     player-> additem "bk_corpsepreperation3_c" 1
     player-> additem "nc_list" 1
     Journal, nc_necro_001, 60
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 3021519461235634389
@@ -33862,7 +33862,7 @@ BNAM
     player-> additem "bk_corpsepreperation3_c" 1
     player-> additem "nc_list" 1
     Journal, nc_necro_001, 60
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 18144236103029531917
@@ -33878,7 +33878,7 @@ INTV 1
 SCVR 21380%
 INTV 1
 BNAM
-    choice "Продолжить" 4
+    choice "Продолжить" 4\0
 
 INFO
 INAM 3783233721501117471
@@ -33892,7 +33892,7 @@ INTV 50
 SCVR 15IX3nc_dunmer_pauldron%
 INTV 1
 BNAM
-    choice "Продолжить" 4
+    choice "Продолжить" 4\0
 
 INFO
 INAM 30562143661213022363
@@ -33906,7 +33906,7 @@ INTV 50
 SCVR 15IX4nc_dunmer_pauldron%
 INTV 1
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 7765235941862331842
@@ -33923,7 +33923,7 @@ BNAM
     MessageBox "Вы узнали заклинание Заключить душу"
     Journal, nc_necro_001, 50
     addtopic "черный камень душ"
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 33103131415123607
@@ -33935,7 +33935,7 @@ NAME Часто трудно найти подходящее тело для и�
 SCVR 01500%
 INTV 1
 BNAM
-    choice "Продолжить" 2
+    choice "Продолжить" 2\0
 
 INFO
 INAM 10256181221617716602
@@ -33949,7 +33949,7 @@ INTV 20
 SCVR 14JX0nc_necro_001%
 INTV 40
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 54122445487256345
@@ -33969,7 +33969,7 @@ INTV 1
 SCVR 41243%
 INTV 30
 BNAM
-    choice "Продолжить" 1
+    choice "Продолжить" 1\0
 
 INFO
 INAM 207821713917759096
@@ -33989,7 +33989,7 @@ INTV 0
 SCVR 41243%
 INTV 30
 BNAM
-    choice "Продолжить" 1
+    choice "Продолжить" 1\0
 
 INFO
 INAM 15822230802276413011
@@ -34008,7 +34008,7 @@ BNAM
     player->addspell "burden touch"
     MessageBox "Вы узнали заклинание Касание обузы"
     Journal, nc_necro_001, 40
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 22784325311983514958
@@ -34027,7 +34027,7 @@ BNAM
     player-> addspell "summon ancestral ghost"
     MessageBox "Вы выучили заклинание Вызов духа предков"
     set nc_isnecro to 1
-    Journal, nc_necro_001, 30
+    Journal, nc_necro_001, 30\0
 
 INFO
 INAM 12177103792724123824
@@ -34041,7 +34041,7 @@ INTV 30
 SCVR 14JX0nc_necro_001%
 INTV 30
 BNAM
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 129621071157302113
@@ -34059,7 +34059,7 @@ INTV 30
 SCVR 31380%
 INTV 1
 BNAM
-    choice "Продолжить" 1
+    choice "Продолжить" 1\0
 
 INFO
 INAM 2859839522245628931
@@ -34075,7 +34075,7 @@ INTV 20
 SCVR 24JX4nc_necro_001%
 INTV 30
 BNAM
-    choice "Продолжить" 1
+    choice "Продолжить" 1\0
 
 INFO
 INAM 2992589641168625237
@@ -34095,12 +34095,12 @@ BNAM
     MessageBox "Вы выучили заклинание Вызов духа предков"
     set nc_isnecro to 1
     Journal, nc_necro_001, 30
-    Goodbye
+    Goodbye\0
 
 INFO
 INAM 203628404645817050
 PNAM 2992589641168625237
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 ONAM nc_Tragrilar
 NAME Ты прочел книги? Хорошо. Теперь ты обучишься вызову. Я не буду тебя учить, пока ты в совершенстве не овладеешь этим заклинанием.%
@@ -34113,7 +34113,7 @@ BNAM
     MessageBox "Вы выучили заклинание Вызов духа предков"
     set nc_isnecro to 1
     Journal, nc_necro_001, 30
-    Goodbye
+    Goodbye\0
 
 DIAL
 NAME Greeting 5
@@ -34151,12 +34151,12 @@ INTV 10
 SCVR 11380%
 INTV 1
 BNAM
-    addtopic "я привел тебя сюда"
+    addtopic "я привел тебя сюда"\0
 
 INFO
 INAM 153541025274461068
 PNAM 267468080326965853
-NNAM 
+NNAM \0
 DATA AgAAAAAAAAD///8A
 ONAM nc_Tragrilar
 NAME Приветствую тебя, странник. Добро пожаловать в мой храм, мое убежище.  Хочешь узнать почему я привел тебя сюда?%
@@ -34165,7 +34165,7 @@ INTV 10
 SCVR 11380%
 INTV 0
 BNAM
-    addtopic "я привел тебя сюда"
+    addtopic "я привел тебя сюда"\0
 
 DIAL
 NAME Сулипунд
@@ -34173,7 +34173,7 @@ DATA 0
 
 INFO
 INAM 3845179161180515818
-PNAM 
+PNAM \0
 NNAM 2890124710184321374
 DATA AAAAAAAAAAD//wIA
 ONAM ranis athrys
@@ -34185,7 +34185,7 @@ INTV 100
 INFO
 INAM 2890124710184321374
 PNAM 3845179161180515818
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 NAME Из Балморы отправлятесь на восток к Форту Лунной Бабочки. Идите через старый двемерский мост, к северу от Форта, что ведет в Молаг Амур. Идите мимо Двемерских руин извилистой тропой на восток, пока не дойдете до озера. На юге вы увидите Марандус. Я отмечу эту крепость на вашей карте. Отправляйтесь на север от Марандуса по тропе между холмами. Справа будет Пунаби, а Сулипунд - дальше по тропе налево. Просто следуй указателям в Молаг Мар.%
 SCVR 04JX0nc_necro_001%
@@ -34195,7 +34195,7 @@ INTV 1
 SCVR 27XX0nc_Tragrilar%
 INTV 1
 BNAM
-    ShowMap "Marandus"
+    ShowMap "Marandus"\0
 
 DIAL
 NAME Hello
@@ -34277,7 +34277,7 @@ DATA 0
 
 INFO
 INAM 1168371141050232568
-PNAM 
+PNAM \0
 NNAM 651514434183017350
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
@@ -34308,7 +34308,7 @@ SCVR 01500%
 INTV 4
 BNAM
     set weapUse to 0
-    setmarksman 100
+    setmarksman 100\0
 
 INFO
 INAM 84255901231426377
@@ -34320,7 +34320,7 @@ NAME Как прикажешь.%
 SCVR 01500%
 INTV 3
 BNAM
-    set weapUse to 1
+    set weapUse to 1\0
 
 INFO
 INAM 132882004645727941
@@ -34333,7 +34333,7 @@ SCVR 01500%
 INTV 2
 BNAM
     setmarksman 200
-    set weapUse to 0
+    set weapUse to 0\0
 
 INFO
 INAM 8935171991781619567
@@ -34348,7 +34348,7 @@ SCVR 11380%
 INTV 1
 BNAM
     setmarksman 0
-    set weapUse to 0
+    set weapUse to 0\0
 
 INFO
 INAM 16918440333815810
@@ -34361,7 +34361,7 @@ SCVR 01500%
 INTV 1
 BNAM
     setmarksman 0
-    set weapUse to 0
+    set weapUse to 0\0
 
 INFO
 INAM 20338122862911914334
@@ -34373,17 +34373,17 @@ NAME Каким оружием мне пользоваться, хозяйка?%
 SCVR 01380%
 INTV 1
 BNAM
-    choice "Используй оружие ближнего боя." 1 "Используй оружие дальнего боя." 2 "Используй, что использую я." 3 "Используй, что хочешь." 4 "Ничего." 5
+    choice "Используй оружие ближнего боя." 1 "Используй оружие дальнего боя." 2 "Используй, что использую я." 3 "Используй, что хочешь." 4 "Ничего." 5\0
 
 INFO
 INAM 216525115278624197
 PNAM 20338122862911914334
-NNAM 
+NNAM \0
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
 NAME Каким оружием мне пользоваться, хозяин?%
 BNAM
-    choice "Используй оружие ближнего боя." 1 "Используй оружие дальнего боя." 2 "Используй, что использую я." 3 "Используй, что хочешь." 4 "Ничего." 5
+    choice "Используй оружие ближнего боя." 1 "Используй оружие дальнего боя." 2 "Используй, что использую я." 3 "Используй, что хочешь." 4 "Ничего." 5\0
 
 DIAL
 NAME Hit
@@ -34458,3 +34458,5 @@ PNAM 1982250161184623126
 NNAM 299702217312473358
 DATA AQAAAAAAAAD///8A
 ONAM nc_we_skelly_NPC
+
+# 1123
