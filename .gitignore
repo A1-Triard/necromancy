@@ -2,4 +2,5 @@
 /*.esp
 /*.zip
 /A1_Necromancy_*
+!A1_Necromancy_init.exe
 /*.txt
