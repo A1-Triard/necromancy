@@ -36587,22 +36587,6 @@ MODL blas\\nc_skinm_br.nif
 FNAM nc_poison_warlord
 BYDT BgAAAA==
 
-NPC_
-NAME nc_test_zombie
-FNAM Тест
-RNAM nc_poison_warlord
-CNAM Acrobat
-ANAM 
-BNAM nc_zombie_head
-KNAM nc_skinm_hair
-NPDT AQAyMjI8MjwyMgUFBQ8FBQUPKAUPDwoFBQUFHgojI1UKLQoUFAA3AGQA3AAyAAAAAAAAAA==
-FLAG 8
-NPCO 1 nc_p_mummy_shirt
-NPCO 1 nc_p_mummy_pants
-NPCO 1 nc_head_rags
-AIDT HgAeHgBaLHUAAAAA
-AI_W AAIFAAA8FAoAAAAAAAE=
-
 ARMO
 NAME nc_fire_pauldron
 MODL blas\\redguard_corpse.NIF
