@@ -35264,35 +35264,35 @@ NPCO 1 l_m_potion
 MISC
 NAME nc_altmer_skull
 MODL m\\misc_skull00.nif
-FNAM Череп альтмера
+FNAM Череп высокого эльфа
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_bosmer_skull
 MODL m\\misc_skull00.nif
-FNAM Череп босмера
+FNAM Череп лесного эльфа
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_dunmer_skull
 MODL m\\misc_skull00.nif
-FNAM Череп данмера
+FNAM Череп темного эльфа
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_redguard_skull
 MODL m\\misc_skull00.nif
-FNAM Череп редгарда
+FNAM Череп мужчины-редгарда
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_nord_skull
 MODL m\\misc_skull00.nif
-FNAM Череп норда
+FNAM Череп мужчины-нордлинга
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
@@ -35306,7 +35306,7 @@ ITEX m\\misc_skull10.tga
 MISC
 NAME nc_imperial_skull
 MODL m\\misc_skull10.nif
-FNAM Череп имперца
+FNAM Череп мужчины-имперца
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull10.tga
 
@@ -35320,14 +35320,14 @@ ITEX blas\\bar_argskullicon.dds
 MISC
 NAME nc_orc_skull
 MODL blas\\orcskull_bs.NIF
-FNAM Череп орка
+FNAM Череп орка-мужчины
 MCDT AAAAPwAAAAAAAAAA
 ITEX blas\\bar_orcskullicon.dds
 
 MISC
 NAME nc_khajiit_skull
 MODL blas\\Khajitskull_bs.NIF
-FNAM Череп хаджита
+FNAM Череп хаджита-мужчины
 MCDT AAAAPwAAAAAAAAAA
 ITEX blas\\bar_khajitskullicon.dds
 
@@ -36856,7 +36856,7 @@ ITEX blas\\br_body_he.dds
 MISC
 NAME nc_imperial_corpse
 MODL blas\\human_corpse.NIF
-FNAM Труп имперца
+FNAM Труп мужчины-имперца
 MCDT AAAlQwAAAAAAAAAA
 SCRI nc_imp_corpse_cure
 ITEX blas\\br_body_we.dds
@@ -36880,7 +36880,7 @@ ITEX blas\\br_body_de.dds
 MISC
 NAME nc_khajiit_corpse
 MODL blas\\khajiit_corpse.NIF
-FNAM Труп хаджита
+FNAM Труп хаджита-мужчины
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_khajiit_corpse_cure
 ITEX blas\\br_body_kh.dds
@@ -36888,7 +36888,7 @@ ITEX blas\\br_body_kh.dds
 MISC
 NAME nc_nord_corpse
 MODL blas\\human_corpse.NIF
-FNAM Труп норда
+FNAM Труп мужчины-нордлинга
 MCDT AAA5QwAAAAAAAAAA
 SCRI nc_nord_corpse_cure
 ITEX blas\\br_body_we.dds
@@ -36896,7 +36896,7 @@ ITEX blas\\br_body_we.dds
 MISC
 NAME nc_orc_corpse
 MODL blas\\orc_corpse.NIF
-FNAM Труп орка
+FNAM Труп орка-мужчины
 MCDT AABDQwAAAAAAAAAA
 SCRI nc_orc_corpse_cure
 ITEX blas\\br_body_or.dds
@@ -36904,7 +36904,7 @@ ITEX blas\\br_body_or.dds
 MISC
 NAME nc_redguard_corpse
 MODL blas\\redguard_corpse.NIF
-FNAM Труп редгарда
+FNAM Труп мужчины-редгарда
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_rg_corpse_cure
 ITEX blas\\br_body_rg.dds
@@ -37072,7 +37072,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_imperial_skelly
 MODL o\\contain_corpse20.nif
-FNAM Скелет имперца
+FNAM Скелет мужчины-имперца
 MCDT AAAMQgAAAAAAAAAA
 SCRI nc_imp_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -37080,7 +37080,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_khajiit_skelly
 MODL o\\contain_corpse00.nif
-FNAM Скелет хаджита
+FNAM Скелет хаджита-мужчины
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_khajiit_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -37088,7 +37088,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_nord_skelly
 MODL o\\contain_corpse20.nif
-FNAM Скелет норда
+FNAM Скелет мужчины-нордлинга
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_nord_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -37096,7 +37096,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_redguard_skelly
 MODL o\\contain_corpse20.nif
-FNAM Скелет редгарда
+FNAM Скелет мужчины-редгарда
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_rg_skelly_drop
 ITEX blas\\br_body_rg.dds
@@ -37104,7 +37104,7 @@ ITEX blas\\br_body_rg.dds
 MISC
 NAME nc_orc_skelly
 MODL o\\contain_corpse00.nif
-FNAM Скелет орка
+FNAM Скелет орка-мужчины
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_orc_skelly_drop
 ITEX blas\\br_skelly.dds
@@ -37200,7 +37200,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_de_skelly_NPC
-FNAM Скелет данмера
+FNAM Скелет темного эльфа
 RNAM Dark Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -37214,7 +37214,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_he_skelly_NPC
-FNAM Скелет альтмера
+FNAM Скелет высокого эльфа
 RNAM High Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -37228,7 +37228,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_imp_skelly_NPC
-FNAM Скелет имперца
+FNAM Скелет мужчины-имперца
 RNAM Imperial Revenant
 CNAM Acrobat
 ANAM 
@@ -37243,7 +37243,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 NPC_
 NAME nc_khajiit_skelly_NPC
 MODL base_animKnA.nif
-FNAM Скелет хаджита
+FNAM Скелет хаджита-мужчины
 RNAM Khajiit Revenant
 CNAM Acrobat
 ANAM 
@@ -37257,7 +37257,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_nord_skelly_NPC
-FNAM Скелет норда
+FNAM Скелет мужчины-нордлинга
 RNAM Nord Revenant
 CNAM Acrobat
 ANAM 
@@ -37271,7 +37271,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_orc_skelly_NPC
-FNAM Скелет орка
+FNAM Скелет орка-мужчины
 RNAM Orc Revenant
 CNAM Acrobat
 ANAM 
@@ -37285,7 +37285,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_rg_skelly_NPC
-FNAM Скелет редгарда
+FNAM Скелет мужчины-редгарда
 RNAM Redguard Revenant
 CNAM Acrobat
 ANAM 
@@ -37299,7 +37299,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_we_skelly_NPC
-FNAM Скелет босмера
+FNAM Скелет лесного эльфа
 RNAM Wood Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -37782,7 +37782,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_dunmer_pauldron
 MODL blas\\dunmer_corpse.NIF
-FNAM Труп данмера
+FNAM Труп темного эльфа
 SCRI nc_pauldron_dunmer_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_de.dds
@@ -37804,7 +37804,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_imperial_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Труп имперца
+FNAM Труп мужчины-имперца
 SCRI nc_pauldron_imp_script
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -37815,7 +37815,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_nord_pauldron
 MODL blas\\human_corpse.NIF
-FNAM Труп норда
+FNAM Труп мужчины-нордлинга
 SCRI nc_pauldron_nord_script
 AODT AgAAAAAAOUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -37826,7 +37826,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_khajiit_pauldron
 MODL blas\\khajiit_corpse.NIF
-FNAM Труп хаджита
+FNAM Труп хаджита-мужчины
 SCRI nc_pauldron_kh_script
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_kh.dds
@@ -37837,7 +37837,7 @@ CNAM nc_khajiitf_carry%
 ARMO
 NAME nc_orc_pauldron
 MODL blas\\orc_corpse.NIF
-FNAM Труп орка
+FNAM Труп орка-мужчины
 SCRI nc_pauldron_orc_script
 AODT AgAAAAAAQ0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_or.dds
@@ -37848,7 +37848,7 @@ CNAM nc_orcf_carry%
 ARMO
 NAME nc_rg_pauldron
 MODL blas\\redguard_corpse.NIF
-FNAM Труп редгарда
+FNAM Труп мужчины-редгарда
 SCRI nc_pauldron_rg_script
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_rg.dds
@@ -37981,7 +37981,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_dunmer_pauldron_sk
 MODL o\\contain_corpse00.nif
-FNAM Скелет данмера
+FNAM Скелет темного эльфа
 SCRI nc_de_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -37992,7 +37992,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_imperial_pauldron_sk
 MODL o\\contain_corpse00.nif
-FNAM Скелет имперца
+FNAM Скелет мужчины-имперца
 SCRI nc_imp_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -38003,7 +38003,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_khajiit_pauldron_sk
 MODL o\\contain_corpse00.nif
-FNAM Скелет хаджита
+FNAM Скелет хаджита-мужчины
 SCRI nc_khajiit_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -38014,7 +38014,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_nord_pauldron_sk
 MODL o\\contain_corpse00.nif
-FNAM Скелет норда
+FNAM Скелет мужчины-нордлинга
 SCRI nc_nord_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -38025,7 +38025,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_orc_pauldron_sk
 MODL o\\contain_corpse00.nif
-FNAM Скелет орка
+FNAM Скелет орка-мужчины
 SCRI nc_orc_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -38036,7 +38036,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_rg_pauldron_sk
 MODL o\\contain_corpse00.nif
-FNAM Скелет редгарда
+FNAM Скелет мужчины-редгарда
 SCRI nc_rg_skelly_pauldron
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39772,7 +39772,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_dunmer_pauldron_f
 MODL blas\\dunmer_corpse.NIF
-FNAM Труп данмерки
+FNAM Труп темной эльфийки
 SCRI nc_pauldron_dunmer_script_f
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_de.dds
@@ -39783,7 +39783,7 @@ CNAM nc_dunmerf_carry%
 ARMO
 NAME nc_imperial_pauldron_f
 MODL blas\\human_corpse.NIF
-FNAM Труп имперки
+FNAM Труп женщины-имперца
 SCRI nc_pauldron_imp_script_f
 AODT AgAAAAAAJUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -39794,7 +39794,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_khajiit_pauldron_f
 MODL blas\\khajiit_corpse.NIF
-FNAM Труп хаджитки
+FNAM Труп хаджита-женщины
 SCRI nc_pauldron_kh_script_f
 AODT AgAAAAAAEUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_kh.dds
@@ -39805,7 +39805,7 @@ CNAM nc_khajiitf_carry%
 ARMO
 NAME nc_nord_pauldron_f
 MODL blas\\human_corpse.NIF
-FNAM Труп норды
+FNAM Труп женщины-нордлинга
 SCRI nc_pauldron_nord_script_f
 AODT AgAAAAAAOUMAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_we.dds
@@ -39816,7 +39816,7 @@ CNAM nc_humanf_carry%
 ARMO
 NAME nc_orc_pauldron_f
 MODL blas\\orc_corpse.NIF
-FNAM Труп орки
+FNAM Труп орка-женщины
 SCRI nc_pauldron_orc_script_f
 AODT AgAAAAAAQ0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_or.dds
@@ -39827,7 +39827,7 @@ CNAM nc_orcf_carry%
 ARMO
 NAME nc_rg_pauldron_f
 MODL blas\\redguard_corpse.NIF
-FNAM Труп редгардки
+FNAM Труп женщины-редгарда
 SCRI nc_pauldron_rg_script_f
 AODT AgAAAAAAB0MAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_body_rg.dds
@@ -39882,7 +39882,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_dunmer_pauldron_sk_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет данмерки
+FNAM Скелет темной эльфийки
 SCRI nc_de_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39893,7 +39893,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_imperial_pauldron_sk_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет имперки
+FNAM Скелет женщины-имперца
 SCRI nc_imp_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39904,7 +39904,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_khajiit_pauldron_sk_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет хаджитки
+FNAM Скелет хаджита-женщины
 SCRI nc_khajiit_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39915,7 +39915,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_nord_pauldron_sk_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет норды
+FNAM Скелет женщины-нордлинга
 SCRI nc_nord_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39926,7 +39926,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_orc_pauldron_sk_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет орки
+FNAM Скелет орка-женщины
 SCRI nc_orc_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39937,7 +39937,7 @@ CNAM nc_skellyf_carry%
 ARMO
 NAME nc_rg_pauldron_sk_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет редгардки
+FNAM Скелет женщины-редгарда
 SCRI nc_rg_skelly_pauldron_f
 AODT AgAAAAAA8EEAAAAAZAAAAAAAAAAAAAAA
 ITEX blas\\br_skelly.dds
@@ -39964,7 +39964,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_altmer_skull_f
 MODL m\\misc_skull00.nif
-FNAM Череп альтмерки
+FNAM Череп высокой эльфийки
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
@@ -40010,7 +40010,7 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_bosmer_skull_f
 MODL m\\misc_skull00.nif
-FNAM Череп босмерки
+FNAM Череп лесной эльфийки
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
@@ -40056,14 +40056,14 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_dunmer_skull_f
 MODL m\\misc_skull00.nif
-FNAM Череп данмерки
+FNAM Череп темной эльфийки
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_imperial_corpse_f
 MODL blas\\human_corpse.NIF
-FNAM Труп имперки
+FNAM Труп женщины-имперца
 MCDT AAAlQwAAAAAAAAAA
 SCRI nc_imp_corpse_cure_f
 ITEX blas\\br_body_we.dds
@@ -40071,7 +40071,7 @@ ITEX blas\\br_body_we.dds
 MISC
 NAME nc_imperial_skelly_f
 MODL o\\contain_corpse20.nif
-FNAM Скелет имперки
+FNAM Скелет женщины-имперца
 MCDT AAAMQgAAAAAAAAAA
 SCRI nc_imp_skelly_drop_f
 ITEX blas\\br_skelly.dds
@@ -40079,14 +40079,14 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_imperial_skull_f
 MODL m\\misc_skull10.nif
-FNAM Череп имперки
+FNAM Череп женщины-имперца
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull10.tga
 
 MISC
 NAME nc_khajiit_corpse_f
 MODL blas\\khajiit_corpse.NIF
-FNAM Труп хаджитки
+FNAM Труп хаджита-женщины
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_khajiit_corpse_cure_f
 ITEX blas\\br_body_kh.dds
@@ -40094,7 +40094,7 @@ ITEX blas\\br_body_kh.dds
 MISC
 NAME nc_khajiit_skelly_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет хаджитки
+FNAM Скелет хаджита-женщины
 MCDT AAARQwAAAAAAAAAA
 SCRI nc_khajiit_skelly_drop_f
 ITEX blas\\br_skelly.dds
@@ -40102,14 +40102,14 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_khajiit_skull_f
 MODL blas\\Khajitskull_bs.NIF
-FNAM Череп хаджитки
+FNAM Череп хаджита-женщины
 MCDT AAAAPwAAAAAAAAAA
 ITEX blas\\bar_khajitskullicon.dds
 
 MISC
 NAME nc_nord_corpse_f
 MODL blas\\human_corpse.NIF
-FNAM Труп норды
+FNAM Труп женщины-нордлинга
 MCDT AAA5QwAAAAAAAAAA
 SCRI nc_nord_corpse_cure_f
 ITEX blas\\br_body_we.dds
@@ -40117,7 +40117,7 @@ ITEX blas\\br_body_we.dds
 MISC
 NAME nc_nord_skelly_f
 MODL o\\contain_corpse20.nif
-FNAM Скелет норды
+FNAM Скелет женщины-нордлинга
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_nord_skelly_drop_f
 ITEX blas\\br_skelly.dds
@@ -40125,14 +40125,14 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_nord_skull_f
 MODL m\\misc_skull00.nif
-FNAM Череп норды
+FNAM Череп женщины-нордлинга
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 MISC
 NAME nc_orc_corpse_f
 MODL blas\\orc_corpse.NIF
-FNAM Труп орки
+FNAM Труп орка-женщины
 MCDT AABDQwAAAAAAAAAA
 SCRI nc_orc_corpse_cure_f
 ITEX blas\\br_body_or.dds
@@ -40140,7 +40140,7 @@ ITEX blas\\br_body_or.dds
 MISC
 NAME nc_orc_skelly_f
 MODL o\\contain_corpse00.nif
-FNAM Скелет орки
+FNAM Скелет орка-женщины
 MCDT AAAgQgAAAAAAAAAA
 SCRI nc_orc_skelly_drop_f
 ITEX blas\\br_skelly.dds
@@ -40148,14 +40148,14 @@ ITEX blas\\br_skelly.dds
 MISC
 NAME nc_orc_skull_f
 MODL blas\\orcskull_bs.NIF
-FNAM Череп орки
+FNAM Череп орка-женщины
 MCDT AAAAPwAAAAAAAAAA
 ITEX blas\\bar_orcskullicon.dds
 
 MISC
 NAME nc_redguard_corpse_f
 MODL blas\\redguard_corpse.NIF
-FNAM Труп редгардки
+FNAM Труп женщины-редгарда
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_rg_corpse_cure_f
 ITEX blas\\br_body_rg.dds
@@ -40163,7 +40163,7 @@ ITEX blas\\br_body_rg.dds
 MISC
 NAME nc_redguard_skelly_f
 MODL o\\contain_corpse20.nif
-FNAM Скелет редгардки
+FNAM Скелет женщины-редгарда
 MCDT AADwQQAAAAAAAAAA
 SCRI nc_rg_skelly_drop_f
 ITEX blas\\br_body_rg.dds
@@ -40171,13 +40171,13 @@ ITEX blas\\br_body_rg.dds
 MISC
 NAME nc_redguard_skull_f
 MODL m\\misc_skull00.nif
-FNAM Череп редгардки
+FNAM Череп женщины-редгарда
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
 NPC_
 NAME nc_imp_skelly_NPC_f
-FNAM Скелет имперки
+FNAM Скелет женщины-имперца
 RNAM Imperial Revenant
 CNAM Acrobat
 ANAM 
@@ -40220,7 +40220,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_de_skelly_NPC_f
-FNAM Скелет данмерки
+FNAM Скелет темной эльфийки
 RNAM Dark Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -40234,7 +40234,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_he_skelly_NPC_f
-FNAM Скелет альтмерки
+FNAM Скелет высокой эльфийки
 RNAM High Elf Revenant
 CNAM Acrobat
 ANAM 
@@ -40249,7 +40249,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 NPC_
 NAME nc_khajiit_skelly_NPC_f
 MODL base_animKnA.nif
-FNAM Скелет хаджитки
+FNAM Скелет хаджита-женщины
 RNAM Khajiit Revenant
 CNAM Acrobat
 ANAM 
@@ -40263,7 +40263,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_nord_skelly_NPC_f
-FNAM Скелет норды
+FNAM Скелет женщины-нордлинга
 RNAM Nord Revenant
 CNAM Acrobat
 ANAM 
@@ -40277,7 +40277,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_orc_skelly_NPC_f
-FNAM Скелет орки
+FNAM Скелет орка-женщины
 RNAM Orc Revenant
 CNAM Acrobat
 ANAM 
@@ -40291,7 +40291,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_rg_skelly_NPC_f
-FNAM Скелет редгардки
+FNAM Скелет женщины-редгарда
 RNAM Redguard Revenant
 CNAM Acrobat
 ANAM 
@@ -40305,7 +40305,7 @@ AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
 NAME nc_we_skelly_NPC_f
-FNAM Скелет босмерки
+FNAM Скелет лесной эльфийки
 RNAM Wood Elf Revenant
 CNAM Acrobat
 ANAM 
