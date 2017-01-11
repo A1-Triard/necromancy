@@ -1088,286 +1088,194 @@ SCTX
     
 
 SCPT
-SCHD nc_cauldron_script 25 0 1 4336 350
-SCVR nc_altmer_skl;nc_argonian_skl;nc_bosmer_skl;nc_breton_skl;nc_dunmer_skl;nc_imperial_skl;nc_khajiit_skl;nc_nord_skl;nc_orc_skl;nc_redguard_skl;nc_altmer_skl_f;nc_argonian_skl_f;nc_bosmer_skl_f;nc_breton_skl_f;nc_dunmer_skl_f;nc_imperial_skl_f;nc_khajiit_skl_f;nc_nord_skl_f;nc_orc_skl_f;nc_redguard_skl_f;nc_poison;nc_fire;nc_frost;doonce;state;timer;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEFAWYBAAogZgEAIFgSECArBgEBCCBmAQAgPCAyJAEJAQUBZgEAAiAwBgEBCCBYjREgPCA0jhEAAIBACQEGAQERIEcJbmNfcml0dWFsID09IDAkAQkBBQFzAQAdIFj9ECBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zawAFAXMCABogWP0QIG8SbmNfYXJnX3BhdWxkcm9uX3NrAAUBcwMAHSBY/RAgbxVuY19ib3NtZXJfcGF1bGRyb25fc2sABQFzBAAdIFj9ECBvFW5jX2JyZXRvbl9wYXVsZHJvbl9zawAFAXMFAB0gWP0QIG8VbmNfZHVubWVyX3BhdWxkcm9uX3NrAAUBcwYAHyBY/RAgbxduY19pbXBlcmlhbF9wYXVsZHJvbl9zawAFAXMHAB4gWP0QIG8WbmNfa2hhamlpdF9wYXVsZHJvbl9zawAFAXMIABsgWP0QIG8TbmNfbm9yZF9wYXVsZHJvbl9zawAFAXMJABogWP0QIG8SbmNfb3JjX3BhdWxkcm9uX3NrAAUBcwoAGSBY/RAgbxFuY19yZ19wYXVsZHJvbl9zawAFAXMLAB8gWP0QIG8XbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YABQFzDAAcIFj9ECBvFG5jX2FyZ19wYXVsZHJvbl9za19mAAUBcw0AHyBY/RAgbxduY19ib3NtZXJfcGF1bGRyb25fc2tfZgAFAXMOAB8gWP0QIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YABQFzDwAfIFj9ECBvF25jX2R1bm1lcl9wYXVsZHJvbl9za19mAAUBcxAAISBY/RAgbxluY19pbXBlcmlhbF9wYXVsZHJvbl9za19mAAUBcxEAICBY/RAgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YABQFzEgAdIFj9ECBvFW5jX25vcmRfcGF1bGRyb25fc2tfZgAFAXMTABwgWP0QIG8UbmNfb3JjX3BhdWxkcm9uX3NrX2YABQFzFAAbIFj9ECBvE25jX3JnX3BhdWxkcm9uX3NrX2YABQFzFQAXIFj9ECBvD25jX3BvaXNvbl9jdXJlZAAFAXMWABUgWP0QIG8NbmNfZmlyZV9jdXJlZAAFAXMXABYgWP0QIG8ObmNfZnJvc3RfY3VyZWQABgHDCSBzGQAgPT0g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
+SCHD nc_cauldron_script 1 0 1 3193 13
+SCVR state2;timer;;
+SCDT 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
 SCTX
     begin nc_cauldron_script
     
-        float timer
-        short nc_altmer_skl
-        short nc_argonian_skl
-        short nc_bosmer_skl
-        short nc_breton_skl
-        short nc_dunmer_skl
-        short nc_imperial_skl
-        short nc_khajiit_skl
-        short nc_nord_skl
-        short nc_orc_skl
-        short nc_redguard_skl
-        short nc_altmer_skl_f
-        short nc_argonian_skl_f
-        short nc_bosmer_skl_f
-        short nc_breton_skl_f
-        short nc_dunmer_skl_f
-        short nc_imperial_skl_f
-        short nc_khajiit_skl_f
-        short nc_nord_skl_f
-        short nc_orc_skl_f
-        short nc_redguard_skl_f
-        short nc_poison
-        short nc_fire
-        short nc_frost
-        short doonce
-        short state
-        ;global nc_ritual
+    float timer
+    short state2
+    ;global nc_ritual
     
-        if ( menumode == 1 )
-            return
-        endif
+    if ( menumode == 1 )
+    	return
+    endif
     
-        set timer to ( timer + GetSecondsPassed )
-        if ( timer < 2 )
-            return
-        endif
-        set timer to 0
+    set timer to ( timer + GetSecondsPassed )
+    if ( timer < 2 )
+    	return
+    endif
+    set timer to 0
     
-        if ( getscale < 4 )
-            setscale 4
-        endif
+    if ( getscale < 4 )
+    	setscale 4
+    endif
     
-        if ( nc_ritual == 0 )
-            return
-        endif
+    if ( nc_ritual == 0 )
+    	return
+    endif
     
-        set nc_altmer_skl to getItemCount "nc_altmer_pauldron_sk"
-        set nc_argonian_skl to getItemCount "nc_arg_pauldron_sk"
-        set nc_bosmer_skl to getItemCount "nc_bosmer_pauldron_sk"
-        set nc_breton_skl to getItemCount "nc_breton_pauldron_sk"
-        set nc_dunmer_skl to getItemCount "nc_dunmer_pauldron_sk"
-        set nc_imperial_skl to getItemCount "nc_imperial_pauldron_sk"
-        set nc_khajiit_skl to getItemCount "nc_khajiit_pauldron_sk"
-        set nc_nord_skl to getItemCount "nc_nord_pauldron_sk"
-        set nc_orc_skl to getItemCount "nc_orc_pauldron_sk"
-        set nc_redguard_skl to getItemCount "nc_rg_pauldron_sk"
-        set nc_altmer_skl_f to getItemCount "nc_altmer_pauldron_sk_f"
-        set nc_argonian_skl_f to getItemCount "nc_arg_pauldron_sk_f"
-        set nc_bosmer_skl_f to getItemCount "nc_bosmer_pauldron_sk_f"
-        set nc_breton_skl_f to getItemCount "nc_breton_pauldron_sk_f"
-        set nc_dunmer_skl_f to getItemCount "nc_dunmer_pauldron_sk_f"
-        set nc_imperial_skl_f to getItemCount "nc_imperial_pauldron_sk_f"
-        set nc_khajiit_skl_f to getItemCount "nc_khajiit_pauldron_sk_f"
-        set nc_nord_skl_f to getItemCount "nc_nord_pauldron_sk_f"
-        set nc_orc_skl_f to getItemCount "nc_orc_pauldron_sk_f"
-        set nc_redguard_skl_f to getItemCount "nc_rg_pauldron_sk_f"
-        set nc_poison to getItemCount "nc_poison_cured"
-        set nc_fire to getItemCount "nc_fire_cured"
-        set nc_frost to getItemCount "nc_frost_cured"
+    if ( state2 == 1 )
+    	enableplayerlooking
+    	set nc_ritual to 0
+    	set state2 to 0
+    	return
+    endif
     
-        if ( state == 0 )
-            if ( nc_ritual == 1 )
-                if ( getItemCount "nc_altmer_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 2
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 2 )
-                if ( getItemCount "nc_arg_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 1
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 3 )
-                if ( getItemCount "nc_bosmer_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 3
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 4 )
-                if ( getItemCount "nc_breton_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 4
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 5 )
-                if ( getItemCount "nc_dunmer_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 5
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 6 )
-                if ( getItemCount "nc_imperial_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 6
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 7 )
-                if ( getItemCount "nc_khajiit_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 7
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 8 )
-                if ( getItemCount "nc_nord_pauldron_sk" >= 1 )
-                   startscript nc_gem_test
-    			 set nc_gem_race to 8
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 9 )
-                if ( getItemCount "nc_orc_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 9
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 10 )
-                if ( getItemCount "nc_rg_pauldron_sk" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 10
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 11 )
-                if ( getItemCount "nc_altmer_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 12
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 12 )
-                if ( getItemCount "nc_arg_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 11
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 13 )
-                if ( getItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 13
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 14 )
-                if ( getItemCount "nc_breton_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 14
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 15 )
-                if ( getItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 15
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 16 )
-                if ( getItemCount "nc_imperial_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 16
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 17 )
-                if ( getItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 17
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 18 )
-                if ( getItemCount "nc_nord_pauldron_sk_f" >= 1 )
-                   startscript nc_gem_test
-    			 set nc_gem_race to 18
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 19 )
-                if ( getItemCount "nc_orc_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 19
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 20 )
-                if ( getItemCount "nc_rg_pauldron_sk_f" >= 1 )
-                    startscript nc_gem_test
-    			 set nc_gem_race to 20
-                    set state to 1
-                else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            elseif ( nc_ritual == 21 )
-                if ( getItemCount "nc_poison_pauldron" >= 1 )
-                  startscript nc_summon_poison
-                   set state to 1
-                elseif ( getItemCount "nc_fire_pauldron" >= 1 )
-                    startscript nc_summon_fire
-                    set state to 1
-                elseif ( getItemCount "nc_frost_pauldron" >= 1 )
-                    startscript nc_summon_frost
-                    set state to 1
-    	   	  else
-                    MessageBox "Вам нужен труп, чтобы провести ритуал."
-                    set state to 1
-                endif
-            endif
-    
-        elseif ( state == 1 )
-            enableplayerlooking
-            set doonce to 0
-            set nc_ritual to 0
-            set state to 0
-            return
-        endif
+    if ( nc_ritual == 1 )
+    	if ( getItemCount "nc_altmer_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 2
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 2 )
+    	if ( getItemCount "nc_arg_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 1
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 3 )
+    	if ( getItemCount "nc_bosmer_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 3
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    		set state2 to 1
+    	endif
+    elseif ( nc_ritual == 4 )
+    	if ( getItemCount "nc_breton_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 4
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 5 )
+    	if ( getItemCount "nc_dunmer_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 5
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 6 )
+    	if ( getItemCount "nc_imperial_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 6
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 7 )
+    	if ( getItemCount "nc_khajiit_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 7
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 8 )
+    	if ( getItemCount "nc_nord_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 8
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 9 )
+    	if ( getItemCount "nc_orc_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 9
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 10 )
+    	if ( getItemCount "nc_rg_pauldron_sk" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 10
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 11 )
+    	if ( getItemCount "nc_altmer_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 12
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 12 )
+    	if ( getItemCount "nc_arg_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 11
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 13 )
+    	if ( getItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 13
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 14 )
+    	if ( getItemCount "nc_breton_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 14
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 15 )
+    	if ( getItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 15
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 16 )
+    	if ( getItemCount "nc_imperial_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 16
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 17 )
+    	if ( getItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 17
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 18 )
+    	if ( getItemCount "nc_nord_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 18
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 19 )
+    	if ( getItemCount "nc_orc_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 19
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 20 )
+    	if ( getItemCount "nc_rg_pauldron_sk_f" >= 1 )
+    		startscript nc_gem_test
+    		set nc_gem_race to 20
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    elseif ( nc_ritual == 21 )
+    	if ( getItemCount "nc_poison_pauldron" >= 1 )
+    		startscript nc_summon_poison
+    	elseif ( getItemCount "nc_fire_pauldron" >= 1 )
+    		startscript nc_summon_fire
+    	elseif ( getItemCount "nc_frost_pauldron" >= 1 )
+    		startscript nc_summon_frost
+    	else
+    		MessageBox "Вам нужен труп, чтобы провести ритуал."
+    	endif
+    endif
+    set state2 to 1
     
     end
 
@@ -34975,10 +34883,6 @@ ENAM EgD//wAAAAAAAAAAHgAAAAEAAAAKAAAA
 ENAM EwD//wAAAAAAAAAAHgAAAAUAAAAPAAAA
 ENAM LgD//wAAAAAAAAAAPAAAAAEAAAABAAAA
 
-CREA 137438953472
-NAME mudcrab
-DELE AAAAAA==
-
 LEVI
 NAME l_n_soul gem
 DATA 3
@@ -36644,14 +36548,14 @@ ANAM
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
-NPDT QwAyAABxygIAAAAA
+NPDT QwAyAABs1AIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
 NPCO 1 nc_tragrilar_mantle
 NPCO 1 common_shirt_03_c
 NPCO 1 common_shoes_03
 NPCO 1 common_pants_03_b
-AIDT HgAeHgBxygIAAAAA
+AIDT HgAeHgBs1AIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BOOK
@@ -45159,7 +45063,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQBWC/v/////+///QP///wECVgsBAAAAZvr//2T///8BAWcL+////3H9//89////AQJnC/z///90/v//QP///wEEhAudAQAAe/7//0D///8BAoQLUP7//3v+//9A////AQKEC/f////6////QP///wEEVgv9////TwEAAED///8BA1YLnwEAAIYBAABA////AQJnC1n+//95AQAAQP///wECVgtL/v//MQAAAED///8BA1YLmgEAAD8AAABA////AQMAAA==
+PGRP /////2r6//86////AQBzAPv/////+///QP///wECAAABAAAAZvr//2T///8BAWFj+////3H9//89////AQIAAPz///90/v//QP///wEEY3WdAQAAe/7//0D///8BAgAAUP7//3v+//9A////AQJyX/f////6////QP///wEEAAD9////TwEAAED///8BA21vnwEAAIYBAABA////AQIAAFn+//95AQAAQP///wECYXJL/v//MQAAAED///8BAwAAmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -46786,7 +46690,7 @@ DATA wB1jwmgrpUXkO7XDAAAAAAAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAACAANsB
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAHm84D7//+AEwAAu/7//wAC8e6A+///ABQAALv+//8AAfD7APz//wARAABb/v//AAPu9wD8//+AEQAAWf7//wAD8uAA/P//ABIAAFn+//8AAiDiAPz//4ASAABZ/v//AALlIAD8//8AEwAAWf7//wAC4+4A/P//gBMAAFn+//8AAujkAPz//wAUAABZ/v//AAHlIID8//+AEAAAWf7//wAE4OyA/P//ABEAAFn+//8ABODngPz//wASAABZ/f//AAM+DYD8//+AEgAAWf3//wACFQ6A/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABbQCA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AARldAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAmFpAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIYW0A/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAdjaAD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAWlwAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADZnWA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAEEAID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8AB2NogP3//wAUAABZ/f//AAgAAID9//+AFAAAWf7//wABbGWA/f//gBQAAFn9//8ABwAAgP3//wAVAABZ/v//AAEgb4D9//8AFQAAWf3//wAEZwAA/v//ABAAAFn+//8AA2V0AP7//4AQAABZ/f//AAIAAAD+//+AEQAA6v3//wACdWwA/v//ABIAAFn9//8ABWluAP7//4ASAABZ/f//AAhhbQD+//8AEwAAWf3//wAHZwAA/v//gBMAAFn9//8ABwQAAP7//wAUAABZ/f//AAhpbgD+//+AFAAAWf3//wAIAAAA/v//ABUAAF7+//8AAmdoAP7//wAVAABZ/f//AAUAAID+//+ADwAAXf7//wAEaGWA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAFmIID+//+AEAAAWf3//wAEbnSA/v//ABEAAFn9//8ABCBvgP7//4ARAABZ/f//AAR0aID+//8AEgAAWf3//wAHZXSA/v//gBIAAFn9//8ACHRlgP7//wATAABZ/f//AAdpcoD+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8AB3NvgP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACBwCA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMAAAD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABXJtAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFIG8A////gBEAAFn9//8AA2lkAP///wASAABZ/f//AAZldAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABnVsAP///4ATAABi/f//AARsbwD///8AFAAAXv3//wAEYW0A////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AAMKAAD///8AFQAAWf3//wAHciAA////gBUAAFn+//8AAQAAAP///4AVAABZ/f//AAMAAID///+A////AP///wADAACA////AAAAAAD///8ABG1hgP///4AAAAAA////AAQAAID///8AAQAACv///wABbmOA////gAEAAAD///8ABAAAgP///wACAAAA////AAR0aID///+AAgAAAP///wAEAACA////AAMAAAD///8ABWV3gP///4ADAAAA////AAQAAID///8ABAAAAP///wAEb2+A////gAQAAAD///8ABWV0gP///wAFAAAA////AARhbYD///8ABgAAAP///wADYWKA////gAYAAAD///8ABA8AgP///wAHAAAA////AAFuY4D///+ABwAAAP///wADAACA////AAgAAAD///8ABGllgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEc2iA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AARmIID///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAiBvgP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACAACA////gBEAAFn9//8ABW9sgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADIG+A////gBIAAFn9//8ABAAAgP///wATAABp/f//AAJhcoD///+AEwAAef3//wADAACA////ABQAAHn9//8AA2JsgP///4AUAABO/v//AAMAAID///+AFAAAaf3//wADAgCA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAcAAID///+AFQAAWf7//wACbmeA////gBUAAF/9//8AAwAAAAAAAID///8A////AARpbgAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABXQgAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFaXAAAAAAAAIAAAD///8ABAAAAAAAAIACAAAA////AAhuZwAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABnVlAAAAAAAEAAAA////AAVuZwAAAACABAAAAP///wAIY3IAAAAAAAUAAAD///8AB3JpAAAAAIAFAAAA////AAYEAAAAAAAABgAAAP///wADdCAAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAdvbAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACCByAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADdGUAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AANmIAAAAACAEAAAWf7//wAGaXMAAAAAgBAAAFn9//8ABSBvAAAAAAARAABZ/v//AAJnIAAAAAAAEQAAWf3//wAHbmcAAAAAgBEAAFn+//8AA2tpAAAAAIARAABZ/f//AAZsaQAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwQAAAAAAIASAABZ/f//AAN0ZQAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABWx0AAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADYm8AAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAVyaQAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABGlugAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADIG+AAAAAgAAAAAD///8ABAAAgAAAAAABAAAA////AARyZYAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AA3JpgAAAAIACAAAA////AAVvb4AAAAAAAwAAAP///wAEBQCAAAAAgAMAAAD///8ABAAAgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFbmeAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AARib4AAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABGlvgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFZiCAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQgb4AAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABGllgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADY2iAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAIHAIAAAAAAEgAAvf7//wABcmmAAAAAABIAAF/9//8AAgAAgAAAAIASAABZ/f//AAVoYYAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwAAgAAAAAAUAAB5/f//AAQAAIAAAACAFAAAYf3//wAFIHKAAAAAABUAAFn+//8AAgAAgAAAAAAVAABZ/f//AAcnc4AAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABCBvAAEAAIAOAAC6/v//AAEAAAABAAAADwAAWf7//wABbmcAAQAAgA8AAFn+//8ABAAAAAEAAAAQAABZ/v//AARsaQABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABQkAAAEAAAARAABZ/f//AAVhYwABAACAEQAAWf3//wADAAAAAQAAABIAAFn9//8ABmJvAAEAAIASAABZ/f//AAcAAAABAAAAEwAAWf3//wAHZSAAAQAAgBMAAFn9//8ABWYgAAEAAAAUAABZ/f//AAZmaQABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAmYgAAEAAAAVAABZ/f//AAYAAAABAACAFQAAWf7//wABIG8AAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAJuZ4ABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAXJpgAEAAIAQAABZ/f//AANkAIABAAAAEQAAWf3//wADCwCAAQAAABIAAFn9//8ABmlugAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIcmSAAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAhnaIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAmZpAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABZiAAAgAAABEAANj9//8AAnRpAAIAAIARAAC4/f//AAIgbwACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8AB2xpAAIAAAATAABZ/f//AAgAAAACAACAEwAAWf3//wAHcmkAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUMAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AANlcoACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAXJpgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFIHKAAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAZmIIACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABWhlgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACcmSAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AAR0aAADAAAAEQAAu/7//wABbmcAAwAAgBEAAFn+//8AAQ4AAAMAAIARAABZ/f//AAIAAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAEAAAADAACAEwAA1P3//wABa2UAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AANmaQADAACAFAAAWf3//wACAACAAwAAgBAAAFv+//8AA2YggAMAAAARAABZ/v//AAQAAIADAACAEQAAWf7//wAEIG+AAwAAABMAALr+//8AAwAAgAMAAIATAAC7/v//AAFuZwAEAAAAEQAAu/7//wABaW8ABAAAgBEAAFn+//8AA3NoAAQAAAASAABZ/v//AAMAAAAEAACAEgAAWf7//wADDgAABAAAABMAAFn+//8AAmcAAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADZwAABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AAQgcoAEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABBUMgAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABGIAgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACcmUABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AARyX4AGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABV9ygAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFcmWABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAVmb4AGAACAFwAAWf///wAFYgCABgAAABgAAFn///8ABHBfAAcAAIATAABbAAAAAAJuYwAHAACAEwAAWf///wAFAQAABwAAABQAAFwAAAAAAmd1AAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIYWwABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAdpbgAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABHlfAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADaWYABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAANydAAHAAAAFwAAWf///wAIeV8ABwAAgBcAAFn///8ACGZvAAcAAAAYAABZ////AAYVAAAHAACAGAAAWf///wAGcF8ABwAAABkAAFkAAAAAAnRoAAcAAAAZAABZ////AAMBAIAHAAAAEwAAWQAAAAADcG+ABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAdzdIAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8AB2llgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIYmmABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAdfYoAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABXZpgAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHbGmABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAhwX4AHAACAFwAAWQAAAAAGbGSABwAAgBcAAFn///8ABwEAgAcAAAAYAABZAAAAAAVzdIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABmIAgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEX2KABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAANfcgAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABGVjAAgAAIATAABZ////AAgAAAAIAAAAFAAAXAAAAAAEc3QACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAVyZQAIAACAFAAAWf///wAHZV8ACAAAABUAAFwAAAAAB3BfAAgAAAAVAABZ////AAhlXwAIAACAFQAAWQAAAAAIAQAACAAAgBUAAFn///8ABnRoAAgAAAAWAABZAAAAAAgAAAAIAACAFgAAWQAAAAAIdGUACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAhsdQAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACGVfAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIb3IACAAAABgAAFn///8ACGIAAAgAAIAYAABZAAAAAAhzdAAIAACAGAAAWf///wAHAAAACAAAABkAAFkAAAAABXJlAAgAAAAZAABZ////AAdfYgAIAACAGQAAWf///wAEcF+ACAAAABMAAJkAAAAAAndlgAgAAAATAABZ////AAUBAIAIAACAEwAAWf///wAIYW6ACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACHNvgAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIc3eACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAZuIIAIAAAAFgAAWQAAAAAGAACACAAAABYAAFn///8AB2FpgAgAAIAWAABcAAAAAAYAAIAIAACAFgAAWf///wAHZHKACAAAABcAAFkAAAAAB3EAgAgAAAAXAABZ////AAhwX4AIAACAFwAAWQAAAAAIZW6ACAAAgBcAAFn///8ACAEAgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAAB2NrgAgAAIAYAABZ////AAcAAIAIAAAAGQAAWQAAAAAEcnOACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAVzcAAJAAAAEwAAWf///wAFAAAACQAAgBMAAJkAAAAAAm5fAAkAAIATAABZ////AAgAAAAJAAAAFAAAWQAAAAAFcmQACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAdjaAAJAACAFAAAWf///wAIAAAACQAAABUAAFkAAAAACHBfAAkAAAAVAABZ////AAZhbgAJAACAFQAAWQAAAAAGAwAACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAAAAJAACAFgAAWf///wAHdGEACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAdlbAAJAACAFwAAWQAAAAAHAAAACQAAgBcAAFn///8ACHlfAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHaWYACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAZydAAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABWZvgAkAAAATAABKAAAAAAIAAIAJAAAAEwAAWf///wAFcF+ACQAAgBMAAFoAAAAAAmlngAkAAIATAABZ////AAcDAIAJAAAAFAAAWf///wAGX2OACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAdnaYAJAAAAFQAAWQAAAAAHAACACQAAABUAAFn///8AB3BlgAkAAIAVAABZAAAAAAYAAIAJAAAAFgAAWf///wADeV+ACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAZpZoAJAACAFwAAWQAAAAAFAACACQAAgBcAAFn///8ACHJ0gAkAAAAYAABZ////AAVjAIAJAACAGAAAWf///wAFZnKACQAAABkAAFn///8ABl9jgAkAAIAZAABZ////AARwXwAKAAAAEwAAVQAAAAACAAAACgAAABMAAFn///8AAwMAAAoAAIATAABZ////AANfYwAKAACAFAAAWf///wAEAAAACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAAAAKAACAFQAAWQAAAAAEb24ACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAVjAAAKAAAAFgAAWf///wADAAAACgAAgBYAAFkAAAAABHRuAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADZ2kACgAAABcAAFn///8AA19jAAoAAIAXAABZ////AAVuaQAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAXBfAAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADAwCACgAAgBQAAFn///8AA3RhgAoAAAAVAAA4AAAAAAIAAIAKAAAAFQAAWf///wAEX2OACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AARhZ4AKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8AB2VfgAoAAIAWAABZAAAAAAUAAIAKAACAFgAAWf///wAGb3KACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AARzdIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AA3JlAAsAAAAVAAA4AAAAAAJlbgALAAAAFQAAWf///wAFcF8ACwAAgBUAAFkAAAAABGFfAAsAAIAVAABZ////AAUDAAALAAAAFgAAWQAAAAAFb24ACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAVlZQALAACAFgAAWf///wAEAAAACwAAABcAAFkAAAAAA3N0AAsAAAAXAABZ////AAQAAAALAACAFwAAWf///wAEZV8ACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAJrXw==
+PGRP gPv//wATAAC+/v//AAEg54D7//+AEwAAu/7//wACIOWA+///ABQAALv+//8AASDtAPz//wARAABb/v//AAMg8QD8//+AEQAAWf7//wAD6u4A/P//ABIAAFn+//8AAujrAPz//4ASAABZ/v//AALg6gD8//8AEwAAWf7//wAC8uAA/P//gBMAAFn+//8AAvDoAPz//wAUAABZ/v//AAFSPoD8//+AEAAAWf7//wAEHwCA/P//ABEAAFn+//8ABC0ggPz//wASAABZ/f//AAPy5YD8//+AEgAAWf3//wACIOiA/P//ABMAAFn+//8AAf8ggPz//wATAABZ/f//AATy4ID8//+AEwAAWf7//wAB4OOA/P//gBMAAFn9//8AA+73AP3//wAQAABZ/v//AATx8gD9//+AEAAAWf7//wAEIOUA/f//gBEAAFn9//8AAiDtAP3//wASAABZ/f//AAXo5wD9//+AEgAAWf3//wAI8yAA/f//ABMAAFn9//8AB/AgAP3//4ATAABZ/f//AAfu7AD9//8AFAAAWf3//wAG5fAA/f//gBQAAFn+//8AAVI+AP3//4AUAABZ/f//AAQfCoD9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAFheID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABHhlgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIYXSA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAhiYYD9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8AB2wggP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEZWUA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAJzaQD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQcAAP7//4ASAABZ/f//AAhlAAD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8AB2xlAP7//wAUAABZ/f//AAgAAAD+//+AFAAAWf3//wAIdGwA/v//ABUAAF7+//8AAgAAAP7//wAVAABZ/f//AAUfCoD+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEAACA/v//ABEAAFn9//8ABGZmgP7//4ARAABZ/f//AAQAAID+//8AEgAAWf3//wAHYgCA/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAdhY4D+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8AByB3gP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACZWWA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AANzdAD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABAYAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFZmYA////gBEAAFn9//8AAwAAAP///wASAABZ/f//AAZ3YQD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABm4gAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEZ2gA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AANldQD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQAAAP///4AVAABZ/f//AANvboD///+A////AP///wADAACA////AAAAAAD///8ABCBzgP///4AAAAAA////AAQAAID///8AAQAACv///wABb26A////gAEAAAD///8ABAAAgP///wACAAAA////AARpbYD///+AAgAAAP///wAEb3KA////AAMAAAD///8ABQQAgP///4ADAAAA////AARvcoD///8ABAAAAP///wAEAACA////gAQAAAD///8ABWUAgP///wAFAAAA////AAQAAID///8ABgAAAP///wADeW2A////gAYAAAD///8ABAAAgP///wAHAAAA////AAFuZ4D///+ABwAAAP///wADAACA////AAgAAAD///8ABHNhgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEbCCA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AARlZYD///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAnN0gP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACBgCA////gBEAAFn9//8ABW5hgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADd2+A////gBIAAFn9//8ABAAAgP///wATAABp/f//AAJ5bYD///+AEwAAef3//wADAACA////ABQAAHn9//8AA2NsgP///4AUAABO/v//AAMAAID///+AFAAAaf3//wADHwyA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAcAAID///+AFQAAWf7//wACc3eA////gBUAAF/9//8AAwAAAAAAAID///8A////AARyAAAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABXRvAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFaG8AAAAAAAIAAAD///8ABAAAAAAAAIACAAAA////AAggdwAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABnBlAAAAAAAEAAAA////AAVkAAAAAACABAAAAP///wAIc3QAAAAAAAUAAAD///8ABwAAAAAAAIAFAAAA////AAYGAAAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAdzaAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACGVyAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADaG8AAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAMgZAAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABXZlAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AAyBjAAAAAIARAABZ/f//AAYAAAAAAAAAEgAAzv7//wACaF8AAAAAABIAAFn9//8AA3MAAAAAAIASAABZ/f//AAN0YwAAAAAAEwAAaf3//wABZWQAAAAAgBMAAHn9//8ABWZ1AAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADAQAAAAAAgBQAAGn9//8AAXVpAAAAAAAVAABZ/f//AAUAAAAAAACAFQAAWf7//wACY3UAAAAAgBUAAFn9//8ABAAAgAAAAID///8A////AANzc4AAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABGlugAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABYWyAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAVyaYAAAAAAAwAAAP///wAEb3KAAAAAgAMAAAD///8ABHBlgAAAAAAEAAAA////AAR1aYAAAACABAAAAP///wAFc3SAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AAQGAIAAAAAABgAAAP///wAEYXOAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AARzc4AAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABXVpgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACdWmAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAVfY4AAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABnNogAAAAIARAAC9/v//AAIAAIAAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAiBngAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEaF+AAAAAgBMAAHn9//8AA3MAgAAAAAAUAAB5/f//AARyX4AAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAmlygAAAAAAVAABZ/f//AAcAAIAAAACAFQAAWf7//wACBACAAAAAgBUAAF39//8ABF9nAAEAAIAOAAC6/v//AAEAAAABAAAADwAAWf7//wABYXYAAQAAgA8AAFn+//8ABAAAAAEAAAAQAABZ/v//AAR2ZQABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABV9nAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADX2cAAQAAABIAAFn9//8ABgAAAAEAAIASAABZ/f//AAdzaAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQAAAAEAAAAUAABZ/f//AAYgaAABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAmhfAAEAAAAVAABZ/f//AAYAAAABAACAFQAAWf7//wABdGMAAQAAgBUAAFn9//8AA2VkgAEAAIAPAAC7/v//AAJmdYABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAQEAgAEAAIAQAABZ/f//AAMAAIABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABmhlgAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIaGGAAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAggaIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAmhlAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABbGIAAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAJsdgACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8AB2JvAAIAAAATAABZ/f//AAgAAAACAACAEwAAWf3//wAHCQAAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AANtAIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAR8IgAIAAAARAACn/f//AANuIIACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABHJfgAIAAIASAABZ/f//AAYAAIACAAAAEwAAWf3//wAGb26AAgAAgBMAAFn9//8ABQAAgAIAAAAUAABZ/f//AAVhdIACAACAFAAAWf7//wACaWeAAgAAABUAAFn9//8AAXVsAAMAAIAQAABZ/v//AAQAAAADAAAAEQAAu/7//wABaW4AAwAAgBEAAFn+//8AAWdoAAMAAIARAABZ/f//AAJvbgADAAAAEgAAWf3//wAFdAAAAwAAgBIAAFn9//8ABGlyAAMAAAATAADV/f//AAFmdAADAACAEwAA1P3//wABBAAAAwAAABQAAFn+//8AAV9wAAMAAAAUAABZ/f//AAMAAAADAACAFAAAWf3//wACaHSAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AARoYYADAACAEQAAWf7//wAEZnSAAwAAABMAALr+//8AAyBsgAMAAIATAAC7/v//AAEAAAAEAAAAEQAAu/7//wABcGEABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AANsXwAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAm5lAAQAAIATAABZ/v//AANyAAAEAAAAFAAAfP7//wADYm8ABAAAgBQAAKX+//8ABG5fAAQAAAAVAADT/v//AAQJAIAEAACAFAAAwP7//wAEbl+ABAAAABUAAOP+//8ABAAAgAQAAIAVAAAH////AARybwAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABGxkgAUAAIAVAABH////AANQA4AFAAAAFgAATf///wACYXUABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AAQfCIAGAACAFAAAWQAAAAACc2iABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AARkAIAGAAAAFgAAWf///wAFAACABgAAgBYAAF7///8ABWhlgAYAAAAXAABZ////AAUAAIAGAACAFwAAWf///wAFb3eABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAJfbAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAl9zAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIcGUABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAdzdAAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABAYAAAcAAAAWAABZ////AAdsZAAHAACAFgAAWwAAAAADAAAABwAAgBYAAFn///8ACGllAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIcnMABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAZfcwAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAmxkAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADZ2iABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAdlbYAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8AB29ygAcAAAAVAABcAAAAAAVsZIAHAAAAFQAAWf///wAIDwCABwAAgBUAAFkAAAAAByB3gAcAAIAVAABZ////AAcAAIAHAAAAFgAAWQAAAAAGYmmABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAZvboAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAAB2lygAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGBQCABwAAgBcAAFn///8AB2xlgAcAAAAYAABZAAAAAAUAAIAHAAAAGAAAWf///wAIeGWABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAhkYYAHAAAAGQAAWQAAAAAEAACABwAAABkAAFn///8ABmFyAAgAAAATAABZAAAAAAMAAAAIAAAAEwAAWf///wAFdmkACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAhsIAAIAAAAFAAAXAAAAAAEcCAACAAAABQAAFn///8ACG9jAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHc2kACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAgHAAAIAACAFQAAWQAAAAAIZQAACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAhheAAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABm1lAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIb2YACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAhpdAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACGxlAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHZW4ACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAdsYQAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAhAAgAgAAAATAABZ////AAUgc4AIAACAEwAAWf///wAIAACACAAAABQAAFkAAAAABmVugAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHb2SACAAAgBQAAFn///8ACGFjgAgAAAAVAABZAAAAAAh3b4AIAAAAFQAAWf///wAIc2iACAAAgBUAAFkAAAAABwIAgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGAACACAAAABYAAFn///8AByBvgAgAAIAWAABcAAAAAAYAAIAIAACAFgAAWf///wAHZmaACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAhyZIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACHBhgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIIGaACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAdvboAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABWlygAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFBQAACQAAgBMAAJkAAAAAAmVyAAkAAIATAABZ////AAgAAAAJAAAAFAAAWQAAAAAFYWMACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAdkbQAJAACAFAAAWf///wAIAAAACQAAABUAAFkAAAAACGFyAAkAAAAVAABZ////AAYAAAAJAACAFQAAWQAAAAAGZmwACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAZsIAAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABmVlAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHc3QACQAAgBcAAFn///8ACHIAAAkAAAAYAABZAAAAAAYHAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAZhdQAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABWYggAkAAAATAABKAAAAAAIAAIAJAAAAEwAAWf///wAFYWaACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAdzdIAJAAAAFAAAWf///wAGAACACQAAgBQAAFkAAAAABWwggAkAAIAUAABZ////AAdlboAJAAAAFQAAWQAAAAAHZWWACQAAABUAAFn///8AB2lugAkAAIAVAABZAAAAAAZzaIAJAAAAFgAAWf///wADAACACQAAABcAAFkAAAAABQcAgAkAAAAXAABZ////AAZhbYAJAACAFwAAWQAAAAAFAACACQAAgBcAAFn///8ACCBvgAkAAAAYAABZ////AAUAAIAJAACAGAAAWf///wAFZmaACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAR0YQAKAAAAEwAAVQAAAAACAAAACgAAABMAAFn///8AA2FrAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEbCAACgAAABUAAFkAAAAABG1pAAoAAAAVAABZ////AARsdgAKAACAFQAAWQAAAAAEY2sACgAAgBUAAFn///8AAnNpAAoAAAAWAABZAAAAAAVwZQAKAAAAFgAAWf///wADCQAACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAVmIAAKAAAAGAAAWf///wAEcnMACgAAgBgAAFn///8AAXVkAAoAAAAZAABZ////AAJzdAAKAACAGQAAWf///wADbWWACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAJ0aYAKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAA2FmgAoAAIAVAABZ////AARhdIAKAAAAFgAAWwAAAAAGZGWACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUSAIAKAACAFgAAWf///wAGb26ACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQgc4AKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AA29uAAsAAAAVAAA4AAAAAAIAAAALAAAAFQAAWf///wAFaXIACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUFAAALAAAAFgAAWQAAAAAFZXIACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAVheQALAACAFgAAWf///wAEAAAACwAAABcAAFkAAAAAA3N3AAsAAAAXAABZ////AAQAAAALAACAFwAAWf///wAEdGUACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAJsYQ==
 PGRC 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SwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA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MQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
 
 DIAL
