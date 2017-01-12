@@ -1746,7 +1746,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -2252,7 +2252,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -2758,7 +2758,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -3262,7 +3262,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -3766,7 +3766,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -4270,7 +4270,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -4704,7 +4704,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 5 )
     	if ( doOnce4 == 0 )
     		sethealth 0
     		set doOnce4 to 1
@@ -5136,7 +5136,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 5 )
     	if ( doOnce4 == 0 )
     		sethealth 0
     		set doOnce4 to 1
@@ -5638,7 +5638,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -6142,7 +6142,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -6646,7 +6646,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -7150,7 +7150,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -7654,7 +7654,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -8158,7 +8158,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -8662,7 +8662,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 30 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -9166,7 +9166,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 30 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -9670,7 +9670,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 30 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -10174,7 +10174,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 30 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -10611,7 +10611,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 10 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 5 )
     	if ( doOnce4 == 0 )
     		sethealth 0
     		set doOnce4 to 1
@@ -11111,7 +11111,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -11615,7 +11615,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 25 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -12118,7 +12118,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 20 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -12621,7 +12621,7 @@ SCTX
     		sethealth 0
     		set doOnce4 to 1
     	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 20 )
+    elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
     	if ( doOnce4 == 0 )
     		MessageBox "Чары распались."
     		sethealth 0
@@ -31900,25 +31900,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     					removeitem "nc_altmer_pauldron_sk" 1
        	         removeitem "nc_altmer_skull" 1
-          	      removeitem "ingred_scrap_metal_01" 1
-             	   removeitem "ingred_netch_leather_01" 1
-             	   removeitem "ingred_bonemeal_01" 10
+          	      removeitem "ingred_scrap_metal_01" 2
+             	   removeitem "ingred_netch_leather_01" 2
+             	   removeitem "ingred_bonemeal_01" 30
              	   set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -31984,25 +31984,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     					removeitem "nc_altmer_pauldron_sk_f" 1
        	         removeitem "nc_altmer_skull_f" 1
-          	      removeitem "ingred_scrap_metal_01" 1
-             	   removeitem "ingred_netch_leather_01" 1
-             	   removeitem "ingred_bonemeal_01" 10
+          	      removeitem "ingred_scrap_metal_01" 2
+             	   removeitem "ingred_netch_leather_01" 2
+             	   removeitem "ingred_bonemeal_01" 30
              	   set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32066,25 +32066,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_arg_pauldron_sk" 1
                 removeitem "nc_argonian_skull" 1
-               removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+               removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32144,25 +32144,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_arg_pauldron_sk_f" 1
                 removeitem "nc_argonian_skull_f" 1
-               removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+               removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32216,32 +32216,32 @@ SCTX
     short state
     
     set nc_pclevel to nc_necro_skill
-    set nc_scrap_metal to "nc_cauldron"->getItemCount "ingred_scrap_metal_01"
-    set nc_netch_leather to "nc_cauldron"->getItemCount "ingred_netch_leather_01"
-    set nc_bonemeal to "nc_cauldron"->getItemCount "ingred_bonemeal_01"
-    set nc_skull to "nc_cauldron"->getItemCount "nc_bosmer_skull"
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_bosmer_skull"
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
-    				"nc_cauldron"->removeitem "nc_bosmer_pauldron_sk" 1
-                "nc_cauldron"->removeitem "nc_bosmer_skull" 1
-                "nc_cauldron"->removeitem "ingred_scrap_metal_01" 1
-                "nc_cauldron"->removeitem "ingred_netch_leather_01" 1
-                "nc_cauldron"->removeitem "ingred_bonemeal_01" 8
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
+    				removeitem "nc_bosmer_pauldron_sk" 1
+                removeitem "nc_bosmer_skull" 1
+               removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 8 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32294,32 +32294,32 @@ SCTX
     short state
     
     set nc_pclevel to nc_necro_skill
-    set nc_scrap_metal to "nc_cauldron"->getItemCount "ingred_scrap_metal_01"
-    set nc_netch_leather to "nc_cauldron"->getItemCount "ingred_netch_leather_01"
-    set nc_bonemeal to "nc_cauldron"->getItemCount "ingred_bonemeal_01"
-    set nc_skull to "nc_cauldron"->getItemCount "nc_bosmer_skull_f"
+    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
+    set nc_skull to getItemCount "nc_bosmer_skull_f"
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
-    				"nc_cauldron"->removeitem "nc_bosmer_pauldron_sk_f" 1
-                "nc_cauldron"->removeitem "nc_bosmer_skull_f" 1
-                "nc_cauldron"->removeitem "ingred_scrap_metal_01" 1
-                "nc_cauldron"->removeitem "ingred_netch_leather_01" 1
-                "nc_cauldron"->removeitem "ingred_bonemeal_01" 8
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
+    				removeitem "nc_bosmer_pauldron_sk_f" 1
+                removeitem "nc_bosmer_skull_f" 1
+               removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 8 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32380,25 +32380,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_breton_pauldron_sk" 1
                removeitem "nc_breton_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32458,25 +32458,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_breton_pauldron_sk_f" 1
                removeitem "nc_breton_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32537,25 +32537,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_dunmer_pauldron_sk" 1
                 removeitem "nc_dunmer_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32619,25 +32619,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_dunmer_pauldron_sk_f" 1
                 removeitem "nc_dunmer_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -32756,9 +32756,9 @@ SCTX
     endif
     
     if ( state == 1 )
-    	if ( nc_cloth >= 1 )
-    		if ( nc_scrap_metal >= 1 )
-    			if ( nc_netch_leather >= 1 )
+    	if ( nc_cloth >= 2 )
+    		if ( nc_scrap_metal >= 2 )
+    			if ( nc_netch_leather >= 2 )
     				if ( nc_bonemeal >= 10 )
     					if ( race == 0 )
     	            			MessageBox "Вам нужен череп для этого ритуала."
@@ -32805,27 +32805,27 @@ SCTX
     						elseif ( race == 20 )
     		            			removeitem "nc_redguard_skull_f" 1
     						endif
-    						removeitem "ingred_scrap_metal_01" 1
-              	  			removeitem "ingred_netch_leather_01" 1
+    						removeitem "ingred_scrap_metal_01" 2
+              	  			removeitem "ingred_netch_leather_01" 2
                 				removeitem "ingred_bonemeal_01" 10
-                				removeitem "misc_clothbolt_02" 1
+                				removeitem "misc_clothbolt_02" 2
                 				removeitem "nc_fire_cured" 1
                 				set state to 2
     					endif
     				else
-    					MessageBox "Вам нужно некоторое количество костяной муки для этого ритуала."
+    					MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
     					set state to 10
     				endif
     			else
-    				MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+    				MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
     				set state to 10
     			endif
     		else
-    			MessageBox "Вам нужны обрезки металла для этого ритуала."
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
     			set state to 10
     		endif
     	else
-    		MessageBox "Вам нужен рулон красной ткани для этого ритуала."
+    		MessageBox "Вам нужны два рулона красной ткани для этого ритуала."
     		set state to 10
     	endif
     endif
@@ -32928,9 +32928,9 @@ SCTX
     endif
     
     if ( state == 1 )
-    	if ( nc_cloth >= 1 )
-    		if ( nc_scrap_metal >= 1 )
-    			if ( nc_netch_leather >= 1 )
+    	if ( nc_cloth >= 2 )
+    		if ( nc_scrap_metal >= 2 )
+    			if ( nc_netch_leather >= 2 )
     				if ( nc_bonemeal >= 10 )
     					if ( race == 0 )
     	            			MessageBox "Вам нужен череп для этого ритуала."
@@ -32977,27 +32977,27 @@ SCTX
     						elseif ( race == 20 )
     		            			removeitem "nc_redguard_skull_f" 1
     						endif
-    						removeitem "ingred_scrap_metal_01" 1
-              	  			removeitem "ingred_netch_leather_01" 1
+    						removeitem "ingred_scrap_metal_01" 2
+              	  			removeitem "ingred_netch_leather_01" 2
                 				removeitem "ingred_bonemeal_01" 10
-                				removeitem "misc_clothbolt_01" 1
+                				removeitem "misc_clothbolt_01" 2
                 				removeitem "nc_frost_cured" 1
                 				set state to 2
     					endif
     				else
-    					MessageBox "Вам нужно некоторое количество костяной муки для этого ритуала."
+    					MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
     					set state to 10
     				endif
     			else
-    				MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+    				MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
     				set state to 10
     			endif
     		else
-    			MessageBox "Вам нужны обрезки металла для этого ритуала."
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
     			set state to 10
     		endif
     	else
-    		MessageBox "Вам нужен рулон голубой ткани для этого ритуала."
+    		MessageBox "Вам нужны два рулона голубой ткани для этого ритуала."
     		set state to 10
     	endif
     endif
@@ -33045,25 +33045,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_imperial_pauldron_sk" 1
                 removeitem "nc_imperial_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33123,25 +33123,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_imperial_pauldron_sk_f" 1
                 removeitem "nc_imperial_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33202,25 +33202,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_khajiit_pauldron_sk" 1
                 removeitem "nc_khajiit_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужен два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33280,25 +33280,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_khajiit_pauldron_sk_f" 1
                 removeitem "nc_khajiit_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33359,25 +33359,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_nord_pauldron_sk" 1
                 removeitem "nc_nord_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 15
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 15 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33437,25 +33437,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     				removeitem "nc_nord_pauldron_sk_f" 1
                 removeitem "nc_nord_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 15
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 15 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33516,25 +33516,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     		  removeitem "nc_orc_pauldron_sk" 1
                 removeitem "nc_orc_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 15
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 15 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33594,25 +33594,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     		  removeitem "nc_orc_pauldron_sk_f" 1
                 removeitem "nc_orc_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 15
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 15 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33727,9 +33727,9 @@ SCTX
     endif
     
     if ( state == 1 )
-    	if ( nc_cloth >= 1 )
-    		if ( nc_scrap_metal >= 1 )
-    			if ( nc_netch_leather >= 1 )
+    	if ( nc_cloth >= 2 )
+    		if ( nc_scrap_metal >= 2 )
+    			if ( nc_netch_leather >= 2 )
     				if ( nc_bonemeal >= 10 )
     					if ( race == 0 )
     	            			MessageBox "Вам нужен череп для этого ритуала."
@@ -33776,27 +33776,27 @@ SCTX
     						elseif ( race == 20 )
     		            			removeitem "nc_redguard_skull_f" 1
     						endif
-    						removeitem "ingred_scrap_metal_01" 1
-              	  			removeitem "ingred_netch_leather_01" 1
+    						removeitem "ingred_scrap_metal_01" 2
+              	  			removeitem "ingred_netch_leather_01" 2
                 				removeitem "ingred_bonemeal_01" 10
-                				removeitem "misc_clothbolt_03" 1
+                				removeitem "misc_clothbolt_03" 2
                 				removeitem "nc_poison_cured" 1
                 				set state to 2
     					endif
     				else
-    					MessageBox "Вам нужно некоторое количество костяной муки для этого ритуала."
+    					MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
     					set state to 10
     				endif
     			else
-    				MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+    				MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
     				set state to 10
     			endif
     		else
-    			MessageBox "Вам нужны обрезки металла для этого ритуала."
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
     			set state to 10
     		endif
     	else
-    		MessageBox "Вам нужен рулон зеленой ткани для этого ритуала."
+    		MessageBox "Вам нужны два рулона зеленой ткани для этого ритуала."
     		set state to 10
     	endif
     endif
@@ -33844,25 +33844,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     		  removeitem "nc_rg_pauldron_sk" 1
                 removeitem "nc_redguard_skull" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -33922,25 +33922,25 @@ SCTX
     
     
     if ( nc_skull >= 1 )
-    	if ( nc_scrap_metal >= 1 )
-       	if ( nc_netch_leather >= 1 )
-          	if ( nc_bonemeal >= 10 )
+    	if ( nc_scrap_metal >= 2 )
+       	if ( nc_netch_leather >= 2 )
+          	if ( nc_bonemeal >= 30 )
     		  removeitem "nc_rg_pauldron_sk_f" 1
                 removeitem "nc_redguard_skull_f" 1
-                removeitem "ingred_scrap_metal_01" 1
-                removeitem "ingred_netch_leather_01" 1
-                removeitem "ingred_bonemeal_01" 10
+                removeitem "ingred_scrap_metal_01" 2
+                removeitem "ingred_netch_leather_01" 2
+                removeitem "ingred_bonemeal_01" 30
                 set state to 1
              else
-                	MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
                    set state to 2
              endif
     		else
-             	MessageBox "Вам нужны обрезки металла для этого ритуала."
+             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
                 set state to 2
           endif
     	else
-          	MessageBox "Вам нужен кусок кожи нетча для этого ритуала."
+          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
              set state to 2
        endif
     else
@@ -35830,7 +35830,7 @@ KNAM
 SCRI nc_comp3Script_arg
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
@@ -35847,7 +35847,7 @@ KNAM
 SCRI nc_comp3Script_bret
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
@@ -35864,7 +35864,7 @@ KNAM
 SCRI nc_comp3Script_de
 NPDT CgBkAgBaxXQAAAAA
 FLAG 2072
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
@@ -35881,7 +35881,7 @@ KNAM
 SCRI nc_comp3Script_he
 NPDT CgA7UEAyJTUtKAYGBicGGCcGBiw6NhQ2Ig8sDwYGBgYGGAYGBgBTAKAA4gBkAgAAAAAAAA==
 FLAG 1032
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull
@@ -35913,7 +35913,7 @@ KNAM
 SCRI nc_comp3Script_imp
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
@@ -35931,7 +35931,7 @@ KNAM
 SCRI nc_comp3Script_kha
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
@@ -35948,7 +35948,7 @@ KNAM
 SCRI nc_comp3Script_nord
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
@@ -35965,7 +35965,7 @@ KNAM
 SCRI nc_comp3Script_rg
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
@@ -35982,7 +35982,7 @@ KNAM
 SCRI nc_comp3Script_orc
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
@@ -35999,7 +35999,7 @@ KNAM
 SCRI nc_comp3Script_we
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 20 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
@@ -36016,7 +36016,7 @@ KNAM
 SCRI nc_comp3Script_we
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 20 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull
@@ -36033,7 +36033,7 @@ KNAM
 SCRI nc_comp3Script_we
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 20 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
@@ -36050,7 +36050,7 @@ KNAM
 SCRI nc_comp3Script_rg
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull
@@ -36067,7 +36067,7 @@ KNAM
 SCRI nc_comp3Script_rg
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
@@ -36084,7 +36084,7 @@ KNAM
 SCRI nc_comp3Script_orc
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull
@@ -36101,7 +36101,7 @@ KNAM
 SCRI nc_comp3Script_orc
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
@@ -36118,7 +36118,7 @@ KNAM
 SCRI nc_comp3Script_nord
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull
@@ -36135,7 +36135,7 @@ KNAM
 SCRI nc_comp3Script_nord
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
@@ -36153,7 +36153,7 @@ KNAM
 SCRI nc_comp3Script_kha
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull
@@ -36171,7 +36171,7 @@ KNAM
 SCRI nc_comp3Script_kha
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
@@ -36188,7 +36188,7 @@ KNAM
 SCRI nc_comp3Script_imp
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull
@@ -36205,7 +36205,7 @@ KNAM
 SCRI nc_comp3Script_imp
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
@@ -36222,7 +36222,7 @@ KNAM
 SCRI nc_comp3Script_he
 NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwCCAMgAKwFkAgAAAAAAAA==
 FLAG 1032
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_altmer_skull
@@ -36256,7 +36256,7 @@ KNAM
 SCRI nc_comp3Script_he
 NPDT HgBkZGRINVE5KAgICDsILDsICEpYVCBUQBtKGwgICAgILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 1032
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull
@@ -36297,7 +36297,7 @@ KNAM
 SCRI nc_comp3Script_de
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull
@@ -36314,7 +36314,7 @@ KNAM
 SCRI nc_comp3Script_de
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
@@ -36331,7 +36331,7 @@ KNAM
 SCRI nc_comp3Script_bret
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull
@@ -36348,7 +36348,7 @@ KNAM
 SCRI nc_comp3Script_bret
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
@@ -36366,7 +36366,7 @@ KNAM
 SCRI nc_comp3Script_arg
 NPDT FABkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull
@@ -36384,7 +36384,7 @@ KNAM
 SCRI nc_comp3Script_arg
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1048
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
@@ -36493,7 +36493,7 @@ NPCO 1 iron_greaves
 NPCO 1 iron_pauldron_right
 NPCO 1 iron_pauldron_left
 NPCO 1 iron_cuirass
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_ghoul_heart_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
@@ -36573,8 +36573,8 @@ TEXT
     Кожа нетча<BR>
     Обрезки металла<BR>
     <BR><BR>
-    Использование костяной муки - это самый легкий способ придать мертвецу желаемую форму. Обычно требуется 10 порций (для больших существ - даже больше). Костяную муку в большом количестве можно найти в гробницах.<BR><BR>
-    Кожа нетча и обрезки металла необходимы, чтобы не дать скелету распасться. Без них мертвец может рассыпаться в порошок, и чары, удерживающие его в этом мире, разобьются. Требуется один кусок кожи и один кусок металла.<BR><BR>
+    Использование костяной муки - это самый легкий способ придать мертвецу желаемую форму. Обычно требуется 30 порций. Костяную муку в большом количестве можно найти в гробницах.<BR><BR>
+    Кожа нетча и обрезки металла необходимы, чтобы не дать скелету распасться. Без них мертвец может рассыпаться в порошок, и чары, удерживающие его в этом мире, разобьются. Требуется два куска кожи и две части обрезков металла.<BR><BR>
     
     Как только все материалы собраны, я помещаю их вместе с черепом и подходящим скелетом в свой котел. Затем я беру черный камень душ, который содержит сущность умершего, в руки. После прочтения длинного ряда заклинаний, когда я почти на волосок от смерти, передо мной появляется мертвец.<BR><BR><BR>
     <DIV ALIGN="CENTER">
@@ -36583,10 +36583,10 @@ TEXT
     Для получения слуги необходимо:<BR>
     Тело, доведенное до состояния мумии<BR>
     10 порций костяной муки<BR>
-    Кожа нетча<BR>
-    Обрезки металла<BR>
+    2 куска кожи нетча<BR>
+    2 части обрезков металла<BR>
     Череп<BR>
-    Рулон ткани определенного цвета<BR>
+    2 рулона ткани определенного цвета<BR>
     <BR>
     Все это я кладу в котел и читаю заклинание. Как можно видеть камень душ не требуется. Можно создать огненного, ледяного и ядовитого слугу.<BR>
 
@@ -37381,7 +37381,7 @@ NPCO 1 nc_p_mummy_pants
 NPCO 1 nc_head_rags
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
-NPCO 10 ingred_bonemeal_01
+NPCO 5 ingred_bonemeal_01
 NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS dread curse: spell points\0\0\0\0\0\0
 NPCS five fingers of pain\0\0\0\0\0\0\0\0\0\0\0
@@ -37486,7 +37486,7 @@ NPCO 1 nc_f_mummy_pants
 NPCO 1 nc_head_rags
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
-NPCO 10 ingred_bonemeal_01
+NPCO 5 ingred_bonemeal_01
 NPCS Fireball_large\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS strong fire shield\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS firefist\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
@@ -37512,7 +37512,7 @@ NPCO 1 nc_fr_mummy_pants
 NPCO 1 nc_head_rags
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
-NPCO 10 ingred_bonemeal_01
+NPCO 5 ingred_bonemeal_01
 NPCS five fingers of pain\0\0\0\0\0\0\0\0\0\0\0
 NPCS dread curse: spell points\0\0\0\0\0\0
 NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
@@ -38368,7 +38368,7 @@ KNAM
 SCRI nc_comp3Script_arg_f
 NPDT CgBkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull_f
@@ -38386,7 +38386,7 @@ KNAM
 SCRI nc_comp3Script_arg_f
 NPDT FABkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull_f
@@ -38404,7 +38404,7 @@ KNAM
 SCRI nc_comp3Script_arg_f
 NPDT HgBkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull_f
@@ -38421,7 +38421,7 @@ KNAM
 SCRI nc_comp3Script_bret_f
 NPDT CgBkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull_f
@@ -38438,7 +38438,7 @@ KNAM
 SCRI nc_comp3Script_bret_f
 NPDT FABkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull_f
@@ -38455,7 +38455,7 @@ KNAM
 SCRI nc_comp3Script_bret_f
 NPDT HgBkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull_f
@@ -38472,7 +38472,7 @@ KNAM
 SCRI nc_comp3Script_de_f
 NPDT CgBkAgDzTQAAAAAA
 FLAG 2073
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull_f
@@ -38489,7 +38489,7 @@ KNAM
 SCRI nc_comp3Script_de_f
 NPDT FABkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull_f
@@ -38506,7 +38506,7 @@ KNAM
 SCRI nc_comp3Script_de_f
 NPDT HgBkAgDzTQAAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull_f
@@ -39183,7 +39183,7 @@ KNAM
 SCRI nc_comp3Script_he_f
 NPDT CgA7UEAyJTUtKAYGBicGGCcGBiw6NhQ2Ig8sDwYGBgYGGAYGBgBTAKAA4gBkAgAAAAAAAA==
 FLAG 1033
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull_f
@@ -39215,7 +39215,7 @@ KNAM
 SCRI nc_comp3Script_he_f
 NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwCCAMgAKwFkAgAAAAAAAA==
 FLAG 1033
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_altmer_skull_f
@@ -39249,7 +39249,7 @@ KNAM
 SCRI nc_comp3Script_he_f
 NPDT HgBkZGRINVE5KAgICDsILDsICEpYVCBUQBtKGwgICAgILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 1033
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull_f
@@ -39290,7 +39290,7 @@ KNAM
 SCRI nc_comp3Script_imp_f
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
@@ -39307,7 +39307,7 @@ KNAM
 SCRI nc_comp3Script_imp_f
 NPDT FABkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull_f
@@ -39324,7 +39324,7 @@ KNAM
 SCRI nc_comp3Script_imp_f
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
@@ -39342,7 +39342,7 @@ KNAM
 SCRI nc_comp3Script_kha_f
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
@@ -39360,7 +39360,7 @@ KNAM
 SCRI nc_comp3Script_kha_f
 NPDT FABkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull_f
@@ -39378,7 +39378,7 @@ KNAM
 SCRI nc_comp3Script_kha_f
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
@@ -39395,7 +39395,7 @@ KNAM
 SCRI nc_comp3Script_nord_f
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
@@ -39412,7 +39412,7 @@ KNAM
 SCRI nc_comp3Script_nord_f
 NPDT FABkAgBaxXQAAAAA
 FLAG 1049
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull_f
@@ -39429,7 +39429,7 @@ KNAM
 SCRI nc_comp3Script_nord_f
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
@@ -39446,7 +39446,7 @@ KNAM
 SCRI nc_comp3Script_orc_f
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
@@ -39463,7 +39463,7 @@ KNAM
 SCRI nc_comp3Script_orc_f
 NPDT FABkAgBaxXQAAAAA
 FLAG 1049
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull_f
@@ -39480,7 +39480,7 @@ KNAM
 SCRI nc_comp3Script_orc_f
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 30 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
@@ -39497,7 +39497,7 @@ KNAM
 SCRI nc_comp3Script_rg_f
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
@@ -39514,7 +39514,7 @@ KNAM
 SCRI nc_comp3Script_rg_f
 NPDT FABkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull_f
@@ -39531,7 +39531,7 @@ KNAM
 SCRI nc_comp3Script_rg_f
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 25 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
@@ -39548,7 +39548,7 @@ KNAM
 SCRI nc_comp3Script_we_f
 NPDT CgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 20 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
@@ -39565,7 +39565,7 @@ KNAM
 SCRI nc_comp3Script_we_f
 NPDT FABkAgBaxXQAAAAA
 FLAG 1049
-NPCO 20 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull_f
@@ -39582,7 +39582,7 @@ KNAM
 SCRI nc_comp3Script_we_f
 NPDT HgBkAgBaxXQAAAAA
 FLAG 1049
-NPCO 20 ingred_bonemeal_01
+NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
