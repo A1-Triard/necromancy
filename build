@@ -5,13 +5,15 @@ VERSION=0.1
 basedir="$(dirname "$0")"
 cd "$basedir"
 
+./espa -v A1_Necromancy_Books || exit 1
 ./espa -v A1_Necromancy || exit 1
+touch -t 200606191200 A1_Necromancy_Books.esp
 touch -t 200606201200 A1_Necromancy.esp
 iconv -f UTF-8 -t CP1251 README | perl -p -e 's/\n/\r\n/' > Readme.txt
 rm -rf A1_Necromancy_${VERSION}
 rm -f A1_Necromancy_${VERSION}.zip
 mkdir A1_Necromancy_${VERSION}
 cp -a "Data Files" A1_Necromancy_init.exe A1_Necromancy_${VERSION}
-cp -a A1_Necromancy.esp A1_Necromancy_${VERSION}/"Data Files"
+cp -a A1_Necromancy_Books.esp A1_Necromancy.esp A1_Necromancy_${VERSION}/"Data Files"
 cp -a Readme.txt A1_Necromancy_${VERSION}
 zip -v -X -9 -r A1_Necromancy_${VERSION}.zip A1_Necromancy_${VERSION} || exit 1
