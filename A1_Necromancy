@@ -13282,318 +13282,258 @@ SCHD nc_death_add_altmer 5 6 0 1453 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2FsdG1lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBJuY19hbHRtZXJfcGF1bGRyb24BANQQD25jX2FsdG1lcl9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiVBRE4AQAAABM4AAATOGwAADwoPBwQE25jX2RlYXRoX2FkZF9hbHRtZXIBAQ==
 SCTX
-    begin nc_death_add_altmer
+    Begin nc_death_add_altmer
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_altmer" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_altmer_pauldron" 1
     AddItem "nc_altmer_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_altmer" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_altmer
+    StopScript nc_death_add_altmer
     
-    end
+    End
 
 SCPT
 SCHD nc_death_add_altmer_f 5 6 0 1459 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2FsdG1lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBRuY19hbHRtZXJfcGF1bGRyb25fZgEA1BARbmNfYWx0bWVyX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4mQUROAEAAAATOAAAEzhsAAA8KDwcEBVuY19kZWF0aF9hZGRfYWx0bWVyX2YBAQ==
 SCTX
-    begin nc_death_add_altmer_f
+    Begin nc_death_add_altmer_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_altmer" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_altmer_pauldron_f" 1
     AddItem "nc_altmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_altmer" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_altmer_f
+    StopScript nc_death_add_altmer_f
     
-    end
+    End
 
 SCPT
 SCHD nc_death_add_argonian 5 6 0 1451 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEA5uY19Tb3VsR2VtX2FyZwEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEA9uY19hcmdfcGF1bGRyb24BANQQEW5jX2FyZ29uaWFuX3NrdWxsAQDUEA5BMV9OZWNyb01hcmtlcgEAEzgCABM4bAAAPA84BAAMOJEFETgBAAAAEzgAABM4bAAAPCg8HBAVbmNfZGVhdGhfYWRkX2FyZ29uaWFuAQE=
 SCTX
-    begin nc_death_add_argonian
+    Begin nc_death_add_argonian
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
+    
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
+    else
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
+    endif
+    
+    Additem "nc_argonian_pauldron" 1
+    AddItem "nc_argonian_skull" 1
+    AddItem A1_NecroMarker, 1
     
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
     	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_arg" 1
-    	MessageBox "Вы захватили душу!"
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_argonian" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    Additem "nc_arg_pauldron" 1
-    AddItem "nc_argonian_skull" 1
-    AddItem A1_NecroMarker, 1
+    StopScript nc_death_add_argonian
     
-    ifx ( id2 )
-    	xAddItem id 1
-    endif
-    
-    stopscript nc_death_add_argonian
-    
-    end
+    End
     
 
 SCPT
@@ -13601,106 +13541,86 @@ SCHD nc_death_add_argonian_f 5 6 0 1457 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEA5uY19Tb3VsR2VtX2FyZwEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBFuY19hcmdfcGF1bGRyb25fZgEA1BATbmNfYXJnb25pYW5fc2t1bGxfZgEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiVBRE4AQAAABM4AAATOGwAADwoPBwQF25jX2RlYXRoX2FkZF9hcmdvbmlhbl9mAQE=
 SCTX
-    begin nc_death_add_argonian_f
+    Begin nc_death_add_argonian_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
+    
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
+    else
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
+    endif
+    
+    Additem "nc_argonian_pauldron_f" 1
+    AddItem "nc_argonian_skull_f" 1
+    AddItem A1_NecroMarker, 1
     
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
     	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_arg" 1
-    	MessageBox "Вы захватили душу!"
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_argonian" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    Additem "nc_arg_pauldron_f" 1
-    AddItem "nc_argonian_skull_f" 1
-    AddItem A1_NecroMarker, 1
+    StopScript nc_death_add_argonian_f
     
-    ifx ( id2 )
-    	xAddItem id 1
-    endif
-    
-    stopscript nc_death_add_argonian_f
-    
-    end
+    End
     
 
 SCPT
@@ -13708,106 +13628,86 @@ SCHD nc_death_add_bosmer 5 6 0 1453 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2Jvc21lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBJuY19ib3NtZXJfcGF1bGRyb24BANQQD25jX2Jvc21lcl9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiVBRE4AQAAABM4AAATOGwAADwoPBwQE25jX2RlYXRoX2FkZF9ib3NtZXIBAQ==
 SCTX
-    begin nc_death_add_bosmer
+    Begin nc_death_add_bosmer
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_bosmer" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_bosmer_pauldron" 1
     AddItem "nc_bosmer_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_bosmer" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_bosmer
+    StopScript nc_death_add_bosmer
     
-    end
+    End
     
     
 
@@ -13816,106 +13716,86 @@ SCHD nc_death_add_bosmer_f 5 6 0 1459 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2Jvc21lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBRuY19ib3NtZXJfcGF1bGRyb25fZgEA1BARbmNfYm9zbWVyX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4mQUROAEAAAATOAAAEzhsAAA8KDwcEBVuY19kZWF0aF9hZGRfYm9zbWVyX2YBAQ==
 SCTX
-    begin nc_death_add_bosmer_f
+    Begin nc_death_add_bosmer_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_bosmer" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_bosmer_pauldron_f" 1
     AddItem "nc_bosmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_bosmer" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_bosmer_f
+    StopScript nc_death_add_bosmer_f
     
-    end
+    End
     
     
 
@@ -13924,106 +13804,86 @@ SCHD nc_death_add_breton 5 6 0 1453 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2JyZXRvbgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBJuY19icmV0b25fcGF1bGRyb24BANQQD25jX2JyZXRvbl9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiVBRE4AQAAABM4AAATOGwAADwoPBwQE25jX2RlYXRoX2FkZF9icmV0b24BAQ==
 SCTX
-    begin nc_death_add_breton
+    Begin nc_death_add_breton
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_breton" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_breton_pauldron" 1
     AddItem "nc_breton_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_breton" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_breton
+    StopScript nc_death_add_breton
     
-    end
+    End
     
 
 SCPT
@@ -14031,106 +13891,86 @@ SCHD nc_death_add_breton_f 5 6 0 1459 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2JyZXRvbgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBRuY19icmV0b25fcGF1bGRyb25fZgEA1BARbmNfYnJldG9uX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4mQUROAEAAAATOAAAEzhsAAA8KDwcEBVuY19kZWF0aF9hZGRfYnJldG9uX2YBAQ==
 SCTX
-    begin nc_death_add_breton_f
+    Begin nc_death_add_breton_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_breton" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_breton_pauldron_f" 1
     AddItem "nc_breton_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_breton" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_breton_f
+    StopScript nc_death_add_breton_f
     
-    end
+    End
     
 
 SCPT
@@ -14138,318 +13978,258 @@ SCHD nc_death_add_dunmer 5 6 0 1453 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2R1bm1lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBJuY19kdW5tZXJfcGF1bGRyb24BANQQD25jX2R1bm1lcl9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiVBRE4AQAAABM4AAATOGwAADwoPBwQE25jX2RlYXRoX2FkZF9kdW5tZXIBAQ==
 SCTX
-    begin nc_death_add_dunmer
+    Begin nc_death_add_dunmer
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_dunmer" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_dunmer_pauldron" 1
     AddItem "nc_dunmer_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_dunmer" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_dunmer
+    StopScript nc_death_add_dunmer
     
-    end
+    End
 
 SCPT
 SCHD nc_death_add_dunmer_f 5 6 0 1459 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2R1bm1lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBRuY19kdW5tZXJfcGF1bGRyb25fZgEA1BARbmNfZHVubWVyX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4mQUROAEAAAATOAAAEzhsAAA8KDwcEBVuY19kZWF0aF9hZGRfZHVubWVyX2YBAQ==
 SCTX
-    begin nc_death_add_dunmer_f
+    Begin nc_death_add_dunmer_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_dunmer" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_dunmer_pauldron_f" 1
     AddItem "nc_dunmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_dunmer" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_dunmer_f
+    StopScript nc_death_add_dunmer_f
     
-    end
+    End
 
 SCPT
 SCHD nc_death_add_imperial 5 6 0 1461 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBNuY19Tb3VsR2VtX2ltcGVyaWFsAQAAEBIAwvsg5+D14uDy6OvoIOTz+PMhAAAJAdQQFG5jX2ltcGVyaWFsX3BhdWxkcm9uAQDUEBFuY19pbXBlcmlhbF9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDibBRE4AQAAABM4AAATOGwAADwoPBwQFW5jX2RlYXRoX2FkZF9pbXBlcmlhbAEB
 SCTX
-    begin nc_death_add_imperial
+    Begin nc_death_add_imperial
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_imperial" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_imperial_pauldron" 1
     AddItem "nc_imperial_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_imperial" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_imperial
+    StopScript nc_death_add_imperial
     
-    end
+    End
     
 
 SCPT
@@ -14457,106 +14237,86 @@ SCHD nc_death_add_imperial_f 5 6 0 1467 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBNuY19Tb3VsR2VtX2ltcGVyaWFsAQAAEBIAwvsg5+D14uDy6OvoIOTz+PMhAAAJAdQQFm5jX2ltcGVyaWFsX3BhdWxkcm9uX2YBANQQE25jX2ltcGVyaWFsX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4nwUROAEAAAATOAAAEzhsAAA8KDwcEBduY19kZWF0aF9hZGRfaW1wZXJpYWxfZgEB
 SCTX
-    begin nc_death_add_imperial_f
+    Begin nc_death_add_imperial_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_imperial" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_imperial_pauldron_f" 1
     AddItem "nc_imperial_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_imperial" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_imperial_f
+    StopScript nc_death_add_imperial_f
     
-    end
+    End
     
 
 SCPT
@@ -14564,318 +14324,258 @@ SCHD nc_death_add_khajiit 5 6 0 1457 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBJuY19Tb3VsR2VtX2toYWppaXQBAAAQEgDC+yDn4PXi4PLo6+gg5PP48yEAAAkB1BATbmNfa2hhamlpdF9wYXVsZHJvbgEA1BAQbmNfa2hhamlpdF9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiYBRE4AQAAABM4AAATOGwAADwoPBwQFG5jX2RlYXRoX2FkZF9raGFqaWl0AQE=
 SCTX
-    begin nc_death_add_khajiit
+    Begin nc_death_add_khajiit
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_khajiit" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_khajiit_pauldron" 1
     AddItem "nc_khajiit_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_khajiit" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_khajiit
+    StopScript nc_death_add_khajiit
     
-    end
+    End
 
 SCPT
 SCHD nc_death_add_khajiit_f 5 6 0 1463 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBJuY19Tb3VsR2VtX2toYWppaXQBAAAQEgDC+yDn4PXi4PLo6+gg5PP48yEAAAkB1BAVbmNfa2hhamlpdF9wYXVsZHJvbl9mAQDUEBJuY19raGFqaWl0X3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4nAUROAEAAAATOAAAEzhsAAA8KDwcEBZuY19kZWF0aF9hZGRfa2hhamlpdF9mAQE=
 SCTX
-    begin nc_death_add_khajiit_f
+    Begin nc_death_add_khajiit_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_khajiit" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_khajiit_pauldron_f" 1
     AddItem "nc_khajiit_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_khajiit" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_khajiit_f
+    StopScript nc_death_add_khajiit_f
     
-    end
+    End
 
 SCPT
 SCHD nc_death_add_nord 5 6 0 1445 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEA9uY19Tb3VsR2VtX25vcmQBAAAQEgDC+yDn4PXi4PLo6+gg5PP48yEAAAkB1BAQbmNfbm9yZF9wYXVsZHJvbgEA1BANbmNfbm9yZF9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiPBRE4AQAAABM4AAATOGwAADwoPBwQEW5jX2RlYXRoX2FkZF9ub3JkAQE=
 SCTX
-    begin nc_death_add_nord
+    Begin nc_death_add_nord
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_nord" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_nord_pauldron" 1
     AddItem "nc_nord_skull" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_nord" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_nord
+    StopScript nc_death_add_nord
     
-    end
+    End
     
 
 SCPT
@@ -14883,106 +14583,86 @@ SCHD nc_death_add_nord_f 5 6 0 1451 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEA9uY19Tb3VsR2VtX25vcmQBAAAQEgDC+yDn4PXi4PLo6+gg5PP48yEAAAkB1BASbmNfbm9yZF9wYXVsZHJvbl9mAQDUEA9uY19ub3JkX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4kwUROAEAAAATOAAAEzhsAAA8KDwcEBNuY19kZWF0aF9hZGRfbm9yZF9mAQE=
 SCTX
-    begin nc_death_add_nord_f
+    Begin nc_death_add_nord_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_nord" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_nord_pauldron_f" 1
     AddItem "nc_nord_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_nord" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_nord_f
+    StopScript nc_death_add_nord_f
     
-    end
+    End
     
 
 SCPT
@@ -15076,106 +14756,86 @@ SCHD nc_death_add_orc_f 5 6 0 1447 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEA5uY19Tb3VsR2VtX29yYwEAABASAML7IOfg9eLg8ujr6CDk8/jzIQAACQHUEBFuY19vcmNfcGF1bGRyb25fZgEA1BAObmNfb3JjX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4kAUROAEAAAATOAAAEzhsAAA8KDwcEBJuY19kZWF0aF9hZGRfb3JjX2YBAQ==
 SCTX
-    begin nc_death_add_orc_f
+    Begin nc_death_add_orc_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
     
-    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
-    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
     else
-    	player->Removeitem "nc_soulgem_blackened" 1
-    	player->Additem "nc_SoulGem_orc" 1
-    	MessageBox "Вы захватили душу!"
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
     endif
     
     Additem "nc_orc_pauldron_f" 1
     AddItem "nc_orc_skull_f" 1
     AddItem A1_NecroMarker, 1
     
-    ifx ( id2 )
-    	xAddItem id 1
+    if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
+    	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
+    else
+    	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
+    	player->Additem "nc_SoulGem_orc" 1
+    	MessageBox "Вы захватили душу."
     endif
     
-    stopscript nc_death_add_orc_f
+    StopScript nc_death_add_orc_f
     
-    end
+    End
     
 
 SCPT
@@ -15183,106 +14843,86 @@ SCHD nc_death_add_redguard 5 6 0 1455 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBNuY19Tb3VsR2VtX3JlZGd1YXJkAQAAEBIAwvsg5+D14uDy6OvoIOTz+PMhAAAJAdQQDm5jX3JnX3BhdWxkcm9uAQDUEBFuY19yZWRndWFyZF9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBABM4AgATOGwAADwPOAQADDiVBRE4AQAAABM4AAATOGwAADwoPBwQFW5jX2RlYXRoX2FkZF9yZWRndWFyZAEB
 SCTX
-    begin nc_death_add_redguard
+    Begin nc_death_add_redguard
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
+    
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
+    else
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
+    endif
+    
+    Additem "nc_redguard_pauldron" 1
+    AddItem "nc_redguard_skull" 1
+    AddItem A1_NecroMarker, 1
     
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
     	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
     	player->Additem "nc_SoulGem_redguard" 1
-    	MessageBox "Вы захватили душу!"
+    	MessageBox "Вы захватили душу."
     endif
     
-    Additem "nc_rg_pauldron" 1
-    AddItem "nc_redguard_skull" 1
-    AddItem A1_NecroMarker, 1
+    StopScript nc_death_add_redguard
     
-    ifx ( id2 )
-    	xAddItem id 1
-    endif
-    
-    stopscript nc_death_add_redguard
-    
-    end
+    End
     
 
 SCPT
@@ -15290,106 +14930,86 @@ SCHD nc_death_add_redguard_f 5 6 0 1461 57
 SCVR temp;check1;check2;check3;check4;id;id1;id2;id3;id4;tail;;
 SCDT bz8TOAAAEzhsAAI8EzgAABM4bAAAPBM4HgAKODYAFiUuMHMgJS4wcyAlLjBzICUuMHMgJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAMAEzhsAAI8EzgEABM4bAACPBM4BQATOGwAAjwFAXMCAAIgMAUBcwMAAiAwBQFzBAACIDAFAXMFAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQgBAQkgcwEAID09IDIFAXMDAAIgMQgBAQkgcwEAID09IDMFAXMEAAIgMQcBAQUBcwUAAiAxCQETOAEAEzhzAAA8DzgEAAw4FAETOAEAEzhsAAA8EzgEAQo4CAECJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOFQBEzgCABM4bAAAPBM4AQATOGwAADwTOEIBCjhIAQUlc18lcws/EzgAABM4bAACPBM4AwATOHMAADwPOAQADDiiARM4AwATOGwAADwTOAIAEzhsAAA8EzgBABM4bAAAPBM4jAEKOJYBCCVzXyVzXyVzAAs/EzgAABM4bAACPBM4BAATOHMAADwPOAQADDj8ARM4BAATOGwAADwTOAMAEzhsAAA8EzgCABM4bAAAPBM4AQATOGwAADwTOOQBCjjwAQslc18lc18lc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOA4CCjgcAgwlLjBzJyUuMHMnJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4rAITOAEAEzhsAAA8EzicAgo4oAICJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMOOwCEzgCABM4bAAAPBM4AQATOGwAADwTONoCCjjgAgUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOP4CCjgMAwwlLjBzLSUuMHMtJXMADD8TOAAAEzhzAAI8EzgBABM4bAACPBM4AgATOGwAAjwTOAUAEzhsAAI8BQFzAgACIDAFAXMDAAIgMAYBAQkgcwEAID09IDEFAXMCAAIgMQcBAQUBcwMAAiAxCQETOAEAEzhzAAA8DzgEAAw4nAMTOAEAEzhsAAA8EziMAwo4kAMCJXMACz8TOAAAEzhsAAI8EzgCABM4cwAAPA84BAAMONwDEzgCABM4bAAAPBM4AQATOGwAADwTOMoDCjjQAwUlc18lcws/EzgAABM4bAACPBM4AAATOGwAADwTOO4DCjj4AwhBMU5QQ18lcwALPxM4AAATOGwAAjwTOAAAEzhsAAA8EDwTOAAAEzhsAAA8FDwTOAAAEzhsAAI8EzgAABM4bAAAPAo/EzgBABM4bAACPAYBAQggbAIAIDwgNgUBbAMAAiAwBwEBBQFsAwACIDEJAQwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBAwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAMAQZwbGF5ZXLUEBNuY19Tb3VsR2VtX3JlZGd1YXJkAQAAEBIAwvsg5+D14uDy6OvoIOTz+PMhAAAJAdQQEG5jX3JnX3BhdWxkcm9uX2YBANQQE25jX3JlZGd1YXJkX3NrdWxsX2YBANQQDkExX05lY3JvTWFya2VyAQATOAIAEzhsAAA8DzgEAAw4mQUROAEAAAATOAAAEzhsAAA8KDwcEBduY19kZWF0aF9hZGRfcmVkZ3VhcmRfZgEB
 SCTX
-    begin nc_death_add_redguard_f
+    Begin nc_death_add_redguard_f
     
     long id
+    long tempLong
+    long count
     short temp
-    long id1
-    long id2
-    long id3
-    long id4
-    long tail
-    short check1
-    short check2
-    short check3
-    short check4
+    short hi
+    short low
+    long hash
+    long npcfile
     
     setx id to xGetBaseID
-    setx temp, id1, id2, id3, id4, tail to xStringParse "%.0s %.0s %.0s %.0s %s", id
-    set check1 to 0
-    set check2 to 0
-    set check3 to 0
-    set check4 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    elseif ( temp == 2 )
-    	set check2 to 1
-    elseif ( temp == 3 )
-    	set check3 to 1
+    setx tempLong to xStringBuild "tempA1Necro"
+    xFileRewind tempLong
+    xFileWriteString tempLong, id
+    xFileWriteShort tempLong, 0
+    xFileRewind tempLong
+    set hash to 0
+    set temp to 1
+    whilex ( temp )
+    	setx count,temp to xFileReadShort tempLong, 1
+    	if ( temp != 0 )
+    		set hi to temp / 256
+    		set low to temp - 256 * hi
+    		set hash to hash * 1664525 + low + 1013904223
+    		if ( hi != 0 )
+    			set hash to hash * 1664525 + hi + 1013904223
+    		endif
+    	endif
+    endwhile
+    
+    set temp to 0
+    if ( hash == -2147483648)
+    	set npcfile to 0
+    elseif ( hash < 0 )
+    	set temp to 1
+    	set npcfile to -hash
     else
-    	set check4 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    ifx ( check3 )
-    	setx id to xStringBuild "%s_%s_%s", id1, id2, id3
-    endif
-    ifx ( check4 )
-    	setx id to xStringBuild "%s_%s_%s_%s", id1, id2, id3, id4
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s'%.0s'%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
-    endif
-    setx temp, id1, id2, tail to xStringParse "%.0s-%.0s-%s", id
-    set check1 to 0
-    set check2 to 0
-    if ( temp == 1 )
-    	set check1 to 1
-    else
-    	set check2 to 1
-    endif
-    ifx ( check1 )
-    	setx id to xStringBuild "%s", id1
-    endif
-    ifx ( check2 )
-    	setx id to xStringBuild "%s_%s", id1, id2
+    	set npcfile to hash
     endif
     
-    setx id to xStringBuild "A1NPC_%s", id
-    xFileRewind id
-    setx id to xFileReadString id
-    setx id1 to xStringLength id
-    
-    if ( id1 < 6 )
-    	set id2 to 0
+    ifx ( temp )
+    	setx npcfile to xStringBuild "A1NPC_0%d", npcfile
     else
-    	set id2 to 1
+    	setx npcfile to xStringBuild "A1NPC_%d", hash
     endif
+    
+    xFileRewind npcfile
+    setx count,temp to xFileReadShort npcfile, 1
+    if ( temp == 20558 )
+    	set count to 1
+    else
+    	set count to 0
+    endif
+    
+    ifx ( count )
+    	xFileReadString npcfile
+    	setx id to xFileReadString npcfile
+    	xAddItem id 1
+    endif
+    
+    Additem "nc_redguard_pauldron_f" 1
+    AddItem "nc_redguard_skull_f" 1
+    AddItem A1_NecroMarker, 1
     
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
     	player->Removeitem "nc_soulgem_blackened" 1
+    	set tempLong to hash / 65536
+    	set A1V1_SoulGemHashHi to tempLong
+    	set hash to hash - tempLong * 65536
+    	set A1V1_SoulGemHashLow to hash
     	player->Additem "nc_SoulGem_redguard" 1
-    	MessageBox "Вы захватили душу!"
+    	MessageBox "Вы захватили душу."
     endif
     
-    Additem "nc_rg_pauldron_f" 1
-    AddItem "nc_redguard_skull_f" 1
-    AddItem A1_NecroMarker, 1
+    StopScript nc_death_add_redguard_f
     
-    ifx ( id2 )
-    	xAddItem id 1
-    endif
-    
-    stopscript nc_death_add_redguard_f
-    
-    end
+    End
     
 
 SCPT
