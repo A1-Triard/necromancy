@@ -81,11 +81,6 @@ FNAM s%
 FLTV 0.0
 
 GLOB
-NAME nc_gem_race
-FNAM s%
-FLTV 0.0
-
-GLOB
 NAME nc_f_warlord_glob
 FNAM s%
 FLTV 0.0
@@ -185,6 +180,11 @@ NAME Frost Warlord
 FNAM Ледяной мертвец
 CLDT AAAAAAEAAAABAAAAFwAAAAoAAAAGAAAAAwAAAAcAAAARAAAACwAAAAUAAAAMAAAACAAAAAAAAAAAAAAA
 
+CLAS
+NAME A1_EmptyRevenant
+FNAM Мертвец
+CLDT BgAAAAIAAAACAAAACQAAABgAAAAIAAAAGQAAAAAAAAAQAAAAFAAAAAEAAAATAAAAEgAAAAAAAAAAAAAA
+
 FACT
 NAME Revenant
 FNAM Мертвецы
@@ -193,31 +193,31 @@ FADT AAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 RACE
 NAME Argonian Revenant
 FNAM Мертвец-аргонианин
-RADT EAAAAAUAAAAIAAAADwAAAAwAAAAFAAAAAgAAAAUAAAAOAAAABQAAAAcAAAAFAAAAEQAAAAUAAAAoAAAAKAAAACgAAAAyAAAAHgAAACgAAAAyAAAAKAAAADIAAAAoAAAAHgAAAB4AAAAeAAAAHgAAACgAAAAoAAAACteDPwAAgD/NzIw/AACAPwIAAAA=
-NPCS immune to shock
-NPCS immune to frost
-NPCS argonian breathing
-NPCS immune to poison
-NPCS immune to disease
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAKAAAACgAAAAyAAAAHgAAACgAAAAyAAAAKAAAADIAAAAoAAAAHgAAAB4AAAAeAAAAHgAAACgAAAAoAAAACteDPwAAgD/NzIw/AACAPwIAAAA=
 NPCS weakness fire_50
+NPCS immune to disease
+NPCS immune to poison
+NPCS argonian breathing
+NPCS immune to frost
+NPCS immune to shock
 
 RACE
 NAME Breton Revenant
 FNAM Мертвец-бретон
-RADT EAAAAAUAAAALAAAABQAAAA0AAAAKAAAADAAAAAUAAAAOAAAACgAAAA8AAAAKAAAA/////wAAAAAoAAAAHgAAADIAAAAyAAAAMgAAADIAAAAeAAAAHgAAAB4AAAAoAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAAACAPzMzcz8AAIA/ZmZmPwAAAAA=
-NPCS immune to shock
-NPCS immune to frost
-NPCS immune to poison
-NPCS immune to disease
-NPCS magicka mult bonus_5
-NPCS resist magicka_50
-NPCS dragon skin
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAHgAAADIAAAAyAAAAMgAAADIAAAAeAAAAHgAAAB4AAAAoAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAAACAPzMzcz8AAIA/ZmZmPwAAAAA=
 NPCS weakness fire_50
+NPCS dragon skin
+NPCS resist magicka_50
+NPCS magicka mult bonus_5
+NPCS immune to disease
+NPCS immune to poison
+NPCS immune to frost
+NPCS immune to shock
 
 RACE
 NAME Dark Elf Revenant
 FNAM Мертвец-данмер
-RADT CAAAAAUAAAAKAAAACgAAABUAAAAFAAAABQAAAAUAAAAXAAAABQAAAA4AAAAFAAAAFgAAAAoAAAAoAAAAKAAAACgAAAAoAAAAHgAAAB4AAAAoAAAAKAAAADIAAAAyAAAAKAAAAB4AAAAeAAAAKAAAACgAAAAoAAAAAACAPwAAgD8AAIA/ZmZmPwAAAAA=
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAKAAAACgAAAAoAAAAHgAAAB4AAAAoAAAAKAAAADIAAAAyAAAAKAAAAB4AAAAeAAAAKAAAACgAAAAoAAAAAACAPwAAgD8AAIA/ZmZmPwAAAAA=
 NPCS immune to shock
 NPCS immune to frost
 NPCS immune to poison
@@ -229,59 +229,59 @@ NPCS weakness fire_50
 RACE
 NAME High Elf Revenant
 FNAM Мертвец-альтмер
-RADT EAAAAAoAAAALAAAABQAAAA0AAAAFAAAACgAAAAoAAAAJAAAACgAAAAwAAAAFAAAA/////wAAAAAeAAAAHgAAADIAAAAyAAAAKAAAACgAAAAoAAAAKAAAAB4AAAAoAAAAKAAAAB4AAAAoAAAAKAAAACgAAAAoAAAAzcyMP83MjD8AAIA/AACAPwAAAAA=
-NPCS immune to shock
-NPCS immune to frost
-NPCS immune to poison
-NPCS immune to disease
-NPCS magicka mult bonus_15
-NPCS weakness magicka_50
-NPCS weakness fire_50
-NPCS weakness frost_25
-NPCS weakness shock_25
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAeAAAAHgAAADIAAAAyAAAAKAAAACgAAAAoAAAAKAAAAB4AAAAoAAAAKAAAAB4AAAAoAAAAKAAAACgAAAAoAAAAzcyMP83MjD8AAIA/AACAPwAAAAA=
 NPCS resist disease_75
+NPCS weakness shock_25
+NPCS weakness frost_25
+NPCS weakness fire_50
+NPCS weakness magicka_50
+NPCS magicka mult bonus_15
+NPCS immune to disease
+NPCS immune to poison
+NPCS immune to frost
+NPCS immune to shock
 
 RACE
 NAME Imperial Revenant
 FNAM Мертвец-имперец
-RADT BAAAAAUAAAAaAAAABQAAABUAAAAFAAAABQAAAAoAAAAYAAAACgAAABkAAAAKAAAA/////wAAAAAoAAAAKAAAACgAAAAoAAAAHgAAACgAAAAeAAAAHgAAACgAAAAeAAAAKAAAACgAAAAyAAAAMgAAACgAAAAoAAAAAACAPwAAgD8AAKA/MzNzPwAAAAA=
-NPCS immune to shock
-NPCS immune to frost
-NPCS immune to poison
-NPCS immune to disease
-NPCS star of the west
-NPCS voice of the emperor
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAKAAAACgAAAAoAAAAHgAAACgAAAAeAAAAHgAAACgAAAAeAAAAKAAAACgAAAAyAAAAMgAAACgAAAAoAAAAAACAPwAAgD8AAKA/MzNzPwAAAAA=
 NPCS weakness fire_50
+NPCS voice of the emperor
+NPCS star of the west
+NPCS immune to disease
+NPCS immune to poison
+NPCS immune to frost
+NPCS immune to shock
 
 RACE
 NAME Khajiit Revenant
 FNAM Мертвец-хаджит
-RADT FAAAAA8AAAAIAAAABQAAABoAAAAFAAAAFQAAAAUAAAASAAAABQAAABYAAAAFAAAAEwAAAAUAAAAoAAAAHgAAACgAAAAoAAAAHgAAAB4AAAAyAAAAMgAAACgAAAAoAAAAHgAAACgAAAAoAAAAKAAAACgAAAAoAAAAAACAPzMzcz8AAIA/MzNzPwIAAAA=
-NPCS weakness fire_50
-NPCS immune to frost
-NPCS immune to shock
-NPCS immune to disease
-NPCS immune to poison
-NPCS eye of fear
+RADT FAAAAAAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAHgAAACgAAAAoAAAAHgAAAB4AAAAyAAAAMgAAACgAAAAoAAAAHgAAACgAAAAoAAAAKAAAACgAAAAoAAAAAACAPzMzcz8AAIA/MzNzPwIAAAA=
 NPCS eye of night
+NPCS eye of fear
+NPCS immune to poison
+NPCS immune to disease
+NPCS immune to shock
+NPCS immune to frost
+NPCS weakness fire_50
 
 RACE
 NAME Nord Revenant
 FNAM Мертвец-норд
-RADT BgAAAAoAAAAEAAAACgAAAAMAAAAFAAAABQAAAAUAAAACAAAACgAAAAcAAAAFAAAA/////wAAAAAyAAAAMgAAAB4AAAAeAAAAKAAAADIAAAAeAAAAHgAAACgAAAAoAAAAMgAAACgAAAAeAAAAHgAAACgAAAAoAAAAFK6HPxSuhz8AAKA/AACAPwAAAAA=
-NPCS weakness fire_50
-NPCS immune to poison
-NPCS immune to disease
-NPCS immune to frost
-NPCS resist shock_50
-NPCS woad
-NPCS thunder fist
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAyAAAAMgAAAB4AAAAeAAAAKAAAADIAAAAeAAAAHgAAACgAAAAoAAAAMgAAACgAAAAeAAAAHgAAACgAAAAoAAAAFK6HPxSuhz8AAKA/AACAPwAAAAA=
 NPCS immune to shock
+NPCS thunder fist
+NPCS woad
+NPCS resist shock_50
+NPCS immune to frost
+NPCS immune to disease
+NPCS immune to poison
+NPCS weakness fire_50
 
 RACE
 NAME Orc Revenant
 FNAM Мертвец-орк
-RADT AQAAAAoAAAAGAAAABQAAAAAAAAAKAAAAAwAAAAoAAAACAAAACgAAAP////8AAAAA/////wAAAAAtAAAALQAAAB4AAAAoAAAAMgAAAC0AAAAjAAAAIwAAAB4AAAAeAAAAMgAAADIAAAAeAAAAGQAAACgAAAAoAAAAZmaGP2Zmhj/NzKw/zcyMPwAAAAA=
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAtAAAALQAAAB4AAAAoAAAAMgAAAC0AAAAjAAAAIwAAAB4AAAAeAAAAMgAAADIAAAAeAAAAGQAAACgAAAAoAAAAZmaGP2Zmhj/NzKw/zcyMPwAAAAA=
 NPCS immune to shock
 NPCS immune to frost
 NPCS immune to disease
@@ -293,26 +293,26 @@ NPCS weakness fire_50
 RACE
 NAME Redguard Revenant
 FNAM Мертвец-редгард
-RADT CAAAAAUAAAAGAAAABQAAAAQAAAAFAAAAAwAAAAUAAAAFAAAADwAAAAIAAAAFAAAAFgAAAAUAAAAyAAAAKAAAAB4AAAAeAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAMgAAADIAAAAeAAAAKAAAACgAAAAoAAAAXI+CPwAAgD/NzIw/AACAPwAAAAA=
-NPCS immune to shock
-NPCS immune to poison
-NPCS immune to disease
-NPCS adrenaline rush
-NPCS resist poison_75
-NPCS resist disease_75
-NPCS immune to frost
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAyAAAAKAAAAB4AAAAeAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAMgAAADIAAAAeAAAAKAAAACgAAAAoAAAAXI+CPwAAgD/NzIw/AACAPwAAAAA=
 NPCS weakness fire_50
+NPCS immune to frost
+NPCS resist disease_75
+NPCS resist poison_75
+NPCS adrenaline rush
+NPCS immune to disease
+NPCS immune to poison
+NPCS immune to shock
 
 RACE
 NAME Wood Elf Revenant
 FNAM Мертвец-босмер
-RADT FAAAAAUAAAAQAAAABQAAABUAAAAKAAAAFwAAAA8AAAATAAAACgAAAP////8AAAAA/////wAAAAAeAAAAHgAAACgAAAAoAAAAHgAAAB4AAAAyAAAAMgAAADIAAAAyAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAZmZmPwAAgD8zM3M/ZmZmPwAAAAA=
-NPCS weakness fire_50
-NPCS immune to frost
-NPCS immune to poison
-NPCS immune to disease
-NPCS beast tongue
+RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAeAAAAHgAAACgAAAAoAAAAHgAAAB4AAAAyAAAAMgAAADIAAAAyAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAZmZmPwAAgD8zM3M/ZmZmPwAAAAA=
 NPCS immune to shock
+NPCS beast tongue
+NPCS immune to disease
+NPCS immune to poison
+NPCS immune to frost
+NPCS weakness fire_50
 
 RACE
 NAME nc_dead_imp
@@ -346,12 +346,26 @@ RACE
 NAME nc_frost_warlord
 FNAM Ледяной мертвец
 RADT CgAAAAoAAAAXAAAACgAAAAwAAAAKAAAAFQAAAAUAAAAUAAAACgAAAP////8AAAAA/////wAAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAzcyMPwAAgD/NzIw/AACAPwAAAAA=
-NPCS immune to frost
-NPCS immune to disease
-NPCS immune to poison
-NPCS regenerate [ability]
-NPCS magicka mult bonus_5
 NPCS weakness fire_50
+NPCS magicka mult bonus_5
+NPCS regenerate [ability]
+NPCS immune to poison
+NPCS immune to disease
+NPCS immune to frost
+
+RACE
+NAME A1_RevenantStart
+FNAM Мертвец-орк
+RADT AQAAAAoAAAAGAAAABQAAAAAAAAAKAAAAAwAAAAoAAAACAAAACgAAAP////8AAAAA/////wAAAAAtAAAALQAAAB4AAAAoAAAAMgAAAC0AAAAjAAAAIwAAAB4AAAAeAAAAMgAAADIAAAAeAAAAGQAAACgAAAAoAAAAZmaGP2Zmhj/NzKw/zcyMPwAAAAA=
+NPCS resist magicka_25
+NPCS orc_beserk
+
+RACE
+NAME A1_RevenantStart2
+FNAM Мертвец-данмер
+RADT CAAAAAUAAAAKAAAACgAAABUAAAAFAAAABQAAAAUAAAAXAAAABQAAAA4AAAAFAAAAFgAAAAoAAAAoAAAAKAAAAB4AAAAeAAAAKAAAACgAAAAoAAAAKAAAADIAAAAyAAAAKAAAAB4AAAAeAAAAKAAAACgAAAAoAAAAAACAPwAAgD8AAIA/ZmZmPwAAAAA=
+NPCS resist fire_75
+NPCS ancestor guardian
 
 SCPT
 SCHD A1_NecroWearHair_sc 0 4 0 243 30
@@ -1128,9 +1142,9 @@ SCTX
     
 
 SCPT
-SCHD nc_cauldron_script 1 0 1 3193 13
+SCHD nc_cauldron_script 1 0 1 2946 13
 SCVR state2;timer;;
-SCDT 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
+SCDT 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
 SCTX
     begin nc_cauldron_script
     
@@ -1165,142 +1179,122 @@ SCTX
     
     if ( nc_ritual == 1 )
     	if ( getItemCount "nc_altmer_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 2
+    		StartScript nc_summon_altmer
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 2 )
     	if ( getItemCount "nc_arg_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 1
+    		StartScript nc_summon_argonian
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 3 )
     	if ( getItemCount "nc_bosmer_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 3
+    		StartScript nc_summon_bosmer
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     		set state2 to 1
     	endif
     elseif ( nc_ritual == 4 )
     	if ( getItemCount "nc_breton_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 4
+    		StartScript nc_summon_breton
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 5 )
     	if ( getItemCount "nc_dunmer_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 5
+    		StartScript nc_summon_dunmer
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 6 )
     	if ( getItemCount "nc_imperial_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 6
+    		StartScript nc_summon_imperial
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 7 )
     	if ( getItemCount "nc_khajiit_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 7
+    		StartScript nc_summon_khajiit
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 8 )
     	if ( getItemCount "nc_nord_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 8
+    		StartScript nc_summon_nord
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 9 )
     	if ( getItemCount "nc_orc_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 9
+    		StartScript nc_summon_orc
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 10 )
     	if ( getItemCount "nc_rg_pauldron_sk" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 10
+    		StartScript nc_summon_redguard
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 11 )
     	if ( getItemCount "nc_altmer_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 12
+    		StartScript nc_summon_altmer_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 12 )
     	if ( getItemCount "nc_arg_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 11
+    		StartScript nc_summon_argonian_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 13 )
     	if ( getItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 13
+    		StartScript nc_summon_bosmer_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 14 )
     	if ( getItemCount "nc_breton_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 14
+    		StartScript nc_summon_breton_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 15 )
     	if ( getItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 15
+    		StartScript nc_summon_dunmer_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 16 )
     	if ( getItemCount "nc_imperial_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 16
+    		StartScript nc_summon_imperial_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 17 )
     	if ( getItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 17
+    		StartScript nc_summon_khajiit_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 18 )
     	if ( getItemCount "nc_nord_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 18
+    		StartScript nc_summon_nord_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 19 )
     	if ( getItemCount "nc_orc_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 19
+    		StartScript nc_summon_orc_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
     elseif ( nc_ritual == 20 )
     	if ( getItemCount "nc_rg_pauldron_sk_f" >= 1 )
-    		startscript nc_gem_test
-    		set nc_gem_race to 20
+    		StartScript nc_summon_redguard_f
     	else
     		MessageBox "Вам нужен труп, чтобы провести ритуал."
     	endif
@@ -15910,209 +15904,7 @@ SCTX
     end
 
 SCPT
-SCHD nc_gem_test 1 0 0 3927 6
-SCVR state;;
-SCDT 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
-SCTX
-    begin nc_gem_test
-    
-    short state
-    ;global nc_gem_race
-    
-    
-    	if ( nc_gem_race == 1 )
-    		if ( Player->GetItemCount "nc_soulgem_arg" >= 1 )
-    			Player->removeitem "nc_soulgem_arg" 1
-    			startscript nc_summon_argonian
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 2 )	
-    		if ( Player->GetItemCount "nc_soulgem_altmer" >= 1 )
-    			Player->removeitem "nc_soulgem_altmer" 1
-    			startscript nc_summon_altmer
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 3 )	
-    		if ( Player->GetItemCount "nc_soulgem_bosmer" >= 1 )
-    			Player->removeitem "nc_soulgem_bosmer" 1
-    			startscript nc_summon_bosmer
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 4 )	
-    		if ( Player->GetItemCount "nc_soulgem_breton" >= 1 )
-    			Player->removeitem "nc_soulgem_breton" 1
-    			startscript nc_summon_breton
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 5 )	
-    		if ( Player->GetItemCount "nc_soulgem_dunmer" >= 1 )
-    			Player->removeitem "nc_soulgem_dunmer" 1
-    			startscript nc_summon_dunmer
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 6 )	
-    		if ( Player->GetItemCount "nc_soulgem_imperial" >= 1 )
-    			Player->removeitem "nc_soulgem_imperial" 1
-    			startscript nc_summon_imperial
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 7 )	
-    		if ( Player->GetItemCount "nc_soulgem_khajiit" >= 1 )
-    			Player->removeitem "nc_soulgem_khajiit" 1
-    			startscript nc_summon_khajiit
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 8 )	
-    		if ( Player->GetItemCount "nc_soulgem_nord" >= 1 )
-    			Player->removeitem "nc_soulgem_nord" 1
-    			startscript nc_summon_nord
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 9 )	
-    		if ( Player->GetItemCount "nc_soulgem_orc" >= 1 )
-    			Player->removeitem "nc_soulgem_orc" 1
-    			startscript nc_summon_orc
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 10 )	
-    		if ( Player->GetItemCount "nc_soulgem_redguard" >= 1 )
-    			Player->removeitem "nc_soulgem_redguard" 1
-    			startscript nc_summon_redguard
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 11 )
-    		if ( Player->GetItemCount "nc_soulgem_arg" >= 1 )
-    			Player->removeitem "nc_soulgem_arg" 1
-    			startscript nc_summon_argonian_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 12 )	
-    		if ( Player->GetItemCount "nc_soulgem_altmer" >= 1 )
-    			Player->removeitem "nc_soulgem_altmer" 1
-    			startscript nc_summon_altmer_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 13 )	
-    		if ( Player->GetItemCount "nc_soulgem_bosmer" >= 1 )
-    			Player->removeitem "nc_soulgem_bosmer" 1
-    			startscript nc_summon_bosmer_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 14 )	
-    		if ( Player->GetItemCount "nc_soulgem_breton" >= 1 )
-    			Player->removeitem "nc_soulgem_breton" 1
-    			startscript nc_summon_breton_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 15 )	
-    		if ( Player->GetItemCount "nc_soulgem_dunmer" >= 1 )
-    			Player->removeitem "nc_soulgem_dunmer" 1
-    			startscript nc_summon_dunmer_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 16 )	
-    		if ( Player->GetItemCount "nc_soulgem_imperial" >= 1 )
-    			Player->removeitem "nc_soulgem_imperial" 1
-    			startscript nc_summon_imperial_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 17 )	
-    		if ( Player->GetItemCount "nc_soulgem_khajiit" >= 1 )
-    			Player->removeitem "nc_soulgem_khajiit" 1
-    			startscript nc_summon_khajiit_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 18 )	
-    		if ( Player->GetItemCount "nc_soulgem_nord" >= 1 )
-    			Player->removeitem "nc_soulgem_nord" 1
-    			startscript nc_summon_nord_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 19 )	
-    		if ( Player->GetItemCount "nc_soulgem_orc" >= 1 )
-    			Player->removeitem "nc_soulgem_orc" 1
-    			startscript nc_summon_orc_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	elseif ( nc_gem_race == 20 )	
-    		if ( Player->GetItemCount "nc_soulgem_redguard" >= 1 )
-    			Player->removeitem "nc_soulgem_redguard" 1
-    			startscript nc_summon_redguard_f
-    			set state to 1
-    		else
-    			MessageBox "Чтобы провести ритуал, вам нужен черный камень душ."
-    			set state to 1
-    		endif
-    	else
-    		set state to 1
-    	endif
-    
-    
-    if ( state == 1 )
-    	stopscript nc_gem_test
-    endif
-    
-    end
-
-SCPT
-SCHD nc_get_war\0p 1 3 0 364 34
+SCHD nc_get_war 1 3 0 364 34
 SCVR state;prospectref;prospectid;temp;;
 SCDT GjwTOAAAEzhsAAI8BQFHCG5jX3BoZXJlAiAwBQFHCG5jX2ZoZXJlAiAwBQFHCW5jX2ZyaGVyZQIgMBM4AAATOGwAADwPOAQADDhdARM4AAATOGwAADwYPG8/EzgBABM4bAACPBM4bAAKOHoADG5jX3Bfd2FybG9yZAATOAEAEzhsAAA8LzwTOAIAEzhsAAI8BgEBCSBsAwAgPT0gMAUBRwhuY19waGVyZQIgMQkBEzi2AAo4xAAMbmNfZl93YXJsb3JkABM4AQATOGwAADwvPBM4AgATOGwAAjwGAQEJIGwDACA9PSAwBQFHCG5jX2ZoZXJlAiAxCQETOAABCjgOAQ1uY19mcl93YXJsb3JkEzgBABM4bAAAPC88EzgCABM4bAACPAYBAQkgbAMAID09IDAFAUcJbmNfZnJoZXJlAiAxCQETOAAAEzhsAAA8GzwTOAAAEzhsAAI8Cjg6ABwQCm5jX2dldF93YXIBAQ==
 SCTX
@@ -29631,9 +29423,9 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	player-> addspell "nc_summon"
+    	player->AddSpell "nc_summon"
     	if ( ScriptRunning "nc_spell_timer" == 0 )
-    		startscript nc_spell_timer
+    		StartScript nc_spell_timer
     	endif
     	MessageBox "После прочтения заклинаний из книги вы готовы вызвать мертвеца."
     endif
@@ -29646,8 +29438,8 @@ SCTX
     endif
     set timer to 0
     
-    set pc_conjuration to ( Player-> GetConjuration )
-    set pc_alteration to ( Player-> GetAlteration )
+    set pc_conjuration to ( player->GetConjuration )
+    set pc_alteration to ( player->GetAlteration )
     
     if (  nc_summon_spell == 1 )
     	if ( state == 0 )  ; ADDED
@@ -29689,7 +29481,7 @@ SCTX
     
     if ( state == 1 )
     	player -> PositionCell -2, 4510, -389, 0 "Храм Танатоса"
-    	disableplayerlooking
+    	DisablePlayerLooking
     	MessageBox "Какого мертвеца вы хотите создать?", "Скелет мужчины", "Скелет женщины", "Мумифицированный слуга"
     	set state to 2
     elseif ( state == 2 )
@@ -29755,7 +29547,7 @@ SCTX
     		set state to 0
     	elseif ( button == 5 ) ;none
     		set state to 0
-    		enableplayerlooking
+    		EnablePlayerLooking
     		set nc_summon_spell to 0
     		return
     	endif
@@ -30801,7 +30593,7 @@ SCTX
     endif
     
     ; Dont waste time checking spells more than once per second
-    set timer to ( timer + getsecondspassed )
+    set timer to ( timer + GetSecondsPassed )
     if ( timer < 1 )		
     	return
     endif
@@ -32538,7 +32330,7 @@ SCHD nc_summon_orc 6 0 0 1201 70
 SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_skull;state;;
 SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABQgWP0QIG8MbmNfb3JjX3NrdWxsAAYBFQkgcwUAID49IDEGARAJIHMCACA+PSAyBgELCSBzAwAgPj0gMgYBBgogcwQAID49IDMw1RASbmNfb3JjX3BhdWxkcm9uX3NrAQDVEAxuY19vcmNfc2t1bGwBANUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzBgACIDEHAQIAEDoAwuDsIO3z5u3uIOjs5fL8IDMwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAABQFzBgACIDIJAQcBAgAQNwDC4Owg7fPm7fsg5OLlIPfg8fLoIO7h8OXn6u7iIOzl8uDr6+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMGAAIgMgkBBwECABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEHAQIAEC8AwuDsIO3z5uXtIPfl8OXvIO7w6uAt7PPm9+jt+yDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwYAAiAyCQEGARMJIHMGACA9PSAxBgEECiBzAQAgPD0gMTACEAtUaHVuZGVyQ2xhcAwBDW5jX3Jldl9wbGFjZXK6EQZuY19vcmMBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAELCSBzAQAgPiAxMAYBBAogcwEAIDw9IDIwAhALVGh1bmRlckNsYXAMAQ1uY19yZXZfcGxhY2VyuhEIbmNfb3JjXzIBAAAAAAAAAAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACAEECSBzAQAgPiAyMAIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRCG5jX29yY18zAQAAAAAAAAAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBCQEFAXMGAAIgMgkBBgEDCSBzBgAgPT0gMt0QQhEcEA1uY19zdW1tb25fb3JjCQEBAQ==
 SCTX
-    begin nc_summon_orc
+    Begin nc_summon_orc
     
     short nc_pclevel
     short nc_scrap_metal
@@ -32548,37 +32340,36 @@ SCTX
     short state
     
     set nc_pclevel to nc_necro_skill
-    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
-    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
-    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
-    set nc_skull to getItemCount "nc_orc_skull"
-    
+    set nc_scrap_metal to GetItemCount "ingred_scrap_metal_01"
+    set nc_netch_leather to GetItemCount "ingred_netch_leather_01"
+    set nc_bonemeal to GetItemCount "ingred_bonemeal_01"
+    set nc_skull to GetItemCount "nc_orc_skull"
     
     if ( nc_skull >= 1 )
     	if ( nc_scrap_metal >= 2 )
-       	if ( nc_netch_leather >= 2 )
-          	if ( nc_bonemeal >= 30 )
-    		  removeitem "nc_orc_pauldron_sk" 1
-                removeitem "nc_orc_skull" 1
-                removeitem "ingred_scrap_metal_01" 2
-                removeitem "ingred_netch_leather_01" 2
-                removeitem "ingred_bonemeal_01" 30
-                set state to 1
-             else
-                	MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
-                   set state to 2
-             endif
+    		if ( nc_netch_leather >= 2 )
+    			if ( nc_bonemeal >= 30 )
+    				RemoveItem "nc_orc_pauldron_sk" 1
+    				RemoveItem "nc_orc_skull" 1
+    				RemoveItem "ingred_scrap_metal_01" 2
+    				RemoveItem "ingred_netch_leather_01" 2
+    				RemoveItem "ingred_bonemeal_01" 30
+    				set state to 1
+    			else
+    				MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    				set state to 2
+    			endif
     		else
-             	MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-                set state to 2
-          endif
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    			set state to 2
+    		endif
     	else
-          	MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-             set state to 2
-       endif
-    else
-    		MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
     		set state to 2
+    	endif
+    else
+    	MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    	set state to 2
     endif
     
     if ( state == 1 )
@@ -32604,12 +32395,12 @@ SCTX
     endif
     
     if ( state == 2 )
-    	enableplayercontrols
-    	enableplayerlooking
-    	stopscript nc_summon_orc
+    	EnablePlayerControls
+    	EnablePlayerLooking
+    	StopScript nc_summon_orc
     endif
     
-    end
+    End
 
 SCPT
 SCHD nc_summon_orc_f 6 0 0 1215 70
@@ -34914,7 +34705,7 @@ NAME nc_argonian
 MODL base_animKnA.nif
 FNAM Малый мертвец-аргонианин
 RNAM Argonian Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
@@ -34929,9 +34720,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_breton
+MODL base_anim.nif
 FNAM Малый мертвец-бретон
 RNAM Breton Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
@@ -34946,9 +34738,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_dark elf
+MODL base_anim.nif
 FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
@@ -34963,9 +34756,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_high elf
+MODL base_anim.nif
 FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
-CNAM Battlemage
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_he
 KNAM 
@@ -34995,9 +34789,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_imperial
+MODL base_anim.nif
 FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
@@ -35015,7 +34810,7 @@ NAME nc_khajiit
 MODL base_animKnA.nif
 FNAM Малый мертвец-хаджит
 RNAM Khajiit Revenant
-CNAM Assassin
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
@@ -35030,9 +34825,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_nord
+MODL base_anim.nif
 FNAM Малый мертвец-норд
 RNAM Nord Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
@@ -35047,9 +34843,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_redguard
+MODL base_anim.nif
 FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
@@ -35064,9 +34861,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_orc
+MODL base_anim.nif
 FNAM Малый мертвец-орк
 RNAM Orc Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_orcskull
 KNAM 
@@ -35081,9 +34879,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_wood elf
+MODL base_anim.nif
 FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
-CNAM Archer
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
@@ -35098,9 +34897,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_wood elf_2
+MODL base_anim.nif
 FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
-CNAM Archer
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
@@ -35115,9 +34915,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_wood elf_3
+MODL base_anim.nif
 FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
-CNAM Archer
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
@@ -35132,9 +34933,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_redguard_2
+MODL base_anim.nif
 FNAM Мертвец-редгард
 RNAM Redguard Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
@@ -35149,9 +34951,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_redguard_3
+MODL base_anim.nif
 FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
@@ -35166,9 +34969,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_orc_2
+MODL base_anim.nif
 FNAM Мертвец-орк
 RNAM Orc Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_orcskull
 KNAM 
@@ -35183,9 +34987,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_orc_3
+MODL base_anim.nif
 FNAM Большой мертвец-орк
 RNAM Orc Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_orcskull
 KNAM 
@@ -35200,9 +35005,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_nord_2
+MODL base_anim.nif
 FNAM Мертвец-норд
 RNAM Nord Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
@@ -35217,9 +35023,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_nord_3
+MODL base_anim.nif
 FNAM Большой мертвец-норд
 RNAM Nord Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
@@ -35237,7 +35044,7 @@ NAME nc_khajiit_2
 MODL base_animKnA.nif
 FNAM Мертвец-хаджит
 RNAM Khajiit Revenant
-CNAM Assassin
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
@@ -35255,7 +35062,7 @@ NAME nc_khajiit_3
 MODL base_animKnA.nif
 FNAM Большой мертвец-хаджит
 RNAM Khajiit Revenant
-CNAM Assassin
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
@@ -35270,9 +35077,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_imperial_2
+MODL base_anim.nif
 FNAM Мертвец-имперец
 RNAM Imperial Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
@@ -35287,9 +35095,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_imperial_3
+MODL base_anim.nif
 FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
@@ -35304,9 +35113,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_high elf_2
+MODL base_anim.nif
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
-CNAM Battlemage
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_he
 KNAM 
@@ -35338,9 +35148,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_high elf_3
+MODL base_anim.nif
 FNAM Большой мертвец-альтмер
 RNAM High Elf Revenant
-CNAM Battlemage
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_he
 KNAM 
@@ -35379,9 +35190,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_dark elf_2
+MODL base_anim.nif
 FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
@@ -35396,9 +35208,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_dark elf_3
+MODL base_anim.nif
 FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
@@ -35413,9 +35226,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_breton_2
+MODL base_anim.nif
 FNAM Мертвец-бретон
 RNAM Breton Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
@@ -35430,9 +35244,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_breton_3
+MODL base_anim.nif
 FNAM Большой мертвец-бретон
 RNAM Breton Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
@@ -35450,7 +35265,7 @@ NAME nc_argonian_2
 MODL base_animKnA.nif
 FNAM Мертвец-аргонианин
 RNAM Argonian Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
@@ -35468,7 +35283,7 @@ NAME nc_argonian_3
 MODL base_animKnA.nif
 FNAM Большой мертвец-аргонианин
 RNAM Argonian Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
@@ -35566,11 +35381,12 @@ ANAM Door Stone Close
 
 NPC_
 NAME nc_orc_start
+MODL base_anim.nif
 FNAM Мертвец-орк
-RNAM Orc Revenant
+RNAM A1_RevenantStart
 CNAM Warrior
 ANAM 
-BNAM nc_orcskull
+BNAM nc_orcskull_s
 KNAM 
 SCRI nc_start_revenant
 NPDT CgBPJTk0LFIjKDosOjoiMCYiMAYGBgYGBgYGBgYGBgYGRAYGBgCGAEoADgEyAAAAAAAAAA==
@@ -35639,14 +35455,14 @@ ANAM
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
-NPDT QwAyAAANxQIAAAAA
+NPDT QwAyAAAYuQIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
 NPCO 1 nc_tragrilar_mantle
 NPCO 1 common_shirt_03_c
 NPCO 1 common_shoes_03
 NPCO 1 common_pants_03_b
-AIDT HgAeHgANxQIAAAAA
+AIDT HgAeHgAYuQIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BODY
@@ -37021,11 +36837,12 @@ ITEX c\\tx_ring_expensive03.tga
 
 NPC_
 NAME nc_start_skelly
+MODL base_anim.nif
 FNAM Скелет
-RNAM Dark Elf Revenant
+RNAM A1_RevenantStart2
 CNAM Assassin
 ANAM 
-BNAM nc_Skel_M_Head_de
+BNAM nc_Skel_M_Head_de_s
 KNAM 
 SCRI nc_start_skelly_script
 NPDT AwAyAAA8bQAAAAAA
@@ -37418,7 +37235,7 @@ NAME nc_argonian_f
 MODL base_animKnA.nif
 FNAM Малый мертвец-аргонианин
 RNAM Argonian Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
@@ -37436,7 +37253,7 @@ NAME nc_argonian_2_f
 MODL base_animKnA.nif
 FNAM Мертвец-аргонианин
 RNAM Argonian Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
@@ -37454,7 +37271,7 @@ NAME nc_argonian_3_f
 MODL base_animKnA.nif
 FNAM Большой мертвец-аргонианин
 RNAM Argonian Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
@@ -37469,9 +37286,10 @@ AIDT HgAeHgDzTQAAAAAA
 
 NPC_
 NAME nc_breton_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-бретон
 RNAM Breton Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
@@ -37486,9 +37304,10 @@ AIDT HgAeHgDzTQAAAAAA
 
 NPC_
 NAME nc_breton_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-бретон
 RNAM Breton Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
@@ -37503,9 +37322,10 @@ AIDT HgAeHgDzTQAAAAAA
 
 NPC_
 NAME nc_breton_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-бретон
 RNAM Breton Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
@@ -37520,9 +37340,10 @@ AIDT HgAeHgDzTQAAAAAA
 
 NPC_
 NAME nc_dark elf_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
@@ -37537,9 +37358,10 @@ AIDT HgAeHgDzTQAAAAAA
 
 NPC_
 NAME nc_dark elf_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
@@ -37554,9 +37376,10 @@ AIDT HgAeHgDzTQAAAAAA
 
 NPC_
 NAME nc_dark elf_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
@@ -38231,9 +38054,10 @@ BYDT DAABAA==
 
 NPC_
 NAME nc_high elf_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
-CNAM Battlemage
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_he
 KNAM 
@@ -38263,9 +38087,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_high elf_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
-CNAM Battlemage
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_he
 KNAM 
@@ -38297,9 +38122,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_high elf_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-альтмер
 RNAM High Elf Revenant
-CNAM Battlemage
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_he
 KNAM 
@@ -38338,9 +38164,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_imperial_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
@@ -38355,9 +38182,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_imperial_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-имперец
 RNAM Imperial Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
@@ -38372,9 +38200,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_imperial_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
@@ -38392,7 +38221,7 @@ NAME nc_khajiit_f
 MODL base_animKnA.nif
 FNAM Малый мертвец-хаджит
 RNAM Khajiit Revenant
-CNAM Assassin
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
@@ -38410,7 +38239,7 @@ NAME nc_khajiit_2_f
 MODL base_animKnA.nif
 FNAM Мертвец-хаджит
 RNAM Khajiit Revenant
-CNAM Assassin
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
@@ -38428,7 +38257,7 @@ NAME nc_khajiit_3_f
 MODL base_animKnA.nif
 FNAM Большой мертвец-хаджит
 RNAM Khajiit Revenant
-CNAM Assassin
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
@@ -38443,9 +38272,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_nord_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-норд
 RNAM Nord Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
@@ -38460,9 +38290,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_nord_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-норд
 RNAM Nord Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
@@ -38477,9 +38308,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_nord_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-норд
 RNAM Nord Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
@@ -38494,9 +38326,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_orc_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-орк
 RNAM Orc Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
@@ -38511,9 +38344,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_orc_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-орк
 RNAM Orc Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
@@ -38528,9 +38362,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_orc_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-орк
 RNAM Orc Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
@@ -38545,9 +38380,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_redguard_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
@@ -38562,9 +38398,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_redguard_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-редгард
 RNAM Redguard Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
@@ -38579,9 +38416,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_redguard_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
-CNAM Warrior
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
@@ -38596,9 +38434,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_wood elf_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
-CNAM Archer
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
@@ -38613,9 +38452,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_wood elf_2_f
+MODL base_anim_female.nif
 FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
-CNAM Archer
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
@@ -38630,9 +38470,10 @@ AIDT HgAeHgBa0nYAAAAA
 
 NPC_
 NAME nc_wood elf_3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
-CNAM Archer
+CNAM A1_EmptyRevenant
 ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
@@ -39241,6 +39082,138 @@ LIGH
 NAME A1_NecroMarker
 MODL 
 LHDT AAAAAAAAAAD/////EAAAAAAAAAABAAAA
+
+BODY
+NAME nc_orc_sk_s
+MODL blas\\bb-headless-skelly.nif
+FNAM A1_RevenantStart
+BYDT AAACAA==
+
+BODY
+NAME nc_orcskull_s
+MODL blas\\orcskull_bs.NIF
+FNAM A1_RevenantStart
+BYDT AAACAA==
+
+BODY
+NAME nc_Skel_M_Chest_orc_s
+MODL blas\\B_S_Skel_M_Chest_1.NIF
+FNAM A1_RevenantStart
+BYDT AwAAAA==
+
+BODY
+NAME nc_Skel_M_Groin_orc_s
+MODL blas\\B_S_Skel_M_Groin_1.NIF
+FNAM A1_RevenantStart
+BYDT BAAAAA==
+
+BODY
+NAME nc_Skel_M_neck_orc_s
+MODL blas\\B_S_Skel_M_Neck_1.NIF
+FNAM A1_RevenantStart
+BYDT AgAAAA==
+
+BODY
+NAME nc_Skel_M_R_Foot_orc_s
+MODL blas\\B_S_Skel_M_R_Foot_1.NIF
+FNAM A1_RevenantStart
+BYDT CQAAAA==
+
+BODY
+NAME nc_Skel_M_R_forearm_orc_s
+MODL blas\\B_S_Skel_M_R_forearm_1.NIF
+FNAM A1_RevenantStart
+BYDT BwAAAA==
+
+BODY
+NAME nc_Skel_M_R_Hand_orc_s
+MODL blas\\B_S_Skel_M_R_Hand_1.NIF
+FNAM A1_RevenantStart
+BYDT BQAAAA==
+
+BODY
+NAME nc_Skel_M_R_knee_orc_s
+MODL blas\\B_S_Skel_M_R_knee_1.NIF
+FNAM A1_RevenantStart
+BYDT CwAAAA==
+
+BODY
+NAME nc_Skel_M_R_upperarm_orc_s
+MODL blas\\B_S_Skel_upperarm.NIF
+FNAM A1_RevenantStart
+BYDT CAAAAA==
+
+BODY
+NAME nc_Skel_M_R_upperleg_orc_s
+MODL blas\\B_S_Skel_upperleg_1.NIF
+FNAM A1_RevenantStart
+BYDT DAAAAA==
+
+BODY
+NAME nc_Skel_M_Head_de_s
+MODL blas\\B_S_Skel_M_Head_1.NIF
+FNAM A1_RevenantStart2
+BYDT AAACAA==
+
+BODY
+NAME nc_Skel_M_Chest_de_s
+MODL blas\\B_S_Skel_M_Chest_1.NIF
+FNAM A1_RevenantStart2
+BYDT AwAAAA==
+
+BODY
+NAME nc_Skel_M_Groin_de_s
+MODL blas\\B_S_Skel_M_Groin_1.NIF
+FNAM A1_RevenantStart2
+BYDT BAAAAA==
+
+BODY
+NAME nc_Skel_M_neck_de_s
+MODL blas\\B_S_Skel_M_Neck_1.NIF
+FNAM A1_RevenantStart2
+BYDT AgAAAA==
+
+BODY
+NAME nc_Skel_M_R_Foot_de_s
+MODL blas\\B_S_Skel_M_R_Foot_1.NIF
+FNAM A1_RevenantStart2
+BYDT CQAAAA==
+
+BODY
+NAME nc_Skel_M_R_forearm_de_s
+MODL blas\\B_S_Skel_M_R_forearm_1.NIF
+FNAM A1_RevenantStart2
+BYDT BwAAAA==
+
+BODY
+NAME nc_Skel_M_R_Hand_de_s
+MODL blas\\B_S_Skel_M_R_Hand_1.NIF
+FNAM A1_RevenantStart2
+BYDT BQAAAA==
+
+BODY
+NAME nc_Skel_M_R_knee_de_s
+MODL blas\\B_S_Skel_M_R_knee_1.NIF
+FNAM A1_RevenantStart2
+BYDT CwAAAA==
+
+BODY
+NAME nc_Skel_M_R_upperarm_de_s
+MODL blas\\B_S_Skel_upperarm.NIF
+FNAM A1_RevenantStart2
+BYDT CAAAAA==
+
+BODY
+NAME nc_Skel_M_R_upperleg_de_s
+MODL blas\\B_S_Skel_upperleg_1.NIF
+FNAM A1_RevenantStart2
+BYDT DAAAAA==
+
+BODY
+NAME nc_dunmer_sk_s
+MODL blas\\bb-headless-skelly.nif
+FNAM A1_RevenantStart2
+BYDT AAACAA==
 
 CELL
 NAME 
@@ -44125,7 +44098,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQBtX/v/////+///QP///wECAAABAAAAZvr//2T///8BAXRl+////3H9//89////AQIAAPz///90/v//QP///wEEdGmdAQAAe/7//0D///8BAmFuUP7//3v+//9A////AQJhbvf////6////QP///wEEYW79////TwEAAED///8BA2NonwEAAIYBAABA////AQJfcln+//95AQAAQP///wECZW5L/v//MQAAAED///8BA3JhmgEAAD8AAABA////AQMAAA==
+PGRP /////2r6//86////AQB2D/v/////+///QP///wECdg8BAAAAZvr//2T///8BAXYP+////3H9//89////AQJ2D/z///90/v//QP///wEEdg+dAQAAe/7//0D///8BAncPUP7//3v+//9A////AQJ3D/f////6////QP///wEEdw/9////TwEAAED///8BA3cPnwEAAIYBAABA////AQJ3D1n+//95AQAAQP///wECdw9L/v//MQAAAED///8BA3cPmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -45752,7 +45725,7 @@ DATA wB1jwmgrpUXkO7XDAAAAAAAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAACAANsB
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACAACA+///ABQAALv+//8AAQCAAPz//wARAABb/v//AANzcwD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgCAAPz//4ASAABZ/v//AAJ3aQD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAgCAAPz//wAUAABZ/v//AAFzY4D8//+AEAAAWf7//wAEAACA/P//ABEAAFn+//8ABACAgPz//wASAABZ/f//AANlX4D8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQCAgPz//wATAABZ/f//AARqX4D8//+AEwAAWf7//wABAACA/P//gBMAAFn9//8AAwCAAP3//wAQAABZ/v//AARtbwD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgCAAP3//wASAABZ/f//AAVhbAD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8ABwCAAP3//4ATAABZ/f//AAd0aAD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAQCAAP3//4AUAABZ/f//AARqX4D9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQCAgP3//wARAACY/f//AAFydID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABACAgP3//4ASAABZ/f//AAh0c4D9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwCAgP3//wAUAABZ/f//AAh1boD9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8ABwCAgP3//wAVAABZ/v//AAFhcoD9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AAwCAAP7//4AQAABZ/f//AAJudAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQCAAP7//4ASAABZ/f//AAhzdQD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8ABwCAAP7//wAUAABZ/f//AAgAAAD+//+AFAAAWf3//wAIAAAA/v//ABUAAF7+//8AAgCAAP7//wAVAABZ/f//AAVlYYD+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABACAgP7//4AQAABc/v//AAFsZYD+//+AEAAAWf3//wAEAACA/v//ABEAAFn9//8ABACAgP7//4ARAABZ/f//AARiX4D+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACACAgP7//wATAABZ/f//AAdycoD+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8ABwCAgP7//4AUAABa/f//AAZqX4D+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABQCAAP///4AOAADZ/f//AANlXwD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABACAAP///wAQAABZ/v//AARkAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABQCAAP///wARAABJ/v//AAJhcgD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AAwCAAP///wASAABZ/f//AAZycgD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgCAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABgCAAP///wAVAABZ/v//AAN0ZQD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQCAAP///4AVAABZ/f//AANzZ4D///+A////AP///wADAACA////AAAAAAD///8ABACAgP///4AAAAAA////AARsZYD///8AAQAACv///wABAACA////gAEAAAD///8ABACAgP///wACAAAA////AARydID///+AAgAAAP///wAEAACA////AAMAAAD///8ABQCAgP///4ADAAAA////AARqX4D///8ABAAAAP///wAEAACA////gAQAAAD///8ABQCAgP///wAFAAAA////AARlc4D///8ABgAAAP///wADAACA////gAYAAAD///8ABACAgP///wAHAAAA////AAFja4D///+ABwAAAP///wADAACA////AAgAAAD///8ABACAgP///4AIAAAA////AAR0c4D///+ADgAA3v3//wAEAACA////AA8AANn9//8ABACAgP///wAQAABZ/v//AARfZYD///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAgCAgP///wARAABZ/f//AAdvdID///+AEQAAv/7//wACAACA////gBEAAFn9//8ABQCAgP///wASAAC//v//AAF0X4D///8AEgAAWf3//wADAACA////gBIAAFn9//8ABACAgP///wATAABp/f//AAJhc4D///+AEwAAef3//wADAACA////ABQAAHn9//8AAwCAgP///4AUAABO/v//AANydID///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwCAgP///wAVAABZ/f//AAdvb4D///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwCAAAAAAID///8A////AARsZQAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABQCAAAAAAAABAAAA////AAZydAAAAACAAQAAAP///wAFAAAAAAAAAAIAAAD///8ABACAAAAAAIACAAAA////AAhlcwAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABgCAAAAAAAAEAAAA////AAVlcwAAAACABAAAAP///wAIAAAAAAAAAAUAAAD///8ABwCAAAAAAIAFAAAA////AAZlcwAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwCAAAAAAAAHAAAA////AAd0cwAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACACAAAAAAIAIAAAA////AAZ0cwAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAwCAAAAAAAAQAABZ/v//AANyZQAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABQCAAAAAAAARAABZ/v//AAJlcwAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AAwCAAAAAAIARAABZ/f//AAZkAAAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwCAAAAAAIASAABZ/f//AANsYQAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABQCAAAAAAAAUAAB5/f//AAVydAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQCAAAAAAAAVAABZ/f//AAVkAAAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABACAgAAAAID///8A////AANydIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABACAgAAAAAABAAAA////AARydIAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AAwCAgAAAAIACAAAA////AAV0c4AAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABACAgAAAAAAEAAAA////AARlc4AAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQCAgAAAAIAFAAAA////AAR2YYAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABACAgAAAAAAHAAAA////AARydIAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABQCAgAAAAIAIAAAA////AARydIAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABACAgAAAAIAQAABZ/f//AAV0c4AAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgCAgAAAAIARAAC9/v//AAIAAIAAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAgCAgAAAAIASAABZ/f//AAVtYYAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwCAgAAAAAAUAAB5/f//AARydIAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAgCAgAAAAAAVAABZ/f//AAdiZYAAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABACAAAEAAIAOAAC6/v//AAFzaAABAAAADwAAWf7//wABAAAAAQAAgA8AAFn+//8ABACAAAEAAAAQAABZ/v//AAR0cwABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABQCAAAEAAAARAABZ/f//AAVhbAABAACAEQAAWf3//wADAAAAAQAAABIAAFn9//8ABgCAAAEAAIASAABZ/f//AAdlcwABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQCAAAEAAAAUAABZ/f//AAZlXwABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgCAAAEAAAAVAABZ/f//AAZlcwABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwCAgAEAAIAPAAC7/v//AAJiZYABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAQCAgAEAAIAQAABZ/f//AANlc4ABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABgCAgAEAAIASAABZ/f//AAhhbIABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACACAgAEAAAAUAABZ/f//AAhwaYABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAgCAAAIAAAAQAABZ/v//AARkAAACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAgCAAAIAAIARAAC4/f//AAJydAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8ABwCAAAIAAAATAABZ/f//AAhybwACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwCAAAIAAIAUAABZ/f//AAVvXwACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgCAgAIAAAAQAABZ/v//AANlbYACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAQCAgAIAAAARAACn/f//AANiZYACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABACAgAIAAIASAABZ/f//AAZvX4ACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABQCAgAIAAAAUAABZ/f//AAVydIACAACAFAAAWf7//wACAACAAgAAABUAAFn9//8AAQCAAAMAAIAQAABZ/v//AARhdAADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAIeAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAEAgAADAACAEwAA1P3//wABaGUAAwAAABQAAFn+//8AAXQAAAMAAAAUAABZ/f//AAMAgAADAACAFAAAWf3//wACaGWAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AAQAgIADAACAEQAAWf7//wAEc3eAAwAAABMAALr+//8AAwAAgAMAAIATAAC7/v//AAEAgAAEAAAAEQAAu/7//wABa2EABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AAMAgAAEAACAEgAAWf7//wADZWwABAAAABMAAFn+//8AAgAAAAQAAIATAABZ/v//AAMAgAAEAAAAFAAAfP7//wADaGUABAAAgBQAAKX+//8ABHQAAAQAAAAVAADT/v//AAQAgIAEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABAAAgAQAAIAVAAAH////AAQAgAAFAACAFQAAIv///wADZXMABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AAMAgIAFAAAAFgAATf///wACcnQABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AAQAgIAGAACAFAAAWQAAAAACdHOABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AAQAgIAGAAAAFgAAWf///wAFaW6ABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAUAgIAGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAIAgAAHAACAEwAAWf///wAFdHMABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAcAgAAHAACAFAAAWf///wAId28ABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAcAgAAHAACAFQAAWf///wAHZXMABwAAABYAAFsAAAAABAAAAAcAAAAWAABZ////AAcAgAAHAACAFgAAWwAAAAADdF8ABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAAMAgAAHAAAAFwAAWf///wAIb2wABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAYAgAAHAACAGAAAWf///wAGYm8ABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAgIAHAAAAEwAAWQAAAAADcnSABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAcAgIAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8ABwAAgAcAAAAVAABcAAAAAAUAgIAHAAAAFQAAWf///wAIaGGABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcAgIAHAAAAFgAAWQAAAAAGaGGABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAYAgIAHAACAFgAAWf///wAHaGGABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgAgIAHAACAFwAAWQAAAAAGYmyABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAUAgIAHAAAAGAAAWf///wAIcnSABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAgAgIAHAAAAGQAAWQAAAAAEdHOABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMAgAAIAAAAEwAAWf///wAFaGUACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAgAgAAIAAAAFAAAXAAAAAAEaGUACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAUAgAAIAACAFAAAWf///wAHdwAACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAgAgAAIAACAFQAAWQAAAAAIaGUACAAAgBUAAFn///8ABmh0AAgAAAAWAABZAAAAAAgAgAAIAACAFgAAWQAAAAAIaGUACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAgAgAAIAAAAFwAAWf///wAIaGUACAAAgBcAAFkAAAAACGh0AAgAAIAXAABZ////AAgAgAAIAAAAGAAAWQAAAAAIcmUACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAgAgAAIAACAGAAAWf///wAHaGkACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAcAgAAIAACAGQAAWf///wAEcnSACAAAABMAAJkAAAAAAgAAgAgAAAATAABZ////AAUAgIAIAACAEwAAWf///wAIeGWACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAgIAIAACAFAAAWQAAAAAHbmWACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAgAgIAIAAAAFQAAWf///wAIYWiACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAgIAIAAAAFgAAWQAAAAAGZW6ACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAYAgIAIAACAFgAAWf///wAHZXKACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAgAgIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAgIAIAAAAGAAAWf///wAIc2iACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAcAgIAIAAAAGQAAWQAAAAAEc2uACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUAgAAJAAAAEwAAWf///wAFZXkACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAgAgAAJAAAAFAAAWQAAAAAFaW4ACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAcAgAAJAACAFAAAWf///wAIYWgACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYAgAAJAACAFQAAWQAAAAAGd28ACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAgAAJAACAFgAAWf///wAHbnQACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAcAgAAJAACAFwAAWQAAAAAHdHMACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAYAgAAJAAAAGAAAWf///wAHdHMACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAYAgAAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAIAgIAJAAAAEwAAWf///wAFc3eACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAcAgIAJAAAAFAAAWf///wAGcnSACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAgIAJAAAAFQAAWQAAAAAHZXOACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAYAgIAJAAAAFgAAWf///wADc2iACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAYAgIAJAACAFwAAWQAAAAAFbl+ACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAUAgIAJAACAGAAAWf///wAFZXOACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAQAgAAKAAAAEwAAVQAAAAACbW0ACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAgAAKAACAFAAAWf///wAEZXIACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAgAAKAACAFQAAWQAAAAAEYmUACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAUAgAAKAAAAFgAAWf///wADcnQACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAgAAKAAAAFwAAWQAAAAADc2gACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAUAgAAKAAAAGAAAWf///wAEc2gACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIAgAAKAACAGQAAWf///wADdHOACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAIAgIAKAAAAFQAAWf///wAEcnSACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AAQAgIAKAAAAFgAAWwAAAAAGZXOACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUAgIAKAACAFgAAWf///wAGZXOACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQAgIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAIAgAALAAAAFQAAWf///wAFZXMACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUAgAALAAAAFgAAWQAAAAAFZXIACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAUAgAALAACAFgAAWf///wAEdHMACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAQAgAALAACAFwAAWf///wAEdHMACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAgA==
+PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACAACA+///ABQAALv+//8AAQAAAPz//wARAABb/v//AAMAAAD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgAAAPz//4ASAABZ/v//AAIAAAD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAgAAAPz//wAUAABZ/v//AAEAAID8//+AEAAAWf7//wAEAACA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AAMAAID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABAACA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AAQAAAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgAAAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGAAAA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAgAAID9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8ABwAAgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEAAAA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAIAAAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQAAAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8ABwAAAP7//wAUAABZ/f//AAgAAAD+//+AFAAAWf3//wAIAAAA/v//ABUAAF7+//8AAgAAAP7//wAVAABZ/f//AAUAAID+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEAACA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AAQAAID+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAcAAID+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8ABwAAgP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACAACA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMAAAD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AAwAAAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEAAAA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AAMAAAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQAAAP///4AVAABZ/f//AAMAAID///+A////AP///wADAACA////AAAAAAD///8ABAAAgP///4AAAAAA////AAQAAID///8AAQAACv///wABAACA////gAEAAAD///8ABAAAgP///wACAAAA////AAQAAID///+AAgAAAP///wAEAACA////AAMAAAD///8ABQAAgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEAACA////gAQAAAD///8ABQAAgP///wAFAAAA////AAQAAID///8ABgAAAP///wADAACA////gAYAAAD///8ABAAAgP///wAHAAAA////AAEAAID///+ABwAAAP///wADAACA////AAgAAAD///8ABAAAgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEAACA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AAQAAID///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAgAAgP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACAACA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABAAAgP///wATAABp/f//AAIAAID///+AEwAAef3//wADAACA////ABQAAHn9//8AAwAAgP///4AUAABO/v//AAMAAID///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAcAAID///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwAAAAAAAID///8A////AAQAAAAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABQAAAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFAAAAAAAAAAIAAAD///8ABAAAAAAAAIACAAAA////AAgAAAAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABgAAAAAAAAAEAAAA////AAUAAAAAAACABAAAAP///wAIAAAAAAAAAAUAAAD///8ABwAAAAAAAIAFAAAA////AAYAAAAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAcAAAAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACAAAAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADAAAAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAMAAAAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABQAAAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHAAAAAAAAgBEAAFn+//8AAwAAAAAAAIARAABZ/f//AAYAAAAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AAwAAAAAAAIASAABZ/f//AAMAAAAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAUAAAAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAAAgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABAAAgAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABAACAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAUAAIAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABAAAgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AAQAAIAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACAACAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAIAAIAAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAgAAgAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwAAgAAAAAAUAAB5/f//AAQAAIAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAgAAgAAAAAAVAABZ/f//AAcAAIAAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABAAAAAEAAIAOAAC6/v//AAEAAAABAAAADwAAWf7//wABAAAAAQAAgA8AAFn+//8ABAAAAAEAAAAQAABZ/v//AAQAAAABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABQAAAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADAAAAAQAAABIAAFn9//8ABgAAAAEAAIASAABZ/f//AAcAAAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQAAAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAYAAAABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIAAIABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAQAAgAEAAIAQAABZ/f//AAMAAIABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIAACAAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAgAAIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAgAAAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABAAAAAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAIAAAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8ABwAAAAIAAAATAABZ/f//AAgAAAACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8ABwAAAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACAAAAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AAMAAIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAQAAgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFAACAAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAYAAIACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABQAAgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACAACAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AAQAAAADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAIAAAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABAAAAAMAAAATAADV/f//AAEAAAADAACAEwAA1P3//wABAAAAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AAMAAAADAACAFAAAWf3//wACAACAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AAQAAIADAACAEQAAWf7//wAEAACAAwAAABMAALr+//8AAwAAgAMAAIATAAC7/v//AAEAAAAEAAAAEQAAu/7//wABAAAABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AAMAAAAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAgAAAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADAAAABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AAQAAIAEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABAAAgAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACAAAABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AAQAAIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABQAAgAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFAACABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAUAAIAGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAAAAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAgAAAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIAAAABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAcAAAAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABAAAAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADAAAABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADAACABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAcAAIAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8ABwAAgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIAACABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcAAIAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAABwAAgAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGAACABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAUAAIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABgAAgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEAACABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMAAAAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAgAAAAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACAAAAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHAAAACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAgAAAAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAgAAAAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABgAAAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACAAAAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHAAAACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAcAAAAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAgAAgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIAACACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIAACACAAAgBUAAFkAAAAABwAAgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGAACACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAYAAIAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAABwAAgAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIAACACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAcAAIAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABQAAgAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFAAAACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAgAAAAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACAAAAAkAAIAUAABZAAAAAAcAAAAJAACAFAAAWf///wAIAAAACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYAAAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYAAAAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABgAAAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHAAAACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABAAAAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIAAAACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAIAAIAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAgAAgAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGAACACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAAIAJAAAAFQAAWQAAAAAHAACACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAYAAIAJAAAAFgAAWf///wADAACACQAAABcAAFkAAAAABQAAgAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFAACACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAUAAIAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABgAAgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACAAAACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEAAAACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQAAAAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAgAAAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADAAAACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAUAAAAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAIAAIAKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAAwAAgAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGAACACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUAAIAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAIAAAALAAAAFQAAWf///wAFAAAACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAUAAAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABQAAAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEAAAACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AAQAAAALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAAA==
 PGRC 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SwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA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MQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
 
 DIAL
