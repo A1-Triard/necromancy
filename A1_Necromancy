@@ -34770,21 +34770,21 @@ NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull
-NPCS sleep\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS distracting touch\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS deadly poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS poisonbloom\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS viperbolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to magicka\0\0\0\0\0\0\0
-NPCS dire weakness to poison\0\0\0\0\0\0\0\0
-NPCS dire weakness to shock\0\0\0\0\0\0\0\0\0
-NPCS commanding touch\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS demoralizing touch\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS demoralize humanoid\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS purge magic\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS touch dispel\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS sleep
+NPCS distracting touch
+NPCS deadly poison
+NPCS poisonbloom
+NPCS viperbolt
+NPCS dire weakness to fire
+NPCS dire weakness to frost
+NPCS dire weakness to magicka
+NPCS dire weakness to poison
+NPCS dire weakness to shock
+NPCS commanding touch
+NPCS demoralizing touch
+NPCS demoralize humanoid
+NPCS purge magic
+NPCS touch dispel
 AIDT HgAeHgBa0nYAAAAA
 
 NPC_
@@ -35127,23 +35127,23 @@ NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_altmer_skull
-NPCS dire weary\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS great feather\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong fire shield\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong frost shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS second barrier\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong shock shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain destruction\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to magicka\0\0\0\0\0\0\0
-NPCS weak spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain blood\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb intelligence\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb strength\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS dire weary
+NPCS great feather
+NPCS strong fire shield
+NPCS strong frost shield
+NPCS second barrier
+NPCS strong shock shield
+NPCS wild distraction
+NPCS drain destruction
+NPCS dire weakness to fire
+NPCS dire weakness to frost
+NPCS dire weakness to magicka
+NPCS weak spelldrinker
+NPCS drain blood
+NPCS absorb intelligence
+NPCS absorb strength
+NPCS blood despair
+NPCS poison_powerful
 AIDT HgAeHgBa0nYAAAAA
 
 NPC_
@@ -35162,30 +35162,30 @@ NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull
-NPCS dire weary\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong frost shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS second barrier\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong shock shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild clumsiness\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain enchant\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain destruction\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain alteration\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain conjuration\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain alchemy\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong reflect\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb agility [ranged]\0\0\0\0\0\0\0\0
-NPCS absorb endurance [ranged]\0\0\0\0\0\0
-NPCS drain blood\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb luck [ranged]\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb strength [ranged]\0\0\0\0\0\0\0
-NPCS absorb willpower [ranged]\0\0\0\0\0\0
-NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS Ghost Curse\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS vivec's_wrath\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS dire weary
+NPCS strong frost shield
+NPCS second barrier
+NPCS strong shock shield
+NPCS wild clumsiness
+NPCS wild distraction
+NPCS drain enchant
+NPCS drain destruction
+NPCS drain alteration
+NPCS drain conjuration
+NPCS drain alchemy
+NPCS strong reflect
+NPCS strong spelldrinker
+NPCS wild spelldrinker
+NPCS absorb agility [ranged]
+NPCS absorb endurance [ranged]
+NPCS drain blood
+NPCS absorb luck [ranged]
+NPCS absorb strength [ranged]
+NPCS absorb willpower [ranged]
+NPCS blood despair
+NPCS Ghost Curse
+NPCS poison_powerful
+NPCS vivec's_wrath
 AIDT HgAeHgBa0nYAAAAA
 
 NPC_
@@ -36147,22 +36147,22 @@ NPCO 1 iron_gauntlet_left
 NPCO 1 iron boots
 NPCO 1 iron_greaves
 NPCO 1 iron_cuirass
-NPCS burden of sin\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS great feather\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS great levitate\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS sleep\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS deadly poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to magicka\0\0\0\0\0\0\0
-NPCS dire weakness to poison\0\0\0\0\0\0\0\0
-NPCS dire weakness to shock\0\0\0\0\0\0\0\0\0
-NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS daedric bite\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS frost bolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS vivec's_wrath\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire shockball\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS burden of sin
+NPCS great feather
+NPCS great levitate
+NPCS sleep
+NPCS wild distraction
+NPCS deadly poison
+NPCS dire weakness to fire
+NPCS dire weakness to frost
+NPCS dire weakness to magicka
+NPCS dire weakness to poison
+NPCS dire weakness to shock
+NPCS blood despair
+NPCS daedric bite
+NPCS frost bolt
+NPCS vivec's_wrath
+NPCS dire shockball
 AIDT AABkAAAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
@@ -36257,14 +36257,14 @@ NPCO 1 nc_head_rags
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 5 ingred_bonemeal_01
-NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dread curse: spell points\0\0\0\0\0\0
-NPCS five fingers of pain\0\0\0\0\0\0\0\0\0\0\0
-NPCS potent poison [ranged]\0\0\0\0\0\0\0\0\0
-NPCS poisonbloom\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS viperbolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to poison\0\0\0\0\0\0\0\0
-NPCS nc_poison_warlord_spell\0\0\0\0\0\0\0\0
+NPCS poison_powerful
+NPCS dread curse: spell points
+NPCS five fingers of pain
+NPCS potent poison [ranged]
+NPCS poisonbloom
+NPCS viperbolt
+NPCS dire weakness to poison
+NPCS nc_poison_warlord_spell
 AIDT AAAAAABa0nYAAAAA
 
 CLOT
@@ -36362,13 +36362,13 @@ NPCO 1 nc_head_rags
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 5 ingred_bonemeal_01
-NPCS Fireball_large\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong fire shield\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS firefist\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS five fingers of pain\0\0\0\0\0\0\0\0\0\0\0
-NPCS dread curse: spell points\0\0\0\0\0\0
-NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
-NPCS nc_fire_warlord_spell\0\0\0\0\0\0\0\0\0\0
+NPCS Fireball_large
+NPCS strong fire shield
+NPCS firefist
+NPCS five fingers of pain
+NPCS dread curse: spell points
+NPCS dire weakness to fire
+NPCS nc_fire_warlord_spell
 AIDT AAAAAAA8bQAAAAAA
 
 NPC_
@@ -36388,14 +36388,14 @@ NPCO 1 nc_head_rags
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 5 ingred_bonemeal_01
-NPCS five fingers of pain\0\0\0\0\0\0\0\0\0\0\0
-NPCS dread curse: spell points\0\0\0\0\0\0
-NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
-NPCS frost shield\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS frost bolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS frostfist\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS Frostball_large\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS nc_frost_warlord_spell\0\0\0\0\0\0\0\0\0
+NPCS five fingers of pain
+NPCS dread curse: spell points
+NPCS dire weakness to frost
+NPCS frost shield
+NPCS frost bolt
+NPCS frostfist
+NPCS Frostball_large
+NPCS nc_frost_warlord_spell
 AIDT AAAAAAA8bQAAAAAA
 
 NPC_ 4398046511104
@@ -36907,7 +36907,7 @@ MODL o\\Contain_chest_small_02.NIF
 FNAM Сундучок
 CNDT AADIQQ==
 FLAG 8
-NPCO 4294967295 nc_SoulGem_blackened
+NPCO -1 nc_SoulGem_blackened
 
 BODY
 NAME nc_skinm_chest
@@ -37187,10 +37187,10 @@ MODL o\\Contain_crate_01.NIF
 FNAM Ящик
 CNDT AABIQw==
 FLAG 8
-NPCO 4294967281 nc_salt
-NPCO 4294967295 misc_clothbolt_01
-NPCO 4294967295 misc_clothbolt_02
-NPCO 4294967295 misc_clothbolt_03
+NPCO -15 nc_salt
+NPCO -1 misc_clothbolt_01
+NPCO -1 misc_clothbolt_02
+NPCO -1 misc_clothbolt_03
 
 ACTI 4398046511104
 NAME nc_rev_placer
@@ -38068,21 +38068,21 @@ NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull_f
-NPCS sleep\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS distracting touch\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS deadly poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS poisonbloom\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS viperbolt\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to magicka\0\0\0\0\0\0\0
-NPCS dire weakness to poison\0\0\0\0\0\0\0\0
-NPCS dire weakness to shock\0\0\0\0\0\0\0\0\0
-NPCS commanding touch\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS demoralizing touch\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS demoralize humanoid\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS purge magic\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS touch dispel\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS sleep
+NPCS distracting touch
+NPCS deadly poison
+NPCS poisonbloom
+NPCS viperbolt
+NPCS dire weakness to fire
+NPCS dire weakness to frost
+NPCS dire weakness to magicka
+NPCS dire weakness to poison
+NPCS dire weakness to shock
+NPCS commanding touch
+NPCS demoralizing touch
+NPCS demoralize humanoid
+NPCS purge magic
+NPCS touch dispel
 AIDT HgAeHgBa0nYAAAAA
 
 NPC_
@@ -38101,23 +38101,23 @@ NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_altmer_skull_f
-NPCS dire weary\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS great feather\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong fire shield\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong frost shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS second barrier\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong shock shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain destruction\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to fire\0\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to frost\0\0\0\0\0\0\0\0\0
-NPCS dire weakness to magicka\0\0\0\0\0\0\0
-NPCS weak spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain blood\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb intelligence\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb strength\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS dire weary
+NPCS great feather
+NPCS strong fire shield
+NPCS strong frost shield
+NPCS second barrier
+NPCS strong shock shield
+NPCS wild distraction
+NPCS drain destruction
+NPCS dire weakness to fire
+NPCS dire weakness to frost
+NPCS dire weakness to magicka
+NPCS weak spelldrinker
+NPCS drain blood
+NPCS absorb intelligence
+NPCS absorb strength
+NPCS blood despair
+NPCS poison_powerful
 AIDT HgAeHgBa0nYAAAAA
 
 NPC_
@@ -38136,30 +38136,30 @@ NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_altmer_skull_f
-NPCS dire weary\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong frost shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS second barrier\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong shock shield\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild clumsiness\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild distraction\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain enchant\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain destruction\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain alteration\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain conjuration\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS drain alchemy\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong reflect\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS strong spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS wild spelldrinker\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb agility [ranged]\0\0\0\0\0\0\0\0
-NPCS absorb endurance [ranged]\0\0\0\0\0\0
-NPCS drain blood\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb luck [ranged]\0\0\0\0\0\0\0\0\0\0\0
-NPCS absorb strength [ranged]\0\0\0\0\0\0\0
-NPCS absorb willpower [ranged]\0\0\0\0\0\0
-NPCS blood despair\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS Ghost Curse\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS poison_powerful\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-NPCS vivec's_wrath\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+NPCS dire weary
+NPCS strong frost shield
+NPCS second barrier
+NPCS strong shock shield
+NPCS wild clumsiness
+NPCS wild distraction
+NPCS drain enchant
+NPCS drain destruction
+NPCS drain alteration
+NPCS drain conjuration
+NPCS drain alchemy
+NPCS strong reflect
+NPCS strong spelldrinker
+NPCS wild spelldrinker
+NPCS absorb agility [ranged]
+NPCS absorb endurance [ranged]
+NPCS drain blood
+NPCS absorb luck [ranged]
+NPCS absorb strength [ranged]
+NPCS absorb willpower [ranged]
+NPCS blood despair
+NPCS Ghost Curse
+NPCS poison_powerful
+NPCS vivec's_wrath
 AIDT HgAeHgBa0nYAAAAA
 
 NPC_
