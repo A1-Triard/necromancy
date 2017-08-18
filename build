@@ -14,6 +14,6 @@ rm -rf A1_Necromancy_${VERSION}
 rm -f A1_Necromancy_${VERSION}.zip
 mkdir A1_Necromancy_${VERSION}
 cp -a "Data Files" A1_Necromancy_init.exe A1_Necromancy_${VERSION}
-cp -a A1_Necromancy_Story.esp A1_Necromancy_V1_Gameplay A1_Necromancy_${VERSION}/"Data Files"
+cp -a A1_Necromancy_Story.esp A1_Necromancy_V1_Gameplay.esp A1_Necromancy_${VERSION}/"Data Files"
 cp -a Readme.txt A1_Necromancy_${VERSION}
 zip -v -X -9 -r A1_Necromancy_${VERSION}.zip A1_Necromancy_${VERSION} || exit 1
