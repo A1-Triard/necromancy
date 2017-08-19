@@ -9,7 +9,6 @@ DESCRIPTION
 Morrowind.esm 79764287
 Tribunal.esm 6616539
 Bloodmoon.esm 11799703
-Trib_BM_patch_1C.esm 23382
 
 GLOB
 NAME nc_isnecro
@@ -532,6 +531,200 @@ SCTX
     endif
     
     StopScript A1V1_NecroRitualAltmer_sc
+    
+    End
+
+SCPT
+SCHD A1V1_NecroRitualArg_sc 2 0 0 1412 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEhIFj9ECBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEjIFj9ECBvF25jX2FsdG1lcl9wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGyBY/RAgbw9uY19hbHRtZXJfc2t1bGwgPT0gMAUBcwEAAiAwABAxAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7j7iD96/z04CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBBwEEBgECHSBY/RAgbxFuY19hbHRtZXJfc2t1bGxfZiA9PSAwBQFzAQACIDAAEDMAwuDsIO3z5uXtIPfl8OXvIOL78e7q7ukg/ev89Ojp6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBVuY19hbHRtZXJfcGF1bGRyb25fc2sBANUQD25jX2FsdG1lcl9za3VsbAEABwEC1RAXbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YBANUQEW5jX2FsdG1lcl9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhELbmNfaGlnaCBlbGYBAAAAAAAAAAcBAboRDW5jX2hpZ2ggZWxmX2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhENbmNfaGlnaCBlbGZfMgEAAAAAAAAABwEBuhEPbmNfaGlnaCBlbGZfMl9mAQAAAAAAAAAJAQcBBQYBAQkgcwIAID09IDC6EQ1uY19oaWdoIGVsZl8zAQAAAAAAAAAHAQG6EQ9uY19oaWdoIGVsZl8zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBlBMVYxX05lY3JvUml0dWFsQWx0bWVyX3NjAQE=
+SCTX
+    Begin A1V1_NecroRitualArg_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_arg_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_arg_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_argonian_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп высокого эльфа для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_argonian_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп высокой эльфийки для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_arg_pauldron_sk, 1
+    		RemoveItem nc_argonian_skull, 1
+    	else
+    		RemoveItem nc_arg_pauldron_sk_f, 1
+    		RemoveItem nc_argonian_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_argonian" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_argonian_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_argonian_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_argonian_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_argonian_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_argonian_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualArg_sc
+    
+    End
+
+SCPT
+SCHD A1V1_NecroRitualKha_sc 2 0 0 1412 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEhIFj9ECBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEjIFj9ECBvF25jX2FsdG1lcl9wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGyBY/RAgbw9uY19hbHRtZXJfc2t1bGwgPT0gMAUBcwEAAiAwABAxAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7j7iD96/z04CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBBwEEBgECHSBY/RAgbxFuY19hbHRtZXJfc2t1bGxfZiA9PSAwBQFzAQACIDAAEDMAwuDsIO3z5uXtIPfl8OXvIOL78e7q7ukg/ev89Ojp6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBVuY19hbHRtZXJfcGF1bGRyb25fc2sBANUQD25jX2FsdG1lcl9za3VsbAEABwEC1RAXbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YBANUQEW5jX2FsdG1lcl9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhELbmNfaGlnaCBlbGYBAAAAAAAAAAcBAboRDW5jX2hpZ2ggZWxmX2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhENbmNfaGlnaCBlbGZfMgEAAAAAAAAABwEBuhEPbmNfaGlnaCBlbGZfMl9mAQAAAAAAAAAJAQcBBQYBAQkgcwIAID09IDC6EQ1uY19oaWdoIGVsZl8zAQAAAAAAAAAHAQG6EQ9uY19oaWdoIGVsZl8zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBlBMVYxX05lY3JvUml0dWFsQWx0bWVyX3NjAQE=
+SCTX
+    Begin A1V1_NecroRitualKha_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_khajiit_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_khajiit_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_khajiit_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп высокого эльфа для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_khajiit_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп высокой эльфийки для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_khajiit_pauldron_sk, 1
+    		RemoveItem nc_khajiit_skull, 1
+    	else
+    		RemoveItem nc_khajiit_pauldron_sk_f, 1
+    		RemoveItem nc_khajiit_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_khajiit" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_khajiit_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_khajiit_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_khajiit_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_khajiit_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_khajiit_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualKha_sc
     
     End
 
@@ -1298,6 +1491,254 @@ SCTX
     		set state to 2
     		xSetRef count
     		StartScript A1V1_NecroRitualAltmer_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V1_SoulGemArg_sc 2 13 0 1556 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemArg_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualArg_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V1_SoulGemKha_sc 2 13 0 1556 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemKha_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualKha_sc
     	else
     		MessageBox "Заклинание не может найти платформу."
     	endif
