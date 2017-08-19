@@ -535,9 +535,9 @@ SCTX
     End
 
 SCPT
-SCHD A1V1_NecroRitualArg_sc 2 0 0 1412 14
+SCHD A1V1_NecroRitualArg_sc 2 0 0 1405 14
 SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEhIFj9ECBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEjIFj9ECBvF25jX2FsdG1lcl9wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGyBY/RAgbw9uY19hbHRtZXJfc2t1bGwgPT0gMAUBcwEAAiAwABAxAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7j7iD96/z04CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBBwEEBgECHSBY/RAgbxFuY19hbHRtZXJfc2t1bGxfZiA9PSAwBQFzAQACIDAAEDMAwuDsIO3z5uXtIPfl8OXvIOL78e7q7ukg/ev89Ojp6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBVuY19hbHRtZXJfcGF1bGRyb25fc2sBANUQD25jX2FsdG1lcl9za3VsbAEABwEC1RAXbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YBANUQEW5jX2FsdG1lcl9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhELbmNfaGlnaCBlbGYBAAAAAAAAAAcBAboRDW5jX2hpZ2ggZWxmX2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhENbmNfaGlnaCBlbGZfMgEAAAAAAAAABwEBuhEPbmNfaGlnaCBlbGZfMl9mAQAAAAAAAAAJAQcBBQYBAQkgcwIAID09IDC6EQ1uY19oaWdoIGVsZl8zAQAAAAAAAAAHAQG6EQ9uY19oaWdoIGVsZl8zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBlBMVYxX05lY3JvUml0dWFsQWx0bWVyX3NjAQE=
+SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX2FyZ19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX2FyZ19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECHSBY/RAgbxFuY19hcmdvbmlhbl9za3VsbCA9PSAwBQFzAQACIDAAEDEAwuDsIO3z5uXtIPfl8OXvIOL78e7q7uPuIP3r/PTgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEHAQQGAQIfIFj9ECBvE25jX2FyZ29uaWFuX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAzAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7pIP3r/PTo6eroIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQkBBgEECSBzAQAgPT0gMQYBAiAgWP0QIG8VaW5ncmVkX3NjcmFwX21ldGFsXzAxIDwgMgUBcwEAAiAwABA3AMLg7CDt8+bt+yDk4uUg9+Dx8ugg7uHw5efq7uIg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECIiBY/RAgbxdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMSA8IDIFAXMBAAIgMAAQMQDC4Owg7fPm7fsg5OLgIOrz8ergIOru5ugg7eXy9+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAQAgPT0gMQYBAh4gWP0QIG8SaW5ncmVkX2JvbmVtZWFsXzAxIDwgMzAFAXMBAAIgMAAQOgDC4Owg7fPm7e4g6Ozl8vwgMzAg7+7w9ujpIOru8fL/7e7pIOzz6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEBCSBzAQAgPT0gMAUBRxBBMVYxX05lY3JvUml0dWFsAiAxBwEiBQFHEEExVjFfTmVjcm9SaXR1YWwCIDIGAQIJIHMCACA9PSAw1RASbmNfYXJnX3BhdWxkcm9uX3NrAQDVEBFuY19hcmdvbmlhbl9za3VsbAEABwEC1RAUbmNfYXJnX3BhdWxkcm9uX3NrX2YBANUQE25jX2FyZ29uaWFuX3NrdWxsX2YBAAkB1RAVaW5ncmVkX3NjcmFwX21ldGFsXzAxAgDVEBdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMQIA1RASaW5ncmVkX2JvbmVtZWFsXzAxHgAFAXMBABIgRw5uY19uZWNyb19za2lsbAAGAQUKIHMBACA8PSAxMAYBAQkgcwIAID09IDC6EQtuY19hcmdvbmlhbgEAAAAAAAAABwEBuhENbmNfYXJnb25pYW5fZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQ1uY19hcmdvbmlhbl8yAQAAAAAAAAAHAQG6EQ9uY19hcmdvbmlhbl8yX2YBAAAAAAAAAAkBBwEFBgEBCSBzAgAgPT0gMLoRDW5jX2FyZ29uaWFuXzMBAAAAAAAAAAcBAboRD25jX2FyZ29uaWFuXzNfZgEAAAAAAAAACQEJAQIQC1RodW5kZXJDbGFwBQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJARwQFkExVjFfTmVjcm9SaXR1YWxBcmdfc2MBAQ==
 SCTX
     Begin A1V1_NecroRitualArg_sc
     
@@ -628,103 +628,6 @@ SCTX
     endif
     
     StopScript A1V1_NecroRitualArg_sc
-    
-    End
-
-SCPT
-SCHD A1V1_NecroRitualKha_sc 2 0 0 1412 14
-SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEhIFj9ECBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEjIFj9ECBvF25jX2FsdG1lcl9wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGyBY/RAgbw9uY19hbHRtZXJfc2t1bGwgPT0gMAUBcwEAAiAwABAxAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7j7iD96/z04CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBBwEEBgECHSBY/RAgbxFuY19hbHRtZXJfc2t1bGxfZiA9PSAwBQFzAQACIDAAEDMAwuDsIO3z5uXtIPfl8OXvIOL78e7q7ukg/ev89Ojp6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBVuY19hbHRtZXJfcGF1bGRyb25fc2sBANUQD25jX2FsdG1lcl9za3VsbAEABwEC1RAXbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YBANUQEW5jX2FsdG1lcl9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhELbmNfaGlnaCBlbGYBAAAAAAAAAAcBAboRDW5jX2hpZ2ggZWxmX2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhENbmNfaGlnaCBlbGZfMgEAAAAAAAAABwEBuhEPbmNfaGlnaCBlbGZfMl9mAQAAAAAAAAAJAQcBBQYBAQkgcwIAID09IDC6EQ1uY19oaWdoIGVsZl8zAQAAAAAAAAAHAQG6EQ9uY19oaWdoIGVsZl8zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBlBMVYxX05lY3JvUml0dWFsQWx0bWVyX3NjAQE=
-SCTX
-    Begin A1V1_NecroRitualKha_sc
-    
-    short summon
-    short gender
-    
-    set summon to 1
-    
-    if ( GetItemCount nc_khajiit_pauldron_sk == 1 )
-    	set gender to 0
-    elseif ( GetItemCount nc_khajiit_pauldron_sk_f == 1 )
-    	set gender to 1
-    else
-    	set summon to 0
-    	MessageBox "Вам нужен труп, чтобы провести ритуал."
-    endif
-    
-    if ( summon == 1 )
-    	if ( gender == 0 )
-    		if ( GetItemCount nc_khajiit_skull == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп высокого эльфа для этого ритуала."
-    		endif
-    	else
-    		if ( GetItemCount nc_khajiit_skull_f == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп высокой эльфийки для этого ритуала."
-    		endif
-    	endif
-    endif
-    
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_netch_leather_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_bonemeal_01 < 30 )
-    		set summon to 0
-    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
-    	endif
-    endif
-    
-    if ( summon == 0 )
-    	set A1V1_NecroRitual to 1
-    else
-    	set A1V1_NecroRitual to 2
-    	if ( gender == 0 )
-    		RemoveItem nc_khajiit_pauldron_sk, 1
-    		RemoveItem nc_khajiit_skull, 1
-    	else
-    		RemoveItem nc_khajiit_pauldron_sk_f, 1
-    		RemoveItem nc_khajiit_skull_f, 1
-    	endif
-    	RemoveItem ingred_scrap_metal_01, 2
-    	RemoveItem ingred_netch_leather_01, 2
-    	RemoveItem ingred_bonemeal_01, 30
-    	set summon to nc_necro_skill
-    	if ( summon <= 10 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_khajiit" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_khajiit_f" 1, 0, 0
-    		endif
-    	elseif ( summon <= 20 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_khajiit_2" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_khajiit_2_f" 1, 0, 0
-    		endif
-    	else
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_khajiit_3" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_khajiit_3_f" 1, 0, 0
-    		endif
-    	endif
-    	PlaySound, "ThunderClap"
-    	set nc_necro_skill to ( nc_necro_skill + 1 )
-    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    endif
-    
-    StopScript A1V1_NecroRitualKha_sc
     
     End
 
@@ -1113,6 +1016,103 @@ SCTX
     endif
     
     StopScript A1V1_NecroRitualImp_sc
+    
+    End
+
+SCPT
+SCHD A1V1_NecroRitualKha_sc 2 0 0 1411 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEiIFj9ECBvFm5jX2toYWppaXRfcGF1bGRyb25fc2sgPT0gMQUBcwIAAiAwCAEBJCBY/RAgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YgPT0gMQUBcwIAAiAxBwECBQFzAQACIDAAECYAwuDsIO3z5uXtIPLw8+8sIPfy7uH7IO/w7uLl8fLoIPDo8vPg6y4AAAkBBgELCSBzAQAgPT0gMQYBBAkgcwIAID09IDAGAQIcIFj9ECBvEG5jX2toYWppaXRfc2t1bGwgPT0gMAUBcwEAAiAwABAxAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7j7iD96/z04CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBBwEEBgECHiBY/RAgbxJuY19raGFqaWl0X3NrdWxsX2YgPT0gMAUBcwEAAiAwABAzAMLg7CDt8+bl7SD35fDl7yDi+/Hu6u7pIP3r/PTo6eroIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQkBBgEECSBzAQAgPT0gMQYBAiAgWP0QIG8VaW5ncmVkX3NjcmFwX21ldGFsXzAxIDwgMgUBcwEAAiAwABA3AMLg7CDt8+bt+yDk4uUg9+Dx8ugg7uHw5efq7uIg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECIiBY/RAgbxdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMSA8IDIFAXMBAAIgMAAQMQDC4Owg7fPm7fsg5OLgIOrz8ergIOru5ugg7eXy9+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAQAgPT0gMQYBAh4gWP0QIG8SaW5ncmVkX2JvbmVtZWFsXzAxIDwgMzAFAXMBAAIgMAAQOgDC4Owg7fPm7e4g6Ozl8vwgMzAg7+7w9ujpIOru8fL/7e7pIOzz6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEBCSBzAQAgPT0gMAUBRxBBMVYxX05lY3JvUml0dWFsAiAxBwEiBQFHEEExVjFfTmVjcm9SaXR1YWwCIDIGAQIJIHMCACA9PSAw1RAWbmNfa2hhamlpdF9wYXVsZHJvbl9zawEA1RAQbmNfa2hhamlpdF9za3VsbAEABwEC1RAYbmNfa2hhamlpdF9wYXVsZHJvbl9za19mAQDVEBJuY19raGFqaWl0X3NrdWxsX2YBAAkB1RAVaW5ncmVkX3NjcmFwX21ldGFsXzAxAgDVEBdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMQIA1RASaW5ncmVkX2JvbmVtZWFsXzAxHgAFAXMBABIgRw5uY19uZWNyb19za2lsbAAGAQUKIHMBACA8PSAxMAYBAQkgcwIAID09IDC6EQpuY19raGFqaWl0AQAAAAAAAAAHAQG6EQxuY19raGFqaWl0X2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhEMbmNfa2hhamlpdF8yAQAAAAAAAAAHAQG6EQ5uY19raGFqaWl0XzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEMbmNfa2hhamlpdF8zAQAAAAAAAAAHAQG6EQ5uY19raGFqaWl0XzNfZgEAAAAAAAAACQEJAQIQC1RodW5kZXJDbGFwBQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJARwQFkExVjFfTmVjcm9SaXR1YWxLaGFfc2MBAQ==
+SCTX
+    Begin A1V1_NecroRitualKha_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_khajiit_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_khajiit_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_khajiit_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп высокого эльфа для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_khajiit_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп высокой эльфийки для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_khajiit_pauldron_sk, 1
+    		RemoveItem nc_khajiit_skull, 1
+    	else
+    		RemoveItem nc_khajiit_pauldron_sk_f, 1
+    		RemoveItem nc_khajiit_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_khajiit" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_khajiit_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_khajiit_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_khajiit_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_khajiit_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_khajiit_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualKha_sc
     
     End
 
@@ -1532,9 +1532,9 @@ SCTX
     End
 
 SCPT
-SCHD A1V1_SoulGemArg_sc 2 13 0 1556 112
+SCHD A1V1_SoulGemArg_sc 2 13 0 1553 112
 SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
+SCDT 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
 SCTX
     Begin A1V1_SoulGemArg_sc
     
@@ -1615,130 +1615,6 @@ SCTX
     		set state to 2
     		xSetRef count
     		StartScript A1V1_NecroRitualArg_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
-    	endif
-    	return
-    endif
-    
-    ifx ( OnPCEquip )
-    	set OnPCEquip to 0
-    	set count to 0
-    	if ( hash == -2147483648)
-    		set temp to 0
-    	elseif ( hash < 0 )
-    		set count to 1
-    		set temp to -hash
-    	else
-    		set temp to hash
-    	endif
-    
-    	ifx ( count )
-    		setx npcfile to xStringBuild "A1NPC_0%d", temp
-    	else
-    		setx npcfile to xStringBuild "A1NPC_%d", temp
-    	endif
-    
-    	xFileRewind npcfile
-    	setx count,temp to xFileReadShort npcfile, 1
-    	if ( temp == 20558 )
-    		set count to 1
-    	else
-    		set count to 0
-    	endif
-    	ifx ( count )
-    		setx count to xFileReadString npcfile
-    		xMessageFix count "OK"
-    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
-    	endif
-    endif
-    
-    End
-
-SCPT
-SCHD A1V1_SoulGemKha_sc 2 13 0 1556 112
-SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
-SCTX
-    Begin A1V1_SoulGemKha_sc
-    
-    long hash
-    long skills1
-    long skills2
-    long skills3
-    long skills4
-    long skills5
-    long skills6
-    long skills7
-    long skills8
-    long skills9
-    short state
-    short OnPCEquip
-    long temp
-    long count
-    long npcfile
-    
-    if ( GetDisabled == 1 )
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( state == 0 )
-    	set state to 1
-    	set hash to A1V1_SoulGemHashHi
-    	set hash to hash * 65536
-    	set temp to A1V1_SoulGemHashLow
-    	set hash to hash + temp
-    	set A1V1_SoulGemHashHi to 0
-    	set A1V1_SoulGemHashLow to 0
-    	set skills1 to A1V1_NecroSkills1
-    	set skills2 to A1V1_NecroSkills2
-    	set skills3 to A1V1_NecroSkills3
-    	set skills4 to A1V1_NecroSkills4
-    	set skills5 to A1V1_NecroSkills5
-    	set skills6 to A1V1_NecroSkills6
-    	set skills7 to A1V1_NecroSkills7
-    	set skills8 to A1V1_NecroSkills8
-    	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
-    endif
-    
-    set temp to 0
-    if ( OnActivate == 1 )
-    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
-    		set temp to 1
-    	else
-    		Activate
-    	endif
-    endif
-    
-    ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
-    	ifx ( count )
-    		set temp to hash / 65536
-    		set A1V1_SoulGemHashHi to temp
-    		set hash to hash - temp * 65536
-    		set A1V1_SoulGemHashLow to hash
-    		set A1V1_NecroSkills1 to skills1
-    		set A1V1_NecroSkills2 to skills2
-    		set A1V1_NecroSkills3 to skills3
-    		set A1V1_NecroSkills4 to skills4
-    		set A1V1_NecroSkills5 to skills5
-    		set A1V1_NecroSkills6 to skills6
-    		set A1V1_NecroSkills7 to skills7
-    		set A1V1_NecroSkills8 to skills8
-    		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualKha_sc
     	else
     		MessageBox "Заклинание не может найти платформу."
     	endif
@@ -2235,6 +2111,130 @@ SCTX
     		set state to 2
     		xSetRef count
     		StartScript A1V1_NecroRitualImp_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V1_SoulGemKha_sc 2 13 0 1553 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemKha_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualKha_sc
     	else
     		MessageBox "Заклинание не может найти платформу."
     	endif
@@ -35106,121 +35106,6 @@ SCTX
     End
 
 SCPT
-SCHD nc_SoulGem_sc 2 13 0 1433 111
-SCVR init;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEQCSBzAQAgPT0gMAUBcwEAAiAxBQFsAQAWIEcSQTFWMV9Tb3VsR2VtSGFzaEhpAAUBbAEADCBsAQAgNjU1MzYgKgUBbAsAFyBHE0ExVjFfU291bEdlbUhhc2hMb3cABQFsAQAKIGwBACBsCwAgKwUBRxJBMVYxX1NvdWxHZW1IYXNoSGkCIDAFAUcTQTFWMV9Tb3VsR2VtSGFzaExvdwIgMAUBbAIAFSBHEUExVjFfTmVjcm9Ta2lsbHMxAAUBbAMAFSBHEUExVjFfTmVjcm9Ta2lsbHMyAAUBbAQAFSBHEUExVjFfTmVjcm9Ta2lsbHMzAAUBbAUAFSBHEUExVjFfTmVjcm9Ta2lsbHM0AAUBbAYAFSBHEUExVjFfTmVjcm9Ta2lsbHM1AAUBbAcAFSBHEUExVjFfTmVjcm9Ta2lsbHM2AAUBbAgAFSBHEUExVjFfTmVjcm9Ta2lsbHM3AAUBbAkAFSBHEUExVjFfTmVjcm9Ta2lsbHM4AAUBbAoAFSBHEUExVjFfTmVjcm9Ta2lsbHM5AAkBBQFsCwACIDAGAQUJIFgYECA9PSAxDAEGcGxheWVyBgEBGiBYIREgbw5BMV9OZWNyb1N1bW1vbiA9PSAxBQFsCwACIDEHAQEXEAkBCQETOAoAEzhsAAA8DzgEAAw48wMTOBQCCjgoAhJBMV9OZWNyb1BsYXRmb3JtXzEAHTwTOAsAEzhsAAI8EzgLABM4bAAAPA84BAAMOMcD2xAFAWwLAAwgbAEAIDY1NTM2IC8FAUcSQTFWMV9Tb3VsR2VtSGFzaEhpBSBsCwAABQFsAQASIGwBACBsCwAgNjU1MzYgKiAtBQFHE0ExVjFfU291bEdlbUhhc2hMb3cFIGwBAAAFAUcRQTFWMV9OZWNyb1NraWxsczEFIGwCAAAFAUcRQTFWMV9OZWNyb1NraWxsczIFIGwDAAAFAUcRQTFWMV9OZWNyb1NraWxsczMFIGwEAAAFAUcRQTFWMV9OZWNyb1NraWxsczQFIGwFAAAFAUcRQTFWMV9OZWNyb1NraWxsczUFIGwGAAAFAUcRQTFWMV9OZWNyb1NraWxsczYFIGwHAAAFAUcRQTFWMV9OZWNyb1NraWxsczcFIGwIAAAFAUcRQTFWMV9OZWNyb1NraWxsczgFIGwJAAAFAUcRQTFWMV9OZWNyb1NraWxsczkFIGwKAAATOAsAEzhsAAA8GDwbEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjCjjxAwAQJADH4Orr6O3g7ejlIO3lIOzu5uXyIO3g6fLoIO/r4PL07vDs8y4AACQBEzgBABM4cwAAPA84BAAMOJcFBQFzAgACIDAFAWwMAAIgMAYBARMgbAEAID09IC0yMTQ3NDgzNjQ4BQFsCwACIDAIAQIIIGwBACA8IDAFAWwMAAIgMQUBbAsACSAtMSBsAQAgKgcBAQUBbAsABSBsAQAACQETOAsAEzhsAAA8DzgEAAw4pQQTOAoAEzhsAAA8EziLBAo4lQQJQTFOUENfMCVkCz8TOAwAEzhsAAI8CjjNBBM4CgATOGwAADwTOLcECjjBBAhBMU5QQ18lZAALPxM4DAATOGwAAjwTOAwAEzhsAAA8EDwROAEAAAATOAwAEzhsAAA8ETwTOAsAEzhsAAI8EzgKABM4bAACPAYBAQ0gbAsAID09IDIwNTU4BQFsDAACIDEHAQEFAWwMAAIgMAkBEzgLABM4bAAAPA84BAAMOJcFEzgMABM4bAAAPBQ8EzgLABM4bAACPBM4VQUKOFkFAk9LABM4CwATOGwAADx+PwAQKABYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYAAEDT0sAAQE=
-SCTX
-    Begin nc_SoulGem_sc
-    
-    long hash
-    long skills1
-    long skills2
-    long skills3
-    long skills4
-    long skills5
-    long skills6
-    long skills7
-    long skills8
-    long skills9
-    short init
-    short OnPCEquip
-    long temp
-    long count
-    long npcfile
-    
-    if ( GetDisabled == 1 )
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( init == 0 )
-    	set init to 1
-    	set hash to A1V1_SoulGemHashHi
-    	set hash to hash * 65536
-    	set temp to A1V1_SoulGemHashLow
-    	set hash to hash + temp
-    	set A1V1_SoulGemHashHi to 0
-    	set A1V1_SoulGemHashLow to 0
-    	set skills1 to A1V1_NecroSkills1
-    	set skills2 to A1V1_NecroSkills2
-    	set skills3 to A1V1_NecroSkills3
-    	set skills4 to A1V1_NecroSkills4
-    	set skills5 to A1V1_NecroSkills5
-    	set skills6 to A1V1_NecroSkills6
-    	set skills7 to A1V1_NecroSkills7
-    	set skills8 to A1V1_NecroSkills8
-    	set skills9 to A1V1_NecroSkills9
-    endif
-    
-    set temp to 0
-    if ( OnActivate == 1 )
-    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
-    		set temp to 1
-    	else
-    		Activate
-    	endif
-    endif
-    
-    ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
-    	ifx ( count )
-    		Disable
-    		set temp to hash / 65536
-    		set A1V1_SoulGemHashHi to temp
-    		set hash to hash - temp * 65536
-    		set A1V1_SoulGemHashLow to hash
-    		set A1V1_NecroSkills1 to skills1
-    		set A1V1_NecroSkills2 to skills2
-    		set A1V1_NecroSkills3 to skills3
-    		set A1V1_NecroSkills4 to skills4
-    		set A1V1_NecroSkills5 to skills5
-    		set A1V1_NecroSkills6 to skills6
-    		set A1V1_NecroSkills7 to skills7
-    		set A1V1_NecroSkills8 to skills8
-    		set A1V1_NecroSkills9 to skills9
-    		xSetRef count
-    		StartScript A1V1_NecroRitualOrc_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
-    	endif
-    	return
-    endif
-    
-    ifx ( OnPCEquip )
-    	set OnPCEquip to 0
-    	set count to 0
-    	if ( hash == -2147483648)
-    		set temp to 0
-    	elseif ( hash < 0 )
-    		set count to 1
-    		set temp to -hash
-    	else
-    		set temp to hash
-    	endif
-    
-    	ifx ( count )
-    		setx npcfile to xStringBuild "A1NPC_0%d", temp
-    	else
-    		setx npcfile to xStringBuild "A1NPC_%d", temp
-    	endif
-    
-    	xFileRewind npcfile
-    	setx count,temp to xFileReadShort npcfile, 1
-    	if ( temp == 20558 )
-    		set count to 1
-    	else
-    		set count to 0
-    	endif
-    	ifx ( count )
-    		setx count to xFileReadString npcfile
-    		xMessageFix count "OK"
-    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
-    	endif
-    endif
-    
-    End
-
-SCPT
 SCHD nc_stand_rev_script 1 0 0 222 7
 SCVR doonce;;
 SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQQJIHMBACA9PSAyBQFzAQACIDAFAUcKbmNfY2FsbHJldgIgMBwQE25jX3N0YW5kX3Jldl9zY3JpcHQkAQkBBgEBEiBHCm5jX2NhbGxyZXYgPT0gMAUBRwpuY19jYWxscmV2AiAxCQEGAQQWIEcObmNfY2FsbG1lc3NhZ2UgPT0gMQYBAgkgcwEAID09IDAFAXMBAAIgMQAQIQDC4PjoIOzl8PLi5fb7IOHz5PPyIPHy7v/y/CDn5OXx/C4AAAkBCQEFAXMBAAIgMgEB
@@ -38694,14 +38579,14 @@ ANAM
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
-NPDT QwAyAAARxQIAAAAA
+NPDT QwAyAAAg3QIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
 NPCO 1 nc_tragrilar_mantle
 NPCO 1 common_shirt_03_c
 NPCO 1 common_shoes_03
 NPCO 1 common_pants_03_b
-AIDT HgAeHgARxQIAAAAA
+AIDT HgAeHgAg3QIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BODY
@@ -39881,7 +39766,7 @@ NAME nc_SoulGem_arg
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Аргонианин
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemArg_sc
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
@@ -39929,7 +39814,7 @@ NAME nc_SoulGem_khajiit
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Хаджит
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemKha_sc
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
@@ -47313,7 +47198,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQB1bPv/////+///QP///wECAAABAAAAZvr//2T///8BAWJl+////3H9//89////AQIAAPz///90/v//QP///wEEdF+dAQAAe/7//0D///8BAgAAUP7//3v+//9A////AQJhbvf////6////QP///wEEAAD9////TwEAAED///8BA2FnnwEAAIYBAABA////AQIAAFn+//95AQAAQP///wECYXZL/v//MQAAAED///8BAwAAmgEAAD8AAABA////AQMAAA==
+PGRP /////2r6//86////AQBVC/v/////+///QP///wECVQsBAAAAZvr//2T///8BAYoL+////3H9//89////AQKKC/z///90/v//QP///wEEAwydAQAAe/7//0D///8BAgMMUP7//3v+//9A////AQIDDPf////6////QP///wEEVQv9////TwEAAED///8BA1ULnwEAAIYBAABA////AQKKC1n+//95AQAAQP///wECVQtL/v//MQAAAED///8BA1ULmgEAAD8AAABA////AQOLCw==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -48301,7 +48186,7 @@ DATA qMatwefhnkXLsSnEAAAAAAAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAACAANsB
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACIHeA+///ABQAALv+//8AAQAAAPz//wARAABb/v//AAMgYgD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAm9uAPz//4ASAABZ/v//AAIAAAD8//8AEwAAWf7//wACbm8A/P//gBMAAFn+//8AAmUAAPz//wAUAABZ/v//AAEEAID8//+AEAAAWf7//wAEeGWA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AANlAID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABYXKA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AARuIAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAnZlAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIY2kA/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGIGMA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AARpboD9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAW9kgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABaXKA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgEAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAhlcoD9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8AB2YAgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEcmgA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAJjbAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABWwgAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHbHYA/v//gBMAAFn9//8ABwAAAP7//wAUAABZ/f//AAhkdwD+//+AFAAAWf3//wAIcgAA/v//ABUAAF7+//8AAg0AAP7//wAVAABZ/f//AAUAAID+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEYgCA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AAQHCID+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAcAAID+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8AB3N3gP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACIGKA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMgYgD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABCBjAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABcmQA////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAJzdAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AAwYAAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEZHMA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AANheQD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAWRhAP///4AVAABZ/f//AAMAAID///+A////AP///wADZXKA////AAAAAAD///8ABAAAgP///4AAAAAA////AARsdoD///8AAQAACv///wABAACA////gAEAAAD///8ABGR3gP///wACAAAA////AAQAAID///+AAgAAAP///wAEDwCA////AAMAAAD///8ABSBkgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEaW6A////gAQAAAD///8ABQAAgP///wAFAAAA////AARvboD///8ABgAAAP///wADAACA////gAYAAAD///8ABGlygP///wAHAAAA////AAEAAID///+ABwAAAP///wADBACA////AAgAAAD///8ABGQAgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEaGmA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AARob4D///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAm9ygP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACdGGA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAFsIID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABGVlgP///wATAABp/f//AAIAAID///+AEwAAef3//wADc2mA////ABQAAHn9//8AA2QAgP///4AUAABO/v//AAMIAID///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAd0c4D///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwcMAAAAAID///8A////AAQAAAAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABXJfAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFaGUAAAAAAAIAAAD///8ABHNzAAAAAIACAAAA////AAhhcwAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABmFyAAAAAAAEAAAA////AAUAAAAAAACABAAAAP///wAIaWMAAAAAAAUAAAD///8ABwAAAAAAAIAFAAAA////AAZvbgAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8AB25vAAAAAAAHAAAA////AAdjdQAAAACABwAAAP///wAGBAAAAAAAAAgAAAD///8ACF9jAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADcmEAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAN0dQAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABWlyAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHb24AAAAAgBEAAFn+//8AAwAAAAAAAIARAABZ/f//AAZlcgAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AA25lAAAAAIASAABZ/f//AAMAAAAAAAAAEwAAaf3//wABZHcAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUNAAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAVzcwAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAcMgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABHJfgAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABcwCAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAVhdoAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABGFsgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFcmmAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AARlZYAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABGJvgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFCQCAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACZXOAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUHCoAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAJyX4AAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAmhlgAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwAAgAAAAAAUAAB5/f//AARlbIAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAmljgAAAAAAVAABZ/f//AAcAAIAAAACAFQAAWf7//wACcGWAAAAAgBUAAF39//8ABGZfAAEAAIAOAAC6/v//AAFpbQABAAAADwAAWf7//wABYXIAAQAAgA8AAFn+//8ABAUAAAEAAAAQAABZ/v//AAQAAAABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABWxtAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADbQAAAQAAABIAAFn9//8ABgAAAAEAAIASAABZ/f//AAdfaAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABV9oAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHZXIAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAZjaQABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIgcIABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAWhfgAEAAIAQAABZ/f//AANvboABAAAAEQAAWf3//wADcl+AAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAhuZYABAAAAEwAAWf3//wAIdWyAAQAAgBMAAFn9//8ACAEAgAEAAAAUAABZ/f//AAhpZ4ABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAnJvAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABcm8AAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAJsZAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8AB2FsAAIAAAATAABZ/f//AAhuXwACAACAEwAAWf3//wAHcmkAAgAAABQAAFn9//8AB3JvAAIAAIAUAABZ/f//AAVwZQACAAAAFQAAWv7//wACbGQAAgAAABUAAFn9//8AAmltgAIAAAAQAABZ/v//AAN1bIACAACAEAAAXf7//wADBQCAAgAAABEAAFH+//8AAV9sgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFb26AAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAZhdYACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABV9wgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACX3CAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AARlcgADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAWNpAAMAAIARAABZ/f//AAJnaAADAAAAEgAAWf3//wAFb3IAAwAAgBIAAFn9//8ABGxlAAMAAAATAADV/f//AAEPAAADAACAEwAA1P3//wABbGUAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AANpbgADAACAFAAAWf3//wACAACAAwAAgBAAAFv+//8AA3RjgAMAAAARAABZ/v//AARyc4ADAACAEQAAWf7//wAEY2iAAwAAABMAALr+//8AA2xkgAMAAIATAAC7/v//AAECAAAEAAAAEQAAu/7//wABX3MABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AAMAAAAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAmhpAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADaWUABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AARvd4AEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABGxigAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADZWUABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AANib4AFAAAAFgAATf///wACAAAABgAAABYAAFn///8AAQkAgAYAAAAUAABZ////AARzaIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABWQAgAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFZWyABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAVvd4AGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAcIAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAiBhAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIYXgABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAdyawAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABGl0AAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADbCAABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAANlZQAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACHN0AAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGBwAABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADZSCABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAd3YYAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8AB2lwgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIIHOABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAdlcoAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABWx2gAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHd2GABwAAABcAAFkAAAAAB3MAgAcAAAAXAABZ////AAgOAIAHAACAFwAAWQAAAAAGAACABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAVmIIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABmxlgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEZXOABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMHCAAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAggbwAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACGZmAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHdGEACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAh0ZQAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABmVuAAgAAAAWAABZAAAAAAhuZQAIAACAFgAAWQAAAAAIb2QACAAAgBYAAFn///8ABmFzAAgAAAAXAABZAAAAAAhpcgAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACAUAAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACHVsAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHbWEACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAdyZAAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAmlwgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIbCCACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAhlZYAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACHN0gAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIBwCACAAAgBUAAFkAAAAAB2xlgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGYXWACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAZybYAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAAB2FygAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIbGGACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAhsIIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAAB2VlgAgAAIAYAABZ////AAdjZYAIAAAAGQAAWQAAAAAEc3SACAAAABkAAGH///8ABWFygAgAAIAZAABZ////AAUHAAAJAAAAEwAAWf///wAFIHMACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAhvZgAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACGYgAAkAAIAUAABZAAAAAAdlbQAJAACAFAAAWf///wAIZSAACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAZpdAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8AB2VyAAkAAAAWAABZ////AAZpbgAJAACAFgAAWf///wAHbHYACQAAABcAAFkAAAAABmFzAAkAAAAXAABZ////AAdzaQAJAACAFwAAWQAAAAAHd2EACQAAgBcAAFn///8ACAcAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABG1lAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIZmYACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAJ0YYAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAm4ggAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGdCCACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAdlZYAJAAAAFQAAWQAAAAAHIGGACQAAABUAAFn///8AB2RpgAkAAIAVAABZAAAAAAYgc4AJAAAAFgAAWf///wADDQCACQAAABcAAFkAAAAABW91gAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFZQCACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAVoZYAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABmNlgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACBwoACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEb3IACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AARzdwAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAmVyAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADcGEACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMgdgAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AA29uAAoAAIAXAABZ////AAUAAAAKAAAAGAAAWf///wAEc3AACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIFAAAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAJ3b4AKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAA3NsgAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGcmSACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAVmaYAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAmwggAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFZWUACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAJzdAALAAAAFQAAWf///wAFZAAACwAAgBUAAFkAAAAABAcAAAsAAIAVAABZ////AAVyZAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABXdvAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEa3MACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AARwZQALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAAA==
+PGRP gPv//wATAAC+/v//AAFSPoD7//+AEwAAu/7//wACBwqA+///ABQAALv+//8AAQAAAPz//wARAABb/v//AAMAAAD8//+AEQAAWf7//wADYXgA/P//ABIAAFn+//8AAgAAAPz//4ASAABZ/v//AAJ4ZQD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAmF0APz//wAUAABZ/v//AAEAAID8//+AEAAAWf7//wAEYmGA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AANsIID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAWVlgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABc2mA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AAQHAAD9//+AEAAAWf7//wAEZQAA/f//gBEAAFn9//8AAgAAAP3//wASAABZ/f//AAVsZQD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8AB3RsAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGBwoA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AAQAAID9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAFmZoD9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABGIAgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIYWOA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAggd4D9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8AB2VlgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEc3QA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAIGAAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQAAAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8AB2ZmAP7//wAUAABZ/f//AAgAAAD+//+AFAAAWf3//wAId2EA/v//ABUAAF7+//8AAgAAAP7//wAVAABZ/f//AAVuIID+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABGdogP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEZXWA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AAQAAID+//8AEgAAWf3//wAHb26A/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAcgc4D+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8AB29ugP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACaW2A/v//ABUAAFn9//8ABW9yAP///4AOAADZ/f//AAMEAAD///8ADwAA2f3//wADb3IA////gA8AAF7+//8ABAAAAP///wAQAABZ/v//AARlAAD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABXltAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFbmcA////gBEAAFn9//8AAwAAAP///wASAABZ/f//AAZzYQD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABmwgAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEZWUA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AANzdAD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAQYAAP///4AVAABZ/f//AANuYYD///+A////AP///wADAACA////AAAAAAD///8ABHdvgP///4AAAAAA////AAQAAID///8AAQAACv///wABeW2A////gAEAAAD///8ABAAAgP///wACAAAA////AARjbID///+AAgAAAP///wAEAACA////AAMAAAD///8ABQcMgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEAACA////gAQAAAD///8ABXN3gP///wAFAAAA////AAQAAID///8ABgAAAP///wADcgCA////gAYAAAD///8ABAAAgP///wAHAAAA////AAF0b4D///+ABwAAAP///wADAACA////AAgAAAD///8ABGhvgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEIHeA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AARwZYD///+AEAAAWf3//wAFZACA////ABEAAFz+//8AAnN0gP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACBgCA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAEAAID///8AEgAAWf3//wADc2iA////gBIAAFn9//8ABAAAgP///wATAABp/f//AAJlcoD///+AEwAAef3//wADAACA////ABQAAHn9//8AA2hvgP///4AUAABO/v//AAMAAID///+AFAAAaf3//wADIGSA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAd2ZYD///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwAAAAAAAID///8A////AAQgYwAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABWhfAAAAAAABAAAA////AAZzAAAAAACAAQAAAP///wAFdGMAAAAAAAIAAAD///8ABGVkAAAAAIACAAAA////AAhmdQAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABgEAAAAAAAAEAAAA////AAV1aQAAAACABAAAAP///wAIAAAAAAAAAAUAAAD///8AB2N1AAAAAIAFAAAA////AAYAAAAAAAAABgAAAP///wADc3MAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAdpbgAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACGFsAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADcmkAAAAAAA8AABH+//8AA29yAAAAAAAQAABZ/v//AANwZQAAAACAEAAAWf7//wAGdWkAAAAAgBAAAFn9//8ABXN0AAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHBgAAAAAAgBEAAFn+//8AA2FzAAAAAIARAABZ/f//AAYAAAAAAAAAEgAAzv7//wACc3MAAAAAABIAAFn9//8AAwAAAAAAAIASAABZ/f//AAN1aQAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABXVpAAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADX2MAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAVzaAAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAAAgAAAAID///8A////AAMgZ4AAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABGhfgAAAAAABAAAA////AARzAIAAAACAAQAAAP///wABcl+AAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAVpcoAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABAQAgAAAAAAEAAAA////AARfZ4AAAACABAAAAP///wAFAACAAAAAAAUAAAD///8ABWF2gAAAAIAFAAAA////AAQAAIAAAAAABgAAAP///wAEdmWAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AARfZ4AAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABV9ngAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACc2iAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUAAIAAAAAAEQAAXP7//wADIGiAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAJoX4AAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAnRjgAAAAIASAABZ/f//AAVlZIAAAAAAEwAAZf3//wAEZnWAAAAAgBMAAHn9//8AAwAAgAAAAAAUAAB5/f//AAQBAIAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAgAAgAAAAAAVAABZ/f//AAdoZYAAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABGhhAAEAAIAOAAC6/v//AAEAAAABAAAADwAAWf7//wABIGgAAQAAgA8AAFn+//8ABAAAAAEAAAAQAABZ/v//AARoZQABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABWxiAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADbHYAAQAAABIAAFn9//8ABgAAAAEAAIASAABZ/f//AAdibwABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABQkAAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHAAAAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAYAAAABAACAFQAAWf7//wABbQAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIHCIABAAAAEAAAWf7//wADbiCAAQAAgBAAALv+//8AAQAAgAEAAIAQAABZ/f//AANyX4ABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABm9ugAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIYXSAAQAAgBMAAFn9//8ACGlngAEAAAAUAABZ/f//AAh1bIABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAmluAAIAAAAQAABZ/v//AARnaAACAACAEAAAvf7//wABb24AAgAAABEAANj9//8AAnQAAAIAAIARAAC4/f//AAJpcgACAAAAEgAAWf3//wAEZnQAAgAAgBIAAFn9//8ABwQAAAIAAAATAABZ/f//AAhfcAACAACAEwAAWf3//wAHAAAAAgAAABQAAFn9//8AB2h0AAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACaGEAAgAAABUAAFn9//8AAmZ0gAIAAAAQAABZ/v//AAMgbIACAACAEAAAXf7//wADAACAAgAAABEAAFH+//8AAXBhgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFbF+AAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAZuZYACAAAAEwAAWf3//wAGcgCAAgAAgBMAAFn9//8ABWJvgAIAAAAUAABZ/f//AAVuX4ACAACAFAAAWf7//wACCQCAAgAAABUAAFn9//8AAW5fAAMAAIAQAABZ/v//AAQAAAADAAAAEQAAu/7//wABcm8AAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAJsZAADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABGF1AAMAAAATAADV/f//AAEAAAADAACAEwAA1P3//wABBwgAAwAAABQAAFn+//8AAXNoAAMAAAAUAABZ/f//AAMAAAADAACAFAAAWf3//wACZACAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AARoZYADAACAEQAAWf7//wAEAACAAwAAABMAALr+//8AA293gAMAAIATAAC7/v//AAEAAAAEAAAAEQAAu/7//wABX2wABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AANfcwAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAnBlAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADc3QABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AAQGAIAEAACAFAAAwP7//wAEbGSABAAAABUAAOP+//8ABAAAgAQAAIAVAAAH////AARpZQAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABHJzgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACX3MABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AARsZIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABWdogAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFZW2ABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAVvcoAGAACAFwAAWf///wAFbGSABgAAABgAAFn///8ABA8AAAcAAIATAABbAAAAAAIgdwAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAmJpAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIb24ABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAdpcgAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABAUAAAcAAAAWAABZ////AAdsZQAHAACAFgAAWwAAAAADAAAABwAAgBYAAFn///8ACHhlAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIZGEABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAZhcgAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAnZpAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADbCCABwAAABMAAFn///8ABHAggAcAAIATAABZ////AAdvY4AHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8AB3NpgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIBwCABwAAgBUAAFkAAAAAB2UAgAcAAIAVAABZ////AAcAAIAHAAAAFgAAWQAAAAAGYXiABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAZtZYAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAAB29mgAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGaXSABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAVsZYAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABmVugAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEbGGABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMQAAAIAAAAEwAAWf///wAFIHMACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAhlbgAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACG9kAAgAAIAUAABcAAAAAAVhYwAIAACAFAAAWf///wAHd28ACAAAABUAAFwAAAAAB3NoAAgAAAAVAABZ////AAgCAAAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABgAAAAgAAAAWAABZAAAAAAggbwAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABmZmAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIcmQACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAhwYQAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACCBmAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHb24ACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAdpcgAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAgUAgAgAAAATAABZ////AAVlcoAIAACAEwAAWf///wAIAACACAAAABQAAFkAAAAABmFjgAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHZG2ACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAhhcoAIAAAAFQAAWf///wAIAACACAAAgBUAAFkAAAAAB2ZsgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGbCCACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAZlZYAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAAB3N0gAgAAAAXAABZ////AAhyAIAIAACAFwAAWQAAAAAIBwCACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAgAAIAIAAAAGAAAWf///wAIYXWACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAdmIIAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABWFmgAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFc3QACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAhsIAAJAAAAFAAAWQAAAAAFZW4ACQAAABQAAFn///8ACGVlAAkAAIAUAABZAAAAAAdpbgAJAACAFAAAWf///wAIc2gACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAYHAAAJAACAFQAAWQAAAAAGYW0ACQAAgBUAAFn///8ABwAAAAkAAAAWAABZ////AAYgbwAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABmZmAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHdGEACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAZhawAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABGwgAAkAAIAYAABZ////AAZtaQAJAAAAGQAAWf///wAIbHYACQAAgBkAAFn///8ABWNrgAkAAAATAABKAAAAAAJzaYAJAAAAEwAAWf///wAFcGWACQAAgBMAAFoAAAAAAgkAgAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGAACACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAAIAJAAAAFQAAWQAAAAAHZiCACQAAABUAAFn///8AB3JzgAkAAIAVAABZAAAAAAZ1ZIAJAAAAFgAAWf///wADc3SACQAAABcAAFkAAAAABW1lgAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFdGmACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAVhZoAJAACAGAAAWf///wAFYXSACQAAABkAAFn///8ABmRlgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACEgAACgAAABMAAFn///8AA29uAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEIHMACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AARvbgAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAmlyAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADBQAACgAAgBYAAFkAAAAABGVyAAoAAIAWAABZ////AAMAAAAKAAAAFwAAWQAAAAADYXkACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAVzdwAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAXRlAAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADbGGACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAJsIIAKAAAAFQAAWf///wAEaGWACgAAgBUAAFoAAAAAA29ugAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGaXKACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAUGAIAKAACAFgAAWf///wAGZACACgAAABcAAFkAAAAAAgAAgAoAAIAXAABZ////AAR3b4AKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AA21zAAsAAAAVAAA4AAAAAAIAAAALAAAAFQAAWf///wAFaXMACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAVmbAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABWwgAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEZWUACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AARzdAALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAcAAAsAAIAYAABZ////AAIAAA==
 PGRC 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SwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA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MQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
 
 DIAL
