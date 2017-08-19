@@ -1,0 +1,1 @@
+VH_MaskDummyFlag = GetPCCell "Храм Танатоса" == 1 OnPCChanged
