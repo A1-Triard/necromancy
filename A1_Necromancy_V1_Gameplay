@@ -3,7 +3,7 @@ VERSION 1067869798
 TYPE ESP
 AUTHOR A1
 DESCRIPTION
-    Стареющий некромант хочет передать вам свое знание. Сможете ли вы от него отказаться?
+    Вспомогательный плагин для A1_Necromancy.esp (геймплей без сюжета).
     -----
     Основан на Blasphemous Revenants v1.3, созданном Fliggerty и локализованном Gwathlobal.
 Morrowind.esm 79764287
