@@ -9,6 +9,7 @@ DESCRIPTION
 Morrowind.esm 79764287
 Tribunal.esm 6616539
 Bloodmoon.esm 11799703
+Trib_BM_patch_1C.esm 23382
 
 GLOB
 NAME nc_isnecro
@@ -632,6 +633,394 @@ SCTX
     End
 
 SCPT
+SCHD A1V1_NecroRitualBreton_sc 2 0 0 1394 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEhIFj9ECBvFW5jX2JyZXRvbl9wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEjIFj9ECBvF25jX2JyZXRvbl9wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGyBY/RAgbw9uY19icmV0b25fc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAh0gWP0QIG8RbmNfYnJldG9uX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBVuY19icmV0b25fcGF1bGRyb25fc2sBANUQD25jX2JyZXRvbl9za3VsbAEABwEC1RAXbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YBANUQEW5jX2JyZXRvbl9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEJbmNfYnJldG9uAQAAAAAAAAAHAQG6EQtuY19icmV0b25fZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQtuY19icmV0b25fMgEAAAAAAAAABwEBuhENbmNfYnJldG9uXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhELbmNfYnJldG9uXzMBAAAAAAAAAAcBAboRDW5jX2JyZXRvbl8zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBlBMVYxX05lY3JvUml0dWFsQnJldG9uX3NjAQE=
+SCTX
+    Begin A1V1_NecroRitualBreton_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_breton_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_breton_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_breton_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_breton_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_breton_pauldron_sk, 1
+    		RemoveItem nc_breton_skull, 1
+    	else
+    		RemoveItem nc_breton_pauldron_sk_f, 1
+    		RemoveItem nc_breton_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_breton" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_breton_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_breton_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_breton_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_breton_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_breton_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualBreton_sc
+    
+    End
+
+SCPT
+SCHD A1V1_NecroRitualDunmer_sc 2 0 0 1406 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEhIFj9ECBvFW5jX2R1bm1lcl9wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEjIFj9ECBvF25jX2R1bm1lcl9wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGyBY/RAgbw9uY19kdW5tZXJfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAh0gWP0QIG8RbmNfZHVubWVyX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBVuY19kdW5tZXJfcGF1bGRyb25fc2sBANUQD25jX2R1bm1lcl9za3VsbAEABwEC1RAXbmNfZHVubWVyX3BhdWxkcm9uX3NrX2YBANUQEW5jX2R1bm1lcl9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhELbmNfZGFyayBlbGYBAAAAAAAAAAcBAboRDW5jX2RhcmsgZWxmX2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhENbmNfZGFyayBlbGZfMgEAAAAAAAAABwEBuhEPbmNfZGFyayBlbGZfMl9mAQAAAAAAAAAJAQcBBQYBAQkgcwIAID09IDC6EQ1uY19kYXJrIGVsZl8zAQAAAAAAAAAHAQG6EQ9uY19kYXJrIGVsZl8zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBlBMVYxX05lY3JvUml0dWFsRHVubWVyX3NjAQE=
+SCTX
+    Begin A1V1_NecroRitualDunmer_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_dunmer_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_dunmer_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_dunmer_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_dunmer_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_dunmer_pauldron_sk, 1
+    		RemoveItem nc_dunmer_skull, 1
+    	else
+    		RemoveItem nc_dunmer_pauldron_sk_f, 1
+    		RemoveItem nc_dunmer_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_dark elf" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_dark elf_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_dark elf_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_dark elf_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_dark elf_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_dark elf_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualDunmer_sc
+    
+    End
+
+SCPT
+SCHD A1V1_NecroRitualImp_sc 2 0 0 1419 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEjIFj9ECBvF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrID09IDEFAXMCAAIgMAgBASUgWP0QIG8ZbmNfaW1wZXJpYWxfcGF1bGRyb25fc2tfZiA9PSAxBQFzAgACIDEHAQIFAXMBAAIgMAAQJgDC4Owg7fPm5e0g8vDz7ywg9/Lu4fsg7/Du4uXx8ugg8Ojy8+DrLgAACQEGAQsJIHMBACA9PSAxBgEECSBzAgAgPT0gMAYBAh0gWP0QIG8RbmNfaW1wZXJpYWxfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAh8gWP0QIG8TbmNfaW1wZXJpYWxfc2t1bGxfZiA9PSAwBQFzAQACIDAAEC8AwuDsIO3z5uXtIPfl8OXvIO7w6uAt5uXt+ejt+yDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEJAQYBBAkgcwEAID09IDEGAQIgIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMSA8IDIFAXMBAAIgMAAQNwDC4Owg7fPm7fsg5OLlIPfg8fLoIO7h8OXn6u7iIOzl8uDr6+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAQAgPT0gMQYBAiIgWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEgPCAyBQFzAQACIDAAEDEAwuDsIO3z5u37IOTi4CDq8/Hq4CDq7uboIO3l8vfgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIeIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMSA8IDMwBQFzAQACIDAAEDoAwuDsIO3z5u3uIOjs5fL8IDMwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBAQkgcwEAID09IDAFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMQcBIgUBRxBBMVYxX05lY3JvUml0dWFsAiAyBgECCSBzAgAgPT0gMNUQF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrAQDVEBFuY19pbXBlcmlhbF9za3VsbAEABwEC1RAZbmNfaW1wZXJpYWxfcGF1bGRyb25fc2tfZgEA1RATbmNfaW1wZXJpYWxfc2t1bGxfZgEACQHVEBVpbmdyZWRfc2NyYXBfbWV0YWxfMDECANUQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAgDVEBJpbmdyZWRfYm9uZW1lYWxfMDEeAAUBcwEAEiBHDm5jX25lY3JvX3NraWxsAAYBBQogcwEAIDw9IDEwBgEBCSBzAgAgPT0gMLoRC25jX2ltcGVyaWFsAQAAAAAAAAAHAQG6EQ1uY19pbXBlcmlhbF9mAQAAAAAAAAAJAQgBBQogcwEAIDw9IDIwBgEBCSBzAgAgPT0gMLoRDW5jX2ltcGVyaWFsXzIBAAAAAAAAAAcBAboRD25jX2ltcGVyaWFsXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhENbmNfaW1wZXJpYWxfMwEAAAAAAAAABwEBuhEPbmNfaW1wZXJpYWxfM19mAQAAAAAAAAAJAQkBAhALVGh1bmRlckNsYXAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBHBAWQTFWMV9OZWNyb1JpdHVhbEltcF9zYwEB
+SCTX
+    Begin A1V1_NecroRitualImp_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_imperial_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_imperial_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_imperial_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_imperial_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_imperial_pauldron_sk, 1
+    		RemoveItem nc_imperial_skull, 1
+    	else
+    		RemoveItem nc_imperial_pauldron_sk_f, 1
+    		RemoveItem nc_imperial_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_imperial" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_imperial_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_imperial_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_imperial_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_imperial_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_imperial_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualImp_sc
+    
+    End
+
+SCPT
+SCHD A1V1_NecroRitualNord_sc 2 0 0 1364 14
+SCVR summon;gender;;
+SCDT BQFzAQACIDEGAQEfIFj9ECBvE25jX25vcmRfcGF1bGRyb25fc2sgPT0gMQUBcwIAAiAwCAEBISBY/RAgbxVuY19ub3JkX3BhdWxkcm9uX3NrX2YgPT0gMQUBcwIAAiAxBwECBQFzAQACIDAAECYAwuDsIO3z5uXtIPLw8+8sIPfy7uH7IO/w7uLl8fLoIPDo8vPg6y4AAAkBBgELCSBzAQAgPT0gMQYBBAkgcwIAID09IDAGAQIZIFj9ECBvDW5jX25vcmRfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhsgWP0QIG8PbmNfbm9yZF9za3VsbF9mID09IDAFAXMBAAIgMAAQLwDC4Owg7fPm5e0g9+Xw5e8g7vDq4C3m5e356O37IOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQkBBgEECSBzAQAgPT0gMQYBAiAgWP0QIG8VaW5ncmVkX3NjcmFwX21ldGFsXzAxIDwgMgUBcwEAAiAwABA3AMLg7CDt8+bt+yDk4uUg9+Dx8ugg7uHw5efq7uIg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECIiBY/RAgbxdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMSA8IDIFAXMBAAIgMAAQMQDC4Owg7fPm7fsg5OLgIOrz8ergIOru5ugg7eXy9+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAQAgPT0gMQYBAh4gWP0QIG8SaW5ncmVkX2JvbmVtZWFsXzAxIDwgMzAFAXMBAAIgMAAQOgDC4Owg7fPm7e4g6Ozl8vwgMzAg7+7w9ujpIOru8fL/7e7pIOzz6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEBCSBzAQAgPT0gMAUBRxBBMVYxX05lY3JvUml0dWFsAiAxBwEiBQFHEEExVjFfTmVjcm9SaXR1YWwCIDIGAQIJIHMCACA9PSAw1RATbmNfbm9yZF9wYXVsZHJvbl9zawEA1RANbmNfbm9yZF9za3VsbAEABwEC1RAVbmNfbm9yZF9wYXVsZHJvbl9za19mAQDVEA9uY19ub3JkX3NrdWxsX2YBAAkB1RAVaW5ncmVkX3NjcmFwX21ldGFsXzAxAgDVEBdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMQIA1RASaW5ncmVkX2JvbmVtZWFsXzAxHgAFAXMBABIgRw5uY19uZWNyb19za2lsbAAGAQUKIHMBACA8PSAxMAYBAQkgcwIAID09IDC6EQduY19ub3JkAQAAAAAAAAAHAQG6EQluY19ub3JkX2YBAAAAAAAAAAkBCAEFCiBzAQAgPD0gMjAGAQEJIHMCACA9PSAwuhEJbmNfbm9yZF8yAQAAAAAAAAAHAQG6EQtuY19ub3JkXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEJbmNfbm9yZF8zAQAAAAAAAAAHAQG6EQtuY19ub3JkXzNfZgEAAAAAAAAACQEJAQIQC1RodW5kZXJDbGFwBQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAJARwQF0ExVjFfTmVjcm9SaXR1YWxOb3JkX3NjAQE=
+SCTX
+    Begin A1V1_NecroRitualNord_sc
+    
+    short summon
+    short gender
+    
+    set summon to 1
+    
+    if ( GetItemCount nc_nord_pauldron_sk == 1 )
+    	set gender to 0
+    elseif ( GetItemCount nc_nord_pauldron_sk_f == 1 )
+    	set gender to 1
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен труп, чтобы провести ритуал."
+    endif
+    
+    if ( summon == 1 )
+    	if ( gender == 0 )
+    		if ( GetItemCount nc_nord_skull == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    		endif
+    	else
+    		if ( GetItemCount nc_nord_skull_f == 0 )
+    			set summon to 0
+    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
+    		endif
+    	endif
+    endif
+    
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount ingred_bonemeal_01 < 30 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( gender == 0 )
+    		RemoveItem nc_nord_pauldron_sk, 1
+    		RemoveItem nc_nord_skull, 1
+    	else
+    		RemoveItem nc_nord_pauldron_sk_f, 1
+    		RemoveItem nc_nord_skull_f, 1
+    	endif
+    	RemoveItem ingred_scrap_metal_01, 2
+    	RemoveItem ingred_netch_leather_01, 2
+    	RemoveItem ingred_bonemeal_01, 30
+    	set summon to nc_necro_skill
+    	if ( summon <= 10 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_nord" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_nord_f" 1, 0, 0
+    		endif
+    	elseif ( summon <= 20 )
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_nord_2" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_nord_2_f" 1, 0, 0
+    		endif
+    	else
+    		if ( gender == 0 )
+    			PlaceAtMe "nc_nord_3" 1, 0, 0
+    		else
+    			PlaceAtMe "nc_nord_3_f" 1, 0, 0
+    		endif
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    endif
+    
+    StopScript A1V1_NecroRitualNord_sc
+    
+    End
+
+SCPT
 SCHD A1V1_NecroRitualOrc_sc 2 0 0 1349 14
 SCVR summon;gender;;
 SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGCBY/RAgbwxuY19vcmNfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhogWP0QIG8ObmNfb3JjX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBJuY19vcmNfcGF1bGRyb25fc2sBANUQDG5jX29yY19za3VsbAEABwEC1RAUbmNfb3JjX3BhdWxkcm9uX3NrX2YBANUQDm5jX29yY19za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEGbmNfb3JjAQAAAAAAAAAHAQG6EQhuY19vcmNfZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQhuY19vcmNfMgEAAAAAAAAABwEBuhEKbmNfb3JjXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEIbmNfb3JjXzMBAAAAAAAAAAcBAboRCm5jX29yY18zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjAQE=
@@ -729,300 +1118,9 @@ SCTX
     End
 
 SCPT
-SCHD A1V1_NecroRitualNord_sc 2 0 0 1349 14
+SCHD A1V1_NecroRitualRg_sc 2 0 0 1394 14
 SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGCBY/RAgbwxuY19vcmNfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhogWP0QIG8ObmNfb3JjX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBJuY19vcmNfcGF1bGRyb25fc2sBANUQDG5jX29yY19za3VsbAEABwEC1RAUbmNfb3JjX3BhdWxkcm9uX3NrX2YBANUQDm5jX29yY19za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEGbmNfb3JjAQAAAAAAAAAHAQG6EQhuY19vcmNfZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQhuY19vcmNfMgEAAAAAAAAABwEBuhEKbmNfb3JjXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEIbmNfb3JjXzMBAAAAAAAAAAcBAboRCm5jX29yY18zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjAQE=
-SCTX
-    Begin A1V1_NecroRitualNord_sc
-    
-    short summon
-    short gender
-    
-    set summon to 1
-    
-    if ( GetItemCount nc_nord_pauldron_sk == 1 )
-    	set gender to 0
-    elseif ( GetItemCount nc_nord_pauldron_sk_f == 1 )
-    	set gender to 1
-    else
-    	set summon to 0
-    	MessageBox "Вам нужен труп, чтобы провести ритуал."
-    endif
-    
-    if ( summon == 1 )
-    	if ( gender == 0 )
-    		if ( GetItemCount nc_nord_skull == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
-    		endif
-    	else
-    		if ( GetItemCount nc_nord_skull_f == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
-    		endif
-    	endif
-    endif
-    
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_netch_leather_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_bonemeal_01 < 30 )
-    		set summon to 0
-    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
-    	endif
-    endif
-    
-    if ( summon == 0 )
-    	set A1V1_NecroRitual to 1
-    else
-    	set A1V1_NecroRitual to 2
-    	if ( gender == 0 )
-    		RemoveItem nc_nord_pauldron_sk, 1
-    		RemoveItem nc_nord_skull, 1
-    	else
-    		RemoveItem nc_nord_pauldron_sk_f, 1
-    		RemoveItem nc_nord_skull_f, 1
-    	endif
-    	RemoveItem ingred_scrap_metal_01, 2
-    	RemoveItem ingred_netch_leather_01, 2
-    	RemoveItem ingred_bonemeal_01, 30
-    	set summon to nc_necro_skill
-    	if ( summon <= 10 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_nord" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_nord_f" 1, 0, 0
-    		endif
-    	elseif ( summon <= 20 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_nord_2" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_nord_2_f" 1, 0, 0
-    		endif
-    	else
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_nord_3" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_nord_3_f" 1, 0, 0
-    		endif
-    	endif
-    	PlaySound, "ThunderClap"
-    	set nc_necro_skill to ( nc_necro_skill + 1 )
-    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    endif
-    
-    StopScript A1V1_NecroRitualNord_sc
-    
-    End
-
-SCPT
-SCHD A1V1_NecroRitualDunmer_sc 2 0 0 1349 14
-SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGCBY/RAgbwxuY19vcmNfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhogWP0QIG8ObmNfb3JjX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBJuY19vcmNfcGF1bGRyb25fc2sBANUQDG5jX29yY19za3VsbAEABwEC1RAUbmNfb3JjX3BhdWxkcm9uX3NrX2YBANUQDm5jX29yY19za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEGbmNfb3JjAQAAAAAAAAAHAQG6EQhuY19vcmNfZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQhuY19vcmNfMgEAAAAAAAAABwEBuhEKbmNfb3JjXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEIbmNfb3JjXzMBAAAAAAAAAAcBAboRCm5jX29yY18zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjAQE=
-SCTX
-    Begin A1V1_NecroRitualDunmer_sc
-    
-    short summon
-    short gender
-    
-    set summon to 1
-    
-    if ( GetItemCount nc_dunmer_pauldron_sk == 1 )
-    	set gender to 0
-    elseif ( GetItemCount nc_dunmer_pauldron_sk_f == 1 )
-    	set gender to 1
-    else
-    	set summon to 0
-    	MessageBox "Вам нужен труп, чтобы провести ритуал."
-    endif
-    
-    if ( summon == 1 )
-    	if ( gender == 0 )
-    		if ( GetItemCount nc_dunmer_skull == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
-    		endif
-    	else
-    		if ( GetItemCount nc_dunmer_skull_f == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
-    		endif
-    	endif
-    endif
-    
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_netch_leather_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_bonemeal_01 < 30 )
-    		set summon to 0
-    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
-    	endif
-    endif
-    
-    if ( summon == 0 )
-    	set A1V1_NecroRitual to 1
-    else
-    	set A1V1_NecroRitual to 2
-    	if ( gender == 0 )
-    		RemoveItem nc_dunmer_pauldron_sk, 1
-    		RemoveItem nc_dunmer_skull, 1
-    	else
-    		RemoveItem nc_dunmer_pauldron_sk_f, 1
-    		RemoveItem nc_dunmer_skull_f, 1
-    	endif
-    	RemoveItem ingred_scrap_metal_01, 2
-    	RemoveItem ingred_netch_leather_01, 2
-    	RemoveItem ingred_bonemeal_01, 30
-    	set summon to nc_necro_skill
-    	if ( summon <= 10 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_dunmer" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_dunmer_f" 1, 0, 0
-    		endif
-    	elseif ( summon <= 20 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_dunmer_2" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_dunmer_2_f" 1, 0, 0
-    		endif
-    	else
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_dunmer_3" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_dunmer_3_f" 1, 0, 0
-    		endif
-    	endif
-    	PlaySound, "ThunderClap"
-    	set nc_necro_skill to ( nc_necro_skill + 1 )
-    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    endif
-    
-    StopScript A1V1_NecroRitualDunmer_sc
-    
-    End
-
-SCPT
-SCHD A1V1_NecroRitualImp_sc 2 0 0 1349 14
-SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGCBY/RAgbwxuY19vcmNfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhogWP0QIG8ObmNfb3JjX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBJuY19vcmNfcGF1bGRyb25fc2sBANUQDG5jX29yY19za3VsbAEABwEC1RAUbmNfb3JjX3BhdWxkcm9uX3NrX2YBANUQDm5jX29yY19za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEGbmNfb3JjAQAAAAAAAAAHAQG6EQhuY19vcmNfZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQhuY19vcmNfMgEAAAAAAAAABwEBuhEKbmNfb3JjXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEIbmNfb3JjXzMBAAAAAAAAAAcBAboRCm5jX29yY18zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjAQE=
-SCTX
-    Begin A1V1_NecroRitualImp_sc
-    
-    short summon
-    short gender
-    
-    set summon to 1
-    
-    if ( GetItemCount nc_imperial_pauldron_sk == 1 )
-    	set gender to 0
-    elseif ( GetItemCount nc_imperial_pauldron_sk_f == 1 )
-    	set gender to 1
-    else
-    	set summon to 0
-    	MessageBox "Вам нужен труп, чтобы провести ритуал."
-    endif
-    
-    if ( summon == 1 )
-    	if ( gender == 0 )
-    		if ( GetItemCount nc_imperial_skull == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
-    		endif
-    	else
-    		if ( GetItemCount nc_imperial_skull_f == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
-    		endif
-    	endif
-    endif
-    
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_netch_leather_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_bonemeal_01 < 30 )
-    		set summon to 0
-    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
-    	endif
-    endif
-    
-    if ( summon == 0 )
-    	set A1V1_NecroRitual to 1
-    else
-    	set A1V1_NecroRitual to 2
-    	if ( gender == 0 )
-    		RemoveItem nc_imperial_pauldron_sk, 1
-    		RemoveItem nc_imperial_skull, 1
-    	else
-    		RemoveItem nc_imperial_pauldron_sk_f, 1
-    		RemoveItem nc_imperial_skull_f, 1
-    	endif
-    	RemoveItem ingred_scrap_metal_01, 2
-    	RemoveItem ingred_netch_leather_01, 2
-    	RemoveItem ingred_bonemeal_01, 30
-    	set summon to nc_necro_skill
-    	if ( summon <= 10 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_imperial" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_imperial_f" 1, 0, 0
-    		endif
-    	elseif ( summon <= 20 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_imperial_2" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_imperial_2_f" 1, 0, 0
-    		endif
-    	else
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_imperial_3" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_imperial_3_f" 1, 0, 0
-    		endif
-    	endif
-    	PlaySound, "ThunderClap"
-    	set nc_necro_skill to ( nc_necro_skill + 1 )
-    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    endif
-    
-    StopScript A1V1_NecroRitualImp_sc
-    
-    End
-
-SCPT
-SCHD A1V1_NecroRitualRg_sc 2 0 0 1349 14
-SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGCBY/RAgbwxuY19vcmNfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhogWP0QIG8ObmNfb3JjX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBJuY19vcmNfcGF1bGRyb25fc2sBANUQDG5jX29yY19za3VsbAEABwEC1RAUbmNfb3JjX3BhdWxkcm9uX3NrX2YBANUQDm5jX29yY19za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEGbmNfb3JjAQAAAAAAAAAHAQG6EQhuY19vcmNfZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQhuY19vcmNfMgEAAAAAAAAABwEBuhEKbmNfb3JjXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEIbmNfb3JjXzMBAAAAAAAAAAcBAboRCm5jX29yY18zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjAQE=
+SCDT BQFzAQACIDEGAQEdIFj9ECBvEW5jX3JnX3BhdWxkcm9uX3NrID09IDEFAXMCAAIgMAgBAR8gWP0QIG8TbmNfcmdfcGF1bGRyb25fc2tfZiA9PSAxBQFzAgACIDEHAQIFAXMBAAIgMAAQJgDC4Owg7fPm5e0g8vDz7ywg9/Lu4fsg7/Du4uXx8ugg8Ojy8+DrLgAACQEGAQsJIHMBACA9PSAxBgEECSBzAgAgPT0gMAYBAh0gWP0QIG8RbmNfcmVkZ3VhcmRfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAh8gWP0QIG8TbmNfcmVkZ3VhcmRfc2t1bGxfZiA9PSAwBQFzAQACIDAAEC8AwuDsIO3z5uXtIPfl8OXvIO7w6uAt5uXt+ejt+yDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEJAQYBBAkgcwEAID09IDEGAQIgIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMSA8IDIFAXMBAAIgMAAQNwDC4Owg7fPm7fsg5OLlIPfg8fLoIO7h8OXn6u7iIOzl8uDr6+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAQAgPT0gMQYBAiIgWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEgPCAyBQFzAQACIDAAEDEAwuDsIO3z5u37IOTi4CDq8/Hq4CDq7uboIO3l8vfgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIeIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMSA8IDMwBQFzAQACIDAAEDoAwuDsIO3z5u3uIOjs5fL8IDMwIO/u8Pbo6SDq7vHy/+3u6SDs8+roIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBAQkgcwEAID09IDAFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMQcBIgUBRxBBMVYxX05lY3JvUml0dWFsAiAyBgECCSBzAgAgPT0gMNUQEW5jX3JnX3BhdWxkcm9uX3NrAQDVEBFuY19yZWRndWFyZF9za3VsbAEABwEC1RATbmNfcmdfcGF1bGRyb25fc2tfZgEA1RATbmNfcmVkZ3VhcmRfc2t1bGxfZgEACQHVEBVpbmdyZWRfc2NyYXBfbWV0YWxfMDECANUQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAgDVEBJpbmdyZWRfYm9uZW1lYWxfMDEeAAUBcwEAEiBHDm5jX25lY3JvX3NraWxsAAYBBQogcwEAIDw9IDEwBgEBCSBzAgAgPT0gMLoRC25jX3JlZGd1YXJkAQAAAAAAAAAHAQG6EQ1uY19yZWRndWFyZF9mAQAAAAAAAAAJAQgBBQogcwEAIDw9IDIwBgEBCSBzAgAgPT0gMLoRDW5jX3JlZGd1YXJkXzIBAAAAAAAAAAcBAboRD25jX3JlZGd1YXJkXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhENbmNfcmVkZ3VhcmRfMwEAAAAAAAAABwEBuhEPbmNfcmVkZ3VhcmRfM19mAQAAAAAAAAAJAQkBAhALVGh1bmRlckNsYXAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBHBAVQTFWMV9OZWNyb1JpdHVhbFJnX3NjAQE=
 SCTX
     Begin A1V1_NecroRitualRg_sc
     
@@ -1113,103 +1211,6 @@ SCTX
     endif
     
     StopScript A1V1_NecroRitualRg_sc
-    
-    End
-
-SCPT
-SCHD A1V1_NecroRitualBreton_sc 2 0 0 1349 14
-SCVR summon;gender;;
-SCDT BQFzAQACIDEGAQEeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAxBQFzAgACIDAIAQEgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID09IDEFAXMCAAIgMQcBAgUBcwEAAiAwABAmAMLg7CDt8+bl7SDy8PPvLCD38u7h+yDv8O7i5fHy6CDw6PLz4OsuAAAJAQYBCwkgcwEAID09IDEGAQQJIHMCACA9PSAwBgECGCBY/RAgbwxuY19vcmNfc2t1bGwgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLezz5vfo7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQcBBAYBAhogWP0QIG8ObmNfb3JjX3NrdWxsX2YgPT0gMAUBcwEAAiAwABAvAMLg7CDt8+bl7SD35fDl7yDu8OrgLebl7fno7fsg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAzMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAzMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQEJIHMBACA9PSAwBQFHEEExVjFfTmVjcm9SaXR1YWwCIDEHASIFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMgYBAgkgcwIAID09IDDVEBJuY19vcmNfcGF1bGRyb25fc2sBANUQDG5jX29yY19za3VsbAEABwEC1RAUbmNfb3JjX3BhdWxkcm9uX3NrX2YBANUQDm5jX29yY19za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMR4ABQFzAQASIEcObmNfbmVjcm9fc2tpbGwABgEFCiBzAQAgPD0gMTAGAQEJIHMCACA9PSAwuhEGbmNfb3JjAQAAAAAAAAAHAQG6EQhuY19vcmNfZgEAAAAAAAAACQEIAQUKIHMBACA8PSAyMAYBAQkgcwIAID09IDC6EQhuY19vcmNfMgEAAAAAAAAABwEBuhEKbmNfb3JjXzJfZgEAAAAAAAAACQEHAQUGAQEJIHMCACA9PSAwuhEIbmNfb3JjXzMBAAAAAAAAAAcBAboRCm5jX29yY18zX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwACQEcEBZBMVYxX05lY3JvUml0dWFsT3JjX3NjAQE=
-SCTX
-    Begin A1V1_NecroRitualBreton_sc
-    
-    short summon
-    short gender
-    
-    set summon to 1
-    
-    if ( GetItemCount nc_breton_pauldron_sk == 1 )
-    	set gender to 0
-    elseif ( GetItemCount nc_breton_pauldron_sk_f == 1 )
-    	set gender to 1
-    else
-    	set summon to 0
-    	MessageBox "Вам нужен труп, чтобы провести ритуал."
-    endif
-    
-    if ( summon == 1 )
-    	if ( gender == 0 )
-    		if ( GetItemCount nc_breton_skull == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
-    		endif
-    	else
-    		if ( GetItemCount nc_breton_skull_f == 0 )
-    			set summon to 0
-    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
-    		endif
-    	endif
-    endif
-    
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_netch_leather_01 < 2 )
-    		set summon to 0
-    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    	endif
-    endif
-    if ( summon == 1 )
-    	if ( GetItemCount ingred_bonemeal_01 < 30 )
-    		set summon to 0
-    		MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
-    	endif
-    endif
-    
-    if ( summon == 0 )
-    	set A1V1_NecroRitual to 1
-    else
-    	set A1V1_NecroRitual to 2
-    	if ( gender == 0 )
-    		RemoveItem nc_breton_pauldron_sk, 1
-    		RemoveItem nc_breton_skull, 1
-    	else
-    		RemoveItem nc_breton_pauldron_sk_f, 1
-    		RemoveItem nc_breton_skull_f, 1
-    	endif
-    	RemoveItem ingred_scrap_metal_01, 2
-    	RemoveItem ingred_netch_leather_01, 2
-    	RemoveItem ingred_bonemeal_01, 30
-    	set summon to nc_necro_skill
-    	if ( summon <= 10 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_breton" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_breton_f" 1, 0, 0
-    		endif
-    	elseif ( summon <= 20 )
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_breton_2" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_breton_2_f" 1, 0, 0
-    		endif
-    	else
-    		if ( gender == 0 )
-    			PlaceAtMe "nc_breton_3" 1, 0, 0
-    		else
-    			PlaceAtMe "nc_breton_3_f" 1, 0, 0
-    		endif
-    	endif
-    	PlaySound, "ThunderClap"
-    	set nc_necro_skill to ( nc_necro_skill + 1 )
-    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    endif
-    
-    StopScript A1V1_NecroRitualBreton_sc
     
     End
 
@@ -1462,6 +1463,502 @@ SCTX
     End
 
 SCPT
+SCHD A1V1_SoulGemBreton_sc 2 13 0 1556 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemBreton_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualBreton_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V1_SoulGemDunmer_sc 2 13 0 1556 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemDunmer_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualDunmer_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V1_SoulGemImp_sc 2 13 0 1553 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemImp_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualImp_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
+SCHD A1V1_SoulGemNord_sc 2 13 0 1554 112
+SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
+SCDT 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
+SCTX
+    Begin A1V1_SoulGemNord_sc
+    
+    long hash
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long temp
+    long count
+    long npcfile
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set hash to A1V1_SoulGemHashHi
+    	set hash to hash * 65536
+    	set temp to A1V1_SoulGemHashLow
+    	set hash to hash + temp
+    	set A1V1_SoulGemHashHi to 0
+    	set A1V1_SoulGemHashLow to 0
+    	set skills1 to A1V1_NecroSkills1
+    	set skills2 to A1V1_NecroSkills2
+    	set skills3 to A1V1_NecroSkills3
+    	set skills4 to A1V1_NecroSkills4
+    	set skills5 to A1V1_NecroSkills5
+    	set skills6 to A1V1_NecroSkills6
+    	set skills7 to A1V1_NecroSkills7
+    	set skills8 to A1V1_NecroSkills8
+    	set skills9 to A1V1_NecroSkills9
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx count to xGetRef "A1_NecroPlatform_1"
+    	ifx ( count )
+    		set temp to hash / 65536
+    		set A1V1_SoulGemHashHi to temp
+    		set hash to hash - temp * 65536
+    		set A1V1_SoulGemHashLow to hash
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef count
+    		StartScript A1V1_NecroRitualNord_sc
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    ifx ( OnPCEquip )
+    	set OnPCEquip to 0
+    	set count to 0
+    	if ( hash == -2147483648)
+    		set temp to 0
+    	elseif ( hash < 0 )
+    		set count to 1
+    		set temp to -hash
+    	else
+    		set temp to hash
+    	endif
+    
+    	ifx ( count )
+    		setx npcfile to xStringBuild "A1NPC_0%d", temp
+    	else
+    		setx npcfile to xStringBuild "A1NPC_%d", temp
+    	endif
+    
+    	xFileRewind npcfile
+    	setx count,temp to xFileReadShort npcfile, 1
+    	if ( temp == 20558 )
+    		set count to 1
+    	else
+    		set count to 0
+    	endif
+    	ifx ( count )
+    		setx count to xFileReadString npcfile
+    		xMessageFix count "OK"
+    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
+    	endif
+    endif
+    
+    End
+
+SCPT
 SCHD A1V1_SoulGemOrc_sc 2 13 0 1553 112
 SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
 SCDT 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
@@ -1586,381 +2083,9 @@ SCTX
     End
 
 SCPT
-SCHD A1V1_SoulGemNord_sc 2 13 0 1553 112
+SCHD A1V1_SoulGemRg_sc 2 13 0 1552 112
 SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
-SCTX
-    Begin A1V1_SoulGemNord_sc
-    
-    long hash
-    long skills1
-    long skills2
-    long skills3
-    long skills4
-    long skills5
-    long skills6
-    long skills7
-    long skills8
-    long skills9
-    short state
-    short OnPCEquip
-    long temp
-    long count
-    long npcfile
-    
-    if ( GetDisabled == 1 )
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( state == 0 )
-    	set state to 1
-    	set hash to A1V1_SoulGemHashHi
-    	set hash to hash * 65536
-    	set temp to A1V1_SoulGemHashLow
-    	set hash to hash + temp
-    	set A1V1_SoulGemHashHi to 0
-    	set A1V1_SoulGemHashLow to 0
-    	set skills1 to A1V1_NecroSkills1
-    	set skills2 to A1V1_NecroSkills2
-    	set skills3 to A1V1_NecroSkills3
-    	set skills4 to A1V1_NecroSkills4
-    	set skills5 to A1V1_NecroSkills5
-    	set skills6 to A1V1_NecroSkills6
-    	set skills7 to A1V1_NecroSkills7
-    	set skills8 to A1V1_NecroSkills8
-    	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
-    endif
-    
-    set temp to 0
-    if ( OnActivate == 1 )
-    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
-    		set temp to 1
-    	else
-    		Activate
-    	endif
-    endif
-    
-    ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
-    	ifx ( count )
-    		set temp to hash / 65536
-    		set A1V1_SoulGemHashHi to temp
-    		set hash to hash - temp * 65536
-    		set A1V1_SoulGemHashLow to hash
-    		set A1V1_NecroSkills1 to skills1
-    		set A1V1_NecroSkills2 to skills2
-    		set A1V1_NecroSkills3 to skills3
-    		set A1V1_NecroSkills4 to skills4
-    		set A1V1_NecroSkills5 to skills5
-    		set A1V1_NecroSkills6 to skills6
-    		set A1V1_NecroSkills7 to skills7
-    		set A1V1_NecroSkills8 to skills8
-    		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualNord_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
-    	endif
-    	return
-    endif
-    
-    ifx ( OnPCEquip )
-    	set OnPCEquip to 0
-    	set count to 0
-    	if ( hash == -2147483648)
-    		set temp to 0
-    	elseif ( hash < 0 )
-    		set count to 1
-    		set temp to -hash
-    	else
-    		set temp to hash
-    	endif
-    
-    	ifx ( count )
-    		setx npcfile to xStringBuild "A1NPC_0%d", temp
-    	else
-    		setx npcfile to xStringBuild "A1NPC_%d", temp
-    	endif
-    
-    	xFileRewind npcfile
-    	setx count,temp to xFileReadShort npcfile, 1
-    	if ( temp == 20558 )
-    		set count to 1
-    	else
-    		set count to 0
-    	endif
-    	ifx ( count )
-    		setx count to xFileReadString npcfile
-    		xMessageFix count "OK"
-    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
-    	endif
-    endif
-    
-    End
-
-SCPT
-SCHD A1V1_SoulGemDunmer_sc 2 13 0 1553 112
-SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
-SCTX
-    Begin A1V1_SoulGemDunmer_sc
-    
-    long hash
-    long skills1
-    long skills2
-    long skills3
-    long skills4
-    long skills5
-    long skills6
-    long skills7
-    long skills8
-    long skills9
-    short state
-    short OnPCEquip
-    long temp
-    long count
-    long npcfile
-    
-    if ( GetDisabled == 1 )
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( state == 0 )
-    	set state to 1
-    	set hash to A1V1_SoulGemHashHi
-    	set hash to hash * 65536
-    	set temp to A1V1_SoulGemHashLow
-    	set hash to hash + temp
-    	set A1V1_SoulGemHashHi to 0
-    	set A1V1_SoulGemHashLow to 0
-    	set skills1 to A1V1_NecroSkills1
-    	set skills2 to A1V1_NecroSkills2
-    	set skills3 to A1V1_NecroSkills3
-    	set skills4 to A1V1_NecroSkills4
-    	set skills5 to A1V1_NecroSkills5
-    	set skills6 to A1V1_NecroSkills6
-    	set skills7 to A1V1_NecroSkills7
-    	set skills8 to A1V1_NecroSkills8
-    	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
-    endif
-    
-    set temp to 0
-    if ( OnActivate == 1 )
-    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
-    		set temp to 1
-    	else
-    		Activate
-    	endif
-    endif
-    
-    ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
-    	ifx ( count )
-    		set temp to hash / 65536
-    		set A1V1_SoulGemHashHi to temp
-    		set hash to hash - temp * 65536
-    		set A1V1_SoulGemHashLow to hash
-    		set A1V1_NecroSkills1 to skills1
-    		set A1V1_NecroSkills2 to skills2
-    		set A1V1_NecroSkills3 to skills3
-    		set A1V1_NecroSkills4 to skills4
-    		set A1V1_NecroSkills5 to skills5
-    		set A1V1_NecroSkills6 to skills6
-    		set A1V1_NecroSkills7 to skills7
-    		set A1V1_NecroSkills8 to skills8
-    		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualDunmer_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
-    	endif
-    	return
-    endif
-    
-    ifx ( OnPCEquip )
-    	set OnPCEquip to 0
-    	set count to 0
-    	if ( hash == -2147483648)
-    		set temp to 0
-    	elseif ( hash < 0 )
-    		set count to 1
-    		set temp to -hash
-    	else
-    		set temp to hash
-    	endif
-    
-    	ifx ( count )
-    		setx npcfile to xStringBuild "A1NPC_0%d", temp
-    	else
-    		setx npcfile to xStringBuild "A1NPC_%d", temp
-    	endif
-    
-    	xFileRewind npcfile
-    	setx count,temp to xFileReadShort npcfile, 1
-    	if ( temp == 20558 )
-    		set count to 1
-    	else
-    		set count to 0
-    	endif
-    	ifx ( count )
-    		setx count to xFileReadString npcfile
-    		xMessageFix count "OK"
-    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
-    	endif
-    endif
-    
-    End
-
-SCPT
-SCHD A1V1_SoulGemImp_sc 2 13 0 1553 112
-SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
-SCTX
-    Begin A1V1_SoulGemImp_sc
-    
-    long hash
-    long skills1
-    long skills2
-    long skills3
-    long skills4
-    long skills5
-    long skills6
-    long skills7
-    long skills8
-    long skills9
-    short state
-    short OnPCEquip
-    long temp
-    long count
-    long npcfile
-    
-    if ( GetDisabled == 1 )
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( state == 0 )
-    	set state to 1
-    	set hash to A1V1_SoulGemHashHi
-    	set hash to hash * 65536
-    	set temp to A1V1_SoulGemHashLow
-    	set hash to hash + temp
-    	set A1V1_SoulGemHashHi to 0
-    	set A1V1_SoulGemHashLow to 0
-    	set skills1 to A1V1_NecroSkills1
-    	set skills2 to A1V1_NecroSkills2
-    	set skills3 to A1V1_NecroSkills3
-    	set skills4 to A1V1_NecroSkills4
-    	set skills5 to A1V1_NecroSkills5
-    	set skills6 to A1V1_NecroSkills6
-    	set skills7 to A1V1_NecroSkills7
-    	set skills8 to A1V1_NecroSkills8
-    	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
-    endif
-    
-    set temp to 0
-    if ( OnActivate == 1 )
-    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
-    		set temp to 1
-    	else
-    		Activate
-    	endif
-    endif
-    
-    ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
-    	ifx ( count )
-    		set temp to hash / 65536
-    		set A1V1_SoulGemHashHi to temp
-    		set hash to hash - temp * 65536
-    		set A1V1_SoulGemHashLow to hash
-    		set A1V1_NecroSkills1 to skills1
-    		set A1V1_NecroSkills2 to skills2
-    		set A1V1_NecroSkills3 to skills3
-    		set A1V1_NecroSkills4 to skills4
-    		set A1V1_NecroSkills5 to skills5
-    		set A1V1_NecroSkills6 to skills6
-    		set A1V1_NecroSkills7 to skills7
-    		set A1V1_NecroSkills8 to skills8
-    		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualImp_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
-    	endif
-    	return
-    endif
-    
-    ifx ( OnPCEquip )
-    	set OnPCEquip to 0
-    	set count to 0
-    	if ( hash == -2147483648)
-    		set temp to 0
-    	elseif ( hash < 0 )
-    		set count to 1
-    		set temp to -hash
-    	else
-    		set temp to hash
-    	endif
-    
-    	ifx ( count )
-    		setx npcfile to xStringBuild "A1NPC_0%d", temp
-    	else
-    		setx npcfile to xStringBuild "A1NPC_%d", temp
-    	endif
-    
-    	xFileRewind npcfile
-    	setx count,temp to xFileReadShort npcfile, 1
-    	if ( temp == 20558 )
-    		set count to 1
-    	else
-    		set count to 0
-    	endif
-    	ifx ( count )
-    		setx count to xFileReadString npcfile
-    		xMessageFix count "OK"
-    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
-    	endif
-    endif
-    
-    End
-
-SCPT
-SCHD A1V1_SoulGemRg_sc 2 13 0 1553 112
-SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
+SCDT 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
 SCTX
     Begin A1V1_SoulGemRg_sc
     
@@ -2041,130 +2166,6 @@ SCTX
     		set state to 2
     		xSetRef count
     		StartScript A1V1_NecroRitualRg_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
-    	endif
-    	return
-    endif
-    
-    ifx ( OnPCEquip )
-    	set OnPCEquip to 0
-    	set count to 0
-    	if ( hash == -2147483648)
-    		set temp to 0
-    	elseif ( hash < 0 )
-    		set count to 1
-    		set temp to -hash
-    	else
-    		set temp to hash
-    	endif
-    
-    	ifx ( count )
-    		setx npcfile to xStringBuild "A1NPC_0%d", temp
-    	else
-    		setx npcfile to xStringBuild "A1NPC_%d", temp
-    	endif
-    
-    	xFileRewind npcfile
-    	setx count,temp to xFileReadShort npcfile, 1
-    	if ( temp == 20558 )
-    		set count to 1
-    	else
-    		set count to 0
-    	endif
-    	ifx ( count )
-    		setx count to xFileReadString npcfile
-    		xMessageFix count "OK"
-    		MessageBox "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" "OK"
-    	endif
-    endif
-    
-    End
-
-SCPT
-SCHD A1V1_SoulGemBreton_sc 2 13 0 1553 112
-SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT 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
-SCTX
-    Begin A1V1_SoulGemBreton_sc
-    
-    long hash
-    long skills1
-    long skills2
-    long skills3
-    long skills4
-    long skills5
-    long skills6
-    long skills7
-    long skills8
-    long skills9
-    short state
-    short OnPCEquip
-    long temp
-    long count
-    long npcfile
-    
-    if ( GetDisabled == 1 )
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( state == 0 )
-    	set state to 1
-    	set hash to A1V1_SoulGemHashHi
-    	set hash to hash * 65536
-    	set temp to A1V1_SoulGemHashLow
-    	set hash to hash + temp
-    	set A1V1_SoulGemHashHi to 0
-    	set A1V1_SoulGemHashLow to 0
-    	set skills1 to A1V1_NecroSkills1
-    	set skills2 to A1V1_NecroSkills2
-    	set skills3 to A1V1_NecroSkills3
-    	set skills4 to A1V1_NecroSkills4
-    	set skills5 to A1V1_NecroSkills5
-    	set skills6 to A1V1_NecroSkills6
-    	set skills7 to A1V1_NecroSkills7
-    	set skills8 to A1V1_NecroSkills8
-    	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
-    endif
-    
-    set temp to 0
-    if ( OnActivate == 1 )
-    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
-    		set temp to 1
-    	else
-    		Activate
-    	endif
-    endif
-    
-    ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
-    	ifx ( count )
-    		set temp to hash / 65536
-    		set A1V1_SoulGemHashHi to temp
-    		set hash to hash - temp * 65536
-    		set A1V1_SoulGemHashLow to hash
-    		set A1V1_NecroSkills1 to skills1
-    		set A1V1_NecroSkills2 to skills2
-    		set A1V1_NecroSkills3 to skills3
-    		set A1V1_NecroSkills4 to skills4
-    		set A1V1_NecroSkills5 to skills5
-    		set A1V1_NecroSkills6 to skills6
-    		set A1V1_NecroSkills7 to skills7
-    		set A1V1_NecroSkills8 to skills8
-    		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualBreton_sc
     	else
     		MessageBox "Заклинание не может найти платформу."
     	endif
@@ -37547,13 +37548,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_breton
@@ -37564,13 +37565,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_dark elf
@@ -37581,13 +37582,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 2072
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_high elf
@@ -37619,7 +37620,7 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_imperial
@@ -37630,13 +37631,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_khajiit
@@ -37648,13 +37649,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_nord
@@ -37665,13 +37666,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_redguard
@@ -37682,13 +37683,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_orc
@@ -37699,13 +37700,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_wood elf
@@ -37716,13 +37717,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_wood elf_2
@@ -37733,13 +37734,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_wood elf_3
@@ -37750,13 +37751,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_redguard_2
@@ -37767,13 +37768,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_redguard_3
@@ -37784,13 +37785,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_orc_2
@@ -37801,13 +37802,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_orc_3
@@ -37818,13 +37819,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_nord_2
@@ -37835,13 +37836,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_nord_3
@@ -37852,13 +37853,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_khajiit_2
@@ -37870,13 +37871,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_khajiit_3
@@ -37888,13 +37889,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_imperial_2
@@ -37905,13 +37906,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_imperial_3
@@ -37922,13 +37923,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_high elf_2
@@ -37962,7 +37963,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_high elf_3
@@ -38003,7 +38004,7 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_dark elf_2
@@ -38014,13 +38015,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_dark elf_3
@@ -38031,13 +38032,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_breton_2
@@ -38048,13 +38049,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_breton_3
@@ -38065,13 +38066,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_argonian_2
@@ -38083,13 +38084,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_argonian_3
@@ -38101,13 +38102,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 MISC
 NAME nc_misc_skull10
@@ -38252,14 +38253,14 @@ ANAM
 BNAM nc_tragrilar_head
 KNAM nc_tragrilar_hair
 SCRI nolore
-NPDT QwAyAAAn2gIAAAAA
+NPDT QwAyAAARxQIAAAAA
 FLAG 24
 NPCO 1 amulet of shades
 NPCO 1 nc_tragrilar_mantle
 NPCO 1 common_shirt_03_c
 NPCO 1 common_shoes_03
 NPCO 1 common_pants_03_b
-AIDT HgAeHgAn2gIAAAAA
+AIDT HgAeHgARxQIAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 BODY
@@ -38740,7 +38741,7 @@ KNAM
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38754,7 +38755,7 @@ KNAM
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38768,7 +38769,7 @@ KNAM
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38782,7 +38783,7 @@ KNAM
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38796,7 +38797,7 @@ KNAM
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38811,7 +38812,7 @@ KNAM
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38825,7 +38826,7 @@ KNAM
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38839,7 +38840,7 @@ KNAM
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38853,7 +38854,7 @@ KNAM
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38867,7 +38868,7 @@ KNAM
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CONT
@@ -38984,7 +38985,7 @@ NPCS ghost ability\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to disease\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to frost\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
-AIDT AABkAABa2nYAAKAA
+AIDT AABkAABaLXcAAKAA
 
 MISC
 NAME nc_poison_cured
@@ -39062,7 +39063,7 @@ NPCS poisonbloom
 NPCS viperbolt
 NPCS dire weakness to poison
 NPCS nc_poison_warlord_spell
-AIDT AAAAAABa2nYAAAAA
+AIDT AAAAAABaLXcAAAAA
 
 CLOT
 NAME nc_p_mummy_shirt
@@ -39455,7 +39456,7 @@ NAME nc_SoulGem_breton
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Бретон
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemBreton_sc
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
@@ -39471,7 +39472,7 @@ NAME nc_SoulGem_dunmer
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Данмер
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemDunmer_sc
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
@@ -39479,7 +39480,7 @@ NAME nc_SoulGem_imperial
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Имперец
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemImp_sc
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
@@ -39495,7 +39496,7 @@ NAME nc_SoulGem_nord
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Норд
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemNord_sc
 ITEX blas\\br_black_gem_icon.dds
 
 MISC
@@ -39511,7 +39512,7 @@ NAME nc_SoulGem_redguard
 MODL blas\\nc_blackened_soulgem.nif
 FNAM Черный Камень Душ - Редгард
 MCDT AADAPygKAAAAAAAA
-SCRI nc_SoulGem_sc
+SCRI A1V1_SoulGemRg_sc
 ITEX blas\\br_black_gem_icon.dds
 
 ARMO
@@ -39649,7 +39650,6 @@ NPCO 1 cloth bracer left
 NPCO 1 chitin_shield
 NPCO 1 chitin boots
 NPCO 1 chitin cuirass
-NPCO 1 nc_letter
 AIDT AABkAAA8bQAAAAAA
 
 CONT
@@ -40867,7 +40867,7 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_high elf_2_f
@@ -40901,7 +40901,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_high elf_3_f
@@ -40942,7 +40942,7 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_imperial_f
@@ -40953,13 +40953,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_imperial_2_f
@@ -40970,13 +40970,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_imperial_3_f
@@ -40987,13 +40987,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_khajiit_f
@@ -41005,13 +41005,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_khajiit_2_f
@@ -41023,13 +41023,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_khajiit_3_f
@@ -41041,13 +41041,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_nord_f
@@ -41058,13 +41058,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_nord_2_f
@@ -41075,13 +41075,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_nord_3_f
@@ -41092,13 +41092,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_orc_f
@@ -41109,13 +41109,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_orc_2_f
@@ -41126,13 +41126,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_orc_3_f
@@ -41143,13 +41143,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_redguard_f
@@ -41160,13 +41160,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_redguard_2_f
@@ -41177,13 +41177,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_redguard_3_f
@@ -41194,13 +41194,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_wood elf_f
@@ -41211,13 +41211,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT CgBkAgBa2nYAAAAA
+NPDT CgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_wood elf_2_f
@@ -41228,13 +41228,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT FABkAgBa2nYAAAAA
+NPDT FABkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 NPC_
 NAME nc_wood elf_3_f
@@ -41245,13 +41245,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT HgBkAgBa2nYAAAAA
+NPDT HgBkAgBaLXcAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa2nYAAAAA
+AIDT HgAeHgBaLXcAAAAA
 
 ARMO
 NAME nc_altmer_pauldron_f
@@ -46872,7 +46872,7 @@ DATA wZPAw6ypPsML85/D2w/JPwAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAAAABA0A
 NAME Храм Танатоса, Склеп
-PGRP /////2r6//86////AQBTC/v/////+///QP///wECUwsBAAAAZvr//2T///8BAZML+////3H9//89////AQKTC/z///90/v//QP///wEEiwudAQAAe/7//0D///8BAosLUP7//3v+//9A////AQKLC/f////6////QP///wEEUwv9////TwEAAED///8BA1MLnwEAAIYBAABA////AQKTC1n+//95AQAAQP///wECUwtL/v//MQAAAED///8BA1MLmgEAAD8AAABA////AQPWCw==
+PGRP /////2r6//86////AQB1bPv/////+///QP///wECAAABAAAAZvr//2T///8BAWJl+////3H9//89////AQIAAPz///90/v//QP///wEEdF+dAQAAe/7//0D///8BAgAAUP7//3v+//9A////AQJhbvf////6////QP///wEEAAD9////TwEAAED///8BA2FnnwEAAIYBAABA////AQIAAFn+//95AQAAQP///wECYXZL/v//MQAAAED///8BAwAAmgEAAD8AAABA////AQMAAA==
 PGRC AgAAAAMAAAABAAAAAQAAAAQAAAADAAAABQAAAAYAAAAHAAAABAAAAAwAAAAEAAAACwAAAAQAAAALAAAACAAAAAwAAAAHAAAACQAAAAoAAAAIAAAADAAAAAgAAAALAAAABgAAAAcAAAAKAAAABQAAAAcAAAAJAAAA
 
 CELL
@@ -47860,7 +47860,7 @@ DATA qMatwefhnkXLsSnEAAAAAAAAAAAAAAAA
 PGRD
 DATA AAAAAAAAAACAANsB
 NAME Храм Танатоса
-PGRP gPv//wATAAC+/v//AAGZAID7//+AEwAAu/7//wAC5fCA+///ABQAALv+//8AAVI+APz//wARAABb/v//AAMLCgD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAgAAAPz//4ASAABZ/v//AAJheAD8//8AEwAAWf7//wACAAAA/P//gBMAAFn+//8AAnhlAPz//wAUAABZ/v//AAEAAID8//+AEAAAWf7//wAEYXSA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AANiYYD8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAWwggPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABZWWA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AARzaQD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAgcAAP3//wASAABZ/f//AAVlAAD9//+AEgAAWf3//wAIAAAA/f//ABMAAFn9//8AB2xlAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGdGwA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AAQLCoD9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAQAAgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABAACA/f//ABIAAJX9//8ABGZmgP3//4ASAABZ/f//AAgAAID9//8AEwAAWf3//wAIYgCA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAhhY4D9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8AByB3gP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEZWUA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAJzdAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABQYAAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHAAAA/v//gBMAAFn9//8ABwAAAP7//wAUAABZ/f//AAgAAAD+//+AFAAAWf3//wAIZmYA/v//ABUAAF7+//8AAgAAAP7//wAVAABZ/f//AAV3YYD+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABG4ggP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEZ2iA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AARldYD+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAdvboD+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8AByBzgP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACb26A/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AANpbQD///8ADwAA2f3//wADb3IA////gA8AAF7+//8ABAQAAP///wAQAABZ/v//AARvcgD///+AEAAASf7//wABAAAA////gBAAAFn9//8ABWUAAP///wARAABJ/v//AAIAAAD///8AEQAAWf3//wAFeW0A////gBEAAFn9//8AAwAAAP///wASAABZ/f//AAZuZwD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABnNhAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEbCAA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AANlZQD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAXN0AP///4AVAABZ/f//AAMAAID///+A////AP///wADBgCA////AAAAAAD///8ABG5hgP///4AAAAAA////AAQAAID///8AAQAACv///wABd2+A////gAEAAAD///8ABAAAgP///wACAAAA////AAR5bYD///+AAgAAAP///wAEAACA////AAMAAAD///8ABWNsgP///4ADAAAA////AAQAAID///8ABAAAAP///wAECwyA////gAQAAAD///8ABQAAgP///wAFAAAA////AAQAAID///8ABgAAAP///wADc3eA////gAYAAAD///8ABAAAgP///wAHAAAA////AAFyAID///+ABwAAAP///wADAACA////AAgAAAD///8ABHRvgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEaG+A////AA8AANn9//8ABAAAgP///wAQAABZ/v//AAQgd4D///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAnBlgP///wARAABZ/f//AAdkAID///+AEQAAv/7//wACc3SA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAEGAID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABAAAgP///wATAABp/f//AAJzaID///+AEwAAef3//wADAACA////ABQAAHn9//8AA2VygP///4AUAABO/v//AAMAAID///+AFAAAaf3//wADaG+A////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAcgZID///+AFQAAWf7//wACAACA////gBUAAF/9//8AA3ZlAAAAAID///8A////AAQAAAAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABSBjAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFaF8AAAAAAAIAAAD///8ABHMAAAAAAIACAAAA////AAh0YwAAAAAAAwAAAP///wAHZWQAAAAAgAMAAAD///8ABmZ1AAAAAAAEAAAA////AAUAAAAAAACABAAAAP///wAIAQAAAAAAAAUAAAD///8AB3VpAAAAAIAFAAAA////AAYAAAAAAAAABgAAAP///wADY3UAAAAAgAYAAAD///8ABwAAAAAAAAAHAAAA////AAdzcwAAAACABwAAAP///wAGAAAAAAAAAAgAAAD///8ACGluAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADYWwAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AANyaQAAAACAEAAAWf7//wAGb3IAAAAAgBAAAFn9//8ABXBlAAAAAAARAABZ/v//AAJ1aQAAAAAAEQAAWf3//wAHc3QAAAAAgBEAAFn+//8AAwAAAAAAAIARAABZ/f//AAYGAAAAAAAAEgAAzv7//wACYXMAAAAAABIAAFn9//8AAwAAAAAAAIASAABZ/f//AANzcwAAAAAAEwAAaf3//wABAAAAAAAAgBMAAHn9//8ABXVpAAAAAAAUAAB5/f//AAUAAAAAAACAFAAATf7//wADdWkAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAVfYwAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABHNogAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABCBngAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABaF+AAAAAAAIAAAD///8AA3MAgAAAAIACAAAA////AAVyX4AAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABGlygAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFBACAAAAAAAUAAAD///8ABV9ngAAAAIAFAAAA////AAQAAIAAAAAABgAAAP///wAEYXaAAAAAgAYAAAD///8ABAAAgAAAAAAHAAAA////AAR2ZYAAAACABwAAAP///wAFAACAAAAAAAgAAAD///8ABV9ngAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACX2eAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAVzaIAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAIgaIAAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAmhfgAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEdGOAAAAAgBMAAHn9//8AA2VkgAAAAAAUAAB5/f//AARmdYAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAgEAgAAAAAAVAABZ/f//AAcAAIAAAACAFQAAWf7//wACAACAAAAAgBUAAF39//8ABGhlAAEAAIAOAAC6/v//AAEAAAABAAAADwAAWf7//wABaGEAAQAAgA8AAFn+//8ABAAAAAEAAAAQAABZ/v//AAQgaAABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABWhlAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADbGIAAQAAABIAAFn9//8ABlEDAAEAAIASAABZ/f//AAdsdgABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABWJvAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHCQAAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAYAAAABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAJtAIABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAQsIgAEAAIAQAABZ/f//AANuIIABAAAAEQAAWf3//wADAACAAQAAABIAAFn9//8ABnJfgAEAAIASAABZ/f//AAgAAIABAAAAEwAAWf3//wAIb26AAQAAgBMAAFn9//8ACAAAgAEAAAAUAABZ/f//AAhhdIABAACAFAAAWf3//wAHaWeAAQAAABUAAFn+//8AAnVsAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABaW4AAgAAABEAANj9//8AAmdoAAIAAIARAAC4/f//AAJvbgACAAAAEgAAWf3//wAEdAAAAgAAgBIAAFn9//8AB2lyAAIAAAATAABZ/f//AAhmdAACAACAEwAAWf3//wAHBAAAAgAAABQAAFn9//8AB19wAAIAAIAUAABZ/f//AAUAAAACAAAAFQAAWv7//wACaHQAAgAAABUAAFn9//8AAgAAgAIAAAAQAABZ/v//AANoYYACAACAEAAAXf7//wADZnSAAgAAABEAAFH+//8AASBsgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFcGGAAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAZsX4ACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABW5lgAIAAAAUAABZ/f//AAVyAIACAACAFAAAWf7//wACYm+AAgAAABUAAFn9//8AAW5fAAMAAIAQAABZ/v//AAQJAAADAAAAEQAAu/7//wABbl8AAwAAgBEAAFn+//8AAQAAAAMAAIARAABZ/f//AAJybwADAAAAEgAAWf3//wAFAAAAAwAAgBIAAFn9//8ABGxkAAMAAAATAADV/f//AAEAAAADAACAEwAA1P3//wABYXUAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AAMLCAADAACAFAAAWf3//wACc2iAAwAAgBAAAFv+//8AAwAAgAMAAAARAABZ/v//AARkAIADAACAEQAAWf7//wAEAACAAwAAABMAALr+//8AA2hlgAMAAIATAAC7/v//AAEAAAAEAAAAEQAAu/7//wABb3cABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AANfbAAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAl9zAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADcGUABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AARzdIAEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABAYAgAQAAIAVAAAH////AARsZAAFAACAFQAAIv///wADAAAABQAAABYAAD7///8ABGllgAUAAIAVAABH////AAMAAIAFAAAAFgAATf///wACcnMABgAAABYAAFn///8AAQAAgAYAAAAUAABZ////AARfc4AGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABWxkgAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFZ2iABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAVlbYAGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABG9yAAcAAIATAABbAAAAAAJsZAAHAACAEwAAWf///wAFDwAABwAAABQAAFwAAAAAAiB3AAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIYmkABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAdvbgAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABGlyAAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADBQAABwAAgBYAAFn///8ACGxlAAcAAAAXAABZAAAAAAMAAAAHAAAAFwAAWf///wAIeGUABwAAgBcAAFn///8ACAAAAAcAAAAYAABZ////AAZkYQAHAACAGAAAWf///wAGAAAABwAAABkAAFkAAAAAAmFyAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADdmmABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAdsIIAHAAAAFAAAWf///wAIcCCABwAAgBQAAFn///8AB29jgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIc2mABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAcHAIAHAAAAFgAAWQAAAAAGZQCABwAAABYAAFn///8ABQAAgAcAAIAWAABZAAAAAAZheIAHAACAFgAAWf///wAHAACABwAAABcAAFkAAAAAB21lgAcAAAAXAABZ////AAgAAIAHAACAFwAAWQAAAAAGb2aABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAVpdIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABmxlgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEZW6ABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAANsYQAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABBAAAAgAAIATAABZ////AAggcwAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACGVuAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHb2QACAAAABUAAFwAAAAAB2FjAAgAAAAVAABZ////AAh3bwAIAACAFQAAWQAAAAAIc2gACAAAgBUAAFn///8ABgIAAAgAAAAWAABZAAAAAAgAAAAIAACAFgAAWQAAAAAIAAAACAAAgBYAAFn///8ABiBvAAgAAAAXAABZAAAAAAgAAAAIAAAAFwAAWf///wAIZmYACAAAgBcAAFkAAAAACAAAAAgAAIAXAABZ////AAhyZAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACHBhAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHIGYACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAdvbgAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAmlygAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIBQCACAAAABQAAFkAAAAABmVygAgAAAAUAABZ////AAgAAIAIAACAFAAAWQAAAAAHYWOACAAAgBQAAFn///8ACAAAgAgAAAAVAABZAAAAAAhkbYAIAAAAFQAAWf///wAIAACACAAAgBUAAFkAAAAAB2FygAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGZmyACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAZsIIAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAAB2VlgAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIc3SACAAAgBcAAFn///8ACHIAgAgAAAAYAABZAAAAAAgHAIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAABwAAgAgAAIAYAABZ////AAdhdYAIAAAAGQAAWQAAAAAEAACACAAAABkAAGH///8ABWYggAgAAIAZAABZ////AAUAAAAJAAAAEwAAWf///wAFYWYACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAhzdAAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACGwgAAkAAIAUAABZAAAAAAdlbgAJAACAFAAAWf///wAIZWUACQAAABUAAFkAAAAACGluAAkAAAAVAABZ////AAZzaAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8ABwcAAAkAAAAWAABZ////AAZhbQAJAACAFgAAWf///wAHAAAACQAAABcAAFkAAAAABiBvAAkAAAAXAABZ////AAcAAAAJAACAFwAAWQAAAAAHZmYACQAAgBcAAFn///8ACAAAAAkAAAAYAABZAAAAAAZ0YQAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABGFrAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIbCAACQAAgBkAAFn///8ABW1pgAkAAAATAABKAAAAAAJsdoAJAAAAEwAAWf///wAFY2uACQAAgBMAAFoAAAAAAnNpgAkAAIATAABZ////AAdwZYAJAAAAFAAAWf///wAGCQCACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAcAAIAJAAAAFQAAWQAAAAAHAACACQAAABUAAFn///8ABwAAgAkAAIAVAABZAAAAAAZmIIAJAAAAFgAAWf///wADcnOACQAAABcAAFkAAAAABXVkgAkAAAAXAABZ////AAZzdIAJAACAFwAAWQAAAAAFbWWACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAV0aYAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABmFmgAkAAIAZAABZ////AARhdAAKAAAAEwAAVQAAAAACZGUACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMSAAAKAACAFAAAWf///wAEb24ACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AAQgcwAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAm9uAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADaXIACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMFAAAKAAAAFwAAWQAAAAADZXIACgAAABcAAFn///8AAwAAAAoAAIAXAABZ////AAVheQAKAAAAGAAAWf///wAEAAAACgAAgBgAAFn///8AAXN3AAoAAAAZAABZ////AAIAAAAKAACAGQAAWf///wADdGWACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAJsYYAKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAA2wggAoAAIAVAABZ////AARoZYAKAAAAFgAAWwAAAAAGb26ACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAVpcoAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAgYAgAoAAIAXAABZ////AARkAIAKAAAAGAAAWf///wAFAAAACwAAgBQAAFn///8AA3dvAAsAAAAVAAA4AAAAAAJRAwALAAAAFQAAWf///wAFbXMACwAAgBUAAFkAAAAABAAAAAsAAIAVAABZ////AAVpcwALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABWZsAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEbCAACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AARlZQALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABHN0AAsAAIAYAABZ////AAIAAA==
+PGRP gPv//wATAAC+/v//AAEAAID7//+AEwAAu/7//wACIHeA+///ABQAALv+//8AAQAAAPz//wARAABb/v//AAMgYgD8//+AEQAAWf7//wADAAAA/P//ABIAAFn+//8AAm9uAPz//4ASAABZ/v//AAIAAAD8//8AEwAAWf7//wACbm8A/P//gBMAAFn+//8AAmUAAPz//wAUAABZ/v//AAEEAID8//+AEAAAWf7//wAEeGWA/P//ABEAAFn+//8ABAAAgPz//wASAABZ/f//AANlAID8//+AEgAAWf3//wACAACA/P//ABMAAFn+//8AAQAAgPz//wATAABZ/f//AAQAAID8//+AEwAAWf7//wABYXKA/P//gBMAAFn9//8AAwAAAP3//wAQAABZ/v//AARuIAD9//+AEAAAWf7//wAEAAAA/f//gBEAAFn9//8AAnZlAP3//wASAABZ/f//AAUAAAD9//+AEgAAWf3//wAIY2kA/f//ABMAAFn9//8ABwAAAP3//4ATAABZ/f//AAcAAAD9//8AFAAAWf3//wAGIGMA/f//gBQAAFn+//8AAQAAAP3//4AUAABZ/f//AARpboD9//8AEAAAWf7//wADAACA/f//gBAAALr+//8AAW9kgP3//wARAACY/f//AAEAAID9//+AEQAAef3//wABaXKA/f//ABIAAJX9//8ABAAAgP3//4ASAABZ/f//AAgEAID9//8AEwAAWf3//wAIAACA/f//gBMAAFn9//8ABwAAgP3//wAUAABZ/f//AAhlcoD9//+AFAAAWf7//wABAACA/f//gBQAAFn9//8AB2YAgP3//wAVAABZ/v//AAEAAID9//8AFQAAWf3//wAEcmgA/v//ABAAAFn+//8AAwAAAP7//4AQAABZ/f//AAJjbAD+//+AEQAA6v3//wACAAAA/v//ABIAAFn9//8ABWwgAP7//4ASAABZ/f//AAgAAAD+//8AEwAAWf3//wAHbHYA/v//gBMAAFn9//8ABwAAAP7//wAUAABZ/f//AAhkdwD+//+AFAAAWf3//wAIcgAA/v//ABUAAF7+//8AAg0AAP7//wAVAABZ/f//AAUAAID+//+ADwAAXf7//wAEAACA/v//ABAAAFn+//8ABAAAgP7//4AQAABc/v//AAEAAID+//+AEAAAWf3//wAEYgCA/v//ABEAAFn9//8ABAAAgP7//4ARAABZ/f//AAQHCID+//8AEgAAWf3//wAHAACA/v//gBIAAFn9//8ACAAAgP7//wATAABZ/f//AAcAAID+//+AEwAAWf3//wAIAACA/v//ABQAAFn9//8AB3N3gP7//4AUAABa/f//AAYAAID+//8AFQAAWf7//wACIGKA/v//ABUAAFn9//8ABQAAAP///4AOAADZ/f//AAMgYgD///8ADwAA2f3//wADAAAA////gA8AAF7+//8ABCBjAP///wAQAABZ/v//AAQAAAD///+AEAAASf7//wABcmQA////gBAAAFn9//8ABQAAAP///wARAABJ/v//AAJzdAD///8AEQAAWf3//wAFAAAA////gBEAAFn9//8AAwYAAP///wASAABZ/f//AAYAAAD///+AEgAAWf3//wAHAAAA////ABMAAFn9//8ABgAAAP///4ATAABi/f//AAQAAAD///8AFAAAXv3//wAEZHMA////gBQAAFn9//8ABgAAAP///wAVAABZ/v//AANheQD///8AFQAAWf3//wAHAAAA////gBUAAFn+//8AAWRhAP///4AVAABZ/f//AAMAAID///+A////AP///wADZXKA////AAAAAAD///8ABAAAgP///4AAAAAA////AARsdoD///8AAQAACv///wABAACA////gAEAAAD///8ABGR3gP///wACAAAA////AAQAAID///+AAgAAAP///wAEDwCA////AAMAAAD///8ABSBkgP///4ADAAAA////AAQAAID///8ABAAAAP///wAEaW6A////gAQAAAD///8ABQAAgP///wAFAAAA////AARvboD///8ABgAAAP///wADAACA////gAYAAAD///8ABGlygP///wAHAAAA////AAEAAID///+ABwAAAP///wADBACA////AAgAAAD///8ABGQAgP///4AIAAAA////AAQAAID///+ADgAA3v3//wAEaGmA////AA8AANn9//8ABAAAgP///wAQAABZ/v//AARob4D///+AEAAAWf3//wAFAACA////ABEAAFz+//8AAm9ygP///wARAABZ/f//AAcAAID///+AEQAAv/7//wACdGGA////gBEAAFn9//8ABQAAgP///wASAAC//v//AAFsIID///8AEgAAWf3//wADAACA////gBIAAFn9//8ABGVlgP///wATAABp/f//AAIAAID///+AEwAAef3//wADc2mA////ABQAAHn9//8AA2QAgP///4AUAABO/v//AAMIAID///+AFAAAaf3//wADAACA////ABUAAFn+//8AAwAAgP///wAVAABZ/f//AAd0c4D///+AFQAAWf7//wACAACA////gBUAAF/9//8AAwcMAAAAAID///8A////AAQAAAAAAAAAAAAAAP///wAHAAAAAAAAgAAAAAD///8ABXJfAAAAAAABAAAA////AAYAAAAAAACAAQAAAP///wAFaGUAAAAAAAIAAAD///8ABHNzAAAAAIACAAAA////AAhhcwAAAAAAAwAAAP///wAHAAAAAAAAgAMAAAD///8ABmFyAAAAAAAEAAAA////AAUAAAAAAACABAAAAP///wAIaWMAAAAAAAUAAAD///8ABwAAAAAAAIAFAAAA////AAZvbgAAAAAABgAAAP///wADAAAAAAAAgAYAAAD///8AB25vAAAAAAAHAAAA////AAdjdQAAAACABwAAAP///wAGBAAAAAAAAAgAAAD///8ACF9jAAAAAIAIAAAA////AAYAAAAAAAAACQAAAP///wADcmEAAAAAAA8AABH+//8AAwAAAAAAAAAQAABZ/v//AAN0dQAAAACAEAAAWf7//wAGAAAAAAAAgBAAAFn9//8ABWlyAAAAAAARAABZ/v//AAIAAAAAAAAAEQAAWf3//wAHb24AAAAAgBEAAFn+//8AAwAAAAAAAIARAABZ/f//AAZlcgAAAAAAEgAAzv7//wACAAAAAAAAABIAAFn9//8AA25lAAAAAIASAABZ/f//AAMAAAAAAAAAEwAAaf3//wABZHcAAAAAgBMAAHn9//8ABQAAAAAAAAAUAAB5/f//AAUNAAAAAACAFAAATf7//wADAAAAAAAAgBQAAGn9//8AAQAAAAAAAAAVAABZ/f//AAVzcwAAAACAFQAAWf7//wACAAAAAAAAgBUAAFn9//8ABAcMgAAAAID///8A////AAMAAIAAAAAAAAAAAP///wADAACAAAAAgAAAAAD///8ABHJfgAAAAAABAAAA////AAQAAIAAAACAAQAAAP///wABcwCAAAAAAAIAAAD///8AAwAAgAAAAIACAAAA////AAVhdoAAAAAAAwAAAP///wAEAACAAAAAgAMAAAD///8ABGFsgAAAAAAEAAAA////AAQAAIAAAACABAAAAP///wAFcmmAAAAAAAUAAAD///8ABQAAgAAAAIAFAAAA////AARlZYAAAAAABgAAAP///wAEAACAAAAAgAYAAAD///8ABGJvgAAAAAAHAAAA////AAQAAIAAAACABwAAAP///wAFCQCAAAAAAAgAAAD///8ABQAAgAAAAIAIAAAA////AAQAAIAAAAAADwAAV/7//wACZXOAAAAAABAAAFn+//8ABAAAgAAAAIAQAABZ/f//AAUHCoAAAAAAEQAAXP7//wADAACAAAAAABEAAFn9//8ABgAAgAAAAIARAAC9/v//AAJyX4AAAAAAEgAAvf7//wABAACAAAAAABIAAF/9//8AAmhlgAAAAIASAABZ/f//AAUAAIAAAAAAEwAAZf3//wAEAACAAAAAgBMAAHn9//8AAwAAgAAAAAAUAAB5/f//AARlbIAAAACAFAAAYf3//wAFAACAAAAAABUAAFn+//8AAmljgAAAAAAVAABZ/f//AAcAAIAAAACAFQAAWf7//wACcGWAAAAAgBUAAF39//8ABGZfAAEAAIAOAAC6/v//AAFpbQABAAAADwAAWf7//wABYXIAAQAAgA8AAFn+//8ABAUAAAEAAAAQAABZ/v//AAQAAAABAACAEAAAWv7//wABAAAAAQAAgBAAAFn9//8ABWxtAAEAAAARAABZ/f//AAUAAAABAACAEQAAWf3//wADbQAAAQAAABIAAFn9//8ABgAAAAEAAIASAABZ/f//AAdfaAABAAAAEwAAWf3//wAHAAAAAQAAgBMAAFn9//8ABV9oAAEAAAAUAABZ/f//AAYAAAABAACAFAAAWf3//wAHZXIAAQAAABUAAFn+//8AAgAAAAEAAAAVAABZ/f//AAZjaQABAACAFQAAWf7//wABAAAAAQAAgBUAAFn9//8AAwAAgAEAAIAPAAC7/v//AAIgcIABAAAAEAAAWf7//wADAACAAQAAgBAAALv+//8AAWhfgAEAAIAQAABZ/f//AANvboABAAAAEQAAWf3//wADcl+AAQAAABIAAFn9//8ABgAAgAEAAIASAABZ/f//AAhuZYABAAAAEwAAWf3//wAIdWyAAQAAgBMAAFn9//8ACAEAgAEAAAAUAABZ/f//AAhpZ4ABAACAFAAAWf3//wAHAACAAQAAABUAAFn+//8AAnJvAAIAAAAQAABZ/v//AAQAAAACAACAEAAAvf7//wABcm8AAgAAABEAANj9//8AAgAAAAIAAIARAAC4/f//AAJsZAACAAAAEgAAWf3//wAEAAAAAgAAgBIAAFn9//8AB2FsAAIAAAATAABZ/f//AAhuXwACAACAEwAAWf3//wAHcmkAAgAAABQAAFn9//8AB3JvAAIAAIAUAABZ/f//AAVwZQACAAAAFQAAWv7//wACbGQAAgAAABUAAFn9//8AAmltgAIAAAAQAABZ/v//AAN1bIACAACAEAAAXf7//wADBQCAAgAAABEAAFH+//8AAV9sgAIAAAARAACn/f//AAMAAIACAACAEQAAh/3//wAFb26AAgAAABIAAJz9//8ABAAAgAIAAIASAABZ/f//AAZhdYACAAAAEwAAWf3//wAGAACAAgAAgBMAAFn9//8ABV9wgAIAAAAUAABZ/f//AAUAAIACAACAFAAAWf7//wACX3CAAgAAABUAAFn9//8AAQAAAAMAAIAQAABZ/v//AARlcgADAAAAEQAAu/7//wABAAAAAwAAgBEAAFn+//8AAWNpAAMAAIARAABZ/f//AAJnaAADAAAAEgAAWf3//wAFb3IAAwAAgBIAAFn9//8ABGxlAAMAAAATAADV/f//AAEPAAADAACAEwAA1P3//wABbGUAAwAAABQAAFn+//8AAQAAAAMAAAAUAABZ/f//AANpbgADAACAFAAAWf3//wACAACAAwAAgBAAAFv+//8AA3RjgAMAAAARAABZ/v//AARyc4ADAACAEQAAWf7//wAEY2iAAwAAABMAALr+//8AA2xkgAMAAIATAAC7/v//AAECAAAEAAAAEQAAu/7//wABX3MABAAAgBEAAFn+//8AAwAAAAQAAAASAABZ/v//AAMAAAAEAACAEgAAWf7//wADAAAABAAAABMAAFn+//8AAmhpAAQAAIATAABZ/v//AAMAAAAEAAAAFAAAfP7//wADaWUABAAAgBQAAKX+//8ABAAAAAQAAAAVAADT/v//AARvd4AEAACAFAAAwP7//wAEAACABAAAABUAAOP+//8ABGxigAQAAIAVAAAH////AAQAAAAFAACAFQAAIv///wADZWUABQAAABYAAD7///8ABAAAgAUAAIAVAABH////AANib4AFAAAAFgAATf///wACAAAABgAAABYAAFn///8AAQkAgAYAAAAUAABZ////AARzaIAGAACAFAAAWQAAAAACAACABgAAgBQAAFn///8ABWQAgAYAAAAVAABZ////AAQAAIAGAAAAFgAAWf///wAFZWyABgAAgBYAAF7///8ABQAAgAYAAAAXAABZ////AAVvd4AGAACAFwAAWf///wAFAACABgAAABgAAFn///8ABAcIAAcAAIATAABbAAAAAAIAAAAHAACAEwAAWf///wAFAAAABwAAABQAAFwAAAAAAiBhAAcAAAAUAABZ////AAcAAAAHAACAFAAAWf///wAIYXgABwAAABUAAFkAAAAAAwAAAAcAAAAVAABZ////AAdyawAHAACAFQAAWf///wAHAAAABwAAABYAAFsAAAAABGl0AAcAAAAWAABZ////AAcAAAAHAACAFgAAWwAAAAADbCAABwAAgBYAAFn///8ACAAAAAcAAAAXAABZAAAAAANlZQAHAAAAFwAAWf///wAIAAAABwAAgBcAAFn///8ACHN0AAcAAAAYAABZ////AAYAAAAHAACAGAAAWf///wAGBwAABwAAABkAAFkAAAAAAgAAAAcAAAAZAABZ////AAMAAIAHAAAAEwAAWQAAAAADZSCABwAAABMAAFn///8ABAAAgAcAAIATAABZ////AAd3YYAHAAAAFAAAWf///wAIAACABwAAgBQAAFn///8AB2lwgAcAAAAVAABcAAAAAAUAAIAHAAAAFQAAWf///wAIIHOABwAAgBUAAFkAAAAABwAAgAcAAIAVAABZ////AAdlcoAHAAAAFgAAWQAAAAAGAACABwAAABYAAFn///8ABWx2gAcAAIAWAABZAAAAAAYAAIAHAACAFgAAWf///wAHd2GABwAAABcAAFkAAAAAB3MAgAcAAAAXAABZ////AAgOAIAHAACAFwAAWQAAAAAGAACABwAAgBcAAFn///8ABwAAgAcAAAAYAABZAAAAAAVmIIAHAAAAGAAAWf///wAIAACABwAAgBgAAFkAAAAABmxlgAcAAIAYAABZ////AAgAAIAHAAAAGQAAWQAAAAAEZXOABwAAABkAAFn///8ABgAAAAgAAAATAABZAAAAAAMHCAAIAAAAEwAAWf///wAFAAAACAAAgBMAAFkAAAAABAAAAAgAAIATAABZ////AAggbwAIAAAAFAAAXAAAAAAEAAAACAAAABQAAFn///8ACGZmAAgAAIAUAABcAAAAAAUAAAAIAACAFAAAWf///wAHdGEACAAAABUAAFwAAAAABwAAAAgAAAAVAABZ////AAh0ZQAIAACAFQAAWQAAAAAIAAAACAAAgBUAAFn///8ABmVuAAgAAAAWAABZAAAAAAhuZQAIAACAFgAAWQAAAAAIb2QACAAAgBYAAFn///8ABmFzAAgAAAAXAABZAAAAAAhpcgAIAAAAFwAAWf///wAIAAAACAAAgBcAAFkAAAAACAUAAAgAAIAXAABZ////AAgAAAAIAAAAGAAAWQAAAAAIAAAACAAAABgAAFn///8ACHVsAAgAAIAYAABZAAAAAAgAAAAIAACAGAAAWf///wAHbWEACAAAABkAAFkAAAAABQAAAAgAAAAZAABZ////AAdyZAAIAACAGQAAWf///wAEAACACAAAABMAAJkAAAAAAmlwgAgAAAATAABZ////AAUAAIAIAACAEwAAWf///wAIbCCACAAAABQAAFkAAAAABgAAgAgAAAAUAABZ////AAhlZYAIAACAFAAAWQAAAAAHAACACAAAgBQAAFn///8ACHN0gAgAAAAVAABZAAAAAAgAAIAIAAAAFQAAWf///wAIBwCACAAAgBUAAFkAAAAAB2xlgAgAAIAVAABZ////AAYAAIAIAAAAFgAAWQAAAAAGYXWACAAAABYAAFn///8ABwAAgAgAAIAWAABcAAAAAAZybYAIAACAFgAAWf///wAHAACACAAAABcAAFkAAAAAB2FygAgAAAAXAABZ////AAgAAIAIAACAFwAAWQAAAAAIbGGACAAAgBcAAFn///8ACAAAgAgAAAAYAABZAAAAAAhsIIAIAAAAGAAAWf///wAIAACACAAAgBgAAFkAAAAAB2VlgAgAAIAYAABZ////AAdjZYAIAAAAGQAAWQAAAAAEc3SACAAAABkAAGH///8ABWFygAgAAIAZAABZ////AAUHAAAJAAAAEwAAWf///wAFIHMACQAAgBMAAJkAAAAAAgAAAAkAAIATAABZ////AAhvZgAJAAAAFAAAWQAAAAAFAAAACQAAABQAAFn///8ACGYgAAkAAIAUAABZAAAAAAdlbQAJAACAFAAAWf///wAIZSAACQAAABUAAFkAAAAACAAAAAkAAAAVAABZ////AAZpdAAJAACAFQAAWQAAAAAGAAAACQAAgBUAAFn///8AB2VyAAkAAAAWAABZ////AAZpbgAJAACAFgAAWf///wAHbHYACQAAABcAAFkAAAAABmFzAAkAAAAXAABZ////AAdzaQAJAACAFwAAWQAAAAAHd2EACQAAgBcAAFn///8ACAcAAAkAAAAYAABZAAAAAAYAAAAJAAAAGAAAWf///wAHAAAACQAAgBgAAFkAAAAABG1lAAkAAIAYAABZ////AAYAAAAJAAAAGQAAWf///wAIZmYACQAAgBkAAFn///8ABQAAgAkAAAATAABKAAAAAAJ0YYAJAAAAEwAAWf///wAFAACACQAAgBMAAFoAAAAAAm4ggAkAAIATAABZ////AAcAAIAJAAAAFAAAWf///wAGdCCACQAAgBQAAFkAAAAABQAAgAkAAIAUAABZ////AAdlZYAJAAAAFQAAWQAAAAAHIGGACQAAABUAAFn///8AB2RpgAkAAIAVAABZAAAAAAYgc4AJAAAAFgAAWf///wADDQCACQAAABcAAFkAAAAABW91gAkAAAAXAABZ////AAYAAIAJAACAFwAAWQAAAAAFZQCACQAAgBcAAFn///8ACAAAgAkAAAAYAABZ////AAVoZYAJAACAGAAAWf///wAFAACACQAAABkAAFn///8ABmNlgAkAAIAZAABZ////AAQAAAAKAAAAEwAAVQAAAAACBwoACgAAABMAAFn///8AAwAAAAoAAIATAABZ////AAMAAAAKAACAFAAAWf///wAEb3IACgAAABUAAFkAAAAABAAAAAoAAAAVAABZ////AARzdwAKAACAFQAAWQAAAAAEAAAACgAAgBUAAFn///8AAmVyAAoAAAAWAABZAAAAAAUAAAAKAAAAFgAAWf///wADcGEACgAAgBYAAFkAAAAABAAAAAoAAIAWAABZ////AAMgdgAKAAAAFwAAWQAAAAADAAAACgAAABcAAFn///8AA29uAAoAAIAXAABZ////AAUAAAAKAAAAGAAAWf///wAEc3AACgAAgBgAAFn///8AAQAAAAoAAAAZAABZ////AAIFAAAKAACAGQAAWf///wADAACACgAAgBQAAFn///8AAwAAgAoAAAAVAAA4AAAAAAJ3b4AKAAAAFQAAWf///wAEAACACgAAgBUAAFoAAAAAA3NsgAoAAIAVAABZ////AAQAAIAKAAAAFgAAWwAAAAAGcmSACgAAABYAAFn///8ABwAAgAoAAIAWAABZAAAAAAVmaYAKAACAFgAAWf///wAGAACACgAAABcAAFkAAAAAAmwggAoAAIAXAABZ////AAQAAIAKAAAAGAAAWf///wAFZWUACwAAgBQAAFn///8AAwAAAAsAAAAVAAA4AAAAAAJzdAALAAAAFQAAWf///wAFZAAACwAAgBUAAFkAAAAABAcAAAsAAIAVAABZ////AAVyZAALAAAAFgAAWQAAAAAFAAAACwAAABYAAFn///8ABXdvAAsAAIAWAABZAAAAAAUAAAALAACAFgAAWf///wAEa3MACwAAABcAAFkAAAAAAwAAAAsAAAAXAABZ////AARwZQALAACAFwAAWf///wAEAAAACwAAABgAAFn///8ABAAAAAsAAIAYAABZ////AAIAAA==
 PGRC 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SwAAAEwAAABNAAAAmQAAAEwAAACaAAAAdAAAAJsAAACcAAAAcwAAAJsAAACcAAAAUQAAAHcAAACdAAAAUgAAAHgAAACeAAAAUQAAAHUAAACdAAAAUAAAAFIAAABUAAAAdgAAAHoAAACfAAAAoQAAAFMAAACgAAAAUgAAAHgAAAChAAAAVQAAAFYAAAB8AAAAogAAAFUAAABWAAAAVwAAAHsAAAB9AAAAogAAAKMAAABXAAAAfAAAAH4AAACkAAAApQAAAFcAAABZAAAAfQAAAH8AAACkAAAApQAAAFkAAABaAAAAfgAAAKUAAACmAAAAWwAAAIEAAACnAAAAqAAAAFoAAABbAAAAXAAAAIAAAACCAAAApwAAAKgAAACpAAAAXAAAAF0AAACBAAAAgwAAAKgAAACpAAAAqgAAAFwAAABdAAAAXgAAAIIAAACEAAAAqgAAAF8AAACDAAAAhQAAAKsAAACsAAAAXgAAAF8AAABgAAAAhAAAAIYAAACrAAAArAAAAK0AAABfAAAAYAAAAIUAAACHAAAArAAAAK0AAACuAAAAYAAAAIYAAACIAAAArQAAAK4AAACvAAAAYQAAAGIAAACHAAAAYQAAAGIAAABjAAAAigAAAK8AAACwAAAAsQAAAGIAAABkAAAAiQAAAIsAAACwAAAAsQAAALIAAABkAAAAZQAAAIoAAACMAAAAsgAAALMAAABkAAAAZQAAAGYAAACLAAAAjQAAALIAAACzAAAAtAAAAGUAAABmAAAAjAAAAI4AAACzAAAAtAAAAGYAAACNAAAAtAAAAGcAAABoAAAAtQAAAGkAAACRAAAAtgAAAGkAAABrAAAAkAAAAJMAAAC2AAAAuAAAAGoAAABsAAAAlAAAALcAAAC5AAAAkQAAAJUAAABqAAAAbAAAAG4AAACSAAAAlgAAALcAAAC5AAAAawAAAJMAAAC4AAAAbAAAAG4AAABwAAAAlAAAAJgAAAC5AAAAbQAAALoAAABuAAAAcAAAAJYAAABxAAAAvQAAAL4AAAByAAAAcwAAAHQAAACcAAAAvwAAAMAAAABzAAAAdAAAAJsAAAC/AAAAwAAAAHUAAAB3AAAAwgAAAHYAAAB4AAAAoQAAAMEAAADDAAAAxQAAAHkAAADEAAAAeAAAAHoAAACfAAAAwwAAAHsAAAB8AAAAowAAAHwAAACiAAAApAAAAH0AAAB+AAAAowAAAKUAAAB9AAAAfgAAAH8AAACkAAAAfwAAAIAAAACBAAAAqAAAAIAAAACBAAAAggAAAKcAAACpAAAAgQAAAIIAAACoAAAAqgAAAIIAAACDAAAAqQAAAKsAAACEAAAAhQAAAKoAAACsAAAAhAAAAIUAAACGAAAAqwAAAK0AAACFAAAAhgAAAIcAAACsAAAArgAAAIYAAACHAAAArQAAAK8AAACHAAAAiQAAAK4AAACwAAAAiQAAAIoAAACvAAAAsQAAAIkAAACKAAAAsAAAALIAAACKAAAAiwAAAIwAAACxAAAAswAAAIsAAACMAAAAjQAAALIAAAC0AAAAjAAAAI0AAACOAAAAswAAAI8AAADGAAAAkAAAAJEAAADIAAAAyQAAAJIAAACUAAAAuQAAAMsAAADMAAAAkQAAAJUAAADKAAAAkgAAAJQAAACWAAAAtwAAAMsAAADMAAAAlwAAALsAAAC6AAAAzQAAAM4AAACZAAAAvgAAAM4AAADPAAAA0AAAAJkAAAC9AAAAzwAAANAAAACbAAAAnAAAAMAAAACbAAAAnAAAAL8AAADTAAAAnwAAAMMAAADSAAAA0wAAANUAAACdAAAA1AAAAJ8AAAChAAAAwQAAAMUAAADTAAAA1QAAANcAAACgAAAA1gAAAJ8AAADDAAAA1QAAANcAAAC1AAAAyAAAALYAAADHAAAAyQAAANkAAAC2AAAAyAAAANgAAADZAAAAuAAAALcAAAC5AAAAzAAAANsAAADcAAAAtwAAALkAAADLAAAA2wAAANwAAAC8AAAAzgAAAN0AAAC8AAAAvQAAAM0AAADPAAAA3QAAAN4AAAC9AAAAvgAAAM4AAADQAAAA3QAAAN4AAADfAAAAvQAAAL4AAADPAAAA0QAAAN4AAADfAAAA4AAAANAAAADSAAAA3wAAAOAAAADhAAAAwQAAANEAAADTAAAA4AAAAOEAAADiAAAAwAAAAMEAAADDAAAA0gAAANUAAADhAAAA4gAAAMIAAADjAAAAwQAAAMMAAADFAAAA0wAAANcAAADiAAAAxAAAAMMAAADFAAAA1QAAAMkAAADkAAAAyAAAAMkAAADkAAAA5QAAAMsAAADMAAAA3AAAAMsAAADMAAAA2wAAAM0AAADOAAAAzwAAAN4AAADoAAAA6QAAAM4AAADPAAAA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MQEAADMBAAA0AQAARQEAAEkBAABeAQAAYAEAAGIBAAAyAQAARgEAAEoBAABfAQAAYQEAAGMBAAAzAQAANAEAAEcBAABLAQAAYAEAAGIBAABkAQAASAEAAEwBAABhAQAAYwEAAGUBAAA0AQAANQEAADYBAABJAQAATQEAAGIBAABkAQAAZgEAADcBAABKAQAATgEAAGMBAABlAQAAZwEAADUBAAA2AQAAOAEAAEsBAABPAQAAZAEAAGYBAABoAQAANwEAAEwBAABlAQAAZwEAADYBAAA4AQAATQEAAGYBAABoAQAAaQEAADkBAABSAQAAagEAADoBAAA7AQAAUwEAAGsBAABsAQAAOQEAAFABAABUAQAAbQEAADoBAAA7AQAAPAEAAFEBAABVAQAAawEAAGwBAABuAQAAUgEAAFYBAABtAQAAbwEAADsBAAA8AQAAPQEAAFMBAABXAQAAbAEAAG4BAABwAQAAPgEAAFQBAABYAQAAbQEAAHEBAAA8AQAAPwEAAFUBAABZAQAAbgEAAHABAAByAQAAPgEAAEABAABWAQAAWgEAAHEBAABzAQAAbwEAAD0BAAA/AQAAQQEAAFcBAABbAQAAcAEAAHIBAAB0AQAAPgEAAEABAABCAQAAWAEAAFwBAABxAQAAcwEAAHUBAAA/AQAAQQEAAFkBAAByAQAAdAEAAHYBAABAAQAAQgEAAEQBAABaAQAAXQEAAHMBAAB1AQAAdwEAAEIBAABEAQAARgEAAFwBAABfAQAAdQEAAHcBAAB5AQAARQEAAEcBAABgAQAAdgEAAHgBAAB6AQAARAEAAEYBAABIAQAAXQEAAGEBAAB3AQAAeQEAAHsBAABFAQAARwEAAEkBAABeAQAAYgEAAHgBAAB6AQAAfAEAAEYBAABIAQAASgEAAF8BAABjAQAAeQEAAHsBAAB9AQAARwEAAEkBAABLAQAAYAEAAGQBAAB6AQAAfAEAAH4BAABIAQAASgEAAEwBAABhAQAAZQEAAHsBAAB9AQAAfwEAAEkBAABLAQAATQEAAGIBAABmAQAAfAEAAH4BAACAAQAASgEAAEwBAABOAQAAYwEAAGcBAAB9AQAAfwEAAIEBAABLAQAATQEAAE8BAABkAQAAaAEAAH4BAACAAQAATAEAAE4BAABlAQAAfwEAAIEBAABNAQAATwEAAGYBAABpAQAAgAEAAIIBAACDAQAATwEAAGgBAACCAQAAgwEAAFABAACFAQAAUQEAAFMBAABsAQAAhAEAAIYBAABRAQAAUwEAAFUBAABrAQAAbgEAAIQBAACGAQAAiAEAAFIBAABUAQAAVgEAAG8BAACHAQAAiQEAAFMBAABVAQAAVwEAAGwBAABwAQAAhgEAAIgBAACKAQAAVAEAAFgBAABtAQAAhwEAAIkBAACLAQAAcQEAAFUBAABXAQAAWQEAAG4BAAByAQAAiAEAAIoBAACMAQAAVgEAAFgBAABaAQAAbwEAAHMBAACJAQAAiwEAAI0BAABXAQAAWQEAAFsBAABwAQAAdAEAAIoBAACMAQAAjgEAAFgBAABaAQAAXAEAAHEBAAB1AQAAiwEAAI0BAABZAQAAWwEAAHIBAAB2AQAAjgEAAI8BAABaAQAAXAEAAF0BAABzAQAAdwEAAI0BAABbAQAAXgEAAHQBAAB4AQAAjgEAAI8BAACQAQAAXAEAAF0BAABfAQAAdQEAAHkBAACRAQAAXgEAAGABAAB2AQAAegEAAI8BAACQAQAAkgEAAF0BAABfAQAAYQEAAHcBAAB7AQAAkQEAAJMBAABeAQAAYAEAAGIBAAB4AQAAfAEAAJABAACSAQAAlAEAAF8BAABhAQAAYwEAAHkBAAB9AQAAkQEAAJMBAACVAQAAYAEAAGIBAABkAQAAegEAAH4BAACSAQAAlAEAAJYBAABhAQAAYwEAAGUBAAB7AQAAfwEAAJMBAACVAQAAlwEAAGIBAABkAQAAZgEAAHwBAACAAQAAlAEAAJYBAACYAQAAYwEAAGUBAABnAQAAfQEAAIEBAACVAQAAlwEAAGQBAABmAQAAaAEAAH4BAACWAQAAmAEAAJkBAABlAQAAZwEAAH8BAACXAQAAaAEAAGkBAACDAQAAmQEAAJoBAABoAQAAaQEAAIIBAACZAQAAmgEAAGsBAABsAQAAhgEAAJwBAACeAQAAagEAAIcBAABrAQAAbAEAAG4BAACEAQAAiAEAAJwBAACeAQAAnwEAAG0BAABvAQAAhQEAAIkBAACgAQAAbAEAAG4BAABwAQAAhgEAAIoBAACeAQAAnwEAAKEBAABtAQAAbwEAAHEBAACHAQAAiwEAAKABAACiAQAAbgEAAHABAAByAQAAiAEAAIwBAACfAQAAoQEAAKMBAABvAQAAcQEAAHMBAACJAQAAjQEAAKABAACiAQAApAEAAHABAAByAQAAigEAAI4BAAChAQAAowEAAHEBAABzAQAAdQEAAIsBAACiAQAApAEAAHIBAAB0AQAAdgEAAIwBAACPAQAAowEAAKUBAAB0AQAAdgEAAHgBAACOAQAAkAEAAKUBAAB2AQAAeAEAAHoBAACPAQAAkgEAAKUBAACnAQAAdwEAAHkBAAB7AQAAkwEAAKYBAACoAQAAeAEAAHoBAAB8AQAAkAEAAJQBAACnAQAAqQEAAHkBAAB7AQAAfQEAAJEBAACVAQAApgEAAKgBAAB6AQAAfAEAAH4BAACSAQAAlgEAAKcBAACpAQAAqgEAAHsBAAB9AQAAfwEAAJMBAACXAQAAqAEAAHwBAAB+AQAAgAEAAJQBAACYAQAAqQEAAKsBAAB9AQAAfwEAAIEBAACVAQAAfgEAAIABAACWAQAAmQEAAKsBAACsAQAAgAEAAIIBAACDAQAAmAEAAJoBAACrAQAArAEAAK0BAACCAQAAgwEAAJkBAACsAQAArQEAAJ0BAACuAQAAhAEAAIYBAACeAQAArwEAALABAACbAQAArgEAAIQBAACGAQAAiAEAAJwBAACfAQAArwEAALABAACGAQAAiAEAAIoBAACeAQAAoQEAALEBAACHAQAAiQEAAIsBAACiAQAAsgEAAIgBAACKAQAAjAEAAJ8BAACjAQAAsQEAALMBAACJAQAAiwEAAI0BAACgAQAApAEAALIBAAC0AQAAigEAAIwBAACOAQAAoQEAALEBAACzAQAAtQEAAIsBAACNAQAAogEAALIBAAC0AQAAtgEAAI4BAACPAQAAkAEAAJEBAACTAQAAqAEAALgBAAC6AQAAkAEAAJIBAACUAQAAqQEAALsBAAC8AQAAkQEAAJMBAACVAQAApgEAALoBAACSAQAAlAEAAJYBAACnAQAAqgEAALsBAAC8AQAAvQEAAJQBAACpAQAAqwEAALwBAAC9AQAAlgEAAJgBAACZAQAAqgEAAL0BAACYAQAAmQEAAJoBAACtAQAAvwEAAMABAACZAQAAmgEAAKwBAADAAQAAmwEAAJ0BAACcAQAAngEAALABAACcAQAAngEAAK8BAACfAQAAoQEAAKMBAACzAQAAoAEAAKIBAACkAQAAtAEAAKEBAACjAQAAsQEAALUBAACiAQAApAEAALIBAAC2AQAAowEAALMBAACkAQAAtAEAALgBAADGAQAAyAEAALkBAADHAQAAyQEAAKYBAAC2AQAAugEAAMYBAAC3AQAAxwEAAMkBAACmAQAAqAEAALgBAACnAQAAqQEAALwBAACnAQAAqQEAAKoBAAC7AQAAvQEAAKkBAACqAQAAqwEAALwBAADMAQAArAEAAMABAACsAQAArQEAAL8BAADDAQAAzQEAAM8BAADOAQAA0AEAAMEBAADNAQAAzwEAANEBAADQAQAA0gEAAM4BAADHAQAAzwEAANEBAADTAQAAtgEAALgBAADIAQAA0AEAANIBAADUAQAAtwEAALkBAADFAQAAyQEAANEBAADTAQAA1QEAALYBAADGAQAA0gEAANQBAADWAQAAtwEAALkBAADHAQAA0wEAANUBAADXAQAA1AEAANYBAADMAQAA1wEAANgBAADZAQAAvgEAAMsBAADYAQAA2QEAANoBAADBAQAAwwEAAM8BAADCAQAAxAEAAMEBAADDAQAAxQEAAM0BAADRAQAAwgEAAMQBAADGAQAA0gEAAMMBAADFAQAAxwEAAM8BAADTAQAAxAEAAMYBAADIAQAA0AEAANQBAADFAQAAxwEAAMkBAADRAQAA1QEAAMYBAADIAQAAygEAANIBAADWAQAAxwEAAMkBAADTAQAA1wEAAMgBAADKAQAA1AEAAMkBAADLAQAA1QEAANgBAADLAQAAzAEAANcBAADZAQAAywEAAMwBAADYAQAA2gEAAMwBAADZAQAA
 
 DIAL
