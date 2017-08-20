@@ -18124,28 +18124,6 @@ SCTX
     
 
 SCPT
-SCHD nc_death_add 1 0 0 110 7
-SCVR doonce;;
-SCDT BgEFGiBY/RAgbw9uY19taXNjX3NrdWxsMTAgPCAxBgEDCSBY8BAgPT0gMdQQD25jX21pc2Nfc2t1bGwxMAEABQFzAQACIDEcEAxuY19kZWF0aF9hZGQJAQcBARwQDG5jX2RlYXRoX2FkZAkBAQE=
-SCTX
-    begin nc_death_add
-    short doonce
-    
-    if ( GetItemCount,  "nc_misc_skull10" < 1 )
-    	if ( OnDeath == 1 )
-    		additem "nc_misc_skull10" 1
-    		set doonce to 1
-    		stopscript nc_death_add
-    	endif
-    else
-    	stopscript nc_death_add
-    endif
-    
-    
-    end
-    
-
-SCPT
 SCHD nc_death_add_altmer 3 5 0 1079 43
 SCVR temp;hi;low;id;tempLong;count;hash;npcfile;;
 SCDT bz8TOAAAEzhsAAI8EzgUAAo4IAALdGVtcEExTmVjcm8LPxM4AQATOGwAAjwTOAEAEzhsAAA8EDwTOAAAEzhsAAA8EzgBABM4bAAAPDQ8ETgAAAAAEzgBABM4bAAAPDE8EzgBABM4bAAAPBA8BQFsBAACIDAFAXMBAAIgMRM4AAATOHMAADwPOAQADDhKARE4AQAAABM4AQATOGwAADwRPBM4AgATOGwAAjwTOAAAEzhzAAI8BgEGCSBzAQAgIT0gMAUBcwIACiBzAQAgMjU2IC8FAXMDABAgcwEAIDI1NiBzAgAgKiAtBQFsBAAhIGwEACAxNjY0NTI1ICogcwMAICsgMTAxMzkwNDIyMyArBgEBCSBzAgAgIT0gMAUBbAQAISBsBAAgMTY2NDUyNSAqIHMCACArIDEwMTM5MDQyMjMgKwkBCQEKOHwABQFzAQACIDAGAQETIGwEACA9PSAtMjE0NzQ4MzY0OAUBbAUAAiAwCAECCCBsBAAgPCAwBQFzAQACIDEFAWwFAAkgLTEgbAQAICoHAQEFAWwFAAUgbAQAAAkBEzgAABM4cwAAPA84BAAMOOIBEzgEABM4bAAAPBM4yAEKONIBCUExTlBDXzAlZAs/EzgEABM4bAACPAo4CgITOAMAEzhsAAA8Ezj0AQo4/gEIQTFOUENfJWQACz8TOAQAEzhsAAI8EzgEABM4bAAAPBA8ETgBAAAAEzgEABM4bAAAPBE8EzgCABM4bAACPBM4AAATOHMAAjwGAQENIHMBACA9PSAyMDU1OAUBbAMAAiAxBwEBBQFsAwACIDAJARM4AgATOGwAADwPOAQADDioAhM4BAATOGwAADwUPBM4BAATOGwAADwUPBM4AAATOGwAAjwROAEAAAATOAAAEzhsAAA8KDzUEBJuY19hbHRtZXJfcGF1bGRyb24BANQQD25jX2FsdG1lcl9za3VsbAEA1BAOQTFfTmVjcm9NYXJrZXIBAAwBBnBsYXllcgYBASAgWP0QIG8UbmNfU291bEdlbV9ibGFja2VuZWQgPT0gMAAQRQDC4Owg7fPm5e0g9+Xw7fvpIOrg7OXt/CDk8/gsIPfy7uH7IOfg6uv+9+jy/CDk8/jzIPDg5/Ps7e7j7iDx8/nl8fLi4C4AAAcBBwwBBnBsYXllctUQFG5jX3NvdWxnZW1fYmxhY2tlbmVkAQAFAWwCAAwgbAQAIDY1NTM2IC8FAUcSQTFWMV9Tb3VsR2VtSGFzaEhpBSBsAgAABQFsBAASIGwEACBsAgAgNjU1MzYgKiAtBQFHE0ExVjFfU291bEdlbUhhc2hMb3cFIGwEAAAMAQZwbGF5ZXLUEBFuY19Tb3VsR2VtX2FsdG1lcgEAABASAML7IOfg9eLg8ujr6CDk8/jzLgAACQEcEBNuY19kZWF0aF9hZGRfYWx0bWVyAQE=
@@ -18160,6 +18138,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -18214,6 +18194,61 @@ SCTX
     Additem "nc_altmer_pauldron" 1
     AddItem "nc_altmer_skull" 1
     AddItem A1_NecroMarker, 1
+    
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
     
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
@@ -18389,6 +18424,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -18444,6 +18481,61 @@ SCTX
     AddItem "nc_argonian_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -18459,7 +18551,6 @@ SCTX
     StopScript nc_death_add_argonian
     
     End
-    
 
 SCPT
 SCHD nc_death_add_argonian_f 3 5 0 1083 43
@@ -18476,6 +18567,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -18531,6 +18624,61 @@ SCTX
     AddItem "nc_argonian_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -18546,7 +18694,6 @@ SCTX
     StopScript nc_death_add_argonian_f
     
     End
-    
 
 SCPT
 SCHD nc_death_add_bosmer 3 5 0 1079 43
@@ -18563,6 +18710,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -18618,6 +18767,61 @@ SCTX
     AddItem "nc_bosmer_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -18633,8 +18837,6 @@ SCTX
     StopScript nc_death_add_bosmer
     
     End
-    
-    
 
 SCPT
 SCHD nc_death_add_bosmer_f 3 6 1 1922 56
@@ -18794,6 +18996,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -18849,6 +19053,61 @@ SCTX
     AddItem "nc_breton_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -18864,7 +19123,6 @@ SCTX
     StopScript nc_death_add_breton
     
     End
-    
 
 SCPT
 SCHD nc_death_add_breton_f 3 5 0 1085 43
@@ -18881,6 +19139,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -18936,6 +19196,61 @@ SCTX
     AddItem "nc_breton_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -18951,7 +19266,6 @@ SCTX
     StopScript nc_death_add_breton_f
     
     End
-    
 
 SCPT
 SCHD nc_death_add_dunmer 3 5 0 1079 43
@@ -18968,6 +19282,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19023,6 +19339,61 @@ SCTX
     AddItem "nc_dunmer_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19054,6 +19425,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19109,6 +19482,61 @@ SCTX
     AddItem "nc_dunmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19140,6 +19568,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19195,6 +19625,61 @@ SCTX
     AddItem "nc_imperial_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19210,7 +19695,6 @@ SCTX
     StopScript nc_death_add_imperial
     
     End
-    
 
 SCPT
 SCHD nc_death_add_imperial_f 3 5 0 1093 43
@@ -19227,6 +19711,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19282,6 +19768,61 @@ SCTX
     AddItem "nc_imperial_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19297,7 +19838,6 @@ SCTX
     StopScript nc_death_add_imperial_f
     
     End
-    
 
 SCPT
 SCHD nc_death_add_khajiit 3 5 0 1083 43
@@ -19314,6 +19854,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19369,6 +19911,61 @@ SCTX
     AddItem "nc_khajiit_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19400,6 +19997,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19455,6 +20054,61 @@ SCTX
     AddItem "nc_khajiit_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19486,6 +20140,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19541,6 +20197,61 @@ SCTX
     AddItem "nc_nord_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19556,7 +20267,6 @@ SCTX
     StopScript nc_death_add_nord
     
     End
-    
 
 SCPT
 SCHD nc_death_add_nord_f 3 5 0 1077 43
@@ -19573,6 +20283,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19628,6 +20340,61 @@ SCTX
     AddItem "nc_nord_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19643,7 +20410,6 @@ SCTX
     StopScript nc_death_add_nord_f
     
     End
-    
 
 SCPT
 SCHD nc_death_add_orc 3 6 1 1904 56
@@ -19803,6 +20569,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19858,6 +20626,61 @@ SCTX
     AddItem "nc_orc_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19873,7 +20696,6 @@ SCTX
     StopScript nc_death_add_orc_f
     
     End
-    
 
 SCPT
 SCHD nc_death_add_redguard 3 5 0 1081 43
@@ -19890,6 +20712,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -19945,6 +20769,61 @@ SCTX
     AddItem "nc_redguard_skull" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -19960,7 +20839,6 @@ SCTX
     StopScript nc_death_add_redguard
     
     End
-    
 
 SCPT
 SCHD nc_death_add_redguard_f 3 5 0 1087 43
@@ -19977,6 +20855,8 @@ SCTX
     short low
     long hash
     long npcfile
+    long skills
+    float tempf
     
     setx id to xGetBaseID
     setx tempLong to xStringBuild "tempA1Necro"
@@ -20032,6 +20912,61 @@ SCTX
     AddItem "nc_redguard_skull_f" 1
     AddItem A1_NecroMarker, 1
     
+    set tempf to GetBlock
+    set skills to tempf
+    set tempf to GetMediumArmor
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills1 to skills
+    set tempf to GetHeavyArmor
+    set skills to tempf
+    set tempf to GetBluntWeapon
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills2 to skills
+    set tempf to GetLongBlade
+    set skills to tempf
+    set tempf to GetAxe
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills3 to skills
+    set tempf to GetSpear
+    set skills to tempf
+    set tempf to GetDestruction
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills4 to skills
+    set tempf to GetAlteration
+    set skills to tempf
+    set tempf to GetIllusion
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills5 to skills
+    set tempf to GetConjuration
+    set skills to tempf
+    set tempf to GetMysticism
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills6 to skills
+    set tempf to GetRestoration
+    set skills to tempf
+    set tempf to GetUnarmored
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills7 to skills
+    set tempf to GetLightArmor
+    set skills to tempf
+    set tempf to GetShortBlade
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills8 to skills
+    set tempf to GetMarksman
+    set skills to tempf
+    set tempf to GetHandToHand
+    set tempLong to tempf
+    set skills to skills * 256 + tempLong
+    set A1V1_NecroSkills9 to skills
+    
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
@@ -20047,7 +20982,6 @@ SCTX
     StopScript nc_death_add_redguard_f
     
     End
-    
 
 SCPT
 SCHD nc_death_trap 12 2 0 2314 88
