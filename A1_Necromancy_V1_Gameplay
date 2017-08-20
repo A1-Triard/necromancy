@@ -7261,10 +7261,6 @@ SCTX
     endif  
     
     if ( GetCurrentAIPackage == 3 )
-      ;if ( GetPCSleep == 1 )
-       ; StartScript 1gr_compLevel
-      ;endif
-    
       if ( GetPCSneaking == 1 )
         ForceSneak
       elseif ( GetPCSneaking == 0 )
@@ -7551,7 +7547,6 @@ SCTX
       AddTopic "- Сопровождение"
       AddTopic "- Инструкции"
       AddTopic "- Перемещение"
-      ;StartScript 1gr_compLevel
       set companion to 1
       set addOnce to 1
     endif
@@ -7674,9 +7669,7 @@ SCTX
     short travel
     
     if ( MenuMode == 1 )
-      ;if ( GetPCSleep == 0 )
         return
-      ;endif
     endif
     
     set emb_hook_nominion to 1
@@ -7739,10 +7732,6 @@ SCTX
     endif  
     
     if ( GetCurrentAIPackage == 3 )
-      ;if ( GetPCSleep == 1 )
-       ; StartScript 1gr_compLevel
-      ;endif
-    
       if ( GetPCSneaking == 1 )
         ForceSneak
       elseif ( GetPCSneaking == 0 )
@@ -8029,7 +8018,6 @@ SCTX
       AddTopic "- Сопровождение"
       AddTopic "- Инструкции"
       AddTopic "- Перемещение"
-      ;StartScript 1gr_compLevel
       set companion to 1
       set addOnce to 1
     endif
@@ -14392,9 +14380,7 @@ SCTX
     short travel
     
     if ( MenuMode == 1 )
-      ;if ( GetPCSleep == 0 )
         return
-      ;endif
     endif
     
     set emb_hook_nominion to 1
@@ -14457,10 +14443,6 @@ SCTX
     endif  
     
     if ( GetCurrentAIPackage == 3 )
-      ;if ( GetPCSleep == 1 )
-       ; StartScript 1gr_compLevel
-      ;endif
-    
       if ( GetPCSneaking == 1 )
         ForceSneak
       elseif ( GetPCSneaking == 0 )
@@ -14749,7 +14731,6 @@ SCTX
       AddTopic "- Сопровождение"
       AddTopic "- Инструкции"
       AddTopic "- Перемещение"
-      ;StartScript 1gr_compLevel
       set companion to 1
       set addOnce to 1
     endif
