@@ -35453,9 +35453,9 @@ SCTX
     end
 
 SCPT
-SCHD nc_time_bounty 4 0 3 2282 57
+SCHD nc_time_bounty 4 0 3 2295 57
 SCVR rand;kill;isDaytime;detectedDate;hour;timer;detectedHour;;
-SCDT BgEHCSBzAgAgPT0gMRwQDm5jX3RpbWVfYm91bnR5BQFHDW5jX2hhc19jb3Jwc2UCIDA/EVkRBQFzBAACIDAFAXMCAAIgMCQBCQEGAQEJIFggECA9PSAxJAEJAQYBAQkgWB8QID09IDEFAXMEAAIgMAkBBQFmAgAKIGYCACBYEhAgKwYBAQkgZgIAIDwgMTQkAQkBBQFmAgACIDAMAQZwbGF5ZXIGAQAeIFj9ECBvEm5jX2FsdG1lcl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19hbHRtZXJfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19hbHRtZXJfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcggBACMgWP0QIG8XbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBABsgWP0QIG8PbmNfYXJnX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX2FyZ19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX2FyZ19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19hcmdfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAHiBY/RAgbxJuY19ib3NtZXJfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBACAgWP0QIG8UbmNfYm9zbWVyX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBACEgWP0QIG8VbmNfYm9zbWVyX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAjIFj9ECBvF25jX2Jvc21lcl9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX2JyZXRvbl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19icmV0b25fcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19icmV0b25fcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcggBACMgWP0QIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB4gWP0QIG8SbmNfZHVubWVyX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAgIFj9ECBvFG5jX2R1bm1lcl9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAhIFj9ECBvFW5jX2R1bm1lcl9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAIyBY/RAgbxduY19kdW5tZXJfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19pbXBlcmlhbF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAIiBY/RAgbxZuY19pbXBlcmlhbF9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAjIFj9ECBvF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAlIFj9ECBvGW5jX2ltcGVyaWFsX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB8gWP0QIG8TbmNfa2hhamlpdF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19raGFqaWl0X3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBACIgWP0QIG8WbmNfa2hhamlpdF9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAJCBY/RAgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBABwgWP0QIG8QbmNfbm9yZF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAHiBY/RAgbxJuY19ub3JkX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBAB8gWP0QIG8TbmNfbm9yZF9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19ub3JkX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBABsgWP0QIG8PbmNfb3JjX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX29yY19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19vcmNfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAGiBY/RAgbw5uY19yZ19wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAHCBY/RAgbxBuY19yZ19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX3JnX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAfIFj9ECBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPj0gMQcBAgUBcwIAAiAxJAEJAQYBAQsgWKAQIDwgMC4wMSQBCQEGAQESIFhOESByBlBsYXllciA9PSAwJAEJAQUBZgEADCBHCEdhbWVIb3VyAAUBcwEAByBYIRALADEFAXMDAAIgMAYBAwkgZgEAID49IDgGAQEJIGYBACA8IDIwBQFzAwACIDEJAQkBBgEDCSBzAwAgPT0gMAYBAQggcwEAID4gMyQBCQEHAQMGAQEIIHMBACA+IDckAQkBCQEGAQEUIHMEACA+IEcKRGF5c1Bhc3NlZAAkAQkBBgEDFSBzBAAgPT0gRwpEYXlzUGFzc2VkAAYBAQsgZgMAID4gZgEAACQBCQEJAQUBcwQAESBHCkRheXNQYXNzZWQgMSArBQFmAwAFIGYBAAAAECIAyvLuLfLuIPPi6OTl6ywg6uDqIOL7IO3l8eXy5SDy5evuLgAAnRAAAPpDAQE=
+SCDT BgEHCSBzAgAgPT0gMRwQDm5jX3RpbWVfYm91bnR5BQFHDW5jX2hhc19jb3Jwc2UCIDA/EVkRBQFzBAACIDAFAXMCAAIgMCQBCQEGAQEJIFggECA9PSAxJAEJAQYBAQkgWB8QID09IDEFAXMEAAIgMAkBBQFmAgAKIGYCACBYEhAgKwYBAQkgZgIAIDwgMTQkAQkBBQFmAgACIDAMAQZwbGF5ZXIGAQAeIFj9ECBvEm5jX2FsdG1lcl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19hbHRtZXJfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19hbHRtZXJfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcggBACMgWP0QIG8XbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBABsgWP0QIG8PbmNfYXJnX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX2FyZ19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX2FyZ19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19hcmdfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAHiBY/RAgbxJuY19ib3NtZXJfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBACAgWP0QIG8UbmNfYm9zbWVyX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBACEgWP0QIG8VbmNfYm9zbWVyX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAjIFj9ECBvF25jX2Jvc21lcl9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX2JyZXRvbl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19icmV0b25fcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19icmV0b25fcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcggBACMgWP0QIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB4gWP0QIG8SbmNfZHVubWVyX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAgIFj9ECBvFG5jX2R1bm1lcl9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAhIFj9ECBvFW5jX2R1bm1lcl9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAIyBY/RAgbxduY19kdW5tZXJfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19pbXBlcmlhbF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAIiBY/RAgbxZuY19pbXBlcmlhbF9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAjIFj9ECBvF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAlIFj9ECBvGW5jX2ltcGVyaWFsX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB8gWP0QIG8TbmNfa2hhamlpdF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19raGFqaWl0X3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBACIgWP0QIG8WbmNfa2hhamlpdF9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAJCBY/RAgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBABwgWP0QIG8QbmNfbm9yZF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAHiBY/RAgbxJuY19ub3JkX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBAB8gWP0QIG8TbmNfbm9yZF9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19ub3JkX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBABsgWP0QIG8PbmNfb3JjX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX29yY19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19vcmNfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAGiBY/RAgbw5uY19yZ19wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAHCBY/RAgbxBuY19yZ19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX3JnX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAfIFj9ECBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPj0gMQcBAgUBcwIAAiAxJAEJAQYBAwkgWAsRID09IDEGAQEJIFigECA9PSAwJAEJAQkBBgEBEiBYThEgcgZQbGF5ZXIgPT0gMCQBCQEFAWYBAAwgRwhHYW1lSG91cgAFAXMBAAcgWCEQCwAxBQFzAwACIDAGAQMJIGYBACA+PSA4BgEBCSBmAQAgPCAyMAUBcwMAAiAxCQEJAQYBAwkgcwMAID09IDAGAQEIIHMBACA+IDMkAQkBBwEDBgEBCCBzAQAgPiA3JAEJAQkBBgEBFCBzBAAgPiBHCkRheXNQYXNzZWQAJAEJAQYBAxUgcwQAID09IEcKRGF5c1Bhc3NlZAAGAQELIGYDACA+IGYBAAAkAQkBCQEFAXMEABEgRwpEYXlzUGFzc2VkIDEgKwUBZgMABSBmAQAAABAiAMry7i3y7iDz4ujk5essIOrg6iDi+yDt5fHl8uUg8uXr7i4AAJ0QAAD6QwEB
 SCTX
     begin nc_time_bounty
     
@@ -35536,9 +35536,11 @@ SCTX
     	return
     endif
     
-    if ( GetWindSpeed < 0.01 )
-    	;interior
-    	return
+    if ( GetInterior == 1 )
+    	if ( GetWindSpeed == 0 )
+    		;interior
+    		return
+    	endif
     endif
     
     if ( GetDetected Player == 0 )
@@ -37012,13 +37014,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_breton
@@ -37029,13 +37031,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_dark elf
@@ -37046,13 +37048,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 2072
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_high elf
@@ -37084,7 +37086,7 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_imperial
@@ -37095,13 +37097,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_khajiit
@@ -37113,13 +37115,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_nord
@@ -37130,13 +37132,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_redguard
@@ -37147,13 +37149,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_orc
@@ -37164,13 +37166,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_wood elf
@@ -37181,13 +37183,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_wood elf_2
@@ -37198,13 +37200,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_wood elf_3
@@ -37215,13 +37217,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_redguard_2
@@ -37232,13 +37234,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_redguard_3
@@ -37249,13 +37251,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_orc_2
@@ -37266,13 +37268,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_orc_3
@@ -37283,13 +37285,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_nord_2
@@ -37300,13 +37302,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_nord_3
@@ -37317,13 +37319,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_khajiit_2
@@ -37335,13 +37337,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_khajiit_3
@@ -37353,13 +37355,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_imperial_2
@@ -37370,13 +37372,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_imperial_3
@@ -37387,13 +37389,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_high elf_2
@@ -37427,7 +37429,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_high elf_3
@@ -37468,7 +37470,7 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_dark elf_2
@@ -37479,13 +37481,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_dark elf_3
@@ -37496,13 +37498,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_breton_2
@@ -37513,13 +37515,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_breton_3
@@ -37530,13 +37532,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_argonian_2
@@ -37548,13 +37550,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_argonian_3
@@ -37566,13 +37568,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 BODY
 NAME nc_dead_farg_head
@@ -38052,7 +38054,7 @@ KNAM
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38066,7 +38068,7 @@ KNAM
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38080,7 +38082,7 @@ KNAM
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38094,7 +38096,7 @@ KNAM
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38108,7 +38110,7 @@ KNAM
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38123,7 +38125,7 @@ KNAM
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38137,7 +38139,7 @@ KNAM
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38151,7 +38153,7 @@ KNAM
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38165,7 +38167,7 @@ KNAM
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38179,7 +38181,7 @@ KNAM
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CONT
@@ -38302,7 +38304,7 @@ NPCS poisonbloom
 NPCS viperbolt
 NPCS dire weakness to poison
 NPCS nc_poison_warlord_spell
-AIDT AAAAAABawHYAAAAA
+AIDT AAAAAABagXUAAAAA
 
 CLOT
 NAME nc_p_mummy_shirt
@@ -39117,13 +39119,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI nc_comp3Script_arg_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_argonian_2_f
@@ -39135,13 +39137,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI nc_comp3Script_arg_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_argonian_3_f
@@ -39153,13 +39155,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI nc_comp3Script_arg_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_breton_f
@@ -39170,13 +39172,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_breton_2_f
@@ -39187,13 +39189,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_breton_3_f
@@ -39204,13 +39206,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_dark elf_f
@@ -39221,13 +39223,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI nc_comp3Script_de_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 2073
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_dark elf_2_f
@@ -39238,13 +39240,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI nc_comp3Script_de_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_dark elf_3_f
@@ -39255,13 +39257,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI nc_comp3Script_de_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 BODY
 NAME nc_argonian_sk_f
@@ -39953,7 +39955,7 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_high elf_2_f
@@ -39987,7 +39989,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_high elf_3_f
@@ -40028,7 +40030,7 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_imperial_f
@@ -40039,13 +40041,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_imperial_2_f
@@ -40056,13 +40058,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_imperial_3_f
@@ -40073,13 +40075,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_khajiit_f
@@ -40091,13 +40093,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_khajiit_2_f
@@ -40109,13 +40111,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_khajiit_3_f
@@ -40127,13 +40129,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_nord_f
@@ -40144,13 +40146,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_nord_2_f
@@ -40161,13 +40163,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_nord_3_f
@@ -40178,13 +40180,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_orc_f
@@ -40195,13 +40197,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_orc_2_f
@@ -40212,13 +40214,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_orc_3_f
@@ -40229,13 +40231,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_redguard_f
@@ -40246,13 +40248,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_redguard_2_f
@@ -40263,13 +40265,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_redguard_3_f
@@ -40280,13 +40282,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_wood elf_f
@@ -40297,13 +40299,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT CgBkAgBawHYAAAAA
+NPDT CgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_wood elf_2_f
@@ -40314,13 +40316,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT FABkAgBawHYAAAAA
+NPDT FABkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 NPC_
 NAME nc_wood elf_3_f
@@ -40331,13 +40333,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT HgBkAgBawHYAAAAA
+NPDT HgBkAgBagXUAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBawHYAAAAA
+AIDT HgAeHgBagXUAAAAA
 
 ARMO
 NAME nc_altmer_pauldron_f
