@@ -14753,33 +14753,23 @@ SCTX
     	endif
     endif
     
-    if ( GetItemCount,  "nc_head_rags" < 1 )
-    	if ( doOnce4 == 0 )
+    if ( doOnce4 == 0 )
+    	if ( GetItemCount,  "nc_head_rags" < 1 )
     		sethealth 0
     		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_p_mummy_pants" < 1 )
-    	if ( doOnce4 == 0 )
+    	elseif ( GetItemCount,  "nc_p_mummy_pants" < 1 )
     		sethealth 0
     		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "nc_p_mummy_shirt" < 1 )
-    	if ( doOnce4 == 0 )
+    	elseif ( GetItemCount,  "nc_p_mummy_shirt" < 1 )
     		sethealth 0
     		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_bonemeal_01" < 5 )
-    	if ( doOnce4 == 0 )
+    	elseif ( GetItemCount,  "ingred_bonemeal_01" < 5 )
     		sethealth 0
     		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
-    	if ( doOnce4 == 0 )
+    	elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
     		sethealth 0
     		set doOnce4 to 1
-    	endif
-    elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
-    	if ( doOnce4 == 0 )
+    	elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
     		sethealth 0
     		set doOnce4 to 1
     	endif
@@ -14791,7 +14781,7 @@ SCTX
     		AddItem "nc_poison_cured", 1
     		set nc_p_warlord_glob to 0
     		player->modcurrenthealth -20
-    		MessageBox "Чары распались. Вы чувствуете острую боль, как бдто вам что-то перерезали."
+    		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
     		set doOnce3 to 1
     	endif
     endif
