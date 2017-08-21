@@ -7842,7 +7842,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_frost_cured", 1
+    		AddItem "nc_frost_pauldron", 1
     		set nc_fr_warlord_glob to 0
     		player->modcurrenthealth -20
     		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
@@ -8326,7 +8326,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_fire_cured", 1
+    		AddItem "nc_fire_pauldron", 1
     		set nc_f_warlord_glob to 0
     		player->modcurrenthealth -20
     		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
@@ -14900,7 +14900,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_poison_cured", 1
+    		AddItem "nc_poison_pauldron", 1
     		set nc_p_warlord_glob to 0
     		player->modcurrenthealth -20
     		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
