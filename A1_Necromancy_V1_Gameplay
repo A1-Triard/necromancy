@@ -2566,6 +2566,129 @@ SCTX
     End
 
 SCPT
+SCHD A1V1_SoulGemPlayer_sc 3 11 1 1445 115
+SCVR state;OnPCEquip;temp;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;tempLong;skills;tempf;;
+SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEuCSBzAQAgPT0gMAUBcwEAAiAxDAEGcGxheWVyBQFmAQAFIFg7EAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYQRAABQFsCgAFIGYBAAAFAWwBABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFhEEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYRxAABQFsCgAFIGYBAAAFAWwCABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFhKEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYTRAABQFsCgAFIGYBAAAFAWwDABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFhQEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYWRAABQFsCgAFIGYBAAAFAWwEABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFhcEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYXxAABQFsCgAFIGYBAAAFAWwFABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFhiEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYZRAABQFsCgAFIGYBAAAFAWwGABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFhoEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYbhAABQFsCgAFIGYBAAAFAWwHABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFh6EAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYfRAABQFsCgAFIGYBAAAFAWwIABAgbAsAIDI1NiAqIGwKACArDAEGcGxheWVyBQFmAQAFIFiAEAAFAWwLAAUgZgEAAAwBBnBsYXllcgUBZgEABSBYiRAABQFsCgAFIGYBAAAFAWwJABAgbAsAIDI1NiAqIGwKACArCAEHCSBzAQAgPT0gMgYBARggRxBBMVYxX05lY3JvUml0dWFsID09IDEFAXMBAAIgMAgBAhggRxBBMVYxX05lY3JvUml0dWFsID09IDIFAXMBAAIgMNsQCQEkAQkBBQFzAwACIDAGAQUJIFgYECA9PSAxDAEGcGxheWVyBgEBGiBYIREgbw5BMV9OZWNyb1N1bW1vbiA9PSAxBQFzAwACIDEHAQEXEAkBCQETOAIAEzhzAAA8DzgEAAw4ewUTOOIDCjj2AxJBMV9OZWNyb1BsYXRmb3JtXzEAHTwTOAkAEzhsAAI8EzgJABM4bAAAPA84BAAMOE8FBQFHEUExVjFfTmVjcm9Ta2lsbHMxBSBsAQAABQFHEUExVjFfTmVjcm9Ta2lsbHMyBSBsAgAABQFHEUExVjFfTmVjcm9Ta2lsbHMzBSBsAwAABQFHEUExVjFfTmVjcm9Ta2lsbHM0BSBsBAAABQFHEUExVjFfTmVjcm9Ta2lsbHM1BSBsBQAABQFHEUExVjFfTmVjcm9Ta2lsbHM2BSBsBgAABQFHEUExVjFfTmVjcm9Ta2lsbHM3BSBsBwAABQFHEUExVjFfTmVjcm9Ta2lsbHM4BSBsCAAABQFHEUExVjFfTmVjcm9Ta2lsbHM5BSBsCQAABQFHEEExVjFfTmVjcm9SaXR1YWwCIDAFAXMBAAIgMhM4CQATOGwAADwYPBsQFkExVjFfTmVjcm9SaXR1YWxPcmNfc2MKOHkFABAkAMfg6uvo7eDt6OUg7eUg7O7m5fIg7eDp8ugg7+vg8vTu8OzzLgAAJAEGAQIJIHMCACA9PSAxBQFzAgACIDAAEAcAXlBDTmFtZQABA09LAAkBAQE=
+SCTX
+    Begin A1V1_SoulGemPlayer_sc
+    
+    long skills1
+    long skills2
+    long skills3
+    long skills4
+    long skills5
+    long skills6
+    long skills7
+    long skills8
+    long skills9
+    short state
+    short OnPCEquip
+    long tempLong
+    long skills
+    float tempf
+    short temp
+    
+    if ( GetDisabled == 1 )
+    	SetDelete 1
+    	return
+    endif
+    
+    if ( state == 0 )
+    	set state to 1
+    	set tempf to ( player->GetBlock )
+    	set skills to tempf
+    	set tempf to ( player->GetMediumArmor )
+    	set tempLong to tempf
+    	set skills1 to skills * 256 + tempLong
+    	set tempf to ( player->GetHeavyArmor )
+    	set skills to tempf
+    	set tempf to ( player->GetBluntWeapon )
+    	set tempLong to tempf
+    	set skills2 to skills * 256 + tempLong
+    	set tempf to ( player->GetLongBlade )
+    	set skills to tempf
+    	set tempf to ( player->GetAxe )
+    	set tempLong to tempf
+    	set skills3 to skills * 256 + tempLong
+    	set tempf to ( player->GetSpear )
+    	set skills to tempf
+    	set tempf to ( player->GetDestruction )
+    	set tempLong to tempf
+    	set skills4 to skills * 256 + tempLong
+    	set tempf to ( player->GetAlteration )
+    	set skills to tempf
+    	set tempf to ( player->GetIllusion )
+    	set tempLong to tempf
+    	set skills5 to skills * 256 + tempLong
+    	set tempf to ( player->GetConjuration )
+    	set skills to tempf
+    	set tempf to ( player->GetMysticism )
+    	set tempLong to tempf
+    	set skills6 to skills * 256 + tempLong
+    	set tempf to ( player->GetRestoration )
+    	set skills to tempf
+    	set tempf to ( player->GetUnarmored )
+    	set tempLong to tempf
+    	set skills7 to skills * 256 + tempLong
+    	set tempf to ( player->GetLightArmor )
+    	set skills to tempf
+    	set tempf to ( player->GetShortBlade )
+    	set tempLong to tempf
+    	set skills8 to skills * 256 + tempLong
+    	set tempf to ( player->GetMarksman )
+    	set skills to tempf
+    	set tempf to ( player->GetHandToHand )
+    	set tempLong to tempf
+    	set skills9 to skills * 256 + tempLong
+    elseif ( state == 2 )
+    	if ( A1V1_NecroRitual == 1 )
+    		set state to 0
+    	elseif ( A1V1_NecroRitual == 2 )
+    		set state to 0
+    		Disable
+    	endif
+    	return
+    endif
+    
+    set temp to 0
+    if ( OnActivate == 1 )
+    	if ( player->GetSpellEffects A1_NecroSummon == 1 )
+    		set temp to 1
+    	else
+    		Activate
+    	endif
+    endif
+    
+    ifx ( temp )
+    	setx tempLong to xGetRef "A1_NecroPlatform_1"
+    	ifx ( tempLong )
+    		set A1V1_NecroSkills1 to skills1
+    		set A1V1_NecroSkills2 to skills2
+    		set A1V1_NecroSkills3 to skills3
+    		set A1V1_NecroSkills4 to skills4
+    		set A1V1_NecroSkills5 to skills5
+    		set A1V1_NecroSkills6 to skills6
+    		set A1V1_NecroSkills7 to skills7
+    		set A1V1_NecroSkills8 to skills8
+    		set A1V1_NecroSkills9 to skills9
+    		set A1V1_NecroRitual to 0
+    		set state to 2
+    		xSetRef tempLong
+    		StartScript A1V1_NecroWarRitual
+    	else
+    		MessageBox "Заклинание не может найти платформу."
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 1 )
+    	set OnPCEquip to 0
+    	MessageBox "^PCName" "OK"
+    endif
+    
+    End
+
+SCPT
 SCHD A1V1_SoulGemRg_sc 2 13 0 1552 112
 SCVR state;OnPCEquip;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
 SCDT 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
@@ -35339,27 +35462,50 @@ SCTX
     End
 
 SCPT
-SCHD nc_summon_fire 7 0 0 2737 75
-SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_cloth;race;state;;
-SCDT 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
+SCHD A1V1_NecroWarRitual 3 0 0 2612 18
+SCVR summon;race;skill;;
+SCDT BQFzAQACIDEFAXMCAAIgMAYBARogWP0QIG8PbmNfYWx0bWVyX3NrdWxsID4gMAUBcwIAAiAxCAEBHCBY/RAgbxFuY19hcmdvbmlhbl9za3VsbCA+IDAFAXMCAAIgMggBARogWP0QIG8PbmNfYm9zbWVyX3NrdWxsID4gMAUBcwIAAiAzCAEBGiBY/RAgbw9uY19icmV0b25fc2t1bGwgPiAwBQFzAgACIDQIAQEcIFj9ECBvEW5jX2ltcGVyaWFsX3NrdWxsID4gMAUBcwIAAiA1CAEBGiBY/RAgbw9uY19kdW5tZXJfc2t1bGwgPiAwBQFzAgACIDYIAQEbIFj9ECBvEG5jX2toYWppaXRfc2t1bGwgPiAwBQFzAgACIDcIAQEYIFj9ECBvDW5jX25vcmRfc2t1bGwgPiAwBQFzAgACIDgIAQEXIFj9ECBvDG5jX29yY19za3VsbCA+IDAFAXMCAAIgOQgBARwgWP0QIG8RbmNfcmVkZ3VhcmRfc2t1bGwgPiAwBQFzAgADIDEwCAEBHCBY/RAgbxFuY19hbHRtZXJfc2t1bGxfZiA+IDAFAXMCAAMgMTEIAQEeIFj9ECBvE25jX2FyZ29uaWFuX3NrdWxsX2YgPiAwBQFzAgADIDEyCAEBHCBY/RAgbxFuY19ib3NtZXJfc2t1bGxfZiA+IDAFAXMCAAMgMTMIAQEcIFj9ECBvEW5jX2JyZXRvbl9za3VsbF9mID4gMAUBcwIAAyAxNAgBAR4gWP0QIG8TbmNfaW1wZXJpYWxfc2t1bGxfZiA+IDAFAXMCAAMgMTUIAQEcIFj9ECBvEW5jX2R1bm1lcl9za3VsbF9mID4gMAUBcwIAAyAxNggBAR0gWP0QIG8SbmNfa2hhamlpdF9za3VsbF9mID4gMAUBcwIAAyAxNwgBARogWP0QIG8PbmNfbm9yZF9za3VsbF9mID4gMAUBcwIAAyAxOAgBARkgWP0QIG8ObmNfb3JjX3NrdWxsX2YgPiAwBQFzAgADIDE5CAEBHiBY/RAgbxNuY19yZWRndWFyZF9za3VsbF9mID4gMAUBcwIAAyAyMAcBAgUBcwEAAiAwABAiAMLg7CDt8+bl7SD35fDl7yDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBBgEFCSBzAQAgPT0gMQUBcwMAEiBHDm5jX25lY3JvX3NraWxsAAYBAgkgcwMAIDwgMjkFAXMBAAIgMAAQPgDC+yDt5eTu8fLg8u737e4g7u/78u37LCD38u7h+yDi++fi4PL8IOzz7Oj06Pbo8O7i4O3t7uPuIPHr8+PzLgAACQEJAQYBBAkgcwEAID09IDEGAQIZIEcRbmNfZl93YXJsb3JkX2dsb2IgPj0gMQUBcwEAAiAwABA3AML7IOzu5uXy5SDq7u3y8O7r6PDu4uDy/CDy7uv86u4g7uTt7uPuIO7j7eXt7e7j7iDx6/Pj8y4AAAkBCQEGAQQJIHMBACA9PSAxBgECICBY/RAgbxVpbmdyZWRfc2NyYXBfbWV0YWxfMDEgPCAyBQFzAQACIDAAEDcAwuDsIO3z5u37IOTi5SD34PHy6CDu4fDl5+ru4iDs5fLg6+vgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBBAkgcwEAID09IDEGAQIiIFj9ECBvF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxIDwgMgUBcwEAAiAwABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHiBY/RAgbxJpbmdyZWRfYm9uZW1lYWxfMDEgPCAxMAUBcwEAAiAwABA6AMLg7CDt8+bt7iDo7OXy/CAxMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMBACA9PSAxBgECHCBY/RAgbxFtaXNjX2Nsb3RoYm9sdF8wMiA8IDIFAXMBAAIgMAAQNQDC4Owg7fPm7fsg5OLgIPDz6+7t4CDq8ODx7e7pIPLq4O3oIOTr/yD98u7j7iDw6PLz4OvgLgAACQEJAQYBAQkgcwEAID09IDAFAUcQQTFWMV9OZWNyb1JpdHVhbAIgMQcBMwUBRxBBMVYxX05lY3JvUml0dWFsAiAyBgEBCSBzAgAgPT0gMdUQD25jX2FsdG1lcl9za3VsbAEACAEBCSBzAgAgPT0gMtUQEW5jX2FyZ29uaWFuX3NrdWxsAQAIAQEJIHMCACA9PSAz1RAPbmNfYm9zbWVyX3NrdWxsAQAIAQEJIHMCACA9PSA01RAPbmNfYnJldG9uX3NrdWxsAQAIAQEJIHMCACA9PSA11RARbmNfaW1wZXJpYWxfc2t1bGwBAAgBAQkgcwIAID09IDbVEA9uY19kdW5tZXJfc2t1bGwBAAgBAQkgcwIAID09IDfVEBBuY19raGFqaWl0X3NrdWxsAQAIAQEJIHMCACA9PSA41RANbmNfbm9yZF9za3VsbAEACAEBCSBzAgAgPT0gOdUQDG5jX29yY19za3VsbAEACAEBCiBzAgAgPT0gMTDVEBFuY19yZWRndWFyZF9za3VsbAEACAEBCiBzAgAgPT0gMTHVEBFuY19hbHRtZXJfc2t1bGxfZgEACAEBCiBzAgAgPT0gMTLVEBNuY19hcmdvbmlhbl9za3VsbF9mAQAIAQEKIHMCACA9PSAxM9UQEW5jX2Jvc21lcl9za3VsbF9mAQAIAQEKIHMCACA9PSAxNNUQEW5jX2JyZXRvbl9za3VsbF9mAQAIAQEKIHMCACA9PSAxNdUQE25jX2ltcGVyaWFsX3NrdWxsX2YBAAgBAQogcwIAID09IDE21RARbmNfZHVubWVyX3NrdWxsX2YBAAgBAQogcwIAID09IDE31RASbmNfa2hhamlpdF9za3VsbF9mAQAIAQEKIHMCACA9PSAxONUQD25jX25vcmRfc2t1bGxfZgEACAEBCiBzAgAgPT0gMTnVEA5uY19vcmNfc2t1bGxfZgEACAEBCiBzAgAgPT0gMjDVEBNuY19yZWRndWFyZF9za3VsbF9mAQAJAdUQFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQIA1RAXaW5ncmVkX25ldGNoX2xlYXRoZXJfMDECANUQEmluZ3JlZF9ib25lbWVhbF8wMQoA1RARbWlzY19jbG90aGJvbHRfMDICANUQDW5jX2ZpcmVfY3VyZWQBALoRDG5jX2Zfd2FybG9yZAEAAAAAAAAAAhALVGh1bmRlckNsYXAFAUcObmNfbmVjcm9fc2tpbGwVIEcObmNfbmVjcm9fc2tpbGwgMSArABAtAMLg+OUg6PHq8/Hx8uLuIM3l6vDu7ODt8ujoIPPi5evo9+jr7vH8IOTuICVnLgFHDm5jX25lY3JvX3NraWxsAAkBAQE=
 SCTX
-    begin nc_summon_fire
+    begin A1V1_NecroWarRitual
     
-    short nc_pclevel
-    short nc_scrap_metal
-    short nc_netch_leather
-    short nc_bonemeal
-    short nc_cloth
+    short summon
     short race
-    short state
+    short skill
     
-    set nc_pclevel to nc_necro_skill
-    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
-    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
-    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
-    set nc_cloth to getItemCount "misc_clothbolt_02"
+    set summon to 0
+    set skill to nc_necro_skill
+    if ( skill < 29 )
+    	MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
+    elseif ( GetItemCount "nc_frost_cure" == 1 )
+    	set summon to 1
+    elseif ( GetItemCount "nc_fire_cure" == 1 )
+    	set summon to 2
+    elseif ( GetItemCount "nc_poison_cure" == 1 )
+    	set summon to 3
+    else
+    	MessageBox "Вам нужна мумия для этого ритуала."
+    endif
+    
+    if ( summon == 1 )
+    	if ( nc_fr_warlord_glob >= 1 )
+    		set summon to 0
+    		MessageBox "Вы можете контролировать только одного ледяного слугу."
+    	endif
+    elseif ( summon == 2 )
+    	if ( nc_f_warlord_glob >= 1 )
+    		set summon to 0
+    		MessageBox "Вы можете контролировать только одного огненного слугу."
+    	endif
+    elseif ( summon == 3 )
+    	if ( nc_p_warlord_glob >= 1 )
+    		set summon to 0
+    		MessageBox "Вы можете контролировать только одного ядовитого слугу."
+    	endif
+    endif
+    
     set race to 0
-    if ( getItemCount "nc_altmer_skull" > 0 )
+    if ( summon == 0 )
+    elseif ( getItemCount "nc_altmer_skull" > 0 )
     	set race to 1
     elseif ( getItemCount "nc_argonian_skull" > 0 )
     	set race to 2
@@ -35399,449 +35545,110 @@ SCTX
     	set race to 19
     elseif ( getItemCount "nc_redguard_skull_f" > 0 )
     	set race to 20
+    else
+    	set summon to 0
+    	MessageBox "Вам нужен череп для этого ритуала."
     endif
     
-    if ( nc_pclevel >= 29 )
-    	set state to 1
-    elseif ( nc_pclevel < 29 )
-    	MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
-    	set state to 10
+    if ( summon != 0 )
+    	if ( GetItemCount ingred_scrap_metal_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    	endif
     endif
-    
-    if ( nc_f_warlord_glob >= 1 )
-    	MessageBox "Вы можете контролировать только одного огненного слугу."
-    	set state to 10
+    if ( summon != 0 )
+    	if ( GetItemCount ingred_netch_leather_01 < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    	endif
     endif
-    
-    if ( state == 1 )
-    	if ( nc_cloth >= 2 )
-    		if ( nc_scrap_metal >= 2 )
-    			if ( nc_netch_leather >= 2 )
-    				if ( nc_bonemeal >= 10 )
-    					if ( race == 0 )
-    	            			MessageBox "Вам нужен череп для этого ритуала."
-    						set state to 10
-    					else
-    						if ( race == 1 )
-    		            			removeitem "nc_altmer_skull" 1
-    						elseif ( race == 2 )
-    	          	  			removeitem "nc_argonian_skull" 1
-    						elseif ( race == 3 )
-    	            				removeitem "nc_bosmer_skull" 1
-    						elseif ( race == 4 )
-    		            			removeitem "nc_breton_skull" 1
-    						elseif ( race == 5 )
-    	          	  			removeitem "nc_imperial_skull" 1
-    						elseif ( race == 6 )
-    	            				removeitem "nc_dunmer_skull" 1
-    						elseif ( race == 7 )
-    		            			removeitem "nc_khajiit_skull" 1
-    						elseif ( race == 8 )
-    	          	  			removeitem "nc_nord_skull" 1
-    						elseif ( race == 9 )
-    	            				removeitem "nc_orc_skull" 1
-    						elseif ( race == 10 )
-    		            			removeitem "nc_redguard_skull" 1
-    						elseif ( race == 11 )
-    		            			removeitem "nc_altmer_skull_f" 1
-    						elseif ( race == 12 )
-    	          	  			removeitem "nc_argonian_skull_f" 1
-    						elseif ( race == 13 )
-    	            				removeitem "nc_bosmer_skull_f" 1
-    						elseif ( race == 14 )
-    		            			removeitem "nc_breton_skull_f" 1
-    						elseif ( race == 15 )
-    	          	  			removeitem "nc_imperial_skull_f" 1
-    						elseif ( race == 16 )
-    	            				removeitem "nc_dunmer_skull_f" 1
-    						elseif ( race == 17 )
-    		            			removeitem "nc_khajiit_skull_f" 1
-    						elseif ( race == 18 )
-    	          	  			removeitem "nc_nord_skull_f" 1
-    						elseif ( race == 19 )
-    	            				removeitem "nc_orc_skull_f" 1
-    						elseif ( race == 20 )
-    		            			removeitem "nc_redguard_skull_f" 1
-    						endif
-    						removeitem "ingred_scrap_metal_01" 2
-              	  			removeitem "ingred_netch_leather_01" 2
-                				removeitem "ingred_bonemeal_01" 10
-                				removeitem "misc_clothbolt_02" 2
-                				removeitem "nc_fire_cured" 1
-                				set state to 2
-    					endif
-    				else
-    					MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
-    					set state to 10
-    				endif
-    			else
-    				MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    				set state to 10
-    			endif
-    		else
-    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    			set state to 10
-    		endif
-    	else
+    if ( summon != 0 )
+    	if ( GetItemCount ingred_bonemeal_01 < 10 )
+    		set summon to 0
+    		MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+    	endif
+    endif
+    if ( summon == 1 )
+    	if ( GetItemCount "misc_clothbolt_01" < 2 )
+    		set summon to 0
+    		MessageBox "Вам нужны два рулона синей ткани для этого ритуала."
+    	endif
+    elseif ( summon == 2 )
+    	if ( GetItemCount "misc_clothbolt_02" < 2 )
+    		set summon to 0
     		MessageBox "Вам нужны два рулона красной ткани для этого ритуала."
-    		set state to 10
     	endif
-    endif
-    
-    if ( state == 2 )
-    		PlaySound, "ThunderClap"
-    		"nc_rev_placer"->PlaceAtMe "nc_f_warlord" 1, 0, 0
-    		set nc_necro_skill to ( nc_necro_skill + 1 )
-    		set nc_f_warlord_glob to 1
-    		StartScript A1_NecroOnWar
-    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    	set state to 10
-    endif
-    
-    if ( state == 10 )
-    	enableplayercontrols
-    	enableplayerlooking
-    	set state to 0
-    	stopscript nc_summon_fire
-    endif
-    
-    
-    end
-
-SCPT
-SCHD nc_summon_frost 7 0 0 2741 75
-SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_cloth;race;state;;
-SCDT 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
-SCTX
-    begin nc_summon_frost
-    
-    short nc_pclevel
-    short nc_scrap_metal
-    short nc_netch_leather
-    short nc_bonemeal
-    short nc_cloth
-    short race
-    short state
-    
-    set nc_pclevel to nc_necro_skill
-    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
-    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
-    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
-    set nc_cloth to getItemCount "misc_clothbolt_01"
-    set race to 0
-    if ( getItemCount "nc_altmer_skull" > 0 )
-    	set race to 1
-    elseif ( getItemCount "nc_argonian_skull" > 0 )
-    	set race to 2
-    elseif ( getItemCount "nc_bosmer_skull" > 0 )
-    	set race to 3
-    elseif ( getItemCount "nc_breton_skull" > 0 )
-    	set race to 4
-    elseif ( getItemCount "nc_imperial_skull" > 0 )
-    	set race to 5
-    elseif ( getItemCount "nc_dunmer_skull" > 0 )
-    	set race to 6
-    elseif ( getItemCount "nc_khajiit_skull" > 0 )
-    	set race to 7
-    elseif ( getItemCount "nc_nord_skull" > 0 )
-    	set race to 8
-    elseif ( getItemCount "nc_orc_skull" > 0 )
-    	set race to 9
-    elseif ( getItemCount "nc_redguard_skull" > 0 )
-    	set race to 10
-    elseif ( getItemCount "nc_altmer_skull_f" > 0 )
-    	set race to 11
-    elseif ( getItemCount "nc_argonian_skull_f" > 0 )
-    	set race to 12
-    elseif ( getItemCount "nc_bosmer_skull_f" > 0 )
-    	set race to 13
-    elseif ( getItemCount "nc_breton_skull_f" > 0 )
-    	set race to 14
-    elseif ( getItemCount "nc_imperial_skull_f" > 0 )
-    	set race to 15
-    elseif ( getItemCount "nc_dunmer_skull_f" > 0 )
-    	set race to 16
-    elseif ( getItemCount "nc_khajiit_skull_f" > 0 )
-    	set race to 17
-    elseif ( getItemCount "nc_nord_skull_f" > 0 )
-    	set race to 18
-    elseif ( getItemCount "nc_orc_skull_f" > 0 )
-    	set race to 19
-    elseif ( getItemCount "nc_redguard_skull_f" > 0 )
-    	set race to 20
-    endif
-    
-    if ( nc_pclevel >= 29 )
-    	set state to 1
-    elseif ( nc_pclevel < 29 )
-    	MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
-    	set state to 10
-    endif
-    
-    if ( nc_fr_warlord_glob >= 1 )
-    	MessageBox "Вы можете контролировать только одного ледяного слугу."
-    	set state to 10
-    endif
-    
-    if ( state == 1 )
-    	if ( nc_cloth >= 2 )
-    		if ( nc_scrap_metal >= 2 )
-    			if ( nc_netch_leather >= 2 )
-    				if ( nc_bonemeal >= 10 )
-    					if ( race == 0 )
-    	            			MessageBox "Вам нужен череп для этого ритуала."
-    						set state to 10
-    					else
-    						if ( race == 1 )
-    		            			removeitem "nc_altmer_skull" 1
-    						elseif ( race == 2 )
-    	          	  			removeitem "nc_argonian_skull" 1
-    						elseif ( race == 3 )
-    	            				removeitem "nc_bosmer_skull" 1
-    						elseif ( race == 4 )
-    		            			removeitem "nc_breton_skull" 1
-    						elseif ( race == 5 )
-    	          	  			removeitem "nc_imperial_skull" 1
-    						elseif ( race == 6 )
-    	            				removeitem "nc_dunmer_skull" 1
-    						elseif ( race == 7 )
-    		            			removeitem "nc_khajiit_skull" 1
-    						elseif ( race == 8 )
-    	          	  			removeitem "nc_nord_skull" 1
-    						elseif ( race == 9 )
-    	            				removeitem "nc_orc_skull" 1
-    						elseif ( race == 10 )
-    		            			removeitem "nc_redguard_skull" 1
-    						elseif ( race == 11 )
-    		            			removeitem "nc_altmer_skull_f" 1
-    						elseif ( race == 12 )
-    	          	  			removeitem "nc_argonian_skull_f" 1
-    						elseif ( race == 13 )
-    	            				removeitem "nc_bosmer_skull_f" 1
-    						elseif ( race == 14 )
-    		            			removeitem "nc_breton_skull_f" 1
-    						elseif ( race == 15 )
-    	          	  			removeitem "nc_imperial_skull_f" 1
-    						elseif ( race == 16 )
-    	            				removeitem "nc_dunmer_skull_f" 1
-    						elseif ( race == 17 )
-    		            			removeitem "nc_khajiit_skull_f" 1
-    						elseif ( race == 18 )
-    	          	  			removeitem "nc_nord_skull_f" 1
-    						elseif ( race == 19 )
-    	            				removeitem "nc_orc_skull_f" 1
-    						elseif ( race == 20 )
-    		            			removeitem "nc_redguard_skull_f" 1
-    						endif
-    						removeitem "ingred_scrap_metal_01" 2
-              	  			removeitem "ingred_netch_leather_01" 2
-                				removeitem "ingred_bonemeal_01" 10
-                				removeitem "misc_clothbolt_01" 2
-                				removeitem "nc_frost_cured" 1
-                				set state to 2
-    					endif
-    				else
-    					MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
-    					set state to 10
-    				endif
-    			else
-    				MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    				set state to 10
-    			endif
-    		else
-    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    			set state to 10
-    		endif
-    	else
-    		MessageBox "Вам нужны два рулона голубой ткани для этого ритуала."
-    		set state to 10
-    	endif
-    endif
-    
-    if ( state == 2 )
-    		PlaySound, "ThunderClap"
-    		"nc_rev_placer"->PlaceAtMe "nc_fr_warlord" 1, 0, 0
-    		set nc_fr_warlord_glob to 1
-    		StartScript A1_NecroOnWar
-    		set nc_necro_skill to ( nc_necro_skill + 1 )
-    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    	set state to 10
-    endif
-    
-    if ( state == 10 )
-    	enableplayercontrols
-    	enableplayerlooking
-    	set state to 0
-    	stopscript nc_summon_frost
-    endif
-    
-    end
-
-SCPT
-SCHD nc_summon_poison 7 0 0 2741 75
-SCVR nc_pclevel;nc_scrap_metal;nc_netch_leather;nc_bonemeal;nc_cloth;race;state;;
-SCDT BQFzAQASIEcObmNfbmVjcm9fc2tpbGwABQFzAgAdIFj9ECBvFWluZ3JlZF9zY3JhcF9tZXRhbF8wMQAFAXMDAB8gWP0QIG8XaW5ncmVkX25ldGNoX2xlYXRoZXJfMDEABQFzBAAaIFj9ECBvEmluZ3JlZF9ib25lbWVhbF8wMQAFAXMFABkgWP0QIG8RbWlzY19jbG90aGJvbHRfMDMABQFzBgACIDAGAQEaIFj9ECBvD25jX2FsdG1lcl9za3VsbCA+IDAFAXMGAAIgMQgBARwgWP0QIG8RbmNfYXJnb25pYW5fc2t1bGwgPiAwBQFzBgACIDIIAQEaIFj9ECBvD25jX2Jvc21lcl9za3VsbCA+IDAFAXMGAAIgMwgBARogWP0QIG8PbmNfYnJldG9uX3NrdWxsID4gMAUBcwYAAiA0CAEBHCBY/RAgbxFuY19pbXBlcmlhbF9za3VsbCA+IDAFAXMGAAIgNQgBARogWP0QIG8PbmNfZHVubWVyX3NrdWxsID4gMAUBcwYAAiA2CAEBGyBY/RAgbxBuY19raGFqaWl0X3NrdWxsID4gMAUBcwYAAiA3CAEBGCBY/RAgbw1uY19ub3JkX3NrdWxsID4gMAUBcwYAAiA4CAEBFyBY/RAgbwxuY19vcmNfc2t1bGwgPiAwBQFzBgACIDkIAQEcIFj9ECBvEW5jX3JlZGd1YXJkX3NrdWxsID4gMAUBcwYAAyAxMAgBARwgWP0QIG8RbmNfYWx0bWVyX3NrdWxsX2YgPiAwBQFzBgADIDExCAEBHiBY/RAgbxNuY19hcmdvbmlhbl9za3VsbF9mID4gMAUBcwYAAyAxMggBARwgWP0QIG8RbmNfYm9zbWVyX3NrdWxsX2YgPiAwBQFzBgADIDEzCAEBHCBY/RAgbxFuY19icmV0b25fc2t1bGxfZiA+IDAFAXMGAAMgMTQIAQEeIFj9ECBvE25jX2ltcGVyaWFsX3NrdWxsX2YgPiAwBQFzBgADIDE1CAEBHCBY/RAgbxFuY19kdW5tZXJfc2t1bGxfZiA+IDAFAXMGAAMgMTYIAQEdIFj9ECBvEm5jX2toYWppaXRfc2t1bGxfZiA+IDAFAXMGAAMgMTcIAQEaIFj9ECBvD25jX25vcmRfc2t1bGxfZiA+IDAFAXMGAAMgMTgIAQEZIFj9ECBvDm5jX29yY19za3VsbF9mID4gMAUBcwYAAyAxOQgBAR4gWP0QIG8TbmNfcmVkZ3VhcmRfc2t1bGxfZiA+IDAFAXMGAAMgMjAJAQYBAQogcwEAID49IDI5BQFzBwACIDEIAQIJIHMBACA8IDI5ABA+AML7IO3l5O7x8uDy7vft7iDu7/vy7fssIPfy7uH7IOL75+Lg8vwg7PPs6PTo9ujw7uLg7e3u4+4g8evz4/MuAAAFAXMHAAMgMTAJAQYBAhkgRxFuY19wX3dhcmxvcmRfZ2xvYiA+PSAxABA3AML7IOzu5uXy5SDq7u3y8O7r6PDu4uDy/CDy7uv86u4g7uTt7uPuIP/k7uLo8u7j7iDx6/Pj8y4AAAUBcwcAAyAxMAkBBgFICSBzBwAgPT0gMQYBQwkgcwUAID49IDIGAT4JIHMCACA+PSAyBgE5CSBzAwAgPj0gMgYBNAogcwQAID49IDEwBgECCSBzBgAgPT0gMAAQIgDC4Owg7fPm5e0g9+Xw5e8g5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMHAAMgMTAHAS8GAQEJIHMGACA9PSAx1RAPbmNfYWx0bWVyX3NrdWxsAQAIAQEJIHMGACA9PSAy1RARbmNfYXJnb25pYW5fc2t1bGwBAAgBAQkgcwYAID09IDPVEA9uY19ib3NtZXJfc2t1bGwBAAgBAQkgcwYAID09IDTVEA9uY19icmV0b25fc2t1bGwBAAgBAQkgcwYAID09IDXVEBFuY19pbXBlcmlhbF9za3VsbAEACAEBCSBzBgAgPT0gNtUQD25jX2R1bm1lcl9za3VsbAEACAEBCSBzBgAgPT0gN9UQEG5jX2toYWppaXRfc2t1bGwBAAgBAQkgcwYAID09IDjVEA1uY19ub3JkX3NrdWxsAQAIAQEJIHMGACA9PSA51RAMbmNfb3JjX3NrdWxsAQAIAQEKIHMGACA9PSAxMNUQEW5jX3JlZGd1YXJkX3NrdWxsAQAIAQEKIHMGACA9PSAxMdUQEW5jX2FsdG1lcl9za3VsbF9mAQAIAQEKIHMGACA9PSAxMtUQE25jX2FyZ29uaWFuX3NrdWxsX2YBAAgBAQogcwYAID09IDEz1RARbmNfYm9zbWVyX3NrdWxsX2YBAAgBAQogcwYAID09IDE01RARbmNfYnJldG9uX3NrdWxsX2YBAAgBAQogcwYAID09IDE11RATbmNfaW1wZXJpYWxfc2t1bGxfZgEACAEBCiBzBgAgPT0gMTbVEBFuY19kdW5tZXJfc2t1bGxfZgEACAEBCiBzBgAgPT0gMTfVEBJuY19raGFqaWl0X3NrdWxsX2YBAAgBAQogcwYAID09IDE41RAPbmNfbm9yZF9za3VsbF9mAQAIAQEKIHMGACA9PSAxOdUQDm5jX29yY19za3VsbF9mAQAIAQEKIHMGACA9PSAyMNUQE25jX3JlZGd1YXJkX3NrdWxsX2YBAAkB1RAVaW5ncmVkX3NjcmFwX21ldGFsXzAxAgDVEBdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMQIA1RASaW5ncmVkX2JvbmVtZWFsXzAxCgDVEBFtaXNjX2Nsb3RoYm9sdF8wMwIA1RAPbmNfcG9pc29uX2N1cmVkAQAFAXMHAAIgMgkBBwECABA6AMLg7CDt8+bt7iDo7OXy/CAxMCDv7vD26Okg6u7x8v/t7ukg7PPq6CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwcAAyAxMAkBBwECABAxAMLg7CDt8+bt+yDk4uAg6vPx6uAg6u7m6CDt5fL34CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwcAAyAxMAkBBwECABA3AMLg7CDt8+bt+yDk4uUg9+Dx8ugg7uHw5efq7uIg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAUBcwcAAyAxMAkBBwECABA1AMLg7CDt8+bt+yDk4uAg8PPr7u3gIOfl6+Xt7ukg8urg7egg5Ov/IP3y7uPuIPDo8vPg6+AuAAAFAXMHAAMgMTAJAQkBBgEJCSBzBwAgPT0gMgIQC1RodW5kZXJDbGFwDAENbmNfcmV2X3BsYWNlcroRDG5jX3Bfd2FybG9yZAEAAAAAAAAABQFHEW5jX3Bfd2FybG9yZF9nbG9iAiAxBgEBGiBYzRAgZAxuY19uZWNyb18wMDEgPD0gMTAwzBAMbmNfbmVjcm9fMDAxaQD//wkBBQFHDm5jX25lY3JvX3NraWxsFSBHDm5jX25lY3JvX3NraWxsIDEgKwAQLQDC4PjlIOjx6vPx8fLi7iDN5erw7uzg7fLo6CDz4uXr6Pfo6+7x/CDk7iAlZy4BRw5uY19uZWNyb19za2lsbAAFAXMHAAMgMTAJAQYBBAogcwcAID09IDEw3RBCEQUBcwcAAiAwHBAQbmNfc3VtbW9uX3BvaXNvbgkBAQE=
-SCTX
-    begin nc_summon_poison
-    
-    short nc_pclevel
-    short nc_scrap_metal
-    short nc_netch_leather
-    short nc_bonemeal
-    short nc_cloth
-    short race
-    short state
-    
-    set nc_pclevel to nc_necro_skill
-    set nc_scrap_metal to getItemCount "ingred_scrap_metal_01"
-    set nc_netch_leather to getItemCount "ingred_netch_leather_01"
-    set nc_bonemeal to getItemCount "ingred_bonemeal_01"
-    set nc_cloth to getItemCount "misc_clothbolt_03"
-    set race to 0
-    if ( getItemCount "nc_altmer_skull" > 0 )
-    	set race to 1
-    elseif ( getItemCount "nc_argonian_skull" > 0 )
-    	set race to 2
-    elseif ( getItemCount "nc_bosmer_skull" > 0 )
-    	set race to 3
-    elseif ( getItemCount "nc_breton_skull" > 0 )
-    	set race to 4
-    elseif ( getItemCount "nc_imperial_skull" > 0 )
-    	set race to 5
-    elseif ( getItemCount "nc_dunmer_skull" > 0 )
-    	set race to 6
-    elseif ( getItemCount "nc_khajiit_skull" > 0 )
-    	set race to 7
-    elseif ( getItemCount "nc_nord_skull" > 0 )
-    	set race to 8
-    elseif ( getItemCount "nc_orc_skull" > 0 )
-    	set race to 9
-    elseif ( getItemCount "nc_redguard_skull" > 0 )
-    	set race to 10
-    elseif ( getItemCount "nc_altmer_skull_f" > 0 )
-    	set race to 11
-    elseif ( getItemCount "nc_argonian_skull_f" > 0 )
-    	set race to 12
-    elseif ( getItemCount "nc_bosmer_skull_f" > 0 )
-    	set race to 13
-    elseif ( getItemCount "nc_breton_skull_f" > 0 )
-    	set race to 14
-    elseif ( getItemCount "nc_imperial_skull_f" > 0 )
-    	set race to 15
-    elseif ( getItemCount "nc_dunmer_skull_f" > 0 )
-    	set race to 16
-    elseif ( getItemCount "nc_khajiit_skull_f" > 0 )
-    	set race to 17
-    elseif ( getItemCount "nc_nord_skull_f" > 0 )
-    	set race to 18
-    elseif ( getItemCount "nc_orc_skull_f" > 0 )
-    	set race to 19
-    elseif ( getItemCount "nc_redguard_skull_f" > 0 )
-    	set race to 20
-    endif
-    
-    if ( nc_pclevel >= 29 )
-    	set state to 1
-    elseif ( nc_pclevel < 29 )
-    	MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
-    	set state to 10
-    endif
-    
-    if ( nc_p_warlord_glob >= 1 )
-    	MessageBox "Вы можете контролировать только одного ядовитого слугу."
-    	set state to 10
-    endif
-    
-    if ( state == 1 )
-    	if ( nc_cloth >= 2 )
-    		if ( nc_scrap_metal >= 2 )
-    			if ( nc_netch_leather >= 2 )
-    				if ( nc_bonemeal >= 10 )
-    					if ( race == 0 )
-    	            			MessageBox "Вам нужен череп для этого ритуала."
-    						set state to 10
-    					else
-    						if ( race == 1 )
-    		            			removeitem "nc_altmer_skull" 1
-    						elseif ( race == 2 )
-    	          	  			removeitem "nc_argonian_skull" 1
-    						elseif ( race == 3 )
-    	            				removeitem "nc_bosmer_skull" 1
-    						elseif ( race == 4 )
-    		            			removeitem "nc_breton_skull" 1
-    						elseif ( race == 5 )
-    	          	  			removeitem "nc_imperial_skull" 1
-    						elseif ( race == 6 )
-    	            				removeitem "nc_dunmer_skull" 1
-    						elseif ( race == 7 )
-    		            			removeitem "nc_khajiit_skull" 1
-    						elseif ( race == 8 )
-    	          	  			removeitem "nc_nord_skull" 1
-    						elseif ( race == 9 )
-    	            				removeitem "nc_orc_skull" 1
-    						elseif ( race == 10 )
-    		            			removeitem "nc_redguard_skull" 1
-    						elseif ( race == 11 )
-    		            			removeitem "nc_altmer_skull_f" 1
-    						elseif ( race == 12 )
-    	          	  			removeitem "nc_argonian_skull_f" 1
-    						elseif ( race == 13 )
-    	            				removeitem "nc_bosmer_skull_f" 1
-    						elseif ( race == 14 )
-    		            			removeitem "nc_breton_skull_f" 1
-    						elseif ( race == 15 )
-    	          	  			removeitem "nc_imperial_skull_f" 1
-    						elseif ( race == 16 )
-    	            				removeitem "nc_dunmer_skull_f" 1
-    						elseif ( race == 17 )
-    		            			removeitem "nc_khajiit_skull_f" 1
-    						elseif ( race == 18 )
-    	          	  			removeitem "nc_nord_skull_f" 1
-    						elseif ( race == 19 )
-    	            				removeitem "nc_orc_skull_f" 1
-    						elseif ( race == 20 )
-    		            			removeitem "nc_redguard_skull_f" 1
-    						endif
-    						removeitem "ingred_scrap_metal_01" 2
-              	  			removeitem "ingred_netch_leather_01" 2
-                				removeitem "ingred_bonemeal_01" 10
-                				removeitem "misc_clothbolt_03" 2
-                				removeitem "nc_poison_cured" 1
-                				set state to 2
-    					endif
-    				else
-    					MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
-    					set state to 10
-    				endif
-    			else
-    				MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
-    				set state to 10
-    			endif
-    		else
-    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
-    			set state to 10
-    		endif
-    	else
+    elseif ( summon == 3 )
+    	if ( GetItemCount "misc_clothbolt_03" < 2 )
+    		set summon to 0
     		MessageBox "Вам нужны два рулона зеленой ткани для этого ритуала."
-    		set state to 10
     	endif
     endif
     
-    if ( state == 2 )
-    		PlaySound, "ThunderClap"
-    		"nc_rev_placer"->PlaceAtMe "nc_p_warlord" 1, 0, 0
-    		set nc_p_warlord_glob to 1
-    		StartScript A1_NecroOnWar
-    		set nc_necro_skill to ( nc_necro_skill + 1 )
-    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
-    	set state to 10
-    endif
-    
-    if ( state == 10 )
-    	enableplayercontrols
-    	enableplayerlooking
-    	set state to 0
-    	stopscript nc_summon_poison
+    if ( summon == 0 )
+    	set A1V1_NecroRitual to 1
+    else
+    	set A1V1_NecroRitual to 2
+    	if ( race == 1 )
+    		removeitem "nc_altmer_skull" 1
+    	elseif ( race == 2 )
+    		removeitem "nc_argonian_skull" 1
+    	elseif ( race == 3 )
+    		removeitem "nc_bosmer_skull" 1
+    	elseif ( race == 4 )
+    		removeitem "nc_breton_skull" 1
+    	elseif ( race == 5 )
+    		removeitem "nc_imperial_skull" 1
+    	elseif ( race == 6 )
+    		removeitem "nc_dunmer_skull" 1
+    	elseif ( race == 7 )
+    		removeitem "nc_khajiit_skull" 1
+    	elseif ( race == 8 )
+    		removeitem "nc_nord_skull" 1
+    	elseif ( race == 9 )
+    		removeitem "nc_orc_skull" 1
+    	elseif ( race == 10 )
+    		removeitem "nc_redguard_skull" 1
+    	elseif ( race == 11 )
+    		removeitem "nc_altmer_skull_f" 1
+    	elseif ( race == 12 )
+    		removeitem "nc_argonian_skull_f" 1
+    	elseif ( race == 13 )
+    		removeitem "nc_bosmer_skull_f" 1
+    	elseif ( race == 14 )
+    		removeitem "nc_breton_skull_f" 1
+    	elseif ( race == 15 )
+    		removeitem "nc_imperial_skull_f" 1
+    	elseif ( race == 16 )
+    		removeitem "nc_dunmer_skull_f" 1
+    	elseif ( race == 17 )
+    		removeitem "nc_khajiit_skull_f" 1
+    	elseif ( race == 18 )
+    		removeitem "nc_nord_skull_f" 1
+    	elseif ( race == 19 )
+    		removeitem "nc_orc_skull_f" 1
+    	else
+    		removeitem "nc_redguard_skull_f" 1
+    	endif
+    	removeitem "ingred_scrap_metal_01" 2
+    	removeitem "ingred_netch_leather_01" 2
+    	removeitem "ingred_bonemeal_01" 10
+    	if ( summon == 1 )
+    		removeitem "misc_clothbolt_01" 2
+    		removeitem "nc_frost_cured" 1
+    		PlaceAtMe "nc_fr_warlord" 1, 0, 0
+    	elseif ( summon == 2 )
+    		removeitem "misc_clothbolt_02" 2
+    		removeitem "nc_fire_cured" 1
+    		PlaceAtMe "nc_f_warlord" 1, 0, 0
+    	else
+    		removeitem "misc_clothbolt_03" 2
+    		removeitem "nc_poison_cured" 1
+    		PlaceAtMe "nc_p_warlord" 1, 0, 0
+    	endif
+    	PlaySound, "ThunderClap"
+    	set nc_necro_skill to ( nc_necro_skill + 1 )
+    	MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
     endif
     
     end
@@ -37405,13 +37212,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_breton
@@ -37422,13 +37229,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_dark elf
@@ -37439,13 +37246,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 2072
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_high elf
@@ -37477,7 +37284,7 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_imperial
@@ -37488,13 +37295,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_khajiit
@@ -37506,13 +37313,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_nord
@@ -37523,13 +37330,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_redguard
@@ -37540,13 +37347,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_orc
@@ -37557,13 +37364,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_wood elf
@@ -37574,13 +37381,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_wood elf_2
@@ -37591,13 +37398,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_wood elf_3
@@ -37608,13 +37415,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI nc_comp3Script_we
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_redguard_2
@@ -37625,13 +37432,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_redguard_3
@@ -37642,13 +37449,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_orc_2
@@ -37659,13 +37466,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_orc_3
@@ -37676,13 +37483,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI nc_comp3Script_orc
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_nord_2
@@ -37693,13 +37500,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_nord_3
@@ -37710,13 +37517,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_khajiit_2
@@ -37728,13 +37535,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_khajiit_3
@@ -37746,13 +37553,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI nc_comp3Script_kha
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_imperial_2
@@ -37763,13 +37570,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_imperial_3
@@ -37780,13 +37587,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_high elf_2
@@ -37820,7 +37627,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_high elf_3
@@ -37861,7 +37668,7 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_dark elf_2
@@ -37872,13 +37679,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_dark elf_3
@@ -37889,13 +37696,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI nc_comp3Script_de
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_breton_2
@@ -37906,13 +37713,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_breton_3
@@ -37923,13 +37730,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_argonian_2
@@ -37941,13 +37748,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_argonian_3
@@ -37959,13 +37766,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI nc_comp3Script_arg
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1048
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 BODY
 NAME nc_dead_farg_head
@@ -38445,7 +38252,7 @@ KNAM
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38459,7 +38266,7 @@ KNAM
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38473,7 +38280,7 @@ KNAM
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38487,7 +38294,7 @@ KNAM
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38501,7 +38308,7 @@ KNAM
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38516,7 +38323,7 @@ KNAM
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38530,7 +38337,7 @@ KNAM
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38544,7 +38351,7 @@ KNAM
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38558,7 +38365,7 @@ KNAM
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_
@@ -38572,7 +38379,7 @@ KNAM
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CONT
@@ -38695,7 +38502,7 @@ NPCS poisonbloom
 NPCS viperbolt
 NPCS dire weakness to poison
 NPCS nc_poison_warlord_spell
-AIDT AAAAAABa1HYAAAAA
+AIDT AAAAAABa5nYAAAAA
 
 CLOT
 NAME nc_p_mummy_shirt
@@ -39510,13 +39317,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI nc_comp3Script_arg_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_argonian_2_f
@@ -39528,13 +39335,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI nc_comp3Script_arg_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_argonian_3_f
@@ -39546,13 +39353,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI nc_comp3Script_arg_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_breton_f
@@ -39563,13 +39370,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_breton_2_f
@@ -39580,13 +39387,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_breton_3_f
@@ -39597,13 +39404,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI nc_comp3Script_bret_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_dark elf_f
@@ -39614,13 +39421,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI nc_comp3Script_de_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 2073
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_dark elf_2_f
@@ -39631,13 +39438,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI nc_comp3Script_de_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_dark elf_3_f
@@ -39648,13 +39455,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI nc_comp3Script_de_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 BODY
 NAME nc_argonian_sk_f
@@ -40346,7 +40153,7 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_high elf_2_f
@@ -40380,7 +40187,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_high elf_3_f
@@ -40421,7 +40228,7 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_imperial_f
@@ -40432,13 +40239,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_imperial_2_f
@@ -40449,13 +40256,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_imperial_3_f
@@ -40466,13 +40273,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI nc_comp3Script_imp_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_khajiit_f
@@ -40484,13 +40291,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_khajiit_2_f
@@ -40502,13 +40309,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_khajiit_3_f
@@ -40520,13 +40327,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI nc_comp3Script_kha_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_nord_f
@@ -40537,13 +40344,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_nord_2_f
@@ -40554,13 +40361,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_nord_3_f
@@ -40571,13 +40378,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI nc_comp3Script_nord_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_orc_f
@@ -40588,13 +40395,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_orc_2_f
@@ -40605,13 +40412,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_orc_3_f
@@ -40622,13 +40429,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI nc_comp3Script_orc_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_redguard_f
@@ -40639,13 +40446,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_redguard_2_f
@@ -40656,13 +40463,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_redguard_3_f
@@ -40673,13 +40480,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI nc_comp3Script_rg_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_wood elf_f
@@ -40690,13 +40497,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT CgBkAgBa1HYAAAAA
+NPDT CgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_wood elf_2_f
@@ -40707,13 +40514,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT FABkAgBa1HYAAAAA
+NPDT FABkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 NPC_
 NAME nc_wood elf_3_f
@@ -40724,13 +40531,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI nc_comp3Script_we_f
-NPDT HgBkAgBa1HYAAAAA
+NPDT HgBkAgBa5nYAAAAA
 FLAG 1049
 NPCO 15 ingred_bonemeal_01
 NPCO 1 ingred_netch_leather_01
 NPCO 1 ingred_scrap_metal_01
 NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa1HYAAAAA
+AIDT HgAeHgBa5nYAAAAA
 
 ARMO
 NAME nc_altmer_pauldron_f
@@ -41335,6 +41142,14 @@ MODL i\\in_velothi_platform_01.nif
 FNAM Платформа
 CNDT AAAWQw==
 FLAG 8
+
+MISC
+NAME nc_SoulGem_player
+MODL blas\\nc_blackened_soulgem.nif
+FNAM Черный Камень Душ - Некромант
+MCDT AADAPygKAAAAAAAA
+SCRI A1V1_SoulGemPlayer_sc
+ITEX blas\\br_black_gem_icon.dds
 
 DIAL
 NAME - Сопровождение
@@ -42384,5 +42199,3 @@ PNAM 1982250161184623126
 NNAM 299702217312473358
 DATA AQAAAAAAAAD///8A
 ONAM nc_we_skelly_NPC
-
-# 947
