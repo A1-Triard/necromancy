@@ -11,11 +11,6 @@ Tribunal.esm 6616539
 Bloodmoon.esm 11799703
 
 GLOB
-NAME nc_isnecro
-FNAM s%
-FLTV 0.0
-
-GLOB
 NAME nc_follow
 FNAM s%
 FLTV 0.0
@@ -27,31 +22,6 @@ FLTV 86.0
 
 GLOB
 NAME nc_necro_skill
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME nc_pwarlord
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME nc_fwarlord
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME nc_frwarlord
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME nc_rags_spell
-FNAM s%
-FLTV 0.0
-
-GLOB
-NAME nc_warlord_spell
 FNAM s%
 FLTV 0.0
 
@@ -477,21 +447,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_high elf" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroHE" 1, 0, 0
     		else
-    			PlaceAtMe "nc_high elf_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroHE_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_high elf_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroHE2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_high elf_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroHE2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_high elf_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroHE3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_high elf_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroHE3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -574,21 +544,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_argonian" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroArgo" 1, 0, 0
     		else
-    			PlaceAtMe "nc_argonian_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroArgo_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_argonian_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroArgo2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_argonian_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroArgo2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_argonian_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroArgo3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_argonian_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroArgo3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -671,21 +641,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_wood elf" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroWE" 1, 0, 0
     		else
-    			PlaceAtMe "nc_wood elf_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroWE_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_wood elf_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroWE2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_wood elf_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroWE2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_wood elf_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroWE3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_wood elf_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroWE3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -768,21 +738,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_breton" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroBreton" 1, 0, 0
     		else
-    			PlaceAtMe "nc_breton_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroBreton_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_breton_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroBreton2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_breton_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroBreton_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_breton_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroBreton3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_breton_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroBreton3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -865,21 +835,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_dark elf" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroDE" 1, 0, 0
     		else
-    			PlaceAtMe "nc_dark elf_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroDE_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_dark elf_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroDE2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_dark elf_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroDE2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_dark elf_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroDE3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_dark elf_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroDE3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -962,21 +932,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_imperial" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroImp" 1, 0, 0
     		else
-    			PlaceAtMe "nc_imperial_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroImp_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_imperial_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroImp2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_imperial_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroImp2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_imperial_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroImp3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_imperial_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroImp3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -1059,21 +1029,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_khajiit" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroKha" 1, 0, 0
     		else
-    			PlaceAtMe "nc_khajiit_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroKha_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_khajiit_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroKha2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_khajiit_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroKha2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_khajiit_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroKha3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_khajiit_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroKha3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -1156,21 +1126,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_nord" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroNord" 1, 0, 0
     		else
-    			PlaceAtMe "nc_nord_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroNord_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_nord_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroNord2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_nord_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroNord2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_nord_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroNord3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_nord_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroNord3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -1253,21 +1223,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_orc" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroOrc" 1, 0, 0
     		else
-    			PlaceAtMe "nc_orc_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroOrc_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_orc_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroOrc2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_orc_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroOrc2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_orc_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroOrc3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_orc_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroOrc3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -1350,21 +1320,21 @@ SCTX
     	set summon to nc_necro_skill
     	if ( summon <= 10 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_redguard" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroRg" 1, 0, 0
     		else
-    			PlaceAtMe "nc_redguard_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroRg_f" 1, 0, 0
     		endif
     	elseif ( summon <= 20 )
     		if ( gender == 0 )
-    			PlaceAtMe "nc_redguard_2" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroRg2" 1, 0, 0
     		else
-    			PlaceAtMe "nc_redguard_2_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroRg2_f" 1, 0, 0
     		endif
     	else
     		if ( gender == 0 )
-    			PlaceAtMe "nc_redguard_3" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroRg3" 1, 0, 0
     		else
-    			PlaceAtMe "nc_redguard_3_f" 1, 0, 0
+    			PlaceAtMe "A1V1_NecroRg3_f" 1, 0, 0
     		endif
     	endif
     	PlaySound, "ThunderClap"
@@ -1441,10 +1411,7 @@ SCTX
     endif
     
     if ( player->getspelleffects nc_painful_touch == 1 )
-    	set nc_warlord_spell to 1
     	startscript nc_warlord_attack
-    else
-    	set nc_warlord_spell to 0
     endif
     
     End
@@ -22417,11 +22384,6 @@ SCTX
     endif
     set counter to 0
     
-    ; Player no necromancer, nothing to do
-    if ( nc_isnecro != 1 )
-    	return
-    endif
-    
     ; Get status for customizeable key (default 'b')
     set lkey to nc_keycode  ; Cannot use globals with setx
     setx ltemp to xKeyPressed lkey
@@ -22495,11 +22457,6 @@ SCTX
     	return
     endif
     set counter to 0
-    
-    ; Player no necromancer, nothing to do
-    if ( nc_isnecro != 1 )
-    	return
-    endif
     
     ; Get status for customizeable key (default 'b')
     set lkey to nc_keycode  ; Cannot use globals with setx
@@ -22575,11 +22532,6 @@ SCTX
     	return
     endif
     set counter to 0
-    
-    ; Player no necromancer, nothing to do
-    if ( nc_isnecro != 1 )
-    	return
-    endif
     
     ; Get status for customizeable key (default 'b')
     set lkey to nc_keycode  ; Cannot use globals with setx
@@ -37203,7 +37155,7 @@ FNAM Wood Elf Revenant
 BYDT DAAAAA==
 
 NPC_
-NAME nc_argonian
+NAME A1V1_NecroArgo
 MODL base_animKnA.nif
 FNAM Малый мертвец-аргонианин
 RNAM Argonian Revenant
@@ -37221,7 +37173,7 @@ NPCO 1 nc_argonian_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_breton
+NAME A1V1_NecroBreton
 FNAM Малый мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -37238,7 +37190,7 @@ NPCO 1 nc_breton_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_dark elf
+NAME A1V1_NecroDE
 FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37255,7 +37207,7 @@ NPCO 1 nc_dunmer_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_high elf
+NAME A1V1_NecroHE
 FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37287,7 +37239,7 @@ NPCS touch dispel
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_imperial
+NAME A1V1_NecroImp
 FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -37304,7 +37256,7 @@ NPCO 1 nc_imperial_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_khajiit
+NAME A1V1_NecroKha
 MODL base_animKnA.nif
 FNAM Малый мертвец-хаджит
 RNAM Khajiit Revenant
@@ -37322,7 +37274,7 @@ NPCO 1 nc_khajiit_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_nord
+NAME A1V1_NecroNord
 FNAM Малый мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -37339,7 +37291,7 @@ NPCO 1 nc_nord_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_redguard
+NAME A1V1_NecroRg
 FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -37356,7 +37308,7 @@ NPCO 1 nc_redguard_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_orc
+NAME A1V1_NecroOrc
 FNAM Малый мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -37373,7 +37325,7 @@ NPCO 1 nc_orc_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_wood elf
+NAME A1V1_NecroWE
 FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37390,7 +37342,7 @@ NPCO 1 nc_bosmer_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_wood elf_2
+NAME A1V1_NecroWE2
 FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37407,7 +37359,7 @@ NPCO 1 nc_bosmer_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_wood elf_3
+NAME A1V1_NecroWE3
 FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37424,7 +37376,7 @@ NPCO 1 nc_bosmer_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_redguard_2
+NAME A1V1_NecroRg2
 FNAM Мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -37441,7 +37393,7 @@ NPCO 1 nc_redguard_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_redguard_3
+NAME A1V1_NecroRg3
 FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -37458,7 +37410,7 @@ NPCO 1 nc_redguard_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_orc_2
+NAME A1V1_NecroOrc2
 FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -37475,7 +37427,7 @@ NPCO 1 nc_orc_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_orc_3
+NAME A1V1_NecroOrc3
 FNAM Большой мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -37492,7 +37444,7 @@ NPCO 1 nc_orc_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_nord_2
+NAME A1V1_NecroNord2
 FNAM Мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -37509,7 +37461,7 @@ NPCO 1 nc_nord_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_nord_3
+NAME A1V1_NecroNord3
 FNAM Большой мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -37526,7 +37478,7 @@ NPCO 1 nc_nord_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_khajiit_2
+NAME A1V1_NecroKha2
 MODL base_animKnA.nif
 FNAM Мертвец-хаджит
 RNAM Khajiit Revenant
@@ -37544,7 +37496,7 @@ NPCO 1 nc_khajiit_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_khajiit_3
+NAME A1V1_NecroKha3
 MODL base_animKnA.nif
 FNAM Большой мертвец-хаджит
 RNAM Khajiit Revenant
@@ -37562,7 +37514,7 @@ NPCO 1 nc_khajiit_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_imperial_2
+NAME A1V1_NecroImp2
 FNAM Мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -37579,7 +37531,7 @@ NPCO 1 nc_imperial_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_imperial_3
+NAME A1V1_NecroImp3
 FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -37596,7 +37548,7 @@ NPCO 1 nc_imperial_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_high elf_2
+NAME A1V1_NecroHE2
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37630,7 +37582,7 @@ NPCS poison_powerful
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_high elf_3
+NAME A1V1_NecroHE3
 FNAM Большой мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37671,7 +37623,7 @@ NPCS vivec's_wrath
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_dark elf_2
+NAME A1V1_NecroDE2
 FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37688,7 +37640,7 @@ NPCO 1 nc_dunmer_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_dark elf_3
+NAME A1V1_NecroDE3
 FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -37705,7 +37657,7 @@ NPCO 1 nc_dunmer_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_breton_2
+NAME A1V1_NecroBreton2
 FNAM Мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -37722,7 +37674,7 @@ NPCO 1 nc_breton_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_breton_3
+NAME A1V1_NecroBreton3
 FNAM Большой мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -37739,7 +37691,7 @@ NPCO 1 nc_breton_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_argonian_2
+NAME A1V1_NecroArgo2
 MODL base_animKnA.nif
 FNAM Мертвец-аргонианин
 RNAM Argonian Revenant
@@ -37757,7 +37709,7 @@ NPCO 1 nc_argonian_skull
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_argonian_3
+NAME A1V1_NecroArgo3
 MODL base_animKnA.nif
 FNAM Большой мертвец-аргонианин
 RNAM Argonian Revenant
@@ -39308,7 +39260,7 @@ FNAM nc_fire_warlord
 BYDT AwAAAA==
 
 NPC_
-NAME nc_argonian_f
+NAME A1V1_NecroArgo_f
 MODL base_animKnA.nif
 FNAM Малый мертвец-аргонианин
 RNAM Argonian Revenant
@@ -39326,7 +39278,7 @@ NPCO 1 nc_argonian_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_argonian_2_f
+NAME A1V1_NecroArgo2_f
 MODL base_animKnA.nif
 FNAM Мертвец-аргонианин
 RNAM Argonian Revenant
@@ -39344,7 +39296,7 @@ NPCO 1 nc_argonian_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_argonian_3_f
+NAME A1V1_NecroArgo3_f
 MODL base_animKnA.nif
 FNAM Большой мертвец-аргонианин
 RNAM Argonian Revenant
@@ -39362,7 +39314,7 @@ NPCO 1 nc_argonian_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_breton_f
+NAME A1V1_NecroBreton_f
 FNAM Малый мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -39379,7 +39331,7 @@ NPCO 1 nc_breton_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_breton_2_f
+NAME A1V1_NecroBreton2_f
 FNAM Мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -39396,7 +39348,7 @@ NPCO 1 nc_breton_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_breton_3_f
+NAME A1V1_NecroBreton3_f
 FNAM Большой мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -39413,7 +39365,7 @@ NPCO 1 nc_breton_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_dark elf_f
+NAME A1V1_NecroDE_f
 FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -39430,7 +39382,7 @@ NPCO 1 nc_dunmer_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_dark elf_2_f
+NAME A1V1_NecroDE2_f
 FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -39447,7 +39399,7 @@ NPCO 1 nc_dunmer_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_dark elf_3_f
+NAME A1V1_NecroDE3_f
 FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -40124,7 +40076,7 @@ FNAM Wood Elf Revenant
 BYDT DAABAA==
 
 NPC_
-NAME nc_high elf_f
+NAME A1V1_NecroHE_f
 FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -40156,7 +40108,7 @@ NPCS touch dispel
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_high elf_2_f
+NAME A1V1_NecroHE2_f
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -40190,7 +40142,7 @@ NPCS poison_powerful
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_high elf_3_f
+NAME A1V1_NecroHE3_f
 FNAM Большой мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -40231,7 +40183,7 @@ NPCS vivec's_wrath
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_imperial_f
+NAME A1V1_NecroImp_f
 FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -40248,7 +40200,7 @@ NPCO 1 nc_imperial_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_imperial_2_f
+NAME A1V1_NecroImp2_f
 FNAM Мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -40265,7 +40217,7 @@ NPCO 1 nc_imperial_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_imperial_3_f
+NAME A1V1_NecroImp3_f
 FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -40282,7 +40234,7 @@ NPCO 1 nc_imperial_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_khajiit_f
+NAME A1V1_NecroKha_f
 MODL base_animKnA.nif
 FNAM Малый мертвец-хаджит
 RNAM Khajiit Revenant
@@ -40300,7 +40252,7 @@ NPCO 1 nc_khajiit_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_khajiit_2_f
+NAME A1V1_NecroKha2_f
 MODL base_animKnA.nif
 FNAM Мертвец-хаджит
 RNAM Khajiit Revenant
@@ -40318,7 +40270,7 @@ NPCO 1 nc_khajiit_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_khajiit_3_f
+NAME A1V1_NecroKha3_f
 MODL base_animKnA.nif
 FNAM Большой мертвец-хаджит
 RNAM Khajiit Revenant
@@ -40336,7 +40288,7 @@ NPCO 1 nc_khajiit_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_nord_f
+NAME A1V1_NecroNord_f
 FNAM Малый мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -40353,7 +40305,7 @@ NPCO 1 nc_nord_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_nord_2_f
+NAME A1V1_NecroNord2_f
 FNAM Мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -40370,7 +40322,7 @@ NPCO 1 nc_nord_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_nord_3_f
+NAME A1V1_NecroNord3_f
 FNAM Большой мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -40387,7 +40339,7 @@ NPCO 1 nc_nord_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_orc_f
+NAME A1V1_NecroOrc_f
 FNAM Малый мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -40404,7 +40356,7 @@ NPCO 1 nc_orc_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_orc_2_f
+NAME A1V1_NecroOrc2_f
 FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -40421,7 +40373,7 @@ NPCO 1 nc_orc_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_orc_3_f
+NAME A1V1_NecroOrc3_f
 FNAM Большой мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -40438,7 +40390,7 @@ NPCO 1 nc_orc_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_redguard_f
+NAME A1V1_NecroRg_f
 FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -40455,7 +40407,7 @@ NPCO 1 nc_redguard_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_redguard_2_f
+NAME A1V1_NecroRg2_f
 FNAM Мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -40472,7 +40424,7 @@ NPCO 1 nc_redguard_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_redguard_3_f
+NAME A1V1_NecroRg3_f
 FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -40489,7 +40441,7 @@ NPCO 1 nc_redguard_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_wood elf_f
+NAME A1V1_NecroWE_f
 FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -40506,7 +40458,7 @@ NPCO 1 nc_bosmer_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_wood elf_2_f
+NAME A1V1_NecroWE2_f
 FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -40523,7 +40475,7 @@ NPCO 1 nc_bosmer_skull_f
 AIDT HgAeHgBaa3UAAAAA
 
 NPC_
-NAME nc_wood elf_3_f
+NAME A1V1_NecroWE3_f
 FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant

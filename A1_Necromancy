@@ -7617,7 +7617,6 @@ SCVR 15IX3nc_dunmer_pauldron_sk%
 INTV 1
 BNAM
     Journal, nc_necro_001, 70
-    set nc_isnecro to 1
     Goodbye
 
 INFO
@@ -7816,7 +7815,6 @@ INTV 20
 BNAM
     player-> addspell "summon ancestral ghost"
     MessageBox "Вы выучили заклинание Вызов духа предков"
-    set nc_isnecro to 1
     Journal, nc_necro_001, 30
 
 INFO
@@ -7883,7 +7881,6 @@ INTV 1
 BNAM
     player->addspell "summon ancestral ghost"
     MessageBox "Вы выучили заклинание Вызов духа предков"
-    set nc_isnecro to 1
     Journal, nc_necro_001, 30
     Goodbye
 
@@ -7901,7 +7898,6 @@ INTV 30
 BNAM
     player->addspell "summon ancestral ghost"
     MessageBox "Вы выучили заклинание Вызов духа предков"
-    set nc_isnecro to 1
     Journal, nc_necro_001, 30
     Goodbye
 
