@@ -7156,7 +7156,7 @@ PGRC AQAAAAAAAAACAAAAAQAAAAQAAAAKAAAACwAAAAMAAAAFAAAACwAAAAQAAAAGAAAABQAAAAcAAAA
 
 DIAL
 NAME nc_necro_001
-DATA BA==
+DATA Journal
 
 INFO
 INAM 224389207971127409
@@ -7260,7 +7260,7 @@ QSTF AQ==
 
 DIAL
 NAME я привел тебя сюда
-DATA AA==
+DATA Topic
 
 INFO
 INAM 2514712984117407636
@@ -7346,7 +7346,7 @@ BNAM
 
 DIAL
 NAME черный камень душ
-DATA AA==
+DATA Topic
 
 INFO
 INAM 313128629321724650
@@ -7366,7 +7366,7 @@ NAME Это единственный камень душ, который мож�
 
 DIAL
 NAME новое знание
-DATA AA==
+DATA Topic
 
 INFO
 INAM 21685861570097884
@@ -7903,7 +7903,7 @@ BNAM
 
 DIAL
 NAME Greeting 5
-DATA Ag==
+DATA Greeting
 
 INFO
 INAM 267468080326965853
@@ -7935,7 +7935,7 @@ BNAM
 
 DIAL
 NAME Сулипунд
-DATA AA==
+DATA Topic
 
 INFO
 INAM 3845179161180515818
