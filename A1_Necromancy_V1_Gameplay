@@ -9,6 +9,7 @@ DESCRIPTION
 Morrowind.esm 79764287
 Tribunal.esm 6616539
 Bloodmoon.esm 11799703
+Trib_BM_patch_1C.esm 23382
 
 GLOB
 NAME nc_follow
@@ -375,6 +376,48 @@ SCTX
     StopScript A1_NecroWearHair_sc
     
     End
+
+SCPT
+SCHD A1V1_NecroAsk 1 0 1 202 12
+SCVR state;timer;;
+SCDT BgEECSBYIBAgPT0gMQYBAQkgcwEAID09IDIFAXMBAAIgMwkBJAEJAQYBBAkgcwEAID09IDMFAXMBAAIgMNsQMREAAAA/JAEJAQYBBwkgcwEAID09IDEFAWYBAAogZgEAIFgSECArBgEDCyBmAQAgPj0gMC42BQFzAQACIDLmEBJBMV9OZWNyb0RpYWxvZ1N0dWIBAAAAgD8BAOgQCQEkAQkBBQFzAQACIDEFAWYBAAIgMDARAAAAPxwQDUExVjFfTmVjcm9Bc2sBAQ==
+SCTX
+    begin A1V1_NecroAsk
+    
+    short state
+    float timer
+    
+    if ( MenuMode == 1 )
+    	if ( state == 2 )
+    		set state to 3
+    	endif
+    	return
+    endif
+    
+    if ( state == 3 )
+    	set state to 0
+    	A1_NecroDialogStub->Disable
+    	FadeIn "0.5"
+    	return
+    endif
+    
+    if ( state == 1 )
+    	set timer to ( timer + GetSecondsPassed )
+    	if ( timer >= 0.6 )
+    		set state to 2
+    		PlaceAtPC A1_NecroDialogStub, 1, 1, 1
+    		A1_NecroDialogStub->ForceGreeting
+    	endif
+    	return
+    endif
+    
+    set state to 1
+    set timer to 0
+    FadeOut 0.5
+    
+    StopScript A1V1_NecroAsk
+    
+    end
 
 SCPT
 SCHD A1V1_NecroMirror_sc 0 0 0 208 0
@@ -41871,7 +41914,7 @@ BNAM
 INFO
 INAM 1807912635150545
 PNAM 1078328092113035996
-NNAM 2189736242842531815
+NNAM 2797832654174441339
 DATA AAAAAAAAAAD///8A
 FNAM Revenant
 NAME Таков ваш приказ.%
@@ -41881,15 +41924,27 @@ BNAM
     set compMove to 0
 
 INFO
-INAM 2189736242842531815
+INAM 2797832654174441339
 PNAM 1807912635150545
-NNAM 22956285022862912356
+NNAM 2189736242842531815
 DATA AAAAAAAAAAD///8A
 NAME Хорошо.%
 SCVR 01500%
 INTV 11
 BNAM
     StartScript A1_NecroWearHair_sc
+    Goodbye
+
+INFO
+INAM 2189736242842531815
+PNAM 2797832654174441339
+NNAM 22956285022862912356
+DATA AAAAAAAAAAD///8A
+NAME Я повинуюсь.%
+SCVR 01500%
+INTV 12
+BNAM
+    StartScript A1V1_NecroAsk
     Goodbye
 
 INFO
@@ -41912,7 +41967,7 @@ DATA AAAAAAAAAAD///8A
 FNAM Revenant
 NAME Чего вы хотите от меня?%
 BNAM
-    choice "Отойди с дороги. (авто-передвиж вкл)" 1 "Стой рядом. (авто-передвиж выкл)" 2 "Давай, иди. (однократное движение)" 3 "Прими лечебное зелье." 4 "Восстанови свое здовровье." 5 "Излечи себя." 6 "Скажи, какой у тебя уровень." 8 "Расскажи о своих умениях." 9 "Расскажи о своих характеристиках." 10 "Надень скальп." 11 "Ничего." 7
+    choice "Отойди с дороги. (авто-передвиж вкл)" 1 "Стой рядом. (авто-передвиж выкл)" 2 "Давай, иди. (однократное движение)" 3 "Прими лечебное зелье." 4 "Восстанови свое здовровье." 5 "Излечи себя." 6 "Скажи, какой у тебя уровень." 8 "Расскажи о своих умениях." 9 "Расскажи о своих характеристиках." 10 "Надень скальп." 11 "Ответь" 12 "Ничего." 7
 
 DIAL
 NAME Greeting 5
@@ -41952,7 +42007,7 @@ PNAM 265842279881228537
 NNAM 1450442414429500
 DATA AgAAAAAAAAD///8A
 ONAM gindrala hleran
-NAME Извините меня за беспокойство. Дело в том, что у меня в доме появился очень @странный человек#, и он не хочет уходить. Может быть, вы сможете его выгнать?%
+NAME Извините меня за беспокойство. Дело в том, что у меня в доме появился очень странный человек, и он не хочет уходить. Может быть, вы сможете его выгнать?%
 SCVR 04JX3A2_2_6thHouse%
 INTV 50
 SCVR 16DX0dreamer_02%
