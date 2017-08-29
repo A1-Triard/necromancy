@@ -1657,6 +1657,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -1680,14 +1682,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -1700,8 +1694,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_he_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_he_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_altmer_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп высокого эльфа для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_altmer_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп высокой эльфийки для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_altmer_skull, 1
+    		else
+    			player->RemoveItem nc_altmer_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -1715,12 +1759,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualAltmer_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroHE" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroHE_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroHE2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroHE2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroHE3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroHE3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -34775,7 +34837,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34788,12 +34850,10 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_arg_pauldron_sk" 1
     endif
-    
-    stopscript nc_skelly_arg
     
     end
 
@@ -34806,7 +34866,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34819,15 +34879,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_arg_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_arg_f
-    
     end
-    
 
 SCPT
 SCHD nc_skelly_bret 1 0 0 132 8
@@ -34838,7 +34895,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34851,13 +34908,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_breton_pauldron_sk" 1
     endif
     
-    
-    stopscript nc_skelly_bret
     end
 
 SCPT
@@ -34869,7 +34924,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34882,15 +34937,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_breton_pauldron_sk_f" 1
     endif
     
-    
-    stopscript nc_skelly_bret_f
     end
-    
 
 SCPT
 SCHD nc_skelly_de 1 0 0 130 8
@@ -34901,7 +34953,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34914,12 +34966,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_dunmer_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_de
     end
 
 SCPT
@@ -34931,7 +34982,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34944,14 +34995,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_dunmer_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_de_f
     end
-    
 
 SCPT
 SCHD nc_skelly_he 1 0 0 130 8
@@ -34962,7 +35011,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -34975,12 +35024,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_altmer_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_he
     end
 
 SCPT
@@ -34992,7 +35040,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35005,14 +35053,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_altmer_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_he_f
     end
-    
 
 SCPT
 SCHD nc_skelly_imp 1 0 0 133 8
@@ -35023,7 +35069,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35035,12 +35081,11 @@ SCTX
     	setdelete 1
     	return
     endif
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_imperial_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_imp
     end
 
 SCPT
@@ -35052,7 +35097,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35064,14 +35109,12 @@ SCTX
     	setdelete 1
     	return
     endif
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_imperial_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_imp_f
     end
-    
 
 SCPT
 SCHD nc_skelly_khajiit 1 0 0 136 8
@@ -35082,7 +35125,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35095,12 +35138,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_khajiit_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_khajiit
     end
 
 SCPT
@@ -35112,7 +35154,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35125,14 +35167,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_khajiit_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_khajiit_f
     end
-    
 
 SCPT
 SCHD nc_skelly_nord 1 0 0 130 8
@@ -35143,7 +35183,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35156,12 +35196,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_nord_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_nord
     end
 
 SCPT
@@ -35173,7 +35212,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35186,14 +35225,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_nord_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_nord_f
     end
-    
 
 SCPT
 SCHD nc_skelly_orc 1 0 0 128 8
@@ -35202,10 +35239,9 @@ SCDT BgEBBSBYIBAAJAEJAQYBBgkgWNwQID09IDEFAXMBAAggcwEAIDEgKwYBAQkgcwEAIDwgMTAkAQk
 SCTX
     begin nc_skelly_orc
     
-    
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35218,12 +35254,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_orc_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_orc
     end
 
 SCPT
@@ -35233,10 +35268,9 @@ SCDT BgEBBSBYIBAAJAEJAQYBBgkgWNwQID09IDEFAXMBAAggcwEAIDEgKwYBAQkgcwEAIDwgMTAkAQk
 SCTX
     begin nc_skelly_orc_f
     
-    
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35249,14 +35283,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_orc_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_orc_f
     end
-    
 
 SCPT
 SCHD nc_skelly_rg 1 0 0 126 8
@@ -35267,7 +35299,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35280,12 +35312,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_rg_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_rg
     end
 
 SCPT
@@ -35297,7 +35328,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35310,14 +35341,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_rg_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_rg_f
     end
-    
 
 SCPT
 SCHD nc_skelly_we 1 0 0 130 8
@@ -35328,7 +35357,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35341,12 +35370,11 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_bosmer_pauldron_sk" 1
     endif
     
-    stopscript nc_skelly_we
     end
 
 SCPT
@@ -35358,7 +35386,7 @@ SCTX
     
     short counter
     
-    if ( MenuMode )
+    if ( MenuMode == 1 )
     	return
     endif
     
@@ -35371,14 +35399,12 @@ SCTX
     	return
     endif
     
-    if ( OnActivate  )
+    if ( OnActivate == 1 )
     	disable
     	player-> additem "nc_bosmer_pauldron_sk_f" 1
     endif
     
-    stopscript nc_skelly_we_f
     end
-    
 
 SCPT
 SCHD nc_skills 18 0 0 589 233
