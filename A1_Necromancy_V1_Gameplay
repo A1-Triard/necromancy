@@ -1843,6 +1843,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -1866,14 +1868,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -1886,8 +1880,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_arg_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_arg_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_argonian_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп аргонианина для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_argonian_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп аргонианки для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_argonian_skull, 1
+    		else
+    			player->RemoveItem nc_argonian_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -1901,12 +1945,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualArg_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroArg" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroArg_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroArg2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroArg2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroArg3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroArg3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -1967,6 +2029,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -1990,14 +2054,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2010,8 +2066,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_we_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_we_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_bosmer_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп лесного эльфа для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_bosmer_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп лесной эльфийки для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_bosmer_skull, 1
+    		else
+    			player->RemoveItem nc_bosmer_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2025,12 +2131,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualBosmer_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroWE" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroWE_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroWE2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroWE2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroWE3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroWE3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2091,6 +2215,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2114,14 +2240,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2134,8 +2252,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_bret_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_bret_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_breton_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп бретона для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_breton_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп бретонки для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_breton_skull, 1
+    		else
+    			player->RemoveItem nc_breton_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2149,12 +2317,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualBreton_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroBreton" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroBreton_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroBreton2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroBreton2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroBreton3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroBreton3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2215,6 +2401,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2238,14 +2426,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2258,8 +2438,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_de_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_de_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_dunmer_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп темного эльфа для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_dunmer_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп темной эльфийки для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_dunmer_skull, 1
+    		else
+    			player->RemoveItem nc_dunmer_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2273,12 +2503,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualDunmer_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroDE" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroDE_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroDE2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroDE2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroDE3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroDE3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2339,6 +2587,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2362,14 +2612,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2382,8 +2624,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_imp_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_imp_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_imperial_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп мужчины-имперца для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_imperial_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп женщины-имперца для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_imperial_skull, 1
+    		else
+    			player->RemoveItem nc_imperial_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2397,12 +2689,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualImp_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroImp" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroImp_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroImp2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroImp2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroImp3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroImp3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2463,6 +2773,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2486,14 +2798,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2506,8 +2810,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_khajiit_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_khajiit_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_khajiit_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп хаджита-мужчины для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_khajiit_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп хаджита-женщины для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_khajiit_skull, 1
+    		else
+    			player->RemoveItem nc_khajiit_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2521,12 +2875,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualKha_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroKha" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroKha_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroKha2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroKha2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroKha3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroKha3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2587,6 +2959,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2610,14 +2984,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2630,8 +2996,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_nord_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_nord_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_nord_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп мужчины-нордлинга для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_nord_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп женщины-нордлинга для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_nord_skull, 1
+    		else
+    			player->RemoveItem nc_nord_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2645,12 +3061,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualNord_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroNord" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroNord_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroNord2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroNord2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroNord3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroNord3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2711,6 +3145,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2734,14 +3170,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2754,8 +3182,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_orc_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_orc_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_orc_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп орка-мужчины для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_orc_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп орка-женщины для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_orc_skull, 1
+    		else
+    			player->RemoveItem nc_orc_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -2769,12 +3247,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualOrc_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroOrc" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroOrc_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroOrc2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroOrc2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroOrc3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroOrc3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2835,6 +3331,8 @@ SCTX
     long skills
     float tempf
     short temp
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2888,14 +3386,6 @@ SCTX
     	set tempf to ( player->GetHandToHand )
     	set tempLong to tempf
     	set skills9 to skills * 256 + tempLong
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -2908,8 +3398,171 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx tempLong to xGetRef "A1_NecroPlatform_1"
-    	ifx ( tempLong )
+        set gender to 0
+    	set summon to nc_necro_skill
+    	if ( summon < 29 )
+    		MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
+    	else
+    		setx tempLong to xGetRef "nc_frost_cured"
+    		ifx ( count )
+    			set gender to 1
+    		else
+    			setx count to xGetRef "nc_fire_cured"
+    			ifx ( count )
+    				set gender to 2
+    			else
+        	        setx count to xGetRef "nc_poison_cured"
+    				ifx ( count )
+    					set gender to 3
+    				else
+    					MessageBox "Заклинание не может найти мумию."
+    				endif
+    			endif
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( nc_fr_warlord_glob >= 1 )
+    			set gender to 0
+    			MessageBox "Вы можете контролировать только одного ледяного слугу."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( nc_f_warlord_glob >= 1 )
+    			set summon to 0
+    			MessageBox "Вы можете контролировать только одного огненного слугу."
+    		endif
+    	elseif ( gender == 3 )
+    		if ( nc_p_warlord_glob >= 1 )
+    			set summon to 0
+    			MessageBox "Вы можете контролировать только одного ядовитого слугу."
+    		endif
+    	endif
+    	set summon to 0
+    	if ( gender == 0 )
+    	elseif ( player->GetItemCount "nc_altmer_skull" > 0 )
+    		set summon to 1
+    	elseif ( player->GetItemCount "nc_argonian_skull" > 0 )
+    		set summon to 2
+    	elseif ( player->GetItemCount "nc_bosmer_skull" > 0 )
+    		set summon to 3
+    	elseif ( player->GetItemCount "nc_breton_skull" > 0 )
+    		set summon to 4
+    	elseif ( player->GetItemCount "nc_imperial_skull" > 0 )
+    		set summon to 5
+    	elseif ( player->GetItemCount "nc_dunmer_skull" > 0 )
+    		set summon to 6
+    	elseif ( player->GetItemCount "nc_khajiit_skull" > 0 )
+    		set summon to 7
+    	elseif ( player->GetItemCount "nc_nord_skull" > 0 )
+    		set summon to 8
+    	elseif ( player->GetItemCount "nc_orc_skull" > 0 )
+    		set summon to 9
+    	elseif ( player->GetItemCount "nc_redguard_skull" > 0 )
+    		set summon to 10
+    	elseif ( player->GetItemCount "nc_altmer_skull_f" > 0 )
+    		set summon to 11
+    	elseif ( player->GetItemCount "nc_argonian_skull_f" > 0 )
+    		set summon to 12
+    	elseif ( player->GetItemCount "nc_bosmer_skull_f" > 0 )
+    		set summon to 13
+    	elseif ( player->GetItemCount "nc_breton_skull_f" > 0 )
+    		set summon to 14
+    	elseif ( player->GetItemCount "nc_imperial_skull_f" > 0 )
+    		set summon to 15
+    	elseif ( player->GetItemCount "nc_dunmer_skull_f" > 0 )
+    		set summon to 16
+    	elseif ( player->GetItemCount "nc_khajiit_skull_f" > 0 )
+    		set summon to 17
+    	elseif ( player->GetItemCount "nc_nord_skull_f" > 0 )
+    		set summon to 18
+    	elseif ( player->GetItemCount "nc_orc_skull_f" > 0 )
+    		set summon to 19
+    	elseif ( player->GetItemCount "nc_redguard_skull_f" > 0 )
+    		set summon to 20
+    	else
+    		set gender to 0
+    		MessageBox "Вам нужен череп для этого ритуала."
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 10 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 10 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount "misc_clothbolt_01" < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два рулона синей ткани для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount "misc_clothbolt_02" < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два рулона красной ткани для этого ритуала."
+    		endif
+    	elseif ( gender == 3 )
+    		if ( player->GetItemCount "misc_clothbolt_03" < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два рулона зеленой ткани для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( summon == 1 )
+    			player->RemoveItem "nc_altmer_skull", 1
+    		elseif ( summon == 2 )
+    			player->RemoveItem "nc_argonian_skull", 1
+    		elseif ( summon == 3 )
+    			player->RemoveItem "nc_bosmer_skull", 1
+    		elseif ( summon == 4 )
+    			player->RemoveItem "nc_breton_skull", 1
+    		elseif ( summon == 5 )
+    			player->RemoveItem "nc_imperial_skull", 1
+    		elseif ( summon == 6 )
+    			player->RemoveItem "nc_dunmer_skull", 1
+    		elseif ( summon == 7 )
+    			player->RemoveItem "nc_khajiit_skull", 1
+    		elseif ( summon == 8 )
+    			player->RemoveItem "nc_nord_skull", 1
+    		elseif ( summon == 9 )
+    			player->RemoveItem "nc_orc_skull", 1
+    		elseif ( summon == 10 )
+    			player->RemoveItem "nc_redguard_skull", 1
+    		elseif ( summon == 11 )
+    			player->RemoveItem "nc_altmer_skull_f", 1
+    		elseif ( summon == 12 )
+    			player->RemoveItem "nc_argonian_skull_f", 1
+    		elseif ( summon == 13 )
+    			player->RemoveItem "nc_bosmer_skull_f", 1
+    		elseif ( summon == 14 )
+    			player->RemoveItem "nc_breton_skull_f", 1
+    		elseif ( summon == 15 )
+    			player->RemoveItem "nc_imperial_skull_f", 1
+    		elseif ( summon == 16 )
+    			player->RemoveItem "nc_dunmer_skull_f", 1
+    		elseif ( summon == 17 )
+    			player->RemoveItem "nc_khajiit_skull_f", 1
+    		elseif ( summon == 18 )
+    			player->RemoveItem "nc_nord_skull_f", 1
+    		elseif ( summon == 19 )
+    			player->RemoveItem "nc_orc_skull_f", 1
+    		else
+    			player->RemoveItem "nc_redguard_skull_f", 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 10
     		set A1V1_NecroSkills1 to skills1
     		set A1V1_NecroSkills2 to skills2
     		set A1V1_NecroSkills3 to skills3
@@ -2919,12 +3572,20 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef tempLong
-    		StartScript A1V1_NecroWarRitual
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		if ( gender == 1 )
+    			player->RemoveItem misc_clothbolt_01, 2
+    			PlaceAtMe "nc_fr_warlord" 1, 0, 0
+    		elseif ( gender == 2 )
+    			player->RemoveItem misc_clothbolt_02, 2
+    			PlaceAtMe "nc_f_warlord" 1, 0, 0
+    		else
+    			player->RemoveItem misc_clothbolt_03, 2
+    			PlaceAtMe "nc_p_warlord" 1, 0, 0
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
@@ -2958,6 +3619,8 @@ SCTX
     long temp
     long count
     long npcfile
+    short gender
+    short summon
     
     if ( GetDisabled == 1 )
     	SetDelete 1
@@ -2981,14 +3644,6 @@ SCTX
     	set skills7 to A1V1_NecroSkills7
     	set skills8 to A1V1_NecroSkills8
     	set skills9 to A1V1_NecroSkills9
-    elseif ( state == 2 )
-    	if ( A1V1_NecroRitual == 1 )
-    		set state to 0
-    	elseif ( A1V1_NecroRitual == 2 )
-    		set state to 0
-    		Disable
-    	endif
-    	return
     endif
     
     set temp to 0
@@ -3001,8 +3656,58 @@ SCTX
     endif
     
     ifx ( temp )
-    	setx count to xGetRef "A1_NecroPlatform_1"
+    	setx count to xGetRef "nc_rg_skelly_NPC"
     	ifx ( count )
+    		set gender to 1
+    	else
+    		setx count to xGetRef "nc_rg_skelly_NPC_f"
+    		ifx ( count )
+    			set gender to 2
+    		else
+    			MessageBox "Заклинание не может найти скелет или труп."
+    			set gender to 0
+    		endif
+    	endif
+    	if ( gender == 1 )
+    		if ( player->GetItemCount nc_redguard_skull == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп мужчины-редгарда для этого ритуала."
+    		endif
+    	elseif ( gender == 2 )
+    		if ( player->GetItemCount nc_redguard_skull_f == 0 )
+    			set gender to 0
+    			MessageBox "Вам нужен череп женщины-редгарда для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_scrap_metal_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны две части обрезков металла для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_netch_leather_01 < 2 )
+    			set gender to 0
+    			MessageBox "Вам нужны два куска кожи нетча для этого ритуала."
+    		endif
+    	endif
+    	if ( gender != 0 )
+    		if ( player->GetItemCount ingred_bonemeal_01 < 30 )
+    			set gender to 0
+    			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
+    		endif
+    	endif
+    	ifx ( gender )
+    		xSetRef count
+    		Disable
+    		if ( gender == 1 )
+    			player->RemoveItem nc_redguard_skull, 1
+    		else
+    			player->RemoveItem nc_redguard_skull_f, 1
+    		endif
+    		player->RemoveItem ingred_scrap_metal_01, 2
+    		player->RemoveItem ingred_netch_leather_01, 2
+    		player->RemoveItem ingred_bonemeal_01, 30
     		set temp to hash / 65536
     		set A1V1_SoulGemHashHi to temp
     		set hash to hash - temp * 65536
@@ -3016,12 +3721,30 @@ SCTX
     		set A1V1_NecroSkills7 to skills7
     		set A1V1_NecroSkills8 to skills8
     		set A1V1_NecroSkills9 to skills9
-    		set A1V1_NecroRitual to 0
-    		set state to 2
-    		xSetRef count
-    		StartScript A1V1_NecroRitualRg_sc
-    	else
-    		MessageBox "Заклинание не может найти платформу."
+    		set summon to nc_necro_skill
+    		if ( summon <= 10 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroRg" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroRg_f" 1, 0, 0
+    			endif
+    		elseif ( summon <= 20 )
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroRg2" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroRg2_f" 1, 0, 0
+    			endif
+    		else
+    			if ( gender == 1 )
+    				PlaceAtMe "A1V1_NecroRg3" 1, 0, 0
+    			else
+    				PlaceAtMe "A1V1_NecroRg3_f" 1, 0, 0
+    			endif
+    		endif
+    		PlaySound, "ThunderClap"
+    		set nc_necro_skill to ( nc_necro_skill + 1 )
+    		MessageBox "Ваше искусство Некромантии увеличилось до %g.", nc_necro_skill
+    		Disable
     	endif
     	return
     endif
