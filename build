@@ -5,6 +5,9 @@ VERSION=0.1
 basedir="$(dirname "$0")"
 cd "$basedir"
 
+cat A1_Necromancy.base > A1_Necromancy
+echo "" >> A1_Necromancy
+cat A1_Necromancy.dial >> A1_Necromancy
 ./espa -v A1_Necromancy || exit 1
 ./espa -v A1_Necromancy_V1_Gameplay || exit 1
 touch -t 200606201200 A1_Necromancy.esp
