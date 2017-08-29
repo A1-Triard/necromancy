@@ -380,6 +380,7 @@ SCTX
     if ( player->GetItemCount nc_SoulGem_blackened > 0 )
     	player->RemoveItem nc_SoulGem_blackened, 1
     	player->AddItem nc_SoulGem_player, 1
+    	MessageBox "Вам поместили отражение своей души в черный камень душ."
     else
     	MessageBox "Вам нужен черный камень душ, чтобы создать отражение своей души."
     endif
@@ -2234,6 +2235,11 @@ SCTX
         set gender to 0
     	set summon to nc_necro_skill
     	if ( summon < 29 )
+    		set temp to 1
+    	else
+    		set temp to 0
+    	endif
+    	ifx ( temp )
     		MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
     	else
     		setx tempLong to xGetRef "nc_frost_cured"
