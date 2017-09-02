@@ -174,17 +174,20 @@ RACE
 NAME Argonian Revenant
 FNAM Мертвец-аргонианин
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAKAAAACgAAAAyAAAAHgAAACgAAAAyAAAAKAAAADIAAAAoAAAAHgAAAB4AAAAeAAAAHgAAACgAAAAoAAAACteDPwAAgD/NzIw/AACAPwIAAAA=
+NPCS nc_comp2_swim
 NPCS immune to shock
 NPCS immune to frost
 NPCS argonian breathing
 NPCS immune to poison
 NPCS immune to disease
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME Breton Revenant
 FNAM Мертвец-бретон
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAHgAAADIAAAAyAAAAMgAAADIAAAAeAAAAHgAAAB4AAAAoAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAAACAPzMzcz8AAIA/ZmZmPwAAAAA=
+NPCS nc_comp2_swim
 NPCS weakness fire_50
 NPCS dragon skin
 NPCS resist magicka_50
@@ -193,11 +196,13 @@ NPCS immune to disease
 NPCS immune to poison
 NPCS immune to frost
 NPCS immune to shock
+NPCS nc_comp2_wb
 
 RACE
 NAME Dark Elf Revenant
 FNAM Мертвец-данмер
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAKAAAACgAAAAoAAAAHgAAAB4AAAAoAAAAKAAAADIAAAAyAAAAKAAAAB4AAAAeAAAAKAAAACgAAAAoAAAAAACAPwAAgD8AAIA/ZmZmPwAAAAA=
+NPCS nc_comp2_swim
 NPCS immune to shock
 NPCS immune to frost
 NPCS immune to poison
@@ -205,11 +210,13 @@ NPCS immune to disease
 NPCS ancestor guardian
 NPCS resist fire_75
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME High Elf Revenant
 FNAM Мертвец-альтмер
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAeAAAAHgAAADIAAAAyAAAAKAAAACgAAAAoAAAAKAAAAB4AAAAoAAAAKAAAAB4AAAAoAAAAKAAAACgAAAAoAAAAzcyMP83MjD8AAIA/AACAPwAAAAA=
+NPCS nc_comp2_swim
 NPCS resist disease_75
 NPCS weakness shock_25
 NPCS weakness frost_25
@@ -220,11 +227,13 @@ NPCS immune to disease
 NPCS immune to poison
 NPCS immune to frost
 NPCS immune to shock
+NPCS nc_comp2_wb
 
 RACE
 NAME Imperial Revenant
 FNAM Мертвец-имперец
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAKAAAACgAAAAoAAAAHgAAACgAAAAeAAAAHgAAACgAAAAeAAAAKAAAACgAAAAyAAAAMgAAACgAAAAoAAAAAACAPwAAgD8AAKA/MzNzPwAAAAA=
+NPCS nc_comp2_swim
 NPCS weakness fire_50
 NPCS voice of the emperor
 NPCS star of the west
@@ -232,11 +241,13 @@ NPCS immune to disease
 NPCS immune to poison
 NPCS immune to frost
 NPCS immune to shock
+NPCS nc_comp2_wb
 
 RACE
 NAME Khajiit Revenant
 FNAM Мертвец-хаджит
 RADT FAAAAAAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAoAAAAHgAAACgAAAAoAAAAHgAAAB4AAAAyAAAAMgAAACgAAAAoAAAAHgAAACgAAAAoAAAAKAAAACgAAAAoAAAAAACAPzMzcz8AAIA/MzNzPwIAAAA=
+NPCS nc_comp2_swim
 NPCS eye of night
 NPCS eye of fear
 NPCS immune to poison
@@ -244,11 +255,13 @@ NPCS immune to disease
 NPCS immune to shock
 NPCS immune to frost
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME Nord Revenant
 FNAM Мертвец-норд
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAyAAAAMgAAAB4AAAAeAAAAKAAAADIAAAAeAAAAHgAAACgAAAAoAAAAMgAAACgAAAAeAAAAHgAAACgAAAAoAAAAFK6HPxSuhz8AAKA/AACAPwAAAAA=
+NPCS nc_comp2_swim
 NPCS immune to shock
 NPCS thunder fist
 NPCS woad
@@ -257,11 +270,13 @@ NPCS immune to frost
 NPCS immune to disease
 NPCS immune to poison
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME Orc Revenant
 FNAM Мертвец-орк
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAtAAAALQAAAB4AAAAoAAAAMgAAAC0AAAAjAAAAIwAAAB4AAAAeAAAAMgAAADIAAAAeAAAAGQAAACgAAAAoAAAAZmaGP2Zmhj/NzKw/zcyMPwAAAAA=
+NPCS nc_comp2_swim
 NPCS immune to shock
 NPCS immune to frost
 NPCS immune to disease
@@ -269,11 +284,13 @@ NPCS immune to poison
 NPCS orc_beserk
 NPCS resist magicka_25
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME Redguard Revenant
 FNAM Мертвец-редгард
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAyAAAAKAAAAB4AAAAeAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAMgAAADIAAAAeAAAAKAAAACgAAAAoAAAAXI+CPwAAgD/NzIw/AACAPwAAAAA=
+NPCS nc_comp2_swim
 NPCS weakness fire_50
 NPCS immune to frost
 NPCS resist disease_75
@@ -282,33 +299,39 @@ NPCS adrenaline rush
 NPCS immune to disease
 NPCS immune to poison
 NPCS immune to shock
+NPCS nc_comp2_wb
 
 RACE
 NAME Wood Elf Revenant
 FNAM Мертвец-босмер
 RADT /////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAAeAAAAHgAAACgAAAAoAAAAHgAAAB4AAAAyAAAAMgAAADIAAAAyAAAAHgAAAB4AAAAoAAAAKAAAACgAAAAoAAAAZmZmPwAAgD8zM3M/ZmZmPwAAAAA=
+NPCS nc_comp2_swim
 NPCS immune to shock
 NPCS beast tongue
 NPCS immune to disease
 NPCS immune to poison
 NPCS immune to frost
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME nc_poison_warlord
 FNAM Ядовитый мертвец
 RADT CgAAAAoAAAAGAAAACgAAAAMAAAAKAAAACAAAAAoAAAAMAAAABQAAAP////8AAAAA/////wAAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAzcyMPwAAgD/NzIw/AACAPwAAAAA=
+NPCS nc_comp2_swim
 NPCS magicka mult bonus_5
 NPCS immune to shock
 NPCS immune to poison
 NPCS immune to disease
 NPCS regenerate [ability]
 NPCS weakness fire_50
+NPCS nc_comp2_wb
 
 RACE
 NAME nc_fire_warlord
 FNAM Огненный мертвец
 RADT CgAAAAoAAAAFAAAACgAAAAIAAAAKAAAAAAAAAAoAAAAIAAAABQAAAP////8AAAAA/////wAAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAzcyMPwAAgD/NzIw/AACAPwAAAAA=
+NPCS nc_comp2_swim
 NPCS immune to paralysis
 NPCS immune to shock
 NPCS immune to disease
@@ -316,11 +339,14 @@ NPCS immune to fire
 NPCS regenerate [ability]
 NPCS magicka mult bonus_5
 NPCS weakness frost_25
+NPCS nc_comp2_wb
 
 RACE
 NAME nc_frost_warlord
 FNAM Ледяной мертвец
 RADT CgAAAAoAAAAXAAAACgAAAAwAAAAKAAAAFQAAAAUAAAAUAAAACgAAAP////8AAAAA/////wAAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAzcyMPwAAgD/NzIw/AACAPwAAAAA=
+NPCS nc_comp2_swim
+NPCS nc_comp2_wb
 NPCS weakness fire_50
 NPCS magicka mult bonus_5
 NPCS regenerate [ability]
