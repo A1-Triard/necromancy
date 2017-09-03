@@ -1083,7 +1083,7 @@ NPCS immune to frost\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 NPCS immune to poison\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
 AIDT AABkAABauHUAAKAA
 
-NPC_
+NPC_ Persist
 NAME nc_thief dead 00
 MODL base_animKnA.nif
 FNAM Мертвая героиня
