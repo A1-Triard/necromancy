@@ -992,7 +992,7 @@ MODL l\\light_sotha_sparks_hi.NIF
 LHDT AAAAAAAAAAD/////AAIAAPv1lwAJAAAA
 SNAM wind low3
 
-NPC_
+NPC_ Persist
 NAME nc_Tragrilar
 FNAM Трагрилар
 RNAM High Elf
