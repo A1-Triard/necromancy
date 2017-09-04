@@ -403,6 +403,246 @@ SCTX
     End
 
 SCPT
+SCHD A1V1_EquipCorpse 1 0 0 491 8
+SCVR counter;;
+SCDT BgEBCSBYIBAgPT0gMSQBCQEFAXMBAAggcwEAIDEgKwYBAQkgcwEAIDwgMTAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQcIFj9ECBvEW5jX3JnX3BhdWxkcm9uX3NrID4gMAwBBnBsYXllcgYBAh0gWJkRIG8RbmNfcmdfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4REW5jX3JnX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQwBBnBsYXllcggBBB4gWP0QIG8TbmNfcmdfcGF1bGRyb25fc2tfZiA+IDAMAQZwbGF5ZXIGAQIfIFiZESBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RE25jX3JnX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEcEBBBMVYxX0VxdWlwQ29ycHNlAQE=
+SCTX
+    begin A1V1_EquipCorpse
+    
+    short counter
+    
+    if ( MenuMode == 1 )
+    	return
+    endif
+    
+    set counter to ( counter + 1 )
+    if ( counter < 10 )
+    	return
+    endif
+    set counter to 0
+    
+    if ( player->GetItemCount "nc_altmer_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_altmer_pauldron" == 0 )
+    		player->Equip "nc_altmer_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_altmer_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_altmer_pauldron_f" == 0 )
+    		player->Equip "nc_altmer_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_arg_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_arg_pauldron" == 0 )
+    		player->Equip "nc_arg_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_arg_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_arg_pauldron_f" == 0 )
+    		player->Equip "nc_arg_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_bosmer_pauldron" == 0 )
+    		player->Equip "nc_bosmer_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_bosmer_pauldron_f" == 0 )
+    		player->Equip "nc_bosmer_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_breton_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_breton_pauldron" == 0 )
+    		player->Equip "nc_breton_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_breton_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_breton_pauldron_f" == 0 )
+    		player->Equip "nc_breton_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_dunmer_pauldron" == 0 )
+    		player->Equip "nc_dunmer_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_dunmer_pauldron_f" == 0 )
+    		player->Equip "nc_dunmer_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_imperial_pauldron" == 0 )
+    		player->Equip "nc_imperial_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_imperial_pauldron_f" == 0 )
+    		player->Equip "nc_imperial_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_khajiit_pauldron" == 0 )
+    		player->Equip "nc_khajiit_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_khajiit_pauldron_f" == 0 )
+    		player->Equip "nc_khajiit_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_nord_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_nord_pauldron" == 0 )
+    		player->Equip "nc_nord_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_nord_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_nord_pauldron_f" == 0 )
+    		player->Equip "nc_nord_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_orc_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_orc_pauldron" == 0 )
+    		player->Equip "nc_orc_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_orc_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_orc_pauldron_f" == 0 )
+    		player->Equip "nc_orc_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_rg_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_rg_pauldron" == 0 )
+    		player->Equip "nc_rg_pauldron"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_rg_pauldron_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_rg_pauldron_f" == 0 )
+    		player->Equip "nc_rg_pauldron_f"
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_fire_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_fire_pauldron" == 0 )
+    		player->Equip "nc_fire_pauldron"
+    		MessageBox "Нести мумию в инвентаре слишком тяжело. Поэтому вы перебрасываете ее через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_frost_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_frost_pauldron" == 0 )
+    		player->Equip "nc_frost_pauldron"
+    		MessageBox "Нести мумию в инвентаре слишком тяжело. Поэтому вы перебрасываете ее через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_poison_pauldron" >= 1 )
+    	if ( player->HasItemEquipped "nc_poison_pauldron" == 0 )
+    		player->Equip "nc_poison_pauldron"
+    		MessageBox "Нести мумию в инвентаре слишком тяжело. Поэтому вы перебрасываете ее через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_altmer_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_altmer_pauldron_sk" == 0 )
+    		player->Equip "nc_altmer_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_altmer_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_altmer_pauldron_sk_f" == 0 )
+    		player->Equip "nc_altmer_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_arg_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_arg_pauldron_sk" == 0 )
+    		player->Equip "nc_arg_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_arg_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_arg_pauldron_sk_f" == 0 )
+    		player->Equip "nc_arg_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_bosmer_pauldron_sk" == 0 )
+    		player->Equip "nc_bosmer_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_bosmer_pauldron_sk_f" == 0 )
+    		player->Equip "nc_bosmer_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_breton_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_breton_pauldron_sk" == 0 )
+    		player->Equip "nc_breton_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_breton_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_breton_pauldron_sk_f" == 0 )
+    		player->Equip "nc_breton_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_dunmer_pauldron_sk" == 0 )
+    		player->Equip "nc_dunmer_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_dunmer_pauldron_sk_f" == 0 )
+    		player->Equip "nc_dunmer_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_imperial_pauldron_sk" == 0 )
+    		player->Equip "nc_imperial_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_imperial_pauldron_sk_f" == 0 )
+    		player->Equip "nc_imperial_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_khajiit_pauldron_sk" == 0 )
+    		player->Equip "nc_khajiit_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_khajiit_pauldron_sk_f" == 0 )
+    		player->Equip "nc_khajiit_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_nord_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_nord_pauldron_sk" == 0 )
+    		player->Equip "nc_nord_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_nord_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_nord_pauldron_sk_f" == 0 )
+    		player->Equip "nc_nord_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_orc_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_orc_pauldron_sk" == 0 )
+    		player->Equip "nc_orc_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_orc_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_orc_pauldron_sk_f" == 0 )
+    		player->Equip "nc_orc_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_rg_pauldron_sk" >= 1 )
+    	if ( player->HasItemEquipped "nc_rg_pauldron_sk" == 0 )
+    		player->Equip "nc_rg_pauldron_sk"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    elseif ( player->GetItemCount "nc_rg_pauldron_sk_f" >= 1 )
+    	if ( player->HasItemEquipped "nc_rg_pauldron_sk_f" == 0 )
+    		player->Equip "nc_rg_pauldron_sk_f"
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    	endif
+    endif
+    
+    StopScript A1V1_EquipCorpse
+    
+    end
+
+SCPT
 SCHD A1V1_NecroMirror_sc 0 0 0 269 0
 SCDT DAEGcGxheWVyBgEDHyBY/RAgbxRuY19Tb3VsR2VtX2JsYWNrZW5lZCA+IDAMAQZwbGF5ZXLVEBRuY19Tb3VsR2VtX2JsYWNrZW5lZAEADAEGcGxheWVy1BARbmNfU291bEdlbV9wbGF5ZXIBAAAQNwDC4Owg7+7s5fHy6OvoIO7y8ODm5e3o5SDx4u7l6SDk8/joIOIg9+Xw7fvpIOrg7OXt/CDk8/guAAAHAQEAEEAAwuDsIO3z5uXtIPfl8O376SDq4Ozl7fwg5PP4LCD38u7h+yDx7ufk4PL8IO7y8ODm5e3o5SDx4u7l6SDk8/joLgAACQEcEBNBMVYxX05lY3JvTWlycm9yX3NjAQE=
 SCTX
@@ -2683,6 +2923,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_arg_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -2750,6 +2991,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_arg_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -2783,19 +3025,18 @@ SCTX
     
 
 SCPT
-SCHD nc_arg_skelly_pauldron 3 0 0 428 23
+SCHD nc_arg_skelly_pauldron 3 0 0 420 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBFuY19hcmdfc2tlbGx5X05QQwEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfYXJnX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX2FyZ19wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhESbmNfYXJnX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hARbmNfYXJnX3NrZWxseV9OUEMBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQeIFj9ECBvEm5jX2FyZ19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyBgECHiBYmREgbxJuY19hcmdfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4REm5jX2FyZ19wYXVsZHJvbl9zawAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_arg_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -2804,44 +3045,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_arg_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_arg_pauldron_sk" == 0 )
-    		player->Equip "nc_arg_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_arg_skelly_pauldron_f 3 0 0 436 23
+SCHD nc_arg_skelly_pauldron_f 3 0 0 428 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBNuY19hcmdfc2tlbGx5X05QQ19mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19hcmdfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19hcmdfcGF1bGRyb25fc2tfZiA9PSAwDAEGcGxheWVyDhEUbmNfYXJnX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hATbmNfYXJnX3NrZWxseV9OUENfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCAgWP0QIG8UbmNfYXJnX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcgYBAiAgWJkRIG8UbmNfYXJnX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RFG5jX2FyZ19wYXVsZHJvbl9za19mABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_arg_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -2852,24 +3097,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_arg_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_arg_pauldron_sk_f" == 0 )
-    		player->Equip "nc_arg_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -2910,6 +3160,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_breton_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -2977,6 +3228,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_breton_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -3010,19 +3262,18 @@ SCTX
     
 
 SCPT
-SCHD nc_breton_skelly_pauldron 3 0 0 438 23
+SCHD nc_breton_skelly_pauldron 3 0 0 430 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19icmV0X3NrZWxseV9OUEMBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQhIFj9ECBvFW5jX2JyZXRvbl9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyBgECISBYmREgbxVuY19icmV0b25fcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4RFW5jX2JyZXRvbl9wYXVsZHJvbl9zawAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfYnJldF9za2VsbHlfTlBDAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEISBY/RAgbxVuY19icmV0b25fcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAiEgWJkRIG8VbmNfYnJldG9uX3BhdWxkcm9uX3NrID09IDAMAQZwbGF5ZXIOERVuY19icmV0b25fcGF1bGRyb25fc2sAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_breton_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -3031,44 +3282,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_breton_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_breton_pauldron_sk" == 0 )
-    		player->Equip "nc_breton_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_breton_skelly_pauldron_f 3 0 0 446 23
+SCHD nc_breton_skelly_pauldron_f 3 0 0 438 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBRuY19icmV0X3NrZWxseV9OUENfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCMgWP0QIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcgYBAiMgWJkRIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RF25jX2JyZXRvbl9wYXVsZHJvbl9za19mABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAUbmNfYnJldF9za2VsbHlfTlBDX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQjIFj9ECBvF25jX2JyZXRvbl9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIjIFiZESBvF25jX2JyZXRvbl9wYXVsZHJvbl9za19mID09IDAMAQZwbGF5ZXIOERduY19icmV0b25fcGF1bGRyb25fc2tfZgAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_breton_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -3079,24 +3334,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_breton_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_breton_pauldron_sk_f" == 0 )
-    		player->Equip "nc_breton_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -16848,6 +17108,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_dunmer_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -16915,6 +17176,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_dunmer_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -16948,19 +17210,18 @@ SCTX
     
 
 SCPT
-SCHD nc_de_skelly_pauldron 3 0 0 436 23
+SCHD nc_de_skelly_pauldron 3 0 0 428 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19kZV9za2VsbHlfTlBDAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEISBY/RAgbxVuY19kdW5tZXJfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAiEgWJkRIG8VbmNfZHVubWVyX3BhdWxkcm9uX3NrID09IDAMAQZwbGF5ZXIOERVuY19kdW5tZXJfcGF1bGRyb25fc2sAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfZGVfc2tlbGx5X05QQwEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCEgWP0QIG8VbmNfZHVubWVyX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIhIFiZESBvFW5jX2R1bm1lcl9wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhEVbmNfZHVubWVyX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_de_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -16971,24 +17232,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_de_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_dunmer_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_dunmer_pauldron_sk" == 0 )
-    		player->Equip "nc_dunmer_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -17000,13 +17266,12 @@ SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDE
 SCTX
     begin nc_de_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -17017,25 +17282,30 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_de_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_dunmer_pauldron_sk_f" == 0 )
-    		player->Equip "nc_dunmer_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -20176,6 +20446,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_fire_pauldron" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -20545,6 +20816,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_frost_pauldron" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -20865,6 +21137,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_altmer_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -20932,6 +21205,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_altmer_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -20965,19 +21239,18 @@ SCTX
     
 
 SCPT
-SCHD nc_he_skelly_pauldron 3 0 0 436 23
+SCHD nc_he_skelly_pauldron 3 0 0 428 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19oZV9za2VsbHlfTlBDAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEISBY/RAgbxVuY19hbHRtZXJfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAiEgWJkRIG8VbmNfYWx0bWVyX3BhdWxkcm9uX3NrID09IDAMAQZwbGF5ZXIOERVuY19hbHRtZXJfcGF1bGRyb25fc2sAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfaGVfc2tlbGx5X05QQwEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCEgWP0QIG8VbmNfYWx0bWVyX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIhIFiZESBvFW5jX2FsdG1lcl9wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhEVbmNfYWx0bWVyX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_he_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -20986,44 +21259,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_he_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_altmer_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_altmer_pauldron_sk" == 0 )
-    		player->Equip "nc_altmer_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_he_skelly_pauldron_f 3 0 0 444 23
+SCHD nc_he_skelly_pauldron_f 3 0 0 436 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19oZV9za2VsbHlfTlBDX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQjIFj9ECBvF25jX2FsdG1lcl9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIjIFiZESBvF25jX2FsdG1lcl9wYXVsZHJvbl9za19mID09IDAMAQZwbGF5ZXIOERduY19hbHRtZXJfcGF1bGRyb25fc2tfZgAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfaGVfc2tlbGx5X05QQ19mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEIyBY/RAgbxduY19hbHRtZXJfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyBgECIyBYmREgbxduY19hbHRtZXJfcGF1bGRyb25fc2tfZiA9PSAwDAEGcGxheWVyDhEXbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_he_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21034,24 +21311,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_he_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_altmer_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_altmer_pauldron_sk_f" == 0 )
-    		player->Equip "nc_altmer_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -21092,6 +21374,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_imperial_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -21159,6 +21442,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_imperial_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -21191,19 +21475,18 @@ SCTX
     end
 
 SCPT
-SCHD nc_imp_skelly_pauldron 3 0 0 443 23
+SCHD nc_imp_skelly_pauldron 3 0 0 435 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBFuY19pbXBfc2tlbGx5X05QQwEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCMgWP0QIG8XbmNfaW1wZXJpYWxfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAiMgWJkRIG8XbmNfaW1wZXJpYWxfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4RF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hARbmNfaW1wX3NrZWxseV9OUEMBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQjIFj9ECBvF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIjIFiZESBvF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrID09IDAMAQZwbGF5ZXIOERduY19pbXBlcmlhbF9wYXVsZHJvbl9zawAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_imp_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21212,44 +21495,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imp_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_imperial_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_imperial_pauldron_sk" == 0 )
-    		player->Equip "nc_imperial_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_imp_skelly_pauldron_f 3 0 0 451 23
+SCHD nc_imp_skelly_pauldron_f 3 0 0 443 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBNuY19pbXBfc2tlbGx5X05QQ19mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEJSBY/RAgbxluY19pbXBlcmlhbF9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIlIFiZESBvGW5jX2ltcGVyaWFsX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RGW5jX2ltcGVyaWFsX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hATbmNfaW1wX3NrZWxseV9OUENfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCUgWP0QIG8ZbmNfaW1wZXJpYWxfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyBgECJSBYmREgbxluY19pbXBlcmlhbF9wYXVsZHJvbl9za19mID09IDAMAQZwbGF5ZXIOERluY19pbXBlcmlhbF9wYXVsZHJvbl9za19mABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_imp_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21260,24 +21547,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imp_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_imperial_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_imperial_pauldron_sk_f" == 0 )
-    		player->Equip "nc_imperial_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -21541,6 +21833,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_khajiit_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -21608,6 +21901,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_khajiit_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -21641,19 +21935,18 @@ SCTX
     
 
 SCPT
-SCHD nc_khajiit_skelly_pauldron 3 0 0 444 23
+SCHD nc_khajiit_skelly_pauldron 3 0 0 436 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBVuY19raGFqaWl0X3NrZWxseV9OUEMBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQiIFj9ECBvFm5jX2toYWppaXRfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAiIgWJkRIG8WbmNfa2hhamlpdF9wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhEWbmNfa2hhamlpdF9wYXVsZHJvbl9zawAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAVbmNfa2hhamlpdF9za2VsbHlfTlBDAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEIiBY/RAgbxZuY19raGFqaWl0X3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIiIFiZESBvFm5jX2toYWppaXRfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4RFm5jX2toYWppaXRfcGF1bGRyb25fc2sAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_khajiit_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21662,44 +21955,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_khajiit_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_khajiit_pauldron_sk" == 0 )
-    		player->Equip "nc_khajiit_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_khajiit_skelly_pauldron_f 3 0 0 452 23
+SCHD nc_khajiit_skelly_pauldron_f 3 0 0 444 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBduY19raGFqaWl0X3NrZWxseV9OUENfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCQgWP0QIG8YbmNfa2hhamlpdF9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIkIFiZESBvGG5jX2toYWppaXRfcGF1bGRyb25fc2tfZiA9PSAwDAEGcGxheWVyDhEYbmNfa2hhamlpdF9wYXVsZHJvbl9za19mABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAXbmNfa2hhamlpdF9za2VsbHlfTlBDX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQkIFj9ECBvGG5jX2toYWppaXRfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyBgECJCBYmREgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RGG5jX2toYWppaXRfcGF1bGRyb25fc2tfZgAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_khajiit_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21710,24 +22007,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_khajiit_pauldron_sk_f" == 0 )
-    		player->Equip "nc_khajiit_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -21786,6 +22088,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_nord_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -21853,6 +22156,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_nord_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -21886,19 +22190,18 @@ SCTX
     
 
 SCPT
-SCHD nc_nord_skelly_pauldron 3 0 0 432 23
+SCHD nc_nord_skelly_pauldron 3 0 0 424 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19ub3JkX3NrZWxseV9OUEMBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQfIFj9ECBvE25jX25vcmRfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAh8gWJkRIG8TbmNfbm9yZF9wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhETbmNfbm9yZF9wYXVsZHJvbl9zawAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfbm9yZF9za2VsbHlfTlBDAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHyBY/RAgbxNuY19ub3JkX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIfIFiZESBvE25jX25vcmRfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4RE25jX25vcmRfcGF1bGRyb25fc2sAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_nord_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21907,44 +22210,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_nord_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_nord_pauldron_sk" == 0 )
-    		player->Equip "nc_nord_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_nord_skelly_pauldron_f 3 0 0 440 23
+SCHD nc_nord_skelly_pauldron_f 3 0 0 432 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBRuY19ub3JkX3NrZWxseV9OUENfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCEgWP0QIG8VbmNfbm9yZF9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIhIFiZESBvFW5jX25vcmRfcGF1bGRyb25fc2tfZiA9PSAwDAEGcGxheWVyDhEVbmNfbm9yZF9wYXVsZHJvbl9za19mABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAUbmNfbm9yZF9za2VsbHlfTlBDX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQhIFj9ECBvFW5jX25vcmRfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyBgECISBYmREgbxVuY19ub3JkX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RFW5jX25vcmRfcGF1bGRyb25fc2tfZgAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_nord_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -21955,24 +22262,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_nord_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_nord_pauldron_sk_f" == 0 )
-    		player->Equip "nc_nord_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -22013,6 +22325,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_orc_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -22080,6 +22393,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_orc_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -22113,19 +22427,18 @@ SCTX
     
 
 SCPT
-SCHD nc_orc_skelly_pauldron 3 0 0 428 23
+SCHD nc_orc_skelly_pauldron 3 0 0 420 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBFuY19vcmNfc2tlbGx5X05QQwEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfb3JjX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX29yY19wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhESbmNfb3JjX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hARbmNfb3JjX3NrZWxseV9OUEMBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQeIFj9ECBvEm5jX29yY19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyBgECHiBYmREgbxJuY19vcmNfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4REm5jX29yY19wYXVsZHJvbl9zawAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_orc_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22134,44 +22447,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_orc_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_orc_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_orc_pauldron_sk" == 0 )
-    		player->Equip "nc_orc_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_orc_skelly_pauldron_f 3 0 0 436 23
+SCHD nc_orc_skelly_pauldron_f 3 0 0 428 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBNuY19vcmNfc2tlbGx5X05QQ19mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19vcmNfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19vcmNfcGF1bGRyb25fc2tfZiA9PSAwDAEGcGxheWVyDhEUbmNfb3JjX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hATbmNfb3JjX3NrZWxseV9OUENfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCAgWP0QIG8UbmNfb3JjX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcgYBAiAgWJkRIG8UbmNfb3JjX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RFG5jX29yY19wYXVsZHJvbl9za19mABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_orc_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22180,44 +22497,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_orc_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_orc_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_orc_pauldron_sk_f" == 0 )
-    		player->Equip "nc_orc_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_altmer_script 3 0 0 425 23
+SCHD nc_pauldron_altmer_script 3 0 0 417 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19hbHRtZXJfY29ycHNlAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHiBY/RAgbxJuY19hbHRtZXJfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAh4gWJkRIG8SbmNfYWx0bWVyX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERJuY19hbHRtZXJfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfYWx0bWVyX2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfYWx0bWVyX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX2FsdG1lcl9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhESbmNfYWx0bWVyX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_altmer_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22226,44 +22547,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_altmer_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_altmer_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_altmer_pauldron" == 0 )
-    		player->Equip "nc_altmer_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_altmer_script_f 3 0 0 433 23
+SCHD nc_pauldron_altmer_script_f 3 0 0 425 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19hbHRtZXJfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQgIFj9ECBvFG5jX2FsdG1lcl9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIgIFiZESBvFG5jX2FsdG1lcl9wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERRuY19hbHRtZXJfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfYWx0bWVyX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19hbHRtZXJfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19hbHRtZXJfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEUbmNfYWx0bWVyX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_altmer_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22272,44 +22597,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_altmer_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_altmer_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_altmer_pauldron_f" == 0 )
-    		player->Equip "nc_altmer_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_arg_script 3 0 0 413 23
+SCHD nc_pauldron_arg_script 3 0 0 405 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA1uY19hcmdfY29ycHNlAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEGyBY/RAgbw9uY19hcmdfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAhsgWJkRIG8PbmNfYXJnX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOEQ9uY19hcmdfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hANbmNfYXJnX2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBBsgWP0QIG8PbmNfYXJnX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIbIFiZESBvD25jX2FyZ19wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhEPbmNfYXJnX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_arg_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22318,44 +22647,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_arg_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_arg_pauldron" == 0 )
-    		player->Equip "nc_arg_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_arg_script_f 3 0 0 421 23
+SCHD nc_pauldron_arg_script_f 3 0 0 413 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA9uY19hcmdfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQdIFj9ECBvEW5jX2FyZ19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIdIFiZESBvEW5jX2FyZ19wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERFuY19hcmdfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAPbmNfYXJnX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHSBY/RAgbxFuY19hcmdfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECHSBYmREgbxFuY19hcmdfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhERbmNfYXJnX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_arg_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22364,44 +22697,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_arg_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_arg_pauldron_f" == 0 )
-    		player->Equip "nc_arg_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_bosmer_script 3 0 0 425 23
+SCHD nc_pauldron_bosmer_script 3 0 0 417 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19ib3NtZXJfY29ycHNlAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHiBY/RAgbxJuY19ib3NtZXJfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAh4gWJkRIG8SbmNfYm9zbWVyX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERJuY19ib3NtZXJfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfYm9zbWVyX2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfYm9zbWVyX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX2Jvc21lcl9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhESbmNfYm9zbWVyX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_bosmer_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22410,44 +22747,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bosmer_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_bosmer_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_bosmer_pauldron" == 0 )
-    		player->Equip "nc_bosmer_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_bosmer_script_f 3 0 0 433 23
+SCHD nc_pauldron_bosmer_script_f 3 0 0 425 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19ib3NtZXJfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQgIFj9ECBvFG5jX2Jvc21lcl9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIgIFiZESBvFG5jX2Jvc21lcl9wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERRuY19ib3NtZXJfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfYm9zbWVyX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19ib3NtZXJfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19ib3NtZXJfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEUbmNfYm9zbWVyX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_bosmer_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22456,44 +22797,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bosmer_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_bosmer_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_bosmer_pauldron_f" == 0 )
-    		player->Equip "nc_bosmer_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_br_script 3 0 0 423 23
+SCHD nc_pauldron_br_script 3 0 0 415 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA5uY19icmV0X2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfYnJldG9uX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX2JyZXRvbl9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhESbmNfYnJldG9uX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAObmNfYnJldF9jb3Jwc2UBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQeIFj9ECBvEm5jX2JyZXRvbl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECHiBYmREgbxJuY19icmV0b25fcGF1bGRyb24gPT0gMAwBBnBsYXllcg4REm5jX2JyZXRvbl9wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_pauldron_br_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22502,44 +22847,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_breton_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_breton_pauldron" == 0 )
-    		player->Equip "nc_breton_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_br_script_f 3 0 0 431 23
+SCHD nc_pauldron_br_script_f 3 0 0 423 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19icmV0X2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19icmV0b25fcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19icmV0b25fcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEUbmNfYnJldG9uX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfYnJldF9jb3Jwc2VfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCAgWP0QIG8UbmNfYnJldG9uX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcgYBAiAgWJkRIG8UbmNfYnJldG9uX3BhdWxkcm9uX2YgPT0gMAwBBnBsYXllcg4RFG5jX2JyZXRvbl9wYXVsZHJvbl9mABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_br_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22548,44 +22897,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_breton_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_breton_pauldron_f" == 0 )
-    		player->Equip "nc_breton_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_dunmer_script 3 0 0 425 23
+SCHD nc_pauldron_dunmer_script 3 0 0 417 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19kdW5tZXJfY29ycHNlAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHiBY/RAgbxJuY19kdW5tZXJfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAh4gWJkRIG8SbmNfZHVubWVyX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERJuY19kdW5tZXJfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfZHVubWVyX2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfZHVubWVyX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX2R1bm1lcl9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhESbmNfZHVubWVyX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_dunmer_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22594,44 +22947,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_dunmer_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_dunmer_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_dunmer_pauldron" == 0 )
-    		player->Equip "nc_dunmer_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_dunmer_script_f 3 0 0 433 23
+SCHD nc_pauldron_dunmer_script_f 3 0 0 425 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19kdW5tZXJfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQgIFj9ECBvFG5jX2R1bm1lcl9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIgIFiZESBvFG5jX2R1bm1lcl9wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERRuY19kdW5tZXJfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfZHVubWVyX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19kdW5tZXJfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19kdW5tZXJfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEUbmNfZHVubWVyX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_dunmer_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22640,44 +22997,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_dunmer_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_dunmer_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_dunmer_pauldron_f" == 0 )
-    		player->Equip "nc_dunmer_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_fire_script 3 0 0 416 23
+SCHD nc_pauldron_fire_script 3 0 0 408 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA1uY19maXJlX2N1cmVkAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHCBY/RAgbxBuY19maXJlX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIcIFiZESBvEG5jX2ZpcmVfcGF1bGRyb24gPT0gMAwBBnBsYXllcg4REG5jX2ZpcmVfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hANbmNfZmlyZV9jdXJlZAEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBBwgWP0QIG8QbmNfZmlyZV9wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECHCBYmREgbxBuY19maXJlX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERBuY19maXJlX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_fire_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22686,44 +23047,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_fire_cured" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_fire_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_fire_pauldron" == 0 )
-    		player->Equip "nc_fire_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_frost_script 3 0 0 420 23
+SCHD nc_pauldron_frost_script 3 0 0 412 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA5uY19mcm9zdF9jdXJlZAEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB0gWP0QIG8RbmNfZnJvc3RfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAh0gWJkRIG8RbmNfZnJvc3RfcGF1bGRyb24gPT0gMAwBBnBsYXllcg4REW5jX2Zyb3N0X3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAObmNfZnJvc3RfY3VyZWQBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQdIFj9ECBvEW5jX2Zyb3N0X3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIdIFiZESBvEW5jX2Zyb3N0X3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERFuY19mcm9zdF9wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_pauldron_frost_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22732,44 +23097,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_frost_cured" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_frost_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_frost_pauldron" == 0 )
-    		player->Equip "nc_frost_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_imp_script 3 0 0 433 23
+SCHD nc_pauldron_imp_script 3 0 0 425 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19pbXBlcmlhbF9jb3Jwc2UBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQgIFj9ECBvFG5jX2ltcGVyaWFsX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIgIFiZESBvFG5jX2ltcGVyaWFsX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERRuY19pbXBlcmlhbF9wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfaW1wZXJpYWxfY29ycHNlAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEICBY/RAgbxRuY19pbXBlcmlhbF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECICBYmREgbxRuY19pbXBlcmlhbF9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhEUbmNfaW1wZXJpYWxfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_imp_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22778,44 +23147,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imperial_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_imperial_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_imperial_pauldron" == 0 )
-    		player->Equip "nc_imperial_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_imp_script_f 3 0 0 441 23
+SCHD nc_pauldron_imp_script_f 3 0 0 433 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBRuY19pbXBlcmlhbF9jb3Jwc2VfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCIgWP0QIG8WbmNfaW1wZXJpYWxfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECIiBYmREgbxZuY19pbXBlcmlhbF9wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERZuY19pbXBlcmlhbF9wYXVsZHJvbl9mABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAUbmNfaW1wZXJpYWxfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQiIFj9ECBvFm5jX2ltcGVyaWFsX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcgYBAiIgWJkRIG8WbmNfaW1wZXJpYWxfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEWbmNfaW1wZXJpYWxfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_pauldron_imp_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22824,44 +23197,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imperial_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_imperial_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_imperial_pauldron_f" == 0 )
-    		player->Equip "nc_imperial_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_kh_script 3 0 0 429 23
+SCHD nc_pauldron_kh_script 3 0 0 421 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBFuY19raGFqaWl0X2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB8gWP0QIG8TbmNfa2hhamlpdF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECHyBYmREgbxNuY19raGFqaWl0X3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERNuY19raGFqaWl0X3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hARbmNfa2hhamlpdF9jb3Jwc2UBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQfIFj9ECBvE25jX2toYWppaXRfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAh8gWJkRIG8TbmNfa2hhamlpdF9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhETbmNfa2hhamlpdF9wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_pauldron_kh_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22870,44 +23247,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_khajiit_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_khajiit_pauldron" == 0 )
-    		player->Equip "nc_khajiit_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_kh_script_f 3 0 0 437 23
+SCHD nc_pauldron_kh_script_f 3 0 0 429 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBNuY19raGFqaWl0X2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEISBY/RAgbxVuY19raGFqaWl0X3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcgYBAiEgWJkRIG8VbmNfa2hhamlpdF9wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERVuY19raGFqaWl0X3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hATbmNfa2hhamlpdF9jb3Jwc2VfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBCEgWP0QIG8VbmNfa2hhamlpdF9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIhIFiZESBvFW5jX2toYWppaXRfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEVbmNfa2hhamlpdF9wYXVsZHJvbl9mABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_kh_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22916,44 +23297,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_khajiit_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_khajiit_pauldron_f" == 0 )
-    		player->Equip "nc_khajiit_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_nord_script 3 0 0 417 23
+SCHD nc_pauldron_nord_script 3 0 0 409 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA5uY19ub3JkX2NvcnBzZQEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBBwgWP0QIG8QbmNfbm9yZF9wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECHCBYmREgbxBuY19ub3JkX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERBuY19ub3JkX3BhdWxkcm9uABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAObmNfbm9yZF9jb3Jwc2UBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQcIFj9ECBvEG5jX25vcmRfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAhwgWJkRIG8QbmNfbm9yZF9wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhEQbmNfbm9yZF9wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_pauldron_nord_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -22962,44 +23347,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_nord_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_nord_pauldron" == 0 )
-    		player->Equip "nc_nord_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_nord_script_f 3 0 0 425 23
+SCHD nc_pauldron_nord_script_f 3 0 0 417 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19ub3JkX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHiBY/RAgbxJuY19ub3JkX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcgYBAh4gWJkRIG8SbmNfbm9yZF9wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERJuY19ub3JkX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfbm9yZF9jb3Jwc2VfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB4gWP0QIG8SbmNfbm9yZF9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIeIFiZESBvEm5jX25vcmRfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhESbmNfbm9yZF9wYXVsZHJvbl9mABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
 SCTX
     begin nc_pauldron_nord_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23008,44 +23397,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_nord_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_nord_pauldron_f" == 0 )
-    		player->Equip "nc_nord_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_orc_script 3 0 0 418 23
+SCHD nc_pauldron_orc_script 3 0 0 410 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19kdW5tZXJfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQbIFj9ECBvD25jX29yY19wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECGyBYmREgbw9uY19vcmNfcGF1bGRyb24gPT0gMAwBBnBsYXllcg4RD25jX29yY19wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfZHVubWVyX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEGyBY/RAgbw9uY19vcmNfcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAhsgWJkRIG8PbmNfb3JjX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOEQ9uY19vcmNfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_orc_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23054,45 +23447,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_dunmer_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_orc_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_orc_pauldron" == 0 )
-    		player->Equip "nc_orc_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
-    
 
 SCPT
-SCHD nc_pauldron_orc_script_f 3 0 0 421 23
+SCHD nc_pauldron_orc_script_f 3 0 0 413 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA9uY19vcmNfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQdIFj9ECBvEW5jX29yY19wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIGAQIdIFiZESBvEW5jX29yY19wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERFuY19vcmNfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAPbmNfb3JjX2NvcnBzZV9mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHSBY/RAgbxFuY19vcmNfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECHSBYmREgbxFuY19vcmNfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhERbmNfb3JjX3BhdWxkcm9uX2YAEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_orc_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23101,44 +23497,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_orc_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_orc_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_orc_pauldron_f" == 0 )
-    		player->Equip "nc_orc_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_poison_script 3 0 0 424 23
+SCHD nc_pauldron_poison_script 3 0 0 416 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEA9uY19wb2lzb25fY3VyZWQBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQeIFj9ECBvEm5jX3BvaXNvbl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECHiBYmREgbxJuY19wb2lzb25fcGF1bGRyb24gPT0gMAwBBnBsYXllcg4REm5jX3BvaXNvbl9wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAPbmNfcG9pc29uX2N1cmVkAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHiBY/RAgbxJuY19wb2lzb25fcGF1bGRyb24gPj0gMQwBBnBsYXllcgYBAh4gWJkRIG8SbmNfcG9pc29uX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOERJuY19wb2lzb25fcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_poison_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23147,44 +23547,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_poison_cured" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_poison_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_poison_pauldron" == 0 )
-    		player->Equip "nc_poison_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_rg_script 3 0 0 415 23
+SCHD nc_pauldron_rg_script 3 0 0 407 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19yZWRndWFyZF9jb3Jwc2UBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQaIFj9ECBvDm5jX3JnX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIGAQIaIFiZESBvDm5jX3JnX3BhdWxkcm9uID09IDAMAQZwbGF5ZXIOEQ5uY19yZ19wYXVsZHJvbgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfcmVkZ3VhcmRfY29ycHNlAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEGiBY/RAgbw5uY19yZ19wYXVsZHJvbiA+PSAxDAEGcGxheWVyBgECGiBYmREgbw5uY19yZ19wYXVsZHJvbiA9PSAwDAEGcGxheWVyDhEObmNfcmdfcGF1bGRyb24AEFEAzeXx8ugg8uXr7iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_pauldron_rg_script
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23193,44 +23597,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_redguard_corpse" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_rg_pauldron" >= 1 )
-    	if ( player->HasItemEquipped "nc_rg_pauldron" == 0 )
-    		player->Equip "nc_rg_pauldron"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_pauldron_rg_script_f 3 0 0 423 23
+SCHD nc_pauldron_rg_script_f 3 0 0 415 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBRuY19yZWRndWFyZF9jb3Jwc2VfZgEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBBwgWP0QIG8QbmNfcmdfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyBgECHCBYmREgbxBuY19yZ19wYXVsZHJvbl9mID09IDAMAQZwbGF5ZXIOERBuY19yZ19wYXVsZHJvbl9mABBRAM3l8fLoIPLl6+4g4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAUbmNfcmVkZ3VhcmRfY29ycHNlX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQcIFj9ECBvEG5jX3JnX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcgYBAhwgWJkRIG8QbmNfcmdfcGF1bGRyb25fZiA9PSAwDAEGcGxheWVyDhEQbmNfcmdfcGF1bGRyb25fZgAQUQDN5fHy6CDy5evuIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_pauldron_rg_script_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23241,24 +23649,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_redguard_corpse_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_rg_pauldron_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_rg_pauldron_f" == 0 )
-    		player->Equip "nc_rg_pauldron_f"
-    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -23288,6 +23701,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_poison_pauldron" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23557,6 +23971,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_rg_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -23624,6 +24039,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_rg_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -23657,19 +24073,18 @@ SCTX
     
 
 SCPT
-SCHD nc_rg_skelly_pauldron 3 0 0 424 23
+SCHD nc_rg_skelly_pauldron 3 0 0 416 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBBuY19yZ19za2VsbHlfTlBDAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHSBY/RAgbxFuY19yZ19wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyBgECHSBYmREgbxFuY19yZ19wYXVsZHJvbl9zayA9PSAwDAEGcGxheWVyDhERbmNfcmdfcGF1bGRyb25fc2sAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hAQbmNfcmdfc2tlbGx5X05QQwEAAABIQgEA2xAFAXMCAAIgMCQBCQEFAXMBAAggcwEAIDEgKwYBAQsgcwEAIDwgNTAwMCQBCQEFAXMBAAIgMAwBBnBsYXllcgYBBB0gWP0QIG8RbmNfcmdfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcgYBAh0gWJkRIG8RbmNfcmdfcGF1bGRyb25fc2sgPT0gMAwBBnBsYXllcg4REW5jX3JnX3BhdWxkcm9uX3NrABBTAM3l8fLoIPHq5evl8iDiIOjt4uXt8uDw5SDx6+j46u7sIPL/5uXr7i4gz+798u7s8yDi+yDv5fDl4fDg8fvi4OXy5SDl4+4g9+Xw5ecg7+vl9+4uAAAJAQkBAQE=
 SCTX
     begin nc_rg_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23678,44 +24093,48 @@ SCTX
     	endif
     	SetDelete 1
     	return
+    endif
+    
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
     endif
     
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_rg_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_rg_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_rg_pauldron_sk" == 0 )
-    		player->Equip "nc_rg_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
 
 SCPT
-SCHD nc_rg_skelly_pauldron_f 3 0 0 424 23
-SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfcmdfc2tlbGx5X05QQ19mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHyBY/RAgbxNuY19yZ19wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIfIFiZESBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RE25jX3JnX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
+SCHD nc_rg_skelly_pauldron_f 6 0 0 282 52
+SCVR state;check;checkCounter;OnPCDrop;OnPCEquip;counter;;
+SCDT BgEGCSBY3BAgPT0gMQUBcwYACCBzBgAgMSArBgEBCSBzBgAgPCAxMCQBCQGrEQEAJAEJAQYBBgkgcwIAID09IDEFAXMDAAggcwMAIDEgKwYBAgkgcwMAID4gMzAFAXMCAAIgMBsQEEExVjFfRXF1aXBDb3Jwc2UJASQBCQEGAQUJIHMFACA9PSAwBgEDCSBzAQAgPT0gMAUBcwEAAiAxBQFzAwACIDAFAXMCAAIgMQkBBwEBBQFzAQACIDAJAQYBAwkgcwQAID09IDEFAUcQQTFWMV9OZWNyb0NvcnBzZRcgRxBBMVYxX05lY3JvQ29ycHNlIDEgLeYQEm5jX3JnX3NrZWxseV9OUENfZgEAAABIQgEA2xAJAQEB
 SCTX
     begin nc_rg_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -23726,24 +24145,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_rg_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_rg_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_rg_pauldron_sk_f" == 0 )
-    		player->Equip "nc_rg_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -23776,6 +24200,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_arg_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23811,6 +24236,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_arg_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23846,6 +24272,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_breton_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23881,6 +24308,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_breton_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23916,6 +24344,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_dunmer_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23951,6 +24380,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_dunmer_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -23986,6 +24416,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_altmer_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24021,6 +24452,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_altmer_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24056,6 +24488,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_imperial_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24091,6 +24524,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_imperial_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24126,6 +24560,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_khajiit_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24161,6 +24596,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_khajiit_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24196,6 +24632,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_nord_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24231,6 +24668,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_nord_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24266,6 +24704,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_orc_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24301,6 +24740,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_orc_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24336,6 +24776,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_rg_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24344,9 +24785,9 @@ SCTX
     end
 
 SCPT
-SCHD nc_skelly_rg_f 1 0 0 267 8
+SCHD nc_skelly_rg_f 1 0 0 286 8
 SCVR counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAQAIIHMBACAxICsGAQEJIHMBACA8IDEwJAEJAasRAQAkAQkBBgEICSBYGBAgPT0gMQYBBBggRxBBMVYxX05lY3JvQnVyZGVuID09IDAFAUcQQTFWMV9OZWNyb0NvcnBzZRcgRxBBMVYxX05lY3JvQ29ycHNlIDEgKxsQDm5jX3RpbWVfYm91bnR52xAMAQZwbGF5ZXLUEBNuY19yZ19wYXVsZHJvbl9za19mAQAHAQEAEC4AzeXx8ugg4e7r/PjlLCD35ewg7uTt7iDy5evuIOfgIPDg5yAtIO3l8+Tu4e3uLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAQAIIHMBACAxICsGAQEJIHMBACA8IDEwJAEJAasRAQAkAQkBBgEJCSBYGBAgPT0gMQYBBRggRxBBMVYxX05lY3JvQnVyZGVuID09IDAFAUcQQTFWMV9OZWNyb0NvcnBzZRcgRxBBMVYxX05lY3JvQ29ycHNlIDEgKxsQDm5jX3RpbWVfYm91bnR52xAMAQZwbGF5ZXLUEBNuY19yZ19wYXVsZHJvbl9za19mAQAbEBBBMVYxX0VxdWlwQ29ycHNlBwEBABAuAM3l8fLoIOHu6/z45Swg9+XsIO7k7e4g8uXr7iDn4CDw4OcgLSDt5fPk7uHt7i4AAAkBCQEBAQ==
 SCTX
     begin nc_skelly_rg_f
     
@@ -24371,6 +24812,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_rg_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24406,6 +24848,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_bosmer_pauldron_sk" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -24441,6 +24884,7 @@ SCTX
     		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_bosmer_pauldron_sk_f" 1
+    		StartScript A1V1_EquipCorpse
     	else
     		MessageBox "Нести больше, чем одно тело за раз - неудобно."
     	endif
@@ -25164,6 +25608,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_bosmer_pauldron" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -25231,6 +25676,7 @@ SCTX
     			StartScript nc_time_bounty
     			Disable
     			player->AddItem "nc_bosmer_pauldron_f" 1
+    			StartScript A1V1_EquipCorpse
     		endif
     		return
     	endif
@@ -25270,13 +25716,12 @@ SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDE
 SCTX
     begin nc_we_skelly_pauldron
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -25287,24 +25732,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_we_skelly_NPC" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_bosmer_pauldron_sk" >= 1 )
-    	if ( player->HasItemEquipped "nc_bosmer_pauldron_sk" == 0 )
-    		player->Equip "nc_bosmer_pauldron_sk"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
@@ -25316,13 +25766,12 @@ SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDE
 SCTX
     begin nc_we_skelly_pauldron_f
     
-    short ticks
+    short state
+    short check
+    short checkCounter
     short OnPCDrop
+    short OnPCEquip
     short counter
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
     
     if ( GetDisabled == 1 )
     	set counter to ( counter + 1 )
@@ -25333,24 +25782,29 @@ SCTX
     	return
     endif
     
+    if ( check == 1 )
+    	set checkCounter to ( checkCounter + 1 )
+    	if ( checkCounter > 30 )
+    		set check to 0
+    		StartScript A1V1_EquipCorpse
+    	endif
+    	return
+    endif
+    
+    if ( OnPCEquip == 0 )
+    	if ( state == 0 )
+    		set state to 1
+    		set checkCounter to 0
+    		set check to 1
+    	endif
+    else
+    	set state to 0
+    endif
+    
     if ( OnPCDrop == 1 )
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_we_skelly_NPC_f" 1 50 1
     	Disable
-    	set OnPCDrop to 0
-    	return
-    endif
-    
-    set ticks to ( ticks + 1 )
-    if ( ticks < 5000 )
-    	return
-    endif
-    set ticks to 0
-    if ( player->GetItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
-    	if ( player->HasItemEquipped "nc_bosmer_pauldron_sk_f" == 0 )
-    		player->Equip "nc_bosmer_pauldron_sk_f"
-    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
-    	endif
     endif
     
     end
