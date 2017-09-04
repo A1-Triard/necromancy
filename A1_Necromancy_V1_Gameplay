@@ -2688,7 +2688,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -2755,7 +2755,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -2807,7 +2807,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_skelly_NPC" 1 50 1
     	Disable
@@ -2823,7 +2822,7 @@ SCTX
     if ( player->GetItemCount "nc_arg_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_arg_pauldron_sk" == 0 )
     		player->Equip "nc_arg_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -2854,7 +2853,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_skelly_NPC_f" 1 50 1
     	Disable
@@ -2870,7 +2868,7 @@ SCTX
     if ( player->GetItemCount "nc_arg_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_arg_pauldron_sk_f" == 0 )
     		player->Equip "nc_arg_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -2917,7 +2915,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -2984,7 +2982,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -3036,7 +3034,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_skelly_NPC" 1 50 1
     	Disable
@@ -3052,7 +3049,7 @@ SCTX
     if ( player->GetItemCount "nc_breton_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_breton_pauldron_sk" == 0 )
     		player->Equip "nc_breton_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -3083,7 +3080,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_skelly_NPC_f" 1 50 1
     	Disable
@@ -3099,7 +3095,7 @@ SCTX
     if ( player->GetItemCount "nc_breton_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_breton_pauldron_sk_f" == 0 )
     		player->Equip "nc_breton_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -16857,7 +16853,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -16924,7 +16920,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -16976,7 +16972,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_de_skelly_NPC" 1 50 1
     	Disable
@@ -16992,7 +16987,7 @@ SCTX
     if ( player->GetItemCount "nc_dunmer_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_dunmer_pauldron_sk" == 0 )
     		player->Equip "nc_dunmer_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -17039,7 +17034,7 @@ SCTX
     if ( player->GetItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_dunmer_pauldron_sk_f" == 0 )
     		player->Equip "nc_dunmer_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -20875,7 +20870,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -20942,7 +20937,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -20994,7 +20989,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_he_skelly_NPC" 1 50 1
     	Disable
@@ -21010,7 +21004,7 @@ SCTX
     if ( player->GetItemCount "nc_altmer_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_altmer_pauldron_sk" == 0 )
     		player->Equip "nc_altmer_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21041,7 +21035,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_he_skelly_NPC_f" 1 50 1
     	Disable
@@ -21057,7 +21050,7 @@ SCTX
     if ( player->GetItemCount "nc_altmer_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_altmer_pauldron_sk_f" == 0 )
     		player->Equip "nc_altmer_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21104,7 +21097,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -21171,7 +21164,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -21222,7 +21215,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imp_skelly_NPC" 1 50 1
     	Disable
@@ -21238,7 +21230,7 @@ SCTX
     if ( player->GetItemCount "nc_imperial_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_imperial_pauldron_sk" == 0 )
     		player->Equip "nc_imperial_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21269,7 +21261,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imp_skelly_NPC_f" 1 50 1
     	Disable
@@ -21285,7 +21276,7 @@ SCTX
     if ( player->GetItemCount "nc_imperial_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_imperial_pauldron_sk_f" == 0 )
     		player->Equip "nc_imperial_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21555,7 +21546,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -21622,7 +21613,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -21674,7 +21665,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_skelly_NPC" 1 50 1
     	Disable
@@ -21690,7 +21680,7 @@ SCTX
     if ( player->GetItemCount "nc_khajiit_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_khajiit_pauldron_sk" == 0 )
     		player->Equip "nc_khajiit_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21721,7 +21711,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_skelly_NPC_f" 1 50 1
     	Disable
@@ -21737,7 +21726,7 @@ SCTX
     if ( player->GetItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_khajiit_pauldron_sk_f" == 0 )
     		player->Equip "nc_khajiit_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21802,7 +21791,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -21869,7 +21858,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -21921,7 +21910,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_skelly_NPC" 1 50 1
     	Disable
@@ -21937,7 +21925,7 @@ SCTX
     if ( player->GetItemCount "nc_nord_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_nord_pauldron_sk" == 0 )
     		player->Equip "nc_nord_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -21968,7 +21956,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_skelly_NPC_f" 1 50 1
     	Disable
@@ -21984,7 +21971,7 @@ SCTX
     if ( player->GetItemCount "nc_nord_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_nord_pauldron_sk_f" == 0 )
     		player->Equip "nc_nord_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22031,7 +22018,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -22098,7 +22085,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -22150,7 +22137,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_orc_skelly_NPC" 1 50 1
     	Disable
@@ -22166,7 +22152,7 @@ SCTX
     if ( player->GetItemCount "nc_orc_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_orc_pauldron_sk" == 0 )
     		player->Equip "nc_orc_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22197,7 +22183,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_orc_skelly_NPC_f" 1 50 1
     	Disable
@@ -22213,7 +22198,7 @@ SCTX
     if ( player->GetItemCount "nc_orc_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_orc_pauldron_sk_f" == 0 )
     		player->Equip "nc_orc_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22244,7 +22229,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_altmer_corpse" 1 50 1
     	Disable
@@ -22260,7 +22244,7 @@ SCTX
     if ( player->GetItemCount "nc_altmer_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_altmer_pauldron" == 0 )
     		player->Equip "nc_altmer_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22291,7 +22275,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_altmer_corpse_f" 1 50 1
     	Disable
@@ -22307,7 +22290,7 @@ SCTX
     if ( player->GetItemCount "nc_altmer_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_altmer_pauldron_f" == 0 )
     		player->Equip "nc_altmer_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22338,7 +22321,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_corpse" 1 50 1
     	Disable
@@ -22354,7 +22336,7 @@ SCTX
     if ( player->GetItemCount "nc_arg_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_arg_pauldron" == 0 )
     		player->Equip "nc_arg_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22385,7 +22367,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_arg_corpse_f" 1 50 1
     	Disable
@@ -22401,7 +22382,7 @@ SCTX
     if ( player->GetItemCount "nc_arg_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_arg_pauldron_f" == 0 )
     		player->Equip "nc_arg_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22432,7 +22413,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bosmer_corpse" 1 50 1
     	Disable
@@ -22448,7 +22428,7 @@ SCTX
     if ( player->GetItemCount "nc_bosmer_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_bosmer_pauldron" == 0 )
     		player->Equip "nc_bosmer_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22479,7 +22459,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bosmer_corpse_f" 1 50 1
     	Disable
@@ -22495,7 +22474,7 @@ SCTX
     if ( player->GetItemCount "nc_bosmer_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_bosmer_pauldron_f" == 0 )
     		player->Equip "nc_bosmer_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22526,7 +22505,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_corpse" 1 50 1
     	Disable
@@ -22542,7 +22520,7 @@ SCTX
     if ( player->GetItemCount "nc_breton_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_breton_pauldron" == 0 )
     		player->Equip "nc_breton_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22573,7 +22551,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_bret_corpse_f" 1 50 1
     	Disable
@@ -22589,7 +22566,7 @@ SCTX
     if ( player->GetItemCount "nc_breton_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_breton_pauldron_f" == 0 )
     		player->Equip "nc_breton_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22620,7 +22597,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_dunmer_corpse" 1 50 1
     	Disable
@@ -22636,7 +22612,7 @@ SCTX
     if ( player->GetItemCount "nc_dunmer_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_dunmer_pauldron" == 0 )
     		player->Equip "nc_dunmer_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22667,7 +22643,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_dunmer_corpse_f" 1 50 1
     	Disable
@@ -22683,7 +22658,7 @@ SCTX
     if ( player->GetItemCount "nc_dunmer_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_dunmer_pauldron_f" == 0 )
     		player->Equip "nc_dunmer_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22714,7 +22689,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_fire_cured" 1 50 1
     	Disable
@@ -22730,7 +22704,7 @@ SCTX
     if ( player->GetItemCount "nc_fire_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_fire_pauldron" == 0 )
     		player->Equip "nc_fire_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22761,7 +22735,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_frost_cured" 1 50 1
     	Disable
@@ -22777,7 +22750,7 @@ SCTX
     if ( player->GetItemCount "nc_frost_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_frost_pauldron" == 0 )
     		player->Equip "nc_frost_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22808,7 +22781,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imperial_corpse" 1 50 1
     	Disable
@@ -22824,7 +22796,7 @@ SCTX
     if ( player->GetItemCount "nc_imperial_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_imperial_pauldron" == 0 )
     		player->Equip "nc_imperial_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22855,7 +22827,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_imperial_corpse_f" 1 50 1
     	Disable
@@ -22871,7 +22842,7 @@ SCTX
     if ( player->GetItemCount "nc_imperial_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_imperial_pauldron_f" == 0 )
     		player->Equip "nc_imperial_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22902,7 +22873,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_corpse" 1 50 1
     	Disable
@@ -22918,7 +22888,7 @@ SCTX
     if ( player->GetItemCount "nc_khajiit_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_khajiit_pauldron" == 0 )
     		player->Equip "nc_khajiit_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22949,7 +22919,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_khajiit_corpse_f" 1 50 1
     	Disable
@@ -22965,7 +22934,7 @@ SCTX
     if ( player->GetItemCount "nc_khajiit_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_khajiit_pauldron_f" == 0 )
     		player->Equip "nc_khajiit_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -22996,7 +22965,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_corpse" 1 50 1
     	Disable
@@ -23012,7 +22980,7 @@ SCTX
     if ( player->GetItemCount "nc_nord_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_nord_pauldron" == 0 )
     		player->Equip "nc_nord_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23043,7 +23011,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_nord_corpse_f" 1 50 1
     	Disable
@@ -23059,7 +23026,7 @@ SCTX
     if ( player->GetItemCount "nc_nord_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_nord_pauldron_f" == 0 )
     		player->Equip "nc_nord_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23090,7 +23057,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_dunmer_corpse_f" 1 50 1
     	Disable
@@ -23106,7 +23072,7 @@ SCTX
     if ( player->GetItemCount "nc_orc_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_orc_pauldron" == 0 )
     		player->Equip "nc_orc_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23138,7 +23104,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_orc_corpse_f" 1 50 1
     	Disable
@@ -23154,7 +23119,7 @@ SCTX
     if ( player->GetItemCount "nc_orc_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_orc_pauldron_f" == 0 )
     		player->Equip "nc_orc_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23185,7 +23150,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_poison_cured" 1 50 1
     	Disable
@@ -23201,7 +23165,7 @@ SCTX
     if ( player->GetItemCount "nc_poison_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_poison_pauldron" == 0 )
     		player->Equip "nc_poison_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23232,7 +23196,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_redguard_corpse" 1 50 1
     	Disable
@@ -23248,7 +23211,7 @@ SCTX
     if ( player->GetItemCount "nc_rg_pauldron" >= 1 )
     	if ( player->HasItemEquipped "nc_rg_pauldron" == 0 )
     		player->Equip "nc_rg_pauldron"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23279,7 +23242,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_redguard_corpse_f" 1 50 1
     	Disable
@@ -23295,7 +23257,7 @@ SCTX
     if ( player->GetItemCount "nc_rg_pauldron_f" >= 1 )
     	if ( player->HasItemEquipped "nc_rg_pauldron_f" == 0 )
     		player->Equip "nc_rg_pauldron_f"
-            MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести тело в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -23600,7 +23562,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -23667,7 +23629,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -23719,7 +23681,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_rg_skelly_NPC" 1 50 1
     	Disable
@@ -23735,16 +23696,16 @@ SCTX
     if ( player->GetItemCount "nc_rg_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_rg_pauldron_sk" == 0 )
     		player->Equip "nc_rg_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
     end
 
 SCPT
-SCHD nc_rg_skelly_pauldron_f 3 0 0 432 23
+SCHD nc_rg_skelly_pauldron_f 3 0 0 424 23
 SCVR ticks;OnPCDrop;counter;;
-SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEGCSBzAgAgPT0gMQUBVgEAAiAwBQFHEEExVjFfTmVjcm9Db3Jwc2UXIEcQQTFWMV9OZWNyb0NvcnBzZSAxIC3mEBJuY19yZ19za2VsbHlfTlBDX2YBAAAASEIBANsQBQFzAgACIDAkAQkBBQFzAQAIIHMBACAxICsGAQELIHMBACA8IDUwMDAkAQkBBQFzAQACIDAMAQZwbGF5ZXIGAQQfIFj9ECBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcgYBAh8gWJkRIG8TbmNfcmdfcGF1bGRyb25fc2tfZiA9PSAwDAEGcGxheWVyDhETbmNfcmdfcGF1bGRyb25fc2tfZgAQUwDN5fHy6CDx6uXr5fIg4iDo7eLl7fLg8OUg8evo+Oru7CDy/+bl6+4uIM/u/fLu7PMg4vsg7+Xw5eHw4PH74uDl8uUg5ePuIPfl8OXnIO/r5ffuLgAACQEJAQEB
+SCDT BgEBCSBYIBAgPT0gMSQBCQEGAQYJIFjcECA9PSAxBQFzAwAIIHMDACAxICsGAQEJIHMDACA8IDEwJAEJAasRAQAkAQkBBgEFCSBzAgAgPT0gMQUBRxBBMVYxX05lY3JvQ29ycHNlFyBHEEExVjFfTmVjcm9Db3Jwc2UgMSAt5hASbmNfcmdfc2tlbGx5X05QQ19mAQAAAEhCAQDbEAUBcwIAAiAwJAEJAQUBcwEACCBzAQAgMSArBgEBCyBzAQAgPCA1MDAwJAEJAQUBcwEAAiAwDAEGcGxheWVyBgEEHyBY/RAgbxNuY19yZ19wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIGAQIfIFiZESBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPT0gMAwBBnBsYXllcg4RE25jX3JnX3BhdWxkcm9uX3NrX2YAEFMAzeXx8ugg8erl6+XyIOIg6O3i5e3y4PDlIPHr6Pjq7uwg8v/m5evuLiDP7v3y7uzzIOL7IO/l8OXh8ODx++Lg5fLlIOXj7iD35fDl5yDv6+X37i4AAAkBCQEBAQ==
 SCTX
     begin nc_rg_skelly_pauldron_f
     
@@ -23766,7 +23727,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_rg_skelly_NPC_f" 1 50 1
     	Disable
@@ -23782,7 +23742,7 @@ SCTX
     if ( player->GetItemCount "nc_rg_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_rg_pauldron_sk_f" == 0 )
     		player->Equip "nc_rg_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -25209,7 +25169,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -25276,7 +25236,7 @@ SCTX
     	endif
     
     	if ( GetPCCell "Район Горького Берега" == 0 )
-            MessageBox "Здесь тело будет очень долго оставаться нетронутым."
+    		MessageBox "Здесь тело будет очень долго оставаться нетронутым."
             set state to 1
     	else
     		if ( state == 0 )
@@ -25328,7 +25288,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_we_skelly_NPC" 1 50 1
     	Disable
@@ -25344,7 +25303,7 @@ SCTX
     if ( player->GetItemCount "nc_bosmer_pauldron_sk" >= 1 )
     	if ( player->HasItemEquipped "nc_bosmer_pauldron_sk" == 0 )
     		player->Equip "nc_bosmer_pauldron_sk"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -25375,7 +25334,6 @@ SCTX
     endif
     
     if ( OnPCDrop == 1 )
-    	set doonce to 0
     	set A1V1_NecroCorpse to ( A1V1_NecroCorpse - 1 )
     	PlaceAtPC "nc_we_skelly_NPC_f" 1 50 1
     	Disable
@@ -25391,7 +25349,7 @@ SCTX
     if ( player->GetItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
     	if ( player->HasItemEquipped "nc_bosmer_pauldron_sk_f" == 0 )
     		player->Equip "nc_bosmer_pauldron_sk_f"
-            MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
+    		MessageBox "Нести скелет в инвентаре слишком тяжело. Поэтому вы перебрасываете его через плечо."
     	endif
     endif
     
@@ -27163,7 +27121,7 @@ MODL blas\\bb-headless-skelly.nif
 FNAM Redguard Revenant
 BYDT AAACAA==
 
-NPC_
+NPC_ Persist
 NAME nc_arg_skelly_NPC
 MODL base_animKnA.nif
 FNAM Скелет аргонианина
@@ -27178,7 +27136,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_bret_skelly_NPC
 FNAM Скелет бретона
 RNAM Breton Revenant
@@ -27192,7 +27150,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_de_skelly_NPC
 FNAM Скелет темного эльфа
 RNAM Dark Elf Revenant
@@ -27206,7 +27164,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_he_skelly_NPC
 FNAM Скелет высокого эльфа
 RNAM High Elf Revenant
@@ -27220,7 +27178,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_imp_skelly_NPC
 FNAM Скелет мужчины-имперца
 RNAM Imperial Revenant
@@ -27234,7 +27192,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_khajiit_skelly_NPC
 MODL base_animKnA.nif
 FNAM Скелет хаджита-мужчины
@@ -27249,7 +27207,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_nord_skelly_NPC
 FNAM Скелет мужчины-нордлинга
 RNAM Nord Revenant
@@ -27263,7 +27221,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_orc_skelly_NPC
 FNAM Скелет орка-мужчины
 RNAM Orc Revenant
@@ -27277,7 +27235,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_rg_skelly_NPC
 FNAM Скелет мужчины-редгарда
 RNAM Redguard Revenant
@@ -27291,7 +27249,7 @@ FLAG 8
 AIDT HgAeHgBa/3YAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_we_skelly_NPC
 FNAM Скелет лесного эльфа
 RNAM Wood Elf Revenant
@@ -29832,7 +29790,7 @@ FNAM Череп женщины-редгарда
 MCDT AAAAPwAAAAAAAAAA
 ITEX m\\misc_skull00.tga
 
-NPC_
+NPC_ Persist
 NAME nc_imp_skelly_NPC_f
 FNAM Скелет женщины-имперца
 RNAM Imperial Revenant
@@ -29846,7 +29804,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_arg_skelly_NPC_f
 MODL base_animKnA.nif
 FNAM Скелет аргонианки
@@ -29861,7 +29819,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_bret_skelly_NPC_f
 FNAM Скелет бретонки
 RNAM Breton Revenant
@@ -29875,7 +29833,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_de_skelly_NPC_f
 FNAM Скелет темной эльфийки
 RNAM Dark Elf Revenant
@@ -29889,7 +29847,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_he_skelly_NPC_f
 FNAM Скелет высокой эльфийки
 RNAM High Elf Revenant
@@ -29903,7 +29861,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_khajiit_skelly_NPC_f
 MODL base_animKnA.nif
 FNAM Скелет хаджита-женщины
@@ -29918,7 +29876,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_nord_skelly_NPC_f
 FNAM Скелет женщины-нордлинга
 RNAM Nord Revenant
@@ -29932,7 +29890,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_orc_skelly_NPC_f
 FNAM Скелет орка-женщины
 RNAM Orc Revenant
@@ -29946,7 +29904,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_rg_skelly_NPC_f
 FNAM Скелет женщины-редгарда
 RNAM Redguard Revenant
@@ -29960,7 +29918,7 @@ FLAG 9
 AIDT HgAeHgAAAAAAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
-NPC_
+NPC_ Persist
 NAME nc_we_skelly_NPC_f
 FNAM Скелет лесной эльфийки
 RNAM Wood Elf Revenant
