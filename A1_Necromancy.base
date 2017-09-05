@@ -1160,8 +1160,8 @@ INAM ingred_bonemeal_01
 INTV 1
 INAM ingred_bonemeal_01
 INTV 1
-INAM nc_dunmer_pauldron_sk
-INTV 10
+INAM ingred_bonemeal_01
+INTV 1
 
 LEVI
 NAME nc_sarcophagus_skull
@@ -1170,8 +1170,8 @@ NNAM 60
 INDX 2
 INAM ingred_bonemeal_01
 INTV 1
-INAM nc_dunmer_skull
-INTV 7
+INAM ingred_bonemeal_01
+INTV 1
 
 CONT
 NAME nc_chest_small
