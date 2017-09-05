@@ -11,7 +11,7 @@ A1 Professional Necromant v. 0.1
 
 3. Запустить A1_Necromancy_init.exe, убедиться что программа отработала без ошибок. При наличии сообщения об ошибке, устранить источник ошибки и повторно запустить A1_Necromancy_init.exe. Если причина и способ устранения ошибки неясны, проконсультируйтесь у автора плагина (internalmike@gmail.com). В результате работы программы будет создан подкаталог Data Files\MWSE с файлами, содержащими необходимую для мода информацию, и файлы A1_Necromancy_Hairs.esp, A1_Necromancy_CorpsPersist.esp.
 
-4. Подключить файлы A1_Necromancy_Hairs.esp, A1_Necromancy_V1_Gameplay.esp и A1_Necromancy.esp.
+4. Подключить файлы A1_Necromancy_Hairs.esp, A1_Necromancy_V2_Gameplay.esp и A1_Necromancy.esp.
 
 5. Загрузить игру, сохранить в новый слот.
 
