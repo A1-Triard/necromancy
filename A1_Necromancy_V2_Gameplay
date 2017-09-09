@@ -643,9 +643,9 @@ SCTX
     end
 
 SCPT
-SCHD A1V2_NecroArgo_sc 30 13 18 5230 462
-SCVR setUp;see_f_warlord;see_fr_warlord;see_p_warlord;doOnce;doOnce2;doOnce3;doOnce4;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;p_Check;emb_hook_nominion;call;travel;name;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;sheatheTimer;moveTimer;;
-SCDT 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
+SCHD A1V2_NecroArgo_sc 30 13 18 5089 460
+SCVR setUp;see_f_warlord;see_fr_warlord;see_p_warlord;doOnce;doOnce2;doOnce3;temps;combatDone;weapUse;combatCheck;soundPlayed;flyCheck;wwCheck;oneTimeMove;compMove;c_move;warp;c_marksman;c_speed;c_athletics;companion;nohello;noLore;counter;p_Check;emb_hook_nominion;call;travel;name;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;ax;ay;bx;by;bz;cx;cy;cz;t1;t2;t3;t4;coDist;coDist2;playz;timer;sheatheTimer;moveTimer;;
+SCDT BQFsCwACIDAGAQEJIFggECA9PSAxBQFsCwACIDEJARM4CgATOGwAADwPOAQADDjHARM4HQATOHMAADwPOAQADDjFAQUBcx4AAiAwBQFsDAACIDAGAQETIGwBACA9PSAtMjE0NzQ4MzY0OAUBbAsAAiAwCAECCCBsAQAgPCAwBQFsDAACIDEFAWwLAAkgLTEgbAEAICoHAQEFAWwLAAUgbAEAAAkBEzgLABM4bAAAPA84BAAMOOMAEzgKABM4bAAAPBM4yQAKONMACUExTlBDXzAlZAs/EzgMABM4bAACPAo4CwETOAoAEzhsAAA8Ezj1AAo4/wAIQTFOUENfJWQACz8TOAwAEzhsAAI8EzgMABM4bAAAPBA8ETgBAAAAEzgMABM4bAAAPBE8EzgLABM4bAACPBM4CgATOGwAAjwGAQENIGwLACA9PSAyMDU1OAUBbAwAAiAxBwEBBQFsDAACIDAJARM4CwATOGwAADwPOAQADDjFARM4DAATOGwAADwUPBM4CgATOGwAAjwTOAoAEzhsAAA8fj8AECgAWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWAAAJAEFAWwLAAIgMAYBFwkgcwEAID09IDAFAXMBAAIgMQUBbAEAFiBHEkExVjJfU291bEdlbUhhc2hIaQAFAWwBAAwgbAEAIDY1NTM2ICoFAWwLABcgRxNBMVYyX1NvdWxHZW1IYXNoTG93AAUBbAEACiBsAQAgbAsAICsFAUcSQTFWMl9Tb3VsR2VtSGFzaEhpAiAwBQFHE0ExVjJfU291bEdlbUhhc2hMb3cCIDAFAWwCABUgRxFBMVYyX05lY3JvU2tpbGxzMQAFAWwDABUgRxFBMVYyX05lY3JvU2tpbGxzMgAFAWwEABUgRxFBMVYyX05lY3JvU2tpbGxzMwAFAWwFABUgRxFBMVYyX05lY3JvU2tpbGxzNAAFAWwGABUgRxFBMVYyX05lY3JvU2tpbGxzNQAFAWwHABUgRxFBMVYyX05lY3JvU2tpbGxzNgAFAWwIABUgRxFBMVYyX05lY3JvU2tpbGxzNwAFAWwJABUgRxFBMVYyX05lY3JvU2tpbGxzOAAFAWwKABUgRxFBMVYyX05lY3JvU2tpbGxzOQAFAXMWAAIgMQUBcxsAAiAxIhAFLSDB7ukiEA8tINHu7/Du4u7m5OXt6OUiEAwtIMjt8fLw8+r26OgiEA0tIM/l8OXs5fnl7ejlJAEJAQYBBQkgcwoAID09IDEMAQZwbGF5ZXIGAQEJIFiXESA8PSA4gRAAAAAABwEBgRAAAEhDCQEJAQYBFgkgcwsAID09IDEFAWYRAAogZhEAIFgSECArBgECGCBYiBEgYgxXZWFwb24gU3dpc2ggPT0gMQUBZhEAAiAwJAEIAQIZIFiIESBiDWNyb3NzYm93U2hvb3QgPT0gMQUBZhEAAiAwJAEIAQIUIFiIESBiCGJvd1Nob290ID09IDEFAWYRAAIgMCQBCAEKCCBmEQAgPiA0BgECGCBYiBEgYgxXZWFwb24gU3dpc2ggPT0gMAUBZhEAAiAwBQFzDAACIDEIAQIZIFiIESBiDWNyb3NzYm93U2hvb3QgPT0gMAUBZhEAAiAwBQFzDAACIDEIAQIUIFiIESBiCGJvd1Nob290ID09IDAFAWYRAAIgMAUBcwwAAiAxCQEJAQkBBgEFCSBzDAAgPT0gMQ4RDXNpbHZlciBkYWdnZXLVEA1zaWx2ZXIgZGFnZ2VyAQAFAXMMAAIgMAUBcwsAAiAwBQFzCQACIDEJAQYBBgkgcwkAID09IDEFAWYQAAogZhAAIFgSECArBgEDCCBmEAAgPiA2BQFmEAACIDAFAXMJAAIgMAUBcxIAAiAwCQEJAQYBXwkgWPoQID09IDMGAQEJIFiKESA9PSAxYxEHAQFkEQkBDAEGcGxheWVyBgEFCiBYOBEKID09IDEGAQMJIHMNACA9PSAwIxEQbmNfY29tcDJfbGV2X2JvZwZwbGF5ZXIdEQxuY19jb21wMl9sZXYFAXMNAAIgMQkBBwEEBgECCSBzDQAgPT0gMR4RDG5jX2NvbXAyX2xldgUBcw0AAiAwCQEJAQwBBnBsYXllcgYBBQogWDgRAiA9PSAxBgEDCSBzDgAgPT0gMCMRD25jX2NvbXAyX3d3X2JvZwZwbGF5ZXIdEQtuY19jb21wMl93dwUBcw4AAiAxCQEHAQQGAQIJIHMOACA9PSAxHhELbmNfY29tcDJfd3cFAXMOAAIgMAkBCQEGAQQJIHMNACA9PSAxBgECCSBYrhEgPT0gMAwBBnBsYXllcgUBZg8ABiBYChBaAAsQWmYPAAAJAQkBBgEICSBYrhEgPT0gMQYBAQkgcw0AID09IDAFAXMLAAIgMQcBAQUBcwkAAiAxCQEFAWYQAAIgMAUBcxIAAiAxJAEJAQwBBnBsYXllcgUBZgEABiBYChBYAAwBBnBsYXllcgUBZgIABiBYChBZAAYBBAkgcwUAID09IDAMAQZwbGF5ZXIFAWYDAAYgWAoQWAAMAQZwbGF5ZXIFAWYEAAYgWAoQWQAMAQZwbGF5ZXIFAWYFAAYgWAoQWgAFAXMFAAIgMQkBBQFmCQAKIGYBACBmAwAgLQUBZgkACiBmCQAgZgkAICoFAWYKAAogZgIAIGYEACAtBQFmCgAKIGYKACBmCgAgKgUBZgkACiBmCQAgZgoAICsFAWYNAAkgWKwRIGYJAAAGAQEKIGYNACA+IDM2MAUBcwUAAiAwCQEGAQYKIGYNACA+IDE4MAYBBAkgcwYAID09IDAMAQZwbGF5ZXIFAWYGAAYgWAoQWAAMAQZwbGF5ZXIFAWYHAAYgWAoQWQAMAQZwbGF5ZXIFAWYIAAYgWAoQWgAFAXMGAAIgMQkBCQEFAWYLAAogZgEAIGYGACAtBQFmCwAKIGYLACBmCwAgKgUBZgwACiBmAgAgZgcAIC0FAWYMAAogZgwAIGYMACAqBQFmCwAKIGYLACBmDAAgKwUBZg4ACSBYrBEgZgsAAAYBAQogZg4AID4gMzYwBQFzBgACIDAJAQYBDgkgcwIAID09IDAGAQwJIHMDACA9PSAwBgEKCSBzBAAgPT0gMAYBCAkgcxIAID09IDAGAQYKIGYNACA+IDM1MAYBBBMgWAEQIHIGUGxheWVyID4gNjgwCxBYZgMAAAsQWWYEAAALEFpmBQAA9hAGUGxheWVyAAAAAAAAAAAAAAAAAAAACQEJAQkBCQEJAQkBCQEGAQUJIHMCACA9PSAxBgEBEyBHC25jX2ZfZm9sbG93ID09IDAFAXMSAAIgMQcBAQUBcxIAAiAwCQEJAQYBBQkgcwMAID09IDEGAQEUIEcMbmNfZnJfZm9sbG93ID09IDAFAXMSAAIgMQcBAQUBcxIAAiAwCQEJAQYBBQkgcwQAID09IDEGAQETIEcLbmNfcF9mb2xsb3cgPT0gMAUBcxIAAiAxBwEBBQFzEgACIDAJAQkBBgEICSBzEAAgPT0gMQYBBgkgcxEAID09IDAGAQQJIFj6ECA9PSAzBgECEiBYARAgcgZQbGF5ZXIgPCA3MPkQAACWQwAAAAAAAAAA/f8AAAEFAXMRAAIgMQkBCQEJAQkBBgEECSBzEQAgPT0gMQYBAhMgWAEQIHIGUGxheWVyID4gMTAw9hAGUGxheWVyAAAAAAAAAAAAAAAAAAAABQFzEQACIDAJAQkBBgEGCSBzDwAgPT0gMQUBZhIACiBmEgAgWBIQICsGAQMIIGYSACA+IDQFAWYSAAIgMPYQBlBsYXllcgAAAAAAAAAAAAAAAAAAAAUBcw8AAiAwCQEJAQYBDQkgcxwAID09IDAGAQISIEcKbmNfY2FsbHJldiA9PSAx+RAAAAAAAAAAAAAAAAAAAAAFAXMcAAIgMQgBAhIgRwpuY19jYWxscmV2ID09IDL2EAZwbGF5ZXIAAAAAAAAAAAAAAAAAAAAFAXMcAAIgMggBAhIgRwpuY19jYWxscmV2ID09IDP5EAAA+kMAAAAAAAAAAP7/AAUBcxwAAiAzCQEGAQEWIEcObmNfY2FsbG1lc3NhZ2UgPT0gMAUBRw5uY19jYWxsbWVzc2FnZQIgMQkBCQEGAQESIEcKbmNfY2FsbHJldiA9PSAwBQFzHAACIDAJAQYBOQggcx0AID4gMAYBNwkgWB8QID09IDAGAQMJIHMdACA9PSAx+RAAAPpDAAAAAAAAAAAAAAAFEHjCtcZ9xXDGAAALRAAAAAAHQmFsbW9yYQUBcx0AAiAwCQEGAQMJIHMdACA9PSAy+RAAAPpDAAAAAAAAAAAAAAAFEJeBZcal/UxHNH8ERQAAAAAIQWxkLXJ1aG4FAXMdAAIgMAkBBgEDCSBzHQAgPT0gM/kQAAD6QwAAAAAAAAAAAAAABRAOtDxH0dOfx8gvEEQAAAAABVZpdmVjBQFzHQACIDAJAQYBAwkgcx0AID09IDT5EAAA+kMAAAAAAAAAAAAAAAUQVUfNR1lzccdYxR5EAAAAAAlNb2xhZyBNYXIFAXMdAAIgMAkBBgEDCSBzHQAgPT0gNfkQAAD6QwAAAAAAAAAAAAAABRDIhhFIMOjnRgAAL0QAAAAADldvbHZlcmluZSBIYWxsBQFzHQACIDAJAQYBAwkgcx0AID09IDb5EAAA+kMAAAAAAAAAAAAAAAUQVbLAR0jV2Ud/AppDAAAAAANWb3MFAXMdAAIgMAkBBgEDCSBzHQAgPT0gN/kQAAD6QwAAAAAAAAAAAAAABRDim2lH1+MySO8gnUMAAAAACURhZ29uIEZlbAUBcx0AAiAwCQEGAQMJIHMdACA9PSA4+RAAAPpDAAAAAAAAAAAAAAAFEC4jg8d33gdIwiZNQwAAAAAFS2h1dWwFAXMdAAIgMAkBBgEDCSBzHQAgPT0gOfkQAAD6QwAAAAAAAAAAAAAABRBp7KTHmSi0R5zdg0QAAAAABkduaXNpcwUBcx0AAiAwCQEGAQMKIHMdACA9PSAxMPkQAAD6QwAAAAAAAAAAAAAABRD8AaJGzfwVR2QokUQAAAAACUdob3N0Z2F0ZQUBcx0AAiAwCQEGAQMKIHMdACA9PSAxMfkQAAD6QwAAAAAAAAAAAAAABRBQ/KrAosEaRYJTLUMAAAAAH01vdXJuaG9sZCwgUGxhemEgQnJpbmRpc2kgRG9yb20FAXMdAAIgMAkBCQEJAQYBAgkgcxkAIDwgMjAFAXMZAAggcxkAIDEgKyQBCQEFAXMZAAIgMAYBAQogWGsQIDwgMTAwBQFsCwACIDEHAQEFAWwLAAIgMAkBEzgKABM4bAAAPA84BAAMOHkRbBAAAMhCBQFsCwAKIGwCACAyNTYgLzwQbAsAAAUBbAsAECBsAgAgMjU2IGwLACAqIC1CEGwLAAAFAWwLAAogbAMAIDI1NiAvRRBsCwAABQFsCwAQIGwDACAyNTYgbAsAICogLUgQbAsAAAUBbAsACiBsBAAgMjU2IC9LEGwLAAAFAWwLABAgbAQAIDI1NiBsCwAgKiAtThBsCwAABQFsCwAKIGwFACAyNTYgL1EQbAsAAAUBbAsAECBsBQAgMjU2IGwLACAqIC1aEGwLAAAFAWwLAAogbAYAIDI1NiAvXRBsCwAABQFsCwAQIGwGACAyNTYgbAsAICogLWAQbAsAAAUBbAsACiBsBwAgMjU2IC9jEGwLAAAFAWwLABAgbAcAIDI1NiBsCwAgKiAtZhBsCwAABQFsCwAKIGwIACAyNTYgL2kQbAsAAAUBbAsAECBsCAAgMjU2IGwLACAqIC1vEGwLAAAFAWwLAAogbAkAIDI1NiAvexBsCwAABQFsCwAQIGwJACAyNTYgbAsAICogLX4QbAsAAAUBbAsACiBsCgAgMjU2IC+BEGwLAAAFAWwLABAgbAoAIDI1NiBsCwAgKiAtihBsCwAABgEWCSBY+hAgPT0gMwYBAhMgWAEQIHIGUGxheWVyIDwgMzAwMBAAAHBBVBAAAHBBCAEEEyBYARAgcgZQbGF5ZXIgPiAzMDAMAQZwbGF5ZXIFAXMUAAsgWC8QIDIuMjUgKgwBBnBsYXllcgUBcxUACyBYUxAgMi4yNSAqMBBzFAAAVBBzFQAACQEGAQEeIFj9ECBvEnBfcmVzdG9yZV9oZWFsdGhfYiA+PSAxBQFzGgACIDEIAQEeIFj9ECBvEnBfcmVzdG9yZV9oZWFsdGhfYyA+PSAxBQFzGgACIDEIAQEeIFj9ECBvEnBfcmVzdG9yZV9oZWFsdGhfZSA+PSAxBQFzGgACIDEIAQEeIFj9ECBvEnBfcmVzdG9yZV9oZWFsdGhfcSA+PSAxBQFzGgACIDEIAQEeIFj9ECBvEnBfcmVzdG9yZV9oZWFsdGhfcyA+PSAxBQFzGgACIDEHAQEFAXMaAAIgMAkBCQEGAQEJIFj6ECAhPSAzMBAAACBCCQEGAQwJIHMHACA9PSAwBgEKCSBYjBAgPD0gMAIQC1RodW5kZXJDbGFw1BASbmNfYXJnX3BhdWxkcm9uX3NrAQDUEBFuY19hcmdvbmlhbl9za3VsbAEA1BASaW5ncmVkX2JvbmVtZWFsXzAxDwDUEBVpbmdyZWRfc2NyYXBfbWV0YWxfMDEBANQQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAQAGAQEfIFj9ECBvFG5jX1NvdWxHZW1fYmxhY2tlbmVkID4gMAwBBnBsYXllcgUBZg0ABSBYYhAACQEFAXMHAAIgMQkBCQEBAQ==
 SCTX
     begin A1V2_NecroArgo_sc
     
@@ -684,7 +684,7 @@ SCTX
     short doOnce
     short doOnce2
     short doOnce3
-    short doOnce4
+    short conj
     short combatDone
     short weapUse
     short combatCheck
@@ -754,9 +754,9 @@ SCTX
     if ( setUp == 0 )
     	set setUp to 1
     	set hash to A1V2_SoulGemHashHi
-    	set hash to hash * 65536
+    	set hash to ( hash * 65536 )
     	set temp to A1V2_SoulGemHashLow
-    	set hash to hash + temp
+    	set hash to ( hash + temp )
     	set A1V2_SoulGemHashHi to 0
     	set A1V2_SoulGemHashLow to 0
     	set skills1 to A1V2_NecroSkills1
@@ -1079,7 +1079,7 @@ SCTX
     ;Counter can pooch some functions if they need to be checked every frame.
     
     if ( counter < 20 )
-    	set counter to counter + 1
+    	set counter to ( counter + 1 )
     	return
     endif
     set counter to 0
@@ -1091,41 +1091,41 @@ SCTX
     endif
     ifx ( temp)
     	SetAlchemy 100
-    	set temp to skills1 / 256
+    	set temp to ( skills1 / 256 )
     	SetBlock temp
-    	set temp to skills1 - 256 * temp
+    	set temp to ( skills1 - 256 * temp )
     	SetMediumArmor temp
-    	set temp to skills2 / 256
+    	set temp to ( skills2 / 256 )
     	SetHeavyArmor temp
-    	set temp to skills2 - 256 * temp
+    	set temp to ( skills2 - 256 * temp )
     	SetBluntWeapon temp
-    	set temp to skills3 / 256
+    	set temp to ( skills3 / 256 )
     	SetLongBlade temp
-    	set temp to skills3 - 256 * temp
+    	set temp to ( skills3 - 256 * temp )
     	SetAxe temp
-    	set temp to skills4 / 256
+    	set temp to ( skills4 / 256 )
     	SetSpear temp
-    	set temp to skills4 - 256 * temp
+    	set temp to ( skills4 - 256 * temp )
     	SetDestruction temp
-    	set temp to skills5 / 256
+    	set temp to ( skills5 / 256 )
     	SetAlteration temp
-    	set temp to skills5 - 256 * temp
+    	set temp to ( skills5 - 256 * temp )
     	SetIllusion temp
-    	set temp to skills6 / 256
+    	set temp to ( skills6 / 256 )
     	SetConjuration temp
-    	set temp to skills6 - 256 * temp
+    	set temp to ( skills6 - 256 * temp )
     	SetMysticism temp
-    	set temp to skills7 / 256
+    	set temp to ( skills7 / 256 )
     	SetRestoration temp
-    	set temp to skills7 - 256 * temp
+    	set temp to ( skills7 - 256 * temp )
     	SetUnarmored temp
-    	set temp to skills8 / 256
+    	set temp to ( skills8 / 256 )
     	SetLightArmor temp
-    	set temp to skills8 - 256 * temp
+    	set temp to ( skills8 - 256 * temp )
     	SetShortBlade temp
-    	set temp to skills9 / 256
+    	set temp to ( skills9 / 256 )
     	SetMarksman temp
-    	set temp to skills9 - 256 * temp
+    	set temp to ( skills9 - 256 * temp )
     	SetHandToHand temp
     
     ;	set count to 0
@@ -1170,59 +1170,79 @@ SCTX
     endif
     
     if ( GetCurrentAIPackage == 3 )
-      if ( GetDistance Player < 300 )
-        setSpeed 15
-        setAthletics 15
-      elseif ( GetDistance Player > 300 )
-        set c_speed to ( ( Player->GetSpeed ) * 2.25 )
-        set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
-        setSpeed  c_speed
-        setAthletics c_athletics
-      endif
+    	if ( GetDistance Player < 300 )
+    		SetSpeed 15
+    		SetAthletics 15
+    	else
+    		set c_speed to ( ( Player->GetSpeed ) * 2.25 )
+    		set c_athletics to ( ( Player->GetAthletics ) * 2.25 )
+    		SetSpeed c_speed
+    		SetAthletics c_athletics
+    	endif
     
-      if ( GetItemCount p_restore_health_b >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_c >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_e >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_q >= 1 )
-        set p_Check to 1
-      elseif ( GetItemCount p_restore_health_s >= 1 )
-        set p_Check to 1
-      else
-        set p_Check to 0
-      endif
+    	if ( GetItemCount p_restore_health_b >= 1 )
+    		set p_Check to 1
+    	elseif ( GetItemCount p_restore_health_c >= 1 )
+    		set p_Check to 1
+    	elseif ( GetItemCount p_restore_health_e >= 1 )
+    		set p_Check to 1
+    	elseif ( GetItemCount p_restore_health_q >= 1 )
+    		set p_Check to 1
+    	elseif ( GetItemCount p_restore_health_s >= 1 )
+    		set p_Check to 1
+    	else
+    		set p_Check to 0
+    	endif
     endif
     
     if ( GetCurrentAIPackage != 3 )
-      setspeed 40
-    endif
-    
-    if ( doOnce4 == 0 )
-    	if ( GetItemCount,  "nc_argonian_skull" < 1 )
-    		MessageBox "Чары распались."
-    		sethealth 0
-    		set doOnce4 to 1
-    	elseif ( GetItemCount,  "ingred_bonemeal_01" < 15 )
-    		MessageBox "Чары распались."
-    		sethealth 0
-    		set doOnce4 to 1
-    	elseif ( GetItemCount,  "ingred_scrap_metal_01" < 1 )
-    		MessageBox "Чары распались."
-    		sethealth 0
-    		set doOnce4 to 1
-    	elseif ( GetItemCount,  "ingred_netch_leather_01" < 1 )
-    		MessageBox "Чары распались."
-    		sethealth 0
-    		set doOnce4 to 1
-    	endif
+    	Setspeed 40
     endif
     
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_arg_pauldron_sk" 1
+    		AddItem "nc_arg_pauldron_sk", 1
+    		AddItem "nc_argonian_skull", 1
+    		AddItem "ingred_bonemeal_01", 15
+    		AddItem "ingred_scrap_metal_01", 1
+    		AddItem "ingred_netch_leather_01", 1
+    		if ( GetItemCount nc_SoulGem_blackened > 0 )
+    			set coDist to ( player->GetLuck )
+    			set c_speed to coDist
+    			if ( c_speed < 40 )
+    				set conj to ( c_speed - 40 )
+    			elseif ( c_speed < 60 )
+    				set c_speed to ( c_speed - 40 )
+    				set conj to ( c_speed / 4 )
+    			else
+    				set c_speed to ( c_speed - 60 )
+    				set c_speed to ( c_speed / 8 )
+    				set conj to ( 5 + c_speed )
+    			endif
+    			set coDist to ( player->GetConjuration )
+    			set c_speed to coDist
+    			set conj to ( conj + c_speed )
+    			set c_speed to ( Random 100 )
+    			if ( c_speed < conj )
+    				RemoveItem "nc_SoulGem_blackened", 1
+    				set A1V2_NecroSkills1 to skills1
+    				set A1V2_NecroSkills2 to skills2
+    				set A1V2_NecroSkills3 to skills3
+    				set A1V2_NecroSkills4 to skills4
+    				set A1V2_NecroSkills5 to skills5
+    				set A1V2_NecroSkills6 to skills6
+    				set A1V2_NecroSkills7 to skills7
+    				set A1V2_NecroSkills8 to skills8
+    				set A1V2_NecroSkills9 to skills9
+    				set count to hash
+    				set temp to ( count / 65536 )
+    				set A1V2_SoulGemHashHi to temp
+    				set count to ( count - temp * 65536 )
+    				set A1V2_SoulGemHashLow to count
+    				PlaceAtPC "nc_SoulGem_argonian", 1, 1, 1
+    			endif
+    		endif
     		set doOnce3 to 1
     	endif
     endif
@@ -18916,11 +18936,11 @@ SCTX
     whilex ( temp )
     	setx count,temp to xFileReadShort tempLong, 1
     	if ( temp != 0 )
-    		set hi to temp / 256
-    		set low to temp - 256 * hi
-    		set hash to hash * 1664525 + low + 1013904223
+    		set hi to ( temp / 256 )
+    		set low to ( temp - 256 * hi )
+    		set hash to ( hash * 1664525 + low + 1013904223 )
     		if ( hi != 0 )
-    			set hash to hash * 1664525 + hi + 1013904223
+    			set hash to ( hash * 1664525 + hi + 1013904223 )
     		endif
     	endif
     endwhile
@@ -18963,64 +18983,64 @@ SCTX
     set skills to tempf
     set tempf to GetMediumArmor
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills1 to skills
     set tempf to GetHeavyArmor
     set skills to tempf
     set tempf to GetBluntWeapon
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills2 to skills
     set tempf to GetLongBlade
     set skills to tempf
     set tempf to GetAxe
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills3 to skills
     set tempf to GetSpear
     set skills to tempf
     set tempf to GetDestruction
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills4 to skills
     set tempf to GetAlteration
     set skills to tempf
     set tempf to GetIllusion
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills5 to skills
     set tempf to GetConjuration
     set skills to tempf
     set tempf to GetMysticism
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills6 to skills
     set tempf to GetRestoration
     set skills to tempf
     set tempf to GetUnarmored
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills7 to skills
     set tempf to GetLightArmor
     set skills to tempf
     set tempf to GetShortBlade
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills8 to skills
     set tempf to GetMarksman
     set skills to tempf
     set tempf to GetHandToHand
     set tempLong to tempf
-    set skills to skills * 256 + tempLong
+    set skills to ( skills * 256 + tempLong )
     set A1V2_NecroSkills9 to skills
     
     if ( player->GetItemCount "nc_SoulGem_blackened" == 0 )
     	MessageBox "Вам нужен черный камень душ, чтобы заключить душу разумного существа."
     else
     	player->Removeitem "nc_soulgem_blackened" 1
-    	set tempLong to hash / 65536
+    	set tempLong to ( hash / 65536 )
     	set A1V2_SoulGemHashHi to tempLong
-    	set hash to hash - tempLong * 65536
+    	set hash to ( hash - tempLong * 65536 )
     	set A1V2_SoulGemHashLow to hash
     	player->Additem "nc_SoulGem_nord" 1
     	MessageBox "Вы захватили душу."
@@ -26202,16 +26222,13 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI A1V2_NecroArgo_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroBreton
+MODL base_anim.nif
 FNAM Малый мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -26219,16 +26236,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI A1V2_NecroBreton_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_breton_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroDE
+MODL base_anim.nif
 FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26236,16 +26250,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI A1V2_NecroDE_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 2072
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroHE
+MODL base_anim.nif
 FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26255,10 +26266,6 @@ KNAM
 SCRI A1V2_NecroHE_sc
 NPDT CgA7UEAyJTUtKAYGBicGGCcGBiw6NhQ2Ig8sDwYGBgYGGAYGBgBTAKAA4gBkAgAAAAAAAA==
 FLAG 1032
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_altmer_skull
 NPCS sleep
 NPCS distracting touch
 NPCS deadly poison
@@ -26274,10 +26281,11 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroImp
+MODL base_anim.nif
 FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -26285,13 +26293,9 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI A1V2_NecroImp_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroKha
@@ -26303,16 +26307,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI A1V2_NecroKha_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroNord
+MODL base_anim.nif
 FNAM Малый мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -26320,16 +26321,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI A1V2_NecroNord_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_nord_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroRg
+MODL base_anim.nif
 FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -26337,16 +26335,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI A1V2_NecroRg_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroOrc
+MODL base_anim.nif
 FNAM Малый мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -26354,16 +26349,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI A1V2_NecroOrc_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_orc_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroWE
+MODL base_anim.nif
 FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26371,16 +26363,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI A1V2_NecroWE_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroWE2
+MODL base_anim.nif
 FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26388,16 +26377,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI A1V2_NecroWE_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroWE3
+MODL base_anim.nif
 FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26405,16 +26391,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_we
 KNAM 
 SCRI A1V2_NecroWE_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_bosmer_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroRg2
+MODL base_anim.nif
 FNAM Мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -26422,16 +26405,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI A1V2_NecroRg_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroRg3
+MODL base_anim.nif
 FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -26439,16 +26419,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_rg
 KNAM 
 SCRI A1V2_NecroRg_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_redguard_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroOrc2
+MODL base_anim.nif
 FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -26456,16 +26433,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI A1V2_NecroOrc_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_orc_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroOrc3
+MODL base_anim.nif
 FNAM Большой мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -26473,16 +26447,13 @@ ANAM Revenant
 BNAM nc_orcskull
 KNAM 
 SCRI A1V2_NecroOrc_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_orc_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroNord2
+MODL base_anim.nif
 FNAM Мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -26490,16 +26461,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI A1V2_NecroNord_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_nord_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroNord3
+MODL base_anim.nif
 FNAM Большой мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -26507,13 +26475,9 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_nord
 KNAM 
 SCRI A1V2_NecroNord_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_nord_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroKha2
@@ -26525,13 +26489,9 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI A1V2_NecroKha_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroKha3
@@ -26543,16 +26503,13 @@ ANAM Revenant
 BNAM nc_khajiitskull
 KNAM 
 SCRI A1V2_NecroKha_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_khajiit_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroImp2
+MODL base_anim.nif
 FNAM Мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -26560,16 +26517,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI A1V2_NecroImp_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroImp3
+MODL base_anim.nif
 FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -26577,16 +26531,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_imp
 KNAM 
 SCRI A1V2_NecroImp_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_imperial_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroHE2
+MODL base_anim.nif
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26596,10 +26547,6 @@ KNAM
 SCRI A1V2_NecroHE_sc
 NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwCCAMgAKwFkAgAAAAAAAA==
 FLAG 1032
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_altmer_skull
 NPCS dire weary
 NPCS great feather
 NPCS strong fire shield
@@ -26617,10 +26564,11 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroHE3
+MODL base_anim.nif
 FNAM Большой мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26630,10 +26578,6 @@ KNAM
 SCRI A1V2_NecroHE_sc
 NPDT HgBkZGRINVE5KAgICDsILDsICEpYVCBUQBtKGwgICAgILAgICACxAMgAYQFkAgAAAAAAAA==
 FLAG 1032
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_altmer_skull
 NPCS dire weary
 NPCS strong frost shield
 NPCS second barrier
@@ -26658,10 +26602,11 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroDE2
+MODL base_anim.nif
 FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26669,16 +26614,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI A1V2_NecroDE_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroDE3
+MODL base_anim.nif
 FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -26686,16 +26628,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_de
 KNAM 
 SCRI A1V2_NecroDE_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_dunmer_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroBreton2
+MODL base_anim.nif
 FNAM Мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -26703,16 +26642,13 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI A1V2_NecroBreton_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_breton_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroBreton3
+MODL base_anim.nif
 FNAM Большой мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -26720,13 +26656,9 @@ ANAM Revenant
 BNAM nc_Skel_M_Head_bret
 KNAM 
 SCRI A1V2_NecroBreton_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_breton_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroArgo2
@@ -26738,13 +26670,9 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI A1V2_NecroArgo_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroArgo3
@@ -26756,13 +26684,9 @@ ANAM Revenant
 BNAM nc_argonianskull
 KNAM 
 SCRI A1V2_NecroArgo_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1048
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_argonian_skull
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 BODY
 NAME nc_dead_farg_head
@@ -27162,7 +27086,7 @@ KNAM
 SCRI nc_skelly_arg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27176,7 +27100,7 @@ KNAM
 SCRI nc_skelly_bret
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27190,7 +27114,7 @@ KNAM
 SCRI nc_skelly_de
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27204,7 +27128,7 @@ KNAM
 SCRI nc_skelly_he
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27218,7 +27142,7 @@ KNAM
 SCRI nc_skelly_imp
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27233,7 +27157,7 @@ KNAM
 SCRI nc_skelly_khajiit
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27247,7 +27171,7 @@ KNAM
 SCRI nc_skelly_nord
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27261,7 +27185,7 @@ KNAM
 SCRI nc_skelly_orc
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27275,7 +27199,7 @@ KNAM
 SCRI nc_skelly_rg
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 NPC_ Persist
@@ -27289,7 +27213,7 @@ KNAM
 SCRI nc_skelly_we
 NPDT AQAoKB48MigeKAUFCgUFBQUULQUFDwoFCgUKIwojIxQKIwoUFAAAAFAAqgAyAAAAAAAAAA==
 FLAG 8
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 AI_W AAIFAAA8FAoAAAAAAAE=
 
 CONT
@@ -27412,7 +27336,7 @@ NPCS poisonbloom
 NPCS viperbolt
 NPCS dire weakness to poison
 NPCS nc_poison_warlord_spell
-AIDT AAAAAABa/HYAAAAA
+AIDT AAAAAABaSHYAAAAA
 
 CLOT
 NAME nc_p_mummy_shirt
@@ -28227,13 +28151,9 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI A1V2_NecroArgoF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroArgo2_f
@@ -28245,13 +28165,9 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI A1V2_NecroArgoF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroArgo3_f
@@ -28263,16 +28179,13 @@ ANAM Revenant
 BNAM nc_argonianskull_f
 KNAM 
 SCRI A1V2_NecroArgoF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_argonian_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroBreton_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -28280,16 +28193,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI A1V2_NecroBretonF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroBreton2_f
+MODL base_anim_female.nif
 FNAM Мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -28297,16 +28207,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI A1V2_NecroBretonF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroBreton3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-бретон
 RNAM Breton Revenant
 CNAM A1_EmptyRevenant
@@ -28314,16 +28221,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_bret
 KNAM 
 SCRI A1V2_NecroBretonF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_breton_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroDE_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -28331,16 +28235,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI A1V2_NecroDEF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 2073
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroDE2_f
+MODL base_anim_female.nif
 FNAM Мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -28348,16 +28249,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI A1V2_NecroDEF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroDE3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-данмер
 RNAM Dark Elf Revenant
 CNAM A1_EmptyRevenant
@@ -28365,13 +28263,9 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_de
 KNAM 
 SCRI A1V2_NecroDEF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_dunmer_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 BODY
 NAME nc_argonian_sk_f
@@ -29035,6 +28929,7 @@ BYDT DAABAA==
 
 NPC_
 NAME A1V2_NecroHE_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -29044,10 +28939,6 @@ KNAM
 SCRI A1V2_NecroHEF_sc
 NPDT CgA7UEAyJTUtKAYGBicGGCcGBiw6NhQ2Ig8sDwYGBgYGGAYGBgBTAKAA4gBkAgAAAAAAAA==
 FLAG 1033
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_altmer_skull_f
 NPCS sleep
 NPCS distracting touch
 NPCS deadly poison
@@ -29063,10 +28954,11 @@ NPCS demoralizing touch
 NPCS demoralize humanoid
 NPCS purge magic
 NPCS touch dispel
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroHE2_f
+MODL base_anim_female.nif
 FNAM Мертвец-альтмер
 RNAM High Elf Revenant
 CNAM A1_EmptyRevenant
@@ -29076,10 +28968,6 @@ KNAM
 SCRI A1V2_NecroHEF_sc
 NPDT FABQZFs9LUMzKAcHBzEHIjEHBzpKRBpEMBU6FQcHBwcHIgcHBwCCAMgAKwFkAgAAAAAAAA==
 FLAG 1033
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_altmer_skull_f
 NPCS dire weary
 NPCS great feather
 NPCS strong fire shield
@@ -29097,7 +28985,7 @@ NPCS absorb intelligence
 NPCS absorb strength
 NPCS blood despair
 NPCS poison_powerful
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroHE3_f
@@ -29138,10 +29026,11 @@ NPCS blood despair
 NPCS Ghost Curse
 NPCS poison_powerful
 NPCS vivec's_wrath
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroImp_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -29149,16 +29038,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI A1V2_NecroImpF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroImp2_f
+MODL base_anim_female.nif
 FNAM Мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -29166,16 +29052,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI A1V2_NecroImpF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroImp3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-имперец
 RNAM Imperial Revenant
 CNAM A1_EmptyRevenant
@@ -29183,13 +29066,9 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_imp
 KNAM 
 SCRI A1V2_NecroImpF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_imperial_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroKha_f
@@ -29201,13 +29080,9 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI A1V2_NecroKhaF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroKha2_f
@@ -29219,13 +29094,9 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI A1V2_NecroKhaF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroKha3_f
@@ -29237,16 +29108,13 @@ ANAM Revenant
 BNAM nc_khajiitskull_f
 KNAM 
 SCRI A1V2_NecroKhaF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_khajiit_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroNord_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -29254,16 +29122,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI A1V2_NecroNordF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroNord2_f
+MODL base_anim_female.nif
 FNAM Мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -29271,16 +29136,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI A1V2_NecroNordF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroNord3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-норд
 RNAM Nord Revenant
 CNAM A1_EmptyRevenant
@@ -29288,16 +29150,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_nord
 KNAM 
 SCRI A1V2_NecroNordF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_nord_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroOrc_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -29305,16 +29164,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI A1V2_NecroOrcF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroOrc2_f
+MODL base_anim_female.nif
 FNAM Мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -29322,16 +29178,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI A1V2_NecroOrcF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroOrc3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-орк
 RNAM Orc Revenant
 CNAM A1_EmptyRevenant
@@ -29339,16 +29192,13 @@ ANAM Revenant
 BNAM nc_orcskull_f
 KNAM 
 SCRI A1V2_NecroOrcF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_orc_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroRg_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -29356,16 +29206,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI A1V2_NecroRgF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroRg2_f
+MODL base_anim_female.nif
 FNAM Мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -29373,16 +29220,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI A1V2_NecroRgF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroRg3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-редгард
 RNAM Redguard Revenant
 CNAM A1_EmptyRevenant
@@ -29390,16 +29234,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_rg
 KNAM 
 SCRI A1V2_NecroRgF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_redguard_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroWE_f
+MODL base_anim_female.nif
 FNAM Малый мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -29407,16 +29248,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI A1V2_NecroWEF_sc
-NPDT CgBkAgBa/HYAAAAA
+NPDT CgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroWE2_f
+MODL base_anim_female.nif
 FNAM Мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -29424,16 +29262,13 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI A1V2_NecroWEF_sc
-NPDT FABkAgBa/HYAAAAA
+NPDT FABkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 NPC_
 NAME A1V2_NecroWE3_f
+MODL base_anim_female.nif
 FNAM Большой мертвец-босмер
 RNAM Wood Elf Revenant
 CNAM A1_EmptyRevenant
@@ -29441,13 +29276,9 @@ ANAM Revenant
 BNAM nc_Skel_F_Head_we
 KNAM 
 SCRI A1V2_NecroWEF_sc
-NPDT HgBkAgBa/HYAAAAA
+NPDT HgBkAgBaSHYAAAAA
 FLAG 1049
-NPCO 15 ingred_bonemeal_01
-NPCO 1 ingred_netch_leather_01
-NPCO 1 ingred_scrap_metal_01
-NPCO 1 nc_bosmer_skull_f
-AIDT HgAeHgBa/HYAAAAA
+AIDT HgAeHgBaSHYAAAAA
 
 ARMO
 NAME nc_altmer_pauldron_f
