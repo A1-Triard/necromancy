@@ -1185,7 +1185,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_arg_pauldron_sk", 1
+    		AddItem "nc_arg_skelly", 1
     		AddItem "nc_argonian_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -1790,7 +1790,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_arg_pauldron_sk_f", 1
+    		AddItem "nc_arg_skelly_f", 1
     		AddItem "nc_argonian_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -2395,7 +2395,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_breton_pauldron_sk", 1
+    		AddItem "nc_breton_skelly", 1
     		AddItem "nc_breton_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -3000,7 +3000,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_breton_pauldron_sk_f", 1
+    		AddItem "nc_breton_skelly_f", 1
     		AddItem "nc_breton_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -3605,7 +3605,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_dunmer_pauldron_sk", 1
+    		AddItem "nc_dunmer_skelly", 1
     		AddItem "nc_dunmer_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -4210,7 +4210,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_dunmer_pauldron_sk_f", 1
+    		AddItem "nc_dunmer_skelly_f", 1
     		AddItem "nc_dunmer_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -4815,7 +4815,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_altmer_pauldron_sk", 1
+    		AddItem "nc_altmer_skelly", 1
     		AddItem "nc_altmer_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -5420,7 +5420,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_altmer_pauldron_sk_f", 1
+    		AddItem "nc_altmer_skelly_f", 1
     		AddItem "nc_altmer_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -6025,7 +6025,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_imperial_pauldron_sk", 1
+    		AddItem "nc_imperial_skelly", 1
     		AddItem "nc_imperial_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -6630,7 +6630,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_imperial_pauldron_sk_f", 1
+    		AddItem "nc_imperial_skelly_f", 1
     		AddItem "nc_imperial_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -7235,7 +7235,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_khajiit_pauldron_sk", 1
+    		AddItem "nc_khajiit_skelly", 1
     		AddItem "nc_khajiit_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -7840,7 +7840,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_khajiit_pauldron_sk_f", 1
+    		AddItem "nc_khajiit_skelly_f", 1
     		AddItem "nc_khajiit_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -8463,7 +8463,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_nord_pauldron_sk", 1
+    		AddItem "nc_nord_skelly", 1
     		AddItem "nc_nord_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -9068,7 +9068,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_nord_pauldron_sk_f", 1
+    		AddItem "nc_nord_skelly_f", 1
     		AddItem "nc_nord_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -9673,7 +9673,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_orc_pauldron_sk", 1
+    		AddItem "nc_orc_skelly", 1
     		AddItem "nc_orc_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -10278,7 +10278,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_orc_pauldron_sk_f", 1
+    		AddItem "nc_orc_skelly_f", 1
     		AddItem "nc_orc_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -10883,7 +10883,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_rg_pauldron_sk", 1
+    		AddItem "nc_rg_skelly", 1
     		AddItem "nc_redguard_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -11488,7 +11488,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_rg_pauldron_sk_f", 1
+    		AddItem "nc_rg_skelly_f", 1
     		AddItem "nc_redguard_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -11847,6 +11847,206 @@ SCTX
     	else
     		player->RemoveItem "A1V3_PoisonCured", 1
     		player->AddItem "nc_poison_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_altmer_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_altmer_skelly", 1
+    		PlaceAtPC "nc_altmer_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_altmer_skelly", 1
+    		player->AddItem "nc_altmer_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_altmer_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_altmer_skelly_f", 1
+    		PlaceAtPC "nc_altmer_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_altmer_skelly_f", 1
+    		player->AddItem "nc_altmer_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_arg_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_arg_skelly", 1
+    		PlaceAtPC "nc_arg_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_arg_skelly", 1
+    		player->AddItem "nc_arg_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_arg_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_arg_skelly_NPC_f", 1
+    		PlaceAtPC "nc_arg_skelly_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_arg_skelly_f", 1
+    		player->AddItem "nc_arg_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_bosmer_skelly", 1
+    		PlaceAtPC "nc_bosmer_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_bosmer_skelly", 1
+    		player->AddItem "nc_bosmer_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_bosmer_skelly_f", 1
+    		PlaceAtPC "nc_bosmer_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_bosmer_skelly_f", 1
+    		player->AddItem "nc_bosmer_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_breton_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_breton_skelly", 1
+    		PlaceAtPC "nc_breton_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_breton_skelly", 1
+    		player->AddItem "nc_breton_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_breton_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_breton_skelly_f", 1
+    		PlaceAtPC "nc_breton_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_breton_skelly_f", 1
+    		player->AddItem "nc_breton_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_dunmer_skelly", 1
+    		PlaceAtPC "nc_dunmer_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_dunmer_skelly", 1
+    		player->AddItem "nc_dunmer_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_dunmer_skelly_f", 1
+    		PlaceAtPC "nc_dunmer_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_dunmer_skelly_f", 1
+    		player->AddItem "nc_dunmer_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_imperial_skelly", 1
+    		PlaceAtPC "nc_imperial_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_imperial_skelly", 1
+    		player->AddItem "nc_imperial_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_imperial_skelly_f", 1
+    		PlaceAtPC "nc_imperial_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_imperial_skelly_f", 1
+    		player->AddItem "nc_imperial_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_khajiit_skelly", 1
+    		PlaceAtPC "nc_khajiit_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_khajiit_skelly", 1
+    		player->AddItem "nc_khajiit_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_khajiit_skelly_f", 1
+    		PlaceAtPC "nc_khajiit_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_khajiit_skelly_f", 1
+    		player->AddItem "nc_khajiit_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_nord_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_nord_skelly", 1
+    		PlaceAtPC "nc_nord_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_nord_skelly", 1
+    		player->AddItem "nc_nord_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_nord_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_nord_skelly_f", 1
+    		PlaceAtPC "nc_nord_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_nord_skelly_f", 1
+    		player->AddItem "nc_nord_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_orc_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_orc_skelly", 1
+    		PlaceAtPC "nc_orc_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_orc_skelly", 1
+    		player->AddItem "nc_orc_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_orc_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_orc_skelly_f", 1
+    		PlaceAtPC "nc_orc_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_orc_skelly_f", 1
+    		player->AddItem "nc_orc_pauldron_sk_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_rg_skelly" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_rg_skelly", 1
+    		PlaceAtPC "nc_rg_skelly_NPC", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_rg_skelly", 1
+    		player->AddItem "nc_rg_pauldron_sk", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_rg_skelly_f" >= 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->RemoveItem "nc_rg_skelly_f", 1
+    		PlaceAtPC "nc_rg_skelly_NPC_f", 1, 50, 1
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_rg_skelly_f", 1
+    		player->AddItem "nc_rg_pauldron_sk_f", 1
     		set temp to 2
     	endif
     endif
@@ -13930,7 +14130,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_bosmer_pauldron_sk", 1
+    		AddItem "nc_bosmer_skelly", 1
     		AddItem "nc_bosmer_skull", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -14535,7 +14735,7 @@ SCTX
     if ( doOnce3 == 0 )
     	if ( GetHealth <= 0 )
     		PlaySound, "ThunderClap"
-    		AddItem "nc_bosmer_pauldron_sk_f", 1
+    		AddItem "nc_bosmer_skelly_f", 1
     		AddItem "nc_bosmer_skull_f", 1
     		AddItem "ingred_bonemeal_01", 15
     		AddItem "ingred_scrap_metal_01", 1
@@ -24296,14 +24496,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_arg_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_arg_skelly" 1
     endif
     
     end
@@ -24331,14 +24525,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_arg_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_arg_skelly_f" 1
     endif
     
     end
@@ -24366,14 +24554,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_breton_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_breton_skelly" 1
     endif
     
     end
@@ -24401,14 +24583,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_breton_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_breton_skelly_f" 1
     endif
     
     end
@@ -24436,14 +24612,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_dunmer_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_dunmer_skelly" 1
     endif
     
     end
@@ -24471,14 +24641,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_dunmer_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_dunmer_skelly_f" 1
     endif
     
     end
@@ -24506,14 +24670,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_altmer_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_altmer_skelly" 1
     endif
     
     end
@@ -24541,14 +24699,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_altmer_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_altmer_skelly_f" 1
     endif
     
     end
@@ -24576,14 +24728,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_imperial_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_imperial_skelly" 1
     endif
     
     end
@@ -24611,14 +24757,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_imperial_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_imperial_skelly_f" 1
     endif
     
     end
@@ -24646,14 +24786,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_khajiit_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_khajiit_skelly" 1
     endif
     
     end
@@ -24681,14 +24815,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_khajiit_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_khajiit_skelly_f" 1
     endif
     
     end
@@ -24716,14 +24844,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_nord_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_nord_skelly" 1
     endif
     
     end
@@ -24751,14 +24873,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_nord_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_nord_skelly_f" 1
     endif
     
     end
@@ -24786,14 +24902,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_orc_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_orc_skelly" 1
     endif
     
     end
@@ -24821,14 +24931,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_orc_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_orc_skelly_f" 1
     endif
     
     end
@@ -24856,14 +24960,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_rg_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_rg_skelly" 1
     endif
     
     end
@@ -24891,14 +24989,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_rg_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_rg_skelly_f" 1
     endif
     
     end
@@ -24926,14 +25018,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_bosmer_pauldron_sk" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_bosmer_skelly" 1
     endif
     
     end
@@ -24961,14 +25047,8 @@ SCTX
     endif
     
     if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		Disable
-    		player->AddItem "nc_bosmer_pauldron_sk_f" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
+    	Disable
+    	player->AddItem "nc_bosmer_skelly_f" 1
     endif
     
     end
@@ -27174,6 +27254,146 @@ MODL blas\\redguard_corpse.NIF
 FNAM Труп мужчины-редгарда
 MCDT AAAHQwAAAAAAAAAA
 SCRI nc_rg_corpse_cure
+ITEX blas\\br_body_rg.dds
+
+MISC
+NAME nc_altmer_skelly
+MODL o\\contain_corpse20.nif
+FNAM Скелет высокого эльфа
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_arg_skelly
+MODL o\\contain_corpse00.nif
+FNAM Скелет аргонианина
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_bosmer_skelly
+MODL o\\contain_corpse00.nif
+FNAM Скелет лесного эльфа
+MCDT AACgQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_bret_skelly
+MODL o\\contain_corpse00.nif
+FNAM Скелет бретона
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_dunmer_skelly
+MODL o\\contain_corpse00.nif
+FNAM Скелет темного эльфа
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_imperial_skelly
+MODL o\\contain_corpse20.nif
+FNAM Скелет мужчины-имперца
+MCDT AAAMQgAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_khajiit_skelly
+MODL o\\contain_corpse00.nif
+FNAM Скелет хаджита-мужчины
+MCDT AAARQwAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_nord_skelly
+MODL o\\contain_corpse20.nif
+FNAM Скелет мужчины-нордлинга
+MCDT AAAgQgAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_redguard_skelly
+MODL o\\contain_corpse20.nif
+FNAM Скелет мужчины-редгарда
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_body_rg.dds
+
+MISC
+NAME nc_orc_skelly
+MODL o\\contain_corpse00.nif
+FNAM Скелет орка-мужчины
+MCDT AAAgQgAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_altmer_skelly_f
+MODL o\\contain_corpse20.nif
+FNAM Скелет высокой эльфийки
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_arg_skelly_f
+MODL o\\contain_corpse00.nif
+FNAM Скелет аргонианки
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_bosmer_skelly_f
+MODL o\\contain_corpse00.nif
+FNAM Скелет лесной эльфийки
+MCDT AACgQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_bret_skelly_f
+MODL o\\contain_corpse00.nif
+FNAM Скелет бретонки
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_dunmer_skelly_f
+MODL o\\contain_corpse00.nif
+FNAM Скелет темной эльфийки
+MCDT AADwQQAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_imperial_skelly_f
+MODL o\\contain_corpse20.nif
+FNAM Скелет женщины-имперца
+MCDT AAAMQgAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_khajiit_skelly_f
+MODL o\\contain_corpse00.nif
+FNAM Скелет хаджита-женщины
+MCDT AAARQwAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_nord_skelly_f
+MODL o\\contain_corpse20.nif
+FNAM Скелет женщины-нордлинга
+MCDT AAAgQgAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_orc_skelly_f
+MODL o\\contain_corpse00.nif
+FNAM Скелет орка-женщины
+MCDT AAAgQgAAAAAAAAAA
+ITEX blas\\br_skelly.dds
+
+MISC
+NAME nc_redguard_skelly_f
+MODL o\\contain_corpse20.nif
+FNAM Скелет женщины-редгарда
+MCDT AADwQQAAAAAAAAAA
 ITEX blas\\br_body_rg.dds
 
 BODY
