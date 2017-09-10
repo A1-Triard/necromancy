@@ -11543,20 +11543,25 @@ SCTX
     Begin A1V3_NecroTrack
     
     float timer
+    float timer2
+    float seconds
     short doonce2
     short doonce3
     short doonce4
     short doonce5
     short wait
     short wait2
+    short temp
+    short burden
     
     if ( MenuMode == 1 )
     	return
     endif
     
     ; Dont waste time checking spells more than once per second
-    set timer to ( timer + GetSecondsPassed )
-    if ( timer < 1 )		
+    set seconds to GetSecondsPassed
+    set timer to ( timer + seconds )
+    if ( timer < 1 )
     	return
     endif
     set timer to 0
@@ -11605,6 +11610,320 @@ SCTX
     
     if ( player->getspelleffects nc_painful_touch == 1 )
     	startscript nc_warlord_attack
+    endif
+    
+    if ( A1V3_NecroCorpse <= 0 )
+    	set A1V3_NecroCorpse to 0
+    	if ( corpse == 1 )
+    		set corpse to 0
+    		ModPCCrimeLevel -10000
+    	endif
+    else
+    	if ( corpse == 0 )
+    		set corpse to 1
+    		ModPCCrimeLevel 10000
+    	endif
+    endif
+    
+    if ( A1V3_NecroBurden != 0 )
+    	if ( GetPCRunning == 1 )
+    		if ( A1V3_NecroBurden == 1 )
+    			player->ModCurrentFatigue -2
+    		else
+    			player->ModCurrentFatigue -4
+    		endif
+    	endif
+    endif
+    set timer2 to ( timer2 + seconds )
+    if ( timer2 < 14 )
+    	return
+    endif
+    set timer2 to 0
+    
+    set temp to 0
+    if ( player->GetItemCount "nc_altmer_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_altmer_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_altmer_corpse", 1
+    		player->AddItem "nc_altmer_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_altmer_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_altmer_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_altmer_corpse_f", 1
+    		player->AddItem "nc_altmer_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_arg_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_arg_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_arg_corpse", 1
+    		player->AddItem "nc_arg_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_arg_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_arg_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_arg_corpse_f", 1
+    		player->AddItem "nc_arg_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_bosmer_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_bosmer_corpse", 1
+    		player->AddItem "nc_bosmer_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_bosmer_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_bosmer_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_bosmer_corpse_f", 1
+    		player->AddItem "nc_bosmer_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_breton_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_breton_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_breton_corpse", 1
+    		player->AddItem "nc_breton_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_breton_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_breton_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_breton_corpse_f", 1
+    		player->AddItem "nc_breton_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_dunmer_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_dunmer_corpse", 1
+    		player->AddItem "nc_dunmer_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_dunmer_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_dunmer_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_dunmer_corpse_f", 1
+    		player->AddItem "nc_dunmer_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_imperial_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_imperial_corpse", 1
+    		player->AddItem "nc_imperial_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_imperial_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_imperial_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_imperial_corpse_f", 1
+    		player->AddItem "nc_imperial_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_khajiit_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_khajiit_corpse", 1
+    		player->AddItem "nc_khajiit_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_khajiit_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_khajiit_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_khajiit_corpse_f" >= 1 )
+    		player->AddItem "nc_khajiit_pauldron_f" >= 1 )
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_nord_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_nord_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_nord_corpse", 1
+    		player->AddItem "nc_nord_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_nord_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_nord_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_nord_corpse_f", 1
+    		player->AddItem "nc_nord_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_orc_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_orc_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_orc_corpse", 1
+    		player->AddItem "nc_orc_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_orc_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_orc_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_orc_corpse_f", 1
+    		player->AddItem "nc_orc_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_redguard_corpse" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_redguard_corpse"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_redguard_corpse", 1
+    		player->AddItem "nc_rg_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "nc_redguard_corpse_f" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "nc_redguard_corpse_f"
+    		set temp to 1
+    	else
+    		player->RemoveItem "nc_redguard_corpse_f", 1
+    		player->AddItem "nc_rg_pauldron_f", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "A1V3_FireCured" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "A1V3_FireCured"
+    		set temp to 1
+    	else
+    		player->RemoveItem "A1V3_FireCured", 1
+    		player->AddItem "nc_fire_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "A1V3_FrostCured" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "A1V3_FrostCured"
+    		set temp to 1
+    	else
+    		player->RemoveItem "A1V3_FrostCured", 1
+    		player->AddItem "nc_frost_pauldron", 1
+    		set temp to 2
+    	endif
+    elseif ( player->GetItemCount "A1V3_PoisonCured" == 1 )
+    	if ( A1V3_NecroBurden != 0 )
+    		player->Drop "A1V3_PoisonCured"
+    		set temp to 1
+    	else
+    		player->RemoveItem "A1V3_PoisonCured", 1
+    		player->AddItem "nc_poison_pauldron", 1
+    		set temp to 2
+    	endif
+    endif
+    if ( temp == 1 )
+    	MessageBox "Нести больше, чем одно тело за раз - неудобно."
+    elseif ( temp == 2 )
+    	set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
+    	StartScript A1V3_EquipCorpse
+    endif
+    
+    set temp to 1
+    if ( player->GetItemCount "nc_altmer_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_altmer_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_arg_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_arg_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_bosmer_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_bosmer_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_breton_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_breton_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_dunmer_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_dunmer_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_imperial_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_imperial_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_khajiit_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_khajiit_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_nord_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_nord_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_orc_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_orc_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_rg_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_rg_pauldron_f" >= 1 )
+    elseif ( player->GetItemCount "nc_fire_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_frost_pauldron" >= 1 )
+    elseif ( player->GetItemCount "nc_poison_pauldron" >= 1 )
+    else
+    	set temp to 0
+    endif
+    set burden to 1
+    if ( temp == 1 )
+    	set burden to 2
+    elseif ( player->GetItemCount "nc_altmer_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_altmer_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_arg_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_arg_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_bosmer_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_breton_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_breton_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_dunmer_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_imperial_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_imperial_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_khajiit_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_nord_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_nord_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_orc_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_orc_pauldron_sk_f" >= 1 )
+    elseif ( player->GetItemCount "nc_rg_pauldron_sk" >= 1 )
+    elseif ( player->GetItemCount "nc_rg_pauldron_sk_f" >= 1 )
+    else
+    	set burden to 0
+    endif
+    if ( burden == 0 )
+    	if ( A1V3_NecroBurden != 0 )
+    		set A1V3_NecroBurden to 0
+    		EnablePlayerJumping
+    		EnablePlayerFighting
+    	endif
+    else
+    	if ( A1V3_NecroCorpse <= 0 )
+    		set A1V3_NecroCorpse to 1
+    	endif
+    	if ( A1V3_NecroBurden == 0 )
+    		set A1V3_NecroBurden to burden
+    		DisablePlayerJumping
+    		DisablePlayerFighting
+    	endif
     endif
     
     End
@@ -12080,7 +12399,7 @@ SCTX
     		AddItem "ingred_bonemeal_01", 5
     		AddItem "ingred_scrap_metal_01", 1
     		AddItem "ingred_netch_leather_01", 1
-    		AddItem "nc_fire_pauldron", 1
+    		AddItem "A1V3_FireCured", 1
     		set A1V3_FireWarlordG to 0
     		player->ModCurrentHealth -20
     		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
@@ -12561,7 +12880,7 @@ SCTX
     		AddItem "ingred_bonemeal_01", 5
     		AddItem "ingred_scrap_metal_01", 1
     		AddItem "ingred_netch_leather_01", 1
-    		AddItem "nc_poison_pauldron", 1
+    		AddItem "A1V3_PoisonCured", 1
     		set A1V3_PoisonWarlordG to 0
     		player->ModCurrentHealth -20
     		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
@@ -13042,7 +13361,7 @@ SCTX
     		AddItem "ingred_bonemeal_01", 5
     		AddItem "ingred_scrap_metal_01", 1
     		AddItem "ingred_netch_leather_01", 1
-    		AddItem "nc_frost_pauldron", 1
+    		AddItem "A1V3_FrostCured", 1
     		set A1V3_FrostWarlordG to 0
     		player->ModCurrentHealth -20
     		MessageBox "Чары распались. Вы чувствуете острую боль, как будто вам что-то перерезали."
@@ -14263,9 +14582,9 @@ SCTX
     end
 
 SCPT
-SCHD A1V3_SoulGemAltmer_sc 4 13 0 2712 126
+SCHD A1V3_SoulGemAltmer_sc 4 13 0 2743 126
 SCVR state;OnPCEquip;gender;summon;hash;skills1;skills2;skills3;skills4;skills5;skills6;skills7;skills8;skills9;temp;count;npcfile;;
-SCDT BgECCSBY3BAgPT0gMasRAQAkAQkBBgEQCSBzAQAgPT0gMAUBcwEAAiAxBQFsAQAWIEcSQTFWM19Tb3VsR2VtSGFzaEhpAAUBbAEADCBsAQAgNjU1MzYgKgUBbAsAFyBHE0ExVjNfU291bEdlbUhhc2hMb3cABQFsAQAKIGwBACBsCwAgKwUBRxJBMVYzX1NvdWxHZW1IYXNoSGkCIDAFAUcTQTFWM19Tb3VsR2VtSGFzaExvdwIgMAUBbAIAFSBHEUExVjNfTmVjcm9Ta2lsbHMxAAUBbAMAFSBHEUExVjNfTmVjcm9Ta2lsbHMyAAUBbAQAFSBHEUExVjNfTmVjcm9Ta2lsbHMzAAUBbAUAFSBHEUExVjNfTmVjcm9Ta2lsbHM0AAUBbAYAFSBHEUExVjNfTmVjcm9Ta2lsbHM1AAUBbAcAFSBHEUExVjNfTmVjcm9Ta2lsbHM2AAUBbAgAFSBHEUExVjNfTmVjcm9Ta2lsbHM3AAUBbAkAFSBHEUExVjNfTmVjcm9Ta2lsbHM4AAUBbAoAFSBHEUExVjNfTmVjcm9Ta2lsbHM5AAkBBQFsCwACIDAGAQUJIFgYECA9PSAxDAEGcGxheWVyBgEBGiBYIREgbw5BMV9OZWNyb1N1bW1vbiA9PSAxBQFsCwACIDEHAQEXEAkBCQETOAoAEzhsAAA8DzgEAAw48ggTOBQCCjgmAhBuY19oZV9za2VsbHlfTlBDAB08EzgLABM4bAACPBM4CwATOGwAADwPOAQADDhQAgUBcwMAAiAxCjjOAhM4WAIKOGwCEm5jX2hlX3NrZWxseV9OUENfZgAdPBM4CwATOGwAAjwTOAsAEzhsAAA8DzgEAAw4lgIFAXMDAAIgMgo4zgIAECoAx+Dq6+jt4O3o5SDt5SDs7ubl8iDt4Ony6CDx6uXr5fIg6OvoIPLw8+8uAAAFAXMDAAIgMAYBBAkgcwMAID09IDEMAQZwbGF5ZXIGAQIbIFj9ECBvD25jX2FsdG1lcl9za3VsbCA9PSAwBQFzAwACIDAAEDEAwuDsIO3z5uXtIPfl8OXvIOL78e7q7uPuIP3r/PTgIOTr/yD98u7j7iDw6PLz4OvgLgAACQEIAQQJIHMDACA9PSAyDAEGcGxheWVyBgECHSBY/RAgbxFuY19hbHRtZXJfc2t1bGxfZiA9PSAwBQFzAwACIDAAEDMAwuDsIO3z5uXtIPfl8OXvIOL78e7q7ukg/ev89Ojp6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAwAgIT0gMAwBBnBsYXllcgYBAiAgWP0QIG8VaW5ncmVkX3NjcmFwX21ldGFsXzAxIDwgMgUBcwMAAiAwABA3AMLg7CDt8+bt+yDk4uUg9+Dx8ugg7uHw5efq7uIg7OXy4Ovr4CDk6/8g/fLu4+4g8Ojy8+Dr4C4AAAkBCQEGAQQJIHMDACAhPSAwDAEGcGxheWVyBgECIiBY/RAgbxdpbmdyZWRfbmV0Y2hfbGVhdGhlcl8wMSA8IDIFAXMDAAIgMAAQMQDC4Owg7fPm7fsg5OLgIOrz8ergIOru5ugg7eXy9+Ag5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBBgEECSBzAwAgIT0gMAwBBnBsYXllcgYBAh4gWP0QIG8SaW5ncmVkX2JvbmVtZWFsXzAxIDwgMzAFAXMDAAIgMAAQOgDC4Owg7fPm7e4g6Ozl8vwgMzAg7+7w9ujpIOru8fL/7e7pIOzz6ugg5Ov/IP3y7uPuIPDo8vPg6+AuAAAJAQkBEzgCABM4cwAAPA84BAAMOPAIEzgLABM4bAAAPBg82xAGAQEJIHMDACA9PSAxDAEGcGxheWVy1RAPbmNfYWx0bWVyX3NrdWxsAQAHAQEMAQZwbGF5ZXLVEBFuY19hbHRtZXJfc2t1bGxfZgEACQEMAQZwbGF5ZXLVEBVpbmdyZWRfc2NyYXBfbWV0YWxfMDECAAwBBnBsYXllctUQF2luZ3JlZF9uZXRjaF9sZWF0aGVyXzAxAgAMAQZwbGF5ZXLVEBJpbmdyZWRfYm9uZW1lYWxfMDEeAAUBbAsADCBsAQAgNjU1MzYgLwUBRxJBMVYzX1NvdWxHZW1IYXNoSGkFIGwLAAAFAWwBABIgbAEAIGwLACA2NTUzNiAqIC0FAUcTQTFWM19Tb3VsR2VtSGFzaExvdwUgbAEAAAUBRxFBMVYzX05lY3JvU2tpbGxzMQUgbAIAAAUBRxFBMVYzX05lY3JvU2tpbGxzMgUgbAMAAAUBRxFBMVYzX05lY3JvU2tpbGxzMwUgbAQAAAUBRxFBMVYzX05lY3JvU2tpbGxzNAUgbAUAAAUBRxFBMVYzX05lY3JvU2tpbGxzNQUgbAYAAAUBRxFBMVYzX05lY3JvU2tpbGxzNgUgbAcAAAUBRxFBMVYzX05lY3JvU2tpbGxzNwUgbAgAAAUBRxFBMVYzX05lY3JvU2tpbGxzOAUgbAkAAAUBRxFBMVYzX05lY3JvU2tpbGxzOQUgbAoAAAUBcwQAEiBHDm5jX25lY3JvX3NraWxsAAYBBQogcwQAIDw9IDEwBgEBCSBzAwAgPT0gMboRDEExVjNfTmVjcm9IRQEAAAAAAAAABwEBuhEOQTFWM19OZWNyb0hFX2YBAAAAAAAAAAkBCAEFCiBzBAAgPD0gMjAGAQEJIHMDACA9PSAxuhENQTFWM19OZWNyb0hFMgEAAAAAAAAABwEBuhEPQTFWM19OZWNyb0hFMl9mAQAAAAAAAAAJAQcBBQYBAQkgcwMAID09IDG6EQ1BMVYzX05lY3JvSEUzAQAAAAAAAAAHAQG6EQ9BMVYzX05lY3JvSEUzX2YBAAAAAAAAAAkBCQECEAtUaHVuZGVyQ2xhcAUBRw5uY19uZWNyb19za2lsbBUgRw5uY19uZWNyb19za2lsbCAxICsAEC0AwuD45SDo8erz8fHy4u4gzeXq8O7s4O3y6Ogg8+Ll6+j36Ovu8fwg5O4gJWcuAUcObmNfbmVjcm9fc2tpbGwA2xAkARM4AQATOHMAADwPOAQADDiWCgUBcwIAAiAwBQFsDAACIDAGAQETIGwBACA9PSAtMjE0NzQ4MzY0OAUBbAsAAiAwCAECCCBsAQAgPCAwBQFsDAACIDEFAWwLAAkgLTEgbAEAICoHAQEFAWwLAAUgbAEAAAkBEzgLABM4bAAAPA84BAAMOKQJEzgKABM4bAAAPBM4igkKOJQJCUExTlBDXzAlZAs/EzgMABM4bAACPAo4zAkTOAoAEzhsAAA8Ezi2CQo4wAkIQTFOUENfJWQACz8TOAwAEzhsAAI8EzgMABM4bAAAPBA8ETgBAAAAEzgMABM4bAAAPBE8EzgLABM4bAACPBM4CgATOGwAAjwGAQENIGwLACA9PSAyMDU1OAUBbAwAAiAxBwEBBQFsDAACIDAJARM4CwATOGwAADwPOAQADDiWChM4DAATOGwAADwUPBM4CwATOGwAAjwTOFQKCjhYCgJPSwATOAsAEzhsAAA8fj8AECgAWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWAABA09LAAEB
+SCDT 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
 SCTX
     Begin A1V3_SoulGemAltmer_sc
     
@@ -14320,18 +14639,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_he_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_altmer_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_altmer_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_he_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_altmer_skull == 0 )
@@ -14362,12 +14677,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_altmer_pauldron_sk, 1
     			player->RemoveItem nc_altmer_skull, 1
     		else
+    			player->RemoveItem nc_altmer_pauldron_sk_f, 1
     			player->RemoveItem nc_altmer_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -14506,18 +14822,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_arg_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_arg_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_arg_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_arg_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_argonian_skull == 0 )
@@ -14548,12 +14860,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_arg_pauldron_sk, 1
     			player->RemoveItem nc_argonian_skull, 1
     		else
+    			player->RemoveItem nc_arg_pauldron_sk_f, 1
     			player->RemoveItem nc_argonian_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -14692,18 +15005,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_we_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_bosmer_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_bosmer_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_we_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_bosmer_skull == 0 )
@@ -14734,12 +15043,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_bosmer_pauldron_sk, 1
     			player->RemoveItem nc_bosmer_skull, 1
     		else
+    			player->RemoveItem nc_bosmer_pauldron_sk_f, 1
     			player->RemoveItem nc_bosmer_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -14878,18 +15188,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_bret_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_breton_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_breton_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_bret_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_breton_skull == 0 )
@@ -14920,12 +15226,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_breton_pauldron_sk, 1
     			player->RemoveItem nc_breton_skull, 1
     		else
+    			player->RemoveItem nc_breton_pauldron_sk_f, 1
     			player->RemoveItem nc_breton_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -15064,18 +15371,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_de_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_dunmer_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_dunmer_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_de_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_dunmer_skull == 0 )
@@ -15106,12 +15409,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_dunmer_pauldron_sk, 1
     			player->RemoveItem nc_dunmer_skull, 1
     		else
+    			player->RemoveItem nc_dunmer_pauldron_sk_f, 1
     			player->RemoveItem nc_dunmer_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -15250,18 +15554,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_imp_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_imperial_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_imperial_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_imp_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_imperial_skull == 0 )
@@ -15292,12 +15592,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_imperial_pauldron_sk, 1
     			player->RemoveItem nc_imperial_skull, 1
     		else
+    			player->RemoveItem nc_imperial_pauldron_sk_f, 1
     			player->RemoveItem nc_imperial_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -15436,18 +15737,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_khajiit_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_khajiit_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_khajiit_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_khajiit_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_khajiit_skull == 0 )
@@ -15478,12 +15775,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_khajiit_pauldron_sk, 1
     			player->RemoveItem nc_khajiit_skull, 1
     		else
+    			player->RemoveItem nc_khajiit_pauldron_sk_f, 1
     			player->RemoveItem nc_khajiit_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -15622,18 +15920,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_nord_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_nord_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_nord_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_nord_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_nord_skull == 0 )
@@ -15664,12 +15958,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_nord_pauldron_sk, 1
     			player->RemoveItem nc_nord_skull, 1
     		else
+    			player->RemoveItem nc_nord_pauldron_sk_f, 1
     			player->RemoveItem nc_nord_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -15808,18 +16103,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_orc_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_orc_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_orc_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_orc_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_orc_skull == 0 )
@@ -15850,12 +16141,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_orc_pauldron_sk, 1
     			player->RemoveItem nc_orc_skull, 1
     		else
+    			player->RemoveItem nc_orc_pauldron_sk_f, 1
     			player->RemoveItem nc_orc_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -16024,33 +16316,22 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-        set gender to 0
+    if ( temp == 1 )
+    	set gender to 0
     	set summon to nc_necro_skill
-    	if ( summon < 29 )
-    		set temp to 1
-    	else
+    	if ( summon < 30 )
     		set temp to 0
     	endif
-    	ifx ( temp )
+    	if ( temp == 0 )
     		MessageBox "Вы недостаточно опытны, чтобы вызвать мумифицированного слугу."
+    	elseif ( player->GetItemCount nc_frost_pauldron == 1 )
+    		set gender to 1
+    	elseif ( player->GetItemCount nc_fire_pauldron == 1 )
+    		set gender to 2
+    	elseif ( player->GetItemCount nc_poison_pauldron == 1 )
+    		set gender to 3
     	else
-    		setx tempLong to xGetRef "nc_frost_cured"
-    		ifx ( tempLong )
-    			set gender to 1
-    		else
-    			setx tempLong to xGetRef "nc_fire_cured"
-    			ifx ( tempLong )
-    				set gender to 2
-    			else
-    				setx tempLong to xGetRef "nc_poison_cured"
-    				ifx ( tempLong )
-    					set gender to 3
-    				else
-    					MessageBox "Заклинание не может найти мумию."
-    				endif
-    			endif
-    		endif
+    		MessageBox "Вам нужна мумия для этого ритуала."
     	endif
     	if ( gender == 1 )
     		if ( A1V3_FrostWarlordG >= 1 )
@@ -16148,9 +16429,15 @@ SCTX
     			MessageBox "Вам нужны два рулона зеленой ткани для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef tempLong
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
+    		if ( gender == 1 )
+    			player->RemoveItem nc_frost_pauldron, 1
+    		elseif ( gender == 2 )
+    			player->RemoveItem nc_fire_pauldron, 1
+    		else
+    			player->RemoveItem nc_poison_pauldron, 1
+    		endif
     		if ( summon == 1 )
     			player->RemoveItem "nc_altmer_skull", 1
     		elseif ( summon == 2 )
@@ -16287,18 +16574,14 @@ SCTX
     	endif
     endif
     
-    ifx ( temp )
-    	setx count to xGetRef "nc_rg_skelly_NPC"
-    	ifx ( count )
+    if ( temp == 1 )
+    	if ( player->GetItemCount nc_rg_pauldron_sk == 1 )
     		set gender to 1
+    	elseif ( player->GetItemCount nc_rg_pauldron_sk_f == 1 )
+    		set gender to 2
     	else
-    		setx count to xGetRef "nc_rg_skelly_NPC_f"
-    		ifx ( count )
-    			set gender to 2
-    		else
-    			MessageBox "Заклинание не может найти скелет или труп."
-    			set gender to 0
-    		endif
+    		MessageBox "Вам нужен скелет или труп для этого ритуала."
+    		set gender to 0
     	endif
     	if ( gender == 1 )
     		if ( player->GetItemCount nc_redguard_skull == 0 )
@@ -16329,12 +16612,13 @@ SCTX
     			MessageBox "Вам нужно иметь 30 порций костяной муки для этого ритуала."
     		endif
     	endif
-    	ifx ( gender )
-    		xSetRef count
-    		Disable
+    	if ( gender != 0 )
+    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
     		if ( gender == 1 )
+    			player->RemoveItem nc_rg_pauldron_sk, 1
     			player->RemoveItem nc_redguard_skull, 1
     		else
+    			player->RemoveItem nc_rg_pauldron_sk_f, 1
     			player->RemoveItem nc_redguard_skull_f, 1
     		endif
     		player->RemoveItem ingred_scrap_metal_01, 2
@@ -16444,15 +16728,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_arg_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -16512,15 +16788,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_arg_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -16681,15 +16949,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_breton_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -16749,15 +17009,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_breton_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -16997,15 +17249,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_dunmer_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -17065,15 +17309,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_dunmer_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -17274,7 +17510,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_altmer_pauldron" 1
+    Additem "nc_altmer_corpse" 1
     AddItem "nc_altmer_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -17417,7 +17653,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_altmer_pauldron_f" 1
+    Additem "nc_altmer_corpse_f" 1
     AddItem "nc_altmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -17560,7 +17796,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_arg_pauldron" 1
+    Additem "nc_arg_corpse" 1
     AddItem "nc_argonian_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -17703,7 +17939,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_arg_pauldron_f" 1
+    Additem "nc_arg_corpse_f" 1
     AddItem "nc_argonian_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -17846,7 +18082,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_bosmer_pauldron" 1
+    Additem "nc_bosmer_corpse" 1
     AddItem "nc_bosmer_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -17989,7 +18225,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_bosmer_pauldron_f" 1
+    Additem "nc_bosmer_corpse_f" 1
     AddItem "nc_bosmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -18132,7 +18368,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_breton_pauldron" 1
+    Additem "nc_breton_corpse" 1
     AddItem "nc_breton_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -18275,7 +18511,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_breton_pauldron_f" 1
+    Additem "nc_breton_corpse_f" 1
     AddItem "nc_breton_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -18418,7 +18654,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_dunmer_pauldron" 1
+    Additem "nc_dunmer_corpse" 1
     AddItem "nc_dunmer_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -18561,7 +18797,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_dunmer_pauldron_f" 1
+    Additem "nc_dunmer_corpse_f" 1
     AddItem "nc_dunmer_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -18704,7 +18940,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_imperial_pauldron" 1
+    Additem "nc_imperial_corpse" 1
     AddItem "nc_imperial_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -18847,7 +19083,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_imperial_pauldron_f" 1
+    Additem "nc_imperial_corpse_f" 1
     AddItem "nc_imperial_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -18990,7 +19226,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_khajiit_pauldron" 1
+    Additem "nc_khajiit_corpse" 1
     AddItem "nc_khajiit_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -19133,7 +19369,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_khajiit_pauldron_f" 1
+    Additem "nc_khajiit_corpse_f" 1
     AddItem "nc_khajiit_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -19276,7 +19512,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_nord_pauldron" 1
+    Additem "nc_nord_corpse" 1
     AddItem "nc_nord_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -19419,7 +19655,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_nord_pauldron_f" 1
+    Additem "nc_nord_corpse_f" 1
     AddItem "nc_nord_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -19562,7 +19798,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_orc_pauldron" 1
+    Additem "nc_orc_corpse" 1
     AddItem "nc_orc_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -19705,7 +19941,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_orc_pauldron_f" 1
+    Additem "nc_orc_corpse_f" 1
     AddItem "nc_orc_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -19848,7 +20084,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_rg_pauldron" 1
+    Additem "nc_redguard_corpse" 1
     AddItem "nc_redguard_skull" 1
     AddItem A1_NecroMarker, 1
     
@@ -19991,7 +20227,7 @@ SCTX
     	xAddItem id 1
     endif
     
-    Additem "nc_rg_pauldron_f" 1
+    Additem "nc_redguard_corpse_f" 1
     AddItem "nc_redguard_skull_f" 1
     AddItem A1_NecroMarker, 1
     
@@ -20319,38 +20555,6 @@ SCTX
     end
 
 SCPT
-SCHD nc_fire_corpse_obj 1 0 0 266 8
-SCVR counter;;
-SCDT BgEGCSBY3BAgPT0gMQUBcwEACCBzAQAgMSArBgEBCSBzAQAgPCAxMCQBCQGrEQEAJAEJAQYBCQkgWBgQID09IDEGAQUYIEcQQTFWM19OZWNyb0J1cmRlbiA9PSAwBQFHEEExVjNfTmVjcm9Db3Jwc2UXIEcQQTFWM19OZWNyb0NvcnBzZSAxICsbEA5uY190aW1lX2JvdW50edsQDAEGcGxheWVy1BAQbmNfZmlyZV9wYXVsZHJvbgEAGxAQQTFWM19FcXVpcENvcnBzZQcBAQAQLgDN5fHy6CDh7uv8+OUsIPfl7CDu5O3uIPLl6+4g5+Ag8ODnIC0g7eXz5O7h7e4uAAAJAQkBAQE=
-SCTX
-    begin nc_fire_corpse_obj
-    
-    short counter
-    
-    if ( GetDisabled == 1 )
-    	set counter to ( counter + 1 )
-    	if ( counter < 10 )
-    		return
-    	endif
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
-    		Disable
-    		player->AddItem "nc_fire_pauldron" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
-    endif
-    
-    end
-
-SCPT
 SCHD nc_fire_vat 16 0 0 3085 122
 SCVR currentday;localdayspassed;fstate;salt;firesalts;petal;nord;orc;altmer;arg;bosmer;breton;khajiit;dunmer;redguard;imperial;;
 SCDT BgEBCSBYIBAgPT0gMSQBCQEFAXMJABogWP0QIG8SbmNfYWx0bWVyX3BhdWxkcm9uAAUBcwoAFyBY/RAgbw9uY19hcmdfcGF1bGRyb24ABQFzCwAaIFj9ECBvEm5jX2Jvc21lcl9wYXVsZHJvbgAFAXMMABogWP0QIG8SbmNfYnJldG9uX3BhdWxkcm9uAAUBcw4AGiBY/RAgbxJuY19kdW5tZXJfcGF1bGRyb24ABQFzEAAcIFj9ECBvFG5jX2ltcGVyaWFsX3BhdWxkcm9uAAUBcw0AGyBY/RAgbxNuY19raGFqaWl0X3BhdWxkcm9uAAUBcwcAGCBY/RAgbxBuY19ub3JkX3BhdWxkcm9uAAUBcwgAFyBY/RAgbw9uY19vcmNfcGF1bGRyb24ABQFzDwAWIFj9ECBvDm5jX3JnX3BhdWxkcm9uAAUBcwQADyBY/RAgbwduY19zYWx0AAUBcwUAHCBY/RAgbxRpbmdyZWRfZmlyZV9zYWx0c18wMQAFAXMGABwgWP0QIG8UaW5ncmVkX2ZpcmVfcGV0YWxfMDEABQFzAwACIDIGAQULIHMEACA+PSA1MDAGAQMJIHMFACA+PSA1BgEBCSBzBgAgPj0gNQUBcwMAAiAxCQEJAQkBBgEPCSBzCQAgPj0gMQYBCgkgcwMAID09IDEGAQIPIHMBACAhPSBHBERheQAABQFzAQAIIEcERGF5AAAFAXMCAAggcwIAIDEgKwkBBgEECSBzAgAgPj0gNtUQEm5jX2FsdG1lcl9wYXVsZHJvbgEA1BAQbmNfZmlyZV9wYXVsZHJvbgEAABAmAM7j7eXt7eD/IOzz7Oj/IOTu6+bt4CDh+/L8IPPm5SDj7vLu4uAuAAAFAXMCAAIgMAkBCAECCSBzAwAgPT0gMgAQSQDC4O3t4CDt5SDx7uTl8Obo8iDi8eX1IOjt4/Dl5Ojl7fLu4iwg9/Lu4fsg7/Dg4ujr/O3uIOzz7Oj06Pbo8O7i4PL8IPLl6+4uAAAFAXMDAAIgMAkBCQEGAQ8JIHMKACA+PSAxBgEKCSBzAwAgPT0gMQYBAg8gcwEAICE9IEcERGF5AAAFAXMBAAggRwREYXkAAAUBcwIACCBzAgAgMSArCQEGAQQJIHMCACA+PSA21RAPbmNfYXJnX3BhdWxkcm9uAQDUEBBuY19maXJlX3BhdWxkcm9uAQAAECYAzuPt5e3t4P8g7PPs6P8g5O7r5u3gIOH78vwg8+blIOPu8u7i4C4AAAUBcwIAAiAwCQEIAQIJIHMDACA9PSAyABBJAMLg7e3gIO3lIPHu5OXw5ujyIOLx5fUg6O3j8OXk6OXt8u7iLCD38u7h+yDv8ODi6Ov87e4g7PPs6PTo9ujw7uLg8vwg8uXr7i4AAAUBcwMAAiAwCQEJAQYBDwkgcwsAID49IDEGAQoJIHMDACA9PSAxBgECDyBzAQAgIT0gRwREYXkAAAUBcwEACCBHBERheQAABQFzAgAIIHMCACAxICsJAQYBBAkgcwIAID49IDbVEBJuY19ib3NtZXJfcGF1bGRyb24BANQQEG5jX2ZpcmVfcGF1bGRyb24BAAAQJgDO4+3l7e3g/yDs8+zo/yDk7uvm7eAg4fvy/CDz5uUg4+7y7uLgLgAABQFzAgACIDAJAQgBAgkgcwMAID09IDIAEEkAwuDt7eAg7eUg8e7k5fDm6PIg4vHl9SDo7ePw5eTo5e3y7uIsIPfy7uH7IO/w4OLo6/zt7iDs8+zo9Oj26PDu4uDy/CDy5evuLgAABQFzAwACIDAJAQkBBgEPCSBzDAAgPj0gMQYBCgkgcwMAID09IDEGAQIPIHMBACAhPSBHBERheQAABQFzAQAIIEcERGF5AAAFAXMCAAggcwIAIDEgKwkBBgEECSBzAgAgPj0gNtUQEm5jX2JyZXRvbl9wYXVsZHJvbgEA1BAQbmNfZmlyZV9wYXVsZHJvbgEAABAmAM7j7eXt7eD/IOzz7Oj/IOTu6+bt4CDh+/L8IPPm5SDj7vLu4uAuAAAFAXMCAAIgMAkBCAECCSBzAwAgPT0gMgAQSQDC4O3t4CDt5SDx7uTl8Obo8iDi8eX1IOjt4/Dl5Ojl7fLu4iwg9/Lu4fsg7/Dg4ujr/O3uIOzz7Oj06Pbo8O7i4PL8IPLl6+4uAAAFAXMDAAIgMAkBCQEGAQ8JIHMOACA+PSAxBgEKCSBzAwAgPT0gMQYBAg8gcwEAICE9IEcERGF5AAAFAXMBAAggRwREYXkAAAUBcwIACCBzAgAgMSArCQEGAQQJIHMCACA+PSA21RASbmNfZHVubWVyX3BhdWxkcm9uAQDUEBBuY19maXJlX3BhdWxkcm9uAQAAECYAzuPt5e3t4P8g7PPs6P8g5O7r5u3gIOH78vwg8+blIOPu8u7i4C4AAAUBcwIAAiAwCQEIAQIJIHMDACA9PSAyABBJAMLg7e3gIO3lIPHu5OXw5ujyIOLx5fUg6O3j8OXk6OXt8u7iLCD38u7h+yDv8ODi6Ov87e4g7PPs6PTo9ujw7uLg8vwg8uXr7i4AAAUBcwMAAiAwCQEJAQYBDwkgcxAAID49IDEGAQoJIHMDACA9PSAxBgECDyBzAQAgIT0gRwREYXkAAAUBcwEACCBHBERheQAABQFzAgAIIHMCACAxICsJAQYBBAkgcwIAID49IDbVEBRuY19pbXBlcmlhbF9wYXVsZHJvbgEA1BAQbmNfZmlyZV9wYXVsZHJvbgEAABAmAM7j7eXt7eD/IOzz7Oj/IOTu6+bt4CDh+/L8IPPm5SDj7vLu4uAuAAAFAXMCAAIgMAkBCAECCSBzAwAgPT0gMgAQSQDC4O3t4CDt5SDx7uTl8Obo8iDi8eX1IOjt4/Dl5Ojl7fLu4iwg9/Lu4fsg7/Dg4ujr/O3uIOzz7Oj06Pbo8O7i4PL8IPLl6+4uAAAFAXMDAAIgMAkBCQEGAQ8JIHMNACA+PSAxBgEKCSBzAwAgPT0gMQYBAg8gcwEAICE9IEcERGF5AAAFAXMBAAggRwREYXkAAAUBcwIACCBzAgAgMSArCQEGAQQJIHMCACA+PSA21RATbmNfa2hhamlpdF9wYXVsZHJvbgEA1BAQbmNfZmlyZV9wYXVsZHJvbgEAABAmAM7j7eXt7eD/IOzz7Oj/IOTu6+bt4CDh+/L8IPPm5SDj7vLu4uAuAAAFAXMCAAIgMAkBCAECCSBzAwAgPT0gMgAQSQDC4O3t4CDt5SDx7uTl8Obo8iDi8eX1IOjt4/Dl5Ojl7fLu4iwg9/Lu4fsg7/Dg4ujr/O3uIOzz7Oj06Pbo8O7i4PL8IPLl6+4uAAAFAXMDAAIgMAkBCQEGAQ8JIHMIACA+PSAxBgEKCSBzAwAgPT0gMQYBAg8gcwEAICE9IEcERGF5AAAFAXMBAAggRwREYXkAAAUBcwIACCBzAgAgMSArCQEGAQQJIHMCACA+PSA21RAPbmNfb3JjX3BhdWxkcm9uAQDUEBBuY19maXJlX3BhdWxkcm9uAQAAECYAzuPt5e3t4P8g7PPs6P8g5O7r5u3gIOH78vwg8+blIOPu8u7i4C4AAAUBcwIAAiAwCQEIAQIJIHMDACA9PSAyABBJAMLg7e3gIO3lIPHu5OXw5ujyIOLx5fUg6O3j8OXk6OXt8u7iLCD38u7h+yDv8ODi6Ov87e4g7PPs6PTo9ujw7uLg8vwg8uXr7i4AAAUBcwMAAiAwCQEJAQYBDwkgcw8AID49IDEGAQoJIHMDACA9PSAxBgECDyBzAQAgIT0gRwREYXkAAAUBcwEACCBHBERheQAABQFzAgAIIHMCACAxICsJAQYBBAkgcwIAID49IDbVEA5uY19yZ19wYXVsZHJvbgEA1BAQbmNfZmlyZV9wYXVsZHJvbgEAABAmAM7j7eXt7eD/IOzz7Oj/IOTu6+bt4CDh+/L8IPPm5SDj7vLu4uAuAAAFAXMCAAIgMAkBCAECCSBzAwAgPT0gMgAQSQDC4O3t4CDt5SDx7uTl8Obo8iDi8eX1IOjt4/Dl5Ojl7fLu4iwg9/Lu4fsg7/Dg4ujr/O3uIOzz7Oj06Pbo8O7i4PL8IPLl6+4uAAAFAXMDAAIgMAkBCQEBAQ==
@@ -20412,7 +20616,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_altmer_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20431,7 +20635,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_arg_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20450,7 +20654,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_bosmer_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20469,7 +20673,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_breton_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20488,7 +20692,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_dunmer_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20507,7 +20711,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_imperial_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20526,7 +20730,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_khajiit_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20545,7 +20749,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_orc_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20564,7 +20768,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_rg_pauldron" 1
-    			additem "nc_fire_pauldron" 1
+    			additem "A1V3_FireCured" 1
     			MessageBox "Огненная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20689,38 +20893,6 @@ SCTX
     end
 
 SCPT
-SCHD nc_frost_corpse_obj 1 0 0 267 8
-SCVR counter;;
-SCDT BgEGCSBY3BAgPT0gMQUBcwEACCBzAQAgMSArBgEBCSBzAQAgPCAxMCQBCQGrEQEAJAEJAQYBCQkgWBgQID09IDEGAQUYIEcQQTFWM19OZWNyb0J1cmRlbiA9PSAwBQFHEEExVjNfTmVjcm9Db3Jwc2UXIEcQQTFWM19OZWNyb0NvcnBzZSAxICsbEA5uY190aW1lX2JvdW50edsQDAEGcGxheWVy1BARbmNfZnJvc3RfcGF1bGRyb24BABsQEEExVjNfRXF1aXBDb3Jwc2UHAQEAEC4AzeXx8ugg4e7r/PjlLCD35ewg7uTt7iDy5evuIOfgIPDg5yAtIO3l8+Tu4e3uLgAACQEJAQEB
-SCTX
-    begin nc_frost_corpse_obj
-    
-    short counter
-    
-    if ( GetDisabled == 1 )
-    	set counter to ( counter + 1 )
-    	if ( counter < 10 )
-    		return
-    	endif
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
-    		Disable
-    		player->AddItem "nc_frost_pauldron" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
-    endif
-    
-    end
-
-SCPT
 SCHD nc_frost_vat 16 0 0 3081 122
 SCVR currentday;localdayspassed;state;salt;frostsalts;holly;nord;orc;altmer;arg;bosmer;breton;khajiit;dunmer;redguard;imperial;;
 SCDT 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
@@ -20782,7 +20954,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_altmer_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20801,7 +20973,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_arg_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20820,7 +20992,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_bosmer_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20839,7 +21011,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_breton_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20858,7 +21030,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_dunmer_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20877,7 +21049,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_imperial_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20896,7 +21068,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_khajiit_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20915,7 +21087,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_orc_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -20934,7 +21106,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_rg_pauldron" 1
-    			additem "nc_frost_pauldron" 1
+    			additem "A1V3_FrostCured" 1
     			MessageBox "Ледяная мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -21186,15 +21358,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_altmer_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -21254,15 +21418,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_altmer_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -21423,15 +21579,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_imperial_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -21491,15 +21639,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_imperial_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -21882,15 +22022,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_khajiit_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -21950,15 +22082,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_khajiit_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -22137,15 +22261,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_nord_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -22205,15 +22321,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_nord_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -22374,15 +22482,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_orc_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -22442,15 +22542,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_orc_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -23126,7 +23218,7 @@ SCTX
     
     if ( OnPCDrop == 1 )
     	set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
-    	PlaceAtPC "nc_fire_cured" 1 50 1
+    	PlaceAtPC "A1V3_FireCured" 1 50 1
     	Disable
     endif
     
@@ -23176,7 +23268,7 @@ SCTX
     
     if ( OnPCDrop == 1 )
     	set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
-    	PlaceAtPC "nc_frost_cured" 1 50 1
+    	PlaceAtPC "A1V3_FrostCured" 1 50 1
     	Disable
     endif
     
@@ -23626,7 +23718,7 @@ SCTX
     
     if ( OnPCDrop == 1 )
     	set A1V3_NecroCorpse to ( A1V3_NecroCorpse - 1 )
-    	PlaceAtPC "nc_poison_cured" 1 50 1
+    	PlaceAtPC "A1V3_PoisonCured" 1 50 1
     	Disable
     endif
     
@@ -23734,38 +23826,6 @@ SCTX
     
 
 SCPT
-SCHD nc_poison_corpse_obj 1 0 0 268 8
-SCVR counter;;
-SCDT BgEGCSBY3BAgPT0gMQUBcwEACCBzAQAgMSArBgEBCSBzAQAgPCAxMCQBCQGrEQEAJAEJAQYBCQkgWBgQID09IDEGAQUYIEcQQTFWM19OZWNyb0J1cmRlbiA9PSAwBQFHEEExVjNfTmVjcm9Db3Jwc2UXIEcQQTFWM19OZWNyb0NvcnBzZSAxICsbEA5uY190aW1lX2JvdW50edsQDAEGcGxheWVy1BASbmNfcG9pc29uX3BhdWxkcm9uAQAbEBBBMVYzX0VxdWlwQ29ycHNlBwEBABAuAM3l8fLoIOHu6/z45Swg9+XsIO7k7e4g8uXr7iDn4CDw4OcgLSDt5fPk7uHt7i4AAAkBCQEBAQ==
-SCTX
-    begin nc_poison_corpse_obj
-    
-    short counter
-    
-    if ( GetDisabled == 1 )
-    	set counter to ( counter + 1 )
-    	if ( counter < 10 )
-    		return
-    	endif
-    	SetDelete 1
-    	return
-    endif
-    
-    if ( OnActivate == 1 )
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
-    		Disable
-    		player->AddItem "nc_poison_pauldron" 1
-    		StartScript A1V3_EquipCorpse
-    	else
-    		MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    	endif
-    endif
-    
-    end
-
-SCPT
 SCHD nc_poison_vat 16 0 0 3098 123
 SCVR currentday;localdayspassed;pstate;salt;coprinus;russula;nord;orc;altmer;arg;bosmer;breton;khajiit;dunmer;redguard;imperial;;
 SCDT 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
@@ -23827,7 +23887,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_altmer_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23846,7 +23906,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_arg_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23865,7 +23925,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_bosmer_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23884,7 +23944,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_breton_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23903,7 +23963,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_dunmer_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23922,7 +23982,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_imperial_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23941,7 +24001,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_khajiit_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23960,7 +24020,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_orc_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -23979,7 +24039,7 @@ SCTX
     
     		if ( localdayspassed >= 6 )
     			removeitem "nc_rg_pauldron" 1
-    			additem "nc_poison_pauldron" 1
+    			additem "A1V3_PoisonCured" 1
     			MessageBox "Ядовитая мумия должна быть уже готова."
     			set localdayspassed to 0
     		endif
@@ -24020,15 +24080,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_rg_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -24088,15 +24140,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_rg_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -24253,7 +24297,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_arg_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24289,7 +24332,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_arg_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24325,7 +24367,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_breton_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24361,7 +24402,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_breton_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24397,7 +24437,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_dunmer_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24433,7 +24472,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_dunmer_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24469,7 +24507,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_altmer_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24505,7 +24542,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_altmer_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24541,7 +24577,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_imperial_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24577,7 +24612,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_imperial_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24613,7 +24647,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_khajiit_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24649,7 +24682,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_khajiit_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24685,7 +24717,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_nord_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24721,7 +24752,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_nord_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24757,7 +24787,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_orc_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24793,7 +24822,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_orc_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24829,7 +24857,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_rg_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24865,7 +24892,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_rg_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -24901,7 +24927,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_bosmer_pauldron_sk" 1
     		StartScript A1V3_EquipCorpse
@@ -24937,7 +24962,6 @@ SCTX
     if ( OnActivate == 1 )
     	if ( A1V3_NecroBurden == 0 )
     		set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    		StartScript nc_time_bounty
     		Disable
     		player->AddItem "nc_bosmer_pauldron_sk_f" 1
     		StartScript A1V3_EquipCorpse
@@ -25199,170 +25223,6 @@ SCTX
     stopscript nc_stats
     
     End
-
-SCPT
-SCHD nc_time_bounty 3 0 4 2757 64
-SCVR rand;isDaytime;detectedDate;hour;timer;detectedHour;burdenTimer;;
-SCDT BgEGGCBHEEExVjNfTmVjcm9Db3Jwc2UgPT0gMBwQDm5jX3RpbWVfYm91bnR5BQFHEEExVjNfTmVjcm9CdXJkZW4CIDA/EVkRBQFzAwACIDAkAQkBBgEBCSBYIBAgPT0gMSQBCQEFAWYBAAUgWBIQAAUBZgIACiBmAgAgZgEAICsGAQsYIEcQQTFWM19OZWNyb0J1cmRlbiAhPSAwBQFmBAAKIGYEACBmAQAgKwYBCAkgZgQAID49IDEFAWYEAAIgMAYBBQkgWIsRID09IDEGAQEYIEcQQTFWM19OZWNyb0J1cmRlbiA9PSAxDAEGcGxheWVyNBEAAADABwEBDAEGcGxheWVyNBEAAIDACQEJAQkBCQEGAQEJIGYCACA8IDE0JAEJAQUBZgIAAiAwBQFzAQACIDEMAQZwbGF5ZXIGAQAeIFj9ECBvEm5jX2FsdG1lcl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19hbHRtZXJfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAGyBY/RAgbw9uY19hcmdfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBAB0gWP0QIG8RbmNfYXJnX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBAB4gWP0QIG8SbmNfYm9zbWVyX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAgIFj9ECBvFG5jX2Jvc21lcl9wYXVsZHJvbl9mID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX2JyZXRvbl9wYXVsZHJvbiA+PSAxDAEGcGxheWVyCAEAICBY/RAgbxRuY19icmV0b25fcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAHiBY/RAgbxJuY19kdW5tZXJfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBACAgWP0QIG8UbmNfZHVubWVyX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBACAgWP0QIG8UbmNfaW1wZXJpYWxfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBACIgWP0QIG8WbmNfaW1wZXJpYWxfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAHyBY/RAgbxNuY19raGFqaWl0X3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAhIFj9ECBvFW5jX2toYWppaXRfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAHCBY/RAgbxBuY19ub3JkX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX25vcmRfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAGyBY/RAgbw9uY19vcmNfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBAB0gWP0QIG8RbmNfb3JjX3BhdWxkcm9uX2YgPj0gMQwBBnBsYXllcggBABogWP0QIG8ObmNfcmdfcGF1bGRyb24gPj0gMQwBBnBsYXllcggBABwgWP0QIG8QbmNfcmdfcGF1bGRyb25fZiA+PSAxDAEGcGxheWVyCAEAHCBY/RAgbxBuY19maXJlX3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX2Zyb3N0X3BhdWxkcm9uID49IDEMAQZwbGF5ZXIIAQAeIFj9ECBvEm5jX3BvaXNvbl9wYXVsZHJvbiA+PSAxBwEBBQFzAQACIDAJAQUBcwIAAiAxBgEBCSBzAQAgPT0gMQUBcwIAAiAyDAEGcGxheWVyCAEAISBY/RAgbxVuY19hbHRtZXJfcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcggBACMgWP0QIG8XbmNfYWx0bWVyX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB4gWP0QIG8SbmNfYXJnX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAgIFj9ECBvFG5jX2FyZ19wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIIAQAhIFj9ECBvFW5jX2Jvc21lcl9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAIyBY/RAgbxduY19ib3NtZXJfcGF1bGRyb25fc2tfZiA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19icmV0b25fcGF1bGRyb25fc2sgPj0gMQwBBnBsYXllcggBACMgWP0QIG8XbmNfYnJldG9uX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBACEgWP0QIG8VbmNfZHVubWVyX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAjIFj9ECBvF25jX2R1bm1lcl9wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIIAQAjIFj9ECBvF25jX2ltcGVyaWFsX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAlIFj9ECBvGW5jX2ltcGVyaWFsX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBACIgWP0QIG8WbmNfa2hhamlpdF9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAJCBY/RAgbxhuY19raGFqaWl0X3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB8gWP0QIG8TbmNfbm9yZF9wYXVsZHJvbl9zayA+PSAxDAEGcGxheWVyCAEAISBY/RAgbxVuY19ub3JkX3BhdWxkcm9uX3NrX2YgPj0gMQwBBnBsYXllcggBAB4gWP0QIG8SbmNfb3JjX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAgIFj9ECBvFG5jX29yY19wYXVsZHJvbl9za19mID49IDEMAQZwbGF5ZXIIAQAdIFj9ECBvEW5jX3JnX3BhdWxkcm9uX3NrID49IDEMAQZwbGF5ZXIIAQAfIFj9ECBvE25jX3JnX3BhdWxkcm9uX3NrX2YgPj0gMQcBAQUBcwIAAiAwCQEGAQUJIHMCACA9PSAwBgEDGCBHEEExVjNfTmVjcm9CdXJkZW4gIT0gMAUBRxBBMVYzX05lY3JvQnVyZGVuAiAwPxFZEQkBBwEFBgEDGCBHEEExVjNfTmVjcm9CdXJkZW4gPT0gMAUBRxBBMVYzX05lY3JvQnVyZGVuBSBzAgAAQBFaEQkBCQEGAQQJIFgLESA9PSAxBgECCSBYoBAgPT0gMAUBcwMAAiAwJAEJAQkBBgEBEiBYThEgcgZQbGF5ZXIgPT0gMCQBCQEFAWYBAAwgRwhHYW1lSG91cgAFAXMBAAcgWCEQCwAxBQFzAgACIDAGAQMJIGYBACA+PSA4BgEBCSBmAQAgPCAyMAUBcwIAAiAxCQEJAQYBAwkgcwIAID09IDAGAQEIIHMBACA+IDMkAQkBBwEDBgEBCCBzAQAgPiA3JAEJAQkBBgEBFCBzAwAgPiBHCkRheXNQYXNzZWQAJAEJAQYBAxUgcwMAID09IEcKRGF5c1Bhc3NlZAAGAQELIGYDACA+IGYBAAAkAQkBCQEFAXMDABEgRwpEYXlzUGFzc2VkIDEgKwUBZgMABSBmAQAAABAiAMry7i3y7iDz4ujk5essIOrg6iDi+yDt5fHl8uUg8uXr7i4AAJ0QAAD6QwEB
-SCTX
-    begin nc_time_bounty
-    
-    short rand
-    float hour
-    float timer
-    short isDaytime
-    float detectedHour
-    short detectedDate
-    float burdenTimer
-    
-    if ( A1V3_NecroCorpse == 0 )
-    	StopScript nc_time_bounty
-    	set A1V3_NecroBurden to 0
-    	EnablePlayerJumping
-    	EnablePlayerFighting
-    	set detectedDate to 0
-    	return
-    endif
-    
-    if ( MenuMode == 1 )
-    	return
-    endif
-    
-    set hour to GetSecondsPassed
-    set timer to ( timer + hour )
-    if ( A1V3_NecroBurden != 0 )
-    	set burdenTimer to ( burdenTimer + hour )
-    	if ( burdenTimer >= 1 )
-    		set burdenTimer to 0
-    		if ( GetPCRunning == 1 )
-    			if ( A1V3_NecroBurden == 1 )
-    				player->ModCurrentFatigue -2
-    			else
-    				player->ModCurrentFatigue -4
-    			endif
-    		endif
-    	endif
-    endif
-    if ( timer < 14 )
-    	return
-    endif
-    set timer to 0
-    
-    set rand to 1
-    if ( player->GetItemCount "nc_altmer_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_altmer_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_arg_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_arg_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_bosmer_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_bosmer_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_breton_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_breton_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_dunmer_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_dunmer_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_imperial_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_imperial_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_khajiit_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_khajiit_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_nord_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_nord_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_orc_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_orc_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_rg_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_rg_pauldron_f" >= 1 )
-    elseif ( player->GetItemCount "nc_fire_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_frost_pauldron" >= 1 )
-    elseif ( player->GetItemCount "nc_poison_pauldron" >= 1 )
-    else
-    	set rand to 0
-    endif
-    set isDaytime to 1
-    if ( rand == 1 )
-    	set isDaytime to 2
-    elseif ( player->GetItemCount "nc_altmer_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_altmer_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_arg_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_arg_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_bosmer_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_bosmer_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_breton_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_breton_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_dunmer_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_dunmer_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_imperial_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_imperial_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_khajiit_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_khajiit_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_nord_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_nord_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_orc_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_orc_pauldron_sk_f" >= 1 )
-    elseif ( player->GetItemCount "nc_rg_pauldron_sk" >= 1 )
-    elseif ( player->GetItemCount "nc_rg_pauldron_sk_f" >= 1 )
-    else
-    	set isDaytime to 0
-    endif
-    if ( isDaytime == 0 )
-    	if ( A1V3_NecroBurden != 0 )
-    		set A1V3_NecroBurden to 0
-    		EnablePlayerJumping
-    		EnablePlayerFighting
-    	endif
-    else
-    	if ( A1V3_NecroBurden == 0 )
-    		set A1V3_NecroBurden to isDaytime
-    		DisablePlayerJumping
-    		DisablePlayerFighting
-    	endif
-    endif
-    
-    if ( GetInterior == 1 )
-    	if ( GetWindSpeed == 0 )
-    		;interior
-    		set detectedDate to 0
-    		return
-    	endif
-    endif
-    
-    if ( GetDetected Player == 0 )
-    	return
-    endif
-    
-    set hour to GameHour
-    set rand to Random, 11
-    
-    set isDaytime to 0
-    if ( hour >= 8 )
-    	if ( hour < 20 )
-    		set isDaytime to 1
-    	endif
-    endif
-    
-    if ( isDaytime == 0 )
-    	if ( rand > 3 )
-    		return
-    	endif
-    else
-    	if ( rand > 7 )
-    		return
-    	endif
-    endif
-    
-    if ( detectedDate > DaysPassed )
-    	return
-    endif
-    
-    if ( detectedDate == DaysPassed )
-    	if ( detectedHour > hour )
-    		return
-    	endif
-    endif
-    
-    set detectedDate to DaysPassed + 1
-    set detectedHour to hour
-    MessageBox "Кто-то увидел, как вы несете тело."
-    ModPCCrimeLevel 500
-    
-    end
 
 SCPT
 SCHD nc_wander_rev_script 1 0 0 225 7
@@ -25657,15 +25517,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_bosmer_pauldron" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -25725,15 +25577,7 @@ SCTX
     if ( getcell == 0 )
     	set getcell to 1
     	if ( state == 1 )
-    		if ( A1V3_NecroBurden != 0 )
-    			MessageBox "Нести больше, чем одно тело за раз - неудобно."
-    		else
-    			set A1V3_NecroCorpse to ( A1V3_NecroCorpse + 1 )
-    			StartScript nc_time_bounty
-    			Disable
-    			player->AddItem "nc_bosmer_pauldron_f" 1
-    			StartScript A1V3_EquipCorpse
-    		endif
+    		Activate
     		return
     	endif
     
@@ -27698,27 +27542,24 @@ IRDT
 ITEX n\\Tx_moon_sugar_01.tga
 
 MISC
-NAME nc_poison_cured
+NAME A1V3_PoisonCured
 MODL blas\\Corpse.NIF
 FNAM Ядовитая мумия
 MCDT AAAHQwAAAAAAAAAA
-SCRI nc_poison_corpse_obj
 ITEX blas\\br_poison_corpse.dds
 
 MISC
-NAME nc_fire_cured
+NAME A1V3_FireCured
 MODL blas\\Corpse.NIF
 FNAM Огненная мумия
 MCDT AAAHQwAAAAAAAAAA
-SCRI nc_fire_corpse_obj
 ITEX blas\\br_fire_corpse.dds
 
 MISC
-NAME nc_frost_cured
+NAME A1V3_FrostCured
 MODL blas\\Corpse.NIF
 FNAM Ледяная мумия
 MCDT AAAHQwAAAAAAAAAA
-SCRI nc_frost_corpse_obj
 ITEX blas\\br_frost_corpse.dds
 
 BODY
@@ -27750,7 +27591,6 @@ BYDT BAAAAQ==
 
 NPC_
 NAME A1V3_PWarlord
-MODL base_anim.nif
 FNAM Мумифицированный слуга
 RNAM A1_PoisonWarlord
 CNAM A1_EmptyRevenant
@@ -27853,7 +27693,6 @@ BNAM nc_frost_mummy_shirt%
 
 NPC_
 NAME A1V3_FWarlord
-MODL base_anim.nif
 FNAM Мумифицированный слуга
 RNAM A1_FireWarlord
 CNAM A1_EmptyRevenant
@@ -27877,7 +27716,6 @@ AIDT AAAAAAA8bQAAAAAA
 
 NPC_
 NAME A1V3_TWarlord
-MODL base_anim.nif
 FNAM Мумифицированный слуга
 RNAM A1_FrostWarlord
 CNAM A1_EmptyRevenant
